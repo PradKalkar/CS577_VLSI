@@ -16,8 +16,8 @@
 ### Resolution of merge conflicts, commit and push the commits to remote repo 
 1. Resolve merge conflicts (if any)
 2. ```git add .```
-3. ```git commit -m "time \<time_value\>"```
-   ```git commit -m "area \<area_bram\> \<area_ff\> \<area_lut\>"```
+3. ```git commit -m "time <time_value>"```
+   ```git commit -m "area <area_bram> <area_ff> <area_lut>"```
    Note: At this stage, copy the command to cur/log.txt of time/area folder (whichever applicable) so that we have a track of it in the future. Similarly, any update to the opt folder needs to be logged in opt/log.txt.
 4. ```git push origin master```
 
