@@ -4,7 +4,7 @@
 1. On master branch: ```git pull origin master```
 2. ```git branch local```
 3. ```git checkout local```
-*Code on **local** branch until you get results which you want to store as a checkpoint*
+4. *Code on **local** branch until you get results which you want to store as a checkpoint*
 
 ### Stash the changes, update master and apply them over it
 1. ```git stash```
