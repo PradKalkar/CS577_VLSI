@@ -1,7 +1,6 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
-// Tool Version Limit: 2019.12
-// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
  `timescale 1ns/1ps
 
@@ -42,12 +41,12 @@ module `AUTOTB_TOP;
 parameter AUTOTB_TRANSACTION_NUM = 2;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = -1;
-parameter LENGTH_ap_return = 1;
+parameter LENGTH_sm = 5720;
+parameter LENGTH_smlen = 1;
 parameter LENGTH_m = 3300;
 parameter LENGTH_mlen = 1;
 parameter LENGTH_sk = 2544;
-parameter LENGTH_sm = 5720;
-parameter LENGTH_smlen = 1;
+parameter LENGTH_ap_return = 1;
 
 task read_token;
     input integer fp;
@@ -62,7 +61,6 @@ endtask
 
 reg AESL_clock;
 reg rst;
-reg dut_rst;
 reg start;
 reg ce;
 reg tb_continue;
@@ -91,7 +89,6 @@ wire [12 : 0] sm_address1;
 wire  sm_ce1;
 wire  sm_we1;
 wire [7 : 0] sm_d1;
-wire [7 : 0] sm_q1;
 wire [63 : 0] smlen;
 wire  smlen_ap_vld;
 wire [11 : 0] m_address0;
@@ -115,7 +112,6 @@ reg ready_delay_last_n;
 reg done_delay_last_n;
 reg interface_done = 0;
 
-
 wire ap_clk;
 wire ap_rst;
 wire ap_rst_n;
@@ -136,7 +132,6 @@ wire ap_rst_n;
     .sm_ce1(sm_ce1),
     .sm_we1(sm_we1),
     .sm_d1(sm_d1),
-    .sm_q1(sm_q1),
     .smlen(smlen),
     .smlen_ap_vld(smlen_ap_vld),
     .m_address0(m_address0),
@@ -153,8 +148,8 @@ wire ap_rst_n;
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
-assign ap_rst = dut_rst;
-assign ap_rst_n = ~dut_rst;
+assign ap_rst = AESL_reset;
+assign ap_rst_n = ~AESL_reset;
 assign AESL_reset = rst;
 assign ap_start = AESL_start;
 assign AESL_start = start;
@@ -185,7 +180,7 @@ assign AESL_continue = tb_continue;
 
 // The input and output of arraysm
 wire    arraysm_ce0, arraysm_ce1;
-wire [1 - 1 : 0]    arraysm_we0, arraysm_we1;
+wire    arraysm_we0, arraysm_we1;
 wire    [12 : 0]    arraysm_address0, arraysm_address1;
 wire    [7 : 0]    arraysm_din0, arraysm_din1;
 wire    [7 : 0]    arraysm_dout0, arraysm_dout1;
@@ -213,12 +208,11 @@ wire    arraysm_done;
 assign arraysm_address0 = sm_address0;
 assign arraysm_ce0 = sm_ce0;
 assign sm_q0 = arraysm_dout0;
-assign arraysm_we0[0] = sm_we0;
+assign arraysm_we0 = sm_we0;
 assign arraysm_din0 = sm_d0;
 assign arraysm_address1 = sm_address1;
 assign arraysm_ce1 = sm_ce1;
-assign sm_q1 = arraysm_dout1;
-assign arraysm_we1[0] = sm_we1;
+assign arraysm_we1 = sm_we1;
 assign arraysm_din1 = sm_d1;
 assign arraysm_ready= ready;
 assign arraysm_done = interface_done;
@@ -281,7 +275,7 @@ end
 
 // The input and output of arraym
 wire    arraym_ce0, arraym_ce1;
-wire [1 - 1 : 0]    arraym_we0, arraym_we1;
+wire    arraym_we0, arraym_we1;
 wire    [11 : 0]    arraym_address0, arraym_address1;
 wire    [7 : 0]    arraym_din0, arraym_din1;
 wire    [7 : 0]    arraym_dout0, arraym_dout1;
@@ -375,7 +369,7 @@ end
 
 // The input and output of arraysk
 wire    arraysk_ce0, arraysk_ce1;
-wire [1 - 1 : 0]    arraysk_we0, arraysk_we1;
+wire    arraysk_we0, arraysk_we1;
 wire    [11 : 0]    arraysk_address0, arraysk_address1;
 wire    [7 : 0]    arraysk_din0, arraysk_din1;
 wire    [7 : 0]    arraysk_dout0, arraysk_dout1;
@@ -498,7 +492,10 @@ end
     initial begin : finish_simulation
         wait (all_finish == 1);
         // last transaction is saved at negedge right after last done
-        repeat(6) @ (posedge AESL_clock);
+        @ (posedge AESL_clock);
+        @ (posedge AESL_clock);
+        @ (posedge AESL_clock);
+        @ (posedge AESL_clock);
         $finish;
     end
     
@@ -531,15 +528,8 @@ initial begin : initial_process
     integer proc_rand;
     rst = 1;
     # 100;
-    repeat(0+3) @ (posedge AESL_clock);
-    rst = 0;
-end
-initial begin : initial_process_for_dut_rst
-    integer proc_rand;
-    dut_rst = 1;
-    # 100;
     repeat(3) @ (posedge AESL_clock);
-    dut_rst = 0;
+    rst = 0;
 end
 initial begin : start_process
     integer proc_rand;
@@ -552,10 +542,11 @@ initial begin : start_process
     #0 start = 1;
     start_cnt = start_cnt + 1;
     forever begin
-        if (start_cnt >= AUTOTB_TRANSACTION_NUM + 1) begin
-            #0 start = 0;
-        end
         @ (posedge AESL_clock);
+        if (start_cnt >= AUTOTB_TRANSACTION_NUM) begin
+            // keep pushing garbage in
+            #0 start = 1;
+        end
         if (AESL_ready) begin
             start_cnt = start_cnt + 1;
         end
@@ -632,68 +623,33 @@ begin
           interface_done = 0;
   end
 end
-task write_binary;
-    input integer fp;
-    input reg[64-1:0] in;
-    input integer in_bw;
-    reg [63:0] tmp_long;
-    reg[64-1:0] local_in;
-    integer char_num;
-    integer long_num;
-    integer i;
-    integer j;
-    begin
-        long_num = (in_bw + 63) / 64;
-        char_num = ((in_bw - 1) % 64 + 7) / 8;
-        for(i=long_num;i>0;i=i-1) begin
-             local_in = in;
-             tmp_long = local_in >> ((i-1)*64);
-             for(j=0;j<64;j=j+1)
-                 if (tmp_long[j] === 1'bx)
-                     tmp_long[j] = 1'b0;
-             if (i == long_num) begin
-                 case(char_num)
-                     1: $fwrite(fp,"%c",tmp_long[7:0]);
-                     2: $fwrite(fp,"%c%c",tmp_long[15:8],tmp_long[7:0]);
-                     3: $fwrite(fp,"%c%c%c",tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
-                     4: $fwrite(fp,"%c%c%c%c",tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
-                     5: $fwrite(fp,"%c%c%c%c%c",tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
-                     6: $fwrite(fp,"%c%c%c%c%c%c",tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
-                     7: $fwrite(fp,"%c%c%c%c%c%c%c",tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
-                     8: $fwrite(fp,"%c%c%c%c%c%c%c%c",tmp_long[63:56],tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
-                     default: ;
-                 endcase
-             end
-             else begin
-                 $fwrite(fp,"%c%c%c%c%c%c%c%c",tmp_long[63:56],tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
-             end
-        end
-    end
-endtask;
 
 reg dump_tvout_finish_sm;
 
 initial begin : dump_tvout_runtime_sign_sm
     integer fp;
     dump_tvout_finish_sm = 0;
-    fp = $fopen(`AUTOTB_TVOUT_sm_out_wrapc, "wb");
+    fp = $fopen(`AUTOTB_TVOUT_sm_out_wrapc, "w");
     if (fp == 0) begin
         $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_sm_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
+    $fdisplay(fp,"[[[runtime]]]");
     $fclose(fp);
     wait (done_cnt == AUTOTB_TRANSACTION_NUM);
-    repeat(5) @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_sm_out_wrapc, "ab");
+    // last transaction is saved at negedge right after last done
+    @ (posedge AESL_clock);
+    @ (posedge AESL_clock);
+    @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_sm_out_wrapc, "a");
     if (fp == 0) begin
         $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_sm_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
-    write_binary(fp,64'h5a5aa5a50f0ff0f0,64);
+    $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    repeat(5) @ (posedge AESL_clock);
     dump_tvout_finish_sm = 1;
 end
 
@@ -713,16 +669,9 @@ reg AESL_ready_p1;
 reg AESL_start_p1;
 
 always @ (posedge AESL_clock) begin
-    if (AESL_reset == 1) begin
-        clk_cnt <= 32'h0;
-        AESL_ready_p1 <= 1'b0;
-        AESL_start_p1 <= 1'b0;
-    end
-    else begin
-        clk_cnt <= clk_cnt + 1;
-        AESL_ready_p1 <= AESL_ready;
-        AESL_start_p1 <= AESL_start;
-    end
+    clk_cnt <= clk_cnt + 1;
+    AESL_ready_p1 <= AESL_ready;
+    AESL_start_p1 <= AESL_start;
 end
 
 reg [31:0] start_timestamp [0:AUTOTB_TRANSACTION_NUM - 1];
@@ -731,14 +680,7 @@ reg [31:0] ready_timestamp [0:AUTOTB_TRANSACTION_NUM - 1];
 reg [31:0] ap_ready_cnt;
 reg [31:0] finish_timestamp [0:AUTOTB_TRANSACTION_NUM - 1];
 reg [31:0] finish_cnt;
-reg [31:0] lat_total;
 event report_progress;
-
-always @(posedge AESL_clock)
-begin
-    if (finish_cnt == AUTOTB_TRANSACTION_NUM - 1 && AESL_done == 1'b1)
-        lat_total = clk_cnt - start_timestamp[0];
-end
 
 initial begin
     start_cnt = 0;
@@ -849,7 +791,6 @@ task calculate_performance();
     reg [31:0] interval_max;
     reg [31:0] interval_total;
     reg [31:0] interval_average;
-    reg [31:0] total_execute_time;
     begin
         latency_min = -1;
         latency_max = 0;
@@ -857,7 +798,6 @@ task calculate_performance();
         interval_min = -1;
         interval_max = 0;
         interval_total = 0;
-        total_execute_time = lat_total;
 
         for (i = 0; i < AUTOTB_TRANSACTION_NUM; i = i + 1) begin
             // calculate latency
@@ -872,7 +812,7 @@ task calculate_performance();
                 interval_min = 0;
                 interval_total = 0;
             end else if (i < AUTOTB_TRANSACTION_NUM - 1) begin
-                interval[i] = start_timestamp[i + 1] - start_timestamp[i];
+                interval[i] = finish_timestamp[i] - start_timestamp[i]+1;
                 if (interval[i] > interval_max) interval_max = interval[i];
                 if (interval[i] < interval_min) interval_min = interval[i];
                 interval_total = interval_total + interval[i];
@@ -894,7 +834,6 @@ task calculate_performance();
         $fdisplay(fp, "$MAX_THROUGHPUT = \"%0d\"", interval_max);
         $fdisplay(fp, "$MIN_THROUGHPUT = \"%0d\"", interval_min);
         $fdisplay(fp, "$AVER_THROUGHPUT = \"%0d\"", interval_average);
-        $fdisplay(fp, "$TOTAL_EXECUTE_TIME = \"%0d\"", total_execute_time);
 
         $fclose(fp);
 
@@ -926,14 +865,5 @@ endtask
 `ifndef POST_SYN
 
 `endif
-///////////////////////////////////////////////////////
-// dataflow status monitor
-///////////////////////////////////////////////////////
-dataflow_monitor U_dataflow_monitor(
-    .clock(AESL_clock),
-    .reset(rst),
-    .finish(all_finish));
-
-`include "fifo_para.vh"
 
 endmodule

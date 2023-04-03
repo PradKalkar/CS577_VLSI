@@ -1,144 +1,137 @@
-   Build using "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Build using "/tools/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
    Compiling apatb_crypto_sign.cpp
    Compiling (apcc) symmetric-aes.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:18 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:51:46 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1734001678631658751867
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2759501680542506223901
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.33 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.33 seconds; peak allocated memory: 98.980 MB.
    Compiling (apcc) polyvec.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:21 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:51:50 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1734631678631661048001
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2760361680542510324004
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.5 seconds. Total CPU system time: 0.06 seconds. Total elapsed time: 1.46 seconds; peak allocated memory: 98.980 MB.
    Compiling (apcc) fips202.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:23 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:51:54 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1735221678631663457756
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2760981680542514501368
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 2.19 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 2.22 seconds; peak allocated memory: 98.977 MB.
    Compiling (apcc) PQCgenKAT_sign.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:26 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:51:59 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1735821678631666594970
+In file included from /home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c:1:
+/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c:142:17: warning: incompatible pointer types passing 'unsigned long long *' to parameter of type 'unsigned long *' [-Wincompatible-pointer-types]
+crypto_sign(sm, &smlen, m, mlen, sk))
+                ^~~~~~
+./apatb_crypto_sign.h:8:20: note: passing argument to parameter 'smlen' here
+long unsigned int* smlen,
+                   ^
+1 warning generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2761611680542519453432
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.44 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.42 seconds; peak allocated memory: 98.980 MB.
    Compiling (apcc) symmetric-shake.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:28 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:03 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1736421678631668970647
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2762191680542523612177
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.34 seconds. Total CPU system time: 0.11 seconds. Total elapsed time: 1.35 seconds; peak allocated memory: 98.980 MB.
    Compiling (apcc) reduce.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:31 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:07 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1737051678631671239902
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2762811680542527720829
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.32 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.31 seconds; peak allocated memory: 98.980 MB.
    Compiling (apcc) ntt.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:33 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:11 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1737641678631673496675
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2763421680542531775926
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.35 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.35 seconds; peak allocated memory: 98.977 MB.
    Compiling (apcc) rng.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:35 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:15 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1738231678631675777394
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2764031680542535818025
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.45 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.44 seconds; peak allocated memory: 98.980 MB.
    Compiling (apcc) sign.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:38 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:19 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1738821678631678182258
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2764651680542539964891
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.43 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.42 seconds; peak allocated memory: 98.977 MB.
    Compiling (apcc) packing.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:40 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:24 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1739411678631680524571
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2765251680542544056472
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.48 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.46 seconds; peak allocated memory: 98.977 MB.
    Compiling (apcc) poly.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:42 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:28 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1740021678631682929425
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2765861680542548232219
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.82 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.82 seconds; peak allocated memory: 98.977 MB.
    Compiling (apcc) aes.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:45 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:32 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1740611678631685689304
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2766521680542552790918
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.61 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.61 seconds; peak allocated memory: 98.977 MB.
    Compiling (apcc) aes256ctr.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:48 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:37 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1741201678631688235688
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2767161680542557097224
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.71 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.71 seconds; peak allocated memory: 98.977 MB.
    Compiling (apcc) rounding.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:04:50 IST 2023
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:41 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/1741791678631690906327
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2767791680542561488088
 INFO: [APCC 202-1] APCC is done.
-INFO: [HLS 200-112] Total CPU user time: 1.39 seconds. Total CPU system time: 0.06 seconds. Total elapsed time: 1.35 seconds; peak allocated memory: 98.977 MB.
-   Compiling apatb_crypto_sign_ir.ll
    Generating cosim.tv.exe

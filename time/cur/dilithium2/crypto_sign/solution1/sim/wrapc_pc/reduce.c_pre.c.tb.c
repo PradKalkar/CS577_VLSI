@@ -1,18 +1,17 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
-// Tool Version Limit: 2019.12
-// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "/home/guest/Documents/vlsi/dilithium2/reduce.c"
-# 1 "/home/guest/Documents/vlsi/dilithium2/reduce.c" 1
+# 1 "/home/guest/Documents/experiments/dilithium_2/reduce.c"
+# 1 "/home/guest/Documents/experiments/dilithium_2/reduce.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/reduce.c" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
-# 34 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
+# 1 "/home/guest/Documents/experiments/dilithium_2/reduce.c" 2
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -229,52 +228,52 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 35 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 2 "/home/guest/Documents/vlsi/dilithium2/reduce.c" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/params.h" 1
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
+# 2 "/home/guest/Documents/experiments/dilithium_2/reduce.c" 2
+# 1 "/home/guest/Documents/experiments/dilithium_2/params.h" 1
 
 
 
-# 1 "/home/guest/Documents/vlsi/dilithium2/config.h" 1
-# 5 "/home/guest/Documents/vlsi/dilithium2/params.h" 2
-# 3 "/home/guest/Documents/vlsi/dilithium2/reduce.c" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/reduce.h" 1
-# 11 "/home/guest/Documents/vlsi/dilithium2/reduce.h"
-int32_t pqcrystals_dilithium2_ref_montgomery_reduce(int64_t a);
+# 1 "/home/guest/Documents/experiments/dilithium_2/config.h" 1
+# 5 "/home/guest/Documents/experiments/dilithium_2/params.h" 2
+# 3 "/home/guest/Documents/experiments/dilithium_2/reduce.c" 2
+# 1 "/home/guest/Documents/experiments/dilithium_2/reduce.h" 1
+# 11 "/home/guest/Documents/experiments/dilithium_2/reduce.h"
+int32_t montgomery_reduce(int64_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_reduce32(int32_t a);
+int32_t reduce32(int32_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_caddq(int32_t a);
+int32_t caddq(int32_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_freeze(int32_t a);
-# 4 "/home/guest/Documents/vlsi/dilithium2/reduce.c" 2
-# 15 "/home/guest/Documents/vlsi/dilithium2/reduce.c"
-int32_t pqcrystals_dilithium2_ref_montgomery_reduce(int64_t a) {
+int32_t freeze(int32_t a);
+# 4 "/home/guest/Documents/experiments/dilithium_2/reduce.c" 2
+# 15 "/home/guest/Documents/experiments/dilithium_2/reduce.c"
+int32_t montgomery_reduce(int64_t a) {
   int32_t t;
 
   t = (int32_t)a*58728449;
   t = (a - (int64_t)t*8380417) >> 32;
   return t;
 }
-# 33 "/home/guest/Documents/vlsi/dilithium2/reduce.c"
-int32_t pqcrystals_dilithium2_ref_reduce32(int32_t a) {
+# 33 "/home/guest/Documents/experiments/dilithium_2/reduce.c"
+int32_t reduce32(int32_t a) {
   int32_t t;
 
   t = (a + (1 << 22)) >> 23;
   t = a - t*8380417;
   return t;
 }
-# 50 "/home/guest/Documents/vlsi/dilithium2/reduce.c"
-int32_t pqcrystals_dilithium2_ref_caddq(int32_t a) {
+# 50 "/home/guest/Documents/experiments/dilithium_2/reduce.c"
+int32_t caddq(int32_t a) {
   a += (a >> 31) & 8380417;
   return a;
 }
-# 65 "/home/guest/Documents/vlsi/dilithium2/reduce.c"
-int32_t pqcrystals_dilithium2_ref_freeze(int32_t a) {
-  a = pqcrystals_dilithium2_ref_reduce32(a);
-  a = pqcrystals_dilithium2_ref_caddq(a);
+# 65 "/home/guest/Documents/experiments/dilithium_2/reduce.c"
+int32_t freeze(int32_t a) {
+  a = reduce32(a);
+  a = caddq(a);
   return a;
 }

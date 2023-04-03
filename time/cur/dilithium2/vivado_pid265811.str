@@ -1,0 +1,89 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 265811
+License: Customer
+
+Current time: 	Mon Apr 03 21:28:32 IST 2023
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: Ubuntu
+OS Version: 5.15.0-67-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 510 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	guest
+User home directory: /home/guest
+User working directory: /home/guest/Documents/experiments/dilithium_2
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/guest/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /home/guest/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /home/guest/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/guest/Documents/experiments/dilithium_2/vivado.log
+Vivado journal file location: 	/home/guest/Documents/experiments/dilithium_2/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-265811-cse-HP-ProDesk-600-G6-Microtower-PC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 962 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {iv*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 948 MB. GUI used memory: 47 MB. Current time: 4/3/23, 9:28:34 PM IST
+// Tcl Command: 'rdi::info_commands {viva*}'
+// Tcl Command: 'rdi::info_commands {vivao*}'
+// Tcl Command: 'rdi::info_commands {vivad*}'
+// Tcl Command: 'rdi::info_commands {vivado_*}'
+// Tcl Command: 'rdi::info_commands {vivado_hls*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "vivado_hls", true); // aF (ac, cr)
+// Tcl Command: 'vivado_hls'
+// Tcl Command: 'vivado_hls'
+// Tcl Message: vivado_hls 
+// bB (cr):  Tcl Command Line : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 953 MB. GUI used memory: 47 MB. Current time: 4/3/23, 9:58:34 PM IST
+// [GUI Memory]: 64 MB (+64755kb) [00:33:10]
+// [Engine Memory]: 953 MB (+847657kb) [00:33:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 940 MB. GUI used memory: 44 MB. Current time: 4/3/23, 10:28:34 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 940 MB. GUI used memory: 44 MB. Current time: 4/3/23, 10:58:34 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 940 MB. GUI used memory: 44 MB. Current time: 4/3/23, 11:28:34 PM IST

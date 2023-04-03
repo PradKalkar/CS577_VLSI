@@ -1,11 +1,16 @@
 # 1 "aes.c"
+# 1 "aes.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 338 "<built-in>" 3
+# 149 "<built-in>" 3
 # 1 "<command line>" 1
-# 1 "<built-in>" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 269 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+
+
+
+
+
+# 1 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 305 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
     void _ssdm_op_IfRead() __attribute__ ((nothrow));
     void _ssdm_op_IfWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead() __attribute__ ((nothrow));
@@ -20,23 +25,11 @@
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamNbWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanRead() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanWrite() __attribute__ ((nothrow));
-    void _ssdm_op_ReadReq() __attribute__ ((nothrow));
-    void _ssdm_op_Read() __attribute__ ((nothrow));
-    void _ssdm_op_WriteReq() __attribute__ ((nothrow));
-    void _ssdm_op_Write() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq() __attribute__ ((nothrow));
 
 
 
 
     void _ssdm_op_MemShiftRead() __attribute__ ((nothrow));
-
-    void _ssdm_op_PrintNone() __attribute__ ((nothrow));
-    void _ssdm_op_PrintInt() __attribute__ ((nothrow));
-    void _ssdm_op_PrintDouble() __attribute__ ((nothrow));
 
     void _ssdm_op_Wait() __attribute__ ((nothrow));
     void _ssdm_op_Poll() __attribute__ ((nothrow));
@@ -88,6 +81,7 @@
     void _ssdm_op_SpecFUCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIFCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIPCore() __attribute__ ((nothrow));
+    void _ssdm_op_SpecKeepValue() __attribute__ ((nothrow));
     void _ssdm_op_SpecMemCore() __attribute__ ((nothrow));
 
     void _ssdm_op_SpecExt() __attribute__ ((nothrow));
@@ -118,8 +112,6 @@
     void _ssdm_op_SpecStable() __attribute__ ((nothrow));
     void _ssdm_op_SpecStableContent() __attribute__ ((nothrow));
 
-    void _ssdm_op_SpecBindPort() __attribute__ ((nothrow));
-
     void _ssdm_op_SpecPipoDepth() __attribute__ ((nothrow));
 
     void _ssdm_SpecExpr() __attribute__ ((nothrow));
@@ -141,11 +133,12 @@
 
     void _ssdm_op_SpecBitsMap() __attribute__ ((nothrow));
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
-# 2 "<built-in>" 2
+# 7 "<command line>" 2
+# 1 "<built-in>" 2
 # 1 "aes.c" 2
 # 38 "aes.c"
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
-# 63 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -362,7 +355,7 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 64 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 39 "aes.c" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
@@ -374,9 +367,18 @@ typedef __uintmax_t uintmax_t;
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
-# 62 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3 4
-typedef long unsigned int size_t;
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 31 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
+
+
+
+typedef __typeof__(sizeof(int)) size_t;
+
+
+
+
+typedef int wchar_t;
 # 34 "/usr/include/string.h" 2 3 4
 # 43 "/usr/include/string.h" 3 4
 extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
@@ -544,7 +546,7 @@ extern char *strerror_l (int __errnum, locale_t __l) __attribute__ ((__nothrow__
 
 # 1 "/usr/include/strings.h" 1 3 4
 # 23 "/usr/include/strings.h" 3 4
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 # 24 "/usr/include/strings.h" 2 3 4
 # 34 "/usr/include/strings.h" 3 4
 extern int bcmp (const void *__s1, const void *__s2, size_t __n)
@@ -711,7 +713,7 @@ static void KeyExpansion(uint8_t* RoundKey, const uint8_t* Key)
   uint8_t tempa[4];
 
 
-  VITIS_LOOP_160_1: for (i = 0; i < 8; ++i)
+  for (i = 0; i < 8; ++i)
   {
     RoundKey[(i * 4) + 0] = Key[(i * 4) + 0];
     RoundKey[(i * 4) + 1] = Key[(i * 4) + 1];
@@ -720,7 +722,7 @@ static void KeyExpansion(uint8_t* RoundKey, const uint8_t* Key)
   }
 
 
-  VITIS_LOOP_169_2: for (i = 8; i < 4 * (14 + 1); ++i)
+  for (i = 8; i < 4 * (14 + 1); ++i)
   {
     {
       k = (i - 1) * 4;
@@ -882,7 +884,7 @@ static void InvMixColumns(state_t* state)
 {
   int i;
   uint8_t a, b, c, d;
-  VITIS_LOOP_358_1: for (i = 0; i < 4; ++i)
+  for (i = 0; i < 4; ++i)
   {
     a = (*state)[i][0];
     b = (*state)[i][1];
@@ -902,9 +904,9 @@ static void InvMixColumns(state_t* state)
 static void InvSubBytes(state_t* state)
 {
   uint8_t i, j;
-  VITIS_LOOP_378_1: for (i = 0; i < 4; ++i)
+  for (i = 0; i < 4; ++i)
   {
-    VITIS_LOOP_380_2: for (j = 0; j < 4; ++j)
+    for (j = 0; j < 4; ++j)
     {
       (*state)[j][i] = (rsbox[((*state)[j][i])]);
     }
@@ -942,7 +944,7 @@ static void InvShiftRows(state_t* state)
 
 
 static void Cipher(state_t* state2, uint8_t RoundKey[240])
-{
+{_ssdm_SpecArrayDimSize(RoundKey, 240);
   uint8_t round = 0;
 
 
@@ -1016,7 +1018,7 @@ static void InvCipher(state_t* state,uint8_t* RoundKey)
 
 
 
-  VITIS_LOOP_508_1: for (round = (14 - 1); round > 0; --round)
+  for (round = (14 - 1); round > 0; --round)
   {
     InvShiftRows(state);
     InvSubBytes(state);
@@ -1047,7 +1049,7 @@ void AES_ECB_decrypt(struct AES_ctx* ctx, uint8_t* buf)
 static void XorWithIv(uint8_t* buf, uint8_t* Iv)
 {
   uint8_t i;
-  VITIS_LOOP_556_1: for (i = 0; i < 16; ++i)
+  for (i = 0; i < 16; ++i)
   {
     buf[i] ^= Iv[i];
   }
@@ -1057,7 +1059,7 @@ void AES_CBC_encrypt_buffer(struct AES_ctx *ctx,uint8_t* buf, uint32_t length)
 {
   uintptr_t i;
   uint8_t *Iv = ctx->Iv;
-  VITIS_LOOP_566_1: for (i = 0; i < length; i += 16)
+  for (i = 0; i < length; i += 16)
   {
     XorWithIv(buf, Iv);
     Cipher((state_t*)buf, ctx->RoundKey);
@@ -1073,7 +1075,7 @@ void AES_CBC_decrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length)
 {
   uintptr_t i;
   uint8_t storeNextIv[16];
-  VITIS_LOOP_582_1: for (i = 0; i < length; i += 16)
+  for (i = 0; i < length; i += 16)
   {
     memcpy(storeNextIv, buf, 16);
     InvCipher((state_t*)buf, ctx->RoundKey);
@@ -1090,7 +1092,7 @@ void AES_CTR_xcrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length)
 
   unsigned i;
   int bi;
-  VITIS_LOOP_606_1: for (i = 0, bi = 16; i < length; ++i, ++bi)
+  for (i = 0, bi = 16; i < length; ++i, ++bi)
   {
     if (bi == 16)
     {
@@ -1099,7 +1101,7 @@ void AES_CTR_xcrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length)
       Cipher((state_t*)buffer,ctx->RoundKey);
 
 
-      VITIS_LOOP_615_2: for (bi = (16 - 1); bi >= 0; --bi)
+      for (bi = (16 - 1); bi >= 0; --bi)
       {
 
         if (ctx->Iv[bi] == 255)

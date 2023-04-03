@@ -199,8 +199,10 @@ void polyveck_reduce(polyveck *v) {
 void polyveck_caddq(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
+    // #pragma HLS pipeline
     poly_caddq(&v->vec[i]);
+  }
 }
 
 /*************************************************
@@ -302,8 +304,10 @@ void polyveck_invntt_tomont(polyveck *v) {
 void polyveck_pointwise_poly_montgomery(polyveck *r, const poly *a, const polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
+    #pragma HLS pipeline
     poly_pointwise_montgomery(&r->vec[i], a, &v->vec[i]);
+  }
 }
 
 

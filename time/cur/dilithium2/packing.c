@@ -41,12 +41,16 @@ void unpack_pk(uint8_t rho[SEEDBYTES],
 {
   unsigned int i;
 
-  for(i = 0; i < SEEDBYTES; ++i)
+  for(i = 0; i < SEEDBYTES; ++i){
+	#pragma HLS PIPELINE
     rho[i] = pk[i];
+  }
   pk += SEEDBYTES;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
+    #pragma HLS PIPELINE
     polyt1_unpack(&t1->vec[i], pk + i*POLYT1_PACKEDBYTES);
+  }
 }
 
 /*************************************************
@@ -119,28 +123,44 @@ void unpack_sk(uint8_t rho[SEEDBYTES],
 {
   unsigned int i;
 
-  for(i = 0; i < SEEDBYTES; ++i)
+  for(i = 0; i < SEEDBYTES; ++i){
+    #pragma HLS pipeline
     rho[i] = sk[i];
+  }
+
   sk += SEEDBYTES;
 
-  for(i = 0; i < SEEDBYTES; ++i)
+  for(i = 0; i < SEEDBYTES; ++i){
+    #pragma HLS pipeline
     key[i] = sk[i];
+  }
+
   sk += SEEDBYTES;
 
-  for(i = 0; i < CRHBYTES; ++i)
+  for(i = 0; i < CRHBYTES; ++i){
+    #pragma HLS pipeline
     tr[i] = sk[i];
+  }
   sk += CRHBYTES;
 
-  for(i=0; i < L; ++i)
+  for(i=0; i < L; ++i){
+    #pragma HLS pipeline
     polyeta_unpack(&s1->vec[i], sk + i*POLYETA_PACKEDBYTES);
+  }
+
   sk += L*POLYETA_PACKEDBYTES;
 
-  for(i=0; i < K; ++i)
+  for(i=0; i < K; ++i){
+    #pragma HLS pipeline
     polyeta_unpack(&s2->vec[i], sk + i*POLYETA_PACKEDBYTES);
+  }
+
   sk += K*POLYETA_PACKEDBYTES;
 
-  for(i=0; i < K; ++i)
+  for(i=0; i < K; ++i){
+    #pragma HLS pipeline
     polyt0_unpack(&t0->vec[i], sk + i*POLYT0_PACKEDBYTES);
+  }
 }
 
 /*************************************************
@@ -160,20 +180,31 @@ void pack_sig(uint8_t sig[CRYPTO_BYTES],
 {
   unsigned int i, j, k;
 
-  for(i=0; i < SEEDBYTES; ++i)
+  for(i=0; i < SEEDBYTES; ++i) // size 32
+  {
+    #pragma HLS pipeline
     sig[i] = c[i];
+  }
   sig += SEEDBYTES;
 
-  for(i = 0; i < L; ++i)
+  for(i = 0; i < L; ++i) // size 4
+  {
+    #pragma HLS pipeline
     polyz_pack(sig + i*POLYZ_PACKEDBYTES, &z->vec[i]);
+  }
+
   sig += L*POLYZ_PACKEDBYTES;
 
   /* Encode h */
-  for(i = 0; i < OMEGA + K; ++i)
+  for(i = 0; i < OMEGA + K; ++i) // 80 + 4
+  {
+    #pragma HLS pipeline
     sig[i] = 0;
+  }
 
   k = 0;
   for(i = 0; i < K; ++i) {
+    #pragma HLS pipeline
     for(j = 0; j < N; ++j)
       if(h->vec[i].coeffs[j] != 0)
         sig[k++] = j;

@@ -12,14 +12,14 @@ set axilite_register_dict [dict create]
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 335 \
+    id 112 \
     name sm \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename sm \
     op interface \
-    ports { sm_address0 { O 13 vector } sm_ce0 { O 1 bit } sm_we0 { O 1 bit } sm_d0 { O 8 vector } sm_q0 { I 8 vector } sm_address1 { O 13 vector } sm_ce1 { O 1 bit } sm_we1 { O 1 bit } sm_d1 { O 8 vector } sm_q1 { I 8 vector } } \
+    ports { sm_address0 { O 13 vector } sm_ce0 { O 1 bit } sm_we0 { O 1 bit } sm_d0 { O 8 vector } sm_q0 { I 8 vector } sm_address1 { O 13 vector } sm_ce1 { O 1 bit } sm_we1 { O 1 bit } sm_d1 { O 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'sm'"
@@ -31,7 +31,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 337 \
+    id 114 \
     name m \
     reset_level 1 \
     sync_rst true \
@@ -50,7 +50,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 339 \
+    id 116 \
     name sk \
     reset_level 1 \
     sync_rst true \
@@ -68,7 +68,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 336 \
+    id 113 \
     name smlen \
     type other \
     dir O \
@@ -83,7 +83,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 338 \
+    id 115 \
     name mlen \
     type other \
     dir I \

@@ -1,17 +1,15 @@
 # ==============================================================
-# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
-# Tool Version Limit: 2019.12
-# Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+# Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/fpo_v7_1:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/usr/lib/x86_64-linux-gnu
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vitis_HLS/2022.2/lib/lnx64.o/Ubuntu:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2019.2/lnx64/tools/fpo_v7_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2019.2/lnx64/tools/opencv:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2019.2/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2019.2/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx/Vivado/2019.2/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /usr/lib/x86_64-linux-gnu:$::env(LD_LIBRARY_PATH)
 
 source check_sim.tcl
-source dataflow_monitor_API.tcl
 
 proc cpvcdfromsctortl {} {
 	if {$::AESL_AUTOSIM::gDebug == 1} {
@@ -53,7 +51,7 @@ proc run_exec {fileExe} {
 		return -code error -errorcode 10
 	}
 	set err {}
-set ret [catch {eval exec "./$fileExe | tee tmp.log" >&@ stdout} err]
+	set ret [catch {eval exec "./$fileExe | tee tmp.log" >&@ stdout} err]
 	
 	cpfilecontent tmp.log ../../.temp11.log
 	
@@ -258,7 +256,6 @@ proc sim {} {
 	}
 	
 	set cmdret [catch {eval exec "sh ./run_xsim.sh | tee temp.log" >&@ stdout} err]
-    df_record_move
 	
 	cpfilecontent temp.log ../../.temp11.log
 	

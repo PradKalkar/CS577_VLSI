@@ -17,7 +17,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../PQCgenKAT_sign.c ../../../../symmetric-shake.c ../../../../symmetric-aes.c ../../../../sign.c ../../../../rounding.c ../../../../rng.c ../../../../reduce.c ../../../../polyvec.c ../../../../poly.c ../../../../packing.c ../../../../ntt.c ../../../../fips202.c ../../../../aes256ctr.c ../../../../aes.c
+HLS_SOURCES = ../../../../PQCgenKAT_sign.c ../../../../aes.c ../../../../aes256ctr.c ../../../../fips202.c ../../../../ntt.c ../../../../packing.c ../../../../poly.c ../../../../polyvec.c ../../../../reduce.c ../../../../rng.c ../../../../rounding.c ../../../../sign.c ../../../../symmetric-aes.c ../../../../symmetric-shake.c
 
 override TARGET := csim.exe
 
@@ -78,75 +78,15 @@ AUTOCC := apcc
 
 $(ObjDir)/PQCgenKAT_sign.o: ../../../../PQCgenKAT_sign.c $(ObjDir)/.dir
 	$(Echo) "   Compiling(apcc) ../../../../PQCgenKAT_sign.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(AUTOCC) -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/PQCgenKAT_sign.d
 
-$(ObjDir)/symmetric-shake.o: ../../../../symmetric-shake.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../symmetric-shake.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/aes.o: ../../../../aes.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../aes.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/symmetric-shake.d
-
-$(ObjDir)/symmetric-aes.o: ../../../../symmetric-aes.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../symmetric-aes.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/symmetric-aes.d
-
-$(ObjDir)/sign.o: ../../../../sign.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../sign.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/sign.d
-
-$(ObjDir)/rounding.o: ../../../../rounding.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../rounding.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/rounding.d
-
-$(ObjDir)/rng.o: ../../../../rng.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../rng.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/rng.d
-
-$(ObjDir)/reduce.o: ../../../../reduce.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../reduce.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/reduce.d
-
-$(ObjDir)/polyvec.o: ../../../../polyvec.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../polyvec.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/polyvec.d
-
-$(ObjDir)/poly.o: ../../../../poly.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../poly.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/poly.d
-
-$(ObjDir)/packing.o: ../../../../packing.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../packing.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/packing.d
-
-$(ObjDir)/ntt.o: ../../../../ntt.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../ntt.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/ntt.d
-
-$(ObjDir)/fips202.o: ../../../../fips202.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../fips202.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/fips202.d
+-include $(ObjDir)/aes.d
 
 $(ObjDir)/aes256ctr.o: ../../../../aes256ctr.c $(ObjDir)/.dir
 	$(Echo) "   Compiling(apcc) ../../../../aes256ctr.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
@@ -154,8 +94,68 @@ $(ObjDir)/aes256ctr.o: ../../../../aes256ctr.c $(ObjDir)/.dir
 
 -include $(ObjDir)/aes256ctr.d
 
-$(ObjDir)/aes.o: ../../../../aes.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../../aes.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/fips202.o: ../../../../fips202.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../fips202.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/aes.d
+-include $(ObjDir)/fips202.d
+
+$(ObjDir)/ntt.o: ../../../../ntt.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../ntt.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/ntt.d
+
+$(ObjDir)/packing.o: ../../../../packing.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../packing.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/packing.d
+
+$(ObjDir)/poly.o: ../../../../poly.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../poly.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/poly.d
+
+$(ObjDir)/polyvec.o: ../../../../polyvec.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../polyvec.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/polyvec.d
+
+$(ObjDir)/reduce.o: ../../../../reduce.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../reduce.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/reduce.d
+
+$(ObjDir)/rng.o: ../../../../rng.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../rng.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/rng.d
+
+$(ObjDir)/rounding.o: ../../../../rounding.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../rounding.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/rounding.d
+
+$(ObjDir)/sign.o: ../../../../sign.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../sign.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/sign.d
+
+$(ObjDir)/symmetric-aes.o: ../../../../symmetric-aes.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../symmetric-aes.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/symmetric-aes.d
+
+$(ObjDir)/symmetric-shake.o: ../../../../symmetric-shake.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../../symmetric-shake.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/symmetric-shake.d

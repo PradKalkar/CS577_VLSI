@@ -200,10 +200,13 @@ int crypto_sign(uint8_t sm[3300+CRYPTO_BYTES],
                 size_t mlen,
                 const uint8_t sk[CRYPTO_SECRETKEYBYTES])
 {
+//	  #pragma HLS LATENCY max=1 min=0
 	  size_t i;
-
-	  for(i = 0; i < mlen; ++i)
-	    sm[CRYPTO_BYTES + mlen - 1 - i] = m[mlen - 1 - i];
+//      mlen = 50;
+	  for(i = 0; i < mlen; ++i){
+		  #pragma HLS unroll factor =  2
+		  sm[CRYPTO_BYTES + mlen - 1 - i] = m[mlen - 1 - i];
+	  }
 
 	  crypto_sign_signature(sm, smlen, sm + CRYPTO_BYTES, mlen, sk);
 	  *smlen += mlen;
@@ -284,9 +287,10 @@ int crypto_sign_verify(const uint8_t *sig,
   shake256_absorb(&state, buf, K*POLYW1_PACKEDBYTES);
   shake256_finalize(&state);
   shake256_squeeze(c2, SEEDBYTES, &state);
-  for(i = 0; i < SEEDBYTES; ++i)
-    if(c[i] != c2[i])
+  for(i = 0; i < SEEDBYTES; ++i){
+	  if(c[i] != c2[i])
       return -1;
+  }
 
   return 0;
 }

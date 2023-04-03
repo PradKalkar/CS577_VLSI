@@ -1,1117 +1,928 @@
-#include <algorithm>
-#include <complex>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <exception>
-#include <fstream>
-#include <iomanip>
+// ==============================================================
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+// ==============================================================
+
+#include <systemc>
 #include <iostream>
-#include <map>
-#include "ap_fixed.h"
+#include <cstdlib>
+#include <cstddef>
+#include <stdint.h>
+#include "SysCFileHandler.h"
 #include "ap_int.h"
+#include "ap_fixed.h"
+#include <complex>
+#include <stdbool.h>
 #include "autopilot_cbe.h"
+#include "hls_stream.h"
 #include "hls_half.h"
 #include "hls_signal_handler.h"
-#include "hls_stream.h"
 
 using namespace std;
-
-// wrapc file define:
-#define AUTOTB_TVIN_sm "../tv/cdatafile/c.crypto_sign.autotvin_sm.dat"
-#define AUTOTB_TVOUT_sm "../tv/cdatafile/c.crypto_sign.autotvout_sm.dat"
-#define AUTOTB_TVIN_smlen "../tv/cdatafile/c.crypto_sign.autotvin_smlen.dat"
-#define AUTOTB_TVOUT_smlen "../tv/cdatafile/c.crypto_sign.autotvout_smlen.dat"
-#define AUTOTB_TVIN_m "../tv/cdatafile/c.crypto_sign.autotvin_m.dat"
-#define AUTOTB_TVOUT_m "../tv/cdatafile/c.crypto_sign.autotvout_m.dat"
-#define AUTOTB_TVIN_mlen "../tv/cdatafile/c.crypto_sign.autotvin_mlen.dat"
-#define AUTOTB_TVOUT_mlen "../tv/cdatafile/c.crypto_sign.autotvout_mlen.dat"
-#define AUTOTB_TVIN_sk "../tv/cdatafile/c.crypto_sign.autotvin_sk.dat"
-#define AUTOTB_TVOUT_sk "../tv/cdatafile/c.crypto_sign.autotvout_sk.dat"
-#define AUTOTB_TVOUT_return "../tv/cdatafile/c.crypto_sign.autotvout_ap_return.dat"
+using namespace sc_core;
+using namespace sc_dt;
 
 
-// tvout file define:
-#define AUTOTB_TVOUT_PC_sm "../tv/rtldatafile/rtl.crypto_sign.autotvout_sm.dat"
-#define AUTOTB_TVOUT_PC_smlen "../tv/rtldatafile/rtl.crypto_sign.autotvout_smlen.dat"
-#define AUTOTB_TVOUT_PC_return "../tv/rtldatafile/rtl.crypto_sign.autotvout_ap_return.dat"
+// [dump_struct_tree [build_nameSpaceTree] dumpedStructList] ---------->
 
 
-namespace hls::sim
+// [dump_enumeration [get_enumeration_list]] ---------->
+
+
+// wrapc file define: "sm"
+#define AUTOTB_TVIN_sm  "../tv/cdatafile/c.crypto_sign.autotvin_sm.dat"
+#define AUTOTB_TVOUT_sm  "../tv/cdatafile/c.crypto_sign.autotvout_sm.dat"
+// wrapc file define: "smlen"
+#define AUTOTB_TVOUT_smlen  "../tv/cdatafile/c.crypto_sign.autotvout_smlen.dat"
+// wrapc file define: "m"
+#define AUTOTB_TVIN_m  "../tv/cdatafile/c.crypto_sign.autotvin_m.dat"
+// wrapc file define: "mlen"
+#define AUTOTB_TVIN_mlen  "../tv/cdatafile/c.crypto_sign.autotvin_mlen.dat"
+// wrapc file define: "sk"
+#define AUTOTB_TVIN_sk  "../tv/cdatafile/c.crypto_sign.autotvin_sk.dat"
+// wrapc file define: "ap_return"
+#define AUTOTB_TVOUT_ap_return  "../tv/cdatafile/c.crypto_sign.autotvout_ap_return.dat"
+
+#define INTER_TCL  "../tv/cdatafile/ref.tcl"
+
+// tvout file define: "sm"
+#define AUTOTB_TVOUT_PC_sm  "../tv/rtldatafile/rtl.crypto_sign.autotvout_sm.dat"
+// tvout file define: "smlen"
+#define AUTOTB_TVOUT_PC_smlen  "../tv/rtldatafile/rtl.crypto_sign.autotvout_smlen.dat"
+// tvout file define: "ap_return"
+#define AUTOTB_TVOUT_PC_ap_return  "../tv/rtldatafile/rtl.crypto_sign.autotvout_ap_return.dat"
+
+class INTER_TCL_FILE {
+	public:
+		INTER_TCL_FILE(const char* name) {
+			mName = name;
+			sm_depth = 0;
+			smlen_depth = 0;
+			m_depth = 0;
+			mlen_depth = 0;
+			sk_depth = 0;
+			ap_return_depth = 0;
+			trans_num =0;
+		}
+
+		~INTER_TCL_FILE() {
+			mFile.open(mName);
+			if (!mFile.good()) {
+				cout << "Failed to open file ref.tcl" << endl;
+				exit (1);
+			}
+			string total_list = get_depth_list();
+			mFile << "set depth_list {\n";
+			mFile << total_list;
+			mFile << "}\n";
+			mFile << "set trans_num "<<trans_num<<endl;
+			mFile.close();
+		}
+
+		string get_depth_list () {
+			stringstream total_list;
+			total_list << "{sm " << sm_depth << "}\n";
+			total_list << "{smlen " << smlen_depth << "}\n";
+			total_list << "{m " << m_depth << "}\n";
+			total_list << "{mlen " << mlen_depth << "}\n";
+			total_list << "{sk " << sk_depth << "}\n";
+			total_list << "{ap_return " << ap_return_depth << "}\n";
+			return total_list.str();
+		}
+
+		void set_num (int num , int* class_num) {
+			(*class_num) = (*class_num) > num ? (*class_num) : num;
+		}
+	public:
+		int sm_depth;
+		int smlen_depth;
+		int m_depth;
+		int mlen_depth;
+		int sk_depth;
+		int ap_return_depth;
+		int trans_num;
+
+	private:
+		ofstream mFile;
+		const char* mName;
+};
+
+extern "C" int crypto_sign (
+char sm[5720],
+long long* smlen,
+char m[3300],
+long long mlen,
+char sk[2544]);
+
+extern "C" int AESL_WRAP_crypto_sign (
+char sm[5720],
+long long* smlen,
+char m[3300],
+long long mlen,
+char sk[2544])
 {
-  template<size_t n>
-  struct Byte {
-    unsigned char a[n];
+	refine_signal_handler();
+	fstream wrapc_switch_file_token;
+	wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
+	int AESL_i;
+	if (wrapc_switch_file_token.good())
+	{
+		CodeState = ENTER_WRAPC_PC;
+		static unsigned AESL_transaction_pc = 0;
+		string AESL_token;
+		string AESL_num;
+		static AESL_FILE_HANDLER aesl_fh;
 
-    Byte()
-    {
-      for (size_t i = 0; i < n; ++i) {
-        a[i] = 0;
-      }
-    }
+		int AESL_return;
 
-    template<typename T>
-    Byte<n>& operator= (const T &val)
-    {
-      std::memcpy(a, &val, n);
-      return *this;
-    }
-  };
+		// output port post check: "sm"
+		aesl_fh.read(AUTOTB_TVOUT_PC_sm, AESL_token); // [[transaction]]
+		if (AESL_token != "[[transaction]]")
+		{
+			exit(1);
+		}
+		aesl_fh.read(AUTOTB_TVOUT_PC_sm, AESL_num); // transaction number
 
-  struct SimException : public std::exception {
-    const char *msg;
-    const size_t line;
-    SimException(const char *msg, const size_t line)
-      : msg(msg), line(line)
-    {
-    }
-  };
+		if (atoi(AESL_num.c_str()) == AESL_transaction_pc)
+		{
+			aesl_fh.read(AUTOTB_TVOUT_PC_sm, AESL_token); // data
 
-  void errExit(const size_t line, const char *msg)
-  {
-    std::string s;
-    s += "at line ";
-    s += std::to_string(line);
-    s += " occurred problem: ";
-    s += msg;
-    s += "\n";
-    fputs(s.c_str(), stderr);
-    exit(1);
-  }
+			sc_bv<8> *sm_pc_buffer = new sc_bv<8>[5720];
+			int i = 0;
+
+			while (AESL_token != "[[/transaction]]")
+			{
+				bool no_x = false;
+				bool err = false;
+
+				// search and replace 'X' with "0" from the 1st char of token
+				while (!no_x)
+				{
+					size_t x_found = AESL_token.find('X');
+					if (x_found != string::npos)
+					{
+						if (!err)
+						{
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'sm', possible cause: There are uninitialized variables in the C design." << endl;
+							err = true;
+						}
+						AESL_token.replace(x_found, 1, "0");
+					}
+					else
+					{
+						no_x = true;
+					}
+				}
+
+				no_x = false;
+
+				// search and replace 'x' with "0" from the 3rd char of token
+				while (!no_x)
+				{
+					size_t x_found = AESL_token.find('x', 2);
+
+					if (x_found != string::npos)
+					{
+						if (!err)
+						{
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'sm', possible cause: There are uninitialized variables in the C design." << endl;
+							err = true;
+						}
+						AESL_token.replace(x_found, 1, "0");
+					}
+					else
+					{
+						no_x = true;
+					}
+				}
+
+				// push token into output port buffer
+				if (AESL_token != "")
+				{
+					sm_pc_buffer[i] = AESL_token.c_str();
+					i++;
+				}
+
+				aesl_fh.read(AUTOTB_TVOUT_PC_sm, AESL_token); // data or [[/transaction]]
+
+				if (AESL_token == "[[[/runtime]]]" || aesl_fh.eof(AUTOTB_TVOUT_PC_sm))
+				{
+					exit(1);
+				}
+			}
+
+			// ***********************************
+			if (i > 0)
+			{
+				// RTL Name: sm
+				{
+					// bitslice(7, 0)
+					// {
+						// celement: sm(7, 0)
+						// {
+							sc_lv<8>* sm_lv0_0_5719_1 = new sc_lv<8>[5720];
+						// }
+					// }
+
+					// bitslice(7, 0)
+					{
+						int hls_map_index = 0;
+						// celement: sm(7, 0)
+						{
+							// carray: (0) => (5719) @ (1)
+							for (int i_0 = 0; i_0 <= 5719; i_0 += 1)
+							{
+								if (&(sm[0]) != NULL) // check the null address if the c port is array or others
+								{
+									sm_lv0_0_5719_1[hls_map_index].range(7, 0) = sc_bv<8>(sm_pc_buffer[hls_map_index].range(7, 0));
+									hls_map_index++;
+								}
+							}
+						}
+					}
+
+					// bitslice(7, 0)
+					{
+						int hls_map_index = 0;
+						// celement: sm(7, 0)
+						{
+							// carray: (0) => (5719) @ (1)
+							for (int i_0 = 0; i_0 <= 5719; i_0 += 1)
+							{
+								// sub                    : i_0
+								// ori_name               : sm[i_0]
+								// sub_1st_elem           : 0
+								// ori_name_1st_elem      : sm[0]
+								// output_left_conversion : sm[i_0]
+								// output_type_conversion : (sm_lv0_0_5719_1[hls_map_index]).to_uint64()
+								if (&(sm[0]) != NULL) // check the null address if the c port is array or others
+								{
+									sm[i_0] = (sm_lv0_0_5719_1[hls_map_index]).to_uint64();
+									hls_map_index++;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// release memory allocation
+			delete [] sm_pc_buffer;
+		}
+
+		// output port post check: "smlen"
+		aesl_fh.read(AUTOTB_TVOUT_PC_smlen, AESL_token); // [[transaction]]
+		if (AESL_token != "[[transaction]]")
+		{
+			exit(1);
+		}
+		aesl_fh.read(AUTOTB_TVOUT_PC_smlen, AESL_num); // transaction number
+
+		if (atoi(AESL_num.c_str()) == AESL_transaction_pc)
+		{
+			aesl_fh.read(AUTOTB_TVOUT_PC_smlen, AESL_token); // data
+
+			sc_bv<64> *smlen_pc_buffer = new sc_bv<64>[1];
+			int i = 0;
+
+			while (AESL_token != "[[/transaction]]")
+			{
+				bool no_x = false;
+				bool err = false;
+
+				// search and replace 'X' with "0" from the 1st char of token
+				while (!no_x)
+				{
+					size_t x_found = AESL_token.find('X');
+					if (x_found != string::npos)
+					{
+						if (!err)
+						{
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'smlen', possible cause: There are uninitialized variables in the C design." << endl;
+							err = true;
+						}
+						AESL_token.replace(x_found, 1, "0");
+					}
+					else
+					{
+						no_x = true;
+					}
+				}
+
+				no_x = false;
+
+				// search and replace 'x' with "0" from the 3rd char of token
+				while (!no_x)
+				{
+					size_t x_found = AESL_token.find('x', 2);
+
+					if (x_found != string::npos)
+					{
+						if (!err)
+						{
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'smlen', possible cause: There are uninitialized variables in the C design." << endl;
+							err = true;
+						}
+						AESL_token.replace(x_found, 1, "0");
+					}
+					else
+					{
+						no_x = true;
+					}
+				}
+
+				// push token into output port buffer
+				if (AESL_token != "")
+				{
+					smlen_pc_buffer[i] = AESL_token.c_str();
+					i++;
+				}
+
+				aesl_fh.read(AUTOTB_TVOUT_PC_smlen, AESL_token); // data or [[/transaction]]
+
+				if (AESL_token == "[[[/runtime]]]" || aesl_fh.eof(AUTOTB_TVOUT_PC_smlen))
+				{
+					exit(1);
+				}
+			}
+
+			// ***********************************
+			if (i > 0)
+			{
+				// RTL Name: smlen
+				{
+					// bitslice(63, 0)
+					// {
+						// celement: smlen(63, 0)
+						// {
+							sc_lv<64>* smlen_lv0_0_0_1 = new sc_lv<64>[1];
+						// }
+					// }
+
+					// bitslice(63, 0)
+					{
+						int hls_map_index = 0;
+						// celement: smlen(63, 0)
+						{
+							// carray: (0) => (0) @ (1)
+							for (int i_0 = 0; i_0 <= 0; i_0 += 1)
+							{
+								if (&(smlen[0]) != NULL) // check the null address if the c port is array or others
+								{
+									smlen_lv0_0_0_1[hls_map_index].range(63, 0) = sc_bv<64>(smlen_pc_buffer[hls_map_index].range(63, 0));
+									hls_map_index++;
+								}
+							}
+						}
+					}
+
+					// bitslice(63, 0)
+					{
+						int hls_map_index = 0;
+						// celement: smlen(63, 0)
+						{
+							// carray: (0) => (0) @ (1)
+							for (int i_0 = 0; i_0 <= 0; i_0 += 1)
+							{
+								// sub                    : i_0
+								// ori_name               : smlen[i_0]
+								// sub_1st_elem           : 0
+								// ori_name_1st_elem      : smlen[0]
+								// output_left_conversion : smlen[i_0]
+								// output_type_conversion : (smlen_lv0_0_0_1[hls_map_index]).to_uint64()
+								if (&(smlen[0]) != NULL) // check the null address if the c port is array or others
+								{
+									smlen[i_0] = (smlen_lv0_0_0_1[hls_map_index]).to_uint64();
+									hls_map_index++;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// release memory allocation
+			delete [] smlen_pc_buffer;
+		}
+
+		// output port post check: "ap_return"
+		aesl_fh.read(AUTOTB_TVOUT_PC_ap_return, AESL_token); // [[transaction]]
+		if (AESL_token != "[[transaction]]")
+		{
+			exit(1);
+		}
+		aesl_fh.read(AUTOTB_TVOUT_PC_ap_return, AESL_num); // transaction number
+
+		if (atoi(AESL_num.c_str()) == AESL_transaction_pc)
+		{
+			aesl_fh.read(AUTOTB_TVOUT_PC_ap_return, AESL_token); // data
+
+			sc_bv<32> ap_return_pc_buffer;
+			int i = 0;
+
+			while (AESL_token != "[[/transaction]]")
+			{
+				bool no_x = false;
+				bool err = false;
+
+				// search and replace 'X' with "0" from the 1st char of token
+				while (!no_x)
+				{
+					size_t x_found = AESL_token.find('X');
+					if (x_found != string::npos)
+					{
+						if (!err)
+						{
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'ap_return', possible cause: There are uninitialized variables in the C design." << endl;
+							err = true;
+						}
+						AESL_token.replace(x_found, 1, "0");
+					}
+					else
+					{
+						no_x = true;
+					}
+				}
+
+				no_x = false;
+
+				// search and replace 'x' with "0" from the 3rd char of token
+				while (!no_x)
+				{
+					size_t x_found = AESL_token.find('x', 2);
+
+					if (x_found != string::npos)
+					{
+						if (!err)
+						{
+							cerr << "WARNING: [SIM 212-201] RTL produces unknown value 'X' on port 'ap_return', possible cause: There are uninitialized variables in the C design." << endl;
+							err = true;
+						}
+						AESL_token.replace(x_found, 1, "0");
+					}
+					else
+					{
+						no_x = true;
+					}
+				}
+
+				// push token into output port buffer
+				if (AESL_token != "")
+				{
+					ap_return_pc_buffer = AESL_token.c_str();
+					i++;
+				}
+
+				aesl_fh.read(AUTOTB_TVOUT_PC_ap_return, AESL_token); // data or [[/transaction]]
+
+				if (AESL_token == "[[[/runtime]]]" || aesl_fh.eof(AUTOTB_TVOUT_PC_ap_return))
+				{
+					exit(1);
+				}
+			}
+
+			// ***********************************
+			if (i > 0)
+			{
+				// RTL Name: ap_return
+				{
+					// bitslice(31, 0)
+					// {
+						// celement: return(31, 0)
+						// {
+							sc_lv<32> return_lv0_0_1_0;
+						// }
+					// }
+
+					// bitslice(31, 0)
+					{
+						// celement: return(31, 0)
+						{
+							// carray: (0) => (1) @ (0)
+							{
+								if (&(AESL_return) != NULL) // check the null address if the c port is array or others
+								{
+									return_lv0_0_1_0.range(31, 0) = sc_bv<32>(ap_return_pc_buffer.range(31, 0));
+								}
+							}
+						}
+					}
+
+					// bitslice(31, 0)
+					{
+						// celement: return(31, 0)
+						{
+							// carray: (0) => (1) @ (0)
+							{
+								// sub                    : 
+								// ori_name               : AESL_return
+								// sub_1st_elem           : 
+								// ori_name_1st_elem      : AESL_return
+								// output_left_conversion : AESL_return
+								// output_type_conversion : (return_lv0_0_1_0).to_uint64()
+								if (&(AESL_return) != NULL) // check the null address if the c port is array or others
+								{
+									AESL_return = (return_lv0_0_1_0).to_uint64();
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		AESL_transaction_pc++;
+
+		return AESL_return;
+	}
+	else
+	{
+		CodeState = ENTER_WRAPC;
+		static unsigned AESL_transaction;
+
+		static AESL_FILE_HANDLER aesl_fh;
+
+		// "sm"
+		char* tvin_sm = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_sm);
+		char* tvout_sm = new char[50];
+		aesl_fh.touch(AUTOTB_TVOUT_sm);
+
+		// "smlen"
+		char* tvout_smlen = new char[50];
+		aesl_fh.touch(AUTOTB_TVOUT_smlen);
+
+		// "m"
+		char* tvin_m = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_m);
+
+		// "mlen"
+		char* tvin_mlen = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_mlen);
+
+		// "sk"
+		char* tvin_sk = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_sk);
+
+		// "ap_return"
+		char* tvout_ap_return = new char[50];
+		aesl_fh.touch(AUTOTB_TVOUT_ap_return);
+
+		CodeState = DUMP_INPUTS;
+		static INTER_TCL_FILE tcl_file(INTER_TCL);
+		int leading_zero;
+
+		// [[transaction]]
+		sprintf(tvin_sm, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_sm, tvin_sm);
+
+		sc_bv<8>* sm_tvin_wrapc_buffer = new sc_bv<8>[5720];
+
+		// RTL Name: sm
+		{
+			// bitslice(7, 0)
+			{
+				int hls_map_index = 0;
+				// celement: sm(7, 0)
+				{
+					// carray: (0) => (5719) @ (1)
+					for (int i_0 = 0; i_0 <= 5719; i_0 += 1)
+					{
+						// sub                   : i_0
+						// ori_name              : sm[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : sm[0]
+						// regulate_c_name       : sm
+						// input_type_conversion : sm[i_0]
+						if (&(sm[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<8> sm_tmp_mem;
+							sm_tmp_mem = sm[i_0];
+							sm_tvin_wrapc_buffer[hls_map_index].range(7, 0) = sm_tmp_mem.range(7, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 5720; i++)
+		{
+			sprintf(tvin_sm, "%s\n", (sm_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_sm, tvin_sm);
+		}
+
+		tcl_file.set_num(5720, &tcl_file.sm_depth);
+		sprintf(tvin_sm, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_sm, tvin_sm);
+
+		// release memory allocation
+		delete [] sm_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_m, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_m, tvin_m);
+
+		sc_bv<8>* m_tvin_wrapc_buffer = new sc_bv<8>[3300];
+
+		// RTL Name: m
+		{
+			// bitslice(7, 0)
+			{
+				int hls_map_index = 0;
+				// celement: m(7, 0)
+				{
+					// carray: (0) => (3299) @ (1)
+					for (int i_0 = 0; i_0 <= 3299; i_0 += 1)
+					{
+						// sub                   : i_0
+						// ori_name              : m[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : m[0]
+						// regulate_c_name       : m
+						// input_type_conversion : m[i_0]
+						if (&(m[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<8> m_tmp_mem;
+							m_tmp_mem = m[i_0];
+							m_tvin_wrapc_buffer[hls_map_index].range(7, 0) = m_tmp_mem.range(7, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 3300; i++)
+		{
+			sprintf(tvin_m, "%s\n", (m_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_m, tvin_m);
+		}
+
+		tcl_file.set_num(3300, &tcl_file.m_depth);
+		sprintf(tvin_m, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_m, tvin_m);
+
+		// release memory allocation
+		delete [] m_tvin_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvin_mlen, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_mlen, tvin_mlen);
+
+		sc_bv<64> mlen_tvin_wrapc_buffer;
+
+		// RTL Name: mlen
+		{
+			// bitslice(63, 0)
+			{
+				// celement: mlen(63, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : mlen
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : mlen
+						// regulate_c_name       : mlen
+						// input_type_conversion : mlen
+						if (&(mlen) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<64> mlen_tmp_mem;
+							mlen_tmp_mem = mlen;
+							mlen_tvin_wrapc_buffer.range(63, 0) = mlen_tmp_mem.range(63, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_mlen, "%s\n", (mlen_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_mlen, tvin_mlen);
+		}
+
+		tcl_file.set_num(1, &tcl_file.mlen_depth);
+		sprintf(tvin_mlen, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_mlen, tvin_mlen);
+
+		// [[transaction]]
+		sprintf(tvin_sk, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_sk, tvin_sk);
+
+		sc_bv<8>* sk_tvin_wrapc_buffer = new sc_bv<8>[2544];
+
+		// RTL Name: sk
+		{
+			// bitslice(7, 0)
+			{
+				int hls_map_index = 0;
+				// celement: sk(7, 0)
+				{
+					// carray: (0) => (2543) @ (1)
+					for (int i_0 = 0; i_0 <= 2543; i_0 += 1)
+					{
+						// sub                   : i_0
+						// ori_name              : sk[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : sk[0]
+						// regulate_c_name       : sk
+						// input_type_conversion : sk[i_0]
+						if (&(sk[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<8> sk_tmp_mem;
+							sk_tmp_mem = sk[i_0];
+							sk_tvin_wrapc_buffer[hls_map_index].range(7, 0) = sk_tmp_mem.range(7, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 2544; i++)
+		{
+			sprintf(tvin_sk, "%s\n", (sk_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_sk, tvin_sk);
+		}
+
+		tcl_file.set_num(2544, &tcl_file.sk_depth);
+		sprintf(tvin_sk, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_sk, tvin_sk);
+
+		// release memory allocation
+		delete [] sk_tvin_wrapc_buffer;
+
+// [call_c_dut] ---------->
+
+		CodeState = CALL_C_DUT;
+		int AESL_return = crypto_sign(sm, smlen, m, mlen, sk);
+
+		CodeState = DUMP_OUTPUTS;
+
+		// [[transaction]]
+		sprintf(tvout_sm, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVOUT_sm, tvout_sm);
+
+		sc_bv<8>* sm_tvout_wrapc_buffer = new sc_bv<8>[5720];
+
+		// RTL Name: sm
+		{
+			// bitslice(7, 0)
+			{
+				int hls_map_index = 0;
+				// celement: sm(7, 0)
+				{
+					// carray: (0) => (5719) @ (1)
+					for (int i_0 = 0; i_0 <= 5719; i_0 += 1)
+					{
+						// sub                   : i_0
+						// ori_name              : sm[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : sm[0]
+						// regulate_c_name       : sm
+						// input_type_conversion : sm[i_0]
+						if (&(sm[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<8> sm_tmp_mem;
+							sm_tmp_mem = sm[i_0];
+							sm_tvout_wrapc_buffer[hls_map_index].range(7, 0) = sm_tmp_mem.range(7, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 5720; i++)
+		{
+			sprintf(tvout_sm, "%s\n", (sm_tvout_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVOUT_sm, tvout_sm);
+		}
+
+		tcl_file.set_num(5720, &tcl_file.sm_depth);
+		sprintf(tvout_sm, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVOUT_sm, tvout_sm);
+
+		// release memory allocation
+		delete [] sm_tvout_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvout_smlen, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVOUT_smlen, tvout_smlen);
+
+		sc_bv<64>* smlen_tvout_wrapc_buffer = new sc_bv<64>[1];
+
+		// RTL Name: smlen
+		{
+			// bitslice(63, 0)
+			{
+				int hls_map_index = 0;
+				// celement: smlen(63, 0)
+				{
+					// carray: (0) => (0) @ (1)
+					for (int i_0 = 0; i_0 <= 0; i_0 += 1)
+					{
+						// sub                   : i_0
+						// ori_name              : smlen[i_0]
+						// sub_1st_elem          : 0
+						// ori_name_1st_elem     : smlen[0]
+						// regulate_c_name       : smlen
+						// input_type_conversion : smlen[i_0]
+						if (&(smlen[0]) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<64> smlen_tmp_mem;
+							smlen_tmp_mem = smlen[i_0];
+							smlen_tvout_wrapc_buffer[hls_map_index].range(63, 0) = smlen_tmp_mem.range(63, 0);
+                                 	       hls_map_index++;
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvout_smlen, "%s\n", (smlen_tvout_wrapc_buffer[i]).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVOUT_smlen, tvout_smlen);
+		}
+
+		tcl_file.set_num(1, &tcl_file.smlen_depth);
+		sprintf(tvout_smlen, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVOUT_smlen, tvout_smlen);
+
+		// release memory allocation
+		delete [] smlen_tvout_wrapc_buffer;
+
+		// [[transaction]]
+		sprintf(tvout_ap_return, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVOUT_ap_return, tvout_ap_return);
+
+		sc_bv<32> ap_return_tvout_wrapc_buffer;
+
+		// RTL Name: ap_return
+		{
+			// bitslice(31, 0)
+			{
+				// celement: return(31, 0)
+				{
+					// carray: (0) => (1) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : AESL_return
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : AESL_return
+						// regulate_c_name       : return
+						// input_type_conversion : AESL_return
+						if (&(AESL_return) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<32> return_tmp_mem;
+							return_tmp_mem = AESL_return;
+							ap_return_tvout_wrapc_buffer.range(31, 0) = return_tmp_mem.range(31, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvout_ap_return, "%s\n", (ap_return_tvout_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVOUT_ap_return, tvout_ap_return);
+		}
+
+		tcl_file.set_num(1, &tcl_file.ap_return_depth);
+		sprintf(tvout_ap_return, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVOUT_ap_return, tvout_ap_return);
+
+		CodeState = DELETE_CHAR_BUFFERS;
+		// release memory allocation: "sm"
+		delete [] tvin_sm;
+		delete [] tvout_sm;
+		// release memory allocation: "smlen"
+		delete [] tvout_smlen;
+		// release memory allocation: "m"
+		delete [] tvin_m;
+		// release memory allocation: "mlen"
+		delete [] tvin_mlen;
+		// release memory allocation: "sk"
+		delete [] tvin_sk;
+		// release memory allocation: "ap_return"
+		delete [] tvout_ap_return;
+
+		AESL_transaction++;
+
+		tcl_file.set_num(AESL_transaction , &tcl_file.trans_num);
+
+		return AESL_return;
+	}
 }
 
-namespace hls::sim
-{
-  const bool little_endian()
-  {
-    int a = 1;
-    return *(char*)&a == 1;
-  }
-
-  inline void rev_endian(unsigned char *p, size_t nbytes)
-  {
-    std::reverse(p, p+nbytes);
-  }
-
-  const bool LE = little_endian();
-
-  inline size_t least_nbyte(size_t width)
-  {
-    return (width+7)>>3;
-  }
-
-  std::string formatData(unsigned char *pos, size_t wbits)
-  {
-    size_t wbytes = least_nbyte(wbits);
-    size_t i = LE ? wbytes-1 : 0;
-    auto next = [&] () {
-      auto c = pos[i];
-      LE ? --i : ++i;
-      return c;
-    };
-    std::ostringstream ss;
-    ss << "0x";
-    if (int t = (wbits & 0x7)) {
-      if (t <= 4) {
-        unsigned char mask = (1<<t)-1;
-        ss << std::hex << std::setfill('0') << std::setw(1)
-           << (int) (next() & mask);
-        wbytes -= 1;
-      }
-    }
-    for (size_t i = 0; i < wbytes; ++i) {
-      ss << std::hex << std::setfill('0') << std::setw(2) << (int)next();
-    }
-    return ss.str();
-  }
-
-  char ord(char c)
-  {
-    if (c >= 'a' && c <= 'f') {
-      return c-'a'+10;
-    } else if (c >= 'A' && c <= 'F') {
-      return c-'A'+10;
-    } else if (c >= '0' && c <= '9') {
-      return c-'0';
-    } else {
-      throw SimException("Not Hexdecimal Digit", __LINE__);
-    }
-  }
-
-  void unformatData(const char *data, unsigned char *put)
-  {
-    size_t wbytes = (strlen(data)-2+1)>>1;
-    put = LE ? put : put+wbytes-1;
-    auto nextp = [&] () {
-      return LE ? put++ : put--;
-    };
-    const char *c = data + strlen(data) - 1;
-    auto next = [&] () {
-      char res = ord(*c);
-      --c;
-      return res;
-    };
-    size_t fbytes = (strlen(data)-2)>>1;
-    for (size_t i = 0; i < fbytes; ++i) {
-      char l = next();
-      char h = next();
-      *nextp() = (h<<4)+l;
-    }
-    if (wbytes > fbytes) {
-      *nextp() = next();
-    }
-  }
-
-  char* strip(char *s)
-  {
-    while (isspace(*s)) {
-      ++s;
-    }
-    for (char *p = s+strlen(s)-1; p >= s; --p) {
-      if (isspace(*p)) {
-        *p = 0;
-      } else {
-        return s;
-      }
-    }
-    return s;
-  }
-
-  size_t sum(const std::vector<size_t> &v)
-  {
-    size_t res = 0;
-    for (const auto &e : v) {
-      res += e;
-    }
-    return res;
-  }
-
-  const char* bad = "Bad TV file";
-  const char* err = "Error on TV file";
-
-  const unsigned char bmark[] = {
-    0x5a, 0x5a, 0xa5, 0xa5, 0x0f, 0x0f, 0xf0, 0xf0
-  };
-
-#ifdef USE_BINARY_TV_FILE
-  class Input {
-    FILE *fp;
-    long pos;
-
-    void read(unsigned char *buf, size_t size)
-    {
-      if (fread(buf, size, 1, fp) != 1) {
-        throw SimException(bad, __LINE__);
-      }
-      if (LE) {
-        rev_endian(buf, size);
-      }
-    }
-
-  public:
-    void advance(size_t nbytes)
-    {
-      if (fseek(fp, nbytes, SEEK_CUR) == -1) {
-        throw SimException(bad, __LINE__);
-      }
-    }
-
-    Input(const char *path) : fp(nullptr)
-    {
-      fp = fopen(path, "rb");
-      if (fp == nullptr) {
-        errExit(__LINE__, err);
-      }
-    }
-
-    void begin()
-    {
-      advance(8);
-      pos = ftell(fp);
-    }
-
-    void reset()
-    {
-      fseek(fp, pos, SEEK_SET);
-    }
-
-    void into(unsigned char *param, size_t wbytes, size_t psize, size_t depth)
-    {
-      for (size_t i = 0; i < depth; ++i) {
-        read(param, wbytes);
-        param += psize;
-      }
-    }
-
-    ~Input()
-    {
-      unsigned char buf[8];
-      size_t res = fread(buf, 8, 1, fp);
-      fclose(fp);
-      if (res != 1) {
-        errExit(__LINE__, bad);
-      }
-      if (std::memcmp(buf, bmark, 8) != 0) {
-        errExit(__LINE__, bad);
-      }
-    }
-  };
-
-  class Output {
-    FILE *fp;
-
-    void write(unsigned char *buf, size_t size)
-    {
-      if (LE) {
-        rev_endian(buf, size);
-      }
-      if (fwrite(buf, size, 1, fp) != 1) {
-        throw SimException(err, __LINE__);
-      }
-      if (LE) {
-        rev_endian(buf, size);
-      }
-    }
-
-  public:
-    Output(const char *path) : fp(nullptr)
-    {
-      fp = fopen(path, "wb");
-      if (fp == nullptr) {
-        errExit(__LINE__, err);
-      }
-    }
-
-    void begin(size_t total)
-    {
-      unsigned char buf[8] = {0};
-      std::memcpy(buf, &total, sizeof(buf));
-      write(buf, sizeof(buf));
-    }
-
-    void from(unsigned char *param, size_t wbytes, size_t psize, size_t depth, size_t skip)
-    {
-      param -= psize*skip;
-      for (size_t i = 0; i < depth; ++i) {
-        write(param, wbytes);
-        param += psize;
-      }
-    }
-
-    ~Output()
-    {
-      size_t res = fwrite(bmark, 8, 1, fp);
-      fclose(fp);
-      if (res != 1) {
-        errExit(__LINE__, err);
-      }
-    }
-  };
-#endif
-
-  class Reader {
-    FILE *fp;
-    long pos;
-    int size;
-    char *s;
-
-    void readline()
-    {
-      s = fgets(s, size, fp);
-      if (s == nullptr) {
-        throw SimException(bad, __LINE__);
-      }
-    }
-
-  public:
-    Reader(const char *path) : fp(nullptr), size(1<<12), s(new char[size])
-    {
-      try {
-        fp = fopen(path, "r");
-        if (fp == nullptr) {
-          throw SimException(err, __LINE__);
-        } else {
-          readline();
-          static const char mark[] = "[[[runtime]]]\n";
-          if (strcmp(s, mark) != 0) {
-            throw SimException(bad, __LINE__);
-          }
-        }
-      } catch (const hls::sim::SimException &e) {
-        errExit(e.line, e.msg);
-      }
-    }
-
-    ~Reader()
-    {
-      fclose(fp);
-      delete[] s;
-    }
-
-    void begin()
-    {
-      readline();
-      static const char mark[] = "[[transaction]]";
-      if (strncmp(s, mark, strlen(mark)) != 0) {
-        throw SimException(bad, __LINE__);
-      }
-      pos = ftell(fp);
-    }
-
-    void reset()
-    {
-      fseek(fp, pos, SEEK_SET);
-    }
-
-    void skip(size_t n)
-    {
-      for (size_t i = 0; i < n; ++i) {
-        readline();
-      }
-    }
-
-    char* next()
-    {
-      long pos = ftell(fp);
-      readline();
-      if (*s == '[') {
-        fseek(fp, pos, SEEK_SET);
-        return nullptr;
-      }
-      return strip(s);
-    }
-
-    void end()
-    {
-      do {
-        readline();
-      } while (strcmp(s, "[[/transaction]]\n") != 0);
-    }
-  };
-
-  class Writer {
-    FILE *fp;
-
-    void write(const char *s)
-    {
-      if (fputs(s, fp) == EOF) {
-        throw SimException(err, __LINE__);
-      }
-    }
-
-  public:
-    Writer(const char *path) : fp(nullptr)
-    {
-      try {
-        fp = fopen(path, "w");
-        if (fp == nullptr) {
-          throw SimException(err, __LINE__);
-        } else {
-          static const char mark[] = "[[[runtime]]]\n";
-          write(mark);
-        }
-      } catch (const hls::sim::SimException &e) {
-        errExit(e.line, e.msg);
-      }
-    }
-
-    virtual ~Writer()
-    {
-      try {
-        static const char mark[] = "[[[/runtime]]]\n";
-        write(mark);
-      } catch (const hls::sim::SimException &e) {
-        errExit(e.line, e.msg);
-      }
-      fclose(fp);
-    }
-
-    void begin(size_t AESL_transaction)
-    {
-      static const char mark[] = "[[transaction]]           ";
-      write(mark);
-      auto buf = std::to_string(AESL_transaction);
-      buf.push_back('\n');
-      buf.push_back('\0');
-      write(buf.data());
-    }
-
-    void next(const char *s)
-    {
-      write(s);
-      write("\n");
-    }
-
-    void end()
-    {
-      static const char mark[] = "[[/transaction]]\n";
-      write(mark);
-    }
-  };
-
-  bool RTLOutputCheckAndReplacement(char *data)
-  {
-    bool changed = false;
-    for (size_t i = 2; i < strlen(data); ++i) {
-      if (data[i] == 'X' || data[i] == 'x') {
-        data[i] = '0';
-        changed = true;
-      }
-    }
-    return changed;
-  }
-
-  void warnOnX()
-  {
-    static const char msg[] =
-      "WARNING: [SIM 212-201] RTL produces unknown value "
-      "'x' or 'X' on some port, possible cause: "
-      "There are uninitialized variables in the design.\n";
-    fprintf(stderr, msg);
-  }
-
-#ifndef POST_CHECK
-  class RefTCL {
-    FILE *fp;
-    std::ostringstream ss;
-
-    void formatDepth()
-    {
-      ss << "set depth_list {\n";
-      for (auto &p : depth) {
-        ss << "  {" << p.first << " " << p.second << "}\n";
-      }
-      if (nameHBM != "") {
-        ss << "  {" << nameHBM << " " << depthHBM << "}\n";
-      }
-      ss << "}\n";
-    }
-
-    void formatTransNum()
-    {
-      ss << "set trans_num " << AESL_transaction << "\n";
-    }
-
-    void formatHBM()
-    {
-      ss << "set HBM_ArgDict {\n"
-         << "  Name " << nameHBM << "\n"
-         << "  Port " << portHBM << "\n"
-         << "  BitWidth " << widthHBM << "\n"
-         << "}\n";
-    }
-
-    void close()
-    {
-      formatDepth();
-      formatTransNum();
-      if (nameHBM != "") {
-        formatHBM();
-      }
-      std::string &&s { ss.str() };
-      size_t res = fwrite(s.data(), s.size(), 1, fp);
-      fclose(fp);
-      if (res != 1) {
-        errExit(__LINE__, err);
-      }
-    }
-
-  public:
-    std::map<const std::string, size_t> depth;
-    std::string nameHBM;
-    size_t depthHBM;
-    std::string portHBM;
-    unsigned widthHBM;
-    size_t AESL_transaction;
-
-    RefTCL(const char *path)
-    {
-      fp = fopen(path, "w");
-      if (fp == nullptr) {
-        errExit(__LINE__, err);
-      }
-    }
-
-    void set(const char* name, size_t dep)
-    {
-      if (depth[name] < dep) {
-        depth[name] = dep;
-      }
-    }
-
-    ~RefTCL()
-    {
-      close();
-    }
-  };
-
-#endif
-
-  struct Register {
-    const char* name;
-    unsigned width;
-#ifdef POST_CHECK
-    Reader* reader;
-#else
-    Writer* owriter;
-    Writer* iwriter;
-#endif
-    void* param;
-
-#ifndef POST_CHECK
-    void doTCL(RefTCL &tcl)
-    {
-      if (strcmp(name, "return") == 0) {
-        tcl.set("ap_return", 1);
-      } else {
-        tcl.set(name, 1);
-      }
-    }
-#endif
-    ~Register()
-    {
-#ifdef POST_CHECK
-      delete reader;
-#else
-      delete owriter;
-      delete iwriter;
-#endif
-    }
-  };
-
-  template<typename Reader, typename Writer>
-  struct Memory {
-    unsigned width;
-    unsigned asize;
-    bool hbm;
-    std::vector<const char*> name;
-#ifdef POST_CHECK
-    Reader* reader;
-#else
-    Writer* owriter;
-    Writer* iwriter;
-#endif
-    std::vector<void*> param;
-    std::vector<size_t> depth;
-    std::vector<size_t> offset;
-    std::vector<bool> hasWrite;
-
-#ifndef POST_CHECK
-    void doTCL(RefTCL &tcl)
-    {
-      if (hbm) {
-        tcl.nameHBM.append(name[0]);
-        tcl.portHBM.append("{").append(name[0]);
-        for (size_t i = 1; i < name.size(); ++i) {
-          tcl.nameHBM.append("_").append(name[i]);
-          tcl.portHBM.append(" ").append(name[i]);
-        }
-        tcl.nameHBM.append("_HBM");
-        tcl.portHBM.append("}");
-        tcl.widthHBM = width;
-        tcl.depthHBM = depth[0];
-      } else {
-        tcl.set(name[0], sum(depth));
-      }
-    }
-#endif
-
-    ~Memory()
-    {
-#ifdef POST_CHECK
-      delete reader;
-#else
-      delete owriter;
-      delete iwriter;
-#endif
-    }
-  };
-
-  struct FIFO {
-    unsigned width;
-    unsigned asize;
-    const char* name;
-#ifdef POST_CHECK
-    Reader* reader;
-#else
-    Writer* owriter;
-    Writer* iwriter;
-#endif
-    void* param;
-    size_t depth;
-    bool hasWrite;
-
-#ifndef POST_CHECK
-    void doTCL(RefTCL &tcl)
-    {
-      tcl.set(name, depth);
-    }
-#endif
-
-    ~FIFO()
-    {
-#ifdef POST_CHECK
-      delete reader;
-#else
-      delete owriter;
-      delete iwriter;
-#endif
-    }
-  };
-
-  template<typename E>
-  struct Stream {
-    unsigned width;
-    const char* name;
-#ifdef POST_CHECK
-    Reader* reader;
-#else
-    Writer* writer;
-    Writer* swriter;
-    Writer* gwriter;
-#endif
-    hls::stream<E>* param;
-    std::vector<E> buf;
-    size_t initSize;
-    size_t depth;
-    bool hasWrite;
-
-    void markSize()
-    {
-      initSize = param->size();
-    }
-
-    void buffer()
-    {
-      buf.clear();
-      while (!param->empty()) {
-        buf.push_back(param->read());
-      }
-      for (auto &e : buf) {
-        param->write(e);
-      }
-    }
-
-#ifndef POST_CHECK
-    void doTCL(RefTCL &tcl)
-    {
-      tcl.set(name, depth);
-    }
-#endif
-
-    ~Stream()
-    {
-#ifdef POST_CHECK
-      delete reader;
-#else
-      delete writer;
-      delete swriter;
-      delete gwriter;
-#endif
-    }
-  };
-
-#ifdef POST_CHECK
-  void check(Register &port)
-  {
-    port.reader->begin();
-    bool foundX = false;
-    if (char *s = port.reader->next()) {
-      foundX |= RTLOutputCheckAndReplacement(s);
-      unformatData(s, (unsigned char*)port.param);
-    }
-    port.reader->end();
-    if (foundX) {
-      warnOnX();
-    }
-  }
-
-#ifdef USE_BINARY_TV_FILE
-  void checkHBM(Memory<Input, Output> &port)
-  {
-    port.reader->begin();
-    size_t wbytes = least_nbyte(port.width);
-    for (size_t i = 0; i < port.param.size(); ++i) {
-      if (port.hasWrite[i]) {
-        port.reader->reset();
-        size_t skip = port.offset[i];
-        size_t depth = port.depth[i] - skip;
-        port.reader->advance(wbytes*skip);
-        port.reader->into((unsigned char*)port.param[i], wbytes,
-                          port.asize, depth);
-      }
-    }
-  }
-
-  void check(Memory<Input, Output> &port)
-  {
-    if (port.hbm) {
-      return checkHBM(port);
-    } else {
-      port.reader->begin();
-      size_t wbytes = least_nbyte(port.width);
-      for (size_t i = 0; i < port.param.size(); ++i) {
-        if (port.hasWrite[i]) {
-          port.reader->into((unsigned char*)port.param[i], wbytes,
-                            port.asize, port.depth[i]);
-        } else {
-          port.reader->advance(wbytes*port.depth[i]);
-        }
-      }
-    }
-  }
-#endif
-  void checkHBM(Memory<Reader, Writer> &port)
-  {
-    port.reader->begin();
-    bool foundX = false;
-    for (size_t i = 0, last = port.param.size()-1; i <= last; ++i) {
-      if (port.hasWrite[i]) {
-        port.reader->skip(port.offset[i]);
-        for (size_t j = 0; j < port.depth[i]-port.offset[i]; ++j) {
-          if (char *s = port.reader->next()) {
-            foundX |= RTLOutputCheckAndReplacement(s);
-            unformatData(s, (unsigned char*)port.param[i]+j*port.asize);
-          }
-        }
-        if (i < last) {
-          port.reader->reset();
-        }
-      }
-    }
-    port.reader->end();
-    if (foundX) {
-      warnOnX();
-    }
-  }
-
-  void check(Memory<Reader, Writer> &port)
-  {
-    if (port.hbm) {
-      return checkHBM(port);
-    } else {
-      port.reader->begin();
-      bool foundX = false;
-      for (size_t i = 0; i < port.param.size(); ++i) {
-        if (port.hasWrite[i]) {
-          for (size_t j = 0; j < port.depth[i]; ++j) {
-            if (char *s = port.reader->next()) {
-              foundX |= RTLOutputCheckAndReplacement(s);
-              unformatData(s, (unsigned char*)port.param[i]+j*port.asize);
-            }
-          }
-        } else {
-          port.reader->skip(port.depth[i]);
-        }
-      }
-      port.reader->end();
-      if (foundX) {
-        warnOnX();
-      }
-    }
-  }
-
-  void check(FIFO &port)
-  {
-    port.reader->begin();
-    bool foundX = false;
-    if (port.hasWrite) {
-      for (size_t j = 0; j < port.depth; ++j) {
-        if (char *s = port.reader->next()) {
-          foundX |= RTLOutputCheckAndReplacement(s);
-          unformatData(s, (unsigned char*)port.param+j*port.asize);
-        }
-      }
-    }
-    port.reader->end();
-    if (foundX) {
-      warnOnX();
-    }
-  }
-
-  template<typename E>
-  void check(Stream<E> &port)
-  {
-    if (port.hasWrite) {
-      port.reader->begin();
-      bool foundX = false;
-      E *p = new E;
-      while (char *s = port.reader->next()) {
-        foundX |= RTLOutputCheckAndReplacement(s);
-        unformatData(s, (unsigned char*)p);
-        port.param->write(*p);
-      }
-      delete p;
-      port.reader->end();
-      if (foundX) {
-        warnOnX();
-      }
-    } else {
-      port.reader->begin();
-      size_t n = 0;
-      if (char *s = port.reader->next()) {
-        std::istringstream ss(s);
-        ss >> n;
-      } else {
-        throw SimException(bad, __LINE__);
-      }
-      port.reader->end();
-      for (size_t j = 0; j < n; ++j) {
-        port.param->read();
-      }
-    }
-  }
-#else
-  void dump(Register &port, Writer *writer, size_t AESL_transaction)
-  {
-    writer->begin(AESL_transaction);
-    std::string &&s { formatData((unsigned char*)port.param, port.width) };
-    writer->next(s.data());
-    writer->end();
-  }
-
-#ifdef USE_BINARY_TV_FILE
-  void dump(Memory<Input, Output> &port, Output *writer, size_t AESL_transaction)
-  {
-    writer->begin(sum(port.depth));
-    size_t wbytes = least_nbyte(port.width);
-    for (size_t i = 0; i < port.param.size(); ++i) {
-      writer->from((unsigned char*)port.param[i], wbytes, port.asize,
-                   port.depth[i], 0);
-    }
-  }
-
-#endif
-  void dump(Memory<Reader, Writer> &port, Writer *writer, size_t AESL_transaction)
-  {
-    writer->begin(AESL_transaction);
-    for (size_t i = 0; i < port.param.size(); ++i) {
-      for (size_t j = 0; j < port.depth[i]; ++j) {
-        std::string &&s {
-          formatData((unsigned char*)port.param[i]+j*port.asize, port.width)
-        };
-        writer->next(s.data());
-      }
-      if (port.hbm) {
-        break;
-      }
-    }
-    writer->end();
-  }
-
-  void dump(FIFO &port, Writer *writer, size_t AESL_transaction)
-  {
-    writer->begin(AESL_transaction);
-    for (size_t j = 0; j < port.depth; ++j) {
-      std::string &&s {
-        formatData((unsigned char*)port.param+j*port.asize, port.width)
-      };
-      writer->next(s.data());
-    }
-    writer->end();
-  }
-
-
-  template<typename E>
-  void dump(Stream<E> &port, size_t AESL_transaction)
-  {
-    if (port.hasWrite) {
-      port.writer->begin(AESL_transaction);
-      port.depth = port.param->size()-port.initSize;
-      for (size_t j = 0; j < port.depth; ++j) {
-        std::string &&s {
-          formatData((unsigned char*)&port.buf[port.initSize+j], port.width)
-        };
-        port.writer->next(s.c_str());
-      }
-      port.writer->end();
-
-      port.swriter->begin(AESL_transaction);
-      port.swriter->next(std::to_string(port.depth).c_str());
-      port.swriter->end();
-    } else {
-      port.writer->begin(AESL_transaction);
-      port.depth = port.initSize-port.param->size();
-      for (size_t j = 0; j < port.depth; ++j) {
-        std::string &&s {
-          formatData((unsigned char*)&port.buf[j], port.width)
-        };
-        port.writer->next(s.c_str());
-      }
-      port.writer->end();
-
-      port.swriter->begin(AESL_transaction);
-      port.swriter->next(std::to_string(port.depth).c_str());
-      port.swriter->end();
-
-      port.gwriter->begin(AESL_transaction);
-      size_t n = (port.depth ? port.initSize : port.depth);
-      size_t d = port.depth;
-      do {
-        port.gwriter->next(std::to_string(n--).c_str());
-      } while (d--);
-      port.gwriter->end();
-    }
-  }
-#endif
-}
-
-
-
-extern "C"
-hls::sim::Byte<4> crypto_sign_hw_stub_wrapper(void*, void*, void*, hls::sim::Byte<8>, void*);
-
-extern "C"
-hls::sim::Byte<4> apatb_crypto_sign_hw(void* __xlx_apatb_param_sm, void* __xlx_apatb_param_smlen, void* __xlx_apatb_param_m, hls::sim::Byte<8> __xlx_apatb_param_mlen, void* __xlx_apatb_param_sk)
-{
-  hls::sim::Byte<4> ap_return;
-  static hls::sim::Register port0 {
-    .name = "return",
-    .width = 32,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_return),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_return),
-    .iwriter = nullptr,
-#endif
-  };
-  port0.param = &ap_return;
-
-  static hls::sim::Register port1 {
-    .name = "smlen",
-    .width = 64,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_smlen),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_smlen),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_smlen),
-#endif
-  };
-  port1.param = __xlx_apatb_param_smlen;
-
-  static hls::sim::Register port2 {
-    .name = "mlen",
-    .width = 64,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_mlen),
-#endif
-  };
-  port2.param = &__xlx_apatb_param_mlen;
-
-#ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port3 {
-#else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
-#endif
-    .width = 8,
-    .asize = 1,
-    .hbm = false,
-    .name = { "sm" },
-#ifdef POST_CHECK
-#ifdef USE_BINARY_TV_FILE
-    .reader = new hls::sim::Input(AUTOTB_TVOUT_PC_sm),
-#else
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_sm),
-#endif
-#else
-#ifdef USE_BINARY_TV_FILE
-    .owriter = new hls::sim::Output(AUTOTB_TVOUT_sm),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_sm),
-#endif
-#ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_sm),
-#else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_sm),
-#endif
-#endif
-  };
-  port3.param = { __xlx_apatb_param_sm };
-  port3.depth = { 5720 };
-  port3.offset = {  };
-  port3.hasWrite = { true };
-
-#ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port4 {
-#else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port4 {
-#endif
-    .width = 8,
-    .asize = 1,
-    .hbm = false,
-    .name = { "m" },
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-#ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_m),
-#else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_m),
-#endif
-#endif
-  };
-  port4.param = { __xlx_apatb_param_m };
-  port4.depth = { 3300 };
-  port4.offset = {  };
-  port4.hasWrite = { false };
-
-#ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port5 {
-#else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port5 {
-#endif
-    .width = 8,
-    .asize = 1,
-    .hbm = false,
-    .name = { "sk" },
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-#ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_sk),
-#else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_sk),
-#endif
-#endif
-  };
-  port5.param = { __xlx_apatb_param_sk };
-  port5.depth = { 2544 };
-  port5.offset = {  };
-  port5.hasWrite = { false };
-
-  refine_signal_handler();
-  try {
-#ifdef POST_CHECK
-    CodeState = ENTER_WRAPC_PC;
-    check(port0);
-    check(port1);
-    check(port3);
-#else
-    static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
-    CodeState = DUMP_INPUTS;
-    dump(port1, port1.iwriter, tcl.AESL_transaction);
-    dump(port2, port2.iwriter, tcl.AESL_transaction);
-    dump(port3, port3.iwriter, tcl.AESL_transaction);
-    dump(port4, port4.iwriter, tcl.AESL_transaction);
-    dump(port5, port5.iwriter, tcl.AESL_transaction);
-    port1.doTCL(tcl);
-    port2.doTCL(tcl);
-    port3.doTCL(tcl);
-    port4.doTCL(tcl);
-    port5.doTCL(tcl);
-    CodeState = CALL_C_DUT;
-    ap_return = crypto_sign_hw_stub_wrapper(__xlx_apatb_param_sm, __xlx_apatb_param_smlen, __xlx_apatb_param_m, __xlx_apatb_param_mlen, __xlx_apatb_param_sk);
-    CodeState = DUMP_OUTPUTS;
-    dump(port0, port0.owriter, tcl.AESL_transaction);
-    dump(port1, port1.owriter, tcl.AESL_transaction);
-    dump(port3, port3.owriter, tcl.AESL_transaction);
-    port0.doTCL(tcl);
-    tcl.AESL_transaction++;
-#endif
-  } catch (const hls::sim::SimException &e) {
-    hls::sim::errExit(e.line, e.msg);
-  }
-return ap_return;
-}

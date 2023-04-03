@@ -3,7 +3,7 @@ set clock_constraint { \
     module crypto_sign \
     port ap_clk \
     period 10000 \
-    uncertainty 2700 \
+    uncertainty 1250 \
 }
 
 set all_path {}

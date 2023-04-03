@@ -1,11 +1,16 @@
 # 1 "rounding.c"
+# 1 "rounding.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 338 "<built-in>" 3
+# 149 "<built-in>" 3
 # 1 "<command line>" 1
-# 1 "<built-in>" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 269 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+
+
+
+
+
+# 1 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 305 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
     void _ssdm_op_IfRead() __attribute__ ((nothrow));
     void _ssdm_op_IfWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead() __attribute__ ((nothrow));
@@ -20,23 +25,11 @@
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamNbWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanRead() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanWrite() __attribute__ ((nothrow));
-    void _ssdm_op_ReadReq() __attribute__ ((nothrow));
-    void _ssdm_op_Read() __attribute__ ((nothrow));
-    void _ssdm_op_WriteReq() __attribute__ ((nothrow));
-    void _ssdm_op_Write() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq() __attribute__ ((nothrow));
 
 
 
 
     void _ssdm_op_MemShiftRead() __attribute__ ((nothrow));
-
-    void _ssdm_op_PrintNone() __attribute__ ((nothrow));
-    void _ssdm_op_PrintInt() __attribute__ ((nothrow));
-    void _ssdm_op_PrintDouble() __attribute__ ((nothrow));
 
     void _ssdm_op_Wait() __attribute__ ((nothrow));
     void _ssdm_op_Poll() __attribute__ ((nothrow));
@@ -88,6 +81,7 @@
     void _ssdm_op_SpecFUCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIFCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIPCore() __attribute__ ((nothrow));
+    void _ssdm_op_SpecKeepValue() __attribute__ ((nothrow));
     void _ssdm_op_SpecMemCore() __attribute__ ((nothrow));
 
     void _ssdm_op_SpecExt() __attribute__ ((nothrow));
@@ -118,8 +112,6 @@
     void _ssdm_op_SpecStable() __attribute__ ((nothrow));
     void _ssdm_op_SpecStableContent() __attribute__ ((nothrow));
 
-    void _ssdm_op_SpecBindPort() __attribute__ ((nothrow));
-
     void _ssdm_op_SpecPipoDepth() __attribute__ ((nothrow));
 
     void _ssdm_SpecExpr() __attribute__ ((nothrow));
@@ -141,10 +133,11 @@
 
     void _ssdm_op_SpecBitsMap() __attribute__ ((nothrow));
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
-# 2 "<built-in>" 2
+# 7 "<command line>" 2
+# 1 "<built-in>" 2
 # 1 "rounding.c" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
-# 63 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -361,7 +354,7 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 64 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 2 "rounding.c" 2
 # 1 "./params.h" 1
 
@@ -378,19 +371,19 @@ typedef __uintmax_t uintmax_t;
 
 
 
-int32_t pqcrystals_dilithium2_ref_power2round(int32_t *a0, int32_t a);
+int32_t power2round(int32_t *a0, int32_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_decompose(int32_t *a0, int32_t a);
+int32_t decompose(int32_t *a0, int32_t a);
 
 
-unsigned int pqcrystals_dilithium2_ref_make_hint(int32_t a0, int32_t a1);
+unsigned int make_hint(int32_t a0, int32_t a1);
 
 
-int32_t pqcrystals_dilithium2_ref_use_hint(int32_t a, unsigned int hint);
+int32_t use_hint(int32_t a, unsigned int hint);
 # 4 "rounding.c" 2
 # 17 "rounding.c"
-int32_t pqcrystals_dilithium2_ref_power2round(int32_t *a0, int32_t a) {
+int32_t power2round(int32_t *a0, int32_t a) {
   int32_t a1;
 
   a1 = (a + (1 << (13 -1)) - 1) >> 13;
@@ -398,7 +391,7 @@ int32_t pqcrystals_dilithium2_ref_power2round(int32_t *a0, int32_t a) {
   return a1;
 }
 # 39 "rounding.c"
-int32_t pqcrystals_dilithium2_ref_decompose(int32_t *a0, int32_t a) {
+int32_t decompose(int32_t *a0, int32_t a) {
   int32_t a1;
 
   a1 = (a + 127) >> 7;
@@ -415,17 +408,17 @@ int32_t pqcrystals_dilithium2_ref_decompose(int32_t *a0, int32_t a) {
   return a1;
 }
 # 68 "rounding.c"
-unsigned int pqcrystals_dilithium2_ref_make_hint(int32_t a0, int32_t a1) {
+unsigned int make_hint(int32_t a0, int32_t a1) {
   if(a0 <= ((8380417 -1)/88) || a0 > 8380417 - ((8380417 -1)/88) || (a0 == 8380417 - ((8380417 -1)/88) && a1 == 0))
     return 0;
 
   return 1;
 }
 # 85 "rounding.c"
-int32_t pqcrystals_dilithium2_ref_use_hint(int32_t a, unsigned int hint) {
+int32_t use_hint(int32_t a, unsigned int hint) {
   int32_t a0, a1;
 
-  a1 = pqcrystals_dilithium2_ref_decompose(&a0, a);
+  a1 = decompose(&a0, a);
   if(hint == 0)
     return a1;
 

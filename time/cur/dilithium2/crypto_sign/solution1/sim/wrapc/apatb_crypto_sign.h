@@ -1,12 +1,11 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
-// Tool Version Limit: 2019.12
-// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 
 extern int AESL_WRAP_crypto_sign (
-volatile void* sm,
-volatile void* smlen,
-volatile void* m,
-long long mlen,
-volatile void* sk);
+unsigned char sm[5720],
+long unsigned int* smlen,
+const unsigned char m[3300],
+long unsigned int mlen,
+const unsigned char sk[2544]);

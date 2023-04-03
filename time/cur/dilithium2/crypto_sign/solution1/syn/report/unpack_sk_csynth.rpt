@@ -1,0 +1,278 @@
+
+
+================================================================
+== Vivado HLS Report for 'unpack_sk'
+================================================================
+* Date:           Mon Apr  3 23:35:37 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        crypto_sign
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 us | 9.831 ns |   1.25 us  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1983|     1983| 19.830 ms | 19.830 ms |  1983|  1983|   none  |
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------+----------------+---------+---------+----------+----------+-----+-----+----------+
+        |                           |                |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+        |          Instance         |     Module     |   min   |   max   |    min   |    max   | min | max |   Type   |
+        +---------------------------+----------------+---------+---------+----------+----------+-----+-----+----------+
+        |grp_polyt0_unpack_fu_230   |polyt0_unpack   |      208|      208| 2.080 ms | 2.080 ms |  208|  208| function |
+        |grp_polyeta_unpack_fu_241  |polyeta_unpack  |      128|      128| 1.280 ms | 1.280 ms |  128|  128| function |
+        +---------------------------+----------------+---------+---------+----------+----------+-----+-----+----------+
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |       32|       32|         2|          1|          1|    32|    yes   |
+        |- Loop 2  |       32|       32|         2|          1|          1|    32|    yes   |
+        |- Loop 3  |       48|       48|         2|          1|          1|    48|    yes   |
+        |- Loop 4  |      513|      513|       130|        128|          1|     4|    yes   |
+        |- Loop 5  |      513|      513|       130|        128|          1|     4|    yes   |
+        |- Loop 6  |      833|      833|       210|        208|          1|     4|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|     347|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|     972|   33858|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|    2423|    -|
+|Register         |        -|      -|     586|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|    1558|   36628|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |      730|    740|  269200|  134600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|   ~0   |      27|    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+----------------+---------+-------+-----+-------+-----+
+    |          Instance         |     Module     | BRAM_18K| DSP48E|  FF |  LUT  | URAM|
+    +---------------------------+----------------+---------+-------+-----+-------+-----+
+    |grp_polyeta_unpack_fu_241  |polyeta_unpack  |        0|      0|  710|  11388|    0|
+    |grp_polyt0_unpack_fu_230   |polyt0_unpack   |        0|      0|  262|  22470|    0|
+    +---------------------------+----------------+---------+-------+-----+-------+-----+
+    |Total                      |                |        0|      0|  972|  33858|    0|
+    +---------------------------+----------------+---------+-------+-----+-------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name           | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+    |add_ln135_fu_298_p2                |     +    |      0|  0|  15|           7|           7|
+    |add_ln142_fu_337_p2                |     +    |      0|  0|  15|           7|           6|
+    |add_ln148_fu_401_p2                |     +    |      0|  0|  40|           7|          33|
+    |add_ln155_fu_462_p2                |     +    |      0|  0|  40|           9|          33|
+    |add_ln162_1_fu_491_p2              |     +    |      0|  0|  18|          11|           9|
+    |grp_polyt0_unpack_fu_230_a_offset  |     +    |      0|  0|  19|          12|          10|
+    |i_10_fu_479_p2                     |     +    |      0|  0|  12|           3|           1|
+    |i_6_fu_277_p2                      |     +    |      0|  0|  15|           6|           1|
+    |i_7_fu_314_p2                      |     +    |      0|  0|  15|           6|           1|
+    |i_8_fu_353_p2                      |     +    |      0|  0|  12|           3|           1|
+    |i_9_fu_414_p2                      |     +    |      0|  0|  12|           3|           1|
+    |i_fu_260_p2                        |     +    |      0|  0|  15|           6|           1|
+    |sub_ln148_fu_387_p2                |     -    |      0|  0|  17|          10|          10|
+    |sub_ln155_fu_448_p2                |     -    |      0|  0|  17|          10|          10|
+    |icmp_ln126_fu_254_p2               |   icmp   |      0|  0|  11|           6|           7|
+    |icmp_ln133_fu_271_p2               |   icmp   |      0|  0|  11|           6|           7|
+    |icmp_ln140_fu_308_p2               |   icmp   |      0|  0|  11|           6|           6|
+    |icmp_ln146_fu_347_p2               |   icmp   |      0|  0|   9|           3|           4|
+    |icmp_ln153_fu_408_p2               |   icmp   |      0|  0|   9|           3|           4|
+    |icmp_ln160_fu_473_p2               |   icmp   |      0|  0|   9|           3|           4|
+    |ap_enable_pp0                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp1                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp2                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp3                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp4                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp5                      |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1            |    xor   |      0|  0|   2|           2|           1|
+    |ap_enable_reg_pp1_iter1            |    xor   |      0|  0|   2|           2|           1|
+    |ap_enable_reg_pp2_iter1            |    xor   |      0|  0|   2|           2|           1|
+    |xor_ln135_fu_287_p2                |    xor   |      0|  0|   7|           6|           7|
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                              |          |      0|  0| 347|         145|         178|
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------+------+-----------+-----+-----------+
+    |                    Name                   |  LUT | Input Size| Bits| Total Bits|
+    +-------------------------------------------+------+-----------+-----+-----------+
+    |ap_NS_fsm                                  |  2045|        475|    1|        475|
+    |ap_enable_reg_pp0_iter1                    |    15|          3|    1|          3|
+    |ap_enable_reg_pp1_iter1                    |    15|          3|    1|          3|
+    |ap_enable_reg_pp2_iter1                    |    15|          3|    1|          3|
+    |ap_enable_reg_pp3_iter1                    |     9|          2|    1|          2|
+    |ap_enable_reg_pp4_iter1                    |     9|          2|    1|          2|
+    |ap_enable_reg_pp5_iter1                    |     9|          2|    1|          2|
+    |ap_phi_mux_i_3_phi_fu_186_p4               |     9|          2|    3|          6|
+    |ap_phi_mux_i_4_phi_fu_198_p4               |     9|          2|    3|          6|
+    |ap_phi_mux_i_5_phi_fu_210_p4               |     9|          2|    3|          6|
+    |ap_phi_mux_phi_mul_phi_fu_222_p4           |     9|          2|   11|         22|
+    |grp_polyeta_unpack_fu_241_a_offset         |    15|          3|   33|         99|
+    |grp_polyeta_unpack_fu_241_r_coeffs_offset  |    15|          3|    3|          9|
+    |i_0_reg_149                                |     9|          2|    6|         12|
+    |i_1_reg_160                                |     9|          2|    6|         12|
+    |i_2_reg_171                                |     9|          2|    6|         12|
+    |i_3_reg_182                                |     9|          2|    3|          6|
+    |i_4_reg_194                                |     9|          2|    3|          6|
+    |i_5_reg_206                                |     9|          2|    3|          6|
+    |phi_mul_reg_218                            |     9|          2|   11|         22|
+    |rho_address0                               |    21|          4|    8|         32|
+    |s1_vec_coeffs_ce0                          |     9|          2|    1|          2|
+    |s1_vec_coeffs_ce1                          |     9|          2|    1|          2|
+    |s1_vec_coeffs_we0                          |     9|          2|    1|          2|
+    |s1_vec_coeffs_we1                          |     9|          2|    1|          2|
+    |s2_vec_coeffs_ce0                          |     9|          2|    1|          2|
+    |s2_vec_coeffs_ce1                          |     9|          2|    1|          2|
+    |s2_vec_coeffs_we0                          |     9|          2|    1|          2|
+    |s2_vec_coeffs_we1                          |     9|          2|    1|          2|
+    |sk_address0                                |    33|          6|   12|         72|
+    |sk_address1                                |    15|          3|   12|         36|
+    |sk_ce0                                     |    21|          4|    1|          4|
+    |sk_ce1                                     |    15|          3|    1|          3|
+    +-------------------------------------------+------+-----------+-----+-----------+
+    |Total                                      |  2423|        554|  143|        877|
+    +-------------------------------------------+------+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+-----+----+-----+-----------+
+    |                  Name                  |  FF | LUT| Bits| Const Bits|
+    +----------------------------------------+-----+----+-----+-----------+
+    |add_ln135_reg_530                       |    7|   0|    7|          0|
+    |add_ln142_reg_549                       |    7|   0|    7|          0|
+    |add_ln162_1_reg_586                     |   11|   0|   11|          0|
+    |ap_CS_fsm                               |  474|   0|  474|          0|
+    |ap_enable_reg_pp0_iter0                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter0                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter1                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp2_iter0                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp2_iter1                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp3_iter0                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp3_iter1                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp4_iter0                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp4_iter1                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp5_iter0                 |    1|   0|    1|          0|
+    |ap_enable_reg_pp5_iter1                 |    1|   0|    1|          0|
+    |grp_polyeta_unpack_fu_241_ap_start_reg  |    1|   0|    1|          0|
+    |grp_polyt0_unpack_fu_230_ap_start_reg   |    1|   0|    1|          0|
+    |i_0_reg_149                             |    6|   0|    6|          0|
+    |i_10_reg_581                            |    3|   0|    3|          0|
+    |i_1_reg_160                             |    6|   0|    6|          0|
+    |i_2_reg_171                             |    6|   0|    6|          0|
+    |i_3_reg_182                             |    3|   0|    3|          0|
+    |i_4_reg_194                             |    3|   0|    3|          0|
+    |i_5_reg_206                             |    3|   0|    3|          0|
+    |i_8_reg_558                             |    3|   0|    3|          0|
+    |i_9_reg_567                             |    3|   0|    3|          0|
+    |icmp_ln126_reg_497                      |    1|   0|    1|          0|
+    |icmp_ln133_reg_516                      |    1|   0|    1|          0|
+    |icmp_ln140_reg_535                      |    1|   0|    1|          0|
+    |icmp_ln146_reg_554                      |    1|   0|    1|          0|
+    |icmp_ln146_reg_554_pp3_iter1_reg        |    1|   0|    1|          0|
+    |icmp_ln153_reg_563                      |    1|   0|    1|          0|
+    |icmp_ln153_reg_563_pp4_iter1_reg        |    1|   0|    1|          0|
+    |icmp_ln160_reg_577                      |    1|   0|    1|          0|
+    |icmp_ln160_reg_577_pp5_iter1_reg        |    1|   0|    1|          0|
+    |phi_mul_reg_218                         |   11|   0|   11|          0|
+    |zext_ln128_reg_506                      |    6|   0|   64|         58|
+    |zext_ln160_reg_572                      |   11|   0|   12|          1|
+    +----------------------------------------+-----+----+-----+-----------+
+    |Total                                   |  586|   0|  645|         59|
+    +----------------------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+---------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object |    C Type    |
++------------------------+-----+-----+------------+---------------+--------------+
+|ap_clk                  |  in |    1| ap_ctrl_hs |   unpack_sk   | return value |
+|ap_rst                  |  in |    1| ap_ctrl_hs |   unpack_sk   | return value |
+|ap_start                |  in |    1| ap_ctrl_hs |   unpack_sk   | return value |
+|ap_done                 | out |    1| ap_ctrl_hs |   unpack_sk   | return value |
+|ap_idle                 | out |    1| ap_ctrl_hs |   unpack_sk   | return value |
+|ap_ready                | out |    1| ap_ctrl_hs |   unpack_sk   | return value |
+|rho_address0            | out |    8|  ap_memory |      rho      |     array    |
+|rho_ce0                 | out |    1|  ap_memory |      rho      |     array    |
+|rho_we0                 | out |    1|  ap_memory |      rho      |     array    |
+|rho_d0                  | out |    8|  ap_memory |      rho      |     array    |
+|t0_vec_coeffs_address0  | out |   10|  ap_memory | t0_vec_coeffs |     array    |
+|t0_vec_coeffs_ce0       | out |    1|  ap_memory | t0_vec_coeffs |     array    |
+|t0_vec_coeffs_we0       | out |    1|  ap_memory | t0_vec_coeffs |     array    |
+|t0_vec_coeffs_d0        | out |   32|  ap_memory | t0_vec_coeffs |     array    |
+|t0_vec_coeffs_address1  | out |   10|  ap_memory | t0_vec_coeffs |     array    |
+|t0_vec_coeffs_ce1       | out |    1|  ap_memory | t0_vec_coeffs |     array    |
+|t0_vec_coeffs_we1       | out |    1|  ap_memory | t0_vec_coeffs |     array    |
+|t0_vec_coeffs_d1        | out |   32|  ap_memory | t0_vec_coeffs |     array    |
+|s1_vec_coeffs_address0  | out |   10|  ap_memory | s1_vec_coeffs |     array    |
+|s1_vec_coeffs_ce0       | out |    1|  ap_memory | s1_vec_coeffs |     array    |
+|s1_vec_coeffs_we0       | out |    1|  ap_memory | s1_vec_coeffs |     array    |
+|s1_vec_coeffs_d0        | out |   32|  ap_memory | s1_vec_coeffs |     array    |
+|s1_vec_coeffs_address1  | out |   10|  ap_memory | s1_vec_coeffs |     array    |
+|s1_vec_coeffs_ce1       | out |    1|  ap_memory | s1_vec_coeffs |     array    |
+|s1_vec_coeffs_we1       | out |    1|  ap_memory | s1_vec_coeffs |     array    |
+|s1_vec_coeffs_d1        | out |   32|  ap_memory | s1_vec_coeffs |     array    |
+|s2_vec_coeffs_address0  | out |   10|  ap_memory | s2_vec_coeffs |     array    |
+|s2_vec_coeffs_ce0       | out |    1|  ap_memory | s2_vec_coeffs |     array    |
+|s2_vec_coeffs_we0       | out |    1|  ap_memory | s2_vec_coeffs |     array    |
+|s2_vec_coeffs_d0        | out |   32|  ap_memory | s2_vec_coeffs |     array    |
+|s2_vec_coeffs_address1  | out |   10|  ap_memory | s2_vec_coeffs |     array    |
+|s2_vec_coeffs_ce1       | out |    1|  ap_memory | s2_vec_coeffs |     array    |
+|s2_vec_coeffs_we1       | out |    1|  ap_memory | s2_vec_coeffs |     array    |
+|s2_vec_coeffs_d1        | out |   32|  ap_memory | s2_vec_coeffs |     array    |
+|sk_address0             | out |   12|  ap_memory |       sk      |     array    |
+|sk_ce0                  | out |    1|  ap_memory |       sk      |     array    |
+|sk_q0                   |  in |    8|  ap_memory |       sk      |     array    |
+|sk_address1             | out |   12|  ap_memory |       sk      |     array    |
+|sk_ce1                  | out |    1|  ap_memory |       sk      |     array    |
+|sk_q1                   |  in |    8|  ap_memory |       sk      |     array    |
++------------------------+-----+-----+------------+---------------+--------------+
+

@@ -1,11 +1,16 @@
 # 1 "ntt.c"
+# 1 "ntt.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 338 "<built-in>" 3
+# 149 "<built-in>" 3
 # 1 "<command line>" 1
-# 1 "<built-in>" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 269 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+
+
+
+
+
+# 1 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 305 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
     void _ssdm_op_IfRead() __attribute__ ((nothrow));
     void _ssdm_op_IfWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead() __attribute__ ((nothrow));
@@ -20,23 +25,11 @@
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamNbWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanRead() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanWrite() __attribute__ ((nothrow));
-    void _ssdm_op_ReadReq() __attribute__ ((nothrow));
-    void _ssdm_op_Read() __attribute__ ((nothrow));
-    void _ssdm_op_WriteReq() __attribute__ ((nothrow));
-    void _ssdm_op_Write() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq() __attribute__ ((nothrow));
 
 
 
 
     void _ssdm_op_MemShiftRead() __attribute__ ((nothrow));
-
-    void _ssdm_op_PrintNone() __attribute__ ((nothrow));
-    void _ssdm_op_PrintInt() __attribute__ ((nothrow));
-    void _ssdm_op_PrintDouble() __attribute__ ((nothrow));
 
     void _ssdm_op_Wait() __attribute__ ((nothrow));
     void _ssdm_op_Poll() __attribute__ ((nothrow));
@@ -88,6 +81,7 @@
     void _ssdm_op_SpecFUCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIFCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIPCore() __attribute__ ((nothrow));
+    void _ssdm_op_SpecKeepValue() __attribute__ ((nothrow));
     void _ssdm_op_SpecMemCore() __attribute__ ((nothrow));
 
     void _ssdm_op_SpecExt() __attribute__ ((nothrow));
@@ -118,8 +112,6 @@
     void _ssdm_op_SpecStable() __attribute__ ((nothrow));
     void _ssdm_op_SpecStableContent() __attribute__ ((nothrow));
 
-    void _ssdm_op_SpecBindPort() __attribute__ ((nothrow));
-
     void _ssdm_op_SpecPipoDepth() __attribute__ ((nothrow));
 
     void _ssdm_SpecExpr() __attribute__ ((nothrow));
@@ -141,10 +133,11 @@
 
     void _ssdm_op_SpecBitsMap() __attribute__ ((nothrow));
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
-# 2 "<built-in>" 2
+# 7 "<command line>" 2
+# 1 "<built-in>" 2
 # 1 "ntt.c" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
-# 63 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -361,7 +354,7 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 64 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 2 "ntt.c" 2
 # 1 "./params.h" 1
 
@@ -378,23 +371,23 @@ typedef __uintmax_t uintmax_t;
 
 
 
-void pqcrystals_dilithium2_ref_ntt(int32_t a[256]);
+void ntt(int32_t a[256]);
 
 
-void pqcrystals_dilithium2_ref_invntt_tomont(int32_t a[256]);
+void invntt_tomont(int32_t a[256]);
 # 4 "ntt.c" 2
 # 1 "./reduce.h" 1
 # 11 "./reduce.h"
-int32_t pqcrystals_dilithium2_ref_montgomery_reduce(int64_t a);
+int32_t montgomery_reduce(int64_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_reduce32(int32_t a);
+int32_t reduce32(int32_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_caddq(int32_t a);
+int32_t caddq(int32_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_freeze(int32_t a);
+int32_t freeze(int32_t a);
 # 5 "ntt.c" 2
 
 static const int32_t zetas[256] = {
@@ -432,16 +425,16 @@ static const int32_t zetas[256] = {
    -554416, 3919660, -48306, -1362209, 3937738, 1400424, -846154, 1976782
 };
 # 49 "ntt.c"
-void pqcrystals_dilithium2_ref_ntt(int32_t a[256]) {
+void ntt(int32_t a[256]) {_ssdm_SpecArrayDimSize(a, 256);
   unsigned int len, start, j, k;
   int32_t zeta, t;
 
   k = 0;
-  VITIS_LOOP_54_1: for(len = 128; len > 0; len >>= 1) {
-    VITIS_LOOP_55_2: for(start = 0; start < 256; start = j + len) {
+  for(len = 128; len > 0; len >>= 1) {
+    for(start = 0; start < 256; start = j + len) {
       zeta = zetas[++k];
-      VITIS_LOOP_57_3: for(j = start; j < start + len; ++j) {
-        t = pqcrystals_dilithium2_ref_montgomery_reduce((int64_t)zeta * a[j + len]);
+      for(j = start; j < start + len; ++j) {
+        t = montgomery_reduce((int64_t)zeta * a[j + len]);
         a[j + len] = a[j] - t;
         a[j] = a[j] + t;
       }
@@ -449,25 +442,25 @@ void pqcrystals_dilithium2_ref_ntt(int32_t a[256]) {
   }
 }
 # 77 "ntt.c"
-void pqcrystals_dilithium2_ref_invntt_tomont(int32_t a[256]) {
+void invntt_tomont(int32_t a[256]) {_ssdm_SpecArrayDimSize(a, 256);
   unsigned int start, len, j, k;
   int32_t t, zeta;
   const int32_t f = 41978;
 
   k = 256;
-  VITIS_LOOP_83_1: for(len = 1; len < 256; len <<= 1) {
-    VITIS_LOOP_84_2: for(start = 0; start < 256; start = j + len) {
+  for(len = 1; len < 256; len <<= 1) {
+    for(start = 0; start < 256; start = j + len) {
       zeta = -zetas[--k];
-      VITIS_LOOP_86_3: for(j = start; j < start + len; ++j) {
+      for(j = start; j < start + len; ++j) {
         t = a[j];
         a[j] = t + a[j + len];
         a[j + len] = t - a[j + len];
-        a[j + len] = pqcrystals_dilithium2_ref_montgomery_reduce((int64_t)zeta * a[j + len]);
+        a[j + len] = montgomery_reduce((int64_t)zeta * a[j + len]);
       }
     }
   }
 
-  VITIS_LOOP_95_4: for(j = 0; j < 256; ++j) {
-    a[j] = pqcrystals_dilithium2_ref_montgomery_reduce((int64_t)f * a[j]);
+  for(j = 0; j < 256; ++j) {
+    a[j] = montgomery_reduce((int64_t)f * a[j]);
   }
 }

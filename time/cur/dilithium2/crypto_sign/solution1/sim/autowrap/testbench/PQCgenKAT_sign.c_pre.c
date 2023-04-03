@@ -1,11 +1,11 @@
-# 1 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c"
-# 1 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c" 1
+# 1 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c"
+# 1 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c" 2
+# 1 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
 
 
 
@@ -42,8 +42,8 @@
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
-# 32 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 31 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
 typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
 
 
@@ -57,10 +57,10 @@ typedef int wchar_t;
 # 34 "/usr/include/stdio.h" 2 3 4
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 1 3 4
-# 31 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 1 3 4
+# 30 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 3 4
 typedef __builtin_va_list va_list;
-# 49 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 3 4
+# 48 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 37 "/usr/include/stdio.h" 2 3 4
 
@@ -748,7 +748,7 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ ));
 # 858 "/usr/include/stdio.h" 3 4
 extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
-# 9 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c" 2
+# 9 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 25 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -758,7 +758,7 @@ extern int __overflow (FILE *, int);
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 # 32 "/usr/include/stdlib.h" 2 3 4
 
 
@@ -996,7 +996,7 @@ typedef __time_t time_t;
 typedef __timer_t timer_t;
 # 131 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 # 144 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 # 145 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
@@ -1592,7 +1592,7 @@ extern void free (void *__ptr) __attribute__ ((__nothrow__ ));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -1799,7 +1799,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 # 1013 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
 # 1014 "/usr/include/stdlib.h" 2 3 4
-# 10 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c" 2
+# 10 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -1810,7 +1810,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 # 34 "/usr/include/string.h" 2 3 4
 # 43 "/usr/include/string.h" 3 4
 extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
@@ -1978,7 +1978,7 @@ extern char *strerror_l (int __errnum, locale_t __l) __attribute__ ((__nothrow__
 
 # 1 "/usr/include/strings.h" 1 3 4
 # 23 "/usr/include/strings.h" 3 4
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 # 24 "/usr/include/strings.h" 2 3 4
 # 34 "/usr/include/strings.h" 3 4
 extern int bcmp (const void *__s1, const void *__s2, size_t __n)
@@ -2065,7 +2065,7 @@ extern char *__stpncpy (char *__restrict __dest,
 extern char *stpncpy (char *__restrict __dest,
         const char *__restrict __src, size_t __n)
      __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1, 2)));
-# 11 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c" 2
+# 11 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
 # 1 "/usr/include/ctype.h" 1 3 4
 # 46 "/usr/include/ctype.h" 3 4
 enum
@@ -2148,9 +2148,9 @@ extern int tolower_l (int __c, locale_t __l) __attribute__ ((__nothrow__ ));
 
 extern int __toupper_l (int __c, locale_t __l) __attribute__ ((__nothrow__ ));
 extern int toupper_l (int __c, locale_t __l) __attribute__ ((__nothrow__ ));
-# 12 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/rng.h" 1
-# 18 "/home/guest/Documents/vlsi/dilithium2/rng.h"
+# 12 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
+# 1 "/home/guest/Documents/experiments/dilithium_2/rng.h" 1
+# 18 "/home/guest/Documents/experiments/dilithium_2/rng.h"
 typedef struct {
     unsigned char buffer[16];
     int buffer_pos;
@@ -2187,15 +2187,15 @@ randombytes_init(unsigned char *entropy_input,
 
 int
 randombytes(unsigned char *x, unsigned long long xlen);
-# 13 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/api.h" 1
+# 13 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
+# 1 "/home/guest/Documents/experiments/dilithium_2/api.h" 1
 
 
 
-# 1 "/home/guest/Documents/vlsi/dilithium2/config.h" 1
-# 5 "/home/guest/Documents/vlsi/dilithium2/api.h" 2
-# 23 "/home/guest/Documents/vlsi/dilithium2/api.h"
-int pqcrystals_dilithium2_ref_keypair(unsigned char *pk, unsigned char *sk);
+# 1 "/home/guest/Documents/experiments/dilithium_2/config.h" 1
+# 5 "/home/guest/Documents/experiments/dilithium_2/api.h" 2
+# 23 "/home/guest/Documents/experiments/dilithium_2/api.h"
+int crypto_sign_keypair(unsigned char *pk, unsigned char *sk);
 
 
 int crypto_sign(unsigned char *sm, unsigned long long *smlen,
@@ -2203,10 +2203,10 @@ int crypto_sign(unsigned char *sm, unsigned long long *smlen,
                 const unsigned char *sk);
 
 
-int pqcrystals_dilithium2_ref_open(unsigned char *m, unsigned long long *mlen,
+int crypto_sign_open(unsigned char *m, unsigned long long *mlen,
                      const unsigned char *sm, unsigned long long smlen,
                      const unsigned char *pk);
-# 14 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c" 2
+# 14 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
 
 
 
@@ -2218,7 +2218,7 @@ int pqcrystals_dilithium2_ref_open(unsigned char *m, unsigned long long *mlen,
 int FindMarker(FILE *infile, const char *marker);
 int ReadHex(FILE *infile, unsigned char *A, int Length, char *str);
 void fprintBstr(FILE *fp, char *S, unsigned char *A, unsigned long long L);
-# 36 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c"
+# 36 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c"
 char AlgName[] = "My Alg Name";
 int isxdigit2(int ch) {
  if(ch == '0' || ch == '1' || ch == '2' || ch == '3' || ch == '4' || ch == '5' || ch == '6' || ch == '7' || ch == '8' || ch == '9' || ch == 'A' || ch == 'B' || ch == 'C' || ch == 'D' || ch == 'E' || ch == 'F')
@@ -2318,7 +2318,7 @@ main()
         fprintBstr(fp_rsp, "msg = ", m, mlen);
 
 
-        if ( (ret_val = pqcrystals_dilithium2_ref_keypair(pk, sk)) != 0) {
+        if ( (ret_val = crypto_sign_keypair(pk, sk)) != 0) {
             printf("crypto_sign_keypair returned <%d>\n", ret_val);
             return -4;
         }
@@ -2333,7 +2333,7 @@ main()
         fprintBstr(fp_rsp, "sm = ", sm, smlen);
         fprintf(fp_rsp, "\n");
 
-        if ( (ret_val = pqcrystals_dilithium2_ref_open(m1, &mlen1, sm, smlen, pk)) != 0) {
+        if ( (ret_val = crypto_sign_open(m1, &mlen1, sm, smlen, pk)) != 0) {
             printf("crypto_sign_open returned <%d>\n", ret_val);
             return -4;
         }
@@ -2353,7 +2353,7 @@ main()
 
 
     } while ( !done );
-# 179 "/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c"
+# 179 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c"
     fclose(fp_req);
     fclose(fp_rsp);
 

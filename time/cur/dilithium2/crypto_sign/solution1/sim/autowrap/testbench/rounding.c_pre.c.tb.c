@@ -1,18 +1,17 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
-// Tool Version Limit: 2019.12
-// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "/home/guest/Documents/vlsi/dilithium2/rounding.c"
-# 1 "/home/guest/Documents/vlsi/dilithium2/rounding.c" 1
+# 1 "/home/guest/Documents/experiments/dilithium_2/rounding.c"
+# 1 "/home/guest/Documents/experiments/dilithium_2/rounding.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/rounding.c" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
-# 34 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
+# 1 "/home/guest/Documents/experiments/dilithium_2/rounding.c" 2
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -229,16 +228,16 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 35 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 2 "/home/guest/Documents/vlsi/dilithium2/rounding.c" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/params.h" 1
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
+# 2 "/home/guest/Documents/experiments/dilithium_2/rounding.c" 2
+# 1 "/home/guest/Documents/experiments/dilithium_2/params.h" 1
 
 
 
-# 1 "/home/guest/Documents/vlsi/dilithium2/config.h" 1
-# 5 "/home/guest/Documents/vlsi/dilithium2/params.h" 2
-# 3 "/home/guest/Documents/vlsi/dilithium2/rounding.c" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/rounding.h" 1
+# 1 "/home/guest/Documents/experiments/dilithium_2/config.h" 1
+# 5 "/home/guest/Documents/experiments/dilithium_2/params.h" 2
+# 3 "/home/guest/Documents/experiments/dilithium_2/rounding.c" 2
+# 1 "/home/guest/Documents/experiments/dilithium_2/rounding.h" 1
 
 
 
@@ -246,27 +245,27 @@ typedef __uintmax_t uintmax_t;
 
 
 
-int32_t pqcrystals_dilithium2_ref_power2round(int32_t *a0, int32_t a);
+int32_t power2round(int32_t *a0, int32_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_decompose(int32_t *a0, int32_t a);
+int32_t decompose(int32_t *a0, int32_t a);
 
 
-unsigned int pqcrystals_dilithium2_ref_make_hint(int32_t a0, int32_t a1);
+unsigned int make_hint(int32_t a0, int32_t a1);
 
 
-int32_t pqcrystals_dilithium2_ref_use_hint(int32_t a, unsigned int hint);
-# 4 "/home/guest/Documents/vlsi/dilithium2/rounding.c" 2
-# 17 "/home/guest/Documents/vlsi/dilithium2/rounding.c"
-int32_t pqcrystals_dilithium2_ref_power2round(int32_t *a0, int32_t a) {
+int32_t use_hint(int32_t a, unsigned int hint);
+# 4 "/home/guest/Documents/experiments/dilithium_2/rounding.c" 2
+# 17 "/home/guest/Documents/experiments/dilithium_2/rounding.c"
+int32_t power2round(int32_t *a0, int32_t a) {
   int32_t a1;
 
   a1 = (a + (1 << (13 -1)) - 1) >> 13;
   *a0 = a - (a1 << 13);
   return a1;
 }
-# 39 "/home/guest/Documents/vlsi/dilithium2/rounding.c"
-int32_t pqcrystals_dilithium2_ref_decompose(int32_t *a0, int32_t a) {
+# 39 "/home/guest/Documents/experiments/dilithium_2/rounding.c"
+int32_t decompose(int32_t *a0, int32_t a) {
   int32_t a1;
 
   a1 = (a + 127) >> 7;
@@ -282,18 +281,18 @@ int32_t pqcrystals_dilithium2_ref_decompose(int32_t *a0, int32_t a) {
   *a0 -= (((8380417 -1)/2 - *a0) >> 31) & 8380417;
   return a1;
 }
-# 68 "/home/guest/Documents/vlsi/dilithium2/rounding.c"
-unsigned int pqcrystals_dilithium2_ref_make_hint(int32_t a0, int32_t a1) {
+# 68 "/home/guest/Documents/experiments/dilithium_2/rounding.c"
+unsigned int make_hint(int32_t a0, int32_t a1) {
   if(a0 <= ((8380417 -1)/88) || a0 > 8380417 - ((8380417 -1)/88) || (a0 == 8380417 - ((8380417 -1)/88) && a1 == 0))
     return 0;
 
   return 1;
 }
-# 85 "/home/guest/Documents/vlsi/dilithium2/rounding.c"
-int32_t pqcrystals_dilithium2_ref_use_hint(int32_t a, unsigned int hint) {
+# 85 "/home/guest/Documents/experiments/dilithium_2/rounding.c"
+int32_t use_hint(int32_t a, unsigned int hint) {
   int32_t a0, a1;
 
-  a1 = pqcrystals_dilithium2_ref_decompose(&a0, a);
+  a1 = decompose(&a0, a);
   if(hint == 0)
     return a1;
 

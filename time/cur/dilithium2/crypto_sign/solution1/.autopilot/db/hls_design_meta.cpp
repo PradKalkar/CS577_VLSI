@@ -15,7 +15,6 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("sm_ce1", 1, hls_out, 0, "ap_memory", "MemPortCE2", 1),
 	Port_Property("sm_we1", 1, hls_out, 0, "ap_memory", "MemPortWE2", 1),
 	Port_Property("sm_d1", 8, hls_out, 0, "ap_memory", "MemPortDIN2", 1),
-	Port_Property("sm_q1", 8, hls_in, 0, "ap_memory", "MemPortDOUT2", 1),
 	Port_Property("smlen", 64, hls_out, 1, "ap_vld", "out_data", 1),
 	Port_Property("smlen_ap_vld", 1, hls_out, 1, "ap_vld", "out_vld", 1),
 	Port_Property("m_address0", 12, hls_out, 2, "ap_memory", "mem_address", 1),

@@ -1,11 +1,16 @@
 # 1 "poly.c"
+# 1 "poly.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 338 "<built-in>" 3
+# 149 "<built-in>" 3
 # 1 "<command line>" 1
-# 1 "<built-in>" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 269 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+
+
+
+
+
+# 1 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 305 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
     void _ssdm_op_IfRead() __attribute__ ((nothrow));
     void _ssdm_op_IfWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead() __attribute__ ((nothrow));
@@ -20,23 +25,11 @@
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamNbWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanRead() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanWrite() __attribute__ ((nothrow));
-    void _ssdm_op_ReadReq() __attribute__ ((nothrow));
-    void _ssdm_op_Read() __attribute__ ((nothrow));
-    void _ssdm_op_WriteReq() __attribute__ ((nothrow));
-    void _ssdm_op_Write() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq() __attribute__ ((nothrow));
 
 
 
 
     void _ssdm_op_MemShiftRead() __attribute__ ((nothrow));
-
-    void _ssdm_op_PrintNone() __attribute__ ((nothrow));
-    void _ssdm_op_PrintInt() __attribute__ ((nothrow));
-    void _ssdm_op_PrintDouble() __attribute__ ((nothrow));
 
     void _ssdm_op_Wait() __attribute__ ((nothrow));
     void _ssdm_op_Poll() __attribute__ ((nothrow));
@@ -88,6 +81,7 @@
     void _ssdm_op_SpecFUCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIFCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIPCore() __attribute__ ((nothrow));
+    void _ssdm_op_SpecKeepValue() __attribute__ ((nothrow));
     void _ssdm_op_SpecMemCore() __attribute__ ((nothrow));
 
     void _ssdm_op_SpecExt() __attribute__ ((nothrow));
@@ -118,8 +112,6 @@
     void _ssdm_op_SpecStable() __attribute__ ((nothrow));
     void _ssdm_op_SpecStableContent() __attribute__ ((nothrow));
 
-    void _ssdm_op_SpecBindPort() __attribute__ ((nothrow));
-
     void _ssdm_op_SpecPipoDepth() __attribute__ ((nothrow));
 
     void _ssdm_SpecExpr() __attribute__ ((nothrow));
@@ -141,10 +133,11 @@
 
     void _ssdm_op_SpecBitsMap() __attribute__ ((nothrow));
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
-# 2 "<built-in>" 2
+# 7 "<command line>" 2
+# 1 "<built-in>" 2
 # 1 "poly.c" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
-# 63 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -361,7 +354,7 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 64 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 2 "poly.c" 2
 # 1 "./params.h" 1
 
@@ -382,74 +375,74 @@ typedef struct {
 } poly;
 
 
-void pqcrystals_dilithium2_ref_poly_reduce(poly *a);
+void poly_reduce(poly *a);
 
-void pqcrystals_dilithium2_ref_poly_caddq(poly *a);
+void poly_caddq(poly *a);
 
-void pqcrystals_dilithium2_ref_poly_freeze(poly *a);
-
-
-void pqcrystals_dilithium2_ref_poly_add(poly *c, const poly *a, const poly *b);
-
-void pqcrystals_dilithium2_ref_poly_sub(poly *c, const poly *a, const poly *b);
-
-void pqcrystals_dilithium2_ref_poly_shiftl(poly *a);
+void poly_freeze(poly *a);
 
 
-void pqcrystals_dilithium2_ref_poly_ntt(poly *a);
+void poly_add(poly *c, const poly *a, const poly *b);
 
-void pqcrystals_dilithium2_ref_poly_invntt_tomont(poly *a);
+void poly_sub(poly *c, const poly *a, const poly *b);
 
-void pqcrystals_dilithium2_ref_poly_pointwise_montgomery(poly *c, const poly *a, const poly *b);
-
-
-void pqcrystals_dilithium2_ref_poly_power2round(poly *a1, poly *a0, const poly *a);
-
-void pqcrystals_dilithium2_ref_poly_decompose(poly *a1, poly *a0, const poly *a);
-
-unsigned int pqcrystals_dilithium2_ref_poly_make_hint(poly *h, const poly *a0, const poly *a1);
-
-void pqcrystals_dilithium2_ref_poly_use_hint(poly *b, const poly *a, const poly *h);
+void poly_shiftl(poly *a);
 
 
-int pqcrystals_dilithium2_ref_poly_chknorm(const poly *a, int32_t B);
+void poly_ntt(poly *a);
 
-void pqcrystals_dilithium2_ref_poly_uniform(poly *a,
+void poly_invntt_tomont(poly *a);
+
+void poly_pointwise_montgomery(poly *c, const poly *a, const poly *b);
+
+
+void poly_power2round(poly *a1, poly *a0, const poly *a);
+
+void poly_decompose(poly *a1, poly *a0, const poly *a);
+
+unsigned int poly_make_hint(poly *h, const poly *a0, const poly *a1);
+
+void poly_use_hint(poly *b, const poly *a, const poly *h);
+
+
+int poly_chknorm(const poly *a, int32_t B);
+
+void poly_uniform(poly *a,
                   const uint8_t seed[32],
                   uint16_t nonce);
 
-void pqcrystals_dilithium2_ref_poly_uniform_eta(poly *a,
+void poly_uniform_eta(poly *a,
                       const uint8_t seed[32],
                       uint16_t nonce);
 
-void pqcrystals_dilithium2_ref_poly_uniform_gamma1(poly *a,
+void poly_uniform_gamma1(poly *a,
                          const uint8_t seed[48],
                          uint16_t nonce);
 
-void pqcrystals_dilithium2_ref_poly_challenge(poly *c, const uint8_t seed[32]);
+void poly_challenge(poly *c, const uint8_t seed[32]);
 
 
-void pqcrystals_dilithium2_ref_polyeta_pack(uint8_t *r, const poly *a);
+void polyeta_pack(uint8_t *r, const poly *a);
 
-void pqcrystals_dilithium2_ref_polyeta_unpack(poly *r, const uint8_t *a);
-
-
-void pqcrystals_dilithium2_ref_polyt1_pack(uint8_t *r, const poly *a);
-
-void pqcrystals_dilithium2_ref_polyt1_unpack(poly *r, const uint8_t *a);
+void polyeta_unpack(poly *r, const uint8_t *a);
 
 
-void pqcrystals_dilithium2_ref_polyt0_pack(uint8_t *r, const poly *a);
+void polyt1_pack(uint8_t *r, const poly *a);
 
-void pqcrystals_dilithium2_ref_polyt0_unpack(poly *r, const uint8_t *a);
-
-
-void pqcrystals_dilithium2_ref_polyz_pack(uint8_t *r, const poly *a);
-
-void pqcrystals_dilithium2_ref_polyz_unpack(poly *r, const uint8_t *a);
+void polyt1_unpack(poly *r, const uint8_t *a);
 
 
-void pqcrystals_dilithium2_ref_polyw1_pack(uint8_t *r, const poly *a);
+void polyt0_pack(uint8_t *r, const poly *a);
+
+void polyt0_unpack(poly *r, const uint8_t *a);
+
+
+void polyz_pack(uint8_t *r, const poly *a);
+
+void polyz_unpack(poly *r, const uint8_t *a);
+
+
+void polyw1_pack(uint8_t *r, const poly *a);
 # 4 "poly.c" 2
 # 1 "./ntt.h" 1
 
@@ -459,23 +452,23 @@ void pqcrystals_dilithium2_ref_polyw1_pack(uint8_t *r, const poly *a);
 
 
 
-void pqcrystals_dilithium2_ref_ntt(int32_t a[256]);
+void ntt(int32_t a[256]);
 
 
-void pqcrystals_dilithium2_ref_invntt_tomont(int32_t a[256]);
+void invntt_tomont(int32_t a[256]);
 # 5 "poly.c" 2
 # 1 "./reduce.h" 1
 # 11 "./reduce.h"
-int32_t pqcrystals_dilithium2_ref_montgomery_reduce(int64_t a);
+int32_t montgomery_reduce(int64_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_reduce32(int32_t a);
+int32_t reduce32(int32_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_caddq(int32_t a);
+int32_t caddq(int32_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_freeze(int32_t a);
+int32_t freeze(int32_t a);
 # 6 "poly.c" 2
 # 1 "./rounding.h" 1
 
@@ -485,16 +478,16 @@ int32_t pqcrystals_dilithium2_ref_freeze(int32_t a);
 
 
 
-int32_t pqcrystals_dilithium2_ref_power2round(int32_t *a0, int32_t a);
+int32_t power2round(int32_t *a0, int32_t a);
 
 
-int32_t pqcrystals_dilithium2_ref_decompose(int32_t *a0, int32_t a);
+int32_t decompose(int32_t *a0, int32_t a);
 
 
-unsigned int pqcrystals_dilithium2_ref_make_hint(int32_t a0, int32_t a1);
+unsigned int make_hint(int32_t a0, int32_t a1);
 
 
-int32_t pqcrystals_dilithium2_ref_use_hint(int32_t a, unsigned int hint);
+int32_t use_hint(int32_t a, unsigned int hint);
 # 7 "poly.c" 2
 # 1 "./symmetric.h" 1
 # 35 "./symmetric.h"
@@ -502,12 +495,17 @@ int32_t pqcrystals_dilithium2_ref_use_hint(int32_t a, unsigned int hint);
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3
-# 51 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
-typedef long int ptrdiff_t;
-# 62 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
-typedef long unsigned int size_t;
-# 90 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
+# 31 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3
+typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
+
+
+
+typedef __typeof__(sizeof(int)) size_t;
+
+
+
+
 typedef int wchar_t;
 # 5 "./fips202.h" 2
 # 15 "./fips202.h"
@@ -552,128 +550,128 @@ typedef keccak_state stream128_state;
 typedef keccak_state stream256_state;
 
 
-void pqcrystals_dilithium2_ref_dilithium_shake128_stream_init(keccak_state *state,
+void dilithium_shake128_stream_init(keccak_state *state,
                                     const uint8_t seed[32],
                                     uint16_t nonce);
 
 
-void pqcrystals_dilithium2_ref_dilithium_shake256_stream_init(keccak_state *state,
+void dilithium_shake256_stream_init(keccak_state *state,
                                     const uint8_t seed[48],
                                     uint16_t nonce);
 # 8 "poly.c" 2
 # 28 "poly.c"
-void pqcrystals_dilithium2_ref_poly_reduce(poly *a) {
+void poly_reduce(poly *a) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_32_1: for(i = 0; i < 256; ++i)
-    a->coeffs[i] = pqcrystals_dilithium2_ref_reduce32(a->coeffs[i]);
+  for(i = 0; i < 256; ++i)
+    a->coeffs[i] = reduce32(a->coeffs[i]);
 
                     ;
 }
 # 46 "poly.c"
-void pqcrystals_dilithium2_ref_poly_caddq(poly *a) {
+void poly_caddq(poly *a) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_50_1: for(i = 0; i < 256; ++i)
-    a->coeffs[i] = pqcrystals_dilithium2_ref_caddq(a->coeffs[i]);
+  for(i = 0; i < 256; ++i)
+    a->coeffs[i] = caddq(a->coeffs[i]);
 
                     ;
 }
 # 64 "poly.c"
-void pqcrystals_dilithium2_ref_poly_freeze(poly *a) {
+void poly_freeze(poly *a) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_68_1: for(i = 0; i < 256; ++i)
-    a->coeffs[i] = pqcrystals_dilithium2_ref_freeze(a->coeffs[i]);
+  for(i = 0; i < 256; ++i)
+    a->coeffs[i] = freeze(a->coeffs[i]);
 
                     ;
 }
 # 83 "poly.c"
-void pqcrystals_dilithium2_ref_poly_add(poly *c, const poly *a, const poly *b) {
+void poly_add(poly *c, const poly *a, const poly *b) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_87_1: for(i = 0; i < 256; ++i)
+  for(i = 0; i < 256; ++i)
     c->coeffs[i] = a->coeffs[i] + b->coeffs[i];
 
                     ;
 }
 # 104 "poly.c"
-void pqcrystals_dilithium2_ref_poly_sub(poly *c, const poly *a, const poly *b) {
+void poly_sub(poly *c, const poly *a, const poly *b) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_108_1: for(i = 0; i < 256; ++i)
+  for(i = 0; i < 256; ++i)
     c->coeffs[i] = a->coeffs[i] - b->coeffs[i];
 
                     ;
 }
 # 122 "poly.c"
-void pqcrystals_dilithium2_ref_poly_shiftl(poly *a) {
+void poly_shiftl(poly *a) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_126_1: for(i = 0; i < 256; ++i)
+  for(i = 0; i < 256; ++i)
     a->coeffs[i] <<= 13;
 
                     ;
 }
 # 140 "poly.c"
-void pqcrystals_dilithium2_ref_poly_ntt(poly *a) {
+void poly_ntt(poly *a) {
                 ;
 
-  pqcrystals_dilithium2_ref_ntt(a->coeffs);
+  ntt(a->coeffs);
 
                     ;
 }
 # 157 "poly.c"
-void pqcrystals_dilithium2_ref_poly_invntt_tomont(poly *a) {
+void poly_invntt_tomont(poly *a) {
                 ;
 
-  pqcrystals_dilithium2_ref_invntt_tomont(a->coeffs);
+  invntt_tomont(a->coeffs);
 
                     ;
 }
 # 176 "poly.c"
-void pqcrystals_dilithium2_ref_poly_pointwise_montgomery(poly *c, const poly *a, const poly *b) {
+void poly_pointwise_montgomery(poly *c, const poly *a, const poly *b) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_180_1: for(i = 0; i < 256; ++i)
-    c->coeffs[i] = pqcrystals_dilithium2_ref_montgomery_reduce((int64_t)a->coeffs[i] * b->coeffs[i]);
+  for(i = 0; i < 256; ++i)
+    c->coeffs[i] = montgomery_reduce((int64_t)a->coeffs[i] * b->coeffs[i]);
 
                     ;
 }
 # 198 "poly.c"
-void pqcrystals_dilithium2_ref_poly_power2round(poly *a1, poly *a0, const poly *a) {
+void poly_power2round(poly *a1, poly *a0, const poly *a) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_202_1: for(i = 0; i < 256; ++i)
-    a1->coeffs[i] = pqcrystals_dilithium2_ref_power2round(&a0->coeffs[i], a->coeffs[i]);
+  for(i = 0; i < 256; ++i)
+    a1->coeffs[i] = power2round(&a0->coeffs[i], a->coeffs[i]);
 
                       ;
 }
 # 221 "poly.c"
-void pqcrystals_dilithium2_ref_poly_decompose(poly *a1, poly *a0, const poly *a) {
+void poly_decompose(poly *a1, poly *a0, const poly *a) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_225_1: for(i = 0; i < 256; ++i)
-    a1->coeffs[i] = pqcrystals_dilithium2_ref_decompose(&a0->coeffs[i], a->coeffs[i]);
+  for(i = 0; i < 256; ++i)
+    a1->coeffs[i] = decompose(&a0->coeffs[i], a->coeffs[i]);
 
                       ;
 }
 # 244 "poly.c"
-unsigned int pqcrystals_dilithium2_ref_poly_make_hint(poly *h, const poly *a0, const poly *a1) {
+unsigned int poly_make_hint(poly *h, const poly *a0, const poly *a1) {
   unsigned int i, s = 0;
                 ;
 
-  VITIS_LOOP_248_1: for(i = 0; i < 256; ++i) {
-    h->coeffs[i] = pqcrystals_dilithium2_ref_make_hint(a0->coeffs[i], a1->coeffs[i]);
+  for(i = 0; i < 256; ++i) {
+    h->coeffs[i] = make_hint(a0->coeffs[i], a1->coeffs[i]);
     s += h->coeffs[i];
   }
 
@@ -681,17 +679,17 @@ unsigned int pqcrystals_dilithium2_ref_poly_make_hint(poly *h, const poly *a0, c
   return s;
 }
 # 266 "poly.c"
-void pqcrystals_dilithium2_ref_poly_use_hint(poly *b, const poly *a, const poly *h) {
+void poly_use_hint(poly *b, const poly *a, const poly *h) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_270_1: for(i = 0; i < 256; ++i)
-    b->coeffs[i] = pqcrystals_dilithium2_ref_use_hint(a->coeffs[i], h->coeffs[i]);
+  for(i = 0; i < 256; ++i)
+    b->coeffs[i] = use_hint(a->coeffs[i], h->coeffs[i]);
 
                       ;
 }
 # 287 "poly.c"
-int pqcrystals_dilithium2_ref_poly_chknorm(const poly *a, int32_t B) {
+int poly_chknorm(const poly *a, int32_t B) {
   unsigned int i;
   int32_t t;
                 ;
@@ -702,7 +700,7 @@ int pqcrystals_dilithium2_ref_poly_chknorm(const poly *a, int32_t B) {
 
 
 
-  VITIS_LOOP_298_1: for(i = 0; i < 256; ++i) {
+  for(i = 0; i < 256; ++i) {
 
     t = a->coeffs[i] >> 31;
     t = a->coeffs[i] - (t & 2*a->coeffs[i]);
@@ -727,7 +725,7 @@ static unsigned int rej_uniform(int32_t *a,
                 ;
 
   ctr = pos = 0;
-  VITIS_LOOP_337_1: while(ctr < len && pos + 3 <= buflen) {
+  while(ctr < len && pos + 3 <= buflen) {
     t = buf[pos++];
     t |= (uint32_t)buf[pos++] << 8;
     t |= (uint32_t)buf[pos++] << 16;
@@ -741,23 +739,23 @@ static unsigned int rej_uniform(int32_t *a,
   return ctr;
 }
 # 363 "poly.c"
-void pqcrystals_dilithium2_ref_poly_uniform(poly *a,
+void poly_uniform(poly *a,
                   const uint8_t seed[32],
                   uint16_t nonce)
-{
+{_ssdm_SpecArrayDimSize(seed, 32);
   unsigned int i, ctr, off;
   unsigned int buflen = ((768 + 168 - 1)/168)*168;
   uint8_t buf[((768 + 168 - 1)/168)*168 + 2];
   stream128_state state;
 
-  pqcrystals_dilithium2_ref_dilithium_shake128_stream_init(&state, seed, nonce);
+  dilithium_shake128_stream_init(&state, seed, nonce);
   shake128_squeezeblocks(buf, ((768 + 168 - 1)/168), &state);
 
   ctr = rej_uniform(a->coeffs, 256, buf, buflen);
 
-  VITIS_LOOP_377_1: while(ctr < 256) {
+  while(ctr < 256) {
     off = buflen % 3;
-    VITIS_LOOP_379_2: for(i = 0; i < off; ++i)
+    for(i = 0; i < off; ++i)
       buf[i] = buf[buflen - off + i];
 
     shake128_squeezeblocks(buf + off, 1, &state);
@@ -776,7 +774,7 @@ static unsigned int rej_eta(int32_t *a,
                 ;
 
   ctr = pos = 0;
-  VITIS_LOOP_412_1: while(ctr < len && pos < buflen) {
+  while(ctr < len && pos < buflen) {
     t0 = buf[pos] & 0x0F;
     t1 = buf[pos++] >> 4;
 
@@ -801,39 +799,39 @@ static unsigned int rej_eta(int32_t *a,
   return ctr;
 }
 # 453 "poly.c"
-void pqcrystals_dilithium2_ref_poly_uniform_eta(poly *a,
+void poly_uniform_eta(poly *a,
                       const uint8_t seed[32],
                       uint16_t nonce)
-{
+{_ssdm_SpecArrayDimSize(seed, 32);
   unsigned int ctr;
   unsigned int buflen = ((136 + 168 - 1)/168)*168;
   uint8_t buf[((136 + 168 - 1)/168)*168];
   stream128_state state;
 
-  pqcrystals_dilithium2_ref_dilithium_shake128_stream_init(&state, seed, nonce);
+  dilithium_shake128_stream_init(&state, seed, nonce);
   shake128_squeezeblocks(buf, ((136 + 168 - 1)/168), &state);
 
   ctr = rej_eta(a->coeffs, 256, buf, buflen);
 
-  VITIS_LOOP_467_1: while(ctr < 256) {
+  while(ctr < 256) {
     shake128_squeezeblocks(buf, 1, &state);
     ctr += rej_eta(a->coeffs + ctr, 256 - ctr, buf, 168);
   }
 }
 # 489 "poly.c"
-void pqcrystals_dilithium2_ref_poly_uniform_gamma1(poly *a,
+void poly_uniform_gamma1(poly *a,
                          const uint8_t seed[48],
                          uint16_t nonce)
-{
+{_ssdm_SpecArrayDimSize(seed, 48);
   uint8_t buf[((576 + 136 - 1)/136)*136];
   stream256_state state;
 
-  pqcrystals_dilithium2_ref_dilithium_shake256_stream_init(&state, seed, nonce);
+  dilithium_shake256_stream_init(&state, seed, nonce);
   shake256_squeezeblocks(buf, ((576 + 136 - 1)/136), &state);
-  pqcrystals_dilithium2_ref_polyz_unpack(a, buf);
+  polyz_unpack(a, buf);
 }
 # 511 "poly.c"
-void pqcrystals_dilithium2_ref_poly_challenge(poly *c, const uint8_t seed[32]) {
+void poly_challenge(poly *c, const uint8_t seed[32]) {_ssdm_SpecArrayDimSize(seed, 32);
   unsigned int i, b, pos;
   uint64_t signs;
   uint8_t buf[136];
@@ -845,14 +843,14 @@ void pqcrystals_dilithium2_ref_poly_challenge(poly *c, const uint8_t seed[32]) {
   shake256_squeezeblocks(buf, 1, &state);
 
   signs = 0;
-  VITIS_LOOP_523_1: for(i = 0; i < 8; ++i)
+  for(i = 0; i < 8; ++i)
     signs |= (uint64_t)buf[i] << 8*i;
   pos = 8;
 
-  VITIS_LOOP_527_2: for(i = 0; i < 256; ++i)
+  for(i = 0; i < 256; ++i)
     c->coeffs[i] = 0;
-  VITIS_LOOP_529_3: for(i = 256 -39; i < 256; ++i) {
-    VITIS_LOOP_530_4: do {
+  for(i = 256 -39; i < 256; ++i) {
+    do {
       if(pos >= 136) {
         shake256_squeezeblocks(buf, 1, &state);
         pos = 0;
@@ -867,13 +865,13 @@ void pqcrystals_dilithium2_ref_poly_challenge(poly *c, const uint8_t seed[32]) {
   }
 }
 # 554 "poly.c"
-void pqcrystals_dilithium2_ref_polyeta_pack(uint8_t *r, const poly *a) {
+void polyeta_pack(uint8_t *r, const poly *a) {
   unsigned int i;
   uint8_t t[8];
                 ;
 
 
-  VITIS_LOOP_560_1: for(i = 0; i < 256/8; ++i) {
+  for(i = 0; i < 256/8; ++i) {
     t[0] = 2 - a->coeffs[8*i+0];
     t[1] = 2 - a->coeffs[8*i+1];
     t[2] = 2 - a->coeffs[8*i+2];
@@ -891,12 +889,12 @@ void pqcrystals_dilithium2_ref_polyeta_pack(uint8_t *r, const poly *a) {
                      ;
 }
 # 593 "poly.c"
-void pqcrystals_dilithium2_ref_polyeta_unpack(poly *r, const uint8_t *a) {
+void polyeta_unpack(poly *r, const uint8_t *a) {
   unsigned int i;
                 ;
 
 
-  VITIS_LOOP_598_1: for(i = 0; i < 256/8; ++i) {
+  for(i = 0; i < 256/8; ++i) {
     r->coeffs[8*i+0] = (a[3*i+0] >> 0) & 7;
     r->coeffs[8*i+1] = (a[3*i+0] >> 3) & 7;
     r->coeffs[8*i+2] = ((a[3*i+0] >> 6) | (a[3*i+1] << 2)) & 7;
@@ -919,11 +917,11 @@ void pqcrystals_dilithium2_ref_polyeta_unpack(poly *r, const uint8_t *a) {
                      ;
 }
 # 639 "poly.c"
-void pqcrystals_dilithium2_ref_polyt1_pack(uint8_t *r, const poly *a) {
+void polyt1_pack(uint8_t *r, const poly *a) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_643_1: for(i = 0; i < 256/4; ++i) {
+  for(i = 0; i < 256/4; ++i) {
     r[5*i+0] = (a->coeffs[4*i+0] >> 0);
     r[5*i+1] = (a->coeffs[4*i+0] >> 8) | (a->coeffs[4*i+1] << 2);
     r[5*i+2] = (a->coeffs[4*i+1] >> 6) | (a->coeffs[4*i+2] << 4);
@@ -934,11 +932,11 @@ void pqcrystals_dilithium2_ref_polyt1_pack(uint8_t *r, const poly *a) {
                      ;
 }
 # 663 "poly.c"
-void pqcrystals_dilithium2_ref_polyt1_unpack(poly *r, const uint8_t *a) {
+void polyt1_unpack(poly *r, const uint8_t *a) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_667_1: for(i = 0; i < 256/4; ++i) {
+  for(i = 0; i < 256/4; ++i) {
     r->coeffs[4*i+0] = ((a[5*i+0] >> 0) | ((uint32_t)a[5*i+1] << 8)) & 0x3FF;
     r->coeffs[4*i+1] = ((a[5*i+1] >> 2) | ((uint32_t)a[5*i+2] << 6)) & 0x3FF;
     r->coeffs[4*i+2] = ((a[5*i+2] >> 4) | ((uint32_t)a[5*i+3] << 4)) & 0x3FF;
@@ -948,12 +946,12 @@ void pqcrystals_dilithium2_ref_polyt1_unpack(poly *r, const uint8_t *a) {
                      ;
 }
 # 686 "poly.c"
-void pqcrystals_dilithium2_ref_polyt0_pack(uint8_t *r, const poly *a) {
+void polyt0_pack(uint8_t *r, const poly *a) {
   unsigned int i;
   uint32_t t[8];
                 ;
 
-  VITIS_LOOP_691_1: for(i = 0; i < 256/8; ++i) {
+  for(i = 0; i < 256/8; ++i) {
     t[0] = (1 << (13 -1)) - a->coeffs[8*i+0];
     t[1] = (1 << (13 -1)) - a->coeffs[8*i+1];
     t[2] = (1 << (13 -1)) - a->coeffs[8*i+2];
@@ -988,11 +986,11 @@ void pqcrystals_dilithium2_ref_polyt0_pack(uint8_t *r, const poly *a) {
                      ;
 }
 # 734 "poly.c"
-void pqcrystals_dilithium2_ref_polyt0_unpack(poly *r, const uint8_t *a) {
+void polyt0_unpack(poly *r, const uint8_t *a) {
   unsigned int i;
                 ;
 
-  VITIS_LOOP_738_1: for(i = 0; i < 256/8; ++i) {
+  for(i = 0; i < 256/8; ++i) {
     r->coeffs[8*i+0] = a[13*i+0];
     r->coeffs[8*i+0] |= (uint32_t)a[13*i+1] << 8;
     r->coeffs[8*i+0] &= 0x1FFF;
@@ -1042,13 +1040,13 @@ void pqcrystals_dilithium2_ref_polyt0_unpack(poly *r, const uint8_t *a) {
                      ;
 }
 # 798 "poly.c"
-void pqcrystals_dilithium2_ref_polyz_pack(uint8_t *r, const poly *a) {
+void polyz_pack(uint8_t *r, const poly *a) {
   unsigned int i;
   uint32_t t[4];
                 ;
 
 
-  VITIS_LOOP_804_1: for(i = 0; i < 256/4; ++i) {
+  for(i = 0; i < 256/4; ++i) {
     t[0] = (1 << 17) - a->coeffs[4*i+0];
     t[1] = (1 << 17) - a->coeffs[4*i+1];
     t[2] = (1 << 17) - a->coeffs[4*i+2];
@@ -1071,12 +1069,12 @@ void pqcrystals_dilithium2_ref_polyz_pack(uint8_t *r, const poly *a) {
                      ;
 }
 # 849 "poly.c"
-void pqcrystals_dilithium2_ref_polyz_unpack(poly *r, const uint8_t *a) {
+void polyz_unpack(poly *r, const uint8_t *a) {
   unsigned int i;
                 ;
 
 
-  VITIS_LOOP_854_1: for(i = 0; i < 256/4; ++i) {
+  for(i = 0; i < 256/4; ++i) {
     r->coeffs[4*i+0] = a[9*i+0];
     r->coeffs[4*i+0] |= (uint32_t)a[9*i+1] << 8;
     r->coeffs[4*i+0] |= (uint32_t)a[9*i+2] << 16;
@@ -1106,12 +1104,12 @@ void pqcrystals_dilithium2_ref_polyz_unpack(poly *r, const uint8_t *a) {
                      ;
 }
 # 910 "poly.c"
-void pqcrystals_dilithium2_ref_polyw1_pack(uint8_t *r, const poly *a) {
+void polyw1_pack(uint8_t *r, const poly *a) {
   unsigned int i;
                 ;
 
 
-  VITIS_LOOP_915_1: for(i = 0; i < 256/4; ++i) {
+  for(i = 0; i < 256/4; ++i) {
     r[3*i+0] = a->coeffs[4*i+0];
     r[3*i+0] |= a->coeffs[4*i+1] << 6;
     r[3*i+1] = a->coeffs[4*i+1] >> 2;

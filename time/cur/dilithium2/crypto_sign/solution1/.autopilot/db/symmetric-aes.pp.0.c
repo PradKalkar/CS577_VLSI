@@ -1,11 +1,16 @@
 # 1 "symmetric-aes.c"
+# 1 "symmetric-aes.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 338 "<built-in>" 3
+# 149 "<built-in>" 3
 # 1 "<command line>" 1
-# 1 "<built-in>" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 269 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+
+
+
+
+
+# 1 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 305 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
     void _ssdm_op_IfRead() __attribute__ ((nothrow));
     void _ssdm_op_IfWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead() __attribute__ ((nothrow));
@@ -20,23 +25,11 @@
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamNbWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanRead() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanWrite() __attribute__ ((nothrow));
-    void _ssdm_op_ReadReq() __attribute__ ((nothrow));
-    void _ssdm_op_Read() __attribute__ ((nothrow));
-    void _ssdm_op_WriteReq() __attribute__ ((nothrow));
-    void _ssdm_op_Write() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq() __attribute__ ((nothrow));
 
 
 
 
     void _ssdm_op_MemShiftRead() __attribute__ ((nothrow));
-
-    void _ssdm_op_PrintNone() __attribute__ ((nothrow));
-    void _ssdm_op_PrintInt() __attribute__ ((nothrow));
-    void _ssdm_op_PrintDouble() __attribute__ ((nothrow));
 
     void _ssdm_op_Wait() __attribute__ ((nothrow));
     void _ssdm_op_Poll() __attribute__ ((nothrow));
@@ -88,6 +81,7 @@
     void _ssdm_op_SpecFUCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIFCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIPCore() __attribute__ ((nothrow));
+    void _ssdm_op_SpecKeepValue() __attribute__ ((nothrow));
     void _ssdm_op_SpecMemCore() __attribute__ ((nothrow));
 
     void _ssdm_op_SpecExt() __attribute__ ((nothrow));
@@ -118,8 +112,6 @@
     void _ssdm_op_SpecStable() __attribute__ ((nothrow));
     void _ssdm_op_SpecStableContent() __attribute__ ((nothrow));
 
-    void _ssdm_op_SpecBindPort() __attribute__ ((nothrow));
-
     void _ssdm_op_SpecPipoDepth() __attribute__ ((nothrow));
 
     void _ssdm_SpecExpr() __attribute__ ((nothrow));
@@ -141,10 +133,11 @@
 
     void _ssdm_op_SpecBitsMap() __attribute__ ((nothrow));
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
-# 2 "<built-in>" 2
+# 7 "<command line>" 2
+# 1 "<built-in>" 2
 # 1 "symmetric-aes.c" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
-# 63 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -361,7 +354,7 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 64 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 2 "symmetric-aes.c" 2
 # 1 "./symmetric.h" 1
 
@@ -380,12 +373,17 @@ typedef __uintmax_t uintmax_t;
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3
-# 51 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
-typedef long int ptrdiff_t;
-# 62 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
-typedef long unsigned int size_t;
-# 90 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
+# 31 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3
+typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
+
+
+
+typedef __typeof__(sizeof(int)) size_t;
+
+
+
+
 typedef int wchar_t;
 # 5 "./fips202.h" 2
 # 15 "./fips202.h"
@@ -430,12 +428,12 @@ typedef keccak_state stream128_state;
 typedef keccak_state stream256_state;
 
 
-void pqcrystals_dilithium2_ref_dilithium_shake128_stream_init(keccak_state *state,
+void dilithium_shake128_stream_init(keccak_state *state,
                                     const uint8_t seed[32],
                                     uint16_t nonce);
 
 
-void pqcrystals_dilithium2_ref_dilithium_shake256_stream_init(keccak_state *state,
+void dilithium_shake256_stream_init(keccak_state *state,
                                     const uint8_t seed[48],
                                     uint16_t nonce);
 # 3 "symmetric-aes.c" 2
@@ -443,7 +441,7 @@ void pqcrystals_dilithium2_ref_dilithium_shake256_stream_init(keccak_state *stat
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
 # 5 "./aes256ctr.h" 2
 
 
@@ -457,18 +455,18 @@ typedef struct {
 } aes256ctr_ctx;
 
 
-void pqcrystals_aes256ctr_ref_prf(uint8_t *out,
+void aes256ctr_prf(uint8_t *out,
                    size_t outlen,
                    const uint8_t key[32],
                    const uint8_t nonce[12]);
 
 
-void pqcrystals_aes256ctr_ref_init(aes256ctr_ctx *state,
+void aes256ctr_init(aes256ctr_ctx *state,
                     const uint8_t key[32],
                     const uint8_t nonce[12]);
 
 
-void pqcrystals_aes256ctr_ref_squeezeblocks(uint8_t *out,
+void aes256ctr_squeezeblocks(uint8_t *out,
                              size_t nblocks,
                              aes256ctr_ctx *state);
 # 4 "symmetric-aes.c" 2
@@ -476,9 +474,9 @@ void pqcrystals_aes256ctr_ref_squeezeblocks(uint8_t *out,
 void dilithium_aes256ctr_init(aes256ctr_ctx *state,
                               const uint8_t key[32],
                               uint16_t nonce)
-{
+{_ssdm_SpecArrayDimSize(key, 32);
   uint8_t expnonce[12] = {0};
   expnonce[0] = nonce;
   expnonce[1] = nonce >> 8;
-  pqcrystals_aes256ctr_ref_init(state, key, expnonce);
+  aes256ctr_init(state, key, expnonce);
 }

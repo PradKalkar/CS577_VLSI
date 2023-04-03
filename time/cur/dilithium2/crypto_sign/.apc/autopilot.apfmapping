@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="aes.c" path="/home/guest/Documents/vlsi/dilithium2/aes.c"/>
-    <originFiles name="aes256ctr.c" path="/home/guest/Documents/vlsi/dilithium2/aes256ctr.c"/>
-    <originFiles name="fips202.c" path="/home/guest/Documents/vlsi/dilithium2/fips202.c"/>
-    <originFiles name="ntt.c" path="/home/guest/Documents/vlsi/dilithium2/ntt.c"/>
-    <originFiles name="packing.c" path="/home/guest/Documents/vlsi/dilithium2/packing.c"/>
-    <originFiles name="poly.c" path="/home/guest/Documents/vlsi/dilithium2/poly.c"/>
-    <originFiles name="polyvec.c" path="/home/guest/Documents/vlsi/dilithium2/polyvec.c"/>
-    <originFiles name="reduce.c" path="/home/guest/Documents/vlsi/dilithium2/reduce.c"/>
-    <originFiles name="rng.c" path="/home/guest/Documents/vlsi/dilithium2/rng.c"/>
-    <originFiles name="rounding.c" path="/home/guest/Documents/vlsi/dilithium2/rounding.c"/>
-    <originFiles name="sign.c" path="/home/guest/Documents/vlsi/dilithium2/sign.c"/>
-    <originFiles name="symmetric-aes.c" path="/home/guest/Documents/vlsi/dilithium2/symmetric-aes.c"/>
-    <originFiles name="symmetric-shake.c" path="/home/guest/Documents/vlsi/dilithium2/symmetric-shake.c"/>
+    <originFiles name="symmetric-shake.c" path="/home/guest/Documents/experiments/dilithium_2/symmetric-shake.c"/>
+    <originFiles name="symmetric-aes.c" path="/home/guest/Documents/experiments/dilithium_2/symmetric-aes.c"/>
+    <originFiles name="sign.c" path="/home/guest/Documents/experiments/dilithium_2/sign.c"/>
+    <originFiles name="rounding.c" path="/home/guest/Documents/experiments/dilithium_2/rounding.c"/>
+    <originFiles name="rng.c" path="/home/guest/Documents/experiments/dilithium_2/rng.c"/>
+    <originFiles name="reduce.c" path="/home/guest/Documents/experiments/dilithium_2/reduce.c"/>
+    <originFiles name="polyvec.c" path="/home/guest/Documents/experiments/dilithium_2/polyvec.c"/>
+    <originFiles name="poly.c" path="/home/guest/Documents/experiments/dilithium_2/poly.c"/>
+    <originFiles name="packing.c" path="/home/guest/Documents/experiments/dilithium_2/packing.c"/>
+    <originFiles name="ntt.c" path="/home/guest/Documents/experiments/dilithium_2/ntt.c"/>
+    <originFiles name="fips202.c" path="/home/guest/Documents/experiments/dilithium_2/fips202.c"/>
+    <originFiles name="aes256ctr.c" path="/home/guest/Documents/experiments/dilithium_2/aes256ctr.c"/>
+    <originFiles name="aes.c" path="/home/guest/Documents/experiments/dilithium_2/aes.c"/>
   </source>
   <testbench>
-    <originFiles name="PQCgenKAT_sign.c" path="/home/guest/Documents/vlsi/dilithium2/PQCgenKAT_sign.c"/>
+    <originFiles name="PQCgenKAT_sign.c" path="/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

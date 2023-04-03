@@ -5,66 +5,6 @@
                 <option name="name" value="crypto_sign"/>
             </pragma>
         </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
-        <directive functionName="crypto_sign" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="crypto_sign"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

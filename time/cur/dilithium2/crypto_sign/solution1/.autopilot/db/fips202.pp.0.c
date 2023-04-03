@@ -1,11 +1,16 @@
 # 1 "fips202.c"
+# 1 "fips202.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 338 "<built-in>" 3
+# 149 "<built-in>" 3
 # 1 "<command line>" 1
-# 1 "<built-in>" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 269 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+
+
+
+
+
+# 1 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 305 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
     void _ssdm_op_IfRead() __attribute__ ((nothrow));
     void _ssdm_op_IfWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead() __attribute__ ((nothrow));
@@ -20,23 +25,11 @@
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamNbWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanRead() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanWrite() __attribute__ ((nothrow));
-    void _ssdm_op_ReadReq() __attribute__ ((nothrow));
-    void _ssdm_op_Read() __attribute__ ((nothrow));
-    void _ssdm_op_WriteReq() __attribute__ ((nothrow));
-    void _ssdm_op_Write() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq() __attribute__ ((nothrow));
 
 
 
 
     void _ssdm_op_MemShiftRead() __attribute__ ((nothrow));
-
-    void _ssdm_op_PrintNone() __attribute__ ((nothrow));
-    void _ssdm_op_PrintInt() __attribute__ ((nothrow));
-    void _ssdm_op_PrintDouble() __attribute__ ((nothrow));
 
     void _ssdm_op_Wait() __attribute__ ((nothrow));
     void _ssdm_op_Poll() __attribute__ ((nothrow));
@@ -88,6 +81,7 @@
     void _ssdm_op_SpecFUCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIFCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIPCore() __attribute__ ((nothrow));
+    void _ssdm_op_SpecKeepValue() __attribute__ ((nothrow));
     void _ssdm_op_SpecMemCore() __attribute__ ((nothrow));
 
     void _ssdm_op_SpecExt() __attribute__ ((nothrow));
@@ -118,8 +112,6 @@
     void _ssdm_op_SpecStable() __attribute__ ((nothrow));
     void _ssdm_op_SpecStableContent() __attribute__ ((nothrow));
 
-    void _ssdm_op_SpecBindPort() __attribute__ ((nothrow));
-
     void _ssdm_op_SpecPipoDepth() __attribute__ ((nothrow));
 
     void _ssdm_SpecExpr() __attribute__ ((nothrow));
@@ -141,7 +133,8 @@
 
     void _ssdm_op_SpecBitsMap() __attribute__ ((nothrow));
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
-# 2 "<built-in>" 2
+# 7 "<command line>" 2
+# 1 "<built-in>" 2
 # 1 "fips202.c" 2
 
 
@@ -150,16 +143,21 @@
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3
-# 51 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
-typedef long int ptrdiff_t;
-# 62 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
-typedef long unsigned int size_t;
-# 90 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
+# 31 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3
+typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
+
+
+
+typedef __typeof__(sizeof(int)) size_t;
+
+
+
+
 typedef int wchar_t;
 # 9 "fips202.c" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
-# 63 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -376,13 +374,13 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 64 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 10 "fips202.c" 2
 # 1 "./fips202.h" 1
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
 # 5 "./fips202.h" 2
 # 15 "./fips202.h"
 typedef struct {
@@ -422,20 +420,20 @@ void sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen);
 void sha3_512(uint8_t h[64], const uint8_t *in, size_t inlen);
 # 11 "fips202.c" 2
 # 26 "fips202.c"
-uint64_t load64(const uint8_t x[8]) {
+uint64_t load64(const uint8_t x[8]) {_ssdm_SpecArrayDimSize(x, 8);
   unsigned int i;
   uint64_t r = 0;
 
-  VITIS_LOOP_30_1: for(i=0;i<8;i++)
+  for(i=0;i<8;i++)
     r |= (uint64_t)x[i] << 8*i;
 
   return r;
 }
 # 44 "fips202.c"
-void store64(uint8_t x[8], uint64_t u) {
+void store64(uint8_t x[8], uint64_t u) {_ssdm_SpecArrayDimSize(x, 8);
   unsigned int i;
 
-  VITIS_LOOP_47_1: for(i=0;i<8;i++)
+  for(i=0;i<8;i++)
     x[i] = u >> 8*i;
 }
 
@@ -468,7 +466,7 @@ static const uint64_t KeccakF_RoundConstants[24] = {
 };
 # 86 "fips202.c"
 static void KeccakF1600_StatePermute(uint64_t state[25])
-{
+{_ssdm_SpecArrayDimSize(state, 25);
         int round;
 
         uint64_t Aba, Abe, Abi, Abo, Abu;
@@ -512,7 +510,7 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
         Aso = state[23];
         Asu = state[24];
 
-        VITIS_LOOP_131_1: for( round = 0; round < 24; round += 2 )
+        for( round = 0; round < 24; round += 2 )
         {
 
             BCa = Aba^Aga^Aka^Ama^Asa;
@@ -522,22 +520,22 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
             BCu = Abu^Agu^Aku^Amu^Asu;
 
 
-            Da = BCu^((BCe << 1) ^ (BCe >> (64-1)));
-            De = BCa^((BCi << 1) ^ (BCi >> (64-1)));
-            Di = BCe^((BCo << 1) ^ (BCo >> (64-1)));
-            Do = BCi^((BCu << 1) ^ (BCu >> (64-1)));
-            Du = BCo^((BCa << 1) ^ (BCa >> (64-1)));
+            Da = BCu^((BCe << 1) ^ (BCe >> (64 -1)));
+            De = BCa^((BCi << 1) ^ (BCi >> (64 -1)));
+            Di = BCe^((BCo << 1) ^ (BCo >> (64 -1)));
+            Do = BCi^((BCu << 1) ^ (BCu >> (64 -1)));
+            Du = BCo^((BCa << 1) ^ (BCa >> (64 -1)));
 
             Aba ^= Da;
             BCa = Aba;
             Age ^= De;
-            BCe = ((Age << 44) ^ (Age >> (64-44)));
+            BCe = ((Age << 44) ^ (Age >> (64 -44)));
             Aki ^= Di;
-            BCi = ((Aki << 43) ^ (Aki >> (64-43)));
+            BCi = ((Aki << 43) ^ (Aki >> (64 -43)));
             Amo ^= Do;
-            BCo = ((Amo << 21) ^ (Amo >> (64-21)));
+            BCo = ((Amo << 21) ^ (Amo >> (64 -21)));
             Asu ^= Du;
-            BCu = ((Asu << 14) ^ (Asu >> (64-14)));
+            BCu = ((Asu << 14) ^ (Asu >> (64 -14)));
             Eba = BCa ^((~BCe)& BCi );
             Eba ^= (uint64_t)KeccakF_RoundConstants[round];
             Ebe = BCe ^((~BCi)& BCo );
@@ -546,15 +544,15 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
             Ebu = BCu ^((~BCa)& BCe );
 
             Abo ^= Do;
-            BCa = ((Abo << 28) ^ (Abo >> (64-28)));
+            BCa = ((Abo << 28) ^ (Abo >> (64 -28)));
             Agu ^= Du;
-            BCe = ((Agu << 20) ^ (Agu >> (64-20)));
+            BCe = ((Agu << 20) ^ (Agu >> (64 -20)));
             Aka ^= Da;
-            BCi = ((Aka << 3) ^ (Aka >> (64-3)));
+            BCi = ((Aka << 3) ^ (Aka >> (64 -3)));
             Ame ^= De;
-            BCo = ((Ame << 45) ^ (Ame >> (64-45)));
+            BCo = ((Ame << 45) ^ (Ame >> (64 -45)));
             Asi ^= Di;
-            BCu = ((Asi << 61) ^ (Asi >> (64-61)));
+            BCu = ((Asi << 61) ^ (Asi >> (64 -61)));
             Ega = BCa ^((~BCe)& BCi );
             Ege = BCe ^((~BCi)& BCo );
             Egi = BCi ^((~BCo)& BCu );
@@ -562,15 +560,15 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
             Egu = BCu ^((~BCa)& BCe );
 
             Abe ^= De;
-            BCa = ((Abe << 1) ^ (Abe >> (64-1)));
+            BCa = ((Abe << 1) ^ (Abe >> (64 -1)));
             Agi ^= Di;
-            BCe = ((Agi << 6) ^ (Agi >> (64-6)));
+            BCe = ((Agi << 6) ^ (Agi >> (64 -6)));
             Ako ^= Do;
-            BCi = ((Ako << 25) ^ (Ako >> (64-25)));
+            BCi = ((Ako << 25) ^ (Ako >> (64 -25)));
             Amu ^= Du;
-            BCo = ((Amu << 8) ^ (Amu >> (64-8)));
+            BCo = ((Amu << 8) ^ (Amu >> (64 -8)));
             Asa ^= Da;
-            BCu = ((Asa << 18) ^ (Asa >> (64-18)));
+            BCu = ((Asa << 18) ^ (Asa >> (64 -18)));
             Eka = BCa ^((~BCe)& BCi );
             Eke = BCe ^((~BCi)& BCo );
             Eki = BCi ^((~BCo)& BCu );
@@ -578,15 +576,15 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
             Eku = BCu ^((~BCa)& BCe );
 
             Abu ^= Du;
-            BCa = ((Abu << 27) ^ (Abu >> (64-27)));
+            BCa = ((Abu << 27) ^ (Abu >> (64 -27)));
             Aga ^= Da;
-            BCe = ((Aga << 36) ^ (Aga >> (64-36)));
+            BCe = ((Aga << 36) ^ (Aga >> (64 -36)));
             Ake ^= De;
-            BCi = ((Ake << 10) ^ (Ake >> (64-10)));
+            BCi = ((Ake << 10) ^ (Ake >> (64 -10)));
             Ami ^= Di;
-            BCo = ((Ami << 15) ^ (Ami >> (64-15)));
+            BCo = ((Ami << 15) ^ (Ami >> (64 -15)));
             Aso ^= Do;
-            BCu = ((Aso << 56) ^ (Aso >> (64-56)));
+            BCu = ((Aso << 56) ^ (Aso >> (64 -56)));
             Ema = BCa ^((~BCe)& BCi );
             Eme = BCe ^((~BCi)& BCo );
             Emi = BCi ^((~BCo)& BCu );
@@ -594,15 +592,15 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
             Emu = BCu ^((~BCa)& BCe );
 
             Abi ^= Di;
-            BCa = ((Abi << 62) ^ (Abi >> (64-62)));
+            BCa = ((Abi << 62) ^ (Abi >> (64 -62)));
             Ago ^= Do;
-            BCe = ((Ago << 55) ^ (Ago >> (64-55)));
+            BCe = ((Ago << 55) ^ (Ago >> (64 -55)));
             Aku ^= Du;
-            BCi = ((Aku << 39) ^ (Aku >> (64-39)));
+            BCi = ((Aku << 39) ^ (Aku >> (64 -39)));
             Ama ^= Da;
-            BCo = ((Ama << 41) ^ (Ama >> (64-41)));
+            BCo = ((Ama << 41) ^ (Ama >> (64 -41)));
             Ase ^= De;
-            BCu = ((Ase << 2) ^ (Ase >> (64-2)));
+            BCu = ((Ase << 2) ^ (Ase >> (64 -2)));
             Esa = BCa ^((~BCe)& BCi );
             Ese = BCe ^((~BCi)& BCo );
             Esi = BCi ^((~BCo)& BCu );
@@ -617,22 +615,22 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
             BCu = Ebu^Egu^Eku^Emu^Esu;
 
 
-            Da = BCu^((BCe << 1) ^ (BCe >> (64-1)));
-            De = BCa^((BCi << 1) ^ (BCi >> (64-1)));
-            Di = BCe^((BCo << 1) ^ (BCo >> (64-1)));
-            Do = BCi^((BCu << 1) ^ (BCu >> (64-1)));
-            Du = BCo^((BCa << 1) ^ (BCa >> (64-1)));
+            Da = BCu^((BCe << 1) ^ (BCe >> (64 -1)));
+            De = BCa^((BCi << 1) ^ (BCi >> (64 -1)));
+            Di = BCe^((BCo << 1) ^ (BCo >> (64 -1)));
+            Do = BCi^((BCu << 1) ^ (BCu >> (64 -1)));
+            Du = BCo^((BCa << 1) ^ (BCa >> (64 -1)));
 
             Eba ^= Da;
             BCa = Eba;
             Ege ^= De;
-            BCe = ((Ege << 44) ^ (Ege >> (64-44)));
+            BCe = ((Ege << 44) ^ (Ege >> (64 -44)));
             Eki ^= Di;
-            BCi = ((Eki << 43) ^ (Eki >> (64-43)));
+            BCi = ((Eki << 43) ^ (Eki >> (64 -43)));
             Emo ^= Do;
-            BCo = ((Emo << 21) ^ (Emo >> (64-21)));
+            BCo = ((Emo << 21) ^ (Emo >> (64 -21)));
             Esu ^= Du;
-            BCu = ((Esu << 14) ^ (Esu >> (64-14)));
+            BCu = ((Esu << 14) ^ (Esu >> (64 -14)));
             Aba = BCa ^((~BCe)& BCi );
             Aba ^= (uint64_t)KeccakF_RoundConstants[round+1];
             Abe = BCe ^((~BCi)& BCo );
@@ -641,15 +639,15 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
             Abu = BCu ^((~BCa)& BCe );
 
             Ebo ^= Do;
-            BCa = ((Ebo << 28) ^ (Ebo >> (64-28)));
+            BCa = ((Ebo << 28) ^ (Ebo >> (64 -28)));
             Egu ^= Du;
-            BCe = ((Egu << 20) ^ (Egu >> (64-20)));
+            BCe = ((Egu << 20) ^ (Egu >> (64 -20)));
             Eka ^= Da;
-            BCi = ((Eka << 3) ^ (Eka >> (64-3)));
+            BCi = ((Eka << 3) ^ (Eka >> (64 -3)));
             Eme ^= De;
-            BCo = ((Eme << 45) ^ (Eme >> (64-45)));
+            BCo = ((Eme << 45) ^ (Eme >> (64 -45)));
             Esi ^= Di;
-            BCu = ((Esi << 61) ^ (Esi >> (64-61)));
+            BCu = ((Esi << 61) ^ (Esi >> (64 -61)));
             Aga = BCa ^((~BCe)& BCi );
             Age = BCe ^((~BCi)& BCo );
             Agi = BCi ^((~BCo)& BCu );
@@ -657,15 +655,15 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
             Agu = BCu ^((~BCa)& BCe );
 
             Ebe ^= De;
-            BCa = ((Ebe << 1) ^ (Ebe >> (64-1)));
+            BCa = ((Ebe << 1) ^ (Ebe >> (64 -1)));
             Egi ^= Di;
-            BCe = ((Egi << 6) ^ (Egi >> (64-6)));
+            BCe = ((Egi << 6) ^ (Egi >> (64 -6)));
             Eko ^= Do;
-            BCi = ((Eko << 25) ^ (Eko >> (64-25)));
+            BCi = ((Eko << 25) ^ (Eko >> (64 -25)));
             Emu ^= Du;
-            BCo = ((Emu << 8) ^ (Emu >> (64-8)));
+            BCo = ((Emu << 8) ^ (Emu >> (64 -8)));
             Esa ^= Da;
-            BCu = ((Esa << 18) ^ (Esa >> (64-18)));
+            BCu = ((Esa << 18) ^ (Esa >> (64 -18)));
             Aka = BCa ^((~BCe)& BCi );
             Ake = BCe ^((~BCi)& BCo );
             Aki = BCi ^((~BCo)& BCu );
@@ -673,15 +671,15 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
             Aku = BCu ^((~BCa)& BCe );
 
             Ebu ^= Du;
-            BCa = ((Ebu << 27) ^ (Ebu >> (64-27)));
+            BCa = ((Ebu << 27) ^ (Ebu >> (64 -27)));
             Ega ^= Da;
-            BCe = ((Ega << 36) ^ (Ega >> (64-36)));
+            BCe = ((Ega << 36) ^ (Ega >> (64 -36)));
             Eke ^= De;
-            BCi = ((Eke << 10) ^ (Eke >> (64-10)));
+            BCi = ((Eke << 10) ^ (Eke >> (64 -10)));
             Emi ^= Di;
-            BCo = ((Emi << 15) ^ (Emi >> (64-15)));
+            BCo = ((Emi << 15) ^ (Emi >> (64 -15)));
             Eso ^= Do;
-            BCu = ((Eso << 56) ^ (Eso >> (64-56)));
+            BCu = ((Eso << 56) ^ (Eso >> (64 -56)));
             Ama = BCa ^((~BCe)& BCi );
             Ame = BCe ^((~BCi)& BCo );
             Ami = BCi ^((~BCo)& BCu );
@@ -689,15 +687,15 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
             Amu = BCu ^((~BCa)& BCe );
 
             Ebi ^= Di;
-            BCa = ((Ebi << 62) ^ (Ebi >> (64-62)));
+            BCa = ((Ebi << 62) ^ (Ebi >> (64 -62)));
             Ego ^= Do;
-            BCe = ((Ego << 55) ^ (Ego >> (64-55)));
+            BCe = ((Ego << 55) ^ (Ego >> (64 -55)));
             Eku ^= Du;
-            BCi = ((Eku << 39) ^ (Eku >> (64-39)));
+            BCi = ((Eku << 39) ^ (Eku >> (64 -39)));
             Ema ^= Da;
-            BCo = ((Ema << 41) ^ (Ema >> (64-41)));
+            BCo = ((Ema << 41) ^ (Ema >> (64 -41)));
             Ese ^= De;
-            BCu = ((Ese << 2) ^ (Ese >> (64-2)));
+            BCu = ((Ese << 2) ^ (Ese >> (64 -2)));
             Asa = BCa ^((~BCe)& BCi );
             Ase = BCe ^((~BCi)& BCo );
             Asi = BCi ^((~BCo)& BCu );
@@ -736,7 +734,7 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
 static void keccak_init(keccak_state *state)
 {
   unsigned int i;
-  VITIS_LOOP_362_1: for(i=0;i<25;i++)
+  for(i=0;i<25;i++)
     state->s[i] = 0;
   state->pos = 0;
 }
@@ -746,13 +744,13 @@ unsigned int keccak_absorb(uint64_t s[25],
                                   unsigned int pos,
                                   const uint8_t m[32],
                                   size_t mlen)
-{
+{_ssdm_SpecArrayDimSize(s, 25);_ssdm_SpecArrayDimSize(m, 32);
   unsigned int i;
   uint8_t t[8] = {0};
 
   if(pos & 7) {
     i = pos & 7;
-    VITIS_LOOP_391_1: while(i < 8 && mlen > 0) {
+    while(i < 8 && mlen > 0) {
       t[i++] = *m++;
       mlen--;
       pos++;
@@ -761,7 +759,7 @@ unsigned int keccak_absorb(uint64_t s[25],
   }
 
   if(pos && mlen >= r-pos) {
-    VITIS_LOOP_400_2: for(i=0;i<(r-pos)/8;i++)
+    for(i=0;i<(r-pos)/8;i++)
       s[pos/8+i] ^= load64(m+8*i);
     m += r-pos;
     mlen -= r-pos;
@@ -769,24 +767,24 @@ unsigned int keccak_absorb(uint64_t s[25],
     KeccakF1600_StatePermute(s);
   }
 
-  VITIS_LOOP_408_3: while(mlen >= r) {
-    VITIS_LOOP_409_4: for(i=0;i<r/8;i++)
+  while(mlen >= r) {
+    for(i=0;i<r/8;i++)
       s[i] ^= load64(m+8*i);
     m += r;
     mlen -= r;
     KeccakF1600_StatePermute(s);
   }
 
-  VITIS_LOOP_416_5: for(i=0;i<mlen/8;i++)
+  for(i=0;i<mlen/8;i++)
     s[pos/8+i] ^= load64(m+8*i);
   m += 8*i;
   mlen -= 8*i;
   pos += 8*i;
 
   if(mlen) {
-    VITIS_LOOP_423_6: for(i=0;i<8;i++)
+    for(i=0;i<8;i++)
       t[i] = 0;
-    VITIS_LOOP_425_7: for(i=0;i<mlen;i++)
+    for(i=0;i<mlen;i++)
       t[i] = m[i];
     s[pos/8] ^= load64(t);
     pos += mlen;
@@ -796,7 +794,7 @@ unsigned int keccak_absorb(uint64_t s[25],
 }
 # 444 "fips202.c"
 static void keccak_finalize(uint64_t s[25], unsigned int r, unsigned int pos, uint8_t p)
-{
+{_ssdm_SpecArrayDimSize(s, 25);
   unsigned int i,j;
 
   i = pos >> 3;
@@ -809,12 +807,12 @@ static void keccak_squeezeblocks(uint8_t *out,
                                  size_t nblocks,
                                  uint64_t s[25],
                                  unsigned int r)
-{
+{_ssdm_SpecArrayDimSize(s, 25);
   unsigned int i;
 
-  VITIS_LOOP_474_1: while(nblocks > 0) {
+  while(nblocks > 0) {
     KeccakF1600_StatePermute(s);
-    VITIS_LOOP_476_2: for(i=0;i<r/8;i++)
+    for(i=0;i<r/8;i++)
       store64(out + 8*i, s[i]);
     out += r;
     nblocks--;
@@ -826,14 +824,14 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
                                    uint64_t s[25],
                                    unsigned int r,
                                    unsigned int pos)
-{
+{_ssdm_SpecArrayDimSize(out, 96);_ssdm_SpecArrayDimSize(s, 25);
   unsigned int i;
   uint8_t t[8];
 
   if(pos & 7) {
     store64(t,s[pos/8]);
     i = pos & 7;
-    VITIS_LOOP_510_1: while(i < 8 && outlen > 0) {
+    while(i < 8 && outlen > 0) {
       *out++ = t[i++];
       outlen--;
       pos++;
@@ -841,16 +839,16 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
   }
 
   if(pos && outlen >= r-pos) {
-    VITIS_LOOP_518_2: for(i=0;i<(r-pos)/8;i++)
+    for(i=0;i<(r-pos)/8;i++)
       store64(out+8*i,s[pos/8+i]);
     out += r-pos;
     outlen -= r-pos;
     pos = 0;
   }
 
-  VITIS_LOOP_525_3: while(outlen >= r) {
+  while(outlen >= r) {
     KeccakF1600_StatePermute(s);
-    VITIS_LOOP_527_4: for(i=0;i<r/8;i++)
+    for(i=0;i<r/8;i++)
       store64(out+8*i,s[i]);
     out += r;
     outlen -= r;
@@ -863,7 +861,7 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
 
 
 
-  VITIS_LOOP_540_5: for(i=0;i<outlen/8;i++) {
+  for(i=0;i<outlen/8;i++) {
      out[8*i+0] = s[pos/8+i]%256;
      out[8*i+1] = (s[pos/8+i] >> 8)%256;
      out[8*i+2] = (s[pos/8+i] >> 16)%256;
@@ -880,7 +878,7 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
   pos += 8*i;
 
   store64(t,s[pos/8]);
-  VITIS_LOOP_557_6: for(i=0;i<outlen;i++)
+  for(i=0;i<outlen;i++)
     out[i] = t[i];
   pos += outlen;
   return pos;
@@ -913,28 +911,28 @@ void shake128_squeeze(uint8_t *out, size_t outlen, keccak_state *state)
 }
 # 646 "fips202.c"
 void shake256_init(keccak_state state[1])
-{
+{_ssdm_SpecArrayDimSize(state, 1);
   keccak_init(state);
 }
 # 661 "fips202.c"
 void shake256_absorb(keccak_state state[1], const uint8_t in[32], size_t inlen)
-{
+{_ssdm_SpecArrayDimSize(state, 1);_ssdm_SpecArrayDimSize(in, 32);
   state->pos = keccak_absorb(state->s, 136, state->pos, in, inlen);
 }
 # 673 "fips202.c"
 void shake256_finalize(keccak_state state[1])
-{
+{_ssdm_SpecArrayDimSize(state, 1);
   keccak_finalize(state->s, 136, state->pos, 0x1F);
   state->pos = 0;
 }
 # 692 "fips202.c"
 void shake256_squeezeblocks(uint8_t *out, size_t nblocks, keccak_state state[1])
-{
+{_ssdm_SpecArrayDimSize(state, 1);
   keccak_squeezeblocks(out, nblocks, state->s, 136);
 }
 # 708 "fips202.c"
 void shake256_squeeze(uint8_t *out, size_t outlen, keccak_state state[1])
-{
+{_ssdm_SpecArrayDimSize(state, 1);
   state->pos = keccak_squeeze(out, outlen, state->s, 136, state->pos);
 }
 # 723 "fips202.c"
@@ -949,7 +947,7 @@ void shake128(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
 }
 # 743 "fips202.c"
 void shake256(uint8_t out[3*32], size_t outlen, const uint8_t in[32], size_t inlen)
-{
+{_ssdm_SpecArrayDimSize(out, 96);_ssdm_SpecArrayDimSize(in, 32);
   keccak_state state[1];
 
   shake256_init(state);
@@ -959,7 +957,7 @@ void shake256(uint8_t out[3*32], size_t outlen, const uint8_t in[32], size_t inl
 }
 # 762 "fips202.c"
 void sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen)
-{
+{_ssdm_SpecArrayDimSize(h, 32);
   uint64_t s[25] = {0};
   unsigned int pos;
 
@@ -969,7 +967,7 @@ void sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen)
 }
 # 781 "fips202.c"
 void sha3_512(uint8_t h[64], const uint8_t *in, size_t inlen)
-{
+{_ssdm_SpecArrayDimSize(h, 64);
   uint64_t s[25] = {0};
   unsigned int pos;
 

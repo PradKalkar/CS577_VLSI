@@ -1,19 +1,18 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
-// Tool Version Limit: 2019.12
-// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "/home/guest/Documents/vlsi/dilithium2/aes.c"
-# 1 "/home/guest/Documents/vlsi/dilithium2/aes.c" 1
+# 1 "/home/guest/Documents/experiments/dilithium_2/aes.c"
+# 1 "/home/guest/Documents/experiments/dilithium_2/aes.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/aes.c" 2
-# 38 "/home/guest/Documents/vlsi/dilithium2/aes.c"
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
-# 34 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
+# 1 "/home/guest/Documents/experiments/dilithium_2/aes.c" 2
+# 38 "/home/guest/Documents/experiments/dilithium_2/aes.c"
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -230,8 +229,8 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 35 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 39 "/home/guest/Documents/vlsi/dilithium2/aes.c" 2
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
+# 39 "/home/guest/Documents/experiments/dilithium_2/aes.c" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -242,8 +241,8 @@ typedef __uintmax_t uintmax_t;
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
-# 32 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 31 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
 typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
 
 
@@ -421,7 +420,7 @@ extern char *strerror_l (int __errnum, locale_t __l) __attribute__ ((__nothrow__
 
 # 1 "/usr/include/strings.h" 1 3 4
 # 23 "/usr/include/strings.h" 3 4
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 # 24 "/usr/include/strings.h" 2 3 4
 # 34 "/usr/include/strings.h" 3 4
 extern int bcmp (const void *__s1, const void *__s2, size_t __n)
@@ -508,9 +507,9 @@ extern char *__stpncpy (char *__restrict __dest,
 extern char *stpncpy (char *__restrict __dest,
         const char *__restrict __src, size_t __n)
      __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1, 2)));
-# 40 "/home/guest/Documents/vlsi/dilithium2/aes.c" 2
-# 1 "/home/guest/Documents/vlsi/dilithium2/aes.h" 1
-# 43 "/home/guest/Documents/vlsi/dilithium2/aes.h"
+# 40 "/home/guest/Documents/experiments/dilithium_2/aes.c" 2
+# 1 "/home/guest/Documents/experiments/dilithium_2/aes.h" 1
+# 43 "/home/guest/Documents/experiments/dilithium_2/aes.h"
 struct AES_ctx
 {
   uint8_t RoundKey[240];
@@ -533,13 +532,13 @@ void AES_ctx_set_iv(struct AES_ctx* ctx, const uint8_t* iv);
 
 void AES_ECB_encrypt(struct AES_ctx* ctx, state_t* buf);
 void AES_ECB_decrypt(struct AES_ctx* ctx, uint8_t* buf);
-# 74 "/home/guest/Documents/vlsi/dilithium2/aes.h"
+# 74 "/home/guest/Documents/experiments/dilithium_2/aes.h"
 void AES_CBC_encrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length);
 void AES_CBC_decrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length);
-# 87 "/home/guest/Documents/vlsi/dilithium2/aes.h"
+# 87 "/home/guest/Documents/experiments/dilithium_2/aes.h"
 void AES_CTR_xcrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length);
-# 41 "/home/guest/Documents/vlsi/dilithium2/aes.c" 2
-# 82 "/home/guest/Documents/vlsi/dilithium2/aes.c"
+# 41 "/home/guest/Documents/experiments/dilithium_2/aes.c" 2
+# 82 "/home/guest/Documents/experiments/dilithium_2/aes.c"
 static const uint8_t sbox[256] = {
 
   0x63, 0x7c, 0x77, 0x7b, 0xf2, 0x6b, 0x6f, 0xc5, 0x30, 0x01, 0x67, 0x2b, 0xfe, 0xd7, 0xab, 0x76,
@@ -581,7 +580,7 @@ static const uint8_t rsbox[256] = {
 
 static const uint8_t Rcon[11] = {
   0x8d, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36 };
-# 154 "/home/guest/Documents/vlsi/dilithium2/aes.c"
+# 154 "/home/guest/Documents/experiments/dilithium_2/aes.c"
 static void KeyExpansion(uint8_t* RoundKey, const uint8_t* Key)
 {
   unsigned i, j, k;
@@ -754,7 +753,7 @@ static void MixColumns(state_t* state)
     Tm = (*state)[i][3] ^ t ; Tm = xtime(Tm); (*state)[i][3] ^= Tm ^ Tmp ;
   }
 }
-# 354 "/home/guest/Documents/vlsi/dilithium2/aes.c"
+# 354 "/home/guest/Documents/experiments/dilithium_2/aes.c"
 static void InvMixColumns(state_t* state)
 {
   int i;
@@ -824,7 +823,7 @@ static void Cipher(state_t* state2, uint8_t RoundKey[240])
 
 
   state_t state[1];
-# 431 "/home/guest/Documents/vlsi/dilithium2/aes.c"
+# 431 "/home/guest/Documents/experiments/dilithium_2/aes.c"
   (*state)[0][0] = (*state2)[0][0];
   (*state)[0][1] = (*state2)[0][1];
   (*state)[0][2] = (*state2)[0][2];
@@ -860,7 +859,7 @@ static void Cipher(state_t* state2, uint8_t RoundKey[240])
      MixColumns(state);
     AddRoundKey(round, state, RoundKey);
   }
-# 476 "/home/guest/Documents/vlsi/dilithium2/aes.c"
+# 476 "/home/guest/Documents/experiments/dilithium_2/aes.c"
   (*state2)[0][0] = (*state)[0][0];
   (*state2)[0][1] = (*state)[0][1];
   (*state2)[0][2] = (*state)[0][2];
@@ -907,7 +906,7 @@ static void InvCipher(state_t* state,uint8_t* RoundKey)
   InvSubBytes(state);
   AddRoundKey(0, state, RoundKey);
 }
-# 530 "/home/guest/Documents/vlsi/dilithium2/aes.c"
+# 530 "/home/guest/Documents/experiments/dilithium_2/aes.c"
 void AES_ECB_encrypt(struct AES_ctx *ctx, state_t* buf)
 {
 
@@ -920,7 +919,7 @@ void AES_ECB_decrypt(struct AES_ctx* ctx, uint8_t* buf)
 
   InvCipher((state_t*)buf, ctx->RoundKey);
 }
-# 553 "/home/guest/Documents/vlsi/dilithium2/aes.c"
+# 553 "/home/guest/Documents/experiments/dilithium_2/aes.c"
 static void XorWithIv(uint8_t* buf, uint8_t* Iv)
 {
   uint8_t i;
@@ -960,7 +959,7 @@ void AES_CBC_decrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length)
   }
 
 }
-# 600 "/home/guest/Documents/vlsi/dilithium2/aes.c"
+# 600 "/home/guest/Documents/experiments/dilithium_2/aes.c"
 void AES_CTR_xcrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length)
 {
   uint8_t buffer[16];

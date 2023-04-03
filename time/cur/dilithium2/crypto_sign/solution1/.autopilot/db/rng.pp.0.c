@@ -1,11 +1,16 @@
 # 1 "rng.c"
+# 1 "rng.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 338 "<built-in>" 3
+# 149 "<built-in>" 3
 # 1 "<command line>" 1
-# 1 "<built-in>" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 269 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+
+
+
+
+
+# 1 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 305 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
     void _ssdm_op_IfRead() __attribute__ ((nothrow));
     void _ssdm_op_IfWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead() __attribute__ ((nothrow));
@@ -20,23 +25,11 @@
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamNbWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanRead() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanWrite() __attribute__ ((nothrow));
-    void _ssdm_op_ReadReq() __attribute__ ((nothrow));
-    void _ssdm_op_Read() __attribute__ ((nothrow));
-    void _ssdm_op_WriteReq() __attribute__ ((nothrow));
-    void _ssdm_op_Write() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq() __attribute__ ((nothrow));
 
 
 
 
     void _ssdm_op_MemShiftRead() __attribute__ ((nothrow));
-
-    void _ssdm_op_PrintNone() __attribute__ ((nothrow));
-    void _ssdm_op_PrintInt() __attribute__ ((nothrow));
-    void _ssdm_op_PrintDouble() __attribute__ ((nothrow));
 
     void _ssdm_op_Wait() __attribute__ ((nothrow));
     void _ssdm_op_Poll() __attribute__ ((nothrow));
@@ -88,6 +81,7 @@
     void _ssdm_op_SpecFUCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIFCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIPCore() __attribute__ ((nothrow));
+    void _ssdm_op_SpecKeepValue() __attribute__ ((nothrow));
     void _ssdm_op_SpecMemCore() __attribute__ ((nothrow));
 
     void _ssdm_op_SpecExt() __attribute__ ((nothrow));
@@ -118,8 +112,6 @@
     void _ssdm_op_SpecStable() __attribute__ ((nothrow));
     void _ssdm_op_SpecStableContent() __attribute__ ((nothrow));
 
-    void _ssdm_op_SpecBindPort() __attribute__ ((nothrow));
-
     void _ssdm_op_SpecPipoDepth() __attribute__ ((nothrow));
 
     void _ssdm_SpecExpr() __attribute__ ((nothrow));
@@ -141,7 +133,8 @@
 
     void _ssdm_op_SpecBitsMap() __attribute__ ((nothrow));
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
-# 2 "<built-in>" 2
+# 7 "<command line>" 2
+# 1 "<built-in>" 2
 # 1 "rng.c" 2
 
 
@@ -180,9 +173,18 @@
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
-# 62 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3 4
-typedef long unsigned int size_t;
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 31 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
+
+
+
+typedef __typeof__(sizeof(int)) size_t;
+
+
+
+
+typedef int wchar_t;
 # 34 "/usr/include/string.h" 2 3 4
 # 43 "/usr/include/string.h" 3 4
 extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
@@ -350,7 +352,7 @@ extern char *strerror_l (int __errnum, locale_t __l) __attribute__ ((__nothrow__
 
 # 1 "/usr/include/strings.h" 1 3 4
 # 23 "/usr/include/strings.h" 3 4
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 # 24 "/usr/include/strings.h" 2 3 4
 # 34 "/usr/include/strings.h" 3 4
 extern int bcmp (const void *__s1, const void *__s2, size_t __n)
@@ -449,14 +451,14 @@ extern char *stpncpy (char *__restrict __dest,
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 # 34 "/usr/include/stdio.h" 2 3 4
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 1 3 4
-# 30 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 1 3 4
+# 30 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 3 4
 typedef __builtin_va_list va_list;
-# 48 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
+# 48 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 37 "/usr/include/stdio.h" 2 3 4
 
@@ -1192,8 +1194,8 @@ randombytes(unsigned char *x, unsigned long long xlen);
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
-# 63 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -1262,7 +1264,7 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 64 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 5 "./aes.h" 2
 # 43 "./aes.h"
 struct AES_ctx
@@ -1302,18 +1304,18 @@ AES256_CTR_DRBG_struct DRBG_ctx;
 
 void print_aes256_struct() {
  int loop;
- VITIS_LOOP_20_1: for(loop=0;loop<32;loop++)
+ for(loop=0;loop<32;loop++)
   printf("Key[%d]=%d;\n",loop,DRBG_ctx.Key[loop]);
- VITIS_LOOP_22_2: for(loop=0;loop<16;loop++)
+ for(loop=0;loop<16;loop++)
   printf("V[%d]=%d;\n",loop,DRBG_ctx.V[loop]);
  printf("reseed_counter=%d\n",DRBG_ctx.reseed_counter);
 }
 
-void write_aes256_struct(unsigned char Key1[32], unsigned char V1[16], int reseed_counter1) {
+void write_aes256_struct(unsigned char Key1[32], unsigned char V1[16], int reseed_counter1) {_ssdm_SpecArrayDimSize(Key1, 32);_ssdm_SpecArrayDimSize(V1, 16);
  int loop;
- VITIS_LOOP_29_1: for(loop=0;loop<32;loop++)
+ for(loop=0;loop<32;loop++)
   DRBG_ctx.Key[loop]=Key1[loop];
- VITIS_LOOP_31_2: for(loop=0;loop<16;loop++)
+ for(loop=0;loop<16;loop++)
   DRBG_ctx.V[loop]=V1[loop];
  DRBG_ctx.reseed_counter=reseed_counter1;
 }
@@ -1368,7 +1370,7 @@ seedexpander(AES_XOF_struct *ctx, unsigned char *x, unsigned long xlen)
     ctx->length_remaining -= xlen;
 
     offset = 0;
-    VITIS_LOOP_93_1: while ( xlen > 0 ) {
+    while ( xlen > 0 ) {
         if ( xlen <= (16-ctx->buffer_pos) ) {
             memcpy(x+offset, ctx->buffer+ctx->buffer_pos, xlen);
             ctx->buffer_pos += xlen;
@@ -1385,7 +1387,7 @@ seedexpander(AES_XOF_struct *ctx, unsigned char *x, unsigned long xlen)
         ctx->buffer_pos = 0;
 
 
-        VITIS_LOOP_110_2: for (int i=15; i>=12; i--) {
+        for (int i=15; i>=12; i--) {
             if ( ctx->ctr[i] == 0xff )
                 ctx->ctr[i] = 0x00;
             else {
@@ -1483,7 +1485,7 @@ randombytes_init(unsigned char *entropy_input,
 
     memcpy(seed_material, entropy_input, 48);
     if (personalization_string)
-        VITIS_LOOP_208_1: for (int i=0; i<48; i++)
+        for (int i=0; i<48; i++)
             seed_material[i] ^= personalization_string[i];
     memset(DRBG_ctx.Key, 0x00, 32);
     memset(DRBG_ctx.V, 0x00, 16);
@@ -1497,9 +1499,9 @@ randombytes(unsigned char *x, unsigned long long xlen)
     unsigned char block[16];
     int i = 0;
 
-    VITIS_LOOP_222_1: while ( xlen > 0 ) {
+    while ( xlen > 0 ) {
 
-        VITIS_LOOP_224_2: for (int j=15; j>=0; j--) {
+        for (int j=15; j>=0; j--) {
             if ( DRBG_ctx.V[j] == 0xff )
                 DRBG_ctx.V[j] = 0x00;
             else {
@@ -1512,14 +1514,14 @@ randombytes(unsigned char *x, unsigned long long xlen)
         if ( xlen > 15 ) {
 
          int loop;
-         VITIS_LOOP_245_3: for (loop=0;loop<16;loop++)
+         for (loop=0;loop<16;loop++)
           x[i+loop] = block[loop];
             i += 16;
             xlen -= 16;
         }
         else {
          int loop;
-         VITIS_LOOP_252_4: for (loop=0;loop<xlen;loop++)
+         for (loop=0;loop<xlen;loop++)
                x[i+loop] = block[loop];
 
             xlen = 0;
@@ -1538,9 +1540,9 @@ AES256_CTR_DRBG_Update(unsigned char *provided_data,
 {
     unsigned char temp[48];
     int i=0;
-    VITIS_LOOP_271_1: for (i=0; i<3; i++) {
+    for (i=0; i<3; i++) {
 
-        VITIS_LOOP_273_2: for (int j=15; j>=0; j--) {
+        for (int j=15; j>=0; j--) {
             if ( V[j] == 0xff )
                 V[j] = 0x00;
             else {
@@ -1552,12 +1554,12 @@ AES256_CTR_DRBG_Update(unsigned char *provided_data,
         AES256_ECB(Key, V, temp+16*i);
     }
     if ( provided_data != ((void*)0) )
-        VITIS_LOOP_285_3: for (i=0; i<48; i++)
+        for (i=0; i<48; i++)
             temp[i] ^= provided_data[i];
 
 
-    VITIS_LOOP_289_4: for (i=0;i<32;i++)
+    for (i=0;i<32;i++)
      Key[i] = temp[i];
-    VITIS_LOOP_291_5: for (i=0;i<16;i++)
+    for (i=0;i<16;i++)
      V[i]=temp[32+i];;
 }

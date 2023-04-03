@@ -19,11 +19,9 @@ set ResetStyle control
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
 set ResetVariableFlag 0
-set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix crypto_sign_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -42,9 +40,9 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7a200t:-fbg676:-2
-set SourceFiles {sc {} c {../../symmetric-shake.c ../../symmetric-aes.c ../../sign.c ../../rounding.c ../../rng.c ../../reduce.c ../../polyvec.c ../../poly.c ../../packing.c ../../ntt.c ../../fips202.c ../../aes256ctr.c ../../aes.c}}
+set SourceFiles {sc {} c {../../aes.c ../../aes256ctr.c ../../fips202.c ../../ntt.c ../../packing.c ../../poly.c ../../polyvec.c ../../reduce.c ../../rng.c ../../rounding.c ../../sign.c ../../symmetric-aes.c ../../symmetric-shake.c}}
 set SourceFlags {sc {} c {{} {} {} {} {} {} {} {} {} {} {} {} {}}}
-set DirectiveFile /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/solution1.directive
+set DirectiveFile /home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/solution1.directive
 set TBFiles {verilog ../../PQCgenKAT_sign.c bc ../../PQCgenKAT_sign.c vhdl ../../PQCgenKAT_sign.c sc ../../PQCgenKAT_sign.c cas ../../PQCgenKAT_sign.c c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -61,5 +59,5 @@ set DefaultPlatform DefaultPlatform
 set multiClockList {}
 set SCPortClockMap {}
 set intNbAccess 0
-set PlatformFiles {{DefaultPlatform {xilinx/artix7/artix7}}}
+set PlatformFiles {{DefaultPlatform {xilinx/artix7/artix7 xilinx/artix7/artix7_fpv6}}}
 set HPFPO 0

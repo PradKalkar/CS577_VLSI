@@ -1,11 +1,16 @@
 # 1 "aes256ctr.c"
+# 1 "aes256ctr.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 338 "<built-in>" 3
+# 149 "<built-in>" 3
 # 1 "<command line>" 1
-# 1 "<built-in>" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 269 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+
+
+
+
+
+# 1 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 305 "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
     void _ssdm_op_IfRead() __attribute__ ((nothrow));
     void _ssdm_op_IfWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead() __attribute__ ((nothrow));
@@ -20,23 +25,11 @@
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamNbWrite() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanRead() __attribute__ ((nothrow));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanWrite() __attribute__ ((nothrow));
-    void _ssdm_op_ReadReq() __attribute__ ((nothrow));
-    void _ssdm_op_Read() __attribute__ ((nothrow));
-    void _ssdm_op_WriteReq() __attribute__ ((nothrow));
-    void _ssdm_op_Write() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq() __attribute__ ((nothrow));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq() __attribute__ ((nothrow));
 
 
 
 
     void _ssdm_op_MemShiftRead() __attribute__ ((nothrow));
-
-    void _ssdm_op_PrintNone() __attribute__ ((nothrow));
-    void _ssdm_op_PrintInt() __attribute__ ((nothrow));
-    void _ssdm_op_PrintDouble() __attribute__ ((nothrow));
 
     void _ssdm_op_Wait() __attribute__ ((nothrow));
     void _ssdm_op_Poll() __attribute__ ((nothrow));
@@ -88,6 +81,7 @@
     void _ssdm_op_SpecFUCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIFCore() __attribute__ ((nothrow));
     void _ssdm_op_SpecIPCore() __attribute__ ((nothrow));
+    void _ssdm_op_SpecKeepValue() __attribute__ ((nothrow));
     void _ssdm_op_SpecMemCore() __attribute__ ((nothrow));
 
     void _ssdm_op_SpecExt() __attribute__ ((nothrow));
@@ -118,8 +112,6 @@
     void _ssdm_op_SpecStable() __attribute__ ((nothrow));
     void _ssdm_op_SpecStableContent() __attribute__ ((nothrow));
 
-    void _ssdm_op_SpecBindPort() __attribute__ ((nothrow));
-
     void _ssdm_op_SpecPipoDepth() __attribute__ ((nothrow));
 
     void _ssdm_SpecExpr() __attribute__ ((nothrow));
@@ -141,11 +133,12 @@
 
     void _ssdm_op_SpecBitsMap() __attribute__ ((nothrow));
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
-# 2 "<built-in>" 2
+# 7 "<command line>" 2
+# 1 "<built-in>" 2
 # 1 "aes256ctr.c" 2
 # 25 "aes256ctr.c"
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 1 3
-# 63 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 3
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -362,7 +355,7 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 64 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdint.h" 2 3
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 26 "aes256ctr.c" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
@@ -374,9 +367,18 @@ typedef __uintmax_t uintmax_t;
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
-# 62 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3 4
-typedef long unsigned int size_t;
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+# 31 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
+
+
+
+typedef __typeof__(sizeof(int)) size_t;
+
+
+
+
+typedef int wchar_t;
 # 34 "/usr/include/string.h" 2 3 4
 # 43 "/usr/include/string.h" 3 4
 extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
@@ -544,7 +546,7 @@ extern char *strerror_l (int __errnum, locale_t __l) __attribute__ ((__nothrow__
 
 # 1 "/usr/include/strings.h" 1 3 4
 # 23 "/usr/include/strings.h" 3 4
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 # 24 "/usr/include/strings.h" 2 3 4
 # 34 "/usr/include/strings.h" 3 4
 extern int bcmp (const void *__s1, const void *__s2, size_t __n)
@@ -636,11 +638,7 @@ extern char *stpncpy (char *__restrict __dest,
 
 
 
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3
-# 51 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
-typedef long int ptrdiff_t;
-# 90 "/tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
-typedef int wchar_t;
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
 # 5 "./aes256ctr.h" 2
 
 
@@ -654,18 +652,18 @@ typedef struct {
 } aes256ctr_ctx;
 
 
-void pqcrystals_aes256ctr_ref_prf(uint8_t *out,
+void aes256ctr_prf(uint8_t *out,
                    size_t outlen,
                    const uint8_t key[32],
                    const uint8_t nonce[12]);
 
 
-void pqcrystals_aes256ctr_ref_init(aes256ctr_ctx *state,
+void aes256ctr_init(aes256ctr_ctx *state,
                     const uint8_t key[32],
                     const uint8_t nonce[12]);
 
 
-void pqcrystals_aes256ctr_ref_squeezeblocks(uint8_t *out,
+void aes256ctr_squeezeblocks(uint8_t *out,
                              size_t nblocks,
                              aes256ctr_ctx *state);
 # 28 "aes256ctr.c" 2
@@ -680,7 +678,7 @@ static inline uint32_t br_dec32le(const uint8_t *src)
 
 static void br_range_dec32le(uint32_t *v, size_t num, const uint8_t *src)
 {
- VITIS_LOOP_39_1: while (num-- > 0) {
+ while (num-- > 0) {
   *v ++ = br_dec32le(src);
   src += 4;
  }
@@ -703,7 +701,7 @@ static inline void br_enc32le(uint8_t *dst, uint32_t x)
 
 static void br_range_enc32le(uint8_t *dst, const uint32_t *v, size_t num)
 {
- VITIS_LOOP_62_1: while (num-- > 0) {
+ while (num-- > 0) {
   br_enc32le(dst, *v ++);
   dst += 4;
  }
@@ -878,20 +876,20 @@ static void br_aes_ct64_bitslice_Sbox(uint64_t *q)
 static void br_aes_ct64_ortho(uint64_t *q)
 {
 # 257 "aes256ctr.c"
- VITIS_LOOP_257_1: do { uint64_t a, b; a = (q[0]); b = (q[1]); (q[0]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[1]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
- VITIS_LOOP_258_2: do { uint64_t a, b; a = (q[2]); b = (q[3]); (q[2]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[3]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
- VITIS_LOOP_259_3: do { uint64_t a, b; a = (q[4]); b = (q[5]); (q[4]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[5]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
- VITIS_LOOP_260_4: do { uint64_t a, b; a = (q[6]); b = (q[7]); (q[6]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[7]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
+ do { uint64_t a, b; a = (q[0]); b = (q[1]); (q[0]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[1]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
+ do { uint64_t a, b; a = (q[2]); b = (q[3]); (q[2]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[3]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
+ do { uint64_t a, b; a = (q[4]); b = (q[5]); (q[4]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[5]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
+ do { uint64_t a, b; a = (q[6]); b = (q[7]); (q[6]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[7]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
 
- VITIS_LOOP_262_5: do { uint64_t a, b; a = (q[0]); b = (q[2]); (q[0]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[2]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
- VITIS_LOOP_263_6: do { uint64_t a, b; a = (q[1]); b = (q[3]); (q[1]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[3]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
- VITIS_LOOP_264_7: do { uint64_t a, b; a = (q[4]); b = (q[6]); (q[4]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[6]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
- VITIS_LOOP_265_8: do { uint64_t a, b; a = (q[5]); b = (q[7]); (q[5]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[7]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
+ do { uint64_t a, b; a = (q[0]); b = (q[2]); (q[0]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[2]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
+ do { uint64_t a, b; a = (q[1]); b = (q[3]); (q[1]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[3]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
+ do { uint64_t a, b; a = (q[4]); b = (q[6]); (q[4]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[6]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
+ do { uint64_t a, b; a = (q[5]); b = (q[7]); (q[5]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[7]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
 
- VITIS_LOOP_267_9: do { uint64_t a, b; a = (q[0]); b = (q[4]); (q[0]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[4]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
- VITIS_LOOP_268_10: do { uint64_t a, b; a = (q[1]); b = (q[5]); (q[1]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[5]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
- VITIS_LOOP_269_11: do { uint64_t a, b; a = (q[2]); b = (q[6]); (q[2]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[6]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
- VITIS_LOOP_270_12: do { uint64_t a, b; a = (q[3]); b = (q[7]); (q[3]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[7]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
+ do { uint64_t a, b; a = (q[0]); b = (q[4]); (q[0]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[4]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
+ do { uint64_t a, b; a = (q[1]); b = (q[5]); (q[1]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[5]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
+ do { uint64_t a, b; a = (q[2]); b = (q[6]); (q[2]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[6]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
+ do { uint64_t a, b; a = (q[3]); b = (q[7]); (q[3]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[7]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
 }
 
 static void br_aes_ct64_interleave_in(uint64_t *q0, uint64_t *q1, const uint32_t *w)
@@ -972,7 +970,7 @@ static void br_aes_ct64_keysched(uint64_t *comp_skey, const uint8_t *key)
  nkf = (int)((14 + 1) << 2);
  br_range_dec32le(skey, (key_len >> 2), key);
  tmp = skey[(key_len >> 2) - 1];
- VITIS_LOOP_351_1: for (i = nk, j = 0, k = 0; i < nkf; i ++) {
+ for (i = nk, j = 0, k = 0; i < nkf; i ++) {
   if (j == 0) {
    tmp = (tmp << 24) | (tmp >> 8);
    tmp = sub_word(tmp) ^ Rcon[k];
@@ -987,7 +985,7 @@ static void br_aes_ct64_keysched(uint64_t *comp_skey, const uint8_t *key)
   }
  }
 
- VITIS_LOOP_366_2: for (i = 0, j = 0; i < nkf; i += 4, j += 2) {
+ for (i = 0, j = 0; i < nkf; i += 4, j += 2) {
   uint64_t q[8];
 
   br_aes_ct64_interleave_in(&q[0], &q[4], skey + i);
@@ -1016,7 +1014,7 @@ static void br_aes_ct64_skey_expand(uint64_t *skey, const uint64_t *comp_skey)
  unsigned u, v, n;
 
  n = (14 + 1) << 1;
- VITIS_LOOP_395_1: for (u = 0, v = 0; u < n; u ++, v += 4) {
+ for (u = 0, v = 0; u < n; u ++, v += 4) {
   uint64_t x0, x1, x2, x3;
 
   x0 = x1 = x2 = x3 = comp_skey[u];
@@ -1050,7 +1048,7 @@ static inline void shift_rows(uint64_t *q)
 {
  int i;
 
- VITIS_LOOP_429_1: for (i = 0; i < 8; i ++) {
+ for (i = 0; i < 8; i ++) {
   uint64_t x;
 
   x = q[i];
@@ -1108,19 +1106,19 @@ static void inc4_be(uint32_t *x)
 }
 
 static void aes_ctr4x(uint8_t out[64], uint32_t ivw[16], uint64_t sk_exp[64])
-{
+{_ssdm_SpecArrayDimSize(out, 64);_ssdm_SpecArrayDimSize(ivw, 16);_ssdm_SpecArrayDimSize(sk_exp, 64);
   uint32_t w[16];
   uint64_t q[8];
   int i;
 
   memcpy(w, ivw, sizeof(w));
-  VITIS_LOOP_493_1: for (i = 0; i < 4; i++) {
+  for (i = 0; i < 4; i++) {
     br_aes_ct64_interleave_in(&q[i], &q[i + 4], w + (i << 2));
   }
   br_aes_ct64_ortho(q);
 
   add_round_key(q, sk_exp);
-  VITIS_LOOP_499_2: for (i = 1; i < 14; i++) {
+  for (i = 1; i < 14; i++) {
     br_aes_ct64_bitslice_Sbox(q);
     shift_rows(q);
     mix_columns(q);
@@ -1131,7 +1129,7 @@ static void aes_ctr4x(uint8_t out[64], uint32_t ivw[16], uint64_t sk_exp[64])
   add_round_key(q, sk_exp + 112);
 
   br_aes_ct64_ortho(q);
-  VITIS_LOOP_510_3: for (i = 0; i < 4; i ++) {
+  for (i = 0; i < 4; i ++) {
     br_aes_ct64_interleave_out(w + (i << 2), q[i], q[i + 4]);
   }
   br_range_enc32le(out, w, 16);
@@ -1144,7 +1142,7 @@ static void aes_ctr4x(uint8_t out[64], uint32_t ivw[16], uint64_t sk_exp[64])
 }
 
 static void br_aes_ct64_ctr_init(uint64_t sk_exp[120], const uint8_t *key)
-{
+{_ssdm_SpecArrayDimSize(sk_exp, 120);
  uint64_t skey[30];
 
  br_aes_ct64_keysched(skey, key);
@@ -1152,7 +1150,7 @@ static void br_aes_ct64_ctr_init(uint64_t sk_exp[120], const uint8_t *key)
 }
 
 static void br_aes_ct64_ctr_run(uint64_t sk_exp[120], const uint8_t *iv, uint32_t cc, uint8_t *data, size_t len)
-{
+{_ssdm_SpecArrayDimSize(sk_exp, 120);
  uint32_t ivw[16];
  size_t i;
 
@@ -1165,7 +1163,7 @@ static void br_aes_ct64_ctr_run(uint64_t sk_exp[120], const uint8_t *iv, uint32_
  ivw[11] = br_swap32(cc + 2);
  ivw[15] = br_swap32(cc + 3);
 
- VITIS_LOOP_544_1: while (len > 64) {
+ while (len > 64) {
   aes_ctr4x(data, ivw, sk_exp);
   data += 64;
   len -= 64;
@@ -1173,12 +1171,12 @@ static void br_aes_ct64_ctr_run(uint64_t sk_exp[120], const uint8_t *iv, uint32_
  if(len > 0) {
   uint8_t tmp[64];
   aes_ctr4x(tmp, ivw, sk_exp);
-  VITIS_LOOP_552_2: for(i=0;i<len;i++)
+  for(i=0;i<len;i++)
    data[i] = tmp[i];
  }
 }
 
-void pqcrystals_aes256ctr_ref_prf(uint8_t *out, size_t outlen, const uint8_t *key, const uint8_t *nonce)
+void aes256ctr_prf(uint8_t *out, size_t outlen, const uint8_t *key, const uint8_t *nonce)
 {
   uint64_t sk_exp[120];
 
@@ -1186,7 +1184,7 @@ void pqcrystals_aes256ctr_ref_prf(uint8_t *out, size_t outlen, const uint8_t *ke
   br_aes_ct64_ctr_run(sk_exp, nonce, 0, out, outlen);
 }
 
-void pqcrystals_aes256ctr_ref_init(aes256ctr_ctx *s, const uint8_t *key, const uint8_t *nonce)
+void aes256ctr_init(aes256ctr_ctx *s, const uint8_t *key, const uint8_t *nonce)
 {
   br_aes_ct64_ctr_init(s->sk_exp, key);
 
@@ -1200,9 +1198,9 @@ void pqcrystals_aes256ctr_ref_init(aes256ctr_ctx *s, const uint8_t *key, const u
   s->ivw[15] = br_swap32(3);
 }
 
-void pqcrystals_aes256ctr_ref_squeezeblocks(uint8_t *out, size_t nblocks, aes256ctr_ctx *s)
+void aes256ctr_squeezeblocks(uint8_t *out, size_t nblocks, aes256ctr_ctx *s)
 {
-  VITIS_LOOP_581_1: while (nblocks > 0) {
+  while (nblocks > 0) {
     aes_ctr4x(out, s->ivw, s->sk_exp);
     out += 64;
     nblocks--;

@@ -1,7 +1,6 @@
 # ==============================================================
-# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
-# Tool Version Limit: 2019.12
-# Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+# Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 proc sc_sim_check {ret err logfile} {
 	if {$::AESL_AUTOSIM::gDebug == 1} {
@@ -85,11 +84,19 @@ proc check_tvin_file {} {
          "c.crypto_sign.autotvin_m.dat"
          "c.crypto_sign.autotvin_mlen.dat"
          "c.crypto_sign.autotvin_sk.dat"
+         "c.crypto_sign.autotvout_sm.dat"
+         "c.crypto_sign.autotvout_smlen.dat"
+         "c.crypto_sign.autotvout_ap_return.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
         } else {
             ::AP::printMsg ERR COSIM 320 COSIM_320_994
+            return 1
+        }
+        set ret [catch {eval exec "grep /runtime $rtlfile"} err]
+        if { $ret } {
+            ::AP::printMsg ERR COSIM 320 COSIM_320_995
             return 1
         }
     }
@@ -112,6 +119,11 @@ proc check_tvout_file {} {
         if {[file isfile $rtlfile]} {
         } else {
             ::AP::printMsg ERR COSIM 303 COSIM_303_996
+            return 1
+        }
+        set ret [catch {eval exec "grep /runtime $rtlfile"} err]
+        if { $ret } {
+            ::AP::printMsg ERR COSIM 303 COSIM_303_997
             return 1
         }
     }
