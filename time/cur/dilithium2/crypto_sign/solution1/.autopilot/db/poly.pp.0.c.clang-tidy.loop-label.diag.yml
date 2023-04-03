@@ -1,0 +1,274 @@
+---
+MainSourceFile:  /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_32_1:  '
+    FileOffset:      32
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          17452
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_32_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_50_1:  '
+    FileOffset:      50
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          17677
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_50_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_1:  '
+    FileOffset:      68
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          17900
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_87_1:  '
+    FileOffset:      87
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          18151
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_87_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_1:  '
+    FileOffset:      108
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          18384
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_126_1:  '
+    FileOffset:      126
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          18590
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_126_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_180_1:  '
+    FileOffset:      180
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          19145
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_180_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_202_1:  '
+    FileOffset:      202
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          19436
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_202_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_225_1:  '
+    FileOffset:      225
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          19714
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_225_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_248_1:  '
+    FileOffset:      248
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          20011
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_270_1:  '
+    FileOffset:      270
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          20330
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_270_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_298_1:  '
+    FileOffset:      298
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          20646
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_298_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_337_1:  '
+    FileOffset:      337
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          21153
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_337_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_377_1:  '
+    FileOffset:      377
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          21886
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_377_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_379_2:  '
+    FileOffset:      379
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          21931
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_379_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_412_1:  '
+    FileOffset:      412
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          22422
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_412_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_467_1:  '
+    FileOffset:      467
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          23232
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_467_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_523_1:  '
+    FileOffset:      523
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          24121
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_523_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_527_2:  '
+    FileOffset:      527
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          24196
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_527_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_529_3:  '
+    FileOffset:      529
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          24245
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_529_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_530_4:  '
+    FileOffset:      530
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          24282
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_530_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_560_1:  '
+    FileOffset:      560
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          24665
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_560_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_598_1:  '
+    FileOffset:      598
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          25315
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_598_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_643_1:  '
+    FileOffset:      643
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          26267
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_643_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_667_1:  '
+    FileOffset:      667
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          26732
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_667_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_691_1:  '
+    FileOffset:      691
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          27246
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_691_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_738_1:  '
+    FileOffset:      738
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          28367
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_738_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_804_1:  '
+    FileOffset:      804
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          30211
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_804_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_854_1:  '
+    FileOffset:      854
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          30891
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_854_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_915_1:  '
+    FileOffset:      915
+    FilePath:        poly.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/poly.pp.0.c
+        Offset:          31982
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_915_1: '
+...

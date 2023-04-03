@@ -1,0 +1,67 @@
+---
+MainSourceFile:  /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_54_1:  '
+    FileOffset:      54
+    FilePath:        ntt.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          15231
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_54_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_55_2:  '
+    FileOffset:      55
+    FilePath:        ntt.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          15272
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_55_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_3:  '
+    FileOffset:      57
+    FilePath:        ntt.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          15350
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_1:  '
+    FileOffset:      83
+    FilePath:        ntt.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          15719
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_84_2:  '
+    FileOffset:      84
+    FilePath:        ntt.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          15760
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_84_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_3:  '
+    FileOffset:      86
+    FilePath:        ntt.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          15839
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_95_4:  '
+    FileOffset:      95
+    FilePath:        ntt.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          16079
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_95_4: '
+...

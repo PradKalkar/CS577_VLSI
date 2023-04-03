@@ -1,0 +1,95 @@
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:429:3: warning: Added loop label VITIS_LOOP_30_1:   [xilinx-label-all-loops]
+  for(i=0;i<8;i++)
+  ^~~
+  VITIS_LOOP_30_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:429:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:438:3: warning: Added loop label VITIS_LOOP_47_1:   [xilinx-label-all-loops]
+  for(i=0;i<8;i++)
+  ^~~
+  VITIS_LOOP_47_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:438:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:515:9: warning: Added loop label VITIS_LOOP_131_1:   [xilinx-label-all-loops]
+        for( round = 0; round < 24; round += 2 )
+        ^~~
+        VITIS_LOOP_131_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:515:9: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:739:3: warning: Added loop label VITIS_LOOP_362_1:   [xilinx-label-all-loops]
+  for(i=0;i<25;i++)
+  ^~~
+  VITIS_LOOP_362_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:739:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:755:5: warning: Added loop label VITIS_LOOP_391_1:   [xilinx-label-all-loops]
+    while(i < 8 && mlen > 0) {
+    ^~~~~
+    VITIS_LOOP_391_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:755:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:764:5: warning: Added loop label VITIS_LOOP_400_2:   [xilinx-label-all-loops]
+    for(i=0;i<(r-pos)/8;i++)
+    ^~~
+    VITIS_LOOP_400_2: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:764:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:772:3: warning: Added loop label VITIS_LOOP_408_3:   [xilinx-label-all-loops]
+  while(mlen >= r) {
+  ^~~~~
+  VITIS_LOOP_408_3: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:772:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:773:5: warning: Added loop label VITIS_LOOP_409_4:   [xilinx-label-all-loops]
+    for(i=0;i<r/8;i++)
+    ^~~
+    VITIS_LOOP_409_4: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:773:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:780:3: warning: Added loop label VITIS_LOOP_416_5:   [xilinx-label-all-loops]
+  for(i=0;i<mlen/8;i++)
+  ^~~
+  VITIS_LOOP_416_5: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:780:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:787:5: warning: Added loop label VITIS_LOOP_423_6:   [xilinx-label-all-loops]
+    for(i=0;i<8;i++)
+    ^~~
+    VITIS_LOOP_423_6: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:787:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:789:5: warning: Added loop label VITIS_LOOP_425_7:   [xilinx-label-all-loops]
+    for(i=0;i<mlen;i++)
+    ^~~
+    VITIS_LOOP_425_7: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:789:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:815:3: warning: Added loop label VITIS_LOOP_474_1:   [xilinx-label-all-loops]
+  while(nblocks > 0) {
+  ^~~~~
+  VITIS_LOOP_474_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:815:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:817:5: warning: Added loop label VITIS_LOOP_476_2:   [xilinx-label-all-loops]
+    for(i=0;i<r/8;i++)
+    ^~~
+    VITIS_LOOP_476_2: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:817:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:836:5: warning: Added loop label VITIS_LOOP_510_1:   [xilinx-label-all-loops]
+    while(i < 8 && outlen > 0) {
+    ^~~~~
+    VITIS_LOOP_510_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:836:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:844:5: warning: Added loop label VITIS_LOOP_518_2:   [xilinx-label-all-loops]
+    for(i=0;i<(r-pos)/8;i++)
+    ^~~
+    VITIS_LOOP_518_2: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:844:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:851:3: warning: Added loop label VITIS_LOOP_525_3:   [xilinx-label-all-loops]
+  while(outlen >= r) {
+  ^~~~~
+  VITIS_LOOP_525_3: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:851:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:853:5: warning: Added loop label VITIS_LOOP_527_4:   [xilinx-label-all-loops]
+    for(i=0;i<r/8;i++)
+    ^~~
+    VITIS_LOOP_527_4: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:853:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:866:3: warning: Added loop label VITIS_LOOP_540_5:   [xilinx-label-all-loops]
+  for(i=0;i<outlen/8;i++) {
+  ^~~
+  VITIS_LOOP_540_5: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:866:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:883:3: warning: Added loop label VITIS_LOOP_557_6:   [xilinx-label-all-loops]
+  for(i=0;i<outlen;i++)
+  ^~~
+  VITIS_LOOP_557_6: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/fips202.pp.0.c:883:3: note: FIX-IT applied suggested code changes

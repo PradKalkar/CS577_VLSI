@@ -1,0 +1,57 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-60-generic) on Sun Mar 12 20:08:35 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium2'
+Sourcing Tcl script '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project crypto_sign 
+INFO: [HLS 200-10] Opening project '/home/guest/Documents/vlsi/dilithium2/crypto_sign'.
+INFO: [HLS 200-1510] Running: set_top crypto_sign 
+INFO: [HLS 200-1510] Running: add_files aes.c 
+INFO: [HLS 200-10] Adding design file 'aes.c' to the project
+INFO: [HLS 200-1510] Running: add_files aes256ctr.c 
+INFO: [HLS 200-10] Adding design file 'aes256ctr.c' to the project
+INFO: [HLS 200-1510] Running: add_files fips202.c 
+INFO: [HLS 200-10] Adding design file 'fips202.c' to the project
+INFO: [HLS 200-1510] Running: add_files ntt.c 
+INFO: [HLS 200-10] Adding design file 'ntt.c' to the project
+INFO: [HLS 200-1510] Running: add_files packing.c 
+INFO: [HLS 200-10] Adding design file 'packing.c' to the project
+INFO: [HLS 200-1510] Running: add_files poly.c 
+INFO: [HLS 200-10] Adding design file 'poly.c' to the project
+INFO: [HLS 200-1510] Running: add_files polyvec.c 
+INFO: [HLS 200-10] Adding design file 'polyvec.c' to the project
+INFO: [HLS 200-1510] Running: add_files reduce.c 
+INFO: [HLS 200-10] Adding design file 'reduce.c' to the project
+INFO: [HLS 200-1510] Running: add_files rng.c 
+INFO: [HLS 200-10] Adding design file 'rng.c' to the project
+INFO: [HLS 200-1510] Running: add_files rounding.c 
+INFO: [HLS 200-10] Adding design file 'rounding.c' to the project
+INFO: [HLS 200-1510] Running: add_files sign.c 
+INFO: [HLS 200-10] Adding design file 'sign.c' to the project
+INFO: [HLS 200-1510] Running: add_files symmetric-aes.c 
+INFO: [HLS 200-10] Adding design file 'symmetric-aes.c' to the project
+INFO: [HLS 200-1510] Running: add_files symmetric-shake.c 
+INFO: [HLS 200-10] Adding design file 'symmetric-shake.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb PQCgenKAT_sign.c 
+INFO: [HLS 200-10] Adding test bench file 'PQCgenKAT_sign.c' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10000ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-fbg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a200tfbg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10000 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Running Dispatch Server on port: 38445
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+CRYPTO_PUBLICKEYBYTES = 1312
+CRYPTO_SECRETKEYBYTES = 2544
+CRYPTO_BYTES = 2420
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.08 seconds. CPU system time: 0.18 seconds. Elapsed time: 0.26 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 1.9 seconds. Total CPU system time: 0.43 seconds. Total elapsed time: 12.57 seconds; peak allocated memory: 756.781 MB.

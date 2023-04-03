@@ -1,0 +1,20 @@
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/sign.pp.0.c:864:4: warning: Added loop label VITIS_LOOP_205_1:   [xilinx-label-all-loops]
+   for(i = 0; i < mlen; ++i)
+   ^~~
+   VITIS_LOOP_205_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/sign.pp.0.c:864:4: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/sign.pp.0.c:933:3: warning: Added loop label VITIS_LOOP_287_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 32; ++i)
+  ^~~
+  VITIS_LOOP_287_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/sign.pp.0.c:933:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/sign.pp.0.c:956:5: warning: Added loop label VITIS_LOOP_324_1:   [xilinx-label-all-loops]
+    for(i = 0; i < *mlen; ++i)
+    ^~~
+    VITIS_LOOP_324_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/sign.pp.0.c:956:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/sign.pp.0.c:964:3: warning: Added loop label VITIS_LOOP_332_2:   [xilinx-label-all-loops]
+  for(i = 0; i < smlen; ++i)
+  ^~~
+  VITIS_LOOP_332_2: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/sign.pp.0.c:964:3: note: FIX-IT applied suggested code changes

@@ -1,0 +1,103 @@
+---
+MainSourceFile:  /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_160_1:  '
+    FileOffset:      160
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          25868
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_160_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_2:  '
+    FileOffset:      169
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          26088
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_358_1:  '
+    FileOffset:      358
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          29283
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_358_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_378_1:  '
+    FileOffset:      378
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          32438
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_378_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_380_2:  '
+    FileOffset:      380
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          32470
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_380_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_508_1:  '
+    FileOffset:      508
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          34778
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_508_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_556_1:  '
+    FileOffset:      556
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          35321
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_556_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_566_1:  '
+    FileOffset:      566
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          35501
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_566_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_582_1:  '
+    FileOffset:      582
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          35795
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_582_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_606_1:  '
+    FileOffset:      606
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          36144
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_606_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_615_2:  '
+    FileOffset:      615
+    FilePath:        aes.c
+    Replacements:    
+      - FilePath:        /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          36306
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_615_2: '
+...

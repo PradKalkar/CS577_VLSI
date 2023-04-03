@@ -1,0 +1,145 @@
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:555:3: warning: Added loop label VITIS_LOOP_20_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_20_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:555:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:556:5: warning: Added loop label VITIS_LOOP_21_2:   [xilinx-label-all-loops]
+    for(j = 0; j < 4; ++j)
+    ^~~
+    VITIS_LOOP_21_2: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:556:5: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:563:3: warning: Added loop label VITIS_LOOP_28_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_28_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:563:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:574:3: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_39_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:574:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:581:3: warning: Added loop label VITIS_LOOP_46_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_46_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:581:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:588:3: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_53_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:588:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:595:3: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_68_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:595:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:602:3: warning: Added loop label VITIS_LOOP_85_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_85_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:602:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:609:3: warning: Added loop label VITIS_LOOP_100_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_100_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:609:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:616:3: warning: Added loop label VITIS_LOOP_107_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_107_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:616:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:623:3: warning: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_114_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:623:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:635:3: warning: Added loop label VITIS_LOOP_137_1:   [xilinx-label-all-loops]
+  for(i = 1; i < 4; ++i) {
+  ^~~
+  VITIS_LOOP_137_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:635:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:644:3: warning: Added loop label VITIS_LOOP_158_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_158_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:644:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:658:3: warning: Added loop label VITIS_LOOP_172_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_172_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:658:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:665:3: warning: Added loop label VITIS_LOOP_187_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_187_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:665:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:672:3: warning: Added loop label VITIS_LOOP_202_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_202_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:672:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:679:3: warning: Added loop label VITIS_LOOP_217_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_217_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:679:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:686:3: warning: Added loop label VITIS_LOOP_234_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_234_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:686:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:693:3: warning: Added loop label VITIS_LOOP_252_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_252_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:693:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:700:3: warning: Added loop label VITIS_LOOP_267_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_267_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:700:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:707:3: warning: Added loop label VITIS_LOOP_282_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_282_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:707:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:714:3: warning: Added loop label VITIS_LOOP_298_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_298_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:714:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:721:3: warning: Added loop label VITIS_LOOP_305_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_305_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:721:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:728:3: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_325_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:728:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:738:3: warning: Added loop label VITIS_LOOP_349_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_349_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:738:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:745:3: warning: Added loop label VITIS_LOOP_371_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_371_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:745:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:755:3: warning: Added loop label VITIS_LOOP_392_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_392_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:755:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:764:3: warning: Added loop label VITIS_LOOP_411_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_411_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:764:3: note: FIX-IT applied suggested code changes
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:771:3: warning: Added loop label VITIS_LOOP_418_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 4; ++i)
+  ^~~
+  VITIS_LOOP_418_1: 
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/.autopilot/db/polyvec.pp.0.c:771:3: note: FIX-IT applied suggested code changes

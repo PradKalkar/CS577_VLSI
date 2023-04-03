@@ -1,0 +1,4 @@
+/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/csynth.tcl:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=crypto_sign_XLX_SEP_ PragmaOptions=name=crypto_sign_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=crypto_sign
+        ^
+1 warning generated.

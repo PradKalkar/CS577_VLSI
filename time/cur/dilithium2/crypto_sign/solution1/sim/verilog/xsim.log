@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Mar 12 20:05:10 2023
+# Process ID: 174589
+# Current directory: /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/crypto_sign/xsim_script.tcl}
+# Log file: /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/verilog/xsim.log
+# Journal file: /home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/verilog/xsim.jou
+# Running On: cse-HP-ProDesk-600-G6-Microtower-PC, OS: Linux, CPU Frequency: 2900.000 MHz, CPU Physical cores: 8, Host memory: 16543 MB
+#-----------------------------------------------------------
+source xsim.dir/crypto_sign/xsim_script.tcl
+# xsim {crypto_sign} -autoloadwcfg -tclbatch {crypto_sign.tcl}
+Time resolution is 1 ps
+source crypto_sign.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [n/a] @ "25000000"
+// RTL Simulation : 1 / 2 [n/a] @ "3516665000000"
+// RTL Simulation : 2 / 2 [n/a] @ "5879975000000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 5880035 us : File "/home/guest/Documents/vlsi/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign.autotb.v" Line 502
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:03:09 . Memory (MB): peak = 1245.496 ; gain = 0.000 ; free physical = 1122 ; free virtual = 9218
+## quit
+INFO: xsimkernel Simulation Memory Usage: 130324 KB (Peak: 183568 KB), Simulation CPU Usage: 188230 ms
+INFO: [Common 17-206] Exiting xsim at Sun Mar 12 20:08:22 2023...
