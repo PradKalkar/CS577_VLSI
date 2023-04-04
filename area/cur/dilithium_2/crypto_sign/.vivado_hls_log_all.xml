@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'ntt.1' to 'ntt_1'." projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:12.219+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.1' to 'keccak_squeezeblocks_1'." projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:12.191+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.2' to 'keccak_squeezeblocks_2'." projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:12.190+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'load64.3' to 'load64_3'." projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:12.188+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.2' to 'keccak_absorb_2'." projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:12.186+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'KeccakF1600_StatePer.1' to 'KeccakF1600_StatePer_1'." projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:12.184+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'load64.2' to 'load64_2'." projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:12.182+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.3199' to 'keccak_absorb_3199'." projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:12.181+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'KeccakF1600_StatePermute' to 'KeccakF1600_StatePer.1' (fips202.c:86:1)" projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:09.239+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'KeccakF1600_StatePermute.1' to 'KeccakF1600_StatePer' (fips202.c:86:1)" projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:07.484+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'crypto_sign_signature' to 'crypto_sign_signatur' (poly.c:18:23)" projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:07.482+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'polyveck_invntt_tomont' to 'polyveck_invntt_tomo' (polyvec.c:160:21)" projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:07.480+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'polyveck_pointwise_poly_montgomery' to 'polyveck_pointwise_p' (poly.c:18:23)" projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:07.478+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'polyvecl_pointwise_acc_montgomery' to 'polyvecl_pointwise_a' (poly.c:18:23)" projectName="crypto_sign" solutionName="solution1" date="2023-04-04T22:25:07.476+0530" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

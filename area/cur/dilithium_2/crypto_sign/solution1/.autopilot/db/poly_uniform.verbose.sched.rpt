@@ -1,0 +1,521 @@
+
+
+================================================================
+== Vivado HLS Report for 'poly_uniform'
+================================================================
+* Date:           Tue Apr  4 22:25:16 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        crypto_sign
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 us | 7.824 ns |   1.25 us  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- Loop 1     |       25|       25|         1|          -|          -|     25|    no    |
+        |- Loop 2     |       76|       76|        19|          -|          -|      4|    no    |
+        | + Loop 2.1  |       16|       16|         2|          -|          -|      8|    no    |
+        |- Loop 3     |        ?|        ?|         ?|          -|          -|      ?|    no    |
+        | + Loop 3.1  |        0|        4|         2|          -|          -| 0 ~ 2 |    no    |
+        +-------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 33
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 2 3 
+3 --> 7 4 
+4 --> 5 6 
+5 --> 4 
+6 --> 3 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 31 
+30 --> 29 
+31 --> 32 
+32 --> 33 
+33 --> 16 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%nonce_read = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %nonce)"   --->   Operation 34 'read' 'nonce_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%a_coeffs_offset1_rea = call i3 @_ssdm_op_Read.ap_auto.i3(i3 %a_coeffs_offset1)"   --->   Operation 35 'read' 'a_coeffs_offset1_rea' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%a_coeffs_offset_read = call i3 @_ssdm_op_Read.ap_auto.i3(i3 %a_coeffs_offset)"   --->   Operation 36 'read' 'a_coeffs_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%buf = alloca [842 x i8], align 16" [poly.c:369]   --->   Operation 37 'alloca' 'buf' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%state_s = alloca [25 x i64], align 8" [poly.c:370]   --->   Operation 38 'alloca' 'state_s' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%t_0 = trunc i10 %nonce_read to i8" [symmetric-shake.c:11->poly.c:372]   --->   Operation 39 'trunc' 't_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%tmp = call i2 @_ssdm_op_PartSelect.i2.i10.i32.i32(i10 %nonce_read, i32 8, i32 9)" [symmetric-shake.c:12->poly.c:372]   --->   Operation 40 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%t_1 = zext i2 %tmp to i8" [symmetric-shake.c:12->poly.c:372]   --->   Operation 41 'zext' 't_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (1.35ns)   --->   "br label %1" [fips202.c:362->fips202.c:573->symmetric-shake.c:14->poly.c:372]   --->   Operation 42 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 2.77>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%i_0_i_i_i = phi i5 [ 0, %0 ], [ %i_22, %2 ]"   --->   Operation 43 'phi' 'i_0_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (1.21ns)   --->   "%icmp_ln362 = icmp eq i5 %i_0_i_i_i, -7" [fips202.c:362->fips202.c:573->symmetric-shake.c:14->poly.c:372]   --->   Operation 44 'icmp' 'icmp_ln362' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 25, i64 25, i64 25)"   --->   Operation 45 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (1.54ns)   --->   "%i_22 = add i5 %i_0_i_i_i, 1" [fips202.c:362->fips202.c:573->symmetric-shake.c:14->poly.c:372]   --->   Operation 46 'add' 'i_22' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "br i1 %icmp_ln362, label %dilithium_shake128_stream_init.exit, label %2" [fips202.c:362->fips202.c:573->symmetric-shake.c:14->poly.c:372]   --->   Operation 47 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln363 = zext i5 %i_0_i_i_i to i64" [fips202.c:363->fips202.c:573->symmetric-shake.c:14->poly.c:372]   --->   Operation 48 'zext' 'zext_ln363' <Predicate = (!icmp_ln362)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%state_s_addr = getelementptr [25 x i64]* %state_s, i64 0, i64 %zext_ln363" [fips202.c:363->fips202.c:573->symmetric-shake.c:14->poly.c:372]   --->   Operation 49 'getelementptr' 'state_s_addr' <Predicate = (!icmp_ln362)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (2.77ns)   --->   "store i64 0, i64* %state_s_addr, align 8" [fips202.c:363->fips202.c:573->symmetric-shake.c:14->poly.c:372]   --->   Operation 50 'store' <Predicate = (!icmp_ln362)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "br label %1" [fips202.c:362->fips202.c:573->symmetric-shake.c:14->poly.c:372]   --->   Operation 51 'br' <Predicate = (!icmp_ln362)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%empty_40 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 0, i64 0)"   --->   Operation 52 'speclooptripcount' 'empty_40' <Predicate = (icmp_ln362)> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (1.35ns)   --->   "br label %.preheader.i" [fips202.c:416->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 53 'br' <Predicate = (icmp_ln362)> <Delay = 1.35>
+
+State 3 <SV = 2> <Delay = 1.35>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%i_3_i = phi i3 [ %add_ln416, %load64.1.exit14.i ], [ 0, %dilithium_shake128_stream_init.exit ]" [fips202.c:416->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 54 'phi' 'i_3_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln416 = zext i3 %i_3_i to i64" [fips202.c:416->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 55 'zext' 'zext_ln416' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%empty_41 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)"   --->   Operation 56 'speclooptripcount' 'empty_41' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (1.00ns)   --->   "%icmp_ln416 = icmp eq i3 %i_3_i, -4" [fips202.c:416->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 57 'icmp' 'icmp_ln416' <Predicate = true> <Delay = 1.00> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 58 [1/1] (1.34ns)   --->   "%add_ln416 = add i3 %i_3_i, 1" [fips202.c:416->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 58 'add' 'add_ln416' <Predicate = true> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "br i1 %icmp_ln416, label %keccak_absorb.1.exit, label %3" [fips202.c:416->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 59 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%trunc_ln417 = trunc i3 %i_3_i to i2" [fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 60 'trunc' 'trunc_ln417' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%shl_ln11 = call i5 @_ssdm_op_BitConcatenate.i5.i2.i3(i2 %trunc_ln417, i3 0)" [fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 61 'bitconcatenate' 'shl_ln11' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 62 [1/1] (1.35ns)   --->   "br label %4" [fips202.c:30->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 62 'br' <Predicate = (!icmp_ln416)> <Delay = 1.35>
+ST_3 : Operation 63 [2/2] (0.00ns)   --->   "%state_pos_write_assi = call fastcc i32 @keccak_absorb([25 x i64]* %state_s, i9 168, i7 32, i8 %t_0, i8 %t_1)" [fips202.c:588->symmetric-shake.c:16->poly.c:372]   --->   Operation 63 'call' 'state_pos_write_assi' <Predicate = (icmp_ln416)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%trunc_ln375 = trunc i3 %a_coeffs_offset_read to i2" [poly.c:375]   --->   Operation 64 'trunc' 'trunc_ln375' <Predicate = (icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln375_1 = trunc i3 %a_coeffs_offset1_rea to i2" [poly.c:375]   --->   Operation 65 'trunc' 'trunc_ln375_1' <Predicate = (icmp_ln416)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 4.32>
+ST_4 : Operation 66 [1/1] (0.00ns)   --->   "%i_0_i1_i = phi i4 [ 0, %3 ], [ %i_23, %5 ]"   --->   Operation 66 'phi' 'i_0_i1_i' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 67 [1/1] (0.00ns)   --->   "%r_0_i2_i = phi i64 [ 0, %3 ], [ %r, %5 ]"   --->   Operation 67 'phi' 'r_0_i2_i' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 68 [1/1] (1.21ns)   --->   "%icmp_ln30 = icmp eq i4 %i_0_i1_i, -8" [fips202.c:30->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 68 'icmp' 'icmp_ln30' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%empty_42 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 69 'speclooptripcount' 'empty_42' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 70 [1/1] (1.49ns)   --->   "%i_23 = add i4 %i_0_i1_i, 1" [fips202.c:30->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 70 'add' 'i_23' <Predicate = true> <Delay = 1.49> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "br i1 %icmp_ln30, label %load64.1.exit14.i, label %5" [fips202.c:30->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 71 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 72 [1/1] (0.00ns)   --->   "%zext_ln31 = zext i4 %i_0_i1_i to i5" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 72 'zext' 'zext_ln31' <Predicate = (!icmp_ln30)> <Delay = 0.00>
+ST_4 : Operation 73 [1/1] (1.54ns)   --->   "%add_ln31 = add i5 %shl_ln11, %zext_ln31" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 73 'add' 'add_ln31' <Predicate = (!icmp_ln30)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 74 [1/1] (0.00ns)   --->   "%zext_ln31_3 = zext i5 %add_ln31 to i64" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 74 'zext' 'zext_ln31_3' <Predicate = (!icmp_ln30)> <Delay = 0.00>
+ST_4 : Operation 75 [1/1] (0.00ns)   --->   "%seed_addr = getelementptr [208 x i8]* %seed, i64 0, i64 %zext_ln31_3" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 75 'getelementptr' 'seed_addr' <Predicate = (!icmp_ln30)> <Delay = 0.00>
+ST_4 : Operation 76 [2/2] (2.77ns)   --->   "%seed_load = load i8* %seed_addr, align 1" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 76 'load' 'seed_load' <Predicate = (!icmp_ln30)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%state_s_addr_6 = getelementptr [25 x i64]* %state_s, i64 0, i64 %zext_ln416" [fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 77 'getelementptr' 'state_s_addr_6' <Predicate = (icmp_ln30)> <Delay = 0.00>
+ST_4 : Operation 78 [2/2] (2.77ns)   --->   "%state_s_load_4 = load i64* %state_s_addr_6, align 8" [fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 78 'load' 'state_s_load_4' <Predicate = (icmp_ln30)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+
+State 5 <SV = 4> <Delay = 5.19>
+ST_5 : Operation 79 [1/2] (2.77ns)   --->   "%seed_load = load i8* %seed_addr, align 1" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 79 'load' 'seed_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_5 : Operation 80 [1/1] (0.00ns) (grouped into LUT with out node r)   --->   "%zext_ln31_4 = zext i8 %seed_load to i64" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 80 'zext' 'zext_ln31_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 81 [1/1] (0.00ns) (grouped into LUT with out node r)   --->   "%trunc_ln31 = trunc i4 %i_0_i1_i to i3" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 81 'trunc' 'trunc_ln31' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 82 [1/1] (0.00ns) (grouped into LUT with out node r)   --->   "%shl_ln12 = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %trunc_ln31, i3 0)" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 82 'bitconcatenate' 'shl_ln12' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 83 [1/1] (0.00ns) (grouped into LUT with out node r)   --->   "%zext_ln31_5 = zext i6 %shl_ln12 to i64" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 83 'zext' 'zext_ln31_5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 84 [1/1] (0.00ns) (grouped into LUT with out node r)   --->   "%shl_ln31 = shl i64 %zext_ln31_4, %zext_ln31_5" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 84 'shl' 'shl_ln31' <Predicate = true> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.28> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 85 [1/1] (2.42ns) (out node of the LUT)   --->   "%r = or i64 %shl_ln31, %r_0_i2_i" [fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 85 'or' 'r' <Predicate = true> <Delay = 2.42> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 86 [1/1] (0.00ns)   --->   "br label %4" [fips202.c:30->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 86 'br' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 4> <Delay = 6.35>
+ST_6 : Operation 87 [1/2] (2.77ns)   --->   "%state_s_load_4 = load i64* %state_s_addr_6, align 8" [fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 87 'load' 'state_s_load_4' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_6 : Operation 88 [1/1] (0.80ns)   --->   "%xor_ln417 = xor i64 %state_s_load_4, %r_0_i2_i" [fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 88 'xor' 'xor_ln417' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 89 [1/1] (2.77ns)   --->   "store i64 %xor_ln417, i64* %state_s_addr_6, align 8" [fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 89 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_6 : Operation 90 [1/1] (0.00ns)   --->   "br label %.preheader.i" [fips202.c:416->fips202.c:588->symmetric-shake.c:15->poly.c:372]   --->   Operation 90 'br' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 3> <Delay = 3.53>
+ST_7 : Operation 91 [1/2] (3.53ns)   --->   "%state_pos_write_assi = call fastcc i32 @keccak_absorb([25 x i64]* %state_s, i9 168, i7 32, i8 %t_0, i8 %t_1)" [fips202.c:588->symmetric-shake.c:16->poly.c:372]   --->   Operation 91 'call' 'state_pos_write_assi' <Predicate = true> <Delay = 3.53> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 92 [1/1] (0.00ns)   --->   "%i_s = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %state_pos_write_assi, i32 3, i32 31)" [fips202.c:448->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 92 'partselect' 'i_s' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 93 [1/1] (0.00ns)   --->   "%zext_ln450_2 = zext i29 %i_s to i64" [fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 93 'zext' 'zext_ln450_2' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 94 [1/1] (0.00ns)   --->   "%state_s_addr_4 = getelementptr [25 x i64]* %state_s, i64 0, i64 %zext_ln450_2" [fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 94 'getelementptr' 'state_s_addr_4' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 4> <Delay = 2.77>
+ST_8 : Operation 95 [2/2] (2.77ns)   --->   "%state_s_load = load i64* %state_s_addr_4, align 8" [fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 95 'load' 'state_s_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+
+State 9 <SV = 5> <Delay = 7.82>
+ST_9 : Operation 96 [1/1] (0.00ns) (grouped into LUT with out node xor_ln450)   --->   "%trunc_ln450 = trunc i32 %state_pos_write_assi to i3" [fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 96 'trunc' 'trunc_ln450' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 97 [1/1] (0.00ns) (grouped into LUT with out node xor_ln450)   --->   "%shl_ln = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %trunc_ln450, i3 0)" [fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 97 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node xor_ln450)   --->   "%zext_ln450 = zext i6 %shl_ln to i64" [fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 98 'zext' 'zext_ln450' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 99 [1/1] (0.00ns) (grouped into LUT with out node xor_ln450)   --->   "%shl_ln450 = shl i64 31, %zext_ln450" [fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 99 'shl' 'shl_ln450' <Predicate = true> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.28> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 100 [1/2] (2.77ns)   --->   "%state_s_load = load i64* %state_s_addr_4, align 8" [fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 100 'load' 'state_s_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_9 : Operation 101 [1/1] (2.28ns) (out node of the LUT)   --->   "%xor_ln450 = xor i64 %state_s_load, %shl_ln450" [fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 101 'xor' 'xor_ln450' <Predicate = true> <Delay = 2.28> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 102 [1/1] (2.77ns)   --->   "store i64 %xor_ln450, i64* %state_s_addr_4, align 8" [fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 102 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+
+State 10 <SV = 6> <Delay = 2.77>
+ST_10 : Operation 103 [1/1] (0.00ns)   --->   "%state_s_addr_5 = getelementptr [25 x i64]* %state_s, i64 0, i64 20" [fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 103 'getelementptr' 'state_s_addr_5' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 104 [2/2] (2.77ns)   --->   "%state_s_load_3 = load i64* %state_s_addr_5, align 8" [fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 104 'load' 'state_s_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+
+State 11 <SV = 7> <Delay = 6.35>
+ST_11 : Operation 105 [1/2] (2.77ns)   --->   "%state_s_load_3 = load i64* %state_s_addr_5, align 8" [fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 105 'load' 'state_s_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_11 : Operation 106 [1/1] (0.80ns)   --->   "%xor_ln451 = xor i64 %state_s_load_3, -9223372036854775808" [fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 106 'xor' 'xor_ln451' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 107 [1/1] (2.77ns)   --->   "store i64 %xor_ln451, i64* %state_s_addr_5, align 8" [fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372]   --->   Operation 107 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+
+State 12 <SV = 8> <Delay = 2.70>
+ST_12 : Operation 108 [2/2] (2.70ns)   --->   "call fastcc void @keccak_squeezeblocks.2([842 x i8]* %buf, i2 0, i4 5, [25 x i64]* %state_s)" [fips202.c:619->poly.c:373]   --->   Operation 108 'call' <Predicate = true> <Delay = 2.70> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 9> <Delay = 0.00>
+ST_13 : Operation 109 [1/2] (0.00ns)   --->   "call fastcc void @keccak_squeezeblocks.2([842 x i8]* %buf, i2 0, i4 5, [25 x i64]* %state_s)" [fips202.c:619->poly.c:373]   --->   Operation 109 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 10> <Delay = 1.35>
+ST_14 : Operation 110 [2/2] (1.35ns)   --->   "%ctr = call fastcc i32 @rej_uniform([4096 x i23]* %a_coeffs, i2 %trunc_ln375, i2 %trunc_ln375_1, i32 0, i10 256, [842 x i8]* %buf, i11 840)" [poly.c:375]   --->   Operation 110 'call' 'ctr' <Predicate = true> <Delay = 1.35> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 11> <Delay = 1.35>
+ST_15 : Operation 111 [1/2] (0.00ns)   --->   "%ctr = call fastcc i32 @rej_uniform([4096 x i23]* %a_coeffs, i2 %trunc_ln375, i2 %trunc_ln375_1, i32 0, i10 256, [842 x i8]* %buf, i11 840)" [poly.c:375]   --->   Operation 111 'call' 'ctr' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 112 [1/1] (1.35ns)   --->   "br label %6" [poly.c:377]   --->   Operation 112 'br' <Predicate = true> <Delay = 1.35>
+
+State 16 <SV = 12> <Delay = 2.79>
+ST_16 : Operation 113 [1/1] (0.00ns)   --->   "%ctr_0 = phi i32 [ %ctr, %keccak_absorb.1.exit ], [ %ctr_2, %10 ]"   --->   Operation 113 'phi' 'ctr_0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 114 [1/1] (0.00ns)   --->   "%buflen_0 = phi i9 [ -184, %keccak_absorb.1.exit ], [ %zext_ln383, %10 ]" [poly.c:383]   --->   Operation 114 'phi' 'buflen_0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 115 [1/1] (0.00ns)   --->   "%sext_ln377 = sext i9 %buflen_0 to i10" [poly.c:377]   --->   Operation 115 'sext' 'sext_ln377' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln377 = zext i10 %sext_ln377 to i11" [poly.c:377]   --->   Operation 116 'zext' 'zext_ln377' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 117 [1/1] (0.00ns)   --->   "%tmp_5 = call i24 @_ssdm_op_PartSelect.i24.i32.i32.i32(i32 %ctr_0, i32 8, i32 31)" [poly.c:377]   --->   Operation 117 'partselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 118 [1/1] (2.04ns)   --->   "%icmp_ln377 = icmp eq i24 %tmp_5, 0" [poly.c:377]   --->   Operation 118 'icmp' 'icmp_ln377' <Predicate = true> <Delay = 2.04> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 119 [1/1] (0.00ns)   --->   "br i1 %icmp_ln377, label %7, label %11" [poly.c:377]   --->   Operation 119 'br' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 120 [13/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 120 'urem' 'off' <Predicate = (icmp_ln377)> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 121 [1/1] (0.00ns)   --->   "ret void" [poly.c:386]   --->   Operation 121 'ret' <Predicate = (!icmp_ln377)> <Delay = 0.00>
+
+State 17 <SV = 13> <Delay = 2.79>
+ST_17 : Operation 122 [12/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 122 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 14> <Delay = 2.79>
+ST_18 : Operation 123 [11/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 123 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 15> <Delay = 2.79>
+ST_19 : Operation 124 [10/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 124 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 16> <Delay = 2.79>
+ST_20 : Operation 125 [9/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 125 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 17> <Delay = 2.79>
+ST_21 : Operation 126 [8/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 126 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 18> <Delay = 2.79>
+ST_22 : Operation 127 [7/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 127 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 19> <Delay = 2.79>
+ST_23 : Operation 128 [6/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 128 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 20> <Delay = 2.79>
+ST_24 : Operation 129 [5/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 129 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 21> <Delay = 2.79>
+ST_25 : Operation 130 [4/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 130 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 22> <Delay = 2.79>
+ST_26 : Operation 131 [3/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 131 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 23> <Delay = 2.79>
+ST_27 : Operation 132 [2/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 132 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 24> <Delay = 4.54>
+ST_28 : Operation 133 [1/13] (2.79ns)   --->   "%off = urem i9 %buflen_0, 3" [poly.c:378]   --->   Operation 133 'urem' 'off' <Predicate = true> <Delay = 2.79> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 12> <II = 9> <Delay = 2.79> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 134 [1/1] (0.00ns)   --->   "%trunc_ln378 = trunc i9 %off to i8" [poly.c:378]   --->   Operation 134 'trunc' 'trunc_ln378' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 135 [1/1] (0.00ns)   --->   "%trunc_ln378_1 = trunc i9 %off to i2" [poly.c:378]   --->   Operation 135 'trunc' 'trunc_ln378_1' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 136 [1/1] (0.00ns)   --->   "%zext_ln378 = zext i9 %off to i11" [poly.c:378]   --->   Operation 136 'zext' 'zext_ln378' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 137 [1/1] (1.74ns)   --->   "%sub_ln380 = sub i11 %zext_ln377, %zext_ln378" [poly.c:380]   --->   Operation 137 'sub' 'sub_ln380' <Predicate = true> <Delay = 1.74> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 138 [1/1] (1.35ns)   --->   "br label %8" [poly.c:379]   --->   Operation 138 'br' <Predicate = true> <Delay = 1.35>
+
+State 29 <SV = 25> <Delay = 4.53>
+ST_29 : Operation 139 [1/1] (0.00ns)   --->   "%i_0 = phi i2 [ 0, %7 ], [ %i, %9 ]"   --->   Operation 139 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 140 [1/1] (0.00ns)   --->   "%zext_ln379 = zext i2 %i_0 to i11" [poly.c:379]   --->   Operation 140 'zext' 'zext_ln379' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 141 [1/1] (0.79ns)   --->   "%icmp_ln379 = icmp eq i2 %i_0, %trunc_ln378_1" [poly.c:379]   --->   Operation 141 'icmp' 'icmp_ln379' <Predicate = true> <Delay = 0.79> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 142 [1/1] (0.00ns)   --->   "%empty_43 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 2, i64 0)"   --->   Operation 142 'speclooptripcount' 'empty_43' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 143 [1/1] (1.20ns)   --->   "%i = add i2 %i_0, 1" [poly.c:379]   --->   Operation 143 'add' 'i' <Predicate = true> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 144 [1/1] (0.00ns)   --->   "br i1 %icmp_ln379, label %10, label %9" [poly.c:379]   --->   Operation 144 'br' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 145 [1/1] (1.76ns)   --->   "%add_ln380 = add i11 %sub_ln380, %zext_ln379" [poly.c:380]   --->   Operation 145 'add' 'add_ln380' <Predicate = (!icmp_ln379)> <Delay = 1.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 146 [1/1] (0.00ns)   --->   "%sext_ln380 = sext i11 %add_ln380 to i32" [poly.c:380]   --->   Operation 146 'sext' 'sext_ln380' <Predicate = (!icmp_ln379)> <Delay = 0.00>
+ST_29 : Operation 147 [1/1] (0.00ns)   --->   "%zext_ln380 = zext i32 %sext_ln380 to i64" [poly.c:380]   --->   Operation 147 'zext' 'zext_ln380' <Predicate = (!icmp_ln379)> <Delay = 0.00>
+ST_29 : Operation 148 [1/1] (0.00ns)   --->   "%buf_addr = getelementptr inbounds [842 x i8]* %buf, i64 0, i64 %zext_ln380" [poly.c:380]   --->   Operation 148 'getelementptr' 'buf_addr' <Predicate = (!icmp_ln379)> <Delay = 0.00>
+ST_29 : Operation 149 [2/2] (2.77ns)   --->   "%buf_load = load i8* %buf_addr, align 1" [poly.c:380]   --->   Operation 149 'load' 'buf_load' <Predicate = (!icmp_ln379)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_29 : Operation 150 [2/2] (2.70ns)   --->   "call fastcc void @keccak_squeezeblocks.2([842 x i8]* %buf, i2 %trunc_ln378_1, i4 1, [25 x i64]* %state_s)" [fips202.c:619->poly.c:382]   --->   Operation 150 'call' <Predicate = (icmp_ln379)> <Delay = 2.70> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 30 <SV = 26> <Delay = 5.54>
+ST_30 : Operation 151 [1/2] (2.77ns)   --->   "%buf_load = load i8* %buf_addr, align 1" [poly.c:380]   --->   Operation 151 'load' 'buf_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_30 : Operation 152 [1/1] (0.00ns)   --->   "%zext_ln380_1 = zext i2 %i_0 to i64" [poly.c:380]   --->   Operation 152 'zext' 'zext_ln380_1' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 153 [1/1] (0.00ns)   --->   "%buf_addr_11 = getelementptr inbounds [842 x i8]* %buf, i64 0, i64 %zext_ln380_1" [poly.c:380]   --->   Operation 153 'getelementptr' 'buf_addr_11' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 154 [1/1] (2.77ns)   --->   "store i8 %buf_load, i8* %buf_addr_11, align 1" [poly.c:380]   --->   Operation 154 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 842> <RAM>
+ST_30 : Operation 155 [1/1] (0.00ns)   --->   "br label %8" [poly.c:379]   --->   Operation 155 'br' <Predicate = true> <Delay = 0.00>
+
+State 31 <SV = 26> <Delay = 0.00>
+ST_31 : Operation 156 [1/2] (0.00ns)   --->   "call fastcc void @keccak_squeezeblocks.2([842 x i8]* %buf, i2 %trunc_ln378_1, i4 1, [25 x i64]* %state_s)" [fips202.c:619->poly.c:382]   --->   Operation 156 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 27> <Delay = 3.09>
+ST_32 : Operation 157 [1/1] (0.00ns)   --->   "%buflen = or i8 %trunc_ln378, -88" [poly.c:383]   --->   Operation 157 'or' 'buflen' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 158 [1/1] (0.00ns)   --->   "%zext_ln383 = zext i8 %buflen to i9" [poly.c:383]   --->   Operation 158 'zext' 'zext_ln383' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 159 [1/1] (0.00ns)   --->   "%trunc_ln384 = trunc i32 %ctr_0 to i10" [poly.c:384]   --->   Operation 159 'trunc' 'trunc_ln384' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 160 [1/1] (1.74ns)   --->   "%sub_ln384 = sub i10 256, %trunc_ln384" [poly.c:384]   --->   Operation 160 'sub' 'sub_ln384' <Predicate = true> <Delay = 1.74> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 161 [1/1] (0.00ns)   --->   "%zext_ln384 = zext i8 %buflen to i11" [poly.c:384]   --->   Operation 161 'zext' 'zext_ln384' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 162 [2/2] (1.35ns)   --->   "%tmp1 = call fastcc i32 @rej_uniform([4096 x i23]* %a_coeffs, i2 %trunc_ln375, i2 %trunc_ln375_1, i32 %ctr_0, i10 %sub_ln384, [842 x i8]* %buf, i11 %zext_ln384)" [poly.c:384]   --->   Operation 162 'call' 'tmp1' <Predicate = true> <Delay = 1.35> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 33 <SV = 28> <Delay = 2.18>
+ST_33 : Operation 163 [1/2] (0.00ns)   --->   "%tmp1 = call fastcc i32 @rej_uniform([4096 x i23]* %a_coeffs, i2 %trunc_ln375, i2 %trunc_ln375_1, i32 %ctr_0, i10 %sub_ln384, [842 x i8]* %buf, i11 %zext_ln384)" [poly.c:384]   --->   Operation 163 'call' 'tmp1' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_33 : Operation 164 [1/1] (2.18ns)   --->   "%ctr_2 = add i32 %tmp1, %ctr_0" [poly.c:384]   --->   Operation 164 'add' 'ctr_2' <Predicate = true> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 165 [1/1] (0.00ns)   --->   "br label %6" [poly.c:385]   --->   Operation 165 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 1e+04ns, clock uncertainty: 1.25e+03ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', fips202.c:362->fips202.c:573->symmetric-shake.c:14->poly.c:372) [18]  (1.35 ns)
+
+ <State 2>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', fips202.c:362->fips202.c:573->symmetric-shake.c:14->poly.c:372) [18]  (0 ns)
+	'getelementptr' operation ('state_s_addr', fips202.c:363->fips202.c:573->symmetric-shake.c:14->poly.c:372) [25]  (0 ns)
+	'store' operation ('store_ln363', fips202.c:363->fips202.c:573->symmetric-shake.c:14->poly.c:372) of constant 0 on array 'state.s', poly.c:370 [26]  (2.77 ns)
+
+ <State 3>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', fips202.c:30->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) [43]  (1.35 ns)
+
+ <State 4>: 4.32ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', fips202.c:30->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) [43]  (0 ns)
+	'add' operation ('add_ln31', fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) [51]  (1.55 ns)
+	'getelementptr' operation ('seed_addr', fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) [53]  (0 ns)
+	'load' operation ('seed_load', fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) on array 'seed' [54]  (2.77 ns)
+
+ <State 5>: 5.19ns
+The critical path consists of the following:
+	'load' operation ('seed_load', fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) on array 'seed' [54]  (2.77 ns)
+	'shl' operation ('shl_ln31', fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) [59]  (0 ns)
+	'or' operation ('r', fips202.c:31->fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) [60]  (2.42 ns)
+
+ <State 6>: 6.35ns
+The critical path consists of the following:
+	'load' operation ('state_s_load_4', fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) on array 'state.s', poly.c:370 [64]  (2.77 ns)
+	'xor' operation ('xor_ln417', fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) [65]  (0.808 ns)
+	'store' operation ('store_ln417', fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372) of variable 'xor_ln417', fips202.c:417->fips202.c:588->symmetric-shake.c:15->poly.c:372 on array 'state.s', poly.c:370 [66]  (2.77 ns)
+
+ <State 7>: 3.53ns
+The critical path consists of the following:
+	'call' operation ('state.pos', fips202.c:588->symmetric-shake.c:16->poly.c:372) to 'keccak_absorb' [69]  (3.53 ns)
+
+ <State 8>: 2.77ns
+The critical path consists of the following:
+	'load' operation ('state_s_load', fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372) on array 'state.s', poly.c:370 [77]  (2.77 ns)
+
+ <State 9>: 7.82ns
+The critical path consists of the following:
+	'load' operation ('state_s_load', fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372) on array 'state.s', poly.c:370 [77]  (2.77 ns)
+	'xor' operation ('xor_ln450', fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372) [78]  (2.28 ns)
+	'store' operation ('store_ln450', fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372) of variable 'xor_ln450', fips202.c:450->fips202.c:600->symmetric-shake.c:17->poly.c:372 on array 'state.s', poly.c:370 [79]  (2.77 ns)
+
+ <State 10>: 2.77ns
+The critical path consists of the following:
+	'getelementptr' operation ('state_s_addr_5', fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372) [80]  (0 ns)
+	'load' operation ('state_s_load_3', fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372) on array 'state.s', poly.c:370 [81]  (2.77 ns)
+
+ <State 11>: 6.35ns
+The critical path consists of the following:
+	'load' operation ('state_s_load_3', fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372) on array 'state.s', poly.c:370 [81]  (2.77 ns)
+	'xor' operation ('xor_ln451', fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372) [82]  (0.808 ns)
+	'store' operation ('store_ln451', fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372) of variable 'xor_ln451', fips202.c:451->fips202.c:600->symmetric-shake.c:17->poly.c:372 on array 'state.s', poly.c:370 [83]  (2.77 ns)
+
+ <State 12>: 2.7ns
+The critical path consists of the following:
+	'call' operation ('call_ln619', fips202.c:619->poly.c:373) to 'keccak_squeezeblocks.2' [84]  (2.7 ns)
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+ <State 14>: 1.35ns
+The critical path consists of the following:
+	'call' operation ('ctr', poly.c:375) to 'rej_uniform' [87]  (1.35 ns)
+
+ <State 15>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('ctr') with incoming values : ('ctr', poly.c:375) ('ctr', poly.c:384) [90]  (1.35 ns)
+
+ <State 16>: 2.8ns
+The critical path consists of the following:
+	'phi' operation ('buflen_0', poly.c:383) with incoming values : ('zext_ln383', poly.c:383) [91]  (0 ns)
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 17>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 18>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 19>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 20>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 21>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 22>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 23>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 24>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 25>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 26>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 27>: 2.8ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+
+ <State 28>: 4.54ns
+The critical path consists of the following:
+	'urem' operation ('off', poly.c:378) [98]  (2.8 ns)
+	'sub' operation ('sub_ln380', poly.c:380) [102]  (1.75 ns)
+
+ <State 29>: 4.54ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', poly.c:379) [105]  (0 ns)
+	'add' operation ('add_ln380', poly.c:380) [112]  (1.76 ns)
+	'getelementptr' operation ('buf_addr', poly.c:380) [115]  (0 ns)
+	'load' operation ('buf_load', poly.c:380) on array 'buf', poly.c:369 [116]  (2.77 ns)
+
+ <State 30>: 5.54ns
+The critical path consists of the following:
+	'load' operation ('buf_load', poly.c:380) on array 'buf', poly.c:369 [116]  (2.77 ns)
+	'store' operation ('store_ln380', poly.c:380) of variable 'buf_load', poly.c:380 on array 'buf', poly.c:369 [119]  (2.77 ns)
+
+ <State 31>: 0ns
+The critical path consists of the following:
+
+ <State 32>: 3.1ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln384', poly.c:384) [126]  (1.75 ns)
+	'call' operation ('tmp1', poly.c:384) to 'rej_uniform' [128]  (1.35 ns)
+
+ <State 33>: 2.18ns
+The critical path consists of the following:
+	'call' operation ('tmp1', poly.c:384) to 'rej_uniform' [128]  (0 ns)
+	'add' operation ('ctr', poly.c:384) [129]  (2.18 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="symmetric-shake.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/symmetric-shake.c"/>
+    <originFiles name="symmetric-aes.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/symmetric-aes.c"/>
+    <originFiles name="sign.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/sign.c"/>
+    <originFiles name="rounding.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/rounding.c"/>
+    <originFiles name="rng.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/rng.c"/>
+    <originFiles name="reduce.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/reduce.c"/>
+    <originFiles name="polyvec.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/polyvec.c"/>
+    <originFiles name="poly.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/poly.c"/>
+    <originFiles name="packing.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/packing.c"/>
+    <originFiles name="ntt.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/ntt.c"/>
+    <originFiles name="fips202.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/fips202.c"/>
+    <originFiles name="aes256ctr.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/aes256ctr.c"/>
+    <originFiles name="aes.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/aes.c"/>
+  </source>
+  <testbench>
+    <originFiles name="PQCgenKAT_sign.c" path="/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2/PQCgenKAT_sign.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,294 @@
+
+
+================================================================
+== Vivado HLS Report for 'polyvecl_pointwise_a'
+================================================================
+* Date:           Tue Apr  4 22:25:19 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        crypto_sign
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  | 10.00 us | 28.963 ns |   1.25 us  |
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     3595|     3595| 35.950 ms | 35.950 ms |  3595|  3595|   none  |
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |      512|      512|         2|          -|          -|   256|    no    |
+        |- Loop 2     |     3081|     3081|      1027|          -|          -|     3|    no    |
+        | + Loop 2.1  |      512|      512|         2|          -|          -|   256|    no    |
+        | + Loop 2.2  |      512|      512|         2|          -|          -|   256|    no    |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 4 
+3 --> 2 
+4 --> 5 
+5 --> 6 7 
+6 --> 5 
+7 --> 8 4 
+8 --> 7 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%w_coeffs_offset_read = call i3 @_ssdm_op_Read.ap_auto.i3(i3 %w_coeffs_offset)" [poly.c:181->polyvec.c:136]   --->   Operation 9 'read' 'w_coeffs_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %w_coeffs_offset_read, i8 0)" [poly.c:181->polyvec.c:136]   --->   Operation 10 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln181_2 = zext i11 %tmp to i12" [poly.c:181->polyvec.c:136]   --->   Operation 11 'zext' 'zext_ln181_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_s = call i5 @_ssdm_op_BitConcatenate.i5.i3.i2(i3 %w_coeffs_offset_read, i2 0)" [poly.c:181->polyvec.c:136]   --->   Operation 12 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln181_3_cast = zext i5 %tmp_s to i6" [poly.c:181->polyvec.c:136]   --->   Operation 13 'zext' 'zext_ln181_3_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%t_coeffs = alloca [256 x i32], align 4" [polyvec.c:134]   --->   Operation 14 'alloca' 't_coeffs' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 15 [1/1] (1.35ns)   --->   "br label %1" [poly.c:180->polyvec.c:136]   --->   Operation 15 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 2.77>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%i_0_i = phi i9 [ 0, %0 ], [ %i_14, %2 ]"   --->   Operation 16 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (1.34ns)   --->   "%icmp_ln180 = icmp eq i9 %i_0_i, -256" [poly.c:180->polyvec.c:136]   --->   Operation 17 'icmp' 'icmp_ln180' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 18 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (1.73ns)   --->   "%i_14 = add i9 %i_0_i, 1" [poly.c:180->polyvec.c:136]   --->   Operation 19 'add' 'i_14' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "br i1 %icmp_ln180, label %poly_pointwise_montgomery.1.exit.preheader, label %2" [poly.c:180->polyvec.c:136]   --->   Operation 20 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln181 = zext i9 %i_0_i to i64" [poly.c:181->polyvec.c:136]   --->   Operation 21 'zext' 'zext_ln181' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_7 = call i13 @_ssdm_op_BitConcatenate.i13.i3.i1.i9(i3 %w_coeffs_offset_read, i1 false, i9 %i_0_i)" [poly.c:181->polyvec.c:136]   --->   Operation 22 'bitconcatenate' 'tmp_7' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln181_4 = zext i13 %tmp_7 to i64" [poly.c:181->polyvec.c:136]   --->   Operation 23 'zext' 'zext_ln181_4' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%u_vec_coeffs_addr = getelementptr [4096 x i23]* %u_vec_coeffs, i64 0, i64 %zext_ln181_4" [poly.c:181->polyvec.c:136]   --->   Operation 24 'getelementptr' 'u_vec_coeffs_addr' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%v_vec_coeffs_addr = getelementptr [1024 x i32]* %v_vec_coeffs, i64 0, i64 %zext_ln181" [poly.c:181->polyvec.c:136]   --->   Operation 25 'getelementptr' 'v_vec_coeffs_addr' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_2 : Operation 26 [2/2] (2.77ns)   --->   "%u_vec_coeffs_load = load i23* %u_vec_coeffs_addr, align 4" [poly.c:181->polyvec.c:136]   --->   Operation 26 'load' 'u_vec_coeffs_load' <Predicate = (!icmp_ln180)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 27 [2/2] (2.77ns)   --->   "%v_vec_coeffs_load = load i32* %v_vec_coeffs_addr, align 4" [poly.c:181->polyvec.c:136]   --->   Operation 27 'load' 'v_vec_coeffs_load' <Predicate = (!icmp_ln180)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 28 [1/1] (1.35ns)   --->   "br label %poly_pointwise_montgomery.1.exit" [polyvec.c:137]   --->   Operation 28 'br' <Predicate = (icmp_ln180)> <Delay = 1.35>
+
+State 3 <SV = 2> <Delay = 28.9>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln181_3 = zext i9 %i_0_i to i12" [poly.c:181->polyvec.c:136]   --->   Operation 29 'zext' 'zext_ln181_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (1.76ns)   --->   "%add_ln181 = add i12 %zext_ln181_2, %zext_ln181_3" [poly.c:181->polyvec.c:136]   --->   Operation 30 'add' 'add_ln181' <Predicate = true> <Delay = 1.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln181_5 = zext i12 %add_ln181 to i64" [poly.c:181->polyvec.c:136]   --->   Operation 31 'zext' 'zext_ln181_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%w_coeffs_addr = getelementptr [1024 x i32]* %w_coeffs, i64 0, i64 %zext_ln181_5" [poly.c:181->polyvec.c:136]   --->   Operation 32 'getelementptr' 'w_coeffs_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/2] (2.77ns)   --->   "%u_vec_coeffs_load = load i23* %u_vec_coeffs_addr, align 4" [poly.c:181->polyvec.c:136]   --->   Operation 33 'load' 'u_vec_coeffs_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln181_6 = zext i23 %u_vec_coeffs_load to i55" [poly.c:181->polyvec.c:136]   --->   Operation 34 'zext' 'zext_ln181_6' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/2] (2.77ns)   --->   "%v_vec_coeffs_load = load i32* %v_vec_coeffs_addr, align 4" [poly.c:181->polyvec.c:136]   --->   Operation 35 'load' 'v_vec_coeffs_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%sext_ln181 = sext i32 %v_vec_coeffs_load to i55" [poly.c:181->polyvec.c:136]   --->   Operation 36 'sext' 'sext_ln181' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (6.88ns)   --->   "%mul_ln181 = mul i55 %zext_ln181_6, %sext_ln181" [poly.c:181->polyvec.c:136]   --->   Operation 37 'mul' 'mul_ln181' <Predicate = true> <Delay = 6.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%sext_ln181_1 = sext i55 %mul_ln181 to i56" [poly.c:181->polyvec.c:136]   --->   Operation 38 'sext' 'sext_ln181_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%trunc_ln18 = trunc i55 %mul_ln181 to i32" [reduce.c:18->poly.c:181->polyvec.c:136]   --->   Operation 39 'trunc' 'trunc_ln18' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (6.88ns)   --->   "%t = mul nsw i32 58728449, %trunc_ln18" [reduce.c:18->poly.c:181->polyvec.c:136]   --->   Operation 40 'mul' 't' <Predicate = true> <Delay = 6.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%sext_ln19 = sext i32 %t to i55" [reduce.c:19->poly.c:181->polyvec.c:136]   --->   Operation 41 'sext' 'sext_ln19' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (6.88ns)   --->   "%mul_ln19 = mul i55 -8380417, %sext_ln19" [reduce.c:19->poly.c:181->polyvec.c:136]   --->   Operation 42 'mul' 'mul_ln19' <Predicate = true> <Delay = 6.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%sext_ln19_1 = sext i55 %mul_ln19 to i56" [reduce.c:19->poly.c:181->polyvec.c:136]   --->   Operation 43 'sext' 'sext_ln19_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (2.77ns)   --->   "%add_ln19 = add i56 %sext_ln181_1, %sext_ln19_1" [reduce.c:19->poly.c:181->polyvec.c:136]   --->   Operation 44 'add' 'add_ln19' <Predicate = true> <Delay = 2.77> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%tmp_1 = call i24 @_ssdm_op_PartSelect.i24.i56.i32.i32(i56 %add_ln19, i32 32, i32 55)" [reduce.c:19->poly.c:181->polyvec.c:136]   --->   Operation 45 'partselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%t_1 = sext i24 %tmp_1 to i32" [reduce.c:19->poly.c:181->polyvec.c:136]   --->   Operation 46 'sext' 't_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (2.77ns)   --->   "store i32 %t_1, i32* %w_coeffs_addr, align 4" [poly.c:181->polyvec.c:136]   --->   Operation 47 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "br label %1" [poly.c:180->polyvec.c:136]   --->   Operation 48 'br' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 1.54>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%i_0 = phi i3 [ %i, %poly_add.1.exit ], [ 1, %poly_pointwise_montgomery.1.exit.preheader ]"   --->   Operation 49 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (1.00ns)   --->   "%icmp_ln137 = icmp eq i3 %i_0, -4" [polyvec.c:137]   --->   Operation 50 'icmp' 'icmp_ln137' <Predicate = true> <Delay = 1.00> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 51 'speclooptripcount' 'empty_32' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "br i1 %icmp_ln137, label %7, label %3" [polyvec.c:137]   --->   Operation 52 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%zext_ln181_7 = zext i3 %i_0 to i6" [poly.c:181->polyvec.c:138]   --->   Operation 53 'zext' 'zext_ln181_7' <Predicate = (!icmp_ln137)> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (1.54ns)   --->   "%add_ln181_1 = add i6 %zext_ln181_7, %zext_ln181_3_cast" [poly.c:181->polyvec.c:138]   --->   Operation 54 'add' 'add_ln181_1' <Predicate = (!icmp_ln137)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_26_cast = call i14 @_ssdm_op_BitConcatenate.i14.i6.i8(i6 %add_ln181_1, i8 0)" [poly.c:181->polyvec.c:138]   --->   Operation 55 'bitconcatenate' 'tmp_26_cast' <Predicate = (!icmp_ln137)> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_8 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 0)" [poly.c:181->polyvec.c:138]   --->   Operation 56 'bitconcatenate' 'tmp_8' <Predicate = (!icmp_ln137)> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln176 = zext i11 %tmp_8 to i12" [poly.c:176->polyvec.c:138]   --->   Operation 57 'zext' 'zext_ln176' <Predicate = (!icmp_ln137)> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (1.35ns)   --->   "br label %4" [poly.c:180->polyvec.c:138]   --->   Operation 58 'br' <Predicate = (!icmp_ln137)> <Delay = 1.35>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "ret void" [polyvec.c:141]   --->   Operation 59 'ret' <Predicate = (icmp_ln137)> <Delay = 0.00>
+
+State 5 <SV = 3> <Delay = 4.58>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%i_0_i1 = phi i9 [ 0, %3 ], [ %i_15, %5 ]"   --->   Operation 60 'phi' 'i_0_i1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 61 [1/1] (1.34ns)   --->   "%icmp_ln180_1 = icmp eq i9 %i_0_i1, -256" [poly.c:180->polyvec.c:138]   --->   Operation 61 'icmp' 'icmp_ln180_1' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%empty_33 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 62 'speclooptripcount' 'empty_33' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (1.73ns)   --->   "%i_15 = add i9 %i_0_i1, 1" [poly.c:180->polyvec.c:138]   --->   Operation 63 'add' 'i_15' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "br i1 %icmp_ln180_1, label %poly_pointwise_montgomery.exit.preheader, label %5" [poly.c:180->polyvec.c:138]   --->   Operation 64 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%zext_ln181_8 = zext i9 %i_0_i1 to i12" [poly.c:181->polyvec.c:138]   --->   Operation 65 'zext' 'zext_ln181_8' <Predicate = (!icmp_ln180_1)> <Delay = 0.00>
+ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%zext_ln181_9 = zext i9 %i_0_i1 to i14" [poly.c:181->polyvec.c:138]   --->   Operation 66 'zext' 'zext_ln181_9' <Predicate = (!icmp_ln180_1)> <Delay = 0.00>
+ST_5 : Operation 67 [1/1] (1.80ns)   --->   "%add_ln181_2 = add i14 %tmp_26_cast, %zext_ln181_9" [poly.c:181->polyvec.c:138]   --->   Operation 67 'add' 'add_ln181_2' <Predicate = (!icmp_ln180_1)> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%zext_ln181_10 = zext i14 %add_ln181_2 to i64" [poly.c:181->polyvec.c:138]   --->   Operation 68 'zext' 'zext_ln181_10' <Predicate = (!icmp_ln180_1)> <Delay = 0.00>
+ST_5 : Operation 69 [1/1] (0.00ns)   --->   "%u_vec_coeffs_addr_1 = getelementptr [4096 x i23]* %u_vec_coeffs, i64 0, i64 %zext_ln181_10" [poly.c:181->polyvec.c:138]   --->   Operation 69 'getelementptr' 'u_vec_coeffs_addr_1' <Predicate = (!icmp_ln180_1)> <Delay = 0.00>
+ST_5 : Operation 70 [1/1] (1.76ns)   --->   "%add_ln181_3 = add i12 %zext_ln176, %zext_ln181_8" [poly.c:181->polyvec.c:138]   --->   Operation 70 'add' 'add_ln181_3' <Predicate = (!icmp_ln180_1)> <Delay = 1.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 71 [1/1] (0.00ns)   --->   "%zext_ln181_11 = zext i12 %add_ln181_3 to i64" [poly.c:181->polyvec.c:138]   --->   Operation 71 'zext' 'zext_ln181_11' <Predicate = (!icmp_ln180_1)> <Delay = 0.00>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%v_vec_coeffs_addr_1 = getelementptr [1024 x i32]* %v_vec_coeffs, i64 0, i64 %zext_ln181_11" [poly.c:181->polyvec.c:138]   --->   Operation 72 'getelementptr' 'v_vec_coeffs_addr_1' <Predicate = (!icmp_ln180_1)> <Delay = 0.00>
+ST_5 : Operation 73 [2/2] (2.77ns)   --->   "%u_vec_coeffs_load_1 = load i23* %u_vec_coeffs_addr_1, align 4" [poly.c:181->polyvec.c:138]   --->   Operation 73 'load' 'u_vec_coeffs_load_1' <Predicate = (!icmp_ln180_1)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_5 : Operation 74 [2/2] (2.77ns)   --->   "%v_vec_coeffs_load_1 = load i32* %v_vec_coeffs_addr_1, align 4" [poly.c:181->polyvec.c:138]   --->   Operation 74 'load' 'v_vec_coeffs_load_1' <Predicate = (!icmp_ln180_1)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_5 : Operation 75 [1/1] (1.35ns)   --->   "br label %poly_pointwise_montgomery.exit" [poly.c:87->polyvec.c:139]   --->   Operation 75 'br' <Predicate = (icmp_ln180_1)> <Delay = 1.35>
+
+State 6 <SV = 4> <Delay = 28.9>
+ST_6 : Operation 76 [1/1] (0.00ns)   --->   "%zext_ln181_1 = zext i9 %i_0_i1 to i64" [poly.c:181->polyvec.c:138]   --->   Operation 76 'zext' 'zext_ln181_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 77 [1/2] (2.77ns)   --->   "%u_vec_coeffs_load_1 = load i23* %u_vec_coeffs_addr_1, align 4" [poly.c:181->polyvec.c:138]   --->   Operation 77 'load' 'u_vec_coeffs_load_1' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_6 : Operation 78 [1/1] (0.00ns)   --->   "%zext_ln181_12 = zext i23 %u_vec_coeffs_load_1 to i55" [poly.c:181->polyvec.c:138]   --->   Operation 78 'zext' 'zext_ln181_12' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 79 [1/2] (2.77ns)   --->   "%v_vec_coeffs_load_1 = load i32* %v_vec_coeffs_addr_1, align 4" [poly.c:181->polyvec.c:138]   --->   Operation 79 'load' 'v_vec_coeffs_load_1' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_6 : Operation 80 [1/1] (0.00ns)   --->   "%sext_ln181_2 = sext i32 %v_vec_coeffs_load_1 to i55" [poly.c:181->polyvec.c:138]   --->   Operation 80 'sext' 'sext_ln181_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 81 [1/1] (6.88ns)   --->   "%mul_ln181_1 = mul i55 %zext_ln181_12, %sext_ln181_2" [poly.c:181->polyvec.c:138]   --->   Operation 81 'mul' 'mul_ln181_1' <Predicate = true> <Delay = 6.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%sext_ln181_3 = sext i55 %mul_ln181_1 to i56" [poly.c:181->polyvec.c:138]   --->   Operation 82 'sext' 'sext_ln181_3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 83 [1/1] (0.00ns)   --->   "%trunc_ln18_1 = trunc i55 %mul_ln181_1 to i32" [reduce.c:18->poly.c:181->polyvec.c:138]   --->   Operation 83 'trunc' 'trunc_ln18_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 84 [1/1] (6.88ns)   --->   "%t_2 = mul nsw i32 58728449, %trunc_ln18_1" [reduce.c:18->poly.c:181->polyvec.c:138]   --->   Operation 84 'mul' 't_2' <Predicate = true> <Delay = 6.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 85 [1/1] (0.00ns)   --->   "%sext_ln19_2 = sext i32 %t_2 to i55" [reduce.c:19->poly.c:181->polyvec.c:138]   --->   Operation 85 'sext' 'sext_ln19_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 86 [1/1] (6.88ns)   --->   "%mul_ln19_1 = mul i55 -8380417, %sext_ln19_2" [reduce.c:19->poly.c:181->polyvec.c:138]   --->   Operation 86 'mul' 'mul_ln19_1' <Predicate = true> <Delay = 6.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 87 [1/1] (0.00ns)   --->   "%sext_ln19_4 = sext i55 %mul_ln19_1 to i56" [reduce.c:19->poly.c:181->polyvec.c:138]   --->   Operation 87 'sext' 'sext_ln19_4' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 88 [1/1] (2.77ns)   --->   "%add_ln19_1 = add i56 %sext_ln181_3, %sext_ln19_4" [reduce.c:19->poly.c:181->polyvec.c:138]   --->   Operation 88 'add' 'add_ln19_1' <Predicate = true> <Delay = 2.77> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_2 = call i24 @_ssdm_op_PartSelect.i24.i56.i32.i32(i56 %add_ln19_1, i32 32, i32 55)" [reduce.c:19->poly.c:181->polyvec.c:138]   --->   Operation 89 'partselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 90 [1/1] (0.00ns)   --->   "%t_3 = sext i24 %tmp_2 to i32" [reduce.c:19->poly.c:181->polyvec.c:138]   --->   Operation 90 'sext' 't_3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 91 [1/1] (0.00ns)   --->   "%t_coeffs_addr = getelementptr [256 x i32]* %t_coeffs, i64 0, i64 %zext_ln181_1" [poly.c:181->polyvec.c:138]   --->   Operation 91 'getelementptr' 't_coeffs_addr' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 92 [1/1] (2.77ns)   --->   "store i32 %t_3, i32* %t_coeffs_addr, align 4" [poly.c:181->polyvec.c:138]   --->   Operation 92 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_6 : Operation 93 [1/1] (0.00ns)   --->   "br label %4" [poly.c:180->polyvec.c:138]   --->   Operation 93 'br' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 4> <Delay = 4.53>
+ST_7 : Operation 94 [1/1] (0.00ns)   --->   "%i_0_i20 = phi i9 [ %i_16, %6 ], [ 0, %poly_pointwise_montgomery.exit.preheader ]"   --->   Operation 94 'phi' 'i_0_i20' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 95 [1/1] (1.34ns)   --->   "%icmp_ln87 = icmp eq i9 %i_0_i20, -256" [poly.c:87->polyvec.c:139]   --->   Operation 95 'icmp' 'icmp_ln87' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%empty_34 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 96 'speclooptripcount' 'empty_34' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 97 [1/1] (1.73ns)   --->   "%i_16 = add i9 %i_0_i20, 1" [poly.c:87->polyvec.c:139]   --->   Operation 97 'add' 'i_16' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 98 [1/1] (0.00ns)   --->   "br i1 %icmp_ln87, label %poly_add.1.exit, label %6" [poly.c:87->polyvec.c:139]   --->   Operation 98 'br' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 99 [1/1] (0.00ns)   --->   "%zext_ln88 = zext i9 %i_0_i20 to i64" [poly.c:88->polyvec.c:139]   --->   Operation 99 'zext' 'zext_ln88' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_7 : Operation 100 [1/1] (0.00ns)   --->   "%zext_ln88_1 = zext i9 %i_0_i20 to i12" [poly.c:88->polyvec.c:139]   --->   Operation 100 'zext' 'zext_ln88_1' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_7 : Operation 101 [1/1] (1.76ns)   --->   "%add_ln88_1 = add i12 %zext_ln181_2, %zext_ln88_1" [poly.c:88->polyvec.c:139]   --->   Operation 101 'add' 'add_ln88_1' <Predicate = (!icmp_ln87)> <Delay = 1.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 102 [1/1] (0.00ns)   --->   "%zext_ln88_2 = zext i12 %add_ln88_1 to i64" [poly.c:88->polyvec.c:139]   --->   Operation 102 'zext' 'zext_ln88_2' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_7 : Operation 103 [1/1] (0.00ns)   --->   "%w_coeffs_addr_1 = getelementptr [1024 x i32]* %w_coeffs, i64 0, i64 %zext_ln88_2" [poly.c:88->polyvec.c:139]   --->   Operation 103 'getelementptr' 'w_coeffs_addr_1' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_7 : Operation 104 [2/2] (2.77ns)   --->   "%w_coeffs_load = load i32* %w_coeffs_addr_1, align 4" [poly.c:88->polyvec.c:139]   --->   Operation 104 'load' 'w_coeffs_load' <Predicate = (!icmp_ln87)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_7 : Operation 105 [1/1] (0.00ns)   --->   "%t_coeffs_addr_1 = getelementptr [256 x i32]* %t_coeffs, i64 0, i64 %zext_ln88" [poly.c:88->polyvec.c:139]   --->   Operation 105 'getelementptr' 't_coeffs_addr_1' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_7 : Operation 106 [2/2] (2.77ns)   --->   "%t_coeffs_load = load i32* %t_coeffs_addr_1, align 4" [poly.c:88->polyvec.c:139]   --->   Operation 106 'load' 't_coeffs_load' <Predicate = (!icmp_ln87)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_7 : Operation 107 [1/1] (1.34ns)   --->   "%i = add i3 %i_0, 1" [polyvec.c:137]   --->   Operation 107 'add' 'i' <Predicate = (icmp_ln87)> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 108 [1/1] (0.00ns)   --->   "br label %poly_pointwise_montgomery.1.exit" [polyvec.c:137]   --->   Operation 108 'br' <Predicate = (icmp_ln87)> <Delay = 0.00>
+
+State 8 <SV = 5> <Delay = 7.72>
+ST_8 : Operation 109 [1/2] (2.77ns)   --->   "%w_coeffs_load = load i32* %w_coeffs_addr_1, align 4" [poly.c:88->polyvec.c:139]   --->   Operation 109 'load' 'w_coeffs_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_8 : Operation 110 [1/2] (2.77ns)   --->   "%t_coeffs_load = load i32* %t_coeffs_addr_1, align 4" [poly.c:88->polyvec.c:139]   --->   Operation 110 'load' 't_coeffs_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_8 : Operation 111 [1/1] (2.18ns)   --->   "%add_ln88 = add nsw i32 %w_coeffs_load, %t_coeffs_load" [poly.c:88->polyvec.c:139]   --->   Operation 111 'add' 'add_ln88' <Predicate = true> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 112 [1/1] (2.77ns)   --->   "store i32 %add_ln88, i32* %w_coeffs_addr_1, align 4" [poly.c:88->polyvec.c:139]   --->   Operation 112 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_8 : Operation 113 [1/1] (0.00ns)   --->   "br label %poly_pointwise_montgomery.exit" [poly.c:87->polyvec.c:139]   --->   Operation 113 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 1e+04ns, clock uncertainty: 1.25e+03ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', poly.c:180->polyvec.c:136) [13]  (1.35 ns)
+
+ <State 2>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', poly.c:180->polyvec.c:136) [13]  (0 ns)
+	'getelementptr' operation ('u_vec_coeffs_addr', poly.c:181->polyvec.c:136) [26]  (0 ns)
+	'load' operation ('u_vec_coeffs_load', poly.c:181->polyvec.c:136) on array 'u_vec_coeffs' [28]  (2.77 ns)
+
+ <State 3>: 29ns
+The critical path consists of the following:
+	'load' operation ('u_vec_coeffs_load', poly.c:181->polyvec.c:136) on array 'u_vec_coeffs' [28]  (2.77 ns)
+	'mul' operation ('a', poly.c:181->polyvec.c:136) [32]  (6.88 ns)
+	'mul' operation ('t', reduce.c:18->poly.c:181->polyvec.c:136) [35]  (6.88 ns)
+	'mul' operation ('mul_ln19', reduce.c:19->poly.c:181->polyvec.c:136) [37]  (6.88 ns)
+	'add' operation ('add_ln19', reduce.c:19->poly.c:181->polyvec.c:136) [39]  (2.78 ns)
+	'store' operation ('store_ln181', poly.c:181->polyvec.c:136) of variable 't', reduce.c:19->poly.c:181->polyvec.c:136 on array 'w_coeffs' [42]  (2.77 ns)
+
+ <State 4>: 1.55ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', polyvec.c:137) [47]  (0 ns)
+	'add' operation ('add_ln181_1', poly.c:181->polyvec.c:138) [53]  (1.55 ns)
+
+ <State 5>: 4.58ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', poly.c:180->polyvec.c:138) [59]  (0 ns)
+	'add' operation ('add_ln181_2', poly.c:181->polyvec.c:138) [68]  (1.81 ns)
+	'getelementptr' operation ('u_vec_coeffs_addr_1', poly.c:181->polyvec.c:138) [70]  (0 ns)
+	'load' operation ('u_vec_coeffs_load_1', poly.c:181->polyvec.c:138) on array 'u_vec_coeffs' [74]  (2.77 ns)
+
+ <State 6>: 29ns
+The critical path consists of the following:
+	'load' operation ('u_vec_coeffs_load_1', poly.c:181->polyvec.c:138) on array 'u_vec_coeffs' [74]  (2.77 ns)
+	'mul' operation ('a', poly.c:181->polyvec.c:138) [78]  (6.88 ns)
+	'mul' operation ('t', reduce.c:18->poly.c:181->polyvec.c:138) [81]  (6.88 ns)
+	'mul' operation ('mul_ln19_1', reduce.c:19->poly.c:181->polyvec.c:138) [83]  (6.88 ns)
+	'add' operation ('add_ln19_1', reduce.c:19->poly.c:181->polyvec.c:138) [85]  (2.78 ns)
+	'store' operation ('store_ln181', poly.c:181->polyvec.c:138) of variable 't', reduce.c:19->poly.c:181->polyvec.c:138 on array 'b.coeffs', polyvec.c:134 [89]  (2.77 ns)
+
+ <State 7>: 4.54ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', poly.c:87->polyvec.c:139) [94]  (0 ns)
+	'add' operation ('add_ln88_1', poly.c:88->polyvec.c:139) [102]  (1.76 ns)
+	'getelementptr' operation ('w_coeffs_addr_1', poly.c:88->polyvec.c:139) [104]  (0 ns)
+	'load' operation ('w_coeffs_load', poly.c:88->polyvec.c:139) on array 'w_coeffs' [105]  (2.77 ns)
+
+ <State 8>: 7.72ns
+The critical path consists of the following:
+	'load' operation ('w_coeffs_load', poly.c:88->polyvec.c:139) on array 'w_coeffs' [105]  (2.77 ns)
+	'add' operation ('add_ln88', poly.c:88->polyvec.c:139) [108]  (2.18 ns)
+	'store' operation ('store_ln88', poly.c:88->polyvec.c:139) of variable 'add_ln88', poly.c:88->polyvec.c:139 on array 'w_coeffs' [109]  (2.77 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
