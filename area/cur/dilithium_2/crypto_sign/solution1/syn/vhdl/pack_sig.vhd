@@ -80,11 +80,11 @@ architecture behav of pack_sig is
     signal or_ln172_fu_202_p2 : STD_LOGIC_VECTOR (10 downto 0);
     signal or_ln172_reg_368 : STD_LOGIC_VECTOR (10 downto 0);
     signal icmp_ln171_fu_174_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_28_fu_215_p2 : STD_LOGIC_VECTOR (6 downto 0);
+    signal i_36_fu_215_p2 : STD_LOGIC_VECTOR (6 downto 0);
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal i_29_fu_247_p2 : STD_LOGIC_VECTOR (2 downto 0);
-    signal i_29_reg_391 : STD_LOGIC_VECTOR (2 downto 0);
+    signal i_37_fu_247_p2 : STD_LOGIC_VECTOR (2 downto 0);
+    signal i_37_reg_391 : STD_LOGIC_VECTOR (2 downto 0);
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal zext_ln181_fu_261_p1 : STD_LOGIC_VECTOR (11 downto 0);
@@ -227,7 +227,7 @@ begin
             if (((icmp_ln171_fu_174_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                 i_2_reg_125 <= ap_const_lv7_0;
             elsif (((icmp_ln176_fu_209_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-                i_2_reg_125 <= i_28_fu_215_p2;
+                i_2_reg_125 <= i_36_fu_215_p2;
             end if; 
         end if;
     end process;
@@ -238,7 +238,7 @@ begin
             if (((ap_const_logic_1 = ap_CS_fsm_state4) and (icmp_ln176_fu_209_p2 = ap_const_lv1_1))) then 
                 i_3_reg_136 <= ap_const_lv3_0;
             elsif (((icmp_ln181_fu_265_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state6))) then 
-                i_3_reg_136 <= i_29_reg_391;
+                i_3_reg_136 <= i_37_reg_391;
             end if; 
         end if;
     end process;
@@ -268,7 +268,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state5)) then
-                i_29_reg_391 <= i_29_fu_247_p2;
+                i_37_reg_391 <= i_37_fu_247_p2;
             end if;
         end if;
     end process;
@@ -407,8 +407,8 @@ begin
         end if; 
     end process;
 
-    i_28_fu_215_p2 <= std_logic_vector(unsigned(i_2_reg_125) + unsigned(ap_const_lv7_1));
-    i_29_fu_247_p2 <= std_logic_vector(unsigned(i_3_reg_136) + unsigned(ap_const_lv3_1));
+    i_36_fu_215_p2 <= std_logic_vector(unsigned(i_2_reg_125) + unsigned(ap_const_lv7_1));
+    i_37_fu_247_p2 <= std_logic_vector(unsigned(i_3_reg_136) + unsigned(ap_const_lv3_1));
     i_fu_180_p2 <= std_logic_vector(unsigned(i_1_reg_113) + unsigned(ap_const_lv3_1));
     icmp_ln171_fu_174_p2 <= "1" when (i_1_reg_113 = ap_const_lv3_4) else "0";
     icmp_ln176_fu_209_p2 <= "1" when (i_2_reg_125 = ap_const_lv7_54) else "0";

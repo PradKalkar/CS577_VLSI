@@ -64,8 +64,8 @@ architecture behav of polyveck_chknorm is
     signal i_reg_205 : STD_LOGIC_VECTOR (2 downto 0);
     signal zext_ln287_fu_127_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal zext_ln287_reg_210 : STD_LOGIC_VECTOR (11 downto 0);
-    signal i_20_fu_137_p2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal i_20_reg_218 : STD_LOGIC_VECTOR (8 downto 0);
+    signal i_28_fu_137_p2 : STD_LOGIC_VECTOR (8 downto 0);
+    signal i_28_reg_218 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal icmp_ln298_fu_131_p2 : STD_LOGIC_VECTOR (0 downto 0);
@@ -124,7 +124,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((icmp_ln303_fu_191_p2 = ap_const_lv1_1) and (icmp_ln325_reg_201 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
-                i_0_i_reg_80 <= i_20_reg_218;
+                i_0_i_reg_80 <= i_28_reg_218;
             elsif (((icmp_ln325_fu_107_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                 i_0_i_reg_80 <= ap_const_lv9_0;
             end if; 
@@ -164,7 +164,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state3)) then
-                i_20_reg_218 <= i_20_fu_137_p2;
+                i_28_reg_218 <= i_28_fu_137_p2;
             end if;
         end if;
     end process;
@@ -277,7 +277,7 @@ begin
     end process;
 
     bound_cast_fu_103_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(bound),32));
-    i_20_fu_137_p2 <= std_logic_vector(unsigned(i_0_i_reg_80) + unsigned(ap_const_lv9_1));
+    i_28_fu_137_p2 <= std_logic_vector(unsigned(i_0_i_reg_80) + unsigned(ap_const_lv9_1));
     i_fu_113_p2 <= std_logic_vector(unsigned(i_0_reg_69) + unsigned(ap_const_lv3_1));
     icmp_ln298_fu_131_p2 <= "1" when (i_0_i_reg_80 = ap_const_lv9_100) else "0";
     icmp_ln303_fu_191_p2 <= "1" when (signed(t_6_fu_185_p2) < signed(bound_cast_reg_196)) else "0";

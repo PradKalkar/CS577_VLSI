@@ -1,0 +1,117 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../PQCgenKAT_sign.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:08:35 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/126701679924315806192
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.47 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.46 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../symmetric-shake.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:08:38 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/127361679924318230279
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.38 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.39 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../symmetric-aes.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:08:40 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/128021679924320574839
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.37 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.38 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../sign.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:08:42 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/128651679924322906787
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.47 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.46 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../rounding.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:08:45 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/129301679924325314449
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.42 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.4 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../rng.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:08:47 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/129941679924327663842
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.54 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.53 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../reduce.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:08:50 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/130601679924330169611
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.39 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.4 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../polyvec.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:08:52 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/131231679924332516147
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.52 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.5 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../poly.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:08:54 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/131881679924334964339
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.85 seconds. Total CPU system time: 0.1 seconds. Total elapsed time: 1.88 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../packing.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:08:57 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/132531679924337787405
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.5 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.5 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../ntt.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:09:00 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/133171679924340246111
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.38 seconds. Total CPU system time: 0.1 seconds. Total elapsed time: 1.4 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../fips202.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:09:02 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/133801679924342606672
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 2.26 seconds. Total CPU system time: 0.11 seconds. Total elapsed time: 2.27 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../aes256ctr.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:09:05 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/134451679924345837972
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.75 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.75 seconds; peak allocated memory: 98.965 MB.
+   Compiling(apcc) ../../../../aes.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Mar 27 19:09:08 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi/dilithium_5/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/135121679924348543371
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.67 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.66 seconds; peak allocated memory: 98.965 MB.
+   Generating csim.exe
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

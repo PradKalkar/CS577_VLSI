@@ -124,7 +124,7 @@ architecture behav of ntt is
     signal tmp_28_fu_162_p4 : STD_LOGIC_VECTOR (22 downto 0);
     signal tmp_29_fu_192_p4 : STD_LOGIC_VECTOR (27 downto 0);
     signal add_ln57_fu_206_p2 : STD_LOGIC_VECTOR (30 downto 0);
-    signal empty_56_fu_215_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_64_fu_215_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal trunc_ln55_fu_221_p1 : STD_LOGIC_VECTOR (29 downto 0);
     signal trunc_ln55_2_fu_225_p1 : STD_LOGIC_VECTOR (29 downto 0);
     signal start_fu_229_p3 : STD_LOGIC_VECTOR (29 downto 0);
@@ -462,7 +462,7 @@ begin
         end if; 
     end process;
 
-    empty_56_fu_215_p2 <= "1" when (unsigned(j_reg_110) > unsigned(add_ln57_fu_206_p2)) else "0";
+    empty_64_fu_215_p2 <= "1" when (unsigned(j_reg_110) > unsigned(add_ln57_fu_206_p2)) else "0";
     icmp_ln54_fu_152_p2 <= "1" when (len_0_reg_98 = ap_const_lv29_0) else "0";
     icmp_ln55_fu_172_p2 <= "1" when (tmp_28_fu_162_p4 = ap_const_lv23_0) else "0";
     icmp_ln57_fu_245_p2 <= "1" when (unsigned(j_0_reg_122) < unsigned(zext_ln57_reg_417)) else "0";
@@ -481,7 +481,7 @@ begin
 
     sext_ln58_fu_302_p0 <= a_q0;
     start_fu_229_p3 <= 
-        trunc_ln55_fu_221_p1 when (empty_56_fu_215_p2(0) = '1') else 
+        trunc_ln55_fu_221_p1 when (empty_64_fu_215_p2(0) = '1') else 
         trunc_ln55_2_fu_225_p1;
     sub_ln59_fu_359_p2 <= std_logic_vector(unsigned(a_q1) - unsigned(t_8_fu_355_p1));
         t_8_fu_355_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln_fu_345_p4),32));

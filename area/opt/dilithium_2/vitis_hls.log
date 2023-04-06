@@ -1,0 +1,141 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Mar 28 22:22:46 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2'
+Sourcing Tcl script '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: source /home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/csynth.tcl
+INFO: [HLS 200-1510] Running: open_project crypto_sign 
+INFO: [HLS 200-10] Opening project '/home/guest/Documents/experiments/dilithium_2/crypto_sign'.
+INFO: [HLS 200-1510] Running: set_top crypto_sign 
+INFO: [HLS 200-1510] Running: add_files aes.c 
+INFO: [HLS 200-10] Adding design file 'aes.c' to the project
+INFO: [HLS 200-1510] Running: add_files aes256ctr.c 
+INFO: [HLS 200-10] Adding design file 'aes256ctr.c' to the project
+INFO: [HLS 200-1510] Running: add_files fips202.c 
+INFO: [HLS 200-10] Adding design file 'fips202.c' to the project
+INFO: [HLS 200-1510] Running: add_files ntt.c 
+INFO: [HLS 200-10] Adding design file 'ntt.c' to the project
+INFO: [HLS 200-1510] Running: add_files packing.c 
+INFO: [HLS 200-10] Adding design file 'packing.c' to the project
+INFO: [HLS 200-1510] Running: add_files poly.c 
+INFO: [HLS 200-10] Adding design file 'poly.c' to the project
+INFO: [HLS 200-1510] Running: add_files polyvec.c 
+INFO: [HLS 200-10] Adding design file 'polyvec.c' to the project
+INFO: [HLS 200-1510] Running: add_files reduce.c 
+INFO: [HLS 200-10] Adding design file 'reduce.c' to the project
+INFO: [HLS 200-1510] Running: add_files rng.c 
+INFO: [HLS 200-10] Adding design file 'rng.c' to the project
+INFO: [HLS 200-1510] Running: add_files rounding.c 
+INFO: [HLS 200-10] Adding design file 'rounding.c' to the project
+INFO: [HLS 200-1510] Running: add_files sign.c 
+INFO: [HLS 200-10] Adding design file 'sign.c' to the project
+INFO: [HLS 200-1510] Running: add_files symmetric-aes.c 
+INFO: [HLS 200-10] Adding design file 'symmetric-aes.c' to the project
+INFO: [HLS 200-1510] Running: add_files symmetric-shake.c 
+INFO: [HLS 200-10] Adding design file 'symmetric-shake.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb PQCgenKAT_sign.c -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'PQCgenKAT_sign.c' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10000ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-fbg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a200t-fbg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10000 -name default 
+INFO: [HLS 200-1510] Running: source ./crypto_sign/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name crypto_sign crypto_sign 
+INFO: [HLS 200-1510] Running: csynth_design 
+Running Dispatch Server on port: 37033
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.06 seconds; current allocated memory: 756.777 MB.
+INFO: [HLS 200-10] Analyzing design file 'symmetric-shake.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'symmetric-aes.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'sign.c' ... 
+WARNING: [HLS 207-5292] unused parameter 'smlen' (sign.c:198:25)
+WARNING: [HLS 207-5292] unused parameter 'sk' (sign.c:201:31)
+INFO: [HLS 200-10] Analyzing design file 'rounding.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'rng.c' ... 
+WARNING: [HLS 207-5292] unused parameter 'security_strength' (rng.c:202:22)
+INFO: [HLS 200-10] Analyzing design file 'reduce.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'polyvec.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'poly.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'packing.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'ntt.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'fips202.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'aes256ctr.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'aes.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.83 seconds. CPU system time: 2.92 seconds. Elapsed time: 6.54 seconds; current allocated memory: 758.395 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.51 seconds. CPU system time: 0.28 seconds. Elapsed time: 2.79 seconds; current allocated memory: 758.777 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 758.777 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 759.375 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 759.613 MB.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_205_1' (sign.c:203) in function 'crypto_sign': cannot completely unroll a loop with a variable trip count.
+Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-936.html
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 780.941 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 780.941 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'crypto_sign' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'crypto_sign' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.05 seconds; current allocated memory: 780.941 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 780.941 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'crypto_sign' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'crypto_sign/sm' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'crypto_sign/smlen' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'crypto_sign/m' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'crypto_sign/mlen' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'crypto_sign/sk' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'crypto_sign' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/smlen' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/sk_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'crypto_sign/sk_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/sk_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'crypto_sign/sk_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/sk_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'crypto_sign/sk_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/sk_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'crypto_sign/sk_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/sk_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/sk_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'crypto_sign/sk_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/sk_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'crypto_sign/sk_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/sk_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'crypto_sign/sk_we1' to 0.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/sk_d1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'crypto_sign/sk_d1' to 0.
+WARNING: [RTGEN 206-101] Port 'crypto_sign/sk_q1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'crypto_sign'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 780.941 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 780.941 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 782.281 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for crypto_sign.
+INFO: [VLOG 209-307] Generating Verilog RTL for crypto_sign.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 180.38 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5.9 seconds. CPU system time: 3.26 seconds. Elapsed time: 9.99 seconds; current allocated memory: 25.684 MB.
+INFO: [HLS 200-112] Total CPU user time: 7.67 seconds. Total CPU system time: 3.53 seconds. Total elapsed time: 22.03 seconds; peak allocated memory: 782.461 MB.

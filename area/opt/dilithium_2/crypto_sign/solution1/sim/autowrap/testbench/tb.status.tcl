@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/./sim/autowrap/testbench/sign.c_pre.c.tb.c
