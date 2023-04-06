@@ -62,7 +62,7 @@ polyveck_invntt_tomo::polyveck_invntt_tomo(sc_module_name name) : sc_module(name
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm_state1 );
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln300_fu_38_p2 );
+    sensitive << ( icmp_ln308_fu_38_p2 );
 
     SC_METHOD(thread_ap_idle);
     sensitive << ( ap_start );
@@ -70,7 +70,7 @@ polyveck_invntt_tomo::polyveck_invntt_tomo(sc_module_name name) : sc_module(name
 
     SC_METHOD(thread_ap_ready);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln300_fu_38_p2 );
+    sensitive << ( icmp_ln308_fu_38_p2 );
 
     SC_METHOD(thread_grp_invntt_tomont_fu_28_ap_start);
     sensitive << ( grp_invntt_tomont_fu_28_ap_start_reg );
@@ -78,7 +78,7 @@ polyveck_invntt_tomo::polyveck_invntt_tomo(sc_module_name name) : sc_module(name
     SC_METHOD(thread_i_fu_44_p2);
     sensitive << ( i_0_reg_16 );
 
-    SC_METHOD(thread_icmp_ln300_fu_38_p2);
+    SC_METHOD(thread_icmp_ln308_fu_38_p2);
     sensitive << ( ap_CS_fsm_state2 );
     sensitive << ( i_0_reg_16 );
 
@@ -113,7 +113,7 @@ polyveck_invntt_tomo::polyveck_invntt_tomo(sc_module_name name) : sc_module(name
     sensitive << ( ap_CS_fsm_state2 );
     sensitive << ( grp_invntt_tomont_fu_28_ap_done );
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( icmp_ln300_fu_38_p2 );
+    sensitive << ( icmp_ln308_fu_38_p2 );
 
     ap_CS_fsm = "001";
     grp_invntt_tomont_fu_28_ap_start_reg = SC_LOGIC_0;
@@ -159,7 +159,7 @@ polyveck_invntt_tomo::polyveck_invntt_tomo(sc_module_name name) : sc_module(name
     sc_trace(mVcdFile, i_0_reg_16, "i_0_reg_16");
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
     sc_trace(mVcdFile, grp_invntt_tomont_fu_28_ap_start_reg, "grp_invntt_tomont_fu_28_ap_start_reg");
-    sc_trace(mVcdFile, icmp_ln300_fu_38_p2, "icmp_ln300_fu_38_p2");
+    sc_trace(mVcdFile, icmp_ln308_fu_38_p2, "icmp_ln308_fu_38_p2");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
 #endif
 
@@ -183,7 +183,7 @@ void polyveck_invntt_tomo::thread_ap_clk_no_reset_() {
         grp_invntt_tomont_fu_28_ap_start_reg = ap_const_logic_0;
     } else {
         if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
-             esl_seteq<1,1,1>(icmp_ln300_fu_38_p2.read(), ap_const_lv1_0))) {
+             esl_seteq<1,1,1>(icmp_ln308_fu_38_p2.read(), ap_const_lv1_0))) {
             grp_invntt_tomont_fu_28_ap_start_reg = ap_const_logic_1;
         } else if (esl_seteq<1,1,1>(ap_const_logic_1, grp_invntt_tomont_fu_28_ap_ready.read())) {
             grp_invntt_tomont_fu_28_ap_start_reg = ap_const_logic_0;
@@ -217,7 +217,7 @@ void polyveck_invntt_tomo::thread_ap_done() {
     if (((esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) && 
           esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) || 
          (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
-          esl_seteq<1,1,1>(icmp_ln300_fu_38_p2.read(), ap_const_lv1_1)))) {
+          esl_seteq<1,1,1>(icmp_ln308_fu_38_p2.read(), ap_const_lv1_1)))) {
         ap_done = ap_const_logic_1;
     } else {
         ap_done = ap_const_logic_0;
@@ -235,7 +235,7 @@ void polyveck_invntt_tomo::thread_ap_idle() {
 
 void polyveck_invntt_tomo::thread_ap_ready() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
-         esl_seteq<1,1,1>(icmp_ln300_fu_38_p2.read(), ap_const_lv1_1))) {
+         esl_seteq<1,1,1>(icmp_ln308_fu_38_p2.read(), ap_const_lv1_1))) {
         ap_ready = ap_const_logic_1;
     } else {
         ap_ready = ap_const_logic_0;
@@ -250,8 +250,8 @@ void polyveck_invntt_tomo::thread_i_fu_44_p2() {
     i_fu_44_p2 = (!i_0_reg_16.read().is_01() || !ap_const_lv3_1.is_01())? sc_lv<3>(): (sc_biguint<3>(i_0_reg_16.read()) + sc_biguint<3>(ap_const_lv3_1));
 }
 
-void polyveck_invntt_tomo::thread_icmp_ln300_fu_38_p2() {
-    icmp_ln300_fu_38_p2 = (!i_0_reg_16.read().is_01() || !ap_const_lv3_4.is_01())? sc_lv<1>(): sc_lv<1>(i_0_reg_16.read() == ap_const_lv3_4);
+void polyveck_invntt_tomo::thread_icmp_ln308_fu_38_p2() {
+    icmp_ln308_fu_38_p2 = (!i_0_reg_16.read().is_01() || !ap_const_lv3_4.is_01())? sc_lv<1>(): sc_lv<1>(i_0_reg_16.read() == ap_const_lv3_4);
 }
 
 void polyveck_invntt_tomo::thread_v_vec_coeffs_address0() {
@@ -288,7 +288,7 @@ void polyveck_invntt_tomo::thread_ap_NS_fsm() {
             }
             break;
         case 2 : 
-            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(icmp_ln300_fu_38_p2.read(), ap_const_lv1_1))) {
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(icmp_ln308_fu_38_p2.read(), ap_const_lv1_1))) {
                 ap_NS_fsm = ap_ST_fsm_state1;
             } else {
                 ap_NS_fsm = ap_ST_fsm_state3;

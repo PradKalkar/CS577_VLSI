@@ -39,7 +39,7 @@ void polyz_pack::thread_ap_clk_no_reset_() {
         tmp_reg_21851 = tmp_fu_8540_p3.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        zext_ln811_reg_22120 = zext_ln811_fu_8577_p1.read();
+        zext_ln818_reg_22120 = zext_ln818_fu_8577_p1.read();
     }
 }
 

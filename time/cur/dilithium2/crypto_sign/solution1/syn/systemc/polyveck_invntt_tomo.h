@@ -60,7 +60,7 @@ struct polyveck_invntt_tomo : public sc_module {
     sc_signal< sc_lv<3> > i_0_reg_16;
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_logic > grp_invntt_tomont_fu_28_ap_start_reg;
-    sc_signal< sc_lv<1> > icmp_ln300_fu_38_p2;
+    sc_signal< sc_lv<1> > icmp_ln308_fu_38_p2;
     sc_signal< sc_lv<3> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
@@ -86,7 +86,7 @@ struct polyveck_invntt_tomo : public sc_module {
     void thread_ap_ready();
     void thread_grp_invntt_tomont_fu_28_ap_start();
     void thread_i_fu_44_p2();
-    void thread_icmp_ln300_fu_38_p2();
+    void thread_icmp_ln308_fu_38_p2();
     void thread_v_vec_coeffs_address0();
     void thread_v_vec_coeffs_address1();
     void thread_v_vec_coeffs_ce0();

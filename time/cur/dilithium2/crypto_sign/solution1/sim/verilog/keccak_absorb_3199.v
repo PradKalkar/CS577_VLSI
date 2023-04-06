@@ -82,7 +82,7 @@ wire   [5:0] add_ln31_1_fu_137_p2;
 wire   [7:0] zext_ln31_fu_142_p1;
 wire   [7:0] add_ln31_fu_146_p2;
 wire   [2:0] trunc_ln31_fu_160_p1;
-wire   [5:0] shl_ln15_fu_164_p3;
+wire   [5:0] shl_ln13_fu_164_p3;
 wire   [63:0] zext_ln31_3_fu_156_p1;
 wire   [63:0] zext_ln31_4_fu_172_p1;
 wire   [63:0] shl_ln31_fu_176_p2;
@@ -271,7 +271,7 @@ assign r_fu_182_p2 = (shl_ln31_fu_176_p2 | r_0_i2_reg_85);
 
 assign s_d0 = (s_q0 ^ r_0_i2_reg_85);
 
-assign shl_ln15_fu_164_p3 = {{trunc_ln31_fu_160_p1}, {3'd0}};
+assign shl_ln13_fu_164_p3 = {{trunc_ln31_fu_160_p1}, {3'd0}};
 
 assign shl_ln31_fu_176_p2 = zext_ln31_3_fu_156_p1 << zext_ln31_4_fu_172_p1;
 
@@ -283,7 +283,7 @@ assign zext_ln30_fu_121_p1 = i_0_i1_reg_73;
 
 assign zext_ln31_3_fu_156_p1 = m_q0;
 
-assign zext_ln31_4_fu_172_p1 = shl_ln15_fu_164_p3;
+assign zext_ln31_4_fu_172_p1 = shl_ln13_fu_164_p3;
 
 assign zext_ln31_7_fu_151_p1 = add_ln31_fu_146_p2;
 

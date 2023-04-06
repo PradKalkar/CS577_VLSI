@@ -121,7 +121,7 @@ keccak_absorb_3199::keccak_absorb_3199(sc_module_name name) : sc_module(name), m
     SC_METHOD(thread_s_we0);
     sensitive << ( ap_CS_fsm_state5 );
 
-    SC_METHOD(thread_shl_ln15_fu_164_p3);
+    SC_METHOD(thread_shl_ln13_fu_164_p3);
     sensitive << ( trunc_ln31_fu_160_p1 );
 
     SC_METHOD(thread_shl_ln31_fu_176_p2);
@@ -141,7 +141,7 @@ keccak_absorb_3199::keccak_absorb_3199(sc_module_name name) : sc_module(name), m
     sensitive << ( m_q0 );
 
     SC_METHOD(thread_zext_ln31_4_fu_172_p1);
-    sensitive << ( shl_ln15_fu_164_p3 );
+    sensitive << ( shl_ln13_fu_164_p3 );
 
     SC_METHOD(thread_zext_ln31_7_fu_151_p1);
     sensitive << ( add_ln31_fu_146_p2 );
@@ -214,7 +214,7 @@ keccak_absorb_3199::keccak_absorb_3199(sc_module_name name) : sc_module(name), m
     sc_trace(mVcdFile, zext_ln31_fu_142_p1, "zext_ln31_fu_142_p1");
     sc_trace(mVcdFile, add_ln31_fu_146_p2, "add_ln31_fu_146_p2");
     sc_trace(mVcdFile, trunc_ln31_fu_160_p1, "trunc_ln31_fu_160_p1");
-    sc_trace(mVcdFile, shl_ln15_fu_164_p3, "shl_ln15_fu_164_p3");
+    sc_trace(mVcdFile, shl_ln13_fu_164_p3, "shl_ln13_fu_164_p3");
     sc_trace(mVcdFile, zext_ln31_3_fu_156_p1, "zext_ln31_3_fu_156_p1");
     sc_trace(mVcdFile, zext_ln31_4_fu_172_p1, "zext_ln31_4_fu_172_p1");
     sc_trace(mVcdFile, shl_ln31_fu_176_p2, "shl_ln31_fu_176_p2");
@@ -389,8 +389,8 @@ void keccak_absorb_3199::thread_s_we0() {
     }
 }
 
-void keccak_absorb_3199::thread_shl_ln15_fu_164_p3() {
-    shl_ln15_fu_164_p3 = esl_concat<3,3>(trunc_ln31_fu_160_p1.read(), ap_const_lv3_0);
+void keccak_absorb_3199::thread_shl_ln13_fu_164_p3() {
+    shl_ln13_fu_164_p3 = esl_concat<3,3>(trunc_ln31_fu_160_p1.read(), ap_const_lv3_0);
 }
 
 void keccak_absorb_3199::thread_shl_ln31_fu_176_p2() {
@@ -414,7 +414,7 @@ void keccak_absorb_3199::thread_zext_ln31_3_fu_156_p1() {
 }
 
 void keccak_absorb_3199::thread_zext_ln31_4_fu_172_p1() {
-    zext_ln31_4_fu_172_p1 = esl_zext<64,6>(shl_ln15_fu_164_p3.read());
+    zext_ln31_4_fu_172_p1 = esl_zext<64,6>(shl_ln13_fu_164_p3.read());
 }
 
 void keccak_absorb_3199::thread_zext_ln31_7_fu_151_p1() {

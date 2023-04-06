@@ -80,7 +80,7 @@ wire   [7:0] shl_ln_fu_149_p3;
 reg   [7:0] shl_ln_reg_233;
 wire    ap_CS_fsm_state5;
 reg   [63:0] s_load_reg_238;
-wire   [3:0] i_31_fu_163_p2;
+wire   [3:0] i_26_fu_163_p2;
 wire    ap_CS_fsm_state6;
 wire    grp_KeccakF1600_StatePer_1_fu_118_ap_start;
 wire    grp_KeccakF1600_StatePer_1_fu_118_ap_done;
@@ -106,7 +106,7 @@ wire    ap_CS_fsm_state2;
 wire   [63:0] zext_ln477_fu_138_p1;
 wire   [63:0] zext_ln48_8_fu_210_p1;
 wire   [2:0] trunc_ln48_fu_169_p1;
-wire   [5:0] shl_ln14_fu_173_p3;
+wire   [5:0] shl_ln12_fu_173_p3;
 wire   [63:0] zext_ln48_fu_181_p1;
 wire   [63:0] lshr_ln48_fu_185_p2;
 wire   [7:0] zext_ln48_7_fu_195_p1;
@@ -161,7 +161,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((icmp_ln47_fu_157_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state6))) begin
-        i_0_i_reg_107 <= i_31_fu_163_p2;
+        i_0_i_reg_107 <= i_26_fu_163_p2;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
         i_0_i_reg_107 <= 4'd0;
     end
@@ -356,7 +356,7 @@ assign ap_phi_mux_p_01_phi_fu_75_p4 = p_01_reg_70;
 
 assign grp_KeccakF1600_StatePer_1_fu_118_ap_start = grp_KeccakF1600_StatePer_1_fu_118_ap_start_reg;
 
-assign i_31_fu_163_p2 = (i_0_i_reg_107 + 4'd1);
+assign i_26_fu_163_p2 = (i_0_i_reg_107 + 4'd1);
 
 assign i_fu_132_p2 = (i_0_reg_95 + 5'd1);
 
@@ -376,7 +376,7 @@ assign s_d0 = grp_KeccakF1600_StatePer_1_fu_118_state_d0;
 
 assign s_d1 = grp_KeccakF1600_StatePer_1_fu_118_state_d1;
 
-assign shl_ln14_fu_173_p3 = {{trunc_ln48_fu_169_p1}, {3'd0}};
+assign shl_ln12_fu_173_p3 = {{trunc_ln48_fu_169_p1}, {3'd0}};
 
 assign shl_ln_fu_149_p3 = {{i_0_reg_95}, {3'd0}};
 
@@ -388,7 +388,7 @@ assign zext_ln48_7_fu_195_p1 = i_0_i_reg_107;
 
 assign zext_ln48_8_fu_210_p1 = add_ln48_fu_204_p2;
 
-assign zext_ln48_fu_181_p1 = shl_ln14_fu_173_p3;
+assign zext_ln48_fu_181_p1 = shl_ln12_fu_173_p3;
 
 always @ (posedge ap_clk) begin
     shl_ln_reg_233[2:0] <= 3'b000;

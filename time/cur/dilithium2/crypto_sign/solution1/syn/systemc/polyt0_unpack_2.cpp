@@ -964,7 +964,7 @@ void polyt0_unpack::thread_ap_clk_no_reset_() {
         reg_6913 = a_q1.read().range(7, 1);
     }
     if ((esl_seteq<1,1,1>(ap_ce.read(), ap_const_logic_1) && esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage1.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage1_11001.read(), ap_const_boolean_0))) {
-        tmp_263_reg_26412 = tmp_263_fu_6933_p3.read();
+        tmp_s_reg_26412 = tmp_s_fu_6933_p3.read();
     }
 }
 

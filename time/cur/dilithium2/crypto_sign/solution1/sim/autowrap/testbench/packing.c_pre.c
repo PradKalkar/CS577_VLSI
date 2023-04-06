@@ -1,19 +1,19 @@
-# 1 "/home/guest/Documents/experiments/dilithium_2/packing.c"
-# 1 "/home/guest/Documents/experiments/dilithium_2/packing.c" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c"
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/packing.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/params.h" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/params.h" 1
 
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/config.h" 1
-# 5 "/home/guest/Documents/experiments/dilithium_2/params.h" 2
-# 2 "/home/guest/Documents/experiments/dilithium_2/packing.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/packing.h" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/config.h" 1
+# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/params.h" 2
+# 2 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.h" 1
 
 
 
@@ -236,15 +236,15 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 5 "/home/guest/Documents/experiments/dilithium_2/packing.h" 2
+# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.h" 2
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/polyvec.h" 1
-
-
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.h" 1
 
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/poly.h" 1
+
+
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/poly.h" 1
 
 
 
@@ -324,7 +324,7 @@ void polyz_unpack(poly *r, const uint8_t *a);
 
 
 void polyw1_pack(uint8_t *r, const poly *a);
-# 7 "/home/guest/Documents/experiments/dilithium_2/polyvec.h" 2
+# 7 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.h" 2
 
 
 typedef struct {
@@ -415,7 +415,7 @@ void polyvec_matrix_expand(polyvecl mat[4], const uint8_t rho[32]);
 
 
 void polyvec_matrix_pointwise_montgomery(polyveck *t, const polyvecl mat[4], const polyvecl *v);
-# 7 "/home/guest/Documents/experiments/dilithium_2/packing.h" 2
+# 7 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.h" 2
 
 
 void pack_pk(uint8_t pk[(32 + 4*320)],
@@ -450,8 +450,8 @@ void unpack_sk(uint8_t rho[32],
 
 int unpack_sig(uint8_t c[32], polyvecl *z, polyveck *h,
                const uint8_t sig[(32 + 4*576 + (80 + 4))]);
-# 3 "/home/guest/Documents/experiments/dilithium_2/packing.c" 2
-# 15 "/home/guest/Documents/experiments/dilithium_2/packing.c"
+# 3 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c" 2
+# 15 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c"
 void pack_pk(uint8_t pk[(32 + 4*320)],
              const uint8_t rho[32],
              const polyveck *t1)
@@ -465,7 +465,7 @@ void pack_pk(uint8_t pk[(32 + 4*320)],
   for(i = 0; i < 4; ++i)
     polyt1_pack(pk + i*320, &t1->vec[i]);
 }
-# 38 "/home/guest/Documents/experiments/dilithium_2/packing.c"
+# 38 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c"
 void unpack_pk(uint8_t rho[32],
                polyveck *t1,
                const uint8_t pk[(32 + 4*320)])
@@ -483,7 +483,7 @@ void unpack_pk(uint8_t rho[32],
  polyt1_unpack(&t1->vec[i], pk + i*320);
   }
 }
-# 69 "/home/guest/Documents/experiments/dilithium_2/packing.c"
+# 69 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c"
 void pack_sk(uint8_t sk[(2*32 + 48 + 4*96 + 4*96 + 4*416)],
              const uint8_t rho[32],
              const uint8_t tr[48],
@@ -517,7 +517,7 @@ void pack_sk(uint8_t sk[(2*32 + 48 + 4*96 + 4*96 + 4*416)],
   for(i = 0; i < 4; ++i)
     polyt0_pack(sk + i*416, &t0->vec[i]);
 }
-# 116 "/home/guest/Documents/experiments/dilithium_2/packing.c"
+# 116 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c"
 void unpack_sk(uint8_t rho[32],
                uint8_t tr[48],
                uint8_t key[32],
@@ -567,7 +567,7 @@ void unpack_sk(uint8_t rho[32],
  polyt0_unpack(&t0->vec[i], sk + i*416);
   }
 }
-# 176 "/home/guest/Documents/experiments/dilithium_2/packing.c"
+# 176 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c"
 void pack_sig(uint8_t sig[(32 + 4*576 + (80 + 4))],
               const uint8_t c[32],
               const polyvecl *z,
@@ -607,7 +607,7 @@ void pack_sig(uint8_t sig[(32 + 4*576 + (80 + 4))],
     sig[80 + i] = k;
   }
 }
-# 229 "/home/guest/Documents/experiments/dilithium_2/packing.c"
+# 229 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.c"
 int unpack_sig(uint8_t c[32],
                polyvecl *z,
                polyveck *h,

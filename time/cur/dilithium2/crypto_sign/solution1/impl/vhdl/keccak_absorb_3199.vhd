@@ -87,7 +87,7 @@ architecture behav of keccak_absorb_3199 is
     signal zext_ln31_fu_142_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal add_ln31_fu_146_p2 : STD_LOGIC_VECTOR (7 downto 0);
     signal trunc_ln31_fu_160_p1 : STD_LOGIC_VECTOR (2 downto 0);
-    signal shl_ln15_fu_164_p3 : STD_LOGIC_VECTOR (5 downto 0);
+    signal shl_ln13_fu_164_p3 : STD_LOGIC_VECTOR (5 downto 0);
     signal zext_ln31_3_fu_156_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln31_4_fu_172_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal shl_ln31_fu_176_p2 : STD_LOGIC_VECTOR (63 downto 0);
@@ -295,13 +295,13 @@ begin
         end if; 
     end process;
 
-    shl_ln15_fu_164_p3 <= (trunc_ln31_fu_160_p1 & ap_const_lv3_0);
+    shl_ln13_fu_164_p3 <= (trunc_ln31_fu_160_p1 & ap_const_lv3_0);
     shl_ln31_fu_176_p2 <= std_logic_vector(shift_left(unsigned(zext_ln31_3_fu_156_p1),to_integer(unsigned('0' & zext_ln31_4_fu_172_p1(31-1 downto 0)))));
     shl_ln_fu_113_p3 <= (i_3_reg_62 & ap_const_lv3_0);
     trunc_ln31_fu_160_p1 <= i_0_i1_reg_73(3 - 1 downto 0);
     zext_ln30_fu_121_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i1_reg_73),6));
     zext_ln31_3_fu_156_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(m_q0),64));
-    zext_ln31_4_fu_172_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(shl_ln15_fu_164_p3),64));
+    zext_ln31_4_fu_172_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(shl_ln13_fu_164_p3),64));
     zext_ln31_7_fu_151_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln31_fu_146_p2),64));
     zext_ln31_fu_142_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln31_1_fu_137_p2),8));
     zext_ln416_fu_97_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_3_reg_62),64));

@@ -78,7 +78,7 @@ architecture behav of keccak_squeezeblocks is
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal s_load_reg_238 : STD_LOGIC_VECTOR (63 downto 0);
-    signal i_31_fu_163_p2 : STD_LOGIC_VECTOR (3 downto 0);
+    signal i_26_fu_163_p2 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
     signal grp_KeccakF1600_StatePer_1_fu_118_ap_start : STD_LOGIC;
@@ -107,7 +107,7 @@ architecture behav of keccak_squeezeblocks is
     signal zext_ln477_fu_138_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln48_8_fu_210_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal trunc_ln48_fu_169_p1 : STD_LOGIC_VECTOR (2 downto 0);
-    signal shl_ln14_fu_173_p3 : STD_LOGIC_VECTOR (5 downto 0);
+    signal shl_ln12_fu_173_p3 : STD_LOGIC_VECTOR (5 downto 0);
     signal zext_ln48_fu_181_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal lshr_ln48_fu_185_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln48_7_fu_195_p1 : STD_LOGIC_VECTOR (7 downto 0);
@@ -193,7 +193,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((icmp_ln47_fu_157_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state6))) then 
-                i_0_i_reg_107 <= i_31_fu_163_p2;
+                i_0_i_reg_107 <= i_26_fu_163_p2;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
                 i_0_i_reg_107 <= ap_const_lv4_0;
             end if; 
@@ -331,7 +331,7 @@ begin
     end process;
 
     grp_KeccakF1600_StatePer_1_fu_118_ap_start <= grp_KeccakF1600_StatePer_1_fu_118_ap_start_reg;
-    i_31_fu_163_p2 <= std_logic_vector(unsigned(i_0_i_reg_107) + unsigned(ap_const_lv4_1));
+    i_26_fu_163_p2 <= std_logic_vector(unsigned(i_0_i_reg_107) + unsigned(ap_const_lv4_1));
     i_fu_132_p2 <= std_logic_vector(unsigned(i_0_reg_95) + unsigned(ap_const_lv5_1));
     icmp_ln476_fu_126_p2 <= "1" when (i_0_reg_95 = ap_const_lv5_11) else "0";
     icmp_ln47_fu_157_p2 <= "1" when (i_0_i_reg_107 = ap_const_lv4_8) else "0";
@@ -415,11 +415,11 @@ begin
         end if; 
     end process;
 
-    shl_ln14_fu_173_p3 <= (trunc_ln48_fu_169_p1 & ap_const_lv3_0);
+    shl_ln12_fu_173_p3 <= (trunc_ln48_fu_169_p1 & ap_const_lv3_0);
     shl_ln_fu_149_p3 <= (i_0_reg_95 & ap_const_lv3_0);
     trunc_ln48_fu_169_p1 <= i_0_i_reg_107(3 - 1 downto 0);
     zext_ln477_fu_138_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_reg_95),64));
     zext_ln48_7_fu_195_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i_reg_107),8));
     zext_ln48_8_fu_210_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln48_fu_204_p2),64));
-    zext_ln48_fu_181_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(shl_ln14_fu_173_p3),64));
+    zext_ln48_fu_181_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(shl_ln12_fu_173_p3),64));
 end behav;

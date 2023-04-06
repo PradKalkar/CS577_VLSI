@@ -1,11 +1,11 @@
-# 1 "/home/guest/Documents/experiments/dilithium_2/sign.c"
-# 1 "/home/guest/Documents/experiments/dilithium_2/sign.c" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c"
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/sign.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c" 2
 # 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
 # 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -225,15 +225,15 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 2 "/home/guest/Documents/experiments/dilithium_2/sign.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/params.h" 1
+# 2 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/params.h" 1
 
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/config.h" 1
-# 5 "/home/guest/Documents/experiments/dilithium_2/params.h" 2
-# 3 "/home/guest/Documents/experiments/dilithium_2/sign.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/sign.h" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/config.h" 1
+# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/params.h" 2
+# 3 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.h" 1
 
 
 
@@ -249,16 +249,16 @@ typedef __typeof__(sizeof(int)) size_t;
 
 
 typedef int wchar_t;
-# 5 "/home/guest/Documents/experiments/dilithium_2/sign.h" 2
+# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.h" 2
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/polyvec.h" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.h" 1
 
 
 
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/poly.h" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/poly.h" 1
 
 
 
@@ -338,7 +338,7 @@ void polyz_unpack(poly *r, const uint8_t *a);
 
 
 void polyw1_pack(uint8_t *r, const poly *a);
-# 7 "/home/guest/Documents/experiments/dilithium_2/polyvec.h" 2
+# 7 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.h" 2
 
 
 typedef struct {
@@ -429,7 +429,7 @@ void polyvec_matrix_expand(polyvecl mat[4], const uint8_t rho[32]);
 
 
 void polyvec_matrix_pointwise_montgomery(polyveck *t, const polyvecl mat[4], const polyvecl *v);
-# 8 "/home/guest/Documents/experiments/dilithium_2/sign.h" 2
+# 8 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.h" 2
 
 
 
@@ -457,8 +457,8 @@ int crypto_sign_verify(const uint8_t *sig, size_t siglen,
 int crypto_sign_open(uint8_t *m, size_t *mlen,
                      const uint8_t *sm, size_t smlen,
                      const uint8_t *pk);
-# 4 "/home/guest/Documents/experiments/dilithium_2/sign.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/packing.h" 1
+# 4 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/packing.h" 1
 
 
 
@@ -499,28 +499,28 @@ void unpack_sk(uint8_t rho[32],
 
 int unpack_sig(uint8_t c[32], polyvecl *z, polyveck *h,
                const uint8_t sig[(32 + 4*576 + (80 + 4))]);
-# 5 "/home/guest/Documents/experiments/dilithium_2/sign.c" 2
+# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c" 2
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/randombytes.h" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/randombytes.h" 1
 
 
 
 # 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
-# 5 "/home/guest/Documents/experiments/dilithium_2/randombytes.h" 2
+# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/randombytes.h" 2
 
 
 void randombytes(uint8_t *out, size_t outlen);
-# 8 "/home/guest/Documents/experiments/dilithium_2/sign.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/symmetric.h" 1
-# 35 "/home/guest/Documents/experiments/dilithium_2/symmetric.h"
-# 1 "/home/guest/Documents/experiments/dilithium_2/fips202.h" 1
+# 8 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric.h" 1
+# 35 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric.h"
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/fips202.h" 1
 
 
 
 # 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
-# 5 "/home/guest/Documents/experiments/dilithium_2/fips202.h" 2
-# 15 "/home/guest/Documents/experiments/dilithium_2/fips202.h"
+# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/fips202.h" 2
+# 15 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/fips202.h"
 typedef struct {
   uint64_t s[25];
   unsigned int pos;
@@ -556,7 +556,7 @@ void shake256(uint8_t out[3*32], size_t outlen, const uint8_t in[32], size_t inl
 void sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen);
 
 void sha3_512(uint8_t h[64], const uint8_t *in, size_t inlen);
-# 36 "/home/guest/Documents/experiments/dilithium_2/symmetric.h" 2
+# 36 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric.h" 2
 
 typedef keccak_state stream128_state;
 typedef keccak_state stream256_state;
@@ -570,8 +570,8 @@ void dilithium_shake128_stream_init(keccak_state *state,
 void dilithium_shake256_stream_init(keccak_state *state,
                                     const uint8_t seed[48],
                                     uint16_t nonce);
-# 9 "/home/guest/Documents/experiments/dilithium_2/sign.c" 2
-# 23 "/home/guest/Documents/experiments/dilithium_2/sign.c"
+# 9 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c" 2
+# 23 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c"
 int crypto_sign_keypair(uint8_t *pk, uint8_t *sk) {
   uint8_t seedbuf[3*32];
   uint8_t tr[48];
@@ -615,7 +615,7 @@ int crypto_sign_keypair(uint8_t *pk, uint8_t *sk) {
 
   return 0;
 }
-# 80 "/home/guest/Documents/experiments/dilithium_2/sign.c"
+# 80 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c"
 int crypto_sign_signature(uint8_t *sig,
                           size_t *siglen,
                           const uint8_t *m,
@@ -716,7 +716,7 @@ rej:
   *siglen = (32 + 4*576 + (80 + 4));
   return 0;
 }
-# 197 "/home/guest/Documents/experiments/dilithium_2/sign.c"
+# 197 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c"
 int crypto_sign(uint8_t sm[3300+(32 + 4*576 + (80 + 4))],
                 size_t *smlen,
                 const uint8_t m[3300],
@@ -735,7 +735,7 @@ int crypto_sign(uint8_t sm[3300+(32 + 4*576 + (80 + 4))],
    *smlen += mlen;
    return 0;
 }
-# 229 "/home/guest/Documents/experiments/dilithium_2/sign.c"
+# 229 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c"
 int crypto_sign_verify(const uint8_t *sig,
                        size_t siglen,
                        const uint8_t *m,
@@ -804,7 +804,7 @@ int crypto_sign_verify(const uint8_t *sig,
 
   return 0;
 }
-# 312 "/home/guest/Documents/experiments/dilithium_2/sign.c"
+# 312 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/sign.c"
 int crypto_sign_open(uint8_t *m,
                      size_t *mlen,
                      const uint8_t *sm,

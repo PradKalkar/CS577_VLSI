@@ -60,7 +60,7 @@ struct keccak_squeezeblocks_1 : public sc_module {
     sc_signal< sc_lv<8> > shl_ln_reg_256;
     sc_signal< sc_logic > ap_CS_fsm_state5;
     sc_signal< sc_lv<64> > s_load_reg_261;
-    sc_signal< sc_lv<4> > i_30_fu_174_p2;
+    sc_signal< sc_lv<4> > i_25_fu_174_p2;
     sc_signal< sc_logic > ap_CS_fsm_state6;
     sc_signal< sc_logic > grp_KeccakF1600_StatePer_1_fu_117_ap_start;
     sc_signal< sc_logic > grp_KeccakF1600_StatePer_1_fu_117_ap_done;
@@ -86,7 +86,7 @@ struct keccak_squeezeblocks_1 : public sc_module {
     sc_signal< sc_lv<64> > zext_ln477_fu_143_p1;
     sc_signal< sc_lv<64> > zext_ln48_6_fu_225_p1;
     sc_signal< sc_lv<3> > trunc_ln48_fu_180_p1;
-    sc_signal< sc_lv<6> > shl_ln13_fu_184_p3;
+    sc_signal< sc_lv<6> > shl_ln11_fu_184_p3;
     sc_signal< sc_lv<64> > zext_ln48_fu_192_p1;
     sc_signal< sc_lv<64> > lshr_ln48_fu_196_p2;
     sc_signal< sc_lv<8> > zext_ln48_4_fu_206_p1;
@@ -138,7 +138,7 @@ struct keccak_squeezeblocks_1 : public sc_module {
     void thread_ap_idle();
     void thread_ap_ready();
     void thread_grp_KeccakF1600_StatePer_1_fu_117_ap_start();
-    void thread_i_30_fu_174_p2();
+    void thread_i_25_fu_174_p2();
     void thread_i_fu_137_p2();
     void thread_icmp_ln474_fu_125_p2();
     void thread_icmp_ln476_fu_131_p2();
@@ -156,7 +156,7 @@ struct keccak_squeezeblocks_1 : public sc_module {
     void thread_s_d1();
     void thread_s_we0();
     void thread_s_we1();
-    void thread_shl_ln13_fu_184_p3();
+    void thread_shl_ln11_fu_184_p3();
     void thread_shl_ln_fu_160_p3();
     void thread_trunc_ln48_fu_180_p1();
     void thread_zext_ln477_fu_143_p1();

@@ -97,8 +97,10 @@ void polyvecl_add(polyvecl *w, const polyvecl *u, const polyvecl *v) {
 void polyvecl_ntt(polyvecl *v) {
   unsigned int i;
 
-  for(i = 0; i < L; ++i)
-    poly_ntt(&v->vec[i]);
+  for(i = 0; i < L; ++i){
+	  #pragma HLS pipeline
+	  poly_ntt(&v->vec[i]);
+  }
 }
 
 void polyvecl_invntt_tomont(polyvecl *v) {
@@ -111,8 +113,10 @@ void polyvecl_invntt_tomont(polyvecl *v) {
 void polyvecl_pointwise_poly_montgomery(polyvecl *r, const poly *a, const polyvecl *v) {
   unsigned int i;
 
-  for(i = 0; i < L; ++i)
+  for(i = 0; i < L; ++i){
+	#pragma HLS pipeline
     poly_pointwise_montgomery(&r->vec[i], a, &v->vec[i]);
+  }
 }
 
 /*************************************************
@@ -184,8 +188,10 @@ void polyveck_uniform_eta(polyveck *v, const uint8_t seed[SEEDBYTES], uint16_t n
 void polyveck_reduce(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
+    #pragma HLS pipeline
     poly_reduce(&v->vec[i]);
+  }
 }
 
 /*************************************************
@@ -200,7 +206,7 @@ void polyveck_caddq(polyveck *v) {
   unsigned int i;
 
   for(i = 0; i < K; ++i){
-    // #pragma HLS pipeline
+    #pragma HLS pipeline
     poly_caddq(&v->vec[i]);
   }
 }
@@ -281,8 +287,10 @@ void polyveck_shiftl(polyveck *v) {
 void polyveck_ntt(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
-    poly_ntt(&v->vec[i]);
+  for(i = 0; i < K; ++i){
+	  #pragma HLS pipeline
+	  poly_ntt(&v->vec[i]);
+  }
 }
 
 /*************************************************
@@ -326,9 +334,12 @@ void polyveck_pointwise_poly_montgomery(polyveck *r, const poly *a, const polyve
 int polyveck_chknorm(const polyveck *v, int32_t bound) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
-    if(poly_chknorm(&v->vec[i], bound))
+  for(i = 0; i < K; ++i){
+	#pragma HLS pipeline
+	if(poly_chknorm(&v->vec[i], bound)){
       return 1;
+    }
+  }
 
   return 0;
 }
@@ -419,6 +430,8 @@ void polyveck_use_hint(polyveck *w, const polyveck *u, const polyveck *h) {
 void polyveck_pack_w1(uint8_t r[K*POLYW1_PACKEDBYTES], const polyveck *w1) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
+	#pragma HLS pipeline
     polyw1_pack(&r[i*POLYW1_PACKEDBYTES], &w1->vec[i]);
+  }
 }

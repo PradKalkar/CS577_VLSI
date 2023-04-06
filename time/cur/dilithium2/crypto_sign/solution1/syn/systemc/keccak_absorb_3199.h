@@ -68,7 +68,7 @@ struct keccak_absorb_3199 : public sc_module {
     sc_signal< sc_lv<8> > zext_ln31_fu_142_p1;
     sc_signal< sc_lv<8> > add_ln31_fu_146_p2;
     sc_signal< sc_lv<3> > trunc_ln31_fu_160_p1;
-    sc_signal< sc_lv<6> > shl_ln15_fu_164_p3;
+    sc_signal< sc_lv<6> > shl_ln13_fu_164_p3;
     sc_signal< sc_lv<64> > zext_ln31_3_fu_156_p1;
     sc_signal< sc_lv<64> > zext_ln31_4_fu_172_p1;
     sc_signal< sc_lv<64> > shl_ln31_fu_176_p2;
@@ -118,7 +118,7 @@ struct keccak_absorb_3199 : public sc_module {
     void thread_s_ce0();
     void thread_s_d0();
     void thread_s_we0();
-    void thread_shl_ln15_fu_164_p3();
+    void thread_shl_ln13_fu_164_p3();
     void thread_shl_ln31_fu_176_p2();
     void thread_shl_ln_fu_113_p3();
     void thread_trunc_ln31_fu_160_p1();

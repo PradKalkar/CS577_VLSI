@@ -2,136 +2,136 @@
    Compiling apatb_crypto_sign.cpp
    Compiling (apcc) symmetric-aes.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:51:46 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:44:24 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2759501680542506223901
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3263131680632064070060
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) polyvec.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:51:50 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:44:28 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2760361680542510324004
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3263681680632068133760
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) fips202.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:51:54 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:44:32 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2760981680542514501368
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3264251680632072254443
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) PQCgenKAT_sign.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:51:59 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:44:37 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-In file included from /home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c:1:
-/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c:142:17: warning: incompatible pointer types passing 'unsigned long long *' to parameter of type 'unsigned long *' [-Wincompatible-pointer-types]
+In file included from /home/guest/Documents/vlsi_2/time/cur/dilithium2/PQCgenKAT_sign.c:1:
+/home/guest/Documents/vlsi_2/time/cur/dilithium2/PQCgenKAT_sign.c:142:17: warning: incompatible pointer types passing 'unsigned long long *' to parameter of type 'unsigned long *' [-Wincompatible-pointer-types]
 crypto_sign(sm, &smlen, m, mlen, sk))
                 ^~~~~~
 ./apatb_crypto_sign.h:8:20: note: passing argument to parameter 'smlen' here
 long unsigned int* smlen,
                    ^
 1 warning generated.
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2761611680542519453432
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3264931680632077160615
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) symmetric-shake.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:03 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:44:41 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2762191680542523612177
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3265511680632081326652
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) reduce.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:07 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:44:45 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2762811680542527720829
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3266061680632085355991
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) ntt.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:11 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:44:49 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2763421680542531775926
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3266621680632089374741
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) rng.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:15 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:44:53 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2764031680542535818025
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3267181680632093413548
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) sign.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:19 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:44:57 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2764651680542539964891
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3267731680632097577661
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) packing.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:24 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:45:01 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2765251680542544056472
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3268291680632101657895
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) poly.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:28 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:45:05 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2765861680542548232219
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3268891680632105793506
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) aes.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:32 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:45:10 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2766521680542552790918
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3269441680632110315283
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) aes256ctr.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:37 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:45:14 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2767161680542557097224
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3270001680632114641718
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) rounding.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Mon Apr 03 22:52:41 IST 2023
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Tue Apr 04 23:45:19 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Documents/experiments/dilithium_2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] In directory '/home/guest/Documents/vlsi_2/time/cur/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/2767791680542561488088
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/3270551680632119039725
 INFO: [APCC 202-1] APCC is done.
    Generating cosim.tv.exe

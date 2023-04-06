@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_KeccakF1600_StatePer_1_fu_1358/grp_KeccakF1600_StatePer_1_fu_1358_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_KeccakF1600_StatePer_1_fu_1408/grp_KeccakF1600_StatePer_1_fu_1408_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -23,7 +23,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_KeccakF1600_StatePer_fu_1365/grp_KeccakF1600_StatePer_fu_1365_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_KeccakF1600_StatePer_fu_1415/grp_KeccakF1600_StatePer_fu_1415_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -43,7 +43,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_invntt_tomont_fu_1379/grp_invntt_tomont_fu_1379_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_invntt_tomont_fu_1474/grp_invntt_tomont_fu_1474_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -53,7 +53,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_keccak_absorb_2_fu_1342/grp_KeccakF1600_StatePer_1_fu_473/grp_KeccakF1600_StatePer_1_fu_473_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_keccak_absorb_2_fu_1392/grp_KeccakF1600_StatePer_1_fu_473/grp_KeccakF1600_StatePer_1_fu_473_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -63,7 +63,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_keccak_absorb_2_fu_1342/grp_keccak_absorb_2_fu_1342_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_keccak_absorb_2_fu_1392/grp_keccak_absorb_2_fu_1392_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -73,7 +73,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_keccak_absorb_2_fu_1342/grp_load64_2_fu_481/grp_load64_2_fu_481_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_keccak_absorb_2_fu_1392/grp_load64_2_fu_481/grp_load64_2_fu_481_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -83,7 +83,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_keccak_absorb_3199_fu_1416/grp_keccak_absorb_3199_fu_1416_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_keccak_absorb_3199_fu_1499/grp_keccak_absorb_3199_fu_1499_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -93,7 +93,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_ntt_1_fu_1388/grp_ntt_1_fu_1388_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_ntt_1_fu_1483/grp_ntt_1_fu_1483_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -103,7 +103,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_ntt_fu_1395/grp_ntt_fu_1395_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_ntt_fu_1313/grp_ntt_fu_1313_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -113,7 +113,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_pack_sig_fu_1288/grp_pack_sig_fu_1288_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_pack_sig_fu_1325/grp_pack_sig_fu_1325_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -123,7 +123,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_pack_sig_fu_1288/grp_polyz_pack_fu_8084/grp_polyz_pack_fu_8084_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_pack_sig_fu_1325/grp_polyz_pack_fu_8084/grp_polyz_pack_fu_8084_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -133,7 +133,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1296/grp_keccak_absorb_2_fu_273/grp_KeccakF1600_StatePer_1_fu_473/grp_KeccakF1600_StatePer_1_fu_473_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_caddq_fu_1437/grp_poly_caddq_fu_1437_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -143,7 +143,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1296/grp_keccak_absorb_2_fu_273/grp_keccak_absorb_2_fu_273_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1333/grp_keccak_absorb_2_fu_273/grp_KeccakF1600_StatePer_1_fu_473/grp_KeccakF1600_StatePer_1_fu_473_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -153,7 +153,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1296/grp_keccak_absorb_2_fu_273/grp_load64_2_fu_481/grp_load64_2_fu_481_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1333/grp_keccak_absorb_2_fu_273/grp_keccak_absorb_2_fu_273_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -163,7 +163,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1296/grp_keccak_squeezeblocks_fu_288/grp_KeccakF1600_StatePer_1_fu_118/grp_KeccakF1600_StatePer_1_fu_118_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1333/grp_keccak_absorb_2_fu_273/grp_load64_2_fu_481/grp_load64_2_fu_481_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -173,7 +173,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1296/grp_keccak_squeezeblocks_fu_288/grp_keccak_squeezeblocks_fu_288_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1333/grp_keccak_squeezeblocks_fu_288/grp_KeccakF1600_StatePer_1_fu_118/grp_KeccakF1600_StatePer_1_fu_118_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -183,7 +183,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1296/grp_poly_challenge_fu_1296_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1333/grp_keccak_squeezeblocks_fu_288/grp_keccak_squeezeblocks_fu_288_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -193,7 +193,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1305/grp_keccak_absorb_fu_275/grp_KeccakF1600_StatePer_1_fu_432/grp_KeccakF1600_StatePer_1_fu_432_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_challenge_fu_1333/grp_poly_challenge_fu_1333_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -203,7 +203,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1305/grp_keccak_absorb_fu_275/grp_keccak_absorb_fu_275_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_chknorm_fu_1379/grp_poly_chknorm_fu_1379_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -213,7 +213,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1305/grp_keccak_absorb_fu_275/grp_load64_3_fu_440/grp_load64_3_fu_440_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_pointwise_montg_fu_1422/grp_poly_pointwise_montg_fu_1422_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -223,7 +223,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1305/grp_keccak_squeezeblocks_2_fu_288/grp_KeccakF1600_StatePer_1_fu_143/grp_KeccakF1600_StatePer_1_fu_143_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_reduce_fu_1445/grp_poly_reduce_fu_1445_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -233,7 +233,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1305/grp_keccak_squeezeblocks_2_fu_288/grp_keccak_squeezeblocks_2_fu_288_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1342/grp_keccak_absorb_fu_275/grp_KeccakF1600_StatePer_1_fu_432/grp_KeccakF1600_StatePer_1_fu_432_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -243,7 +243,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1305/grp_poly_uniform_fu_1305_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1342/grp_keccak_absorb_fu_275/grp_keccak_absorb_fu_275_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -253,7 +253,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1305/grp_rej_uniform_fu_301/grp_rej_uniform_fu_301_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1342/grp_keccak_absorb_fu_275/grp_load64_3_fu_440/grp_load64_3_fu_440_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -263,7 +263,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyveck_caddq_fu_1447/grp_polyveck_caddq_fu_1447_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1342/grp_keccak_squeezeblocks_2_fu_288/grp_KeccakF1600_StatePer_1_fu_143/grp_KeccakF1600_StatePer_1_fu_143_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -273,7 +273,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyveck_chknorm_fu_1439/grp_polyveck_chknorm_fu_1439_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1342/grp_keccak_squeezeblocks_2_fu_288/grp_keccak_squeezeblocks_2_fu_288_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -283,7 +283,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyveck_invntt_tomo_fu_1372/grp_invntt_tomont_fu_28/grp_invntt_tomont_fu_28_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1342/grp_poly_uniform_fu_1342_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -293,7 +293,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyveck_invntt_tomo_fu_1372/grp_polyveck_invntt_tomo_fu_1372_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_poly_uniform_fu_1342/grp_rej_uniform_fu_301/grp_rej_uniform_fu_301_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -303,7 +303,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyveck_pack_w1_fu_1425/grp_polyveck_pack_w1_fu_1425_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_polyveck_invntt_tomo_fu_1467/grp_invntt_tomont_fu_28/grp_invntt_tomont_fu_28_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -313,7 +313,17 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyveck_pointwise_p_fu_1432/grp_polyveck_pointwise_p_fu_1432_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_polyveck_invntt_tomo_fu_1467/grp_polyveck_invntt_tomo_fu_1467_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_crypto_sign_signatur_fu_112/grp_polyveck_reduce_fu_1452/grp_poly_reduce_fu_42/grp_poly_reduce_fu_42_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -333,7 +343,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_pointwise_a_fu_1407/grp_polyvecl_pointwise_a_fu_1407_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_pointwise_a_fu_1490/grp_polyvecl_pointwise_a_fu_1490_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -343,7 +353,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1318/grp_keccak_absorb_fu_395/grp_KeccakF1600_StatePer_1_fu_432/grp_KeccakF1600_StatePer_1_fu_432_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1355/grp_keccak_absorb_fu_395/grp_KeccakF1600_StatePer_1_fu_432/grp_KeccakF1600_StatePer_1_fu_432_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -353,7 +363,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1318/grp_keccak_absorb_fu_395/grp_keccak_absorb_fu_395_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1355/grp_keccak_absorb_fu_395/grp_keccak_absorb_fu_395_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -363,7 +373,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1318/grp_keccak_absorb_fu_395/grp_load64_3_fu_440/grp_load64_3_fu_440_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1355/grp_keccak_absorb_fu_395/grp_load64_3_fu_440/grp_load64_3_fu_440_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -373,7 +383,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1318/grp_keccak_squeezeblocks_1_fu_408/grp_KeccakF1600_StatePer_1_fu_117/grp_KeccakF1600_StatePer_1_fu_117_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1355/grp_keccak_squeezeblocks_1_fu_408/grp_KeccakF1600_StatePer_1_fu_117/grp_KeccakF1600_StatePer_1_fu_117_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -383,7 +393,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1318/grp_keccak_squeezeblocks_1_fu_408/grp_keccak_squeezeblocks_1_fu_408_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1355/grp_keccak_squeezeblocks_1_fu_408/grp_keccak_squeezeblocks_1_fu_408_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -393,7 +403,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1318/grp_polyvecl_uniform_gam_fu_1318_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_polyvecl_uniform_gam_fu_1355/grp_polyvecl_uniform_gam_fu_1355_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -403,7 +413,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_unpack_sk_fu_1328/grp_polyeta_unpack_fu_241/grp_polyeta_unpack_fu_241_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_polyw1_pack_fu_1457/grp_polyw1_pack_fu_1457_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -413,7 +423,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_unpack_sk_fu_1328/grp_polyt0_unpack_fu_230/grp_polyt0_unpack_fu_230_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_unpack_sk_fu_1365/grp_polyeta_unpack_fu_241/grp_polyeta_unpack_fu_241_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -423,7 +433,17 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_crypto_sign_signatur_fu_112/grp_unpack_sk_fu_1328/grp_unpack_sk_fu_1328_activity": {
+				"grp_crypto_sign_signatur_fu_112/grp_unpack_sk_fu_1365/grp_polyt0_unpack_fu_230/grp_polyt0_unpack_fu_230_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_crypto_sign_signatur_fu_112/grp_unpack_sk_fu_1365/grp_unpack_sk_fu_1365_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

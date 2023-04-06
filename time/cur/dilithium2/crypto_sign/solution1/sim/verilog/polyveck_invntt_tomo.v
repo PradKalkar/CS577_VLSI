@@ -65,7 +65,7 @@ wire    grp_invntt_tomont_fu_28_a_ce1;
 reg   [2:0] i_0_reg_16;
 wire    ap_CS_fsm_state3;
 reg    grp_invntt_tomont_fu_28_ap_start_reg;
-wire   [0:0] icmp_ln298_fu_38_p2;
+wire   [0:0] icmp_ln308_fu_38_p2;
 reg   [2:0] ap_NS_fsm;
 
 // power-on initialization
@@ -104,7 +104,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         grp_invntt_tomont_fu_28_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln298_fu_38_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+        if (((icmp_ln308_fu_38_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
             grp_invntt_tomont_fu_28_ap_start_reg <= 1'b1;
         end else if ((grp_invntt_tomont_fu_28_ap_ready == 1'b1)) begin
             grp_invntt_tomont_fu_28_ap_start_reg <= 1'b0;
@@ -127,7 +127,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (*) begin
-    if ((((icmp_ln298_fu_38_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if ((((icmp_ln308_fu_38_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -143,7 +143,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln298_fu_38_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((icmp_ln308_fu_38_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -160,7 +160,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((icmp_ln298_fu_38_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((icmp_ln308_fu_38_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -189,7 +189,7 @@ assign grp_invntt_tomont_fu_28_ap_start = grp_invntt_tomont_fu_28_ap_start_reg;
 
 assign i_fu_44_p2 = (i_0_reg_16 + 3'd1);
 
-assign icmp_ln298_fu_38_p2 = ((i_0_reg_16 == 3'd4) ? 1'b1 : 1'b0);
+assign icmp_ln308_fu_38_p2 = ((i_0_reg_16 == 3'd4) ? 1'b1 : 1'b0);
 
 assign v_vec_coeffs_address0 = grp_invntt_tomont_fu_28_a_address0;
 

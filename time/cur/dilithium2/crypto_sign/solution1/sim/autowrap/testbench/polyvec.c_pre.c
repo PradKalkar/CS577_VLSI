@@ -1,11 +1,11 @@
-# 1 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
-# 1 "/home/guest/Documents/experiments/dilithium_2/polyvec.c" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/polyvec.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c" 2
 # 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
 # 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -225,21 +225,21 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 2 "/home/guest/Documents/experiments/dilithium_2/polyvec.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/params.h" 1
+# 2 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/params.h" 1
 
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/config.h" 1
-# 5 "/home/guest/Documents/experiments/dilithium_2/params.h" 2
-# 3 "/home/guest/Documents/experiments/dilithium_2/polyvec.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/polyvec.h" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/config.h" 1
+# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/params.h" 2
+# 3 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.h" 1
 
 
 
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/poly.h" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/poly.h" 1
 
 
 
@@ -319,7 +319,7 @@ void polyz_unpack(poly *r, const uint8_t *a);
 
 
 void polyw1_pack(uint8_t *r, const poly *a);
-# 7 "/home/guest/Documents/experiments/dilithium_2/polyvec.h" 2
+# 7 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.h" 2
 
 
 typedef struct {
@@ -410,8 +410,8 @@ void polyvec_matrix_expand(polyvecl mat[4], const uint8_t rho[32]);
 
 
 void polyvec_matrix_pointwise_montgomery(polyveck *t, const polyvecl mat[4], const polyvecl *v);
-# 4 "/home/guest/Documents/experiments/dilithium_2/polyvec.c" 2
-# 17 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 4 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c" 2
+# 17 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyvec_matrix_expand(polyvecl mat[4], const uint8_t rho[32]) {
   unsigned int i, j;
 
@@ -451,26 +451,28 @@ void polyvecl_reduce(polyvecl *v) {
   for(i = 0; i < 4; ++i)
     poly_reduce(&v->vec[i]);
 }
-# 65 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 65 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyvecl_freeze(polyvecl *v) {
   unsigned int i;
 
   for(i = 0; i < 4; ++i)
     poly_freeze(&v->vec[i]);
 }
-# 82 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 82 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyvecl_add(polyvecl *w, const polyvecl *u, const polyvecl *v) {
   unsigned int i;
 
   for(i = 0; i < 4; ++i)
     poly_add(&w->vec[i], &u->vec[i], &v->vec[i]);
 }
-# 97 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 97 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyvecl_ntt(polyvecl *v) {
   unsigned int i;
 
-  for(i = 0; i < 4; ++i)
-    poly_ntt(&v->vec[i]);
+  for(i = 0; i < 4; ++i){
+#pragma HLS pipeline
+ poly_ntt(&v->vec[i]);
+  }
 }
 
 void polyvecl_invntt_tomont(polyvecl *v) {
@@ -483,10 +485,12 @@ void polyvecl_invntt_tomont(polyvecl *v) {
 void polyvecl_pointwise_poly_montgomery(polyvecl *r, const poly *a, const polyvecl *v) {
   unsigned int i;
 
-  for(i = 0; i < 4; ++i)
-    poly_pointwise_montgomery(&r->vec[i], a, &v->vec[i]);
+  for(i = 0; i < 4; ++i){
+#pragma HLS pipeline
+ poly_pointwise_montgomery(&r->vec[i], a, &v->vec[i]);
+  }
 }
-# 129 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 133 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyvecl_pointwise_acc_montgomery(poly *w,
                                        const polyvecl *u,
                                        const polyvecl *v)
@@ -500,7 +504,7 @@ void polyvecl_pointwise_acc_montgomery(poly *w,
     poly_add(w, w, &t);
   }
 }
-# 155 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 159 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 int polyvecl_chknorm(const polyvecl *v, int32_t bound) {
   unsigned int i;
 
@@ -521,56 +525,62 @@ void polyveck_uniform_eta(polyveck *v, const uint8_t seed[32], uint16_t nonce) {
   for(i = 0; i < 4; ++i)
     poly_uniform_eta(&v->vec[i], seed, nonce++);
 }
-# 184 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 188 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_reduce(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < 4; ++i)
-    poly_reduce(&v->vec[i]);
+  for(i = 0; i < 4; ++i){
+#pragma HLS pipeline
+ poly_reduce(&v->vec[i]);
+  }
 }
-# 199 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 205 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_caddq(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < 4; ++i)
-    poly_caddq(&v->vec[i]);
+  for(i = 0; i < 4; ++i){
+#pragma HLS pipeline
+ poly_caddq(&v->vec[i]);
+  }
 }
-# 214 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 222 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_freeze(polyveck *v) {
   unsigned int i;
 
   for(i = 0; i < 4; ++i)
     poly_freeze(&v->vec[i]);
 }
-# 231 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 239 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_add(polyveck *w, const polyveck *u, const polyveck *v) {
   unsigned int i;
 
   for(i = 0; i < 4; ++i)
     poly_add(&w->vec[i], &u->vec[i], &v->vec[i]);
 }
-# 249 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 257 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_sub(polyveck *w, const polyveck *u, const polyveck *v) {
   unsigned int i;
 
   for(i = 0; i < 4; ++i)
     poly_sub(&w->vec[i], &u->vec[i], &v->vec[i]);
 }
-# 264 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 272 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_shiftl(polyveck *v) {
   unsigned int i;
 
   for(i = 0; i < 4; ++i)
     poly_shiftl(&v->vec[i]);
 }
-# 279 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 287 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_ntt(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < 4; ++i)
-    poly_ntt(&v->vec[i]);
+  for(i = 0; i < 4; ++i){
+#pragma HLS pipeline
+ poly_ntt(&v->vec[i]);
+  }
 }
-# 295 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 305 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_invntt_tomont(polyveck *v) {
   unsigned int i;
 
@@ -581,34 +591,39 @@ void polyveck_invntt_tomont(polyveck *v) {
 void polyveck_pointwise_poly_montgomery(polyveck *r, const poly *a, const polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < 4; ++i)
-    poly_pointwise_montgomery(&r->vec[i], a, &v->vec[i]);
+  for(i = 0; i < 4; ++i){
+#pragma HLS pipeline
+ poly_pointwise_montgomery(&r->vec[i], a, &v->vec[i]);
+  }
 }
-# 322 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 334 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 int polyveck_chknorm(const polyveck *v, int32_t bound) {
   unsigned int i;
 
-  for(i = 0; i < 4; ++i)
-    if(poly_chknorm(&v->vec[i], bound))
+  for(i = 0; i < 4; ++i){
+#pragma HLS pipeline
+ if(poly_chknorm(&v->vec[i], bound)){
       return 1;
+    }
+  }
 
   return 0;
 }
-# 346 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 361 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_power2round(polyveck *v1, polyveck *v0, const polyveck *v) {
   unsigned int i;
 
   for(i = 0; i < 4; ++i)
     poly_power2round(&v1->vec[i], &v0->vec[i], &v->vec[i]);
 }
-# 368 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 383 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_decompose(polyveck *v1, polyveck *v0, const polyveck *v) {
   unsigned int i;
 
   for(i = 0; i < 4; ++i)
     poly_decompose(&v1->vec[i], &v0->vec[i], &v->vec[i]);
 }
-# 386 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 401 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 unsigned int polyveck_make_hint(polyveck *h,
                                 const polyveck *v0,
                                 const polyveck *v1)
@@ -620,7 +635,7 @@ unsigned int polyveck_make_hint(polyveck *h,
 
   return s;
 }
-# 408 "/home/guest/Documents/experiments/dilithium_2/polyvec.c"
+# 423 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/polyvec.c"
 void polyveck_use_hint(polyveck *w, const polyveck *u, const polyveck *h) {
   unsigned int i;
 
@@ -631,6 +646,8 @@ void polyveck_use_hint(polyveck *w, const polyveck *u, const polyveck *h) {
 void polyveck_pack_w1(uint8_t r[4*192], const polyveck *w1) {
   unsigned int i;
 
-  for(i = 0; i < 4; ++i)
-    polyw1_pack(&r[i*192], &w1->vec[i]);
+  for(i = 0; i < 4; ++i){
+#pragma HLS pipeline
+ polyw1_pack(&r[i*192], &w1->vec[i]);
+  }
 }

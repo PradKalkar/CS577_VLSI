@@ -67,7 +67,7 @@ architecture behav of polyveck_invntt_tomo is
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal grp_invntt_tomont_fu_28_ap_start_reg : STD_LOGIC := '0';
-    signal icmp_ln300_fu_38_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln308_fu_38_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (2 downto 0);
 
     component invntt_tomont IS
@@ -132,7 +132,7 @@ begin
             if (ap_rst = '1') then
                 grp_invntt_tomont_fu_28_ap_start_reg <= ap_const_logic_0;
             else
-                if (((icmp_ln300_fu_38_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+                if (((icmp_ln308_fu_38_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                     grp_invntt_tomont_fu_28_ap_start_reg <= ap_const_logic_1;
                 elsif ((grp_invntt_tomont_fu_28_ap_ready = ap_const_logic_1)) then 
                     grp_invntt_tomont_fu_28_ap_start_reg <= ap_const_logic_0;
@@ -161,7 +161,7 @@ begin
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, grp_invntt_tomont_fu_28_ap_done, ap_CS_fsm_state3, icmp_ln300_fu_38_p2)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, grp_invntt_tomont_fu_28_ap_done, ap_CS_fsm_state3, icmp_ln308_fu_38_p2)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -171,7 +171,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((icmp_ln300_fu_38_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                if (((icmp_ln308_fu_38_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state3;
@@ -190,9 +190,9 @@ begin
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
 
-    ap_done_assign_proc : process(ap_start, ap_CS_fsm_state1, ap_CS_fsm_state2, icmp_ln300_fu_38_p2)
+    ap_done_assign_proc : process(ap_start, ap_CS_fsm_state1, ap_CS_fsm_state2, icmp_ln308_fu_38_p2)
     begin
-        if ((((icmp_ln300_fu_38_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2)) or ((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if ((((icmp_ln308_fu_38_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2)) or ((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -210,9 +210,9 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(ap_CS_fsm_state2, icmp_ln300_fu_38_p2)
+    ap_ready_assign_proc : process(ap_CS_fsm_state2, icmp_ln308_fu_38_p2)
     begin
-        if (((icmp_ln300_fu_38_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((icmp_ln308_fu_38_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -221,7 +221,7 @@ begin
 
     grp_invntt_tomont_fu_28_ap_start <= grp_invntt_tomont_fu_28_ap_start_reg;
     i_fu_44_p2 <= std_logic_vector(unsigned(i_0_reg_16) + unsigned(ap_const_lv3_1));
-    icmp_ln300_fu_38_p2 <= "1" when (i_0_reg_16 = ap_const_lv3_4) else "0";
+    icmp_ln308_fu_38_p2 <= "1" when (i_0_reg_16 = ap_const_lv3_4) else "0";
     v_vec_coeffs_address0 <= grp_invntt_tomont_fu_28_a_address0;
     v_vec_coeffs_address1 <= grp_invntt_tomont_fu_28_a_address1;
     v_vec_coeffs_ce0 <= grp_invntt_tomont_fu_28_a_ce0;

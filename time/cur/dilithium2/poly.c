@@ -29,8 +29,10 @@ void poly_reduce(poly *a) {
   unsigned int i;
   DBENCH_START();
 
-  for(i = 0; i < N; ++i)
+  for(i = 0; i < N; ++i){
+	#pragma HLS pipeline
     a->coeffs[i] = reduce32(a->coeffs[i]);
+  }
 
   DBENCH_STOP(*tred);
 }
@@ -47,8 +49,10 @@ void poly_caddq(poly *a) {
   unsigned int i;
   DBENCH_START();
 
-  for(i = 0; i < N; ++i)
-    a->coeffs[i] = caddq(a->coeffs[i]);
+  for(i = 0; i < N; ++i){
+	  #pragma HLS pipeline
+	  a->coeffs[i] = caddq(a->coeffs[i]);
+  }
 
   DBENCH_STOP(*tred);
 }
@@ -177,8 +181,10 @@ void poly_pointwise_montgomery(poly *c, const poly *a, const poly *b) {
   unsigned int i;
   DBENCH_START();
 
-  for(i = 0; i < N; ++i)
+  for(i = 0; i < N; ++i){
+	#pragma HLS pipeline
     c->coeffs[i] = montgomery_reduce((int64_t)a->coeffs[i] * b->coeffs[i]);
+  }
 
   DBENCH_STOP(*tmul);
 }
@@ -296,6 +302,7 @@ int poly_chknorm(const poly *a, int32_t B) {
      the probability for each coefficient is independent of secret
      data but we must not leak the sign of the centralized representative. */
   for(i = 0; i < N; ++i) {
+	#pragma HLS pipeline
     /* Absolute value */
     t = a->coeffs[i] >> 31;
     t = a->coeffs[i] - (t & 2*a->coeffs[i]);
@@ -802,6 +809,7 @@ void polyz_pack(uint8_t *r, const poly *a) {
 
 #if GAMMA1 == (1 << 17)
   for(i = 0; i < N/4; ++i) {
+	#pragma HLS pipeline
     t[0] = GAMMA1 - a->coeffs[4*i+0];
     t[1] = GAMMA1 - a->coeffs[4*i+1];
     t[2] = GAMMA1 - a->coeffs[4*i+2];
@@ -822,6 +830,7 @@ void polyz_pack(uint8_t *r, const poly *a) {
   }
 #elif GAMMA1 == (1 << 19)
   for(i = 0; i < N/2; ++i) {
+	#pragma HLS pipeline
     t[0] = GAMMA1 - a->coeffs[2*i+0];
     t[1] = GAMMA1 - a->coeffs[2*i+1];
 
@@ -913,6 +922,7 @@ void polyw1_pack(uint8_t *r, const poly *a) {
 
 #if GAMMA2 == (Q-1)/88
   for(i = 0; i < N/4; ++i) {
+	#pragma HLS pipeline
     r[3*i+0]  = a->coeffs[4*i+0];
     r[3*i+0] |= a->coeffs[4*i+1] << 6;
     r[3*i+1]  = a->coeffs[4*i+1] >> 2;
@@ -921,8 +931,10 @@ void polyw1_pack(uint8_t *r, const poly *a) {
     r[3*i+2] |= a->coeffs[4*i+3] << 2;
   }
 #elif GAMMA2 == (Q-1)/32
-  for(i = 0; i < N/2; ++i)
+  for(i = 0; i < N/2; ++i){
+	#pragma HLS pipeline
     r[i] = a->coeffs[2*i+0] | (a->coeffs[2*i+1] << 4);
+  }
 #endif
 
   DBENCH_STOP(*tpack);

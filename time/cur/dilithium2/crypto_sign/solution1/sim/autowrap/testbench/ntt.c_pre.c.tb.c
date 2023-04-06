@@ -2,14 +2,14 @@
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "/home/guest/Documents/experiments/dilithium_2/ntt.c"
-# 1 "/home/guest/Documents/experiments/dilithium_2/ntt.c" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/ntt.c"
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/ntt.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/ntt.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/ntt.c" 2
 # 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
 # 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -229,15 +229,15 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 2 "/home/guest/Documents/experiments/dilithium_2/ntt.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/params.h" 1
+# 2 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/ntt.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/params.h" 1
 
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/config.h" 1
-# 5 "/home/guest/Documents/experiments/dilithium_2/params.h" 2
-# 3 "/home/guest/Documents/experiments/dilithium_2/ntt.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/ntt.h" 1
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/config.h" 1
+# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/params.h" 2
+# 3 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/ntt.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/ntt.h" 1
 
 
 
@@ -249,9 +249,9 @@ void ntt(int32_t a[256]);
 
 
 void invntt_tomont(int32_t a[256]);
-# 4 "/home/guest/Documents/experiments/dilithium_2/ntt.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/reduce.h" 1
-# 11 "/home/guest/Documents/experiments/dilithium_2/reduce.h"
+# 4 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/ntt.c" 2
+# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/reduce.h" 1
+# 11 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/reduce.h"
 int32_t montgomery_reduce(int64_t a);
 
 
@@ -262,7 +262,7 @@ int32_t caddq(int32_t a);
 
 
 int32_t freeze(int32_t a);
-# 5 "/home/guest/Documents/experiments/dilithium_2/ntt.c" 2
+# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/ntt.c" 2
 
 static const int32_t zetas[256] = {
          0, 25847, -2608894, -518909, 237124, -777960, -876248, 466468,
@@ -298,14 +298,15 @@ static const int32_t zetas[256] = {
   -2939036, -2235985, -420899, -2286327, 183443, -976891, 1612842, -3545687,
    -554416, 3919660, -48306, -1362209, 3937738, 1400424, -846154, 1976782
 };
-# 49 "/home/guest/Documents/experiments/dilithium_2/ntt.c"
+# 49 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/ntt.c"
 void ntt(int32_t a[256]) {
   unsigned int len, start, j, k;
   int32_t zeta, t;
 
   k = 0;
   for(len = 128; len > 0; len >>= 1) {
-    for(start = 0; start < 256; start = j + len) {
+#pragma HLS pipeline
+ for(start = 0; start < 256; start = j + len) {
       zeta = zetas[++k];
       for(j = start; j < start + len; ++j) {
         t = montgomery_reduce((int64_t)zeta * a[j + len]);
@@ -315,7 +316,7 @@ void ntt(int32_t a[256]) {
     }
   }
 }
-# 77 "/home/guest/Documents/experiments/dilithium_2/ntt.c"
+# 78 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/ntt.c"
 void invntt_tomont(int32_t a[256]) {
   unsigned int start, len, j, k;
   int32_t t, zeta;

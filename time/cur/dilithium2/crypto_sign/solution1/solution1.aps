@@ -5,6 +5,9 @@
     <downStreamTool>
         <DownStreamTool name="vivado"/>
     </downStreamTool>
+    <clockList>
+        <clock default="false" name="default" period="10000"/>
+    </clockList>
     <config>
         <schedule model="crypto_sign"/>
     </config>
@@ -67,8 +70,5 @@
         <library name="DefaultPlatform" value="xilinx/artix7/artix7"/>
         <library name="DefaultPlatform" value="xilinx/artix7/artix7_fpv6"/>
     </libraryList>
-    <clockList>
-        <clock default="false" name="default" period="10000"/>
-    </clockList>
 </solution>
 

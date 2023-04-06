@@ -113,7 +113,7 @@ keccak_squeezeblocks_1::keccak_squeezeblocks_1(sc_module_name name) : sc_module(
     SC_METHOD(thread_grp_KeccakF1600_StatePer_1_fu_117_ap_start);
     sensitive << ( grp_KeccakF1600_StatePer_1_fu_117_ap_start_reg );
 
-    SC_METHOD(thread_i_30_fu_174_p2);
+    SC_METHOD(thread_i_25_fu_174_p2);
     sensitive << ( i_0_i_reg_106 );
 
     SC_METHOD(thread_i_fu_137_p2);
@@ -185,7 +185,7 @@ keccak_squeezeblocks_1::keccak_squeezeblocks_1(sc_module_name name) : sc_module(
     sensitive << ( grp_KeccakF1600_StatePer_1_fu_117_state_we1 );
     sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_shl_ln13_fu_184_p3);
+    SC_METHOD(thread_shl_ln11_fu_184_p3);
     sensitive << ( trunc_ln48_fu_180_p1 );
 
     SC_METHOD(thread_shl_ln_fu_160_p3);
@@ -207,7 +207,7 @@ keccak_squeezeblocks_1::keccak_squeezeblocks_1(sc_module_name name) : sc_module(
     sensitive << ( add_ln48_fu_219_p2 );
 
     SC_METHOD(thread_zext_ln48_fu_192_p1);
-    sensitive << ( shl_ln13_fu_184_p3 );
+    sensitive << ( shl_ln11_fu_184_p3 );
 
     SC_METHOD(thread_ap_NS_fsm);
     sensitive << ( ap_start );
@@ -266,7 +266,7 @@ keccak_squeezeblocks_1::keccak_squeezeblocks_1(sc_module_name name) : sc_module(
     sc_trace(mVcdFile, shl_ln_reg_256, "shl_ln_reg_256");
     sc_trace(mVcdFile, ap_CS_fsm_state5, "ap_CS_fsm_state5");
     sc_trace(mVcdFile, s_load_reg_261, "s_load_reg_261");
-    sc_trace(mVcdFile, i_30_fu_174_p2, "i_30_fu_174_p2");
+    sc_trace(mVcdFile, i_25_fu_174_p2, "i_25_fu_174_p2");
     sc_trace(mVcdFile, ap_CS_fsm_state6, "ap_CS_fsm_state6");
     sc_trace(mVcdFile, grp_KeccakF1600_StatePer_1_fu_117_ap_start, "grp_KeccakF1600_StatePer_1_fu_117_ap_start");
     sc_trace(mVcdFile, grp_KeccakF1600_StatePer_1_fu_117_ap_done, "grp_KeccakF1600_StatePer_1_fu_117_ap_done");
@@ -292,7 +292,7 @@ keccak_squeezeblocks_1::keccak_squeezeblocks_1(sc_module_name name) : sc_module(
     sc_trace(mVcdFile, zext_ln477_fu_143_p1, "zext_ln477_fu_143_p1");
     sc_trace(mVcdFile, zext_ln48_6_fu_225_p1, "zext_ln48_6_fu_225_p1");
     sc_trace(mVcdFile, trunc_ln48_fu_180_p1, "trunc_ln48_fu_180_p1");
-    sc_trace(mVcdFile, shl_ln13_fu_184_p3, "shl_ln13_fu_184_p3");
+    sc_trace(mVcdFile, shl_ln11_fu_184_p3, "shl_ln11_fu_184_p3");
     sc_trace(mVcdFile, zext_ln48_fu_192_p1, "zext_ln48_fu_192_p1");
     sc_trace(mVcdFile, lshr_ln48_fu_196_p2, "lshr_ln48_fu_196_p2");
     sc_trace(mVcdFile, zext_ln48_4_fu_206_p1, "zext_ln48_4_fu_206_p1");
@@ -330,7 +330,7 @@ void keccak_squeezeblocks_1::thread_ap_clk_no_reset_() {
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && 
          esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln47_fu_168_p2.read()))) {
-        i_0_i_reg_106 = i_30_fu_174_p2.read();
+        i_0_i_reg_106 = i_25_fu_174_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state5.read())) {
         i_0_i_reg_106 = ap_const_lv4_0;
     }
@@ -437,8 +437,8 @@ void keccak_squeezeblocks_1::thread_grp_KeccakF1600_StatePer_1_fu_117_ap_start()
     grp_KeccakF1600_StatePer_1_fu_117_ap_start = grp_KeccakF1600_StatePer_1_fu_117_ap_start_reg.read();
 }
 
-void keccak_squeezeblocks_1::thread_i_30_fu_174_p2() {
-    i_30_fu_174_p2 = (!i_0_i_reg_106.read().is_01() || !ap_const_lv4_1.is_01())? sc_lv<4>(): (sc_biguint<4>(i_0_i_reg_106.read()) + sc_biguint<4>(ap_const_lv4_1));
+void keccak_squeezeblocks_1::thread_i_25_fu_174_p2() {
+    i_25_fu_174_p2 = (!i_0_i_reg_106.read().is_01() || !ap_const_lv4_1.is_01())? sc_lv<4>(): (sc_biguint<4>(i_0_i_reg_106.read()) + sc_biguint<4>(ap_const_lv4_1));
 }
 
 void keccak_squeezeblocks_1::thread_i_fu_137_p2() {
@@ -542,8 +542,8 @@ void keccak_squeezeblocks_1::thread_s_we1() {
     }
 }
 
-void keccak_squeezeblocks_1::thread_shl_ln13_fu_184_p3() {
-    shl_ln13_fu_184_p3 = esl_concat<3,3>(trunc_ln48_fu_180_p1.read(), ap_const_lv3_0);
+void keccak_squeezeblocks_1::thread_shl_ln11_fu_184_p3() {
+    shl_ln11_fu_184_p3 = esl_concat<3,3>(trunc_ln48_fu_180_p1.read(), ap_const_lv3_0);
 }
 
 void keccak_squeezeblocks_1::thread_shl_ln_fu_160_p3() {
@@ -571,7 +571,7 @@ void keccak_squeezeblocks_1::thread_zext_ln48_6_fu_225_p1() {
 }
 
 void keccak_squeezeblocks_1::thread_zext_ln48_fu_192_p1() {
-    zext_ln48_fu_192_p1 = esl_zext<64,6>(shl_ln13_fu_184_p3.read());
+    zext_ln48_fu_192_p1 = esl_zext<64,6>(shl_ln11_fu_184_p3.read());
 }
 
 void keccak_squeezeblocks_1::thread_ap_NS_fsm() {

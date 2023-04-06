@@ -52,6 +52,7 @@ void ntt(int32_t a[N]) {
 
   k = 0;
   for(len = 128; len > 0; len >>= 1) {
+	#pragma HLS pipeline
     for(start = 0; start < N; start = j + len) {
       zeta = zetas[++k];
       for(j = start; j < start + len; ++j) {
