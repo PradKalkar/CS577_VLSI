@@ -65,7 +65,7 @@ wire   [63:0] zext_ln51_1_fu_114_p1;
 wire   [10:0] tmp_fu_81_p3;
 wire   [11:0] zext_ln51_fu_105_p1;
 wire   [11:0] add_ln51_fu_109_p2;
-wire   [0:0] tmp_4_fu_119_p3;
+wire   [0:0] tmp_9_fu_119_p3;
 wire   [31:0] select_ln51_fu_127_p3;
 reg   [3:0] ap_NS_fsm;
 
@@ -222,9 +222,9 @@ assign icmp_ln202_fu_69_p2 = ((i_0_reg_47 == 3'd4) ? 1'b1 : 1'b0);
 
 assign icmp_ln50_fu_93_p2 = ((i_0_i_reg_58 == 9'd256) ? 1'b1 : 1'b0);
 
-assign select_ln51_fu_127_p3 = ((tmp_4_fu_119_p3[0:0] === 1'b1) ? 32'd8380417 : 32'd0);
+assign select_ln51_fu_127_p3 = ((tmp_9_fu_119_p3[0:0] === 1'b1) ? 32'd8380417 : 32'd0);
 
-assign tmp_4_fu_119_p3 = v_vec_coeffs_q0[32'd31];
+assign tmp_9_fu_119_p3 = v_vec_coeffs_q0[32'd31];
 
 assign tmp_fu_81_p3 = {{i_0_reg_47}, {8'd0}};
 

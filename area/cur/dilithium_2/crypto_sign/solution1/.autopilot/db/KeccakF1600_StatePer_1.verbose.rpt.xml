@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'KeccakF1600_StatePer_1'" level="0">
-<item name = "Date">Tue Apr  4 22:25:34 2023
+<item name = "Date">Tue Apr  4 23:21:09 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">crypto_sign</item>

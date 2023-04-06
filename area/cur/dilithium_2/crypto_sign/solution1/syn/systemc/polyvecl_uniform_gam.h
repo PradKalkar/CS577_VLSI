@@ -12,7 +12,7 @@
 #include "AESL_pkg.h"
 
 #include "keccak_absorb.h"
-#include "keccak_squeezeblocks_1.h"
+#include "keccak_squeezeblocks.h"
 #include "polyvecl_uniform_fYi.h"
 #include "poly_uniform_statdEe.h"
 
@@ -49,7 +49,7 @@ struct polyvecl_uniform_gam : public sc_module {
     polyvecl_uniform_fYi* buf_U;
     poly_uniform_statdEe* state_s_U;
     keccak_absorb* grp_keccak_absorb_fu_395;
-    keccak_squeezeblocks_1* grp_keccak_squeezeblocks_1_fu_408;
+    keccak_squeezeblocks* grp_keccak_squeezeblocks_fu_408;
     sc_signal< sc_lv<20> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<8> > buf_q0;
@@ -128,22 +128,22 @@ struct polyvecl_uniform_gam : public sc_module {
     sc_signal< sc_logic > grp_keccak_absorb_fu_395_s_ce1;
     sc_signal< sc_logic > grp_keccak_absorb_fu_395_s_we1;
     sc_signal< sc_lv<64> > grp_keccak_absorb_fu_395_s_d1;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_ap_start;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_ap_done;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_ap_idle;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_ap_ready;
-    sc_signal< sc_lv<10> > grp_keccak_squeezeblocks_1_fu_408_out_r_address0;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_out_r_ce0;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_out_r_we0;
-    sc_signal< sc_lv<8> > grp_keccak_squeezeblocks_1_fu_408_out_r_d0;
-    sc_signal< sc_lv<5> > grp_keccak_squeezeblocks_1_fu_408_s_address0;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_s_ce0;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_s_we0;
-    sc_signal< sc_lv<64> > grp_keccak_squeezeblocks_1_fu_408_s_d0;
-    sc_signal< sc_lv<5> > grp_keccak_squeezeblocks_1_fu_408_s_address1;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_s_ce1;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_s_we1;
-    sc_signal< sc_lv<64> > grp_keccak_squeezeblocks_1_fu_408_s_d1;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_ap_start;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_ap_done;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_ap_idle;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_ap_ready;
+    sc_signal< sc_lv<10> > grp_keccak_squeezeblocks_fu_408_out_r_address0;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_out_r_ce0;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_out_r_we0;
+    sc_signal< sc_lv<8> > grp_keccak_squeezeblocks_fu_408_out_r_d0;
+    sc_signal< sc_lv<5> > grp_keccak_squeezeblocks_fu_408_s_address0;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_s_ce0;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_s_we0;
+    sc_signal< sc_lv<64> > grp_keccak_squeezeblocks_fu_408_s_d0;
+    sc_signal< sc_lv<5> > grp_keccak_squeezeblocks_fu_408_s_address1;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_s_ce1;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_s_we1;
+    sc_signal< sc_lv<64> > grp_keccak_squeezeblocks_fu_408_s_d1;
     sc_signal< sc_lv<3> > i_0_reg_326;
     sc_signal< sc_lv<5> > i_0_i_i_i_i_reg_338;
     sc_signal< sc_lv<1> > icmp_ln362_fu_479_p2;
@@ -155,7 +155,7 @@ struct polyvecl_uniform_gam : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state14;
     sc_signal< sc_logic > ap_CS_fsm_state20;
     sc_signal< sc_logic > grp_keccak_absorb_fu_395_ap_start_reg;
-    sc_signal< sc_logic > grp_keccak_squeezeblocks_1_fu_408_ap_start_reg;
+    sc_signal< sc_logic > grp_keccak_squeezeblocks_fu_408_ap_start_reg;
     sc_signal< sc_logic > ap_CS_fsm_state13;
     sc_signal< sc_lv<64> > zext_ln363_fu_491_p1;
     sc_signal< sc_lv<64> > zext_ln31_fu_549_p1;
@@ -372,7 +372,7 @@ struct polyvecl_uniform_gam : public sc_module {
     void thread_buf_ce1();
     void thread_buf_we0();
     void thread_grp_keccak_absorb_fu_395_ap_start();
-    void thread_grp_keccak_squeezeblocks_1_fu_408_ap_start();
+    void thread_grp_keccak_squeezeblocks_fu_408_ap_start();
     void thread_i_11_fu_485_p2();
     void thread_i_12_fu_653_p2();
     void thread_i_13_fu_530_p2();

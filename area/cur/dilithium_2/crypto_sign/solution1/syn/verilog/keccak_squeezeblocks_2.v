@@ -75,22 +75,25 @@ reg s_we1;
 
 (* fsm_encoding = "none" *) reg   [5:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [4:0] i_fu_163_p2;
-reg   [4:0] i_reg_289;
+wire   [9:0] add_ln48_1_fu_167_p3;
+reg   [9:0] add_ln48_1_reg_285;
+wire    ap_CS_fsm_state3;
+wire    grp_KeccakF1600_StatePer_1_fu_143_ap_ready;
+wire    grp_KeccakF1600_StatePer_1_fu_143_ap_done;
+wire   [4:0] i_fu_180_p2;
+reg   [4:0] i_reg_293;
 wire    ap_CS_fsm_state4;
-wire   [0:0] icmp_ln476_fu_157_p2;
-wire   [9:0] add_ln478_fu_174_p2;
-wire   [3:0] add_ln479_fu_180_p2;
-wire   [7:0] shl_ln_fu_186_p3;
-reg   [7:0] shl_ln_reg_309;
+wire   [0:0] icmp_ln476_fu_174_p2;
+wire   [9:0] add_ln478_fu_191_p2;
+wire   [3:0] add_ln479_fu_197_p2;
+wire   [7:0] shl_ln_fu_203_p3;
+reg   [7:0] shl_ln_reg_313;
 wire    ap_CS_fsm_state5;
-reg   [63:0] s_load_reg_314;
-wire   [3:0] i_29_fu_200_p2;
+reg   [63:0] s_load_reg_318;
+wire   [3:0] i_30_fu_217_p2;
 wire    ap_CS_fsm_state6;
 wire    grp_KeccakF1600_StatePer_1_fu_143_ap_start;
-wire    grp_KeccakF1600_StatePer_1_fu_143_ap_done;
 wire    grp_KeccakF1600_StatePer_1_fu_143_ap_idle;
-wire    grp_KeccakF1600_StatePer_1_fu_143_ap_ready;
 wire   [4:0] grp_KeccakF1600_StatePer_1_fu_143_state_address0;
 wire    grp_KeccakF1600_StatePer_1_fu_143_state_ce0;
 wire    grp_KeccakF1600_StatePer_1_fu_143_state_we0;
@@ -102,23 +105,21 @@ wire   [63:0] grp_KeccakF1600_StatePer_1_fu_143_state_d1;
 reg   [3:0] nblocks_assign_1_reg_98;
 reg   [9:0] p_0_rec_reg_108;
 reg   [4:0] i_0_reg_120;
-wire    ap_CS_fsm_state3;
-wire   [0:0] icmp_ln47_fu_194_p2;
+wire   [0:0] icmp_ln47_fu_211_p2;
 reg   [3:0] i_0_i_reg_132;
 reg    grp_KeccakF1600_StatePer_1_fu_143_ap_start_reg;
 wire    ap_CS_fsm_state2;
 wire   [0:0] icmp_ln474_fu_151_p2;
-wire   [63:0] zext_ln477_fu_169_p1;
-wire   [63:0] zext_ln48_3_fu_268_p1;
-wire   [2:0] trunc_ln48_fu_206_p1;
-wire   [5:0] shl_ln15_fu_210_p3;
-wire   [63:0] zext_ln48_fu_218_p1;
-wire   [63:0] lshr_ln48_fu_222_p2;
-wire   [7:0] tmp_s_fu_236_p4;
-wire   [7:0] zext_ln48_1_fu_232_p1;
-wire   [7:0] add_ln48_1_fu_253_p2;
+wire   [63:0] zext_ln477_fu_186_p1;
+wire   [63:0] zext_ln48_3_fu_267_p1;
+wire   [7:0] tmp_fu_157_p4;
+wire   [2:0] trunc_ln48_fu_223_p1;
+wire   [5:0] shl_ln16_fu_227_p3;
+wire   [63:0] zext_ln48_fu_235_p1;
+wire   [63:0] lshr_ln48_fu_239_p2;
+wire   [7:0] zext_ln48_1_fu_249_p1;
+wire   [7:0] add_ln48_2_fu_253_p2;
 wire   [9:0] zext_ln48_2_fu_258_p1;
-wire   [9:0] tmp_fu_246_p3;
 wire   [9:0] add_ln48_fu_262_p2;
 reg   [5:0] ap_NS_fsm;
 
@@ -168,47 +169,53 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln47_fu_194_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state6))) begin
-        i_0_i_reg_132 <= i_29_fu_200_p2;
+    if (((icmp_ln47_fu_211_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state6))) begin
+        i_0_i_reg_132 <= i_30_fu_217_p2;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
         i_0_i_reg_132 <= 4'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln47_fu_194_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
-        i_0_reg_120 <= i_reg_289;
+    if (((icmp_ln47_fu_211_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
+        i_0_reg_120 <= i_reg_293;
     end else if (((grp_KeccakF1600_StatePer_1_fu_143_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
         i_0_reg_120 <= 5'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln476_fu_157_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
-        nblocks_assign_1_reg_98 <= add_ln479_fu_180_p2;
+    if (((icmp_ln476_fu_174_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
+        nblocks_assign_1_reg_98 <= add_ln479_fu_197_p2;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
         nblocks_assign_1_reg_98 <= nblocks;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln476_fu_157_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
-        p_0_rec_reg_108 <= add_ln478_fu_174_p2;
+    if (((icmp_ln476_fu_174_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
+        p_0_rec_reg_108 <= add_ln478_fu_191_p2;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
         p_0_rec_reg_108 <= 10'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
+    if (((grp_KeccakF1600_StatePer_1_fu_143_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+        add_ln48_1_reg_285 <= add_ln48_1_fu_167_p3;
+    end
+end
+
+always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        i_reg_289 <= i_fu_163_p2;
+        i_reg_293 <= i_fu_180_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        s_load_reg_314 <= s_q0;
-        shl_ln_reg_309[7 : 3] <= shl_ln_fu_186_p3[7 : 3];
+        s_load_reg_318 <= s_q0;
+        shl_ln_reg_313[7 : 3] <= shl_ln_fu_203_p3[7 : 3];
     end
 end
 
@@ -245,7 +252,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln47_fu_194_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state6))) begin
+    if (((icmp_ln47_fu_211_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state6))) begin
         out_r_we0 = 1'b1;
     end else begin
         out_r_we0 = 1'b0;
@@ -254,7 +261,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        s_address0 = zext_ln477_fu_169_p1;
+        s_address0 = zext_ln477_fu_186_p1;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
         s_address0 = grp_KeccakF1600_StatePer_1_fu_143_state_address0;
     end else begin
@@ -320,7 +327,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state4 : begin
-            if (((icmp_ln476_fu_157_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
+            if (((icmp_ln476_fu_174_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state4))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state5;
@@ -330,7 +337,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state6;
         end
         ap_ST_fsm_state6 : begin
-            if (((icmp_ln47_fu_194_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
+            if (((icmp_ln47_fu_211_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state6;
@@ -342,13 +349,15 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln478_fu_174_p2 = (p_0_rec_reg_108 + 10'd168);
+assign add_ln478_fu_191_p2 = (p_0_rec_reg_108 + 10'd168);
 
-assign add_ln479_fu_180_p2 = ($signed(nblocks_assign_1_reg_98) + $signed(4'd15));
+assign add_ln479_fu_197_p2 = ($signed(nblocks_assign_1_reg_98) + $signed(4'd15));
 
-assign add_ln48_1_fu_253_p2 = (shl_ln_reg_309 + zext_ln48_1_fu_232_p1);
+assign add_ln48_1_fu_167_p3 = {{tmp_fu_157_p4}, {out_offset}};
 
-assign add_ln48_fu_262_p2 = (zext_ln48_2_fu_258_p1 + tmp_fu_246_p3);
+assign add_ln48_2_fu_253_p2 = (zext_ln48_1_fu_249_p1 + shl_ln_reg_313);
+
+assign add_ln48_fu_262_p2 = (add_ln48_1_reg_285 + zext_ln48_2_fu_258_p1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -364,21 +373,21 @@ assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
 assign grp_KeccakF1600_StatePer_1_fu_143_ap_start = grp_KeccakF1600_StatePer_1_fu_143_ap_start_reg;
 
-assign i_29_fu_200_p2 = (i_0_i_reg_132 + 4'd1);
+assign i_30_fu_217_p2 = (i_0_i_reg_132 + 4'd1);
 
-assign i_fu_163_p2 = (i_0_reg_120 + 5'd1);
+assign i_fu_180_p2 = (i_0_reg_120 + 5'd1);
 
 assign icmp_ln474_fu_151_p2 = ((nblocks_assign_1_reg_98 == 4'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln476_fu_157_p2 = ((i_0_reg_120 == 5'd21) ? 1'b1 : 1'b0);
+assign icmp_ln476_fu_174_p2 = ((i_0_reg_120 == 5'd21) ? 1'b1 : 1'b0);
 
-assign icmp_ln47_fu_194_p2 = ((i_0_i_reg_132 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln47_fu_211_p2 = ((i_0_i_reg_132 == 4'd8) ? 1'b1 : 1'b0);
 
-assign lshr_ln48_fu_222_p2 = s_load_reg_314 >> zext_ln48_fu_218_p1;
+assign lshr_ln48_fu_239_p2 = s_load_reg_318 >> zext_ln48_fu_235_p1;
 
-assign out_r_address0 = zext_ln48_3_fu_268_p1;
+assign out_r_address0 = zext_ln48_3_fu_267_p1;
 
-assign out_r_d0 = lshr_ln48_fu_222_p2[7:0];
+assign out_r_d0 = lshr_ln48_fu_239_p2[7:0];
 
 assign s_address1 = grp_KeccakF1600_StatePer_1_fu_143_state_address1;
 
@@ -386,28 +395,26 @@ assign s_d0 = grp_KeccakF1600_StatePer_1_fu_143_state_d0;
 
 assign s_d1 = grp_KeccakF1600_StatePer_1_fu_143_state_d1;
 
-assign shl_ln15_fu_210_p3 = {{trunc_ln48_fu_206_p1}, {3'd0}};
+assign shl_ln16_fu_227_p3 = {{trunc_ln48_fu_223_p1}, {3'd0}};
 
-assign shl_ln_fu_186_p3 = {{i_0_reg_120}, {3'd0}};
+assign shl_ln_fu_203_p3 = {{i_0_reg_120}, {3'd0}};
 
-assign tmp_fu_246_p3 = {{tmp_s_fu_236_p4}, {out_offset}};
+assign tmp_fu_157_p4 = {{p_0_rec_reg_108[9:2]}};
 
-assign tmp_s_fu_236_p4 = {{p_0_rec_reg_108[9:2]}};
+assign trunc_ln48_fu_223_p1 = i_0_i_reg_132[2:0];
 
-assign trunc_ln48_fu_206_p1 = i_0_i_reg_132[2:0];
+assign zext_ln477_fu_186_p1 = i_0_reg_120;
 
-assign zext_ln477_fu_169_p1 = i_0_reg_120;
+assign zext_ln48_1_fu_249_p1 = i_0_i_reg_132;
 
-assign zext_ln48_1_fu_232_p1 = i_0_i_reg_132;
+assign zext_ln48_2_fu_258_p1 = add_ln48_2_fu_253_p2;
 
-assign zext_ln48_2_fu_258_p1 = add_ln48_1_fu_253_p2;
+assign zext_ln48_3_fu_267_p1 = add_ln48_fu_262_p2;
 
-assign zext_ln48_3_fu_268_p1 = add_ln48_fu_262_p2;
-
-assign zext_ln48_fu_218_p1 = shl_ln15_fu_210_p3;
+assign zext_ln48_fu_235_p1 = shl_ln16_fu_227_p3;
 
 always @ (posedge ap_clk) begin
-    shl_ln_reg_309[2:0] <= 3'b000;
+    shl_ln_reg_313[2:0] <= 3'b000;
 end
 
 endmodule //keccak_squeezeblocks_2

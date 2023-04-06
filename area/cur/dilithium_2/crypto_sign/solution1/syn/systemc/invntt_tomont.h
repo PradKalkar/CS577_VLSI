@@ -83,7 +83,7 @@ struct invntt_tomont : public sc_module {
     sc_signal< sc_lv<1> > icmp_ln95_fu_401_p2;
     sc_signal< sc_lv<9> > len_0_reg_114;
     sc_signal< sc_lv<10> > j_reg_126;
-    sc_signal< sc_lv<1> > tmp_11_fu_179_p3;
+    sc_signal< sc_lv<1> > tmp_32_fu_179_p3;
     sc_signal< sc_lv<32> > j_0_reg_138;
     sc_signal< sc_logic > ap_CS_fsm_state8;
     sc_signal< sc_lv<9> > j_1_reg_147;
@@ -98,10 +98,10 @@ struct invntt_tomont : public sc_module {
     sc_signal< sc_lv<32> > t_12_fu_396_p1;
     sc_signal< sc_lv<32> > t_10_fu_481_p1;
     sc_signal< sc_lv<11> > tmp_fu_158_p3;
-    sc_signal< sc_lv<2> > tmp_12_fu_191_p4;
+    sc_signal< sc_lv<2> > tmp_33_fu_191_p4;
     sc_signal< sc_lv<10> > add_ln86_fu_233_p2;
     sc_signal< sc_lv<9> > trunc_ln84_fu_248_p1;
-    sc_signal< sc_lv<1> > empty_80_fu_242_p2;
+    sc_signal< sc_lv<1> > empty_81_fu_242_p2;
     sc_signal< sc_lv<9> > add_ln84_1_fu_252_p2;
     sc_signal< sc_lv<9> > start_fu_258_p3;
     sc_signal< sc_lv<23> > zeta_fu_227_p2;
@@ -207,7 +207,7 @@ struct invntt_tomont : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_empty_80_fu_242_p2();
+    void thread_empty_81_fu_242_p2();
     void thread_icmp_ln84_fu_201_p2();
     void thread_icmp_ln86_fu_274_p2();
     void thread_icmp_ln95_fu_401_p2();
@@ -236,8 +236,8 @@ struct invntt_tomont : public sc_module {
     void thread_t_11_fu_360_p2();
     void thread_t_12_fu_396_p1();
     void thread_t_9_fu_445_p2();
-    void thread_tmp_11_fu_179_p3();
-    void thread_tmp_12_fu_191_p4();
+    void thread_tmp_32_fu_179_p3();
+    void thread_tmp_33_fu_191_p4();
     void thread_tmp_fu_158_p3();
     void thread_trunc_ln18_3_fu_356_p1();
     void thread_trunc_ln18_fu_441_p1();

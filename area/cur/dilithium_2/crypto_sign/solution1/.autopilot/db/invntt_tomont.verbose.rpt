@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'invntt_tomont'
 ================================================================
-* Date:           Tue Apr  4 22:25:40 2023
+* Date:           Tue Apr  4 23:21:15 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -115,7 +115,7 @@
     |k_fu_210_p2           |     +    |      0|  0|  39|           2|          32|
     |sub_ln89_fu_338_p2    |     -    |      0|  0|  39|          32|          32|
     |zeta_fu_227_p2        |     -    |      0|  0|  30|           1|          23|
-    |empty_80_fu_242_p2    |   icmp   |      0|  0|  13|          10|          10|
+    |empty_81_fu_242_p2    |   icmp   |      0|  0|  13|          10|          10|
     |icmp_ln84_fu_201_p2   |   icmp   |      0|  0|   8|           2|           1|
     |icmp_ln86_fu_274_p2   |   icmp   |      0|  0|  18|          32|          32|
     |icmp_ln95_fu_401_p2   |   icmp   |      0|  0|  13|           9|          10|
@@ -249,17 +249,17 @@ ST_1 : Operation 16 [1/1] (1.35ns)   --->   "br label %1" [ntt.c:83]   --->   Op
 State 2 <SV = 1> <Delay = 1.35>
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%len_0 = phi i9 [ 1, %0 ], [ %len, %6 ]"   --->   Operation 17 'phi' 'len_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln83 = zext i9 %len_0 to i10" [ntt.c:83]   --->   Operation 18 'zext' 'zext_ln83' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_11 = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %len_0, i32 8)" [ntt.c:83]   --->   Operation 19 'bitselect' 'tmp_11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_32 = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %len_0, i32 8)" [ntt.c:83]   --->   Operation 19 'bitselect' 'tmp_32' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 20 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %tmp_11, label %.preheader.preheader, label %.preheader1.preheader" [ntt.c:83]   --->   Operation 21 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (1.35ns)   --->   "br label %.preheader1" [ntt.c:84]   --->   Operation 22 'br' <Predicate = (!tmp_11)> <Delay = 1.35>
-ST_2 : Operation 23 [1/1] (1.35ns)   --->   "br label %.preheader" [ntt.c:95]   --->   Operation 23 'br' <Predicate = (tmp_11)> <Delay = 1.35>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %tmp_32, label %.preheader.preheader, label %.preheader1.preheader" [ntt.c:83]   --->   Operation 21 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (1.35ns)   --->   "br label %.preheader1" [ntt.c:84]   --->   Operation 22 'br' <Predicate = (!tmp_32)> <Delay = 1.35>
+ST_2 : Operation 23 [1/1] (1.35ns)   --->   "br label %.preheader" [ntt.c:95]   --->   Operation 23 'br' <Predicate = (tmp_32)> <Delay = 1.35>
 
 State 3 <SV = 2> <Delay = 4.95>
 ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%j = phi i10 [ %add_ln84, %5 ], [ 0, %.preheader1.preheader ]" [ntt.c:84]   --->   Operation 24 'phi' 'j' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln84 = zext i10 %j to i32" [ntt.c:84]   --->   Operation 25 'zext' 'zext_ln84' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_12 = call i2 @_ssdm_op_PartSelect.i2.i10.i32.i32(i10 %j, i32 8, i32 9)" [ntt.c:84]   --->   Operation 26 'partselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 27 [1/1] (0.79ns)   --->   "%icmp_ln84 = icmp eq i2 %tmp_12, 0" [ntt.c:84]   --->   Operation 27 'icmp' 'icmp_ln84' <Predicate = true> <Delay = 0.79> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_33 = call i2 @_ssdm_op_PartSelect.i2.i10.i32.i32(i10 %j, i32 8, i32 9)" [ntt.c:84]   --->   Operation 26 'partselect' 'tmp_33' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.79ns)   --->   "%icmp_ln84 = icmp eq i2 %tmp_33, 0" [ntt.c:84]   --->   Operation 27 'icmp' 'icmp_ln84' <Predicate = true> <Delay = 0.79> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 28 [1/1] (0.00ns)   --->   "br i1 %icmp_ln84, label %2, label %6" [ntt.c:84]   --->   Operation 28 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%k_4_load = load i32* %k_4" [ntt.c:85]   --->   Operation 29 'load' 'k_4_load' <Predicate = (icmp_ln84)> <Delay = 0.00>
 ST_3 : Operation 30 [1/1] (2.18ns)   --->   "%k = add i32 -1, %k_4_load" [ntt.c:85]   --->   Operation 30 'add' 'k' <Predicate = (icmp_ln84)> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.98> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -274,10 +274,10 @@ ST_4 : Operation 36 [1/2] (2.77ns)   --->   "%zetas_load = load i23* %zetas_addr
 ST_4 : Operation 37 [1/1] (1.98ns)   --->   "%zeta = sub i23 0, %zetas_load" [ntt.c:85]   --->   Operation 37 'sub' 'zeta' <Predicate = true> <Delay = 1.98> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.98> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 38 [1/1] (1.74ns)   --->   "%add_ln86 = add i10 %zext_ln83, %j" [ntt.c:86]   --->   Operation 38 'add' 'add_ln86' <Predicate = true> <Delay = 1.74> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.98> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln86 = zext i10 %add_ln86 to i32" [ntt.c:86]   --->   Operation 39 'zext' 'zext_ln86' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 40 [1/1] (1.43ns)   --->   "%empty_80 = icmp ugt i10 %j, %add_ln86" [ntt.c:84]   --->   Operation 40 'icmp' 'empty_80' <Predicate = true> <Delay = 1.43> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 40 [1/1] (1.43ns)   --->   "%empty_81 = icmp ugt i10 %j, %add_ln86" [ntt.c:84]   --->   Operation 40 'icmp' 'empty_81' <Predicate = true> <Delay = 1.43> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%trunc_ln84 = trunc i10 %j to i9" [ntt.c:84]   --->   Operation 41 'trunc' 'trunc_ln84' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 42 [1/1] (1.73ns)   --->   "%add_ln84_1 = add i9 %trunc_ln84, %len_0" [ntt.c:84]   --->   Operation 42 'add' 'add_ln84_1' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.98> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 43 [1/1] (1.07ns)   --->   "%start = select i1 %empty_80, i9 %trunc_ln84, i9 %add_ln84_1" [ntt.c:84]   --->   Operation 43 'select' 'start' <Predicate = true> <Delay = 1.07> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.07> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 43 [1/1] (1.07ns)   --->   "%start = select i1 %empty_81, i9 %trunc_ln84, i9 %add_ln84_1" [ntt.c:84]   --->   Operation 43 'select' 'start' <Predicate = true> <Delay = 1.07> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.07> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln84_1 = zext i9 %start to i10" [ntt.c:84]   --->   Operation 44 'zext' 'zext_ln84_1' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%sext_ln86 = sext i23 %zeta to i54" [ntt.c:86]   --->   Operation 45 'sext' 'sext_ln86' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 46 [1/1] (1.35ns)   --->   "br label %3" [ntt.c:86]   --->   Operation 46 'br' <Predicate = true> <Delay = 1.35>
@@ -332,7 +332,7 @@ ST_8 : Operation 85 [1/1] (0.00ns)   --->   "br label %3" [ntt.c:86]   --->   Op
 State 9 <SV = 2> <Delay = 4.53>
 ST_9 : Operation 86 [1/1] (0.00ns)   --->   "%j_1 = phi i9 [ %j_3, %7 ], [ 0, %.preheader.preheader ]"   --->   Operation 86 'phi' 'j_1' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 87 [1/1] (1.34ns)   --->   "%icmp_ln95 = icmp eq i9 %j_1, -256" [ntt.c:95]   --->   Operation 87 'icmp' 'icmp_ln95' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 88 [1/1] (0.00ns)   --->   "%empty_81 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 88 'speclooptripcount' 'empty_81' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 88 [1/1] (0.00ns)   --->   "%empty_82 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 88 'speclooptripcount' 'empty_82' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 89 [1/1] (1.73ns)   --->   "%j_3 = add i9 %j_1, 1" [ntt.c:95]   --->   Operation 89 'add' 'j_3' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.98> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_9 : Operation 90 [1/1] (0.00ns)   --->   "br i1 %icmp_ln95, label %8, label %7" [ntt.c:95]   --->   Operation 90 'br' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln96 = zext i9 %j_1 to i12" [ntt.c:96]   --->   Operation 91 'zext' 'zext_ln96' <Predicate = (!icmp_ln95)> <Delay = 0.00>
@@ -387,14 +387,14 @@ store_ln83    (store            ) [ 00000000000]
 br_ln83       (br               ) [ 01111111100]
 len_0         (phi              ) [ 00111111100]
 zext_ln83     (zext             ) [ 00011111100]
-tmp_11        (bitselect        ) [ 00111111100]
+tmp_32        (bitselect        ) [ 00111111100]
 empty         (speclooptripcount) [ 00000000000]
 br_ln83       (br               ) [ 00000000000]
 br_ln84       (br               ) [ 00111111100]
 br_ln95       (br               ) [ 00111111111]
 j             (phi              ) [ 00011000000]
 zext_ln84     (zext             ) [ 00001111100]
-tmp_12        (partselect       ) [ 00000000000]
+tmp_33        (partselect       ) [ 00000000000]
 icmp_ln84     (icmp             ) [ 00111111100]
 br_ln84       (br               ) [ 00000000000]
 k_4_load      (load             ) [ 00000000000]
@@ -407,7 +407,7 @@ zetas_load    (load             ) [ 00000000000]
 zeta          (sub              ) [ 00000000000]
 add_ln86      (add              ) [ 00000000000]
 zext_ln86     (zext             ) [ 00000111100]
-empty_80      (icmp             ) [ 00000000000]
+empty_81      (icmp             ) [ 00000000000]
 trunc_ln84    (trunc            ) [ 00000000000]
 add_ln84_1    (add              ) [ 00000000000]
 start         (select           ) [ 00000000000]
@@ -452,7 +452,7 @@ store_ln90    (store            ) [ 00000000000]
 br_ln86       (br               ) [ 00111111100]
 j_1           (phi              ) [ 00000000010]
 icmp_ln95     (icmp             ) [ 00000000011]
-empty_81      (speclooptripcount) [ 00000000000]
+empty_82      (speclooptripcount) [ 00000000000]
 j_3           (add              ) [ 00100000011]
 br_ln95       (br               ) [ 00000000000]
 zext_ln96     (zext             ) [ 00000000000]
@@ -990,7 +990,7 @@ br_ln95       (br               ) [ 00100000011]
 </bind>
 </comp>
 
-<comp id="179" class="1004" name="tmp_11_fu_179">
+<comp id="179" class="1004" name="tmp_32_fu_179">
 <pin_list>
 <pin id="180" dir="0" index="0" bw="1" slack="0"/>
 <pin id="181" dir="0" index="1" bw="9" slack="0"/>
@@ -999,7 +999,7 @@ br_ln95       (br               ) [ 00100000011]
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_11/2 "/>
+<opset="tmp_32/2 "/>
 </bind>
 </comp>
 
@@ -1014,7 +1014,7 @@ br_ln95       (br               ) [ 00100000011]
 </bind>
 </comp>
 
-<comp id="191" class="1004" name="tmp_12_fu_191">
+<comp id="191" class="1004" name="tmp_33_fu_191">
 <pin_list>
 <pin id="192" dir="0" index="0" bw="2" slack="0"/>
 <pin id="193" dir="0" index="1" bw="10" slack="0"/>
@@ -1024,7 +1024,7 @@ br_ln95       (br               ) [ 00100000011]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_12/3 "/>
+<opset="tmp_33/3 "/>
 </bind>
 </comp>
 
@@ -1121,7 +1121,7 @@ br_ln95       (br               ) [ 00100000011]
 </bind>
 </comp>
 
-<comp id="242" class="1004" name="empty_80_fu_242">
+<comp id="242" class="1004" name="empty_81_fu_242">
 <pin_list>
 <pin id="243" dir="0" index="0" bw="10" slack="1"/>
 <pin id="244" dir="0" index="1" bw="10" slack="0"/>
@@ -1129,7 +1129,7 @@ br_ln95       (br               ) [ 00100000011]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="empty_80/4 "/>
+<opset="empty_81/4 "/>
 </bind>
 </comp>
 
@@ -2186,11 +2186,11 @@ br_ln95       (br               ) [ 00100000011]
 		store_ln83 : 1
 	State 2
 		zext_ln83 : 1
-		tmp_11 : 1
+		tmp_32 : 1
 		br_ln83 : 2
 	State 3
 		zext_ln84 : 1
-		tmp_12 : 1
+		tmp_33 : 1
 		icmp_ln84 : 2
 		br_ln84 : 3
 		k : 1
@@ -2200,7 +2200,7 @@ br_ln95       (br               ) [ 00100000011]
 	State 4
 		zeta : 1
 		zext_ln86 : 1
-		empty_80 : 1
+		empty_81 : 1
 		add_ln84_1 : 1
 		start : 2
 		zext_ln84_1 : 3
@@ -2295,7 +2295,7 @@ br_ln95       (br               ) [ 00100000011]
 |          |      sub_ln89_fu_338     |    0    |    0    |    39   |
 |----------|--------------------------|---------|---------|---------|
 |          |     icmp_ln84_fu_201     |    0    |    0    |    8    |
-|   icmp   |      empty_80_fu_242     |    0    |    0    |    13   |
+|   icmp   |      empty_81_fu_242     |    0    |    0    |    13   |
 |          |     icmp_ln86_fu_274     |    0    |    0    |    18   |
 |          |     icmp_ln95_fu_401     |    0    |    0    |    13   |
 |----------|--------------------------|---------|---------|---------|
@@ -2317,9 +2317,9 @@ br_ln95       (br               ) [ 00100000011]
 |          |     zext_ln96_fu_413     |    0    |    0    |    0    |
 |          |    zext_ln96_1_fu_422    |    0    |    0    |    0    |
 |----------|--------------------------|---------|---------|---------|
-| bitselect|       tmp_11_fu_179      |    0    |    0    |    0    |
+| bitselect|       tmp_32_fu_179      |    0    |    0    |    0    |
 |----------|--------------------------|---------|---------|---------|
-|          |       tmp_12_fu_191      |    0    |    0    |    0    |
+|          |       tmp_33_fu_191      |    0    |    0    |    0    |
 |partselect|    trunc_ln19_1_fu_386   |    0    |    0    |    0    |
 |          |      trunc_ln_fu_471     |    0    |    0    |    0    |
 |----------|--------------------------|---------|---------|---------|

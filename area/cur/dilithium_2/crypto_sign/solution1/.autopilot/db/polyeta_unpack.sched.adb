@@ -1142,7 +1142,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>tmp_s</name>
+						<name>tmp</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>599</lineNumber>
@@ -1439,7 +1439,7 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>tmp_19</name>
+						<name>tmp_18</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>600</lineNumber>
@@ -1587,7 +1587,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>tmp_20</name>
+						<name>tmp_s</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>601</lineNumber>
@@ -2125,7 +2125,7 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>tmp_21</name>
+						<name>tmp_19</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>601</lineNumber>
@@ -2421,7 +2421,7 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>tmp_22</name>
+						<name>tmp_20</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>602</lineNumber>
@@ -2717,7 +2717,7 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>tmp_23</name>
+						<name>tmp_21</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>603</lineNumber>
@@ -2865,7 +2865,7 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>tmp</name>
+						<name>tmp_22</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>604</lineNumber>
@@ -3402,7 +3402,7 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>tmp_24</name>
+						<name>tmp_23</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>604</lineNumber>
@@ -3698,7 +3698,7 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>tmp_25</name>
+						<name>tmp_24</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>605</lineNumber>
@@ -3846,7 +3846,7 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>tmp_26</name>
+						<name>tmp_10</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>606</lineNumber>
@@ -3994,7 +3994,7 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>tmp_27</name>
+						<name>tmp_25</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>606</lineNumber>

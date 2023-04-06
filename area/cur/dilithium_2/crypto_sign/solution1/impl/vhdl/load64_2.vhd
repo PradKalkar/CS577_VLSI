@@ -59,7 +59,7 @@ architecture behav of load64_2 is
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal i_0_reg_41 : STD_LOGIC_VECTOR (3 downto 0);
     signal r_0_reg_53 : STD_LOGIC_VECTOR (63 downto 0);
-    signal zext_ln31_6_fu_90_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln31_9_fu_90_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln31_fu_81_p1 : STD_LOGIC_VECTOR (13 downto 0);
     signal add_ln31_fu_85_p2 : STD_LOGIC_VECTOR (13 downto 0);
     signal trunc_ln31_3_fu_99_p1 : STD_LOGIC_VECTOR (2 downto 0);
@@ -212,7 +212,7 @@ begin
     shl_ln_fu_103_p3 <= (trunc_ln31_3_fu_99_p1 & ap_const_lv3_0);
     trunc_ln31_3_fu_99_p1 <= i_0_reg_41(3 - 1 downto 0);
     trunc_ln31_fu_65_p1 <= x_offset(14 - 1 downto 0);
-    x_address0 <= zext_ln31_6_fu_90_p1(13 - 1 downto 0);
+    x_address0 <= zext_ln31_9_fu_90_p1(13 - 1 downto 0);
 
     x_ce0_assign_proc : process(ap_CS_fsm_state2)
     begin
@@ -225,6 +225,6 @@ begin
 
     zext_ln31_1_fu_95_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(x_q0),64));
     zext_ln31_2_fu_111_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(shl_ln_fu_103_p3),64));
-    zext_ln31_6_fu_90_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln31_fu_85_p2),64));
+    zext_ln31_9_fu_90_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln31_fu_85_p2),64));
     zext_ln31_fu_81_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_reg_41),14));
 end behav;

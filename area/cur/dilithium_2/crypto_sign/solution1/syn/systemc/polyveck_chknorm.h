@@ -62,7 +62,7 @@ struct polyveck_chknorm : public sc_module {
     sc_signal< sc_lv<11> > tmp_fu_119_p3;
     sc_signal< sc_lv<12> > zext_ln300_fu_143_p1;
     sc_signal< sc_lv<12> > add_ln300_fu_147_p2;
-    sc_signal< sc_lv<1> > tmp_3_fu_157_p3;
+    sc_signal< sc_lv<1> > tmp_8_fu_157_p3;
     sc_signal< sc_lv<32> > shl_ln301_fu_173_p2;
     sc_signal< sc_lv<32> > t_fu_165_p3;
     sc_signal< sc_lv<32> > and_ln301_fu_179_p2;
@@ -113,7 +113,7 @@ struct polyveck_chknorm : public sc_module {
     void thread_shl_ln301_fu_173_p2();
     void thread_t_6_fu_185_p2();
     void thread_t_fu_165_p3();
-    void thread_tmp_3_fu_157_p3();
+    void thread_tmp_8_fu_157_p3();
     void thread_tmp_fu_119_p3();
     void thread_v_vec_coeffs_address0();
     void thread_v_vec_coeffs_ce0();

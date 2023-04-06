@@ -101,7 +101,7 @@ architecture behav of polyveck_reduce is
 
 
 begin
-    crypto_sign_mac_mibs_U70 : component crypto_sign_mac_mibs
+    crypto_sign_mac_mibs_U69 : component crypto_sign_mac_mibs
     generic map (
         ID => 1,
         NUM_STAGE => 1,

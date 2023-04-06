@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pack_sig'
 ================================================================
-* Date:           Tue Apr  4 22:25:21 2023
+* Date:           Tue Apr  4 23:21:00 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -113,10 +113,10 @@ ST_3 : Operation 19 [1/2] (0.00ns)   --->   "call fastcc void @polyz_pack([5720 
 ST_3 : Operation 20 [1/1] (0.00ns)   --->   "br label %.preheader7" [packing.c:171]   --->   Operation 20 'br' <Predicate = true> <Delay = 0.00>
 
 State 4 <SV = 2> <Delay = 4.55>
-ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%i_2 = phi i7 [ %i_27, %1 ], [ 0, %.preheader6.preheader ]"   --->   Operation 21 'phi' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%i_2 = phi i7 [ %i_28, %1 ], [ 0, %.preheader6.preheader ]"   --->   Operation 21 'phi' 'i_2' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 22 [1/1] (1.23ns)   --->   "%icmp_ln176 = icmp eq i7 %i_2, -44" [packing.c:176]   --->   Operation 22 'icmp' 'icmp_ln176' <Predicate = true> <Delay = 1.23> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%empty_47 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 84, i64 84, i64 84)"   --->   Operation 23 'speclooptripcount' 'empty_47' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 24 [1/1] (1.66ns)   --->   "%i_27 = add i7 %i_2, 1" [packing.c:176]   --->   Operation 24 'add' 'i_27' <Predicate = true> <Delay = 1.66> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 84, i64 84, i64 84)"   --->   Operation 23 'speclooptripcount' 'empty_52' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (1.66ns)   --->   "%i_28 = add i7 %i_2, 1" [packing.c:176]   --->   Operation 24 'add' 'i_28' <Predicate = true> <Delay = 1.66> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 25 [1/1] (0.00ns)   --->   "br i1 %icmp_ln176, label %.preheader5.preheader, label %1" [packing.c:176]   --->   Operation 25 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln177 = zext i7 %i_2 to i12" [packing.c:177]   --->   Operation 26 'zext' 'zext_ln177' <Predicate = (!icmp_ln176)> <Delay = 0.00>
 ST_4 : Operation 27 [1/1] (1.77ns)   --->   "%add_ln177 = add i12 %zext_ln177, -1760" [packing.c:177]   --->   Operation 27 'add' 'add_ln177' <Predicate = (!icmp_ln176)> <Delay = 1.77> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -129,10 +129,10 @@ ST_4 : Operation 33 [1/1] (1.35ns)   --->   "store i32 0, i32* %k_1" [packing.c:
 ST_4 : Operation 34 [1/1] (1.35ns)   --->   "br label %.preheader5" [packing.c:180]   --->   Operation 34 'br' <Predicate = (icmp_ln176)> <Delay = 1.35>
 
 State 5 <SV = 3> <Delay = 1.35>
-ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%i_3 = phi i3 [ %i_28, %4 ], [ 0, %.preheader5.preheader ]"   --->   Operation 35 'phi' 'i_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%i_3 = phi i3 [ %i_29, %4 ], [ 0, %.preheader5.preheader ]"   --->   Operation 35 'phi' 'i_3' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 36 [1/1] (1.00ns)   --->   "%icmp_ln180 = icmp eq i3 %i_3, -4" [packing.c:180]   --->   Operation 36 'icmp' 'icmp_ln180' <Predicate = true> <Delay = 1.00> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%empty_48 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)"   --->   Operation 37 'speclooptripcount' 'empty_48' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 38 [1/1] (1.34ns)   --->   "%i_28 = add i3 %i_3, 1" [packing.c:180]   --->   Operation 38 'add' 'i_28' <Predicate = true> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)"   --->   Operation 37 'speclooptripcount' 'empty_53' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [1/1] (1.34ns)   --->   "%i_29 = add i3 %i_3, 1" [packing.c:180]   --->   Operation 38 'add' 'i_29' <Predicate = true> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 39 [1/1] (0.00ns)   --->   "br i1 %icmp_ln180, label %5, label %.preheader.preheader" [packing.c:180]   --->   Operation 39 'br' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%tmp_s = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_3, i8 0)" [packing.c:182]   --->   Operation 40 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln180)> <Delay = 0.00>
 ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln181 = zext i11 %tmp_s to i12" [packing.c:181]   --->   Operation 41 'zext' 'zext_ln181' <Predicate = (!icmp_ln180)> <Delay = 0.00>
@@ -142,7 +142,7 @@ ST_5 : Operation 43 [1/1] (0.00ns)   --->   "ret void" [packing.c:187]   --->   
 State 6 <SV = 4> <Delay = 4.53>
 ST_6 : Operation 44 [1/1] (0.00ns)   --->   "%j_0 = phi i9 [ 0, %.preheader.preheader ], [ %j, %.preheader.backedge ]"   --->   Operation 44 'phi' 'j_0' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 45 [1/1] (1.34ns)   --->   "%icmp_ln181 = icmp eq i9 %j_0, -256" [packing.c:181]   --->   Operation 45 'icmp' 'icmp_ln181' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 46 [1/1] (0.00ns)   --->   "%empty_49 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 46 'speclooptripcount' 'empty_49' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 46 [1/1] (0.00ns)   --->   "%empty_54 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 46 'speclooptripcount' 'empty_54' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 47 [1/1] (1.73ns)   --->   "%j = add i9 %j_0, 1" [packing.c:181]   --->   Operation 47 'add' 'j' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 48 [1/1] (0.00ns)   --->   "br i1 %icmp_ln181, label %4, label %2" [packing.c:181]   --->   Operation 48 'br' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln182 = zext i9 %j_0 to i12" [packing.c:182]   --->   Operation 49 'zext' 'zext_ln182' <Predicate = (!icmp_ln181)> <Delay = 0.00>
@@ -211,8 +211,8 @@ call_ln172        (call             ) [ 00000000]
 br_ln171          (br               ) [ 01110000]
 i_2               (phi              ) [ 00001000]
 icmp_ln176        (icmp             ) [ 00001000]
-empty_47          (speclooptripcount) [ 00000000]
-i_27              (add              ) [ 00101000]
+empty_52          (speclooptripcount) [ 00000000]
+i_28              (add              ) [ 00101000]
 br_ln176          (br               ) [ 00000000]
 zext_ln177        (zext             ) [ 00000000]
 add_ln177         (add              ) [ 00000000]
@@ -225,8 +225,8 @@ store_ln180       (store            ) [ 00000000]
 br_ln180          (br               ) [ 00001111]
 i_3               (phi              ) [ 00000111]
 icmp_ln180        (icmp             ) [ 00000111]
-empty_48          (speclooptripcount) [ 00000000]
-i_28              (add              ) [ 00001111]
+empty_53          (speclooptripcount) [ 00000000]
+i_29              (add              ) [ 00001111]
 br_ln180          (br               ) [ 00000000]
 tmp_s             (bitconcatenate   ) [ 00000000]
 zext_ln181        (zext             ) [ 00000011]
@@ -234,7 +234,7 @@ br_ln181          (br               ) [ 00000111]
 ret_ln187         (ret              ) [ 00000000]
 j_0               (phi              ) [ 00000011]
 icmp_ln181        (icmp             ) [ 00000111]
-empty_49          (speclooptripcount) [ 00000000]
+empty_54          (speclooptripcount) [ 00000000]
 j                 (add              ) [ 00000111]
 br_ln181          (br               ) [ 00000000]
 zext_ln182        (zext             ) [ 00000000]
@@ -854,7 +854,7 @@ br_ln0            (br               ) [ 00000111]
 </bind>
 </comp>
 
-<comp id="215" class="1004" name="i_27_fu_215">
+<comp id="215" class="1004" name="i_28_fu_215">
 <pin_list>
 <pin id="216" dir="0" index="0" bw="7" slack="0"/>
 <pin id="217" dir="0" index="1" bw="1" slack="0"/>
@@ -862,7 +862,7 @@ br_ln0            (br               ) [ 00000111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="i_27/4 "/>
+<opset="i_28/4 "/>
 </bind>
 </comp>
 
@@ -924,7 +924,7 @@ br_ln0            (br               ) [ 00000111]
 </bind>
 </comp>
 
-<comp id="247" class="1004" name="i_28_fu_247">
+<comp id="247" class="1004" name="i_29_fu_247">
 <pin_list>
 <pin id="248" dir="0" index="0" bw="3" slack="0"/>
 <pin id="249" dir="0" index="1" bw="1" slack="0"/>
@@ -932,7 +932,7 @@ br_ln0            (br               ) [ 00000111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="i_28/5 "/>
+<opset="i_29/5 "/>
 </bind>
 </comp>
 
@@ -1179,13 +1179,13 @@ br_ln0            (br               ) [ 00000111]
 </bind>
 </comp>
 
-<comp id="376" class="1005" name="i_27_reg_376">
+<comp id="376" class="1005" name="i_28_reg_376">
 <pin_list>
 <pin id="377" dir="0" index="0" bw="7" slack="0"/>
 <pin id="378" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
-<opset="i_27 "/>
+<opset="i_28 "/>
 </bind>
 </comp>
 
@@ -1199,13 +1199,13 @@ br_ln0            (br               ) [ 00000111]
 </bind>
 </comp>
 
-<comp id="391" class="1005" name="i_28_reg_391">
+<comp id="391" class="1005" name="i_29_reg_391">
 <pin_list>
 <pin id="392" dir="0" index="0" bw="3" slack="0"/>
 <pin id="393" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
-<opset="i_28 "/>
+<opset="i_29 "/>
 </bind>
 </comp>
 
@@ -1486,7 +1486,7 @@ br_ln0            (br               ) [ 00000111]
 	State 3
 	State 4
 		icmp_ln176 : 1
-		i_27 : 1
+		i_28 : 1
 		br_ln176 : 2
 		zext_ln177 : 1
 		add_ln177 : 2
@@ -1496,7 +1496,7 @@ br_ln0            (br               ) [ 00000111]
 		store_ln180 : 1
 	State 5
 		icmp_ln180 : 1
-		i_28 : 1
+		i_29 : 1
 		br_ln180 : 2
 		tmp_s : 1
 		zext_ln181 : 2
@@ -1538,9 +1538,9 @@ br_ln0            (br               ) [ 00000111]
 |   call   | grp_polyz_pack_fu_160 |  5.4446 |   179   |   532   |
 |----------|-----------------------|---------|---------|---------|
 |          |        i_fu_180       |    0    |    0    |    12   |
-|          |      i_27_fu_215      |    0    |    0    |    15   |
+|          |      i_28_fu_215      |    0    |    0    |    15   |
 |          |    add_ln177_fu_225   |    0    |    0    |    19   |
-|    add   |      i_28_fu_247      |    0    |    0    |    12   |
+|    add   |      i_29_fu_247      |    0    |    0    |    12   |
 |          |        j_fu_271       |    0    |    0    |    16   |
 |          |    add_ln182_fu_281   |    0    |    0    |    18   |
 |          |        k_fu_334       |    0    |    0    |    39   |
@@ -1586,8 +1586,8 @@ N/A
 +-------------------------+--------+
 |h_vec_coeffs_addr_reg_409|   10   |
 |       i_1_reg_113       |    3   |
-|       i_27_reg_376      |    7   |
-|       i_28_reg_391      |    3   |
+|       i_28_reg_376      |    7   |
+|       i_29_reg_391      |    3   |
 |       i_2_reg_125       |    7   |
 |       i_3_reg_136       |    3   |
 |        i_reg_363        |    3   |

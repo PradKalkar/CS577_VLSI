@@ -56,7 +56,7 @@ struct poly_uniform : public sc_module {
     keccak_absorb* grp_keccak_absorb_fu_275;
     keccak_squeezeblocks_2* grp_keccak_squeezeblocks_2_fu_288;
     rej_uniform* grp_rej_uniform_fu_301;
-    crypto_sign_urem_eOg<1,13,9,3,9>* crypto_sign_urem_eOg_U47;
+    crypto_sign_urem_eOg<1,13,9,3,9>* crypto_sign_urem_eOg_U46;
     sc_signal< sc_lv<33> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<8> > t_0_fu_317_p1;
@@ -220,7 +220,7 @@ struct poly_uniform : public sc_module {
     sc_signal< sc_lv<64> > zext_ln450_fu_477_p1;
     sc_signal< sc_lv<64> > shl_ln450_fu_481_p2;
     sc_signal< sc_lv<10> > sext_ln377_fu_501_p1;
-    sc_signal< sc_lv<24> > tmp_5_fu_509_p4;
+    sc_signal< sc_lv<24> > tmp_26_fu_509_p4;
     sc_signal< sc_lv<3> > grp_fu_525_p1;
     sc_signal< sc_lv<9> > grp_fu_525_p2;
     sc_signal< sc_lv<11> > zext_ln378_fu_539_p1;
@@ -403,7 +403,7 @@ struct poly_uniform : public sc_module {
     void thread_sub_ln384_fu_595_p2();
     void thread_t_0_fu_317_p1();
     void thread_t_1_fu_331_p1();
-    void thread_tmp_5_fu_509_p4();
+    void thread_tmp_26_fu_509_p4();
     void thread_tmp_fu_321_p4();
     void thread_trunc_ln31_fu_416_p1();
     void thread_trunc_ln375_1_fu_383_p1();

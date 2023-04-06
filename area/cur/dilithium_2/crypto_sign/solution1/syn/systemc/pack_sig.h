@@ -52,10 +52,10 @@ struct pack_sig : public sc_module {
     sc_signal< sc_lv<11> > or_ln172_fu_202_p2;
     sc_signal< sc_lv<11> > or_ln172_reg_368;
     sc_signal< sc_lv<1> > icmp_ln171_fu_174_p2;
-    sc_signal< sc_lv<7> > i_27_fu_215_p2;
+    sc_signal< sc_lv<7> > i_28_fu_215_p2;
     sc_signal< sc_logic > ap_CS_fsm_state4;
-    sc_signal< sc_lv<3> > i_28_fu_247_p2;
-    sc_signal< sc_lv<3> > i_28_reg_391;
+    sc_signal< sc_lv<3> > i_29_fu_247_p2;
+    sc_signal< sc_lv<3> > i_29_reg_391;
     sc_signal< sc_logic > ap_CS_fsm_state5;
     sc_signal< sc_lv<12> > zext_ln181_fu_261_p1;
     sc_signal< sc_lv<12> > zext_ln181_reg_396;
@@ -159,8 +159,8 @@ struct pack_sig : public sc_module {
     void thread_grp_polyz_pack_fu_160_ap_start();
     void thread_h_vec_coeffs_address0();
     void thread_h_vec_coeffs_ce0();
-    void thread_i_27_fu_215_p2();
-    void thread_i_28_fu_247_p2();
+    void thread_i_28_fu_215_p2();
+    void thread_i_29_fu_247_p2();
     void thread_i_fu_180_p2();
     void thread_icmp_ln171_fu_174_p2();
     void thread_icmp_ln176_fu_209_p2();

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'polyvecl_uniform_gam'" level="0">
-<item name = "Date">Tue Apr  4 22:25:18 2023
+<item name = "Date">Tue Apr  4 23:20:58 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">crypto_sign</item>
@@ -32,7 +32,7 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_keccak_absorb_fu_395">keccak_absorb, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_keccak_squeezeblocks_1_fu_408">keccak_squeezeblocks_1, 1201, 1201, 12.010 ms, 12.010 ms, 1201, 1201, none</column>
+<column name="grp_keccak_squeezeblocks_fu_408">keccak_squeezeblocks, 1201, 1201, 12.010 ms, 12.010 ms, 1201, 1201, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

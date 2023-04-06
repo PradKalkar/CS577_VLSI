@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'invntt_tomont'
 ================================================================
-* Date:           Tue Apr  4 22:25:19 2023
+* Date:           Tue Apr  4 23:20:59 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -102,17 +102,17 @@ ST_1 : Operation 16 [1/1] (1.35ns)   --->   "br label %1" [ntt.c:83]   --->   Op
 State 2 <SV = 1> <Delay = 1.35>
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%len_0 = phi i9 [ 1, %0 ], [ %len, %6 ]"   --->   Operation 17 'phi' 'len_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln83 = zext i9 %len_0 to i10" [ntt.c:83]   --->   Operation 18 'zext' 'zext_ln83' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_11 = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %len_0, i32 8)" [ntt.c:83]   --->   Operation 19 'bitselect' 'tmp_11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_32 = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %len_0, i32 8)" [ntt.c:83]   --->   Operation 19 'bitselect' 'tmp_32' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 20 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %tmp_11, label %.preheader.preheader, label %.preheader1.preheader" [ntt.c:83]   --->   Operation 21 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (1.35ns)   --->   "br label %.preheader1" [ntt.c:84]   --->   Operation 22 'br' <Predicate = (!tmp_11)> <Delay = 1.35>
-ST_2 : Operation 23 [1/1] (1.35ns)   --->   "br label %.preheader" [ntt.c:95]   --->   Operation 23 'br' <Predicate = (tmp_11)> <Delay = 1.35>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %tmp_32, label %.preheader.preheader, label %.preheader1.preheader" [ntt.c:83]   --->   Operation 21 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (1.35ns)   --->   "br label %.preheader1" [ntt.c:84]   --->   Operation 22 'br' <Predicate = (!tmp_32)> <Delay = 1.35>
+ST_2 : Operation 23 [1/1] (1.35ns)   --->   "br label %.preheader" [ntt.c:95]   --->   Operation 23 'br' <Predicate = (tmp_32)> <Delay = 1.35>
 
 State 3 <SV = 2> <Delay = 4.95>
 ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%j = phi i10 [ %add_ln84, %5 ], [ 0, %.preheader1.preheader ]" [ntt.c:84]   --->   Operation 24 'phi' 'j' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln84 = zext i10 %j to i32" [ntt.c:84]   --->   Operation 25 'zext' 'zext_ln84' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_12 = call i2 @_ssdm_op_PartSelect.i2.i10.i32.i32(i10 %j, i32 8, i32 9)" [ntt.c:84]   --->   Operation 26 'partselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 27 [1/1] (0.79ns)   --->   "%icmp_ln84 = icmp eq i2 %tmp_12, 0" [ntt.c:84]   --->   Operation 27 'icmp' 'icmp_ln84' <Predicate = true> <Delay = 0.79> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_33 = call i2 @_ssdm_op_PartSelect.i2.i10.i32.i32(i10 %j, i32 8, i32 9)" [ntt.c:84]   --->   Operation 26 'partselect' 'tmp_33' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.79ns)   --->   "%icmp_ln84 = icmp eq i2 %tmp_33, 0" [ntt.c:84]   --->   Operation 27 'icmp' 'icmp_ln84' <Predicate = true> <Delay = 0.79> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 28 [1/1] (0.00ns)   --->   "br i1 %icmp_ln84, label %2, label %6" [ntt.c:84]   --->   Operation 28 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%k_4_load = load i32* %k_4" [ntt.c:85]   --->   Operation 29 'load' 'k_4_load' <Predicate = (icmp_ln84)> <Delay = 0.00>
 ST_3 : Operation 30 [1/1] (2.18ns)   --->   "%k = add i32 -1, %k_4_load" [ntt.c:85]   --->   Operation 30 'add' 'k' <Predicate = (icmp_ln84)> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -127,10 +127,10 @@ ST_4 : Operation 36 [1/2] (2.77ns)   --->   "%zetas_load = load i23* %zetas_addr
 ST_4 : Operation 37 [1/1] (1.98ns)   --->   "%zeta = sub i23 0, %zetas_load" [ntt.c:85]   --->   Operation 37 'sub' 'zeta' <Predicate = true> <Delay = 1.98> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 38 [1/1] (1.74ns)   --->   "%add_ln86 = add i10 %zext_ln83, %j" [ntt.c:86]   --->   Operation 38 'add' 'add_ln86' <Predicate = true> <Delay = 1.74> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln86 = zext i10 %add_ln86 to i32" [ntt.c:86]   --->   Operation 39 'zext' 'zext_ln86' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 40 [1/1] (1.43ns)   --->   "%empty_80 = icmp ugt i10 %j, %add_ln86" [ntt.c:84]   --->   Operation 40 'icmp' 'empty_80' <Predicate = true> <Delay = 1.43> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 40 [1/1] (1.43ns)   --->   "%empty_81 = icmp ugt i10 %j, %add_ln86" [ntt.c:84]   --->   Operation 40 'icmp' 'empty_81' <Predicate = true> <Delay = 1.43> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%trunc_ln84 = trunc i10 %j to i9" [ntt.c:84]   --->   Operation 41 'trunc' 'trunc_ln84' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 42 [1/1] (1.73ns)   --->   "%add_ln84_1 = add i9 %trunc_ln84, %len_0" [ntt.c:84]   --->   Operation 42 'add' 'add_ln84_1' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 43 [1/1] (1.07ns)   --->   "%start = select i1 %empty_80, i9 %trunc_ln84, i9 %add_ln84_1" [ntt.c:84]   --->   Operation 43 'select' 'start' <Predicate = true> <Delay = 1.07> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.07> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 43 [1/1] (1.07ns)   --->   "%start = select i1 %empty_81, i9 %trunc_ln84, i9 %add_ln84_1" [ntt.c:84]   --->   Operation 43 'select' 'start' <Predicate = true> <Delay = 1.07> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.07> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln84_1 = zext i9 %start to i10" [ntt.c:84]   --->   Operation 44 'zext' 'zext_ln84_1' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%sext_ln86 = sext i23 %zeta to i54" [ntt.c:86]   --->   Operation 45 'sext' 'sext_ln86' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 46 [1/1] (1.35ns)   --->   "br label %3" [ntt.c:86]   --->   Operation 46 'br' <Predicate = true> <Delay = 1.35>
@@ -185,7 +185,7 @@ ST_8 : Operation 85 [1/1] (0.00ns)   --->   "br label %3" [ntt.c:86]   --->   Op
 State 9 <SV = 2> <Delay = 4.53>
 ST_9 : Operation 86 [1/1] (0.00ns)   --->   "%j_1 = phi i9 [ %j_3, %7 ], [ 0, %.preheader.preheader ]"   --->   Operation 86 'phi' 'j_1' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 87 [1/1] (1.34ns)   --->   "%icmp_ln95 = icmp eq i9 %j_1, -256" [ntt.c:95]   --->   Operation 87 'icmp' 'icmp_ln95' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 88 [1/1] (0.00ns)   --->   "%empty_81 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 88 'speclooptripcount' 'empty_81' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 88 [1/1] (0.00ns)   --->   "%empty_82 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 88 'speclooptripcount' 'empty_82' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 89 [1/1] (1.73ns)   --->   "%j_3 = add i9 %j_1, 1" [ntt.c:95]   --->   Operation 89 'add' 'j_3' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_9 : Operation 90 [1/1] (0.00ns)   --->   "br i1 %icmp_ln95, label %8, label %7" [ntt.c:95]   --->   Operation 90 'br' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln96 = zext i9 %j_1 to i12" [ntt.c:96]   --->   Operation 91 'zext' 'zext_ln96' <Predicate = (!icmp_ln95)> <Delay = 0.00>

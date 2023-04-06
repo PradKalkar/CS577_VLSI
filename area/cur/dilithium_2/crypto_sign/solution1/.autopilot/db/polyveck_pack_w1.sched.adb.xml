@@ -343,10 +343,10 @@ polyw1_pack.exit:4  br i1 %icmp_ln418, label %4, label %1
 
 <Node id="23" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:3  %empty_37 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
+:3  %empty_39 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
 
 ]]></Node>
-<StgValue><ssdm name="empty_37"/></StgValue>
+<StgValue><ssdm name="empty_39"/></StgValue>
 </operation>
 
 <operation id="25" st_id="3" stage="1" lat="1">
@@ -501,10 +501,10 @@ polyw1_pack.exit:4  br i1 %icmp_ln418, label %4, label %1
 
 <Node id="42" bw="11" op_0_bw="11" op_1_bw="3" op_2_bw="8">
 <![CDATA[
-:15  %tmp_9 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln917)
+:15  %tmp_7 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln917)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_9"/></StgValue>
+<StgValue><ssdm name="tmp_7"/></StgValue>
 </operation>
 
 <operation id="35" st_id="3" stage="1" lat="1">
@@ -517,7 +517,7 @@ polyw1_pack.exit:4  br i1 %icmp_ln418, label %4, label %1
 
 <Node id="43" bw="64" op_0_bw="11">
 <![CDATA[
-:16  %zext_ln917 = zext i11 %tmp_9 to i64
+:16  %zext_ln917 = zext i11 %tmp_7 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln917"/></StgValue>
@@ -823,10 +823,10 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 
 <Node id="58" bw="11" op_0_bw="11" op_1_bw="3" op_2_bw="8">
 <![CDATA[
-:31  %tmp_10 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln919)
+:31  %tmp_8 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln919)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_10"/></StgValue>
+<StgValue><ssdm name="tmp_8"/></StgValue>
 </operation>
 
 <operation id="56" st_id="4" stage="1" lat="1">
@@ -838,7 +838,7 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 
 <Node id="59" bw="64" op_0_bw="11">
 <![CDATA[
-:32  %zext_ln919 = zext i11 %tmp_10 to i64
+:32  %zext_ln919 = zext i11 %tmp_8 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln919"/></StgValue>
@@ -898,10 +898,10 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 
 <Node id="74" bw="11" op_0_bw="11" op_1_bw="3" op_2_bw="8">
 <![CDATA[
-:47  %tmp_11 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln921)
+:47  %tmp_9 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln921)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_11"/></StgValue>
+<StgValue><ssdm name="tmp_9"/></StgValue>
 </operation>
 
 <operation id="61" st_id="4" stage="1" lat="1">
@@ -913,7 +913,7 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 
 <Node id="75" bw="64" op_0_bw="11">
 <![CDATA[
-:48  %zext_ln921 = zext i11 %tmp_11 to i64
+:48  %zext_ln921 = zext i11 %tmp_9 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln921"/></StgValue>

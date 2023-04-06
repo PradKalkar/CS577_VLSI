@@ -55,7 +55,7 @@ wire   [63:0] r_fu_121_p2;
 wire    ap_CS_fsm_state3;
 reg   [3:0] i_0_reg_41;
 reg   [63:0] r_0_reg_53;
-wire   [63:0] zext_ln31_6_fu_90_p1;
+wire   [63:0] zext_ln31_9_fu_90_p1;
 wire   [13:0] zext_ln31_fu_81_p1;
 wire   [13:0] add_ln31_fu_85_p2;
 wire   [2:0] trunc_ln31_3_fu_99_p1;
@@ -205,13 +205,13 @@ assign trunc_ln31_3_fu_99_p1 = i_0_reg_41[2:0];
 
 assign trunc_ln31_fu_65_p1 = x_offset[13:0];
 
-assign x_address0 = zext_ln31_6_fu_90_p1;
+assign x_address0 = zext_ln31_9_fu_90_p1;
 
 assign zext_ln31_1_fu_95_p1 = x_q0;
 
 assign zext_ln31_2_fu_111_p1 = shl_ln_fu_103_p3;
 
-assign zext_ln31_6_fu_90_p1 = add_ln31_fu_85_p2;
+assign zext_ln31_9_fu_90_p1 = add_ln31_fu_85_p2;
 
 assign zext_ln31_fu_81_p1 = i_0_reg_41;
 

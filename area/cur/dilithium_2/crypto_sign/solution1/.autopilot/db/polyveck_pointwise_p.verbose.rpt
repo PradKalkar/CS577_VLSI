@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'polyveck_pointwise_p'
 ================================================================
-* Date:           Tue Apr  4 22:25:43 2023
+* Date:           Tue Apr  4 23:21:18 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -120,7 +120,7 @@
     |i_18_reg_227           |   9|   0|    9|          0|
     |i_reg_214              |   3|   0|    3|          0|
     |zext_ln176_reg_219     |   3|   0|   12|          9|
-    |zext_ln181_14_reg_232  |  12|   0|   64|         52|
+    |zext_ln181_15_reg_232  |  12|   0|   64|         52|
     +-----------------------+----+----+-----+-----------+
     |Total                  |  43|   0|  104|         61|
     +-----------------------+----+----+-----+-----------+
@@ -207,21 +207,21 @@ ST_2 : Operation 14 [1/1] (0.00ns)   --->   "ret void" [polyvec.c:307]   --->   
 State 3 <SV = 2> <Delay = 4.53>
 ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%i_0_i = phi i9 [ 0, %1 ], [ %i_18, %3 ]"   --->   Operation 15 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 16 [1/1] (1.34ns)   --->   "%icmp_ln180 = icmp eq i9 %i_0_i, -256" [poly.c:180->polyvec.c:306]   --->   Operation 16 'icmp' 'icmp_ln180' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%empty_36 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 17 'speclooptripcount' 'empty_36' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%empty_38 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 17 'speclooptripcount' 'empty_38' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 18 [1/1] (1.73ns)   --->   "%i_18 = add i9 %i_0_i, 1" [poly.c:180->polyvec.c:306]   --->   Operation 18 'add' 'i_18' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 19 [1/1] (0.00ns)   --->   "br i1 %icmp_ln180, label %poly_pointwise_montgomery.2.exit.loopexit, label %3" [poly.c:180->polyvec.c:306]   --->   Operation 19 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln181 = zext i9 %i_0_i to i64" [poly.c:181->polyvec.c:306]   --->   Operation 20 'zext' 'zext_ln181' <Predicate = (!icmp_ln180)> <Delay = 0.00>
-ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln181_13 = zext i9 %i_0_i to i12" [poly.c:181->polyvec.c:306]   --->   Operation 21 'zext' 'zext_ln181_13' <Predicate = (!icmp_ln180)> <Delay = 0.00>
-ST_3 : Operation 22 [1/1] (1.76ns)   --->   "%add_ln181 = add i12 %zext_ln181_13, %zext_ln176" [poly.c:181->polyvec.c:306]   --->   Operation 22 'add' 'add_ln181' <Predicate = (!icmp_ln180)> <Delay = 1.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln181_14 = zext i12 %add_ln181 to i64" [poly.c:181->polyvec.c:306]   --->   Operation 23 'zext' 'zext_ln181_14' <Predicate = (!icmp_ln180)> <Delay = 0.00>
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%v_vec_coeffs_addr = getelementptr [1024 x i32]* %v_vec_coeffs, i64 0, i64 %zext_ln181_14" [poly.c:181->polyvec.c:306]   --->   Operation 24 'getelementptr' 'v_vec_coeffs_addr' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln181_14 = zext i9 %i_0_i to i12" [poly.c:181->polyvec.c:306]   --->   Operation 21 'zext' 'zext_ln181_14' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (1.76ns)   --->   "%add_ln181 = add i12 %zext_ln181_14, %zext_ln176" [poly.c:181->polyvec.c:306]   --->   Operation 22 'add' 'add_ln181' <Predicate = (!icmp_ln180)> <Delay = 1.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln181_15 = zext i12 %add_ln181 to i64" [poly.c:181->polyvec.c:306]   --->   Operation 23 'zext' 'zext_ln181_15' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%v_vec_coeffs_addr = getelementptr [1024 x i32]* %v_vec_coeffs, i64 0, i64 %zext_ln181_15" [poly.c:181->polyvec.c:306]   --->   Operation 24 'getelementptr' 'v_vec_coeffs_addr' <Predicate = (!icmp_ln180)> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%a_coeffs_addr = getelementptr [256 x i32]* %a_coeffs, i64 0, i64 %zext_ln181" [poly.c:181->polyvec.c:306]   --->   Operation 25 'getelementptr' 'a_coeffs_addr' <Predicate = (!icmp_ln180)> <Delay = 0.00>
 ST_3 : Operation 26 [2/2] (2.77ns)   --->   "%a_coeffs_load = load i32* %a_coeffs_addr, align 4" [poly.c:181->polyvec.c:306]   --->   Operation 26 'load' 'a_coeffs_load' <Predicate = (!icmp_ln180)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
 ST_3 : Operation 27 [2/2] (2.77ns)   --->   "%v_vec_coeffs_load = load i32* %v_vec_coeffs_addr, align 4" [poly.c:181->polyvec.c:306]   --->   Operation 27 'load' 'v_vec_coeffs_load' <Predicate = (!icmp_ln180)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
 ST_3 : Operation 28 [1/1] (0.00ns)   --->   "br label %poly_pointwise_montgomery.2.exit"   --->   Operation 28 'br' <Predicate = (icmp_ln180)> <Delay = 0.00>
 
 State 4 <SV = 3> <Delay = 29.1>
-ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%r_vec_coeffs_addr = getelementptr [1024 x i32]* %r_vec_coeffs, i64 0, i64 %zext_ln181_14" [poly.c:181->polyvec.c:306]   --->   Operation 29 'getelementptr' 'r_vec_coeffs_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%r_vec_coeffs_addr = getelementptr [1024 x i32]* %r_vec_coeffs, i64 0, i64 %zext_ln181_15" [poly.c:181->polyvec.c:306]   --->   Operation 29 'getelementptr' 'r_vec_coeffs_addr' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 30 [1/2] (2.77ns)   --->   "%a_coeffs_load = load i32* %a_coeffs_addr, align 4" [poly.c:181->polyvec.c:306]   --->   Operation 30 'load' 'a_coeffs_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
 ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%sext_ln181 = sext i32 %a_coeffs_load to i64" [poly.c:181->polyvec.c:306]   --->   Operation 31 'sext' 'sext_ln181' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 32 [1/2] (2.77ns)   --->   "%v_vec_coeffs_load = load i32* %v_vec_coeffs_addr, align 4" [poly.c:181->polyvec.c:306]   --->   Operation 32 'load' 'v_vec_coeffs_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
@@ -270,13 +270,13 @@ br_ln180          (br               ) [ 00111]
 ret_ln307         (ret              ) [ 00000]
 i_0_i             (phi              ) [ 00010]
 icmp_ln180        (icmp             ) [ 00111]
-empty_36          (speclooptripcount) [ 00000]
+empty_38          (speclooptripcount) [ 00000]
 i_18              (add              ) [ 00111]
 br_ln180          (br               ) [ 00000]
 zext_ln181        (zext             ) [ 00000]
-zext_ln181_13     (zext             ) [ 00000]
+zext_ln181_14     (zext             ) [ 00000]
 add_ln181         (add              ) [ 00000]
-zext_ln181_14     (zext             ) [ 00001]
+zext_ln181_15     (zext             ) [ 00001]
 v_vec_coeffs_addr (getelementptr    ) [ 00001]
 a_coeffs_addr     (getelementptr    ) [ 00001]
 br_ln0            (br               ) [ 01111]
@@ -692,14 +692,14 @@ br_ln180          (br               ) [ 00111]
 </bind>
 </comp>
 
-<comp id="142" class="1004" name="zext_ln181_13_fu_142">
+<comp id="142" class="1004" name="zext_ln181_14_fu_142">
 <pin_list>
 <pin id="143" dir="0" index="0" bw="9" slack="0"/>
 <pin id="144" dir="1" index="1" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln181_13/3 "/>
+<opset="zext_ln181_14/3 "/>
 </bind>
 </comp>
 
@@ -715,14 +715,14 @@ br_ln180          (br               ) [ 00111]
 </bind>
 </comp>
 
-<comp id="151" class="1004" name="zext_ln181_14_fu_151">
+<comp id="151" class="1004" name="zext_ln181_15_fu_151">
 <pin_list>
 <pin id="152" dir="0" index="0" bw="12" slack="0"/>
 <pin id="153" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln181_14/3 "/>
+<opset="zext_ln181_15/3 "/>
 </bind>
 </comp>
 
@@ -873,13 +873,13 @@ br_ln180          (br               ) [ 00111]
 </bind>
 </comp>
 
-<comp id="232" class="1005" name="zext_ln181_14_reg_232">
+<comp id="232" class="1005" name="zext_ln181_15_reg_232">
 <pin_list>
 <pin id="233" dir="0" index="0" bw="64" slack="1"/>
 <pin id="234" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
-<opset="zext_ln181_14 "/>
+<opset="zext_ln181_15 "/>
 </bind>
 </comp>
 
@@ -1052,9 +1052,9 @@ br_ln180          (br               ) [ 00111]
 		i_18 : 1
 		br_ln180 : 2
 		zext_ln181 : 1
-		zext_ln181_13 : 1
+		zext_ln181_14 : 1
 		add_ln181 : 2
-		zext_ln181_14 : 3
+		zext_ln181_15 : 3
 		v_vec_coeffs_addr : 4
 		a_coeffs_addr : 2
 		a_coeffs_load : 3
@@ -1097,8 +1097,8 @@ br_ln180          (br               ) [ 00111]
 |----------|----------------------|---------|---------|---------|
 |          |   zext_ln176_fu_121  |    0    |    0    |    0    |
 |   zext   |   zext_ln181_fu_137  |    0    |    0    |    0    |
-|          | zext_ln181_13_fu_142 |    0    |    0    |    0    |
-|          | zext_ln181_14_fu_151 |    0    |    0    |    0    |
+|          | zext_ln181_14_fu_142 |    0    |    0    |    0    |
+|          | zext_ln181_15_fu_151 |    0    |    0    |    0    |
 |----------|----------------------|---------|---------|---------|
 |          |   sext_ln181_fu_156  |    0    |    0    |    0    |
 |   sext   |  sext_ln181_4_fu_160 |    0    |    0    |    0    |
@@ -1126,7 +1126,7 @@ N/A
 |        i_reg_214        |    3   |
 |v_vec_coeffs_addr_reg_237|   10   |
 |    zext_ln176_reg_219   |   12   |
-|  zext_ln181_14_reg_232  |   64   |
+|  zext_ln181_15_reg_232  |   64   |
 +-------------------------+--------+
 |          Total          |   118  |
 +-------------------------+--------+

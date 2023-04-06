@@ -203,22 +203,22 @@ architecture behav of polyvecl_uniform_gam is
     signal grp_keccak_absorb_fu_395_s_ce1 : STD_LOGIC;
     signal grp_keccak_absorb_fu_395_s_we1 : STD_LOGIC;
     signal grp_keccak_absorb_fu_395_s_d1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_keccak_squeezeblocks_1_fu_408_ap_start : STD_LOGIC;
-    signal grp_keccak_squeezeblocks_1_fu_408_ap_done : STD_LOGIC;
-    signal grp_keccak_squeezeblocks_1_fu_408_ap_idle : STD_LOGIC;
-    signal grp_keccak_squeezeblocks_1_fu_408_ap_ready : STD_LOGIC;
-    signal grp_keccak_squeezeblocks_1_fu_408_out_r_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_keccak_squeezeblocks_1_fu_408_out_r_ce0 : STD_LOGIC;
-    signal grp_keccak_squeezeblocks_1_fu_408_out_r_we0 : STD_LOGIC;
-    signal grp_keccak_squeezeblocks_1_fu_408_out_r_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_keccak_squeezeblocks_1_fu_408_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_keccak_squeezeblocks_1_fu_408_s_ce0 : STD_LOGIC;
-    signal grp_keccak_squeezeblocks_1_fu_408_s_we0 : STD_LOGIC;
-    signal grp_keccak_squeezeblocks_1_fu_408_s_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_keccak_squeezeblocks_1_fu_408_s_address1 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_keccak_squeezeblocks_1_fu_408_s_ce1 : STD_LOGIC;
-    signal grp_keccak_squeezeblocks_1_fu_408_s_we1 : STD_LOGIC;
-    signal grp_keccak_squeezeblocks_1_fu_408_s_d1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_keccak_squeezeblocks_fu_408_ap_start : STD_LOGIC;
+    signal grp_keccak_squeezeblocks_fu_408_ap_done : STD_LOGIC;
+    signal grp_keccak_squeezeblocks_fu_408_ap_idle : STD_LOGIC;
+    signal grp_keccak_squeezeblocks_fu_408_ap_ready : STD_LOGIC;
+    signal grp_keccak_squeezeblocks_fu_408_out_r_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_keccak_squeezeblocks_fu_408_out_r_ce0 : STD_LOGIC;
+    signal grp_keccak_squeezeblocks_fu_408_out_r_we0 : STD_LOGIC;
+    signal grp_keccak_squeezeblocks_fu_408_out_r_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_keccak_squeezeblocks_fu_408_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_keccak_squeezeblocks_fu_408_s_ce0 : STD_LOGIC;
+    signal grp_keccak_squeezeblocks_fu_408_s_we0 : STD_LOGIC;
+    signal grp_keccak_squeezeblocks_fu_408_s_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_keccak_squeezeblocks_fu_408_s_address1 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_keccak_squeezeblocks_fu_408_s_ce1 : STD_LOGIC;
+    signal grp_keccak_squeezeblocks_fu_408_s_we1 : STD_LOGIC;
+    signal grp_keccak_squeezeblocks_fu_408_s_d1 : STD_LOGIC_VECTOR (63 downto 0);
     signal i_0_reg_326 : STD_LOGIC_VECTOR (2 downto 0);
     signal i_0_i_i_i_i_reg_338 : STD_LOGIC_VECTOR (4 downto 0);
     signal icmp_ln362_fu_479_p2 : STD_LOGIC_VECTOR (0 downto 0);
@@ -233,7 +233,7 @@ architecture behav of polyvecl_uniform_gam is
     signal ap_CS_fsm_state20 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state20 : signal is "none";
     signal grp_keccak_absorb_fu_395_ap_start_reg : STD_LOGIC := '0';
-    signal grp_keccak_squeezeblocks_1_fu_408_ap_start_reg : STD_LOGIC := '0';
+    signal grp_keccak_squeezeblocks_fu_408_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state13 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state13 : signal is "none";
     signal zext_ln363_fu_491_p1 : STD_LOGIC_VECTOR (63 downto 0);
@@ -356,7 +356,7 @@ architecture behav of polyvecl_uniform_gam is
     end component;
 
 
-    component keccak_squeezeblocks_1 IS
+    component keccak_squeezeblocks IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -434,7 +434,7 @@ begin
         address0 => buf_address0,
         ce0 => buf_ce0,
         we0 => buf_we0,
-        d0 => grp_keccak_squeezeblocks_1_fu_408_out_r_d0,
+        d0 => grp_keccak_squeezeblocks_fu_408_out_r_d0,
         q0 => buf_q0,
         address1 => buf_address1,
         ce1 => buf_ce1,
@@ -483,27 +483,27 @@ begin
         m_1_read => t_1_reg_1068,
         ap_return => grp_keccak_absorb_fu_395_ap_return);
 
-    grp_keccak_squeezeblocks_1_fu_408 : component keccak_squeezeblocks_1
+    grp_keccak_squeezeblocks_fu_408 : component keccak_squeezeblocks
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_keccak_squeezeblocks_1_fu_408_ap_start,
-        ap_done => grp_keccak_squeezeblocks_1_fu_408_ap_done,
-        ap_idle => grp_keccak_squeezeblocks_1_fu_408_ap_idle,
-        ap_ready => grp_keccak_squeezeblocks_1_fu_408_ap_ready,
-        out_r_address0 => grp_keccak_squeezeblocks_1_fu_408_out_r_address0,
-        out_r_ce0 => grp_keccak_squeezeblocks_1_fu_408_out_r_ce0,
-        out_r_we0 => grp_keccak_squeezeblocks_1_fu_408_out_r_we0,
-        out_r_d0 => grp_keccak_squeezeblocks_1_fu_408_out_r_d0,
-        s_address0 => grp_keccak_squeezeblocks_1_fu_408_s_address0,
-        s_ce0 => grp_keccak_squeezeblocks_1_fu_408_s_ce0,
-        s_we0 => grp_keccak_squeezeblocks_1_fu_408_s_we0,
-        s_d0 => grp_keccak_squeezeblocks_1_fu_408_s_d0,
+        ap_start => grp_keccak_squeezeblocks_fu_408_ap_start,
+        ap_done => grp_keccak_squeezeblocks_fu_408_ap_done,
+        ap_idle => grp_keccak_squeezeblocks_fu_408_ap_idle,
+        ap_ready => grp_keccak_squeezeblocks_fu_408_ap_ready,
+        out_r_address0 => grp_keccak_squeezeblocks_fu_408_out_r_address0,
+        out_r_ce0 => grp_keccak_squeezeblocks_fu_408_out_r_ce0,
+        out_r_we0 => grp_keccak_squeezeblocks_fu_408_out_r_we0,
+        out_r_d0 => grp_keccak_squeezeblocks_fu_408_out_r_d0,
+        s_address0 => grp_keccak_squeezeblocks_fu_408_s_address0,
+        s_ce0 => grp_keccak_squeezeblocks_fu_408_s_ce0,
+        s_we0 => grp_keccak_squeezeblocks_fu_408_s_we0,
+        s_d0 => grp_keccak_squeezeblocks_fu_408_s_d0,
         s_q0 => state_s_q0,
-        s_address1 => grp_keccak_squeezeblocks_1_fu_408_s_address1,
-        s_ce1 => grp_keccak_squeezeblocks_1_fu_408_s_ce1,
-        s_we1 => grp_keccak_squeezeblocks_1_fu_408_s_we1,
-        s_d1 => grp_keccak_squeezeblocks_1_fu_408_s_d1,
+        s_address1 => grp_keccak_squeezeblocks_fu_408_s_address1,
+        s_ce1 => grp_keccak_squeezeblocks_fu_408_s_ce1,
+        s_we1 => grp_keccak_squeezeblocks_fu_408_s_we1,
+        s_d1 => grp_keccak_squeezeblocks_fu_408_s_d1,
         s_q1 => state_s_q1);
 
 
@@ -538,16 +538,16 @@ begin
     end process;
 
 
-    grp_keccak_squeezeblocks_1_fu_408_ap_start_reg_assign_proc : process(ap_clk)
+    grp_keccak_squeezeblocks_fu_408_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_keccak_squeezeblocks_1_fu_408_ap_start_reg <= ap_const_logic_0;
+                grp_keccak_squeezeblocks_fu_408_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-                    grp_keccak_squeezeblocks_1_fu_408_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_keccak_squeezeblocks_1_fu_408_ap_ready = ap_const_logic_1)) then 
-                    grp_keccak_squeezeblocks_1_fu_408_ap_start_reg <= ap_const_logic_0;
+                    grp_keccak_squeezeblocks_fu_408_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_keccak_squeezeblocks_fu_408_ap_ready = ap_const_logic_1)) then 
+                    grp_keccak_squeezeblocks_fu_408_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -581,7 +581,7 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
                 i_0_i_reg_384 <= i_12_reg_1135;
-            elsif (((grp_keccak_squeezeblocks_1_fu_408_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state14))) then 
+            elsif (((grp_keccak_squeezeblocks_fu_408_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state14))) then 
                 i_0_i_reg_384 <= ap_const_lv7_0;
             end if; 
         end if;
@@ -731,7 +731,7 @@ begin
     state_s_addr_3_reg_1112(4 downto 3) <= "00";
     shl_ln855_1_reg_1183(1 downto 0) <= "00";
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, icmp_ln46_fu_439_p2, ap_CS_fsm_state3, ap_CS_fsm_state4, icmp_ln416_fu_500_p2, ap_CS_fsm_state5, icmp_ln30_fu_524_p2, ap_CS_fsm_state8, grp_keccak_absorb_fu_395_ap_done, ap_CS_fsm_state15, icmp_ln854_fu_647_p2, grp_keccak_squeezeblocks_1_fu_408_ap_done, icmp_ln362_fu_479_p2, ap_CS_fsm_state14)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, icmp_ln46_fu_439_p2, ap_CS_fsm_state3, ap_CS_fsm_state4, icmp_ln416_fu_500_p2, ap_CS_fsm_state5, icmp_ln30_fu_524_p2, ap_CS_fsm_state8, grp_keccak_absorb_fu_395_ap_done, ap_CS_fsm_state15, icmp_ln854_fu_647_p2, grp_keccak_squeezeblocks_fu_408_ap_done, icmp_ln362_fu_479_p2, ap_CS_fsm_state14)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -785,7 +785,7 @@ begin
             when ap_ST_fsm_state13 => 
                 ap_NS_fsm <= ap_ST_fsm_state14;
             when ap_ST_fsm_state14 => 
-                if (((grp_keccak_squeezeblocks_1_fu_408_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state14))) then
+                if (((grp_keccak_squeezeblocks_fu_408_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state14))) then
                     ap_NS_fsm <= ap_ST_fsm_state15;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state14;
@@ -873,7 +873,7 @@ begin
     end process;
 
 
-    buf_address0_assign_proc : process(ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state15, grp_keccak_squeezeblocks_1_fu_408_out_r_address0, ap_CS_fsm_state14, zext_ln855_1_fu_681_p1, zext_ln856_fu_691_p1, zext_ln862_fu_753_p1, zext_ln867_fu_858_p1, zext_ln872_fu_955_p1)
+    buf_address0_assign_proc : process(ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state15, grp_keccak_squeezeblocks_fu_408_out_r_address0, ap_CS_fsm_state14, zext_ln855_1_fu_681_p1, zext_ln856_fu_691_p1, zext_ln862_fu_753_p1, zext_ln867_fu_858_p1, zext_ln872_fu_955_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state19)) then 
             buf_address0 <= zext_ln872_fu_955_p1(10 - 1 downto 0);
@@ -886,7 +886,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state15)) then 
             buf_address0 <= zext_ln855_1_fu_681_p1(10 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            buf_address0 <= grp_keccak_squeezeblocks_1_fu_408_out_r_address0;
+            buf_address0 <= grp_keccak_squeezeblocks_fu_408_out_r_address0;
         else 
             buf_address0 <= "XXXXXXXXXX";
         end if; 
@@ -909,12 +909,12 @@ begin
     end process;
 
 
-    buf_ce0_assign_proc : process(ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state15, grp_keccak_squeezeblocks_1_fu_408_out_r_ce0, ap_CS_fsm_state14)
+    buf_ce0_assign_proc : process(ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state15, grp_keccak_squeezeblocks_fu_408_out_r_ce0, ap_CS_fsm_state14)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state16) or (ap_const_logic_1 = ap_CS_fsm_state15))) then 
             buf_ce0 <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            buf_ce0 <= grp_keccak_squeezeblocks_1_fu_408_out_r_ce0;
+            buf_ce0 <= grp_keccak_squeezeblocks_fu_408_out_r_ce0;
         else 
             buf_ce0 <= ap_const_logic_0;
         end if; 
@@ -931,17 +931,17 @@ begin
     end process;
 
 
-    buf_we0_assign_proc : process(grp_keccak_squeezeblocks_1_fu_408_out_r_we0, ap_CS_fsm_state14)
+    buf_we0_assign_proc : process(grp_keccak_squeezeblocks_fu_408_out_r_we0, ap_CS_fsm_state14)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            buf_we0 <= grp_keccak_squeezeblocks_1_fu_408_out_r_we0;
+            buf_we0 <= grp_keccak_squeezeblocks_fu_408_out_r_we0;
         else 
             buf_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
     grp_keccak_absorb_fu_395_ap_start <= grp_keccak_absorb_fu_395_ap_start_reg;
-    grp_keccak_squeezeblocks_1_fu_408_ap_start <= grp_keccak_squeezeblocks_1_fu_408_ap_start_reg;
+    grp_keccak_squeezeblocks_fu_408_ap_start <= grp_keccak_squeezeblocks_fu_408_ap_start_reg;
     i_11_fu_485_p2 <= std_logic_vector(unsigned(i_0_i_i_i_i_reg_338) + unsigned(ap_const_lv5_1));
     i_12_fu_653_p2 <= std_logic_vector(unsigned(i_0_i_reg_384) + unsigned(ap_const_lv7_1));
     i_13_fu_530_p2 <= std_logic_vector(unsigned(i_0_i1_i_reg_360) + unsigned(ap_const_lv4_1));
@@ -989,7 +989,7 @@ begin
     shl_ln9_fu_805_p3 <= (buf_q1 & ap_const_lv6_0);
     shl_ln_fu_902_p3 <= (buf_q1 & ap_const_lv4_0);
 
-    state_s_address0_assign_proc : process(ap_CS_fsm_state3, zext_ln416_reg_1081, ap_CS_fsm_state5, state_s_addr_3_reg_1112, ap_CS_fsm_state8, state_s_addr_2_reg_1127, grp_keccak_absorb_fu_395_s_address0, grp_keccak_squeezeblocks_1_fu_408_s_address0, ap_CS_fsm_state7, ap_CS_fsm_state14, zext_ln363_fu_491_p1, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state12)
+    state_s_address0_assign_proc : process(ap_CS_fsm_state3, zext_ln416_reg_1081, ap_CS_fsm_state5, state_s_addr_3_reg_1112, ap_CS_fsm_state8, state_s_addr_2_reg_1127, grp_keccak_absorb_fu_395_s_address0, grp_keccak_squeezeblocks_fu_408_s_address0, ap_CS_fsm_state7, ap_CS_fsm_state14, zext_ln363_fu_491_p1, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state12)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state12) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
             state_s_address0 <= ap_const_lv64_10(5 - 1 downto 0);
@@ -1002,7 +1002,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
             state_s_address0 <= zext_ln363_fu_491_p1(5 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            state_s_address0 <= grp_keccak_squeezeblocks_1_fu_408_s_address0;
+            state_s_address0 <= grp_keccak_squeezeblocks_fu_408_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
             state_s_address0 <= grp_keccak_absorb_fu_395_s_address0;
         else 
@@ -1011,10 +1011,10 @@ begin
     end process;
 
 
-    state_s_address1_assign_proc : process(ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_address1, grp_keccak_squeezeblocks_1_fu_408_s_address1, ap_CS_fsm_state14)
+    state_s_address1_assign_proc : process(ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_address1, grp_keccak_squeezeblocks_fu_408_s_address1, ap_CS_fsm_state14)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            state_s_address1 <= grp_keccak_squeezeblocks_1_fu_408_s_address1;
+            state_s_address1 <= grp_keccak_squeezeblocks_fu_408_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
             state_s_address1 <= grp_keccak_absorb_fu_395_s_address1;
         else 
@@ -1023,12 +1023,12 @@ begin
     end process;
 
 
-    state_s_ce0_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_ce0, grp_keccak_squeezeblocks_1_fu_408_s_ce0, ap_CS_fsm_state7, ap_CS_fsm_state14, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state12)
+    state_s_ce0_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_ce0, grp_keccak_squeezeblocks_fu_408_s_ce0, ap_CS_fsm_state7, ap_CS_fsm_state14, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state12)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state12) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state7) or (ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
             state_s_ce0 <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            state_s_ce0 <= grp_keccak_squeezeblocks_1_fu_408_s_ce0;
+            state_s_ce0 <= grp_keccak_squeezeblocks_fu_408_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
             state_s_ce0 <= grp_keccak_absorb_fu_395_s_ce0;
         else 
@@ -1037,10 +1037,10 @@ begin
     end process;
 
 
-    state_s_ce1_assign_proc : process(ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_ce1, grp_keccak_squeezeblocks_1_fu_408_s_ce1, ap_CS_fsm_state14)
+    state_s_ce1_assign_proc : process(ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_ce1, grp_keccak_squeezeblocks_fu_408_s_ce1, ap_CS_fsm_state14)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            state_s_ce1 <= grp_keccak_squeezeblocks_1_fu_408_s_ce1;
+            state_s_ce1 <= grp_keccak_squeezeblocks_fu_408_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
             state_s_ce1 <= grp_keccak_absorb_fu_395_s_ce1;
         else 
@@ -1049,7 +1049,7 @@ begin
     end process;
 
 
-    state_s_d0_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_d0, grp_keccak_squeezeblocks_1_fu_408_s_d0, ap_CS_fsm_state7, ap_CS_fsm_state14, xor_ln417_fu_586_p2, ap_CS_fsm_state10, xor_ln450_fu_629_p2, ap_CS_fsm_state12, xor_ln451_fu_636_p2)
+    state_s_d0_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_d0, grp_keccak_squeezeblocks_fu_408_s_d0, ap_CS_fsm_state7, ap_CS_fsm_state14, xor_ln417_fu_586_p2, ap_CS_fsm_state10, xor_ln450_fu_629_p2, ap_CS_fsm_state12, xor_ln451_fu_636_p2)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
             state_s_d0 <= xor_ln451_fu_636_p2;
@@ -1060,7 +1060,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
             state_s_d0 <= ap_const_lv64_0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            state_s_d0 <= grp_keccak_squeezeblocks_1_fu_408_s_d0;
+            state_s_d0 <= grp_keccak_squeezeblocks_fu_408_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
             state_s_d0 <= grp_keccak_absorb_fu_395_s_d0;
         else 
@@ -1069,10 +1069,10 @@ begin
     end process;
 
 
-    state_s_d1_assign_proc : process(ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_d1, grp_keccak_squeezeblocks_1_fu_408_s_d1, ap_CS_fsm_state14)
+    state_s_d1_assign_proc : process(ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_d1, grp_keccak_squeezeblocks_fu_408_s_d1, ap_CS_fsm_state14)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            state_s_d1 <= grp_keccak_squeezeblocks_1_fu_408_s_d1;
+            state_s_d1 <= grp_keccak_squeezeblocks_fu_408_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
             state_s_d1 <= grp_keccak_absorb_fu_395_s_d1;
         else 
@@ -1081,12 +1081,12 @@ begin
     end process;
 
 
-    state_s_we0_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_we0, grp_keccak_squeezeblocks_1_fu_408_s_we0, icmp_ln362_fu_479_p2, ap_CS_fsm_state7, ap_CS_fsm_state14, ap_CS_fsm_state10, ap_CS_fsm_state12)
+    state_s_we0_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_we0, grp_keccak_squeezeblocks_fu_408_s_we0, icmp_ln362_fu_479_p2, ap_CS_fsm_state7, ap_CS_fsm_state14, ap_CS_fsm_state10, ap_CS_fsm_state12)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state12) or (ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state7) or ((icmp_ln362_fu_479_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state3)))) then 
             state_s_we0 <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            state_s_we0 <= grp_keccak_squeezeblocks_1_fu_408_s_we0;
+            state_s_we0 <= grp_keccak_squeezeblocks_fu_408_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
             state_s_we0 <= grp_keccak_absorb_fu_395_s_we0;
         else 
@@ -1095,10 +1095,10 @@ begin
     end process;
 
 
-    state_s_we1_assign_proc : process(ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_we1, grp_keccak_squeezeblocks_1_fu_408_s_we1, ap_CS_fsm_state14)
+    state_s_we1_assign_proc : process(ap_CS_fsm_state8, grp_keccak_absorb_fu_395_s_we1, grp_keccak_squeezeblocks_fu_408_s_we1, ap_CS_fsm_state14)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            state_s_we1 <= grp_keccak_squeezeblocks_1_fu_408_s_we1;
+            state_s_we1 <= grp_keccak_squeezeblocks_fu_408_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
             state_s_we1 <= grp_keccak_absorb_fu_395_s_we1;
         else 

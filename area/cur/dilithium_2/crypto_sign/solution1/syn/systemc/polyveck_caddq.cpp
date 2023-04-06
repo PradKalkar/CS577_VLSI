@@ -86,9 +86,9 @@ polyveck_caddq::polyveck_caddq(sc_module_name name) : sc_module(name), mVcdFile(
     sensitive << ( i_0_i_reg_58 );
 
     SC_METHOD(thread_select_ln51_fu_127_p3);
-    sensitive << ( tmp_4_fu_119_p3 );
+    sensitive << ( tmp_9_fu_119_p3 );
 
-    SC_METHOD(thread_tmp_4_fu_119_p3);
+    SC_METHOD(thread_tmp_9_fu_119_p3);
     sensitive << ( v_vec_coeffs_q0 );
 
     SC_METHOD(thread_tmp_fu_81_p3);
@@ -172,7 +172,7 @@ polyveck_caddq::polyveck_caddq(sc_module_name name) : sc_module(name), mVcdFile(
     sc_trace(mVcdFile, tmp_fu_81_p3, "tmp_fu_81_p3");
     sc_trace(mVcdFile, zext_ln51_fu_105_p1, "zext_ln51_fu_105_p1");
     sc_trace(mVcdFile, add_ln51_fu_109_p2, "add_ln51_fu_109_p2");
-    sc_trace(mVcdFile, tmp_4_fu_119_p3, "tmp_4_fu_119_p3");
+    sc_trace(mVcdFile, tmp_9_fu_119_p3, "tmp_9_fu_119_p3");
     sc_trace(mVcdFile, select_ln51_fu_127_p3, "select_ln51_fu_127_p3");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
 #endif
@@ -285,11 +285,11 @@ void polyveck_caddq::thread_icmp_ln50_fu_93_p2() {
 }
 
 void polyveck_caddq::thread_select_ln51_fu_127_p3() {
-    select_ln51_fu_127_p3 = (!tmp_4_fu_119_p3.read()[0].is_01())? sc_lv<32>(): ((tmp_4_fu_119_p3.read()[0].to_bool())? ap_const_lv32_7FE001: ap_const_lv32_0);
+    select_ln51_fu_127_p3 = (!tmp_9_fu_119_p3.read()[0].is_01())? sc_lv<32>(): ((tmp_9_fu_119_p3.read()[0].to_bool())? ap_const_lv32_7FE001: ap_const_lv32_0);
 }
 
-void polyveck_caddq::thread_tmp_4_fu_119_p3() {
-    tmp_4_fu_119_p3 = v_vec_coeffs_q0.read().range(31, 31);
+void polyveck_caddq::thread_tmp_9_fu_119_p3() {
+    tmp_9_fu_119_p3 = v_vec_coeffs_q0.read().range(31, 31);
 }
 
 void polyveck_caddq::thread_tmp_fu_81_p3() {

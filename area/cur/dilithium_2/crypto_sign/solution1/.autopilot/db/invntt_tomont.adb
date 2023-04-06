@@ -438,7 +438,7 @@
             <Obj>
               <type>0</type>
               <id>14</id>
-              <name>tmp_11</name>
+              <name>tmp_32</name>
               <fileName>ntt.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>83</lineNumber>
@@ -462,7 +462,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_11_fu_179_p3</rtlName>
+              <rtlName>tmp_32_fu_179_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -685,7 +685,7 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>tmp_12</name>
+              <name>tmp_33</name>
               <fileName>ntt.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>84</lineNumber>
@@ -709,7 +709,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_12_fu_191_p4</rtlName>
+              <rtlName>tmp_33_fu_191_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>2</bitwidth>
@@ -1225,7 +1225,7 @@
             <Obj>
               <type>0</type>
               <id>34</id>
-              <name>empty_80</name>
+              <name>empty_81</name>
               <fileName>ntt.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>84</lineNumber>
@@ -1249,7 +1249,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>empty_80_fu_242_p2</rtlName>
+              <rtlName>empty_81_fu_242_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -8117,7 +8117,7 @@
           </second>
         </item>
         <item>
-          <first>empty_80_fu_242_p2 ( icmp ) </first>
+          <first>empty_81_fu_242_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -9224,7 +9224,7 @@
           </second>
         </item>
         <item>
-          <first>empty_80_fu_242_p2 ( icmp ) </first>
+          <first>empty_81_fu_242_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10838,7 +10838,7 @@
         </second>
       </item>
       <item>
-        <first>empty_80_fu_242</first>
+        <first>empty_81_fu_242</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11094,7 +11094,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_11_fu_179</first>
+        <first>tmp_32_fu_179</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11102,7 +11102,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_12_fu_191</first>
+        <first>tmp_33_fu_191</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

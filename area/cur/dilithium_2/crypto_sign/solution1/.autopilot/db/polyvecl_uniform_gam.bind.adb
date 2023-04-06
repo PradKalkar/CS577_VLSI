@@ -11863,7 +11863,7 @@
 					<Obj>
 						<type>2</type>
 						<id>377</id>
-						<name>keccak_squeezeblocks_1</name>
+						<name>keccak_squeezeblocks</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -11879,7 +11879,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:keccak_squeezeblocks.1&gt;</content>
+				<content>&lt;constant:keccak_squeezeblocks&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_200">
 				<Value>
@@ -12648,7 +12648,7 @@
 				<Obj>
 					<type>3</type>
 					<id>94</id>
-					<name>keccak_absorb.3199.exit</name>
+					<name>keccak_absorb.4203.exit</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -20670,7 +20670,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_keccak_squeezeblocks_1_fu_408</first>
+			<first>grp_keccak_squeezeblocks_fu_408</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

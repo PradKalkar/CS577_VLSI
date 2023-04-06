@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'ntt'
 ================================================================
-* Date:           Tue Apr  4 22:25:17 2023
+* Date:           Tue Apr  4 23:20:57 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -108,26 +108,26 @@ ST_2 : Operation 21 [1/1] (0.00ns)   --->   "ret void" [ntt.c:64]   --->   Opera
 State 3 <SV = 2> <Delay = 4.95>
 ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%j = phi i31 [ %add_ln55, %5 ], [ 0, %.preheader.preheader ]" [ntt.c:55]   --->   Operation 22 'phi' 'j' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln55 = zext i31 %j to i32" [ntt.c:55]   --->   Operation 23 'zext' 'zext_ln55' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_7 = call i23 @_ssdm_op_PartSelect.i23.i31.i32.i32(i31 %j, i32 8, i32 30)" [ntt.c:55]   --->   Operation 24 'partselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 25 [1/1] (2.03ns)   --->   "%icmp_ln55 = icmp eq i23 %tmp_7, 0" [ntt.c:55]   --->   Operation 25 'icmp' 'icmp_ln55' <Predicate = true> <Delay = 2.03> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_28 = call i23 @_ssdm_op_PartSelect.i23.i31.i32.i32(i31 %j, i32 8, i32 30)" [ntt.c:55]   --->   Operation 24 'partselect' 'tmp_28' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (2.03ns)   --->   "%icmp_ln55 = icmp eq i23 %tmp_28, 0" [ntt.c:55]   --->   Operation 25 'icmp' 'icmp_ln55' <Predicate = true> <Delay = 2.03> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 26 [1/1] (0.00ns)   --->   "br i1 %icmp_ln55, label %2, label %6" [ntt.c:55]   --->   Operation 26 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%k_3_load = load i32* %k_3" [ntt.c:56]   --->   Operation 27 'load' 'k_3_load' <Predicate = (icmp_ln55)> <Delay = 0.00>
 ST_3 : Operation 28 [1/1] (2.18ns)   --->   "%k = add i32 1, %k_3_load" [ntt.c:56]   --->   Operation 28 'add' 'k' <Predicate = (icmp_ln55)> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln56 = zext i32 %k to i64" [ntt.c:56]   --->   Operation 29 'zext' 'zext_ln56' <Predicate = (icmp_ln55)> <Delay = 0.00>
 ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%zetas_addr = getelementptr [256 x i23]* @zetas, i64 0, i64 %zext_ln56" [ntt.c:56]   --->   Operation 30 'getelementptr' 'zetas_addr' <Predicate = (icmp_ln55)> <Delay = 0.00>
 ST_3 : Operation 31 [2/2] (2.77ns)   --->   "%zeta = load i23* %zetas_addr, align 4" [ntt.c:56]   --->   Operation 31 'load' 'zeta' <Predicate = (icmp_ln55)> <Delay = 2.77> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 23> <Depth = 256> <ROM>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_8 = call i28 @_ssdm_op_PartSelect.i28.i29.i32.i32(i29 %len_0, i32 1, i32 28)" [ntt.c:54]   --->   Operation 32 'partselect' 'tmp_8' <Predicate = (!icmp_ln55)> <Delay = 0.00>
-ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln54_3 = zext i28 %tmp_8 to i29" [ntt.c:54]   --->   Operation 33 'zext' 'zext_ln54_3' <Predicate = (!icmp_ln55)> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_29 = call i28 @_ssdm_op_PartSelect.i28.i29.i32.i32(i29 %len_0, i32 1, i32 28)" [ntt.c:54]   --->   Operation 32 'partselect' 'tmp_29' <Predicate = (!icmp_ln55)> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln54_3 = zext i28 %tmp_29 to i29" [ntt.c:54]   --->   Operation 33 'zext' 'zext_ln54_3' <Predicate = (!icmp_ln55)> <Delay = 0.00>
 ST_3 : Operation 34 [1/1] (0.00ns)   --->   "br label %1" [ntt.c:54]   --->   Operation 34 'br' <Predicate = (!icmp_ln55)> <Delay = 0.00>
 
 State 4 <SV = 3> <Delay = 5.01>
 ST_4 : Operation 35 [1/2] (2.77ns)   --->   "%zeta = load i23* %zetas_addr, align 4" [ntt.c:56]   --->   Operation 35 'load' 'zeta' <Predicate = true> <Delay = 2.77> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 23> <Depth = 256> <ROM>
 ST_4 : Operation 36 [1/1] (2.15ns)   --->   "%add_ln57 = add i31 %zext_ln54, %j" [ntt.c:57]   --->   Operation 36 'add' 'add_ln57' <Predicate = true> <Delay = 2.15> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln57 = zext i31 %add_ln57 to i32" [ntt.c:57]   --->   Operation 37 'zext' 'zext_ln57' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 38 [1/1] (2.10ns)   --->   "%empty_51 = icmp ugt i31 %j, %add_ln57" [ntt.c:55]   --->   Operation 38 'icmp' 'empty_51' <Predicate = true> <Delay = 2.10> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 38 [1/1] (2.10ns)   --->   "%empty_56 = icmp ugt i31 %j, %add_ln57" [ntt.c:55]   --->   Operation 38 'icmp' 'empty_56' <Predicate = true> <Delay = 2.10> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%trunc_ln55 = trunc i31 %j to i30" [ntt.c:55]   --->   Operation 39 'trunc' 'trunc_ln55' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln55_2 = trunc i31 %add_ln57 to i30" [ntt.c:55]   --->   Operation 40 'trunc' 'trunc_ln55_2' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 41 [1/1] (0.75ns)   --->   "%start = select i1 %empty_51, i30 %trunc_ln55, i30 %trunc_ln55_2" [ntt.c:55]   --->   Operation 41 'select' 'start' <Predicate = true> <Delay = 0.75> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 41 [1/1] (0.75ns)   --->   "%start = select i1 %empty_56, i30 %trunc_ln55, i30 %trunc_ln55_2" [ntt.c:55]   --->   Operation 41 'select' 'start' <Predicate = true> <Delay = 0.75> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln55_2 = zext i30 %start to i31" [ntt.c:55]   --->   Operation 42 'zext' 'zext_ln55_2' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%sext_ln57 = sext i23 %zeta to i54" [ntt.c:57]   --->   Operation 43 'sext' 'sext_ln57' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 44 [1/1] (1.35ns)   --->   "br label %3" [ntt.c:57]   --->   Operation 44 'br' <Predicate = true> <Delay = 1.35>
@@ -205,7 +205,7 @@ The critical path consists of the following:
  <State 4>: 5.01ns
 The critical path consists of the following:
 	'add' operation ('add_ln57', ntt.c:57) [31]  (2.16 ns)
-	'icmp' operation ('empty_51', ntt.c:55) [33]  (2.1 ns)
+	'icmp' operation ('empty_56', ntt.c:55) [33]  (2.1 ns)
 	'select' operation ('start', ntt.c:55) [36]  (0.751 ns)
 
  <State 5>: 5.94ns

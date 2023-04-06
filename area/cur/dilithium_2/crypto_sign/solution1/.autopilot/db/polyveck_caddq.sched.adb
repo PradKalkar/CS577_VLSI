@@ -931,7 +931,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>tmp_4</name>
+						<name>tmp_9</name>
 						<fileName>reduce.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>51</lineNumber>

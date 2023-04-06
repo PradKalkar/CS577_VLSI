@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'polyvecl_pointwise_a'" level="0">
-<item name = "Date">Tue Apr  4 22:25:39 2023
+<item name = "Date">Tue Apr  4 23:21:15 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">crypto_sign</item>
@@ -134,7 +134,7 @@
 <column name="w_coeffs_addr_1_reg_585">10, 0, 10, 0</column>
 <column name="zext_ln176_reg_554">3, 0, 12, 9</column>
 <column name="zext_ln181_2_reg_517">3, 0, 12, 9</column>
-<column name="zext_ln181_3_cast_reg_523">3, 0, 6, 3</column>
+<column name="zext_ln181_3_reg_523">3, 0, 6, 3</column>
 </table>
 </item>
 </section>

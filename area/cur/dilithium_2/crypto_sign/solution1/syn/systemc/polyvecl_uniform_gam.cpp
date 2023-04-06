@@ -101,7 +101,7 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     buf_U->address0(buf_address0);
     buf_U->ce0(buf_ce0);
     buf_U->we0(buf_we0);
-    buf_U->d0(grp_keccak_squeezeblocks_1_fu_408_out_r_d0);
+    buf_U->d0(grp_keccak_squeezeblocks_fu_408_out_r_d0);
     buf_U->q0(buf_q0);
     buf_U->address1(buf_address1);
     buf_U->ce1(buf_ce1);
@@ -141,27 +141,27 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     grp_keccak_absorb_fu_395->m_0_read(t_0_reg_1063);
     grp_keccak_absorb_fu_395->m_1_read(t_1_reg_1068);
     grp_keccak_absorb_fu_395->ap_return(grp_keccak_absorb_fu_395_ap_return);
-    grp_keccak_squeezeblocks_1_fu_408 = new keccak_squeezeblocks_1("grp_keccak_squeezeblocks_1_fu_408");
-    grp_keccak_squeezeblocks_1_fu_408->ap_clk(ap_clk);
-    grp_keccak_squeezeblocks_1_fu_408->ap_rst(ap_rst);
-    grp_keccak_squeezeblocks_1_fu_408->ap_start(grp_keccak_squeezeblocks_1_fu_408_ap_start);
-    grp_keccak_squeezeblocks_1_fu_408->ap_done(grp_keccak_squeezeblocks_1_fu_408_ap_done);
-    grp_keccak_squeezeblocks_1_fu_408->ap_idle(grp_keccak_squeezeblocks_1_fu_408_ap_idle);
-    grp_keccak_squeezeblocks_1_fu_408->ap_ready(grp_keccak_squeezeblocks_1_fu_408_ap_ready);
-    grp_keccak_squeezeblocks_1_fu_408->out_r_address0(grp_keccak_squeezeblocks_1_fu_408_out_r_address0);
-    grp_keccak_squeezeblocks_1_fu_408->out_r_ce0(grp_keccak_squeezeblocks_1_fu_408_out_r_ce0);
-    grp_keccak_squeezeblocks_1_fu_408->out_r_we0(grp_keccak_squeezeblocks_1_fu_408_out_r_we0);
-    grp_keccak_squeezeblocks_1_fu_408->out_r_d0(grp_keccak_squeezeblocks_1_fu_408_out_r_d0);
-    grp_keccak_squeezeblocks_1_fu_408->s_address0(grp_keccak_squeezeblocks_1_fu_408_s_address0);
-    grp_keccak_squeezeblocks_1_fu_408->s_ce0(grp_keccak_squeezeblocks_1_fu_408_s_ce0);
-    grp_keccak_squeezeblocks_1_fu_408->s_we0(grp_keccak_squeezeblocks_1_fu_408_s_we0);
-    grp_keccak_squeezeblocks_1_fu_408->s_d0(grp_keccak_squeezeblocks_1_fu_408_s_d0);
-    grp_keccak_squeezeblocks_1_fu_408->s_q0(state_s_q0);
-    grp_keccak_squeezeblocks_1_fu_408->s_address1(grp_keccak_squeezeblocks_1_fu_408_s_address1);
-    grp_keccak_squeezeblocks_1_fu_408->s_ce1(grp_keccak_squeezeblocks_1_fu_408_s_ce1);
-    grp_keccak_squeezeblocks_1_fu_408->s_we1(grp_keccak_squeezeblocks_1_fu_408_s_we1);
-    grp_keccak_squeezeblocks_1_fu_408->s_d1(grp_keccak_squeezeblocks_1_fu_408_s_d1);
-    grp_keccak_squeezeblocks_1_fu_408->s_q1(state_s_q1);
+    grp_keccak_squeezeblocks_fu_408 = new keccak_squeezeblocks("grp_keccak_squeezeblocks_fu_408");
+    grp_keccak_squeezeblocks_fu_408->ap_clk(ap_clk);
+    grp_keccak_squeezeblocks_fu_408->ap_rst(ap_rst);
+    grp_keccak_squeezeblocks_fu_408->ap_start(grp_keccak_squeezeblocks_fu_408_ap_start);
+    grp_keccak_squeezeblocks_fu_408->ap_done(grp_keccak_squeezeblocks_fu_408_ap_done);
+    grp_keccak_squeezeblocks_fu_408->ap_idle(grp_keccak_squeezeblocks_fu_408_ap_idle);
+    grp_keccak_squeezeblocks_fu_408->ap_ready(grp_keccak_squeezeblocks_fu_408_ap_ready);
+    grp_keccak_squeezeblocks_fu_408->out_r_address0(grp_keccak_squeezeblocks_fu_408_out_r_address0);
+    grp_keccak_squeezeblocks_fu_408->out_r_ce0(grp_keccak_squeezeblocks_fu_408_out_r_ce0);
+    grp_keccak_squeezeblocks_fu_408->out_r_we0(grp_keccak_squeezeblocks_fu_408_out_r_we0);
+    grp_keccak_squeezeblocks_fu_408->out_r_d0(grp_keccak_squeezeblocks_fu_408_out_r_d0);
+    grp_keccak_squeezeblocks_fu_408->s_address0(grp_keccak_squeezeblocks_fu_408_s_address0);
+    grp_keccak_squeezeblocks_fu_408->s_ce0(grp_keccak_squeezeblocks_fu_408_s_ce0);
+    grp_keccak_squeezeblocks_fu_408->s_we0(grp_keccak_squeezeblocks_fu_408_s_we0);
+    grp_keccak_squeezeblocks_fu_408->s_d0(grp_keccak_squeezeblocks_fu_408_s_d0);
+    grp_keccak_squeezeblocks_fu_408->s_q0(state_s_q0);
+    grp_keccak_squeezeblocks_fu_408->s_address1(grp_keccak_squeezeblocks_fu_408_s_address1);
+    grp_keccak_squeezeblocks_fu_408->s_ce1(grp_keccak_squeezeblocks_fu_408_s_ce1);
+    grp_keccak_squeezeblocks_fu_408->s_we1(grp_keccak_squeezeblocks_fu_408_s_we1);
+    grp_keccak_squeezeblocks_fu_408->s_d1(grp_keccak_squeezeblocks_fu_408_s_d1);
+    grp_keccak_squeezeblocks_fu_408->s_q1(state_s_q1);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -286,7 +286,7 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     sensitive << ( ap_CS_fsm_state18 );
     sensitive << ( ap_CS_fsm_state19 );
     sensitive << ( ap_CS_fsm_state15 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_out_r_address0 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_out_r_address0 );
     sensitive << ( ap_CS_fsm_state14 );
     sensitive << ( zext_ln855_1_fu_681_p1 );
     sensitive << ( zext_ln856_fu_691_p1 );
@@ -310,7 +310,7 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     sensitive << ( ap_CS_fsm_state18 );
     sensitive << ( ap_CS_fsm_state19 );
     sensitive << ( ap_CS_fsm_state15 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_out_r_ce0 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_out_r_ce0 );
     sensitive << ( ap_CS_fsm_state14 );
 
     SC_METHOD(thread_buf_ce1);
@@ -320,14 +320,14 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     sensitive << ( ap_CS_fsm_state19 );
 
     SC_METHOD(thread_buf_we0);
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_out_r_we0 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_out_r_we0 );
     sensitive << ( ap_CS_fsm_state14 );
 
     SC_METHOD(thread_grp_keccak_absorb_fu_395_ap_start);
     sensitive << ( grp_keccak_absorb_fu_395_ap_start_reg );
 
-    SC_METHOD(thread_grp_keccak_squeezeblocks_1_fu_408_ap_start);
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_ap_start_reg );
+    SC_METHOD(thread_grp_keccak_squeezeblocks_fu_408_ap_start);
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_ap_start_reg );
 
     SC_METHOD(thread_i_11_fu_485_p2);
     sensitive << ( i_0_i_i_i_i_reg_338 );
@@ -462,7 +462,7 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     sensitive << ( ap_CS_fsm_state8 );
     sensitive << ( state_s_addr_2_reg_1127 );
     sensitive << ( grp_keccak_absorb_fu_395_s_address0 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_s_address0 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_s_address0 );
     sensitive << ( ap_CS_fsm_state7 );
     sensitive << ( ap_CS_fsm_state14 );
     sensitive << ( zext_ln363_fu_491_p1 );
@@ -474,7 +474,7 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     SC_METHOD(thread_state_s_address1);
     sensitive << ( ap_CS_fsm_state8 );
     sensitive << ( grp_keccak_absorb_fu_395_s_address1 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_s_address1 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_s_address1 );
     sensitive << ( ap_CS_fsm_state14 );
 
     SC_METHOD(thread_state_s_ce0);
@@ -482,7 +482,7 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     sensitive << ( ap_CS_fsm_state5 );
     sensitive << ( ap_CS_fsm_state8 );
     sensitive << ( grp_keccak_absorb_fu_395_s_ce0 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_s_ce0 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_s_ce0 );
     sensitive << ( ap_CS_fsm_state7 );
     sensitive << ( ap_CS_fsm_state14 );
     sensitive << ( ap_CS_fsm_state9 );
@@ -493,14 +493,14 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     SC_METHOD(thread_state_s_ce1);
     sensitive << ( ap_CS_fsm_state8 );
     sensitive << ( grp_keccak_absorb_fu_395_s_ce1 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_s_ce1 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_s_ce1 );
     sensitive << ( ap_CS_fsm_state14 );
 
     SC_METHOD(thread_state_s_d0);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( ap_CS_fsm_state8 );
     sensitive << ( grp_keccak_absorb_fu_395_s_d0 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_s_d0 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_s_d0 );
     sensitive << ( ap_CS_fsm_state7 );
     sensitive << ( ap_CS_fsm_state14 );
     sensitive << ( xor_ln417_fu_586_p2 );
@@ -512,14 +512,14 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     SC_METHOD(thread_state_s_d1);
     sensitive << ( ap_CS_fsm_state8 );
     sensitive << ( grp_keccak_absorb_fu_395_s_d1 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_s_d1 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_s_d1 );
     sensitive << ( ap_CS_fsm_state14 );
 
     SC_METHOD(thread_state_s_we0);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( ap_CS_fsm_state8 );
     sensitive << ( grp_keccak_absorb_fu_395_s_we0 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_s_we0 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_s_we0 );
     sensitive << ( icmp_ln362_fu_479_p2 );
     sensitive << ( ap_CS_fsm_state7 );
     sensitive << ( ap_CS_fsm_state14 );
@@ -529,7 +529,7 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     SC_METHOD(thread_state_s_we1);
     sensitive << ( ap_CS_fsm_state8 );
     sensitive << ( grp_keccak_absorb_fu_395_s_we1 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_s_we1 );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_s_we1 );
     sensitive << ( ap_CS_fsm_state14 );
 
     SC_METHOD(thread_sub_ln875_fu_758_p2);
@@ -756,7 +756,7 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     sensitive << ( grp_keccak_absorb_fu_395_ap_done );
     sensitive << ( ap_CS_fsm_state15 );
     sensitive << ( icmp_ln854_fu_647_p2 );
-    sensitive << ( grp_keccak_squeezeblocks_1_fu_408_ap_done );
+    sensitive << ( grp_keccak_squeezeblocks_fu_408_ap_done );
     sensitive << ( icmp_ln362_fu_479_p2 );
     sensitive << ( ap_CS_fsm_state14 );
 
@@ -766,7 +766,7 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
 
     ap_CS_fsm = "00000000000000000001";
     grp_keccak_absorb_fu_395_ap_start_reg = SC_LOGIC_0;
-    grp_keccak_squeezeblocks_1_fu_408_ap_start_reg = SC_LOGIC_0;
+    grp_keccak_squeezeblocks_fu_408_ap_start_reg = SC_LOGIC_0;
     static int apTFileNum = 0;
     stringstream apTFilenSS;
     apTFilenSS << "polyvecl_uniform_gam_sc_trace_" << apTFileNum ++;
@@ -869,22 +869,22 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     sc_trace(mVcdFile, grp_keccak_absorb_fu_395_s_ce1, "grp_keccak_absorb_fu_395_s_ce1");
     sc_trace(mVcdFile, grp_keccak_absorb_fu_395_s_we1, "grp_keccak_absorb_fu_395_s_we1");
     sc_trace(mVcdFile, grp_keccak_absorb_fu_395_s_d1, "grp_keccak_absorb_fu_395_s_d1");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_ap_start, "grp_keccak_squeezeblocks_1_fu_408_ap_start");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_ap_done, "grp_keccak_squeezeblocks_1_fu_408_ap_done");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_ap_idle, "grp_keccak_squeezeblocks_1_fu_408_ap_idle");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_ap_ready, "grp_keccak_squeezeblocks_1_fu_408_ap_ready");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_out_r_address0, "grp_keccak_squeezeblocks_1_fu_408_out_r_address0");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_out_r_ce0, "grp_keccak_squeezeblocks_1_fu_408_out_r_ce0");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_out_r_we0, "grp_keccak_squeezeblocks_1_fu_408_out_r_we0");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_out_r_d0, "grp_keccak_squeezeblocks_1_fu_408_out_r_d0");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_s_address0, "grp_keccak_squeezeblocks_1_fu_408_s_address0");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_s_ce0, "grp_keccak_squeezeblocks_1_fu_408_s_ce0");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_s_we0, "grp_keccak_squeezeblocks_1_fu_408_s_we0");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_s_d0, "grp_keccak_squeezeblocks_1_fu_408_s_d0");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_s_address1, "grp_keccak_squeezeblocks_1_fu_408_s_address1");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_s_ce1, "grp_keccak_squeezeblocks_1_fu_408_s_ce1");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_s_we1, "grp_keccak_squeezeblocks_1_fu_408_s_we1");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_s_d1, "grp_keccak_squeezeblocks_1_fu_408_s_d1");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_ap_start, "grp_keccak_squeezeblocks_fu_408_ap_start");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_ap_done, "grp_keccak_squeezeblocks_fu_408_ap_done");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_ap_idle, "grp_keccak_squeezeblocks_fu_408_ap_idle");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_ap_ready, "grp_keccak_squeezeblocks_fu_408_ap_ready");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_out_r_address0, "grp_keccak_squeezeblocks_fu_408_out_r_address0");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_out_r_ce0, "grp_keccak_squeezeblocks_fu_408_out_r_ce0");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_out_r_we0, "grp_keccak_squeezeblocks_fu_408_out_r_we0");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_out_r_d0, "grp_keccak_squeezeblocks_fu_408_out_r_d0");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_s_address0, "grp_keccak_squeezeblocks_fu_408_s_address0");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_s_ce0, "grp_keccak_squeezeblocks_fu_408_s_ce0");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_s_we0, "grp_keccak_squeezeblocks_fu_408_s_we0");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_s_d0, "grp_keccak_squeezeblocks_fu_408_s_d0");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_s_address1, "grp_keccak_squeezeblocks_fu_408_s_address1");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_s_ce1, "grp_keccak_squeezeblocks_fu_408_s_ce1");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_s_we1, "grp_keccak_squeezeblocks_fu_408_s_we1");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_s_d1, "grp_keccak_squeezeblocks_fu_408_s_d1");
     sc_trace(mVcdFile, i_0_reg_326, "i_0_reg_326");
     sc_trace(mVcdFile, i_0_i_i_i_i_reg_338, "i_0_i_i_i_i_reg_338");
     sc_trace(mVcdFile, icmp_ln362_fu_479_p2, "icmp_ln362_fu_479_p2");
@@ -896,7 +896,7 @@ polyvecl_uniform_gam::polyvecl_uniform_gam(sc_module_name name) : sc_module(name
     sc_trace(mVcdFile, ap_CS_fsm_state14, "ap_CS_fsm_state14");
     sc_trace(mVcdFile, ap_CS_fsm_state20, "ap_CS_fsm_state20");
     sc_trace(mVcdFile, grp_keccak_absorb_fu_395_ap_start_reg, "grp_keccak_absorb_fu_395_ap_start_reg");
-    sc_trace(mVcdFile, grp_keccak_squeezeblocks_1_fu_408_ap_start_reg, "grp_keccak_squeezeblocks_1_fu_408_ap_start_reg");
+    sc_trace(mVcdFile, grp_keccak_squeezeblocks_fu_408_ap_start_reg, "grp_keccak_squeezeblocks_fu_408_ap_start_reg");
     sc_trace(mVcdFile, ap_CS_fsm_state13, "ap_CS_fsm_state13");
     sc_trace(mVcdFile, zext_ln363_fu_491_p1, "zext_ln363_fu_491_p1");
     sc_trace(mVcdFile, zext_ln31_fu_549_p1, "zext_ln31_fu_549_p1");
@@ -999,7 +999,7 @@ polyvecl_uniform_gam::~polyvecl_uniform_gam() {
     delete buf_U;
     delete state_s_U;
     delete grp_keccak_absorb_fu_395;
-    delete grp_keccak_squeezeblocks_1_fu_408;
+    delete grp_keccak_squeezeblocks_fu_408;
 }
 
 void polyvecl_uniform_gam::thread_ap_var_for_const0() {
@@ -1027,12 +1027,12 @@ void polyvecl_uniform_gam::thread_ap_clk_no_reset_() {
         }
     }
     if ( ap_rst.read() == ap_const_logic_1) {
-        grp_keccak_squeezeblocks_1_fu_408_ap_start_reg = ap_const_logic_0;
+        grp_keccak_squeezeblocks_fu_408_ap_start_reg = ap_const_logic_0;
     } else {
         if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state13.read())) {
-            grp_keccak_squeezeblocks_1_fu_408_ap_start_reg = ap_const_logic_1;
-        } else if (esl_seteq<1,1,1>(ap_const_logic_1, grp_keccak_squeezeblocks_1_fu_408_ap_ready.read())) {
-            grp_keccak_squeezeblocks_1_fu_408_ap_start_reg = ap_const_logic_0;
+            grp_keccak_squeezeblocks_fu_408_ap_start_reg = ap_const_logic_1;
+        } else if (esl_seteq<1,1,1>(ap_const_logic_1, grp_keccak_squeezeblocks_fu_408_ap_ready.read())) {
+            grp_keccak_squeezeblocks_fu_408_ap_start_reg = ap_const_logic_0;
         }
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read())) {
@@ -1051,7 +1051,7 @@ void polyvecl_uniform_gam::thread_ap_clk_no_reset_() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state20.read())) {
         i_0_i_reg_384 = i_12_reg_1135.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read()) && 
-                esl_seteq<1,1,1>(grp_keccak_squeezeblocks_1_fu_408_ap_done.read(), ap_const_logic_1))) {
+                esl_seteq<1,1,1>(grp_keccak_squeezeblocks_fu_408_ap_done.read(), ap_const_logic_1))) {
         i_0_i_reg_384 = ap_const_lv7_0;
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) && 
@@ -1289,7 +1289,7 @@ void polyvecl_uniform_gam::thread_buf_address0() {
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read())) {
         buf_address0 =  (sc_lv<10>) (zext_ln855_1_fu_681_p1.read());
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        buf_address0 = grp_keccak_squeezeblocks_1_fu_408_out_r_address0.read();
+        buf_address0 = grp_keccak_squeezeblocks_fu_408_out_r_address0.read();
     } else {
         buf_address0 =  (sc_lv<10>) ("XXXXXXXXXX");
     }
@@ -1317,7 +1317,7 @@ void polyvecl_uniform_gam::thread_buf_ce0() {
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()))) {
         buf_ce0 = ap_const_logic_1;
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        buf_ce0 = grp_keccak_squeezeblocks_1_fu_408_out_r_ce0.read();
+        buf_ce0 = grp_keccak_squeezeblocks_fu_408_out_r_ce0.read();
     } else {
         buf_ce0 = ap_const_logic_0;
     }
@@ -1336,7 +1336,7 @@ void polyvecl_uniform_gam::thread_buf_ce1() {
 
 void polyvecl_uniform_gam::thread_buf_we0() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        buf_we0 = grp_keccak_squeezeblocks_1_fu_408_out_r_we0.read();
+        buf_we0 = grp_keccak_squeezeblocks_fu_408_out_r_we0.read();
     } else {
         buf_we0 = ap_const_logic_0;
     }
@@ -1346,8 +1346,8 @@ void polyvecl_uniform_gam::thread_grp_keccak_absorb_fu_395_ap_start() {
     grp_keccak_absorb_fu_395_ap_start = grp_keccak_absorb_fu_395_ap_start_reg.read();
 }
 
-void polyvecl_uniform_gam::thread_grp_keccak_squeezeblocks_1_fu_408_ap_start() {
-    grp_keccak_squeezeblocks_1_fu_408_ap_start = grp_keccak_squeezeblocks_1_fu_408_ap_start_reg.read();
+void polyvecl_uniform_gam::thread_grp_keccak_squeezeblocks_fu_408_ap_start() {
+    grp_keccak_squeezeblocks_fu_408_ap_start = grp_keccak_squeezeblocks_fu_408_ap_start_reg.read();
 }
 
 void polyvecl_uniform_gam::thread_i_11_fu_485_p2() {
@@ -1516,7 +1516,7 @@ void polyvecl_uniform_gam::thread_state_s_address0() {
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
         state_s_address0 =  (sc_lv<5>) (zext_ln363_fu_491_p1.read());
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        state_s_address0 = grp_keccak_squeezeblocks_1_fu_408_s_address0.read();
+        state_s_address0 = grp_keccak_squeezeblocks_fu_408_s_address0.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read())) {
         state_s_address0 = grp_keccak_absorb_fu_395_s_address0.read();
     } else {
@@ -1526,7 +1526,7 @@ void polyvecl_uniform_gam::thread_state_s_address0() {
 
 void polyvecl_uniform_gam::thread_state_s_address1() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        state_s_address1 = grp_keccak_squeezeblocks_1_fu_408_s_address1.read();
+        state_s_address1 = grp_keccak_squeezeblocks_fu_408_s_address1.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read())) {
         state_s_address1 = grp_keccak_absorb_fu_395_s_address1.read();
     } else {
@@ -1544,7 +1544,7 @@ void polyvecl_uniform_gam::thread_state_s_ce0() {
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state12.read()))) {
         state_s_ce0 = ap_const_logic_1;
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        state_s_ce0 = grp_keccak_squeezeblocks_1_fu_408_s_ce0.read();
+        state_s_ce0 = grp_keccak_squeezeblocks_fu_408_s_ce0.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read())) {
         state_s_ce0 = grp_keccak_absorb_fu_395_s_ce0.read();
     } else {
@@ -1554,7 +1554,7 @@ void polyvecl_uniform_gam::thread_state_s_ce0() {
 
 void polyvecl_uniform_gam::thread_state_s_ce1() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        state_s_ce1 = grp_keccak_squeezeblocks_1_fu_408_s_ce1.read();
+        state_s_ce1 = grp_keccak_squeezeblocks_fu_408_s_ce1.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read())) {
         state_s_ce1 = grp_keccak_absorb_fu_395_s_ce1.read();
     } else {
@@ -1572,7 +1572,7 @@ void polyvecl_uniform_gam::thread_state_s_d0() {
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
         state_s_d0 = ap_const_lv64_0;
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        state_s_d0 = grp_keccak_squeezeblocks_1_fu_408_s_d0.read();
+        state_s_d0 = grp_keccak_squeezeblocks_fu_408_s_d0.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read())) {
         state_s_d0 = grp_keccak_absorb_fu_395_s_d0.read();
     } else {
@@ -1582,7 +1582,7 @@ void polyvecl_uniform_gam::thread_state_s_d0() {
 
 void polyvecl_uniform_gam::thread_state_s_d1() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        state_s_d1 = grp_keccak_squeezeblocks_1_fu_408_s_d1.read();
+        state_s_d1 = grp_keccak_squeezeblocks_fu_408_s_d1.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read())) {
         state_s_d1 = grp_keccak_absorb_fu_395_s_d1.read();
     } else {
@@ -1598,7 +1598,7 @@ void polyvecl_uniform_gam::thread_state_s_we0() {
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state12.read()))) {
         state_s_we0 = ap_const_logic_1;
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        state_s_we0 = grp_keccak_squeezeblocks_1_fu_408_s_we0.read();
+        state_s_we0 = grp_keccak_squeezeblocks_fu_408_s_we0.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read())) {
         state_s_we0 = grp_keccak_absorb_fu_395_s_we0.read();
     } else {
@@ -1608,7 +1608,7 @@ void polyvecl_uniform_gam::thread_state_s_we0() {
 
 void polyvecl_uniform_gam::thread_state_s_we1() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        state_s_we1 = grp_keccak_squeezeblocks_1_fu_408_s_we1.read();
+        state_s_we1 = grp_keccak_squeezeblocks_fu_408_s_we1.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read())) {
         state_s_we1 = grp_keccak_absorb_fu_395_s_we1.read();
     } else {
@@ -1956,7 +1956,7 @@ void polyvecl_uniform_gam::thread_ap_NS_fsm() {
             ap_NS_fsm = ap_ST_fsm_state14;
             break;
         case 8192 : 
-            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read()) && esl_seteq<1,1,1>(grp_keccak_squeezeblocks_1_fu_408_ap_done.read(), ap_const_logic_1))) {
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read()) && esl_seteq<1,1,1>(grp_keccak_squeezeblocks_fu_408_ap_done.read(), ap_const_logic_1))) {
                 ap_NS_fsm = ap_ST_fsm_state15;
             } else {
                 ap_NS_fsm = ap_ST_fsm_state14;

@@ -190,15 +190,15 @@ poly_uniform::poly_uniform(sc_module_name name) : sc_module(name), mVcdFile(0) {
     grp_rej_uniform_fu_301->buf_r_q1(buf_q1);
     grp_rej_uniform_fu_301->buflen(grp_rej_uniform_fu_301_buflen);
     grp_rej_uniform_fu_301->ap_return(grp_rej_uniform_fu_301_ap_return);
-    crypto_sign_urem_eOg_U47 = new crypto_sign_urem_eOg<1,13,9,3,9>("crypto_sign_urem_eOg_U47");
-    crypto_sign_urem_eOg_U47->clk(ap_clk);
-    crypto_sign_urem_eOg_U47->reset(ap_rst);
-    crypto_sign_urem_eOg_U47->start(grp_fu_525_ap_start);
-    crypto_sign_urem_eOg_U47->done(grp_fu_525_ap_done);
-    crypto_sign_urem_eOg_U47->din0(buflen_0_reg_251);
-    crypto_sign_urem_eOg_U47->din1(grp_fu_525_p1);
-    crypto_sign_urem_eOg_U47->ce(ap_var_for_const2);
-    crypto_sign_urem_eOg_U47->dout(grp_fu_525_p2);
+    crypto_sign_urem_eOg_U46 = new crypto_sign_urem_eOg<1,13,9,3,9>("crypto_sign_urem_eOg_U46");
+    crypto_sign_urem_eOg_U46->clk(ap_clk);
+    crypto_sign_urem_eOg_U46->reset(ap_rst);
+    crypto_sign_urem_eOg_U46->start(grp_fu_525_ap_start);
+    crypto_sign_urem_eOg_U46->done(grp_fu_525_ap_done);
+    crypto_sign_urem_eOg_U46->din0(buflen_0_reg_251);
+    crypto_sign_urem_eOg_U46->din1(grp_fu_525_p1);
+    crypto_sign_urem_eOg_U46->ce(ap_var_for_const2);
+    crypto_sign_urem_eOg_U46->dout(grp_fu_525_p2);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -426,7 +426,7 @@ poly_uniform::poly_uniform(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     SC_METHOD(thread_icmp_ln377_fu_519_p2);
     sensitive << ( ap_CS_fsm_state16 );
-    sensitive << ( tmp_5_fu_509_p4 );
+    sensitive << ( tmp_26_fu_509_p4 );
 
     SC_METHOD(thread_icmp_ln379_fu_552_p2);
     sensitive << ( trunc_ln378_1_reg_725 );
@@ -573,7 +573,7 @@ poly_uniform::poly_uniform(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_t_1_fu_331_p1);
     sensitive << ( tmp_fu_321_p4 );
 
-    SC_METHOD(thread_tmp_5_fu_509_p4);
+    SC_METHOD(thread_tmp_26_fu_509_p4);
     sensitive << ( ctr_0_reg_241 );
 
     SC_METHOD(thread_tmp_fu_321_p4);
@@ -881,7 +881,7 @@ poly_uniform::poly_uniform(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, zext_ln450_fu_477_p1, "zext_ln450_fu_477_p1");
     sc_trace(mVcdFile, shl_ln450_fu_481_p2, "shl_ln450_fu_481_p2");
     sc_trace(mVcdFile, sext_ln377_fu_501_p1, "sext_ln377_fu_501_p1");
-    sc_trace(mVcdFile, tmp_5_fu_509_p4, "tmp_5_fu_509_p4");
+    sc_trace(mVcdFile, tmp_26_fu_509_p4, "tmp_26_fu_509_p4");
     sc_trace(mVcdFile, grp_fu_525_p1, "grp_fu_525_p1");
     sc_trace(mVcdFile, grp_fu_525_p2, "grp_fu_525_p2");
     sc_trace(mVcdFile, zext_ln378_fu_539_p1, "zext_ln378_fu_539_p1");
@@ -908,7 +908,7 @@ poly_uniform::~poly_uniform() {
     delete grp_keccak_absorb_fu_275;
     delete grp_keccak_squeezeblocks_2_fu_288;
     delete grp_rej_uniform_fu_301;
-    delete crypto_sign_urem_eOg_U47;
+    delete crypto_sign_urem_eOg_U46;
 }
 
 void poly_uniform::thread_ap_var_for_const2() {
@@ -1374,7 +1374,7 @@ void poly_uniform::thread_icmp_ln362_fu_335_p2() {
 }
 
 void poly_uniform::thread_icmp_ln377_fu_519_p2() {
-    icmp_ln377_fu_519_p2 = (!tmp_5_fu_509_p4.read().is_01() || !ap_const_lv24_0.is_01())? sc_lv<1>(): sc_lv<1>(tmp_5_fu_509_p4.read() == ap_const_lv24_0);
+    icmp_ln377_fu_519_p2 = (!tmp_26_fu_509_p4.read().is_01() || !ap_const_lv24_0.is_01())? sc_lv<1>(): sc_lv<1>(tmp_26_fu_509_p4.read() == ap_const_lv24_0);
 }
 
 void poly_uniform::thread_icmp_ln379_fu_552_p2() {
@@ -1572,8 +1572,8 @@ void poly_uniform::thread_t_1_fu_331_p1() {
     t_1_fu_331_p1 = esl_zext<8,2>(tmp_fu_321_p4.read());
 }
 
-void poly_uniform::thread_tmp_5_fu_509_p4() {
-    tmp_5_fu_509_p4 = ctr_0_reg_241.read().range(31, 8);
+void poly_uniform::thread_tmp_26_fu_509_p4() {
+    tmp_26_fu_509_p4 = ctr_0_reg_241.read().range(31, 8);
 }
 
 void poly_uniform::thread_tmp_fu_321_p4() {

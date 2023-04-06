@@ -1028,7 +1028,7 @@
             <Obj>
               <type>0</type>
               <id>28</id>
-              <name>tmp_3</name>
+              <name>tmp_8</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>300</lineNumber>
@@ -1059,7 +1059,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_3_fu_157_p3</rtlName>
+              <rtlName>tmp_8_fu_157_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -4447,7 +4447,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_3_fu_157</first>
+        <first>tmp_8_fu_157</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

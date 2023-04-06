@@ -73,8 +73,8 @@ architecture behav of polyvecl_pointwise_a is
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
     signal zext_ln181_2_fu_201_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal zext_ln181_2_reg_517 : STD_LOGIC_VECTOR (11 downto 0);
-    signal zext_ln181_3_cast_fu_213_p1 : STD_LOGIC_VECTOR (5 downto 0);
-    signal zext_ln181_3_cast_reg_523 : STD_LOGIC_VECTOR (5 downto 0);
+    signal zext_ln181_3_fu_213_p1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal zext_ln181_3_reg_523 : STD_LOGIC_VECTOR (5 downto 0);
     signal i_14_fu_223_p2 : STD_LOGIC_VECTOR (8 downto 0);
     signal i_14_reg_531 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
@@ -116,18 +116,18 @@ architecture behav of polyvecl_pointwise_a is
     attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
     signal zext_ln181_4_fu_243_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln181_fu_229_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal zext_ln181_5_fu_257_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal zext_ln181_10_fu_385_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal zext_ln181_11_fu_395_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln181_6_fu_257_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln181_11_fu_385_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln181_12_fu_395_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln181_1_fu_400_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln88_2_fu_494_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln88_fu_480_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal t_1_fu_320_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal add_ln88_fu_505_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_fu_193_p3 : STD_LOGIC_VECTOR (10 downto 0);
-    signal tmp_s_fu_205_p3 : STD_LOGIC_VECTOR (4 downto 0);
-    signal tmp_7_fu_234_p4 : STD_LOGIC_VECTOR (12 downto 0);
-    signal zext_ln181_3_fu_248_p1 : STD_LOGIC_VECTOR (11 downto 0);
+    signal tmp_4_fu_205_p3 : STD_LOGIC_VECTOR (4 downto 0);
+    signal tmp_5_fu_234_p4 : STD_LOGIC_VECTOR (12 downto 0);
+    signal zext_ln181_5_fu_248_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln181_fu_252_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal mul_ln181_fu_270_p0 : STD_LOGIC_VECTOR (22 downto 0);
     signal mul_ln181_fu_270_p1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -139,13 +139,13 @@ architecture behav of polyvecl_pointwise_a is
     signal sext_ln181_1_fu_276_p1 : STD_LOGIC_VECTOR (55 downto 0);
     signal sext_ln19_1_fu_300_p1 : STD_LOGIC_VECTOR (55 downto 0);
     signal add_ln19_fu_304_p2 : STD_LOGIC_VECTOR (55 downto 0);
-    signal tmp_1_fu_310_p4 : STD_LOGIC_VECTOR (23 downto 0);
-    signal zext_ln181_7_fu_331_p1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal tmp_6_fu_310_p4 : STD_LOGIC_VECTOR (23 downto 0);
+    signal zext_ln181_8_fu_331_p1 : STD_LOGIC_VECTOR (5 downto 0);
     signal add_ln181_1_fu_335_p2 : STD_LOGIC_VECTOR (5 downto 0);
-    signal tmp_8_fu_348_p3 : STD_LOGIC_VECTOR (10 downto 0);
-    signal zext_ln181_9_fu_376_p1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal tmp_s_fu_348_p3 : STD_LOGIC_VECTOR (10 downto 0);
+    signal zext_ln181_10_fu_376_p1 : STD_LOGIC_VECTOR (13 downto 0);
     signal add_ln181_2_fu_380_p2 : STD_LOGIC_VECTOR (13 downto 0);
-    signal zext_ln181_8_fu_372_p1 : STD_LOGIC_VECTOR (11 downto 0);
+    signal zext_ln181_9_fu_372_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln181_3_fu_390_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal mul_ln181_1_fu_413_p0 : STD_LOGIC_VECTOR (22 downto 0);
     signal mul_ln181_1_fu_413_p1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -157,7 +157,7 @@ architecture behav of polyvecl_pointwise_a is
     signal sext_ln181_3_fu_419_p1 : STD_LOGIC_VECTOR (55 downto 0);
     signal sext_ln19_4_fu_443_p1 : STD_LOGIC_VECTOR (55 downto 0);
     signal add_ln19_1_fu_447_p2 : STD_LOGIC_VECTOR (55 downto 0);
-    signal tmp_2_fu_453_p4 : STD_LOGIC_VECTOR (23 downto 0);
+    signal tmp_7_fu_453_p4 : STD_LOGIC_VECTOR (23 downto 0);
     signal zext_ln88_1_fu_485_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln88_1_fu_489_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (7 downto 0);
@@ -301,14 +301,14 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then
                     zext_ln181_2_reg_517(10 downto 8) <= zext_ln181_2_fu_201_p1(10 downto 8);
-                    zext_ln181_3_cast_reg_523(4 downto 2) <= zext_ln181_3_cast_fu_213_p1(4 downto 2);
+                    zext_ln181_3_reg_523(4 downto 2) <= zext_ln181_3_fu_213_p1(4 downto 2);
             end if;
         end if;
     end process;
     zext_ln181_2_reg_517(7 downto 0) <= "00000000";
     zext_ln181_2_reg_517(11) <= '0';
-    zext_ln181_3_cast_reg_523(1 downto 0) <= "00";
-    zext_ln181_3_cast_reg_523(5) <= '0';
+    zext_ln181_3_reg_523(1 downto 0) <= "00";
+    zext_ln181_3_reg_523(5) <= '0';
     tmp_26_cast_reg_549(7 downto 0) <= "00000000";
     zext_ln176_reg_554(7 downto 0) <= "00000000";
     zext_ln176_reg_554(11) <= '0';
@@ -356,10 +356,10 @@ begin
                 ap_NS_fsm <= "XXXXXXXX";
         end case;
     end process;
-    add_ln181_1_fu_335_p2 <= std_logic_vector(unsigned(zext_ln181_7_fu_331_p1) + unsigned(zext_ln181_3_cast_reg_523));
-    add_ln181_2_fu_380_p2 <= std_logic_vector(unsigned(tmp_26_cast_reg_549) + unsigned(zext_ln181_9_fu_376_p1));
-    add_ln181_3_fu_390_p2 <= std_logic_vector(unsigned(zext_ln176_reg_554) + unsigned(zext_ln181_8_fu_372_p1));
-    add_ln181_fu_252_p2 <= std_logic_vector(unsigned(zext_ln181_2_reg_517) + unsigned(zext_ln181_3_fu_248_p1));
+    add_ln181_1_fu_335_p2 <= std_logic_vector(unsigned(zext_ln181_8_fu_331_p1) + unsigned(zext_ln181_3_reg_523));
+    add_ln181_2_fu_380_p2 <= std_logic_vector(unsigned(tmp_26_cast_reg_549) + unsigned(zext_ln181_10_fu_376_p1));
+    add_ln181_3_fu_390_p2 <= std_logic_vector(unsigned(zext_ln176_reg_554) + unsigned(zext_ln181_9_fu_372_p1));
+    add_ln181_fu_252_p2 <= std_logic_vector(unsigned(zext_ln181_2_reg_517) + unsigned(zext_ln181_5_fu_248_p1));
     add_ln19_1_fu_447_p2 <= std_logic_vector(signed(sext_ln181_3_fu_419_p1) + signed(sext_ln19_4_fu_443_p1));
     add_ln19_fu_304_p2 <= std_logic_vector(signed(sext_ln181_1_fu_276_p1) + signed(sext_ln19_1_fu_300_p1));
     add_ln88_1_fu_489_p2 <= std_logic_vector(unsigned(zext_ln181_2_reg_517) + unsigned(zext_ln88_1_fu_485_p1));
@@ -430,7 +430,7 @@ begin
 
         sext_ln19_4_fu_443_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(mul_ln19_1_fu_437_p2),56));
 
-        t_1_fu_320_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_1_fu_310_p4),32));
+        t_1_fu_320_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_6_fu_310_p4),32));
 
     t_2_fu_427_p2 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(signed('0' &ap_const_lv32_3802001) * signed(trunc_ln18_1_fu_423_p1))), 32));
 
@@ -455,7 +455,7 @@ begin
         end if; 
     end process;
 
-        t_coeffs_d0 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_2_fu_453_p4),32));
+        t_coeffs_d0 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_7_fu_453_p4),32));
 
 
     t_coeffs_we0_assign_proc : process(ap_CS_fsm_state6)
@@ -468,20 +468,20 @@ begin
     end process;
 
     t_fu_284_p2 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(signed('0' &ap_const_lv32_3802001) * signed(trunc_ln18_fu_280_p1))), 32));
-    tmp_1_fu_310_p4 <= add_ln19_fu_304_p2(55 downto 32);
     tmp_26_cast_fu_340_p3 <= (add_ln181_1_fu_335_p2 & ap_const_lv8_0);
-    tmp_2_fu_453_p4 <= add_ln19_1_fu_447_p2(55 downto 32);
-    tmp_7_fu_234_p4 <= ((w_coeffs_offset & ap_const_lv1_0) & i_0_i_reg_146);
-    tmp_8_fu_348_p3 <= (i_0_reg_158 & ap_const_lv8_0);
+    tmp_4_fu_205_p3 <= (w_coeffs_offset & ap_const_lv2_0);
+    tmp_5_fu_234_p4 <= ((w_coeffs_offset & ap_const_lv1_0) & i_0_i_reg_146);
+    tmp_6_fu_310_p4 <= add_ln19_fu_304_p2(55 downto 32);
+    tmp_7_fu_453_p4 <= add_ln19_1_fu_447_p2(55 downto 32);
     tmp_fu_193_p3 <= (w_coeffs_offset & ap_const_lv8_0);
-    tmp_s_fu_205_p3 <= (w_coeffs_offset & ap_const_lv2_0);
+    tmp_s_fu_348_p3 <= (i_0_reg_158 & ap_const_lv8_0);
     trunc_ln18_1_fu_423_p1 <= mul_ln181_1_fu_413_p2(32 - 1 downto 0);
     trunc_ln18_fu_280_p1 <= mul_ln181_fu_270_p2(32 - 1 downto 0);
 
-    u_vec_coeffs_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state5, zext_ln181_4_fu_243_p1, zext_ln181_10_fu_385_p1)
+    u_vec_coeffs_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state5, zext_ln181_4_fu_243_p1, zext_ln181_11_fu_385_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            u_vec_coeffs_address0 <= zext_ln181_10_fu_385_p1(12 - 1 downto 0);
+            u_vec_coeffs_address0 <= zext_ln181_11_fu_385_p1(12 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
             u_vec_coeffs_address0 <= zext_ln181_4_fu_243_p1(12 - 1 downto 0);
         else 
@@ -500,10 +500,10 @@ begin
     end process;
 
 
-    v_vec_coeffs_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state5, zext_ln181_fu_229_p1, zext_ln181_11_fu_395_p1)
+    v_vec_coeffs_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state5, zext_ln181_fu_229_p1, zext_ln181_12_fu_395_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            v_vec_coeffs_address0 <= zext_ln181_11_fu_395_p1(10 - 1 downto 0);
+            v_vec_coeffs_address0 <= zext_ln181_12_fu_395_p1(10 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
             v_vec_coeffs_address0 <= zext_ln181_fu_229_p1(10 - 1 downto 0);
         else 
@@ -522,14 +522,14 @@ begin
     end process;
 
 
-    w_coeffs_address0_assign_proc : process(ap_CS_fsm_state7, w_coeffs_addr_1_reg_585, ap_CS_fsm_state3, ap_CS_fsm_state8, zext_ln181_5_fu_257_p1, zext_ln88_2_fu_494_p1)
+    w_coeffs_address0_assign_proc : process(ap_CS_fsm_state7, w_coeffs_addr_1_reg_585, ap_CS_fsm_state3, ap_CS_fsm_state8, zext_ln181_6_fu_257_p1, zext_ln88_2_fu_494_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
             w_coeffs_address0 <= w_coeffs_addr_1_reg_585;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
             w_coeffs_address0 <= zext_ln88_2_fu_494_p1(10 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            w_coeffs_address0 <= zext_ln181_5_fu_257_p1(10 - 1 downto 0);
+            w_coeffs_address0 <= zext_ln181_6_fu_257_p1(10 - 1 downto 0);
         else 
             w_coeffs_address0 <= "XXXXXXXXXX";
         end if; 
@@ -567,18 +567,18 @@ begin
         end if; 
     end process;
 
-    zext_ln176_fu_356_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_8_fu_348_p3),12));
-    zext_ln181_10_fu_385_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln181_2_fu_380_p2),64));
-    zext_ln181_11_fu_395_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln181_3_fu_390_p2),64));
+    zext_ln176_fu_356_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_s_fu_348_p3),12));
+    zext_ln181_10_fu_376_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i1_reg_170),14));
+    zext_ln181_11_fu_385_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln181_2_fu_380_p2),64));
+    zext_ln181_12_fu_395_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln181_3_fu_390_p2),64));
     zext_ln181_1_fu_400_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i1_reg_170),64));
     zext_ln181_2_fu_201_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_fu_193_p3),12));
-    zext_ln181_3_cast_fu_213_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_s_fu_205_p3),6));
-    zext_ln181_3_fu_248_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i_reg_146),12));
-    zext_ln181_4_fu_243_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_7_fu_234_p4),64));
-    zext_ln181_5_fu_257_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln181_fu_252_p2),64));
-    zext_ln181_7_fu_331_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_reg_158),6));
-    zext_ln181_8_fu_372_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i1_reg_170),12));
-    zext_ln181_9_fu_376_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i1_reg_170),14));
+    zext_ln181_3_fu_213_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_4_fu_205_p3),6));
+    zext_ln181_4_fu_243_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_5_fu_234_p4),64));
+    zext_ln181_5_fu_248_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i_reg_146),12));
+    zext_ln181_6_fu_257_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln181_fu_252_p2),64));
+    zext_ln181_8_fu_331_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_reg_158),6));
+    zext_ln181_9_fu_372_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i1_reg_170),12));
     zext_ln181_fu_229_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i_reg_146),64));
     zext_ln88_1_fu_485_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i20_reg_182),12));
     zext_ln88_2_fu_494_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln88_1_fu_489_p2),64));

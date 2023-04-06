@@ -303,7 +303,7 @@ architecture behav of poly_uniform is
     signal zext_ln450_fu_477_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal shl_ln450_fu_481_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal sext_ln377_fu_501_p1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal tmp_5_fu_509_p4 : STD_LOGIC_VECTOR (23 downto 0);
+    signal tmp_26_fu_509_p4 : STD_LOGIC_VECTOR (23 downto 0);
     signal grp_fu_525_p1 : STD_LOGIC_VECTOR (2 downto 0);
     signal grp_fu_525_p2 : STD_LOGIC_VECTOR (8 downto 0);
     signal zext_ln378_fu_539_p1 : STD_LOGIC_VECTOR (10 downto 0);
@@ -568,7 +568,7 @@ begin
         buflen => grp_rej_uniform_fu_301_buflen,
         ap_return => grp_rej_uniform_fu_301_ap_return);
 
-    crypto_sign_urem_eOg_U47 : component crypto_sign_urem_eOg
+    crypto_sign_urem_eOg_U46 : component crypto_sign_urem_eOg
     generic map (
         ID => 1,
         NUM_STAGE => 13,
@@ -1186,7 +1186,7 @@ begin
     i_s_fu_451_p4 <= grp_keccak_absorb_fu_275_ap_return(31 downto 3);
     icmp_ln30_fu_386_p2 <= "1" when (i_0_i1_i_reg_217 = ap_const_lv4_8) else "0";
     icmp_ln362_fu_335_p2 <= "1" when (i_0_i_i_i_reg_195 = ap_const_lv5_19) else "0";
-    icmp_ln377_fu_519_p2 <= "1" when (tmp_5_fu_509_p4 = ap_const_lv24_0) else "0";
+    icmp_ln377_fu_519_p2 <= "1" when (tmp_26_fu_509_p4 = ap_const_lv24_0) else "0";
     icmp_ln379_fu_552_p2 <= "1" when (i_0_reg_263 = trunc_ln378_1_reg_725) else "0";
     icmp_ln416_fu_356_p2 <= "1" when (i_3_i_reg_206 = ap_const_lv3_4) else "0";
     r_fu_438_p2 <= (shl_ln31_fu_432_p2 or r_0_i2_i_reg_229);
@@ -1335,7 +1335,7 @@ begin
     sub_ln384_fu_595_p2 <= std_logic_vector(unsigned(ap_const_lv10_100) - unsigned(trunc_ln384_fu_591_p1));
     t_0_fu_317_p1 <= nonce(8 - 1 downto 0);
     t_1_fu_331_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_fu_321_p4),8));
-    tmp_5_fu_509_p4 <= ctr_0_reg_241(31 downto 8);
+    tmp_26_fu_509_p4 <= ctr_0_reg_241(31 downto 8);
     tmp_fu_321_p4 <= nonce(9 downto 8);
     trunc_ln31_fu_416_p1 <= i_0_i1_i_reg_217(3 - 1 downto 0);
     trunc_ln375_1_fu_383_p1 <= a_coeffs_offset1(2 - 1 downto 0);

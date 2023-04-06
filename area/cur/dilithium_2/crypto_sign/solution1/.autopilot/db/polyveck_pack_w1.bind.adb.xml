@@ -343,10 +343,10 @@ polyw1_pack.exit:4  br i1 %icmp_ln418, label %4, label %1
 
 <Node id="23" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:3  %empty_37 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
+:3  %empty_39 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
 
 ]]></Node>
-<StgValue><ssdm name="empty_37"/></StgValue>
+<StgValue><ssdm name="empty_39"/></StgValue>
 </operation>
 
 <operation id="25" st_id="3" stage="1" lat="1">
@@ -501,10 +501,10 @@ polyw1_pack.exit:4  br i1 %icmp_ln418, label %4, label %1
 
 <Node id="42" bw="11" op_0_bw="11" op_1_bw="3" op_2_bw="8">
 <![CDATA[
-:15  %tmp_9 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln917)
+:15  %tmp_7 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln917)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_9"/></StgValue>
+<StgValue><ssdm name="tmp_7"/></StgValue>
 </operation>
 
 <operation id="35" st_id="3" stage="1" lat="1">
@@ -517,7 +517,7 @@ polyw1_pack.exit:4  br i1 %icmp_ln418, label %4, label %1
 
 <Node id="43" bw="64" op_0_bw="11">
 <![CDATA[
-:16  %zext_ln917 = zext i11 %tmp_9 to i64
+:16  %zext_ln917 = zext i11 %tmp_7 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln917"/></StgValue>
@@ -823,10 +823,10 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 
 <Node id="58" bw="11" op_0_bw="11" op_1_bw="3" op_2_bw="8">
 <![CDATA[
-:31  %tmp_10 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln919)
+:31  %tmp_8 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln919)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_10"/></StgValue>
+<StgValue><ssdm name="tmp_8"/></StgValue>
 </operation>
 
 <operation id="56" st_id="4" stage="1" lat="1">
@@ -838,7 +838,7 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 
 <Node id="59" bw="64" op_0_bw="11">
 <![CDATA[
-:32  %zext_ln919 = zext i11 %tmp_10 to i64
+:32  %zext_ln919 = zext i11 %tmp_8 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln919"/></StgValue>
@@ -898,10 +898,10 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 
 <Node id="74" bw="11" op_0_bw="11" op_1_bw="3" op_2_bw="8">
 <![CDATA[
-:47  %tmp_11 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln921)
+:47  %tmp_9 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln921)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_11"/></StgValue>
+<StgValue><ssdm name="tmp_9"/></StgValue>
 </operation>
 
 <operation id="61" st_id="4" stage="1" lat="1">
@@ -913,7 +913,7 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 
 <Node id="75" bw="64" op_0_bw="11">
 <![CDATA[
-:48  %zext_ln921 = zext i11 %tmp_11 to i64
+:48  %zext_ln921 = zext i11 %tmp_9 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln921"/></StgValue>
@@ -1410,13 +1410,13 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 </dataflow>
 <dataflow id="139" from="StgValue_138" to="icmp_ln915" fromId="138" toId="23">
 </dataflow>
-<dataflow id="140" from="_ssdm_op_SpecLoopTripCount" to="empty_37" fromId="105" toId="24">
+<dataflow id="140" from="_ssdm_op_SpecLoopTripCount" to="empty_39" fromId="105" toId="24">
 </dataflow>
-<dataflow id="142" from="StgValue_141" to="empty_37" fromId="141" toId="24">
+<dataflow id="142" from="StgValue_141" to="empty_39" fromId="141" toId="24">
 </dataflow>
-<dataflow id="143" from="StgValue_141" to="empty_37" fromId="141" toId="24">
+<dataflow id="143" from="StgValue_141" to="empty_39" fromId="141" toId="24">
 </dataflow>
-<dataflow id="144" from="StgValue_141" to="empty_37" fromId="141" toId="24">
+<dataflow id="144" from="StgValue_141" to="empty_39" fromId="141" toId="24">
 </dataflow>
 <dataflow id="145" from="i_0_i" to="i_19" fromId="21" toId="25">
 </dataflow>
@@ -1454,13 +1454,13 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 </dataflow>
 <dataflow id="168" from="StgValue_167" to="or_ln917" fromId="167" toId="33">
 </dataflow>
-<dataflow id="170" from="_ssdm_op_BitConcatenate.i11.i3.i8" to="tmp_9" fromId="169" toId="34">
+<dataflow id="170" from="_ssdm_op_BitConcatenate.i11.i3.i8" to="tmp_7" fromId="169" toId="34">
 </dataflow>
-<dataflow id="171" from="i_0" to="tmp_9" fromId="7" toId="34">
+<dataflow id="171" from="i_0" to="tmp_7" fromId="7" toId="34">
 </dataflow>
-<dataflow id="172" from="or_ln917" to="tmp_9" fromId="33" toId="34">
+<dataflow id="172" from="or_ln917" to="tmp_7" fromId="33" toId="34">
 </dataflow>
-<dataflow id="173" from="tmp_9" to="zext_ln917" fromId="34" toId="35">
+<dataflow id="173" from="tmp_7" to="zext_ln917" fromId="34" toId="35">
 </dataflow>
 <dataflow id="174" from="w1_vec_coeffs" to="w1_vec_coeffs_addr_1" fromId="96" toId="36">
 </dataflow>
@@ -1526,13 +1526,13 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 </dataflow>
 <dataflow id="209" from="StgValue_208" to="or_ln919" fromId="208" toId="54">
 </dataflow>
-<dataflow id="210" from="_ssdm_op_BitConcatenate.i11.i3.i8" to="tmp_10" fromId="169" toId="55">
+<dataflow id="210" from="_ssdm_op_BitConcatenate.i11.i3.i8" to="tmp_8" fromId="169" toId="55">
 </dataflow>
-<dataflow id="211" from="i_0" to="tmp_10" fromId="7" toId="55">
+<dataflow id="211" from="i_0" to="tmp_8" fromId="7" toId="55">
 </dataflow>
-<dataflow id="212" from="or_ln919" to="tmp_10" fromId="54" toId="55">
+<dataflow id="212" from="or_ln919" to="tmp_8" fromId="54" toId="55">
 </dataflow>
-<dataflow id="213" from="tmp_10" to="zext_ln919" fromId="55" toId="56">
+<dataflow id="213" from="tmp_8" to="zext_ln919" fromId="55" toId="56">
 </dataflow>
 <dataflow id="214" from="w1_vec_coeffs" to="w1_vec_coeffs_addr_2" fromId="96" toId="57">
 </dataflow>
@@ -1546,13 +1546,13 @@ polyw1_pack.exit.loopexit:0  br label %polyw1_pack.exit
 </dataflow>
 <dataflow id="220" from="StgValue_219" to="or_ln921" fromId="219" toId="59">
 </dataflow>
-<dataflow id="221" from="_ssdm_op_BitConcatenate.i11.i3.i8" to="tmp_11" fromId="169" toId="60">
+<dataflow id="221" from="_ssdm_op_BitConcatenate.i11.i3.i8" to="tmp_9" fromId="169" toId="60">
 </dataflow>
-<dataflow id="222" from="i_0" to="tmp_11" fromId="7" toId="60">
+<dataflow id="222" from="i_0" to="tmp_9" fromId="7" toId="60">
 </dataflow>
-<dataflow id="223" from="or_ln921" to="tmp_11" fromId="59" toId="60">
+<dataflow id="223" from="or_ln921" to="tmp_9" fromId="59" toId="60">
 </dataflow>
-<dataflow id="224" from="tmp_11" to="zext_ln921" fromId="60" toId="61">
+<dataflow id="224" from="tmp_9" to="zext_ln921" fromId="60" toId="61">
 </dataflow>
 <dataflow id="225" from="w1_vec_coeffs" to="w1_vec_coeffs_addr_3" fromId="96" toId="62">
 </dataflow>

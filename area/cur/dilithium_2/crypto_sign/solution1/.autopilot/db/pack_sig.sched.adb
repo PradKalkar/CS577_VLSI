@@ -719,7 +719,7 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>i_27</name>
+						<name>i_28</name>
 						<fileName>packing.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>176</lineNumber>
@@ -1327,7 +1327,7 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>i_28</name>
+						<name>i_29</name>
 						<fileName>packing.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>180</lineNumber>

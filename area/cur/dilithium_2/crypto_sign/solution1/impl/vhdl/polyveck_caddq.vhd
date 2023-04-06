@@ -75,7 +75,7 @@ architecture behav of polyveck_caddq is
     signal tmp_fu_81_p3 : STD_LOGIC_VECTOR (10 downto 0);
     signal zext_ln51_fu_105_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln51_fu_109_p2 : STD_LOGIC_VECTOR (11 downto 0);
-    signal tmp_4_fu_119_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_9_fu_119_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal select_ln51_fu_127_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (3 downto 0);
 
@@ -220,9 +220,9 @@ begin
     icmp_ln202_fu_69_p2 <= "1" when (i_0_reg_47 = ap_const_lv3_4) else "0";
     icmp_ln50_fu_93_p2 <= "1" when (i_0_i_reg_58 = ap_const_lv9_100) else "0";
     select_ln51_fu_127_p3 <= 
-        ap_const_lv32_7FE001 when (tmp_4_fu_119_p3(0) = '1') else 
+        ap_const_lv32_7FE001 when (tmp_9_fu_119_p3(0) = '1') else 
         ap_const_lv32_0;
-    tmp_4_fu_119_p3 <= v_vec_coeffs_q0(31 downto 31);
+    tmp_9_fu_119_p3 <= v_vec_coeffs_q0(31 downto 31);
     tmp_fu_81_p3 <= (i_0_reg_47 & ap_const_lv8_0);
 
     v_vec_coeffs_address0_assign_proc : process(ap_CS_fsm_state3, v_vec_coeffs_addr_reg_163, ap_CS_fsm_state4, zext_ln51_1_fu_114_p1)

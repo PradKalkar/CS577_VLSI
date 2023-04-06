@@ -55,7 +55,7 @@ set NewPortList {[
  	{ "name": "seed_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "seed", "role": "q0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "8"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"],
 		"CDFG" : "poly_challenge",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -69,88 +69,18 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"WaitState" : [
-			{"State" : "ap_ST_fsm_state3", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_keccak_absorb_2_fu_273"},
-			{"State" : "ap_ST_fsm_state9", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_keccak_squeezeblocks_fu_288"},
-			{"State" : "ap_ST_fsm_state15", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_keccak_squeezeblocks_fu_288"}],
+			{"State" : "ap_ST_fsm_state9", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_keccak_squeezeblocks_1_fu_328"},
+			{"State" : "ap_ST_fsm_state15", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_keccak_squeezeblocks_1_fu_328"}],
 		"Port" : [
 			{"Name" : "c_coeffs", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "seed", "Type" : "Memory", "Direction" : "I",
-				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_keccak_absorb_2_fu_273", "Port" : "m"}]},
+			{"Name" : "seed", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "KeccakF_RoundConstan", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "8", "SubInstance" : "grp_keccak_squeezeblocks_fu_288", "Port" : "KeccakF_RoundConstan"},
-					{"ID" : "3", "SubInstance" : "grp_keccak_absorb_2_fu_273", "Port" : "KeccakF_RoundConstan"}]}]},
+					{"ID" : "3", "SubInstance" : "grp_keccak_squeezeblocks_1_fu_328", "Port" : "KeccakF_RoundConstan"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.buf_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.state_s_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_keccak_absorb_2_fu_273", "Parent" : "0", "Child" : ["4", "5", "7"],
-		"CDFG" : "keccak_absorb_2",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"WaitState" : [
-			{"State" : "ap_ST_fsm_state10", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_KeccakF1600_StatePer_1_fu_473"},
-			{"State" : "ap_ST_fsm_state14", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_KeccakF1600_StatePer_1_fu_473"},
-			{"State" : "ap_ST_fsm_state9", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_load64_2_fu_481"},
-			{"State" : "ap_ST_fsm_state13", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_load64_2_fu_481"},
-			{"State" : "ap_ST_fsm_state16", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_load64_2_fu_481"}],
-		"Port" : [
-			{"Name" : "s", "Type" : "Memory", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_KeccakF1600_StatePer_1_fu_473", "Port" : "state"}]},
-			{"Name" : "pos_r", "Type" : "None", "Direction" : "I"},
-			{"Name" : "m", "Type" : "Memory", "Direction" : "I",
-				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_load64_2_fu_481", "Port" : "x"}]},
-			{"Name" : "m_offset", "Type" : "None", "Direction" : "I"},
-			{"Name" : "mlen", "Type" : "None", "Direction" : "I"},
-			{"Name" : "KeccakF_RoundConstan", "Type" : "Memory", "Direction" : "I",
-				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_KeccakF1600_StatePer_1_fu_473", "Port" : "KeccakF_RoundConstan"}]}]},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_keccak_absorb_2_fu_273.t_U", "Parent" : "3"},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_keccak_absorb_2_fu_273.grp_KeccakF1600_StatePer_1_fu_473", "Parent" : "3", "Child" : ["6"],
-		"CDFG" : "KeccakF1600_StatePer_1",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "50", "EstimateLatencyMax" : "50",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "state", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "KeccakF_RoundConstan", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_keccak_absorb_2_fu_273.grp_KeccakF1600_StatePer_1_fu_473.KeccakF_RoundConstan_U", "Parent" : "5"},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_keccak_absorb_2_fu_273.grp_load64_2_fu_481", "Parent" : "3",
-		"CDFG" : "load64_2",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "17", "EstimateLatencyMax" : "17",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "x", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "x_offset", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_keccak_squeezeblocks_fu_288", "Parent" : "0", "Child" : ["9"],
-		"CDFG" : "keccak_squeezeblocks",
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_keccak_squeezeblocks_1_fu_328", "Parent" : "0", "Child" : ["4"],
+		"CDFG" : "keccak_squeezeblocks_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -168,11 +98,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "out_r", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "s", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "9", "SubInstance" : "grp_KeccakF1600_StatePer_1_fu_118", "Port" : "state"}]},
+					{"ID" : "4", "SubInstance" : "grp_KeccakF1600_StatePer_1_fu_118", "Port" : "state"}]},
 			{"Name" : "KeccakF_RoundConstan", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "9", "SubInstance" : "grp_KeccakF1600_StatePer_1_fu_118", "Port" : "KeccakF_RoundConstan"}]}]},
-	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_keccak_squeezeblocks_fu_288.grp_KeccakF1600_StatePer_1_fu_118", "Parent" : "8", "Child" : ["10"],
+					{"ID" : "4", "SubInstance" : "grp_KeccakF1600_StatePer_1_fu_118", "Port" : "KeccakF_RoundConstan"}]}]},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_keccak_squeezeblocks_1_fu_328.grp_KeccakF1600_StatePer_1_fu_118", "Parent" : "3", "Child" : ["5"],
 		"CDFG" : "KeccakF1600_StatePer_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -188,28 +118,15 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "state", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "KeccakF_RoundConstan", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "10", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_keccak_squeezeblocks_fu_288.grp_KeccakF1600_StatePer_1_fu_118.KeccakF_RoundConstan_U", "Parent" : "9"}]}
+	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_keccak_squeezeblocks_1_fu_328.grp_KeccakF1600_StatePer_1_fu_118.KeccakF_RoundConstan_U", "Parent" : "4"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	poly_challenge {
-		c_coeffs {Type IO LastRead 15 FirstWrite 10}
-		seed {Type I LastRead 10 FirstWrite -1}
+		c_coeffs {Type IO LastRead 12 FirstWrite 7}
+		seed {Type I LastRead 3 FirstWrite -1}
 		KeccakF_RoundConstan {Type I LastRead -1 FirstWrite -1}}
-	keccak_absorb_2 {
-		s {Type IO LastRead 13 FirstWrite 4}
-		pos_r {Type I LastRead 0 FirstWrite -1}
-		m {Type I LastRead 10 FirstWrite -1}
-		m_offset {Type I LastRead 0 FirstWrite -1}
-		mlen {Type I LastRead 0 FirstWrite -1}
-		KeccakF_RoundConstan {Type I LastRead -1 FirstWrite -1}}
-	KeccakF1600_StatePer_1 {
-		state {Type IO LastRead 13 FirstWrite 14}
-		KeccakF_RoundConstan {Type I LastRead -1 FirstWrite -1}}
-	load64_2 {
-		x {Type I LastRead 1 FirstWrite -1}
-		x_offset {Type I LastRead 0 FirstWrite -1}}
-	keccak_squeezeblocks {
+	keccak_squeezeblocks_1 {
 		out_r {Type O LastRead -1 FirstWrite 5}
 		s {Type IO LastRead 13 FirstWrite 14}
 		KeccakF_RoundConstan {Type I LastRead -1 FirstWrite -1}}

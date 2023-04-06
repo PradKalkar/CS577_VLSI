@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'load64_2'
 ================================================================
-* Date:           Tue Apr  4 22:25:33 2023
+* Date:           Tue Apr  4 23:21:08 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -193,8 +193,8 @@ ST_2 : Operation 11 [1/1] (1.49ns)   --->   "%i = add i4 %i_0, 1" [fips202.c:30]
 ST_2 : Operation 12 [1/1] (0.00ns)   --->   "br i1 %icmp_ln30, label %3, label %2" [fips202.c:30]   --->   Operation 12 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln31 = zext i4 %i_0 to i14" [fips202.c:31]   --->   Operation 13 'zext' 'zext_ln31' <Predicate = (!icmp_ln30)> <Delay = 0.00>
 ST_2 : Operation 14 [1/1] (1.80ns)   --->   "%add_ln31 = add i14 %trunc_ln31, %zext_ln31" [fips202.c:31]   --->   Operation 14 'add' 'add_ln31' <Predicate = (!icmp_ln30)> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.49> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln31_6 = zext i14 %add_ln31 to i64" [fips202.c:31]   --->   Operation 15 'zext' 'zext_ln31_6' <Predicate = (!icmp_ln30)> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%x_addr = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31_6" [fips202.c:31]   --->   Operation 16 'getelementptr' 'x_addr' <Predicate = (!icmp_ln30)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln31_9 = zext i14 %add_ln31 to i64" [fips202.c:31]   --->   Operation 15 'zext' 'zext_ln31_9' <Predicate = (!icmp_ln30)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%x_addr = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31_9" [fips202.c:31]   --->   Operation 16 'getelementptr' 'x_addr' <Predicate = (!icmp_ln30)> <Delay = 0.00>
 ST_2 : Operation 17 [2/2] (2.77ns)   --->   "%x_load = load i8* %x_addr, align 1" [fips202.c:31]   --->   Operation 17 'load' 'x_load' <Predicate = (!icmp_ln30)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "ret i64 %r_0" [fips202.c:33]   --->   Operation 18 'ret' <Predicate = (icmp_ln30)> <Delay = 0.00>
 
@@ -239,7 +239,7 @@ i             (add              ) [ 0111]
 br_ln30       (br               ) [ 0000]
 zext_ln31     (zext             ) [ 0000]
 add_ln31      (add              ) [ 0000]
-zext_ln31_6   (zext             ) [ 0000]
+zext_ln31_9   (zext             ) [ 0000]
 x_addr        (getelementptr    ) [ 0001]
 ret_ln33      (ret              ) [ 0000]
 x_load        (load             ) [ 0000]
@@ -499,14 +499,14 @@ br_ln30       (br               ) [ 0111]
 </bind>
 </comp>
 
-<comp id="90" class="1004" name="zext_ln31_6_fu_90">
+<comp id="90" class="1004" name="zext_ln31_9_fu_90">
 <pin_list>
 <pin id="91" dir="0" index="0" bw="14" slack="0"/>
 <pin id="92" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln31_6/2 "/>
+<opset="zext_ln31_9/2 "/>
 </bind>
 </comp>
 
@@ -718,7 +718,7 @@ br_ln30       (br               ) [ 0111]
 		br_ln30 : 2
 		zext_ln31 : 1
 		add_ln31 : 2
-		zext_ln31_6 : 3
+		zext_ln31_9 : 3
 		x_addr : 4
 		x_load : 5
 		ret_ln33 : 1
@@ -753,7 +753,7 @@ br_ln30       (br               ) [ 0111]
 |          |    trunc_ln31_3_fu_99    |    0    |    0    |
 |----------|--------------------------|---------|---------|
 |          |      zext_ln31_fu_81     |    0    |    0    |
-|   zext   |     zext_ln31_6_fu_90    |    0    |    0    |
+|   zext   |     zext_ln31_9_fu_90    |    0    |    0    |
 |          |     zext_ln31_1_fu_95    |    0    |    0    |
 |          |    zext_ln31_2_fu_111    |    0    |    0    |
 |----------|--------------------------|---------|---------|

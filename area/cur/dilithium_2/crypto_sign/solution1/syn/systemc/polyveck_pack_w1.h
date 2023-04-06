@@ -87,7 +87,7 @@ struct polyveck_pack_w1 : public sc_module {
     sc_signal< sc_lv<6> > trunc_ln916_fu_227_p1;
     sc_signal< sc_lv<11> > tmp_s_fu_239_p4;
     sc_signal< sc_lv<8> > or_ln917_fu_254_p2;
-    sc_signal< sc_lv<11> > tmp_9_fu_260_p3;
+    sc_signal< sc_lv<11> > tmp_7_fu_260_p3;
     sc_signal< sc_lv<9> > zext_ln916_fu_273_p1;
     sc_signal< sc_lv<12> > sext_ln916_fu_285_p1;
     sc_signal< sc_lv<12> > add_ln916_fu_289_p2;
@@ -96,9 +96,9 @@ struct polyveck_pack_w1 : public sc_module {
     sc_signal< sc_lv<8> > shl_ln4_fu_307_p3;
     sc_signal< sc_lv<8> > trunc_ln916_1_fu_276_p1;
     sc_signal< sc_lv<8> > or_ln919_fu_332_p2;
-    sc_signal< sc_lv<11> > tmp_10_fu_337_p3;
+    sc_signal< sc_lv<11> > tmp_8_fu_337_p3;
     sc_signal< sc_lv<8> > or_ln921_fu_350_p2;
-    sc_signal< sc_lv<11> > tmp_11_fu_355_p3;
+    sc_signal< sc_lv<11> > tmp_9_fu_355_p3;
     sc_signal< sc_lv<9> > add_ln918_fu_368_p2;
     sc_signal< sc_lv<12> > sext_ln918_fu_373_p1;
     sc_signal< sc_lv<12> > add_ln918_1_fu_377_p2;
@@ -192,9 +192,9 @@ struct polyveck_pack_w1 : public sc_module {
     void thread_shl_ln_fu_177_p3();
     void thread_sub_ln419_fu_201_p2();
     void thread_sub_ln916_fu_280_p2();
-    void thread_tmp_10_fu_337_p3();
-    void thread_tmp_11_fu_355_p3();
-    void thread_tmp_9_fu_260_p3();
+    void thread_tmp_7_fu_260_p3();
+    void thread_tmp_8_fu_337_p3();
+    void thread_tmp_9_fu_355_p3();
     void thread_tmp_s_fu_239_p4();
     void thread_trunc_ln419_fu_173_p1();
     void thread_trunc_ln916_1_fu_276_p1();

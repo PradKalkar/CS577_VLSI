@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'poly_challenge'" level="0">
-<item name = "Date">Tue Apr  4 22:25:20 2023
+<item name = "Date">Tue Apr  4 23:21:00 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">crypto_sign</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 us, 9.975 ns, 1.25 us</column>
+<column name="ap_clk">10.00 us, 6.812 ns, 1.25 us</column>
 </table>
 </item>
 </section>
@@ -31,17 +31,18 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_keccak_absorb_2_fu_273">keccak_absorb_2, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_keccak_squeezeblocks_fu_288">keccak_squeezeblocks, 241, 241, 2.410 ms, 2.410 ms, 241, 241, none</column>
+<column name="grp_keccak_squeezeblocks_1_fu_328">keccak_squeezeblocks_1, 241, 241, 2.410 ms, 2.410 ms, 241, 241, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">25, 25, 1, -, -, 25, no</column>
-<column name="- Loop 2">16, 16, 2, -, -, 8, no</column>
-<column name="- Loop 3">256, 256, 1, -, -, 256, no</column>
-<column name="- Loop 4">?, ?, ?, -, -, 39, no</column>
-<column name=" + Loop 4.1">?, ?, 4 ~ 245, -, -, ?, no</column>
+<column name="- Loop 2">76, 76, 19, -, -, 4, no</column>
+<column name=" + Loop 2.1">16, 16, 2, -, -, 8, no</column>
+<column name="- Loop 3">16, 16, 2, -, -, 8, no</column>
+<column name="- Loop 4">256, 256, 1, -, -, 256, no</column>
+<column name="- Loop 5">?, ?, ?, -, -, 39, no</column>
+<column name=" + Loop 5.1">?, ?, 4 ~ 245, -, -, ?, no</column>
 </table>
 </item>
 </section>

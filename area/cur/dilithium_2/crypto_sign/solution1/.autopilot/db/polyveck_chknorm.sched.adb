@@ -1028,7 +1028,7 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>tmp_3</name>
+						<name>tmp_8</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>300</lineNumber>

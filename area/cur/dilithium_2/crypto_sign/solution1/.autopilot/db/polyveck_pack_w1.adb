@@ -1809,7 +1809,7 @@
             <Obj>
               <type>0</type>
               <id>42</id>
-              <name>tmp_9</name>
+              <name>tmp_7</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>917</lineNumber>
@@ -1840,7 +1840,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_9_fu_260_p3</rtlName>
+              <rtlName>tmp_7_fu_260_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>11</bitwidth>
@@ -2705,7 +2705,7 @@
             <Obj>
               <type>0</type>
               <id>58</id>
-              <name>tmp_10</name>
+              <name>tmp_8</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>919</lineNumber>
@@ -2736,7 +2736,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_10_fu_337_p3</rtlName>
+              <rtlName>tmp_8_fu_337_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>11</bitwidth>
@@ -3601,7 +3601,7 @@
             <Obj>
               <type>0</type>
               <id>74</id>
-              <name>tmp_11</name>
+              <name>tmp_9</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>921</lineNumber>
@@ -3632,7 +3632,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_11_fu_355_p3</rtlName>
+              <rtlName>tmp_9_fu_355_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>11</bitwidth>
@@ -8934,7 +8934,15 @@
         </second>
       </item>
       <item>
-        <first>tmp_10_fu_337</first>
+        <first>tmp_7_fu_260</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>42</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_8_fu_337</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -8942,19 +8950,11 @@
         </second>
       </item>
       <item>
-        <first>tmp_11_fu_355</first>
+        <first>tmp_9_fu_355</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>74</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_9_fu_260</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>42</item>
         </second>
       </item>
       <item>

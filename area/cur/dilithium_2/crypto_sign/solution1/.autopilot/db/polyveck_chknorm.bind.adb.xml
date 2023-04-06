@@ -281,10 +281,10 @@ poly_chknorm.exit:4  br i1 %icmp_ln325, label %._crit_edge.loopexit5, label %.pr
 
 <Node id="19" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader.i:2  %empty_38 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 256, i64 128)
+.preheader.i:2  %empty_40 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 256, i64 128)
 
 ]]></Node>
-<StgValue><ssdm name="empty_38"/></StgValue>
+<StgValue><ssdm name="empty_40"/></StgValue>
 </operation>
 
 <operation id="20" st_id="3" stage="1" lat="1">
@@ -442,10 +442,10 @@ poly_chknorm.exit.loopexit:0  br label %poly_chknorm.exit
 
 <Node id="28" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-:5  %tmp_3 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %v_vec_coeffs_load, i32 31)
+:5  %tmp_8 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %v_vec_coeffs_load, i32 31)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_3"/></StgValue>
+<StgValue><ssdm name="tmp_8"/></StgValue>
 </operation>
 
 <operation id="30" st_id="4" stage="1" lat="1">
@@ -458,7 +458,7 @@ poly_chknorm.exit.loopexit:0  br label %poly_chknorm.exit
 
 <Node id="29" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-:6  %t = select i1 %tmp_3, i32 -1, i32 0
+:6  %t = select i1 %tmp_8, i32 -1, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="t"/></StgValue>
@@ -682,13 +682,13 @@ poly_chknorm.exit.loopexit:0  br label %poly_chknorm.exit
 </dataflow>
 <dataflow id="85" from="StgValue_84" to="icmp_ln298" fromId="84" toId="18">
 </dataflow>
-<dataflow id="86" from="_ssdm_op_SpecLoopTripCount" to="empty_38" fromId="60" toId="19">
+<dataflow id="86" from="_ssdm_op_SpecLoopTripCount" to="empty_40" fromId="60" toId="19">
 </dataflow>
-<dataflow id="87" from="StgValue_62" to="empty_38" fromId="62" toId="19">
+<dataflow id="87" from="StgValue_62" to="empty_40" fromId="62" toId="19">
 </dataflow>
-<dataflow id="89" from="StgValue_88" to="empty_38" fromId="88" toId="19">
+<dataflow id="89" from="StgValue_88" to="empty_40" fromId="88" toId="19">
 </dataflow>
-<dataflow id="91" from="StgValue_90" to="empty_38" fromId="90" toId="19">
+<dataflow id="91" from="StgValue_90" to="empty_40" fromId="90" toId="19">
 </dataflow>
 <dataflow id="92" from="i_0_i" to="i_20" fromId="17" toId="20">
 </dataflow>
@@ -714,13 +714,13 @@ poly_chknorm.exit.loopexit:0  br label %poly_chknorm.exit
 </dataflow>
 <dataflow id="105" from="v_vec_coeffs_addr" to="v_vec_coeffs_load" fromId="25" toId="28">
 </dataflow>
-<dataflow id="107" from="_ssdm_op_BitSelect.i1.i32.i32" to="tmp_3" fromId="106" toId="29">
+<dataflow id="107" from="_ssdm_op_BitSelect.i1.i32.i32" to="tmp_8" fromId="106" toId="29">
 </dataflow>
-<dataflow id="108" from="v_vec_coeffs_load" to="tmp_3" fromId="28" toId="29">
+<dataflow id="108" from="v_vec_coeffs_load" to="tmp_8" fromId="28" toId="29">
 </dataflow>
-<dataflow id="110" from="StgValue_109" to="tmp_3" fromId="109" toId="29">
+<dataflow id="110" from="StgValue_109" to="tmp_8" fromId="109" toId="29">
 </dataflow>
-<dataflow id="111" from="tmp_3" to="t" fromId="29" toId="30">
+<dataflow id="111" from="tmp_8" to="t" fromId="29" toId="30">
 </dataflow>
 <dataflow id="113" from="StgValue_112" to="t" fromId="112" toId="30">
 </dataflow>

@@ -209,10 +209,10 @@
 
 <Node id="16" bw="64" op_0_bw="14">
 <![CDATA[
-:2  %zext_ln31_6 = zext i14 %add_ln31 to i64
+:2  %zext_ln31_9 = zext i14 %add_ln31 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln31_6"/></StgValue>
+<StgValue><ssdm name="zext_ln31_9"/></StgValue>
 </operation>
 
 <operation id="16" st_id="2" stage="1" lat="1">
@@ -225,7 +225,7 @@
 
 <Node id="17" bw="13" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:3  %x_addr = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31_6
+:3  %x_addr = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31_9
 
 ]]></Node>
 <StgValue><ssdm name="x_addr"/></StgValue>
@@ -463,13 +463,13 @@
 </dataflow>
 <dataflow id="62" from="zext_ln31" to="add_ln31" fromId="13" toId="14">
 </dataflow>
-<dataflow id="63" from="add_ln31" to="zext_ln31_6" fromId="14" toId="15">
+<dataflow id="63" from="add_ln31" to="zext_ln31_9" fromId="14" toId="15">
 </dataflow>
 <dataflow id="64" from="x" to="x_addr" fromId="31" toId="16">
 </dataflow>
 <dataflow id="65" from="StgValue_42" to="x_addr" fromId="42" toId="16">
 </dataflow>
-<dataflow id="66" from="zext_ln31_6" to="x_addr" fromId="15" toId="16">
+<dataflow id="66" from="zext_ln31_9" to="x_addr" fromId="15" toId="16">
 </dataflow>
 <dataflow id="67" from="x_addr" to="x_load" fromId="16" toId="17">
 </dataflow>

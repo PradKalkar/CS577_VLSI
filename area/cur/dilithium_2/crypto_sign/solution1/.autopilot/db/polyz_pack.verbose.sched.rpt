@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'polyz_pack'
 ================================================================
-* Date:           Tue Apr  4 22:25:21 2023
+* Date:           Tue Apr  4 23:21:00 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -103,8 +103,8 @@ ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_
 ST_2 : Operation 20 [1/1] (1.66ns)   --->   "%i = add i7 %i_0, 1" [poly.c:804]   --->   Operation 20 'add' 'i' <Predicate = true> <Delay = 1.66> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %icmp_ln804, label %3, label %2" [poly.c:804]   --->   Operation 21 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%trunc_ln805 = trunc i7 %i_0 to i6" [poly.c:805]   --->   Operation 22 'trunc' 'trunc_ln805' <Predicate = (!icmp_ln804)> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_5 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i6.i2(i3 %a_coeffs_offset_read, i6 %trunc_ln805, i2 0)" [poly.c:805]   --->   Operation 23 'bitconcatenate' 'tmp_5' <Predicate = (!icmp_ln804)> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln805 = zext i11 %tmp_5 to i64" [poly.c:805]   --->   Operation 24 'zext' 'zext_ln805' <Predicate = (!icmp_ln804)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%tmp = call i11 @_ssdm_op_BitConcatenate.i11.i3.i6.i2(i3 %a_coeffs_offset_read, i6 %trunc_ln805, i2 0)" [poly.c:805]   --->   Operation 23 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln804)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln805 = zext i11 %tmp to i64" [poly.c:805]   --->   Operation 24 'zext' 'zext_ln805' <Predicate = (!icmp_ln804)> <Delay = 0.00>
 ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%a_coeffs_addr = getelementptr [1024 x i32]* %a_coeffs, i64 0, i64 %zext_ln805" [poly.c:805]   --->   Operation 25 'getelementptr' 'a_coeffs_addr' <Predicate = (!icmp_ln804)> <Delay = 0.00>
 ST_2 : Operation 26 [2/2] (2.77ns)   --->   "%a_coeffs_load = load i32* %a_coeffs_addr, align 4" [poly.c:805]   --->   Operation 26 'load' 'a_coeffs_load' <Predicate = (!icmp_ln804)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
 ST_2 : Operation 27 [1/1] (0.00ns)   --->   "ret void" [poly.c:838]   --->   Operation 27 'ret' <Predicate = (icmp_ln804)> <Delay = 0.00>
@@ -127,8 +127,8 @@ ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln2 = call i8 @_ssdm_op_Part
 State 4 <SV = 3> <Delay = 6.28>
 ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%shl_ln = call i8 @_ssdm_op_BitConcatenate.i8.i6.i2(i6 %trunc_ln805, i2 0)" [poly.c:805]   --->   Operation 41 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%or_ln806 = or i8 %shl_ln, 1" [poly.c:806]   --->   Operation 42 'or' 'or_ln806' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%tmp_6 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln806)" [poly.c:806]   --->   Operation 43 'bitconcatenate' 'tmp_6' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln806 = zext i11 %tmp_6 to i64" [poly.c:806]   --->   Operation 44 'zext' 'zext_ln806' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%tmp_1 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln806)" [poly.c:806]   --->   Operation 43 'bitconcatenate' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln806 = zext i11 %tmp_1 to i64" [poly.c:806]   --->   Operation 44 'zext' 'zext_ln806' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%a_coeffs_addr_1 = getelementptr [1024 x i32]* %a_coeffs, i64 0, i64 %zext_ln806" [poly.c:806]   --->   Operation 45 'getelementptr' 'a_coeffs_addr_1' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 46 [2/2] (2.77ns)   --->   "%a_coeffs_load_1 = load i32* %a_coeffs_addr_1, align 4" [poly.c:806]   --->   Operation 46 'load' 'a_coeffs_load_1' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
 ST_4 : Operation 47 [1/1] (1.74ns)   --->   "%add_ln811 = add i10 1, %add_ln810" [poly.c:811]   --->   Operation 47 'add' 'add_ln811' <Predicate = true> <Delay = 1.74> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -155,8 +155,8 @@ ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln4 = call i8 @_ssdm_op_Part
 
 State 6 <SV = 5> <Delay = 6.28>
 ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%or_ln807 = or i8 %shl_ln, 2" [poly.c:807]   --->   Operation 66 'or' 'or_ln807' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 67 [1/1] (0.00ns)   --->   "%tmp_7 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln807)" [poly.c:807]   --->   Operation 67 'bitconcatenate' 'tmp_7' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%zext_ln807 = zext i11 %tmp_7 to i64" [poly.c:807]   --->   Operation 68 'zext' 'zext_ln807' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 67 [1/1] (0.00ns)   --->   "%tmp_2 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln807)" [poly.c:807]   --->   Operation 67 'bitconcatenate' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%zext_ln807 = zext i11 %tmp_2 to i64" [poly.c:807]   --->   Operation 68 'zext' 'zext_ln807' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 69 [1/1] (0.00ns)   --->   "%a_coeffs_addr_2 = getelementptr [1024 x i32]* %a_coeffs, i64 0, i64 %zext_ln807" [poly.c:807]   --->   Operation 69 'getelementptr' 'a_coeffs_addr_2' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 70 [2/2] (2.77ns)   --->   "%a_coeffs_load_2 = load i32* %a_coeffs_addr_2, align 4" [poly.c:807]   --->   Operation 70 'load' 'a_coeffs_load_2' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
 ST_6 : Operation 71 [1/1] (1.74ns)   --->   "%add_ln814 = add i10 3, %add_ln810" [poly.c:814]   --->   Operation 71 'add' 'add_ln814' <Predicate = true> <Delay = 1.74> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -183,8 +183,8 @@ ST_7 : Operation 89 [1/1] (0.00ns)   --->   "%trunc_ln6 = call i8 @_ssdm_op_Part
 
 State 8 <SV = 7> <Delay = 6.28>
 ST_8 : Operation 90 [1/1] (0.00ns)   --->   "%or_ln808 = or i8 %shl_ln, 3" [poly.c:808]   --->   Operation 90 'or' 'or_ln808' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_8 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln808)" [poly.c:808]   --->   Operation 91 'bitconcatenate' 'tmp_8' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 92 [1/1] (0.00ns)   --->   "%zext_ln808 = zext i11 %tmp_8 to i64" [poly.c:808]   --->   Operation 92 'zext' 'zext_ln808' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_3 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln808)" [poly.c:808]   --->   Operation 91 'bitconcatenate' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 92 [1/1] (0.00ns)   --->   "%zext_ln808 = zext i11 %tmp_3 to i64" [poly.c:808]   --->   Operation 92 'zext' 'zext_ln808' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 93 [1/1] (0.00ns)   --->   "%a_coeffs_addr_3 = getelementptr [1024 x i32]* %a_coeffs, i64 0, i64 %zext_ln808" [poly.c:808]   --->   Operation 93 'getelementptr' 'a_coeffs_addr_3' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 94 [2/2] (2.77ns)   --->   "%a_coeffs_load_3 = load i32* %a_coeffs_addr_3, align 4" [poly.c:808]   --->   Operation 94 'load' 'a_coeffs_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
 ST_8 : Operation 95 [1/1] (1.74ns)   --->   "%add_ln817 = add i10 5, %add_ln810" [poly.c:817]   --->   Operation 95 'add' 'add_ln817' <Predicate = true> <Delay = 1.74> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>

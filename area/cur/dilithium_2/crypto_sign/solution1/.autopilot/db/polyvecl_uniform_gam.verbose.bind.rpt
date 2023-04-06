@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'polyvecl_uniform_gam'
 ================================================================
-* Date:           Tue Apr  4 22:25:18 2023
+* Date:           Tue Apr  4 23:20:58 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -34,13 +34,13 @@
 
     + Detail: 
         * Instance: 
-        +-----------------------------------+------------------------+---------+---------+-----------+-----------+------+------+---------+
-        |                                   |                        |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
-        |              Instance             |         Module         |   min   |   max   |    min    |    max    |  min |  max |   Type  |
-        +-----------------------------------+------------------------+---------+---------+-----------+-----------+------+------+---------+
-        |grp_keccak_absorb_fu_395           |keccak_absorb           |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
-        |grp_keccak_squeezeblocks_1_fu_408  |keccak_squeezeblocks_1  |     1201|     1201| 12.010 ms | 12.010 ms |  1201|  1201|   none  |
-        +-----------------------------------+------------------------+---------+---------+-----------+-----------+------+------+---------+
+        +---------------------------------+----------------------+---------+---------+-----------+-----------+------+------+---------+
+        |                                 |                      |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |             Instance            |        Module        |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +---------------------------------+----------------------+---------+---------+-----------+-----------+------+------+---------+
+        |grp_keccak_absorb_fu_395         |keccak_absorb         |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
+        |grp_keccak_squeezeblocks_fu_408  |keccak_squeezeblocks  |     1201|     1201| 12.010 ms | 12.010 ms |  1201|  1201|   none  |
+        +---------------------------------+----------------------+---------+---------+-----------+-----------+------+------+---------+
 
         * Loop: 
         +-----------------+---------+---------+----------+-----------+-----------+------+----------+
@@ -135,7 +135,7 @@ ST_2 : Operation 40 [1/1] (0.00ns)   --->   "ret void" [polyvec.c:48]   --->   O
 State 3 <SV = 2> <Delay = 2.77>
 ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%i_0_i_i_i_i = phi i5 [ 0, %1 ], [ %i_11, %3 ]"   --->   Operation 41 'phi' 'i_0_i_i_i_i' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 42 [1/1] (1.21ns)   --->   "%icmp_ln362 = icmp eq i5 %i_0_i_i_i_i, -7" [fips202.c:362->fips202.c:648->symmetric-shake.c:28->poly.c:496->polyvec.c:47]   --->   Operation 42 'icmp' 'icmp_ln362' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.23> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%empty_28 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 25, i64 25, i64 25)"   --->   Operation 43 'speclooptripcount' 'empty_28' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%empty_30 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 25, i64 25, i64 25)"   --->   Operation 43 'speclooptripcount' 'empty_30' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 44 [1/1] (1.54ns)   --->   "%i_11 = add i5 %i_0_i_i_i_i, 1" [fips202.c:362->fips202.c:648->symmetric-shake.c:28->poly.c:496->polyvec.c:47]   --->   Operation 44 'add' 'i_11' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.90> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 45 [1/1] (0.00ns)   --->   "br i1 %icmp_ln362, label %.preheader.i.preheader, label %3" [fips202.c:362->fips202.c:648->symmetric-shake.c:28->poly.c:496->polyvec.c:47]   --->   Operation 45 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln363 = zext i5 %i_0_i_i_i_i to i64" [fips202.c:363->fips202.c:648->symmetric-shake.c:28->poly.c:496->polyvec.c:47]   --->   Operation 46 'zext' 'zext_ln363' <Predicate = (!icmp_ln362)> <Delay = 0.00>
@@ -147,10 +147,10 @@ ST_3 : Operation 50 [1/1] (1.35ns)   --->   "br label %.preheader.i" [fips202.c:
 State 4 <SV = 3> <Delay = 1.35>
 ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%i_3_i = phi i3 [ %add_ln416, %load64.1.exit14.i ], [ 0, %.preheader.i.preheader ]" [fips202.c:416->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 51 'phi' 'i_3_i' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln416 = zext i3 %i_3_i to i64" [fips202.c:416->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 52 'zext' 'zext_ln416' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%empty_29 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)"   --->   Operation 53 'speclooptripcount' 'empty_29' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%empty_31 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)"   --->   Operation 53 'speclooptripcount' 'empty_31' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 54 [1/1] (1.00ns)   --->   "%icmp_ln416 = icmp eq i3 %i_3_i, -2" [fips202.c:416->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 54 'icmp' 'icmp_ln416' <Predicate = true> <Delay = 1.00> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.23> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 55 [1/1] (1.34ns)   --->   "%add_ln416 = add i3 %i_3_i, 1" [fips202.c:416->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 55 'add' 'add_ln416' <Predicate = true> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.90> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 56 [1/1] (0.00ns)   --->   "br i1 %icmp_ln416, label %keccak_absorb.3199.exit, label %4" [fips202.c:416->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "br i1 %icmp_ln416, label %keccak_absorb.4203.exit, label %4" [fips202.c:416->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%shl_ln7 = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %i_3_i, i3 0)" [fips202.c:417->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 57 'bitconcatenate' 'shl_ln7' <Predicate = (!icmp_ln416)> <Delay = 0.00>
 ST_4 : Operation 58 [1/1] (0.00ns)   --->   "%zext_ln26 = zext i6 %shl_ln7 to i8" [fips202.c:26->fips202.c:417->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 58 'zext' 'zext_ln26' <Predicate = (!icmp_ln416)> <Delay = 0.00>
 ST_4 : Operation 59 [1/1] (1.35ns)   --->   "br label %5" [fips202.c:30->fips202.c:417->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 59 'br' <Predicate = (!icmp_ln416)> <Delay = 1.35>
@@ -160,7 +160,7 @@ State 5 <SV = 4> <Delay = 4.49>
 ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%i_0_i1_i = phi i4 [ 0, %4 ], [ %i_13, %6 ]"   --->   Operation 61 'phi' 'i_0_i1_i' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%r_0_i2_i = phi i64 [ 0, %4 ], [ %r, %6 ]"   --->   Operation 62 'phi' 'r_0_i2_i' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 63 [1/1] (1.21ns)   --->   "%icmp_ln30 = icmp eq i4 %i_0_i1_i, -8" [fips202.c:30->fips202.c:417->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 63 'icmp' 'icmp_ln30' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.23> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%empty_30 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 64 'speclooptripcount' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 64 'speclooptripcount' 'empty_32' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 65 [1/1] (1.49ns)   --->   "%i_13 = add i4 %i_0_i1_i, 1" [fips202.c:30->fips202.c:417->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 65 'add' 'i_13' <Predicate = true> <Delay = 1.49> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.90> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 66 [1/1] (0.00ns)   --->   "br i1 %icmp_ln30, label %load64.1.exit14.i, label %6" [fips202.c:30->fips202.c:417->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 66 'br' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%or_ln = call i8 @_ssdm_op_BitConcatenate.i8.i4.i4(i4 -6, i4 %i_0_i1_i)" [fips202.c:31->fips202.c:417->fips202.c:663->symmetric-shake.c:29->poly.c:496->polyvec.c:47]   --->   Operation 67 'bitconcatenate' 'or_ln' <Predicate = (!icmp_ln30)> <Delay = 0.00>
@@ -214,17 +214,17 @@ ST_12 : Operation 100 [1/1] (0.80ns)   --->   "%xor_ln451 = xor i64 %state_s_loa
 ST_12 : Operation 101 [1/1] (2.77ns)   --->   "store i64 %xor_ln451, i64* %state_s_addr, align 8" [fips202.c:451->fips202.c:675->symmetric-shake.c:31->poly.c:496->polyvec.c:47]   --->   Operation 101 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
 
 State 13 <SV = 9> <Delay = 0.00>
-ST_13 : Operation 102 [2/2] (0.00ns)   --->   "call fastcc void @keccak_squeezeblocks.1([680 x i8]* %buf, [25 x i64]* %state_s)" [fips202.c:694->poly.c:497->polyvec.c:47]   --->   Operation 102 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 102 [2/2] (0.00ns)   --->   "call fastcc void @keccak_squeezeblocks([680 x i8]* %buf, [25 x i64]* %state_s)" [fips202.c:694->poly.c:497->polyvec.c:47]   --->   Operation 102 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 14 <SV = 10> <Delay = 1.35>
-ST_14 : Operation 103 [1/2] (0.00ns)   --->   "call fastcc void @keccak_squeezeblocks.1([680 x i8]* %buf, [25 x i64]* %state_s)" [fips202.c:694->poly.c:497->polyvec.c:47]   --->   Operation 103 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 103 [1/2] (0.00ns)   --->   "call fastcc void @keccak_squeezeblocks([680 x i8]* %buf, [25 x i64]* %state_s)" [fips202.c:694->poly.c:497->polyvec.c:47]   --->   Operation 103 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_14 : Operation 104 [1/1] (1.35ns)   --->   "br label %7" [poly.c:854->poly.c:498->polyvec.c:47]   --->   Operation 104 'br' <Predicate = true> <Delay = 1.35>
 
 State 15 <SV = 11> <Delay = 4.50>
-ST_15 : Operation 105 [1/1] (0.00ns)   --->   "%i_0_i = phi i7 [ 0, %keccak_absorb.3199.exit ], [ %i_12, %8 ]"   --->   Operation 105 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 105 [1/1] (0.00ns)   --->   "%i_0_i = phi i7 [ 0, %keccak_absorb.4203.exit ], [ %i_12, %8 ]"   --->   Operation 105 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
 ST_15 : Operation 106 [1/1] (0.00ns)   --->   "%zext_ln854 = zext i7 %i_0_i to i10" [poly.c:854->poly.c:498->polyvec.c:47]   --->   Operation 106 'zext' 'zext_ln854' <Predicate = true> <Delay = 0.00>
 ST_15 : Operation 107 [1/1] (1.23ns)   --->   "%icmp_ln854 = icmp eq i7 %i_0_i, -64" [poly.c:854->poly.c:498->polyvec.c:47]   --->   Operation 107 'icmp' 'icmp_ln854' <Predicate = true> <Delay = 1.23> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.23> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_15 : Operation 108 [1/1] (0.00ns)   --->   "%empty_31 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 108 'speclooptripcount' 'empty_31' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 108 [1/1] (0.00ns)   --->   "%empty_33 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 108 'speclooptripcount' 'empty_33' <Predicate = true> <Delay = 0.00>
 ST_15 : Operation 109 [1/1] (1.66ns)   --->   "%i_12 = add i7 %i_0_i, 1" [poly.c:854->poly.c:498->polyvec.c:47]   --->   Operation 109 'add' 'i_12' <Predicate = true> <Delay = 1.66> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.90> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_15 : Operation 110 [1/1] (0.00ns)   --->   "br i1 %icmp_ln854, label %polyz_unpack.exit.loopexit, label %8" [poly.c:854->poly.c:498->polyvec.c:47]   --->   Operation 110 'br' <Predicate = true> <Delay = 0.00>
 ST_15 : Operation 111 [1/1] (0.00ns)   --->   "%trunc_ln855 = trunc i7 %i_0_i to i6" [poly.c:855->poly.c:498->polyvec.c:47]   --->   Operation 111 'trunc' 'trunc_ln855' <Predicate = (!icmp_ln854)> <Delay = 0.00>
@@ -382,7 +382,7 @@ br_ln362             (br               ) [ 001111111111111111111]
 ret_ln48             (ret              ) [ 000000000000000000000]
 i_0_i_i_i_i          (phi              ) [ 000100000000000000000]
 icmp_ln362           (icmp             ) [ 001111111111111111111]
-empty_28             (speclooptripcount) [ 000000000000000000000]
+empty_30             (speclooptripcount) [ 000000000000000000000]
 i_11                 (add              ) [ 001111111111111111111]
 br_ln362             (br               ) [ 000000000000000000000]
 zext_ln363           (zext             ) [ 000000000000000000000]
@@ -392,7 +392,7 @@ br_ln362             (br               ) [ 001111111111111111111]
 br_ln416             (br               ) [ 001111111111111111111]
 i_3_i                (phi              ) [ 000010000000000000000]
 zext_ln416           (zext             ) [ 000001100000000000000]
-empty_29             (speclooptripcount) [ 000000000000000000000]
+empty_31             (speclooptripcount) [ 000000000000000000000]
 icmp_ln416           (icmp             ) [ 001111111111111111111]
 add_ln416            (add              ) [ 001111111111111111111]
 br_ln416             (br               ) [ 000000000000000000000]
@@ -402,7 +402,7 @@ br_ln30              (br               ) [ 001111111111111111111]
 i_0_i1_i             (phi              ) [ 000001100000000000000]
 r_0_i2_i             (phi              ) [ 000001110000000000000]
 icmp_ln30            (icmp             ) [ 001111111111111111111]
-empty_30             (speclooptripcount) [ 000000000000000000000]
+empty_32             (speclooptripcount) [ 000000000000000000000]
 i_13                 (add              ) [ 001111111111111111111]
 br_ln30              (br               ) [ 000000000000000000000]
 or_ln                (bitconcatenate   ) [ 000000000000000000000]
@@ -441,7 +441,7 @@ br_ln854             (br               ) [ 001111111111111111111]
 i_0_i                (phi              ) [ 000000000000000100000]
 zext_ln854           (zext             ) [ 000000000000000000000]
 icmp_ln854           (icmp             ) [ 001111111111111111111]
-empty_31             (speclooptripcount) [ 000000000000000000000]
+empty_33             (speclooptripcount) [ 000000000000000000000]
 i_12                 (add              ) [ 001111111111111111111]
 br_ln854             (br               ) [ 000000000000000000000]
 trunc_ln855          (trunc            ) [ 000000000000000011100]
@@ -908,7 +908,7 @@ br_ln854             (br               ) [ 001111111111111111111]
 <pin id="81" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="keccak_squeezeblocks.1"/></StgValue>
+<StgValue><ssdm name="keccak_squeezeblocks"/></StgValue>
 </bind>
 </comp>
 
@@ -1730,7 +1730,7 @@ br_ln854             (br               ) [ 001111111111111111111]
 </bind>
 </comp>
 
-<comp id="408" class="1004" name="grp_keccak_squeezeblocks_1_fu_408">
+<comp id="408" class="1004" name="grp_keccak_squeezeblocks_fu_408">
 <pin_list>
 <pin id="409" dir="0" index="0" bw="0" slack="0"/>
 <pin id="410" dir="0" index="1" bw="8" slack="2147483647"/>
@@ -4143,130 +4143,130 @@ br_ln854             (br               ) [ 001111111111111111111]
 ============================================================
 
 * Functional unit list:
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-| Operation|          Functional Unit          |   BRAM  |  Delay  |    FF   |   LUT   |   URAM  |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|   call   |      grp_keccak_absorb_fu_395     |    0    | 27.7533 |   6747  |  18172  |    0    |
-|          | grp_keccak_squeezeblocks_1_fu_408 |    0    | 16.9955 |   5066  |  16943  |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|          |              i_fu_445             |    0    |    0    |    0    |    12   |    0    |
-|          |          add_ln47_fu_459          |    0    |    0    |    0    |    23   |    0    |
-|          |             t_0_fu_464            |    0    |    0    |    0    |    15   |    0    |
-|          |            i_11_fu_485            |    0    |    0    |    0    |    15   |    0    |
-|          |          add_ln416_fu_506         |    0    |    0    |    0    |    12   |    0    |
-|          |            i_13_fu_530            |    0    |    0    |    0    |    13   |    0    |
-|          |          add_ln31_fu_544          |    0    |    0    |    0    |    15   |    0    |
-|          |            i_12_fu_653            |    0    |    0    |    0    |    15   |    0    |
-|    add   |          add_ln855_fu_675         |    0    |    0    |    0    |    16   |    0    |
-|          |          add_ln856_fu_686         |    0    |    0    |    0    |    17   |    0    |
-|          |          add_ln857_fu_696         |    0    |    0    |    0    |    17   |    0    |
-|          |          add_ln861_fu_738         |    0    |    0    |    0    |    17   |    0    |
-|          |          add_ln862_fu_748         |    0    |    0    |    0    |    17   |    0    |
-|          |          add_ln866_fu_843         |    0    |    0    |    0    |    17   |    0    |
-|          |          add_ln867_fu_853         |    0    |    0    |    0    |    17   |    0    |
-|          |          add_ln871_fu_940         |    0    |    0    |    0    |    17   |    0    |
-|          |          add_ln872_fu_950         |    0    |    0    |    0    |    17   |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|          |          xor_ln417_fu_586         |    0    |    0    |    0    |    64   |    0    |
-|    xor   |          xor_ln450_fu_629         |    0    |    0    |    0    |    64   |    0    |
-|          |          xor_ln451_fu_636         |    0    |    0    |    0    |    64   |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|          |          sub_ln875_fu_758         |    0    |    0    |    0    |    26   |    0    |
-|    sub   |          sub_ln876_fu_863         |    0    |    0    |    0    |    26   |    0    |
-|          |          sub_ln877_fu_960         |    0    |    0    |    0    |    26   |    0    |
-|          |         sub_ln878_fu_1033         |    0    |    0    |    0    |    26   |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|          |              r_fu_580             |    0    |    0    |    0    |    64   |    0    |
-|          |          or_ln860_fu_786          |    0    |    0    |    0    |    0    |    0    |
-|          |          or_ln863_fu_825          |    0    |    0    |    0    |    14   |    0    |
-|    or    |          or_ln865_fu_884          |    0    |    0    |    0    |    0    |    0    |
-|          |          or_ln868_fu_922          |    0    |    0    |    0    |    12   |    0    |
-|          |          or_ln870_fu_981          |    0    |    0    |    0    |    0    |    0    |
-|          |          or_ln872_fu_1015         |    0    |    0    |    0    |    10   |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|          |          icmp_ln46_fu_439         |    0    |    0    |    0    |    9    |    0    |
-|          |         icmp_ln362_fu_479         |    0    |    0    |    0    |    11   |    0    |
-|   icmp   |         icmp_ln416_fu_500         |    0    |    0    |    0    |    9    |    0    |
-|          |          icmp_ln30_fu_524         |    0    |    0    |    0    |    9    |    0    |
-|          |         icmp_ln854_fu_647         |    0    |    0    |    0    |    11   |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|          |          shl_ln47_fu_421          |    0    |    0    |    0    |    0    |    0    |
-|    shl   |          shl_ln31_fu_574          |    0    |    0    |    0    |    19   |    0    |
-|          |          shl_ln450_fu_623         |    0    |    0    |    0    |    13   |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|   read   |       nonce_read_read_fu_164      |    0    |    0    |    0    |    0    |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|          |         trunc_ln47_fu_427         |    0    |    0    |    0    |    0    |    0    |
-|          |         trunc_ln31_fu_558         |    0    |    0    |    0    |    0    |    0    |
-|          |         trunc_ln450_fu_608        |    0    |    0    |    0    |    0    |    0    |
-|   trunc  |         trunc_ln855_fu_659        |    0    |    0    |    0    |    0    |    0    |
-|          |         trunc_ln858_fu_720        |    0    |    0    |    0    |    0    |    0    |
-|          |         trunc_ln863_fu_813        |    0    |    0    |    0    |    0    |    0    |
-|          |         trunc_ln868_fu_910        |    0    |    0    |    0    |    0    |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|          |          trunc_ln_fu_431          |    0    |    0    |    0    |    0    |    0    |
-|          |           shl_ln7_fu_512          |    0    |    0    |    0    |    0    |    0    |
-|          |            or_ln_fu_536           |    0    |    0    |    0    |    0    |    0    |
-|          |           shl_ln2_fu_562          |    0    |    0    |    0    |    0    |    0    |
-|          |           shl_ln6_fu_611          |    0    |    0    |    0    |    0    |    0    |
-|          |           shl_ln8_fu_663          |    0    |    0    |    0    |    0    |    0    |
-|          |            tmp_s_fu_706           |    0    |    0    |    0    |    0    |    0    |
-|          |           tmp_2_i_fu_724          |    0    |    0    |    0    |    0    |    0    |
-|          |         shl_ln855_1_fu_765        |    0    |    0    |    0    |    0    |    0    |
-|          |            tmp_2_fu_792           |    0    |    0    |    0    |    0    |    0    |
-|bitconcatenate|           shl_ln9_fu_805          |    0    |    0    |    0    |    0    |    0    |
-|          |            tmp_1_fu_817           |    0    |    0    |    0    |    0    |    0    |
-|          |         or_ln863_i_fu_831         |    0    |    0    |    0    |    0    |    0    |
-|          |            tmp_5_fu_889           |    0    |    0    |    0    |    0    |    0    |
-|          |           shl_ln_fu_902           |    0    |    0    |    0    |    0    |    0    |
-|          |            tmp_3_fu_914           |    0    |    0    |    0    |    0    |    0    |
-|          |         or_ln868_i_fu_928         |    0    |    0    |    0    |    0    |    0    |
-|          |            tmp_6_fu_986           |    0    |    0    |    0    |    0    |    0    |
-|          |           shl_ln1_fu_999          |    0    |    0    |    0    |    0    |    0    |
-|          |           tmp_4_fu_1007           |    0    |    0    |    0    |    0    |    0    |
-|          |         or_ln872_i_fu_1021        |    0    |    0    |    0    |    0    |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|          |          zext_ln47_fu_451         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln47_1_fu_455        |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln363_fu_491         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln416_fu_496         |    0    |    0    |    0    |    0    |    0    |
-|          |          zext_ln26_fu_520         |    0    |    0    |    0    |    0    |    0    |
-|          |          zext_ln31_fu_549         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln31_1_fu_554        |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln31_2_fu_570        |    0    |    0    |    0    |    0    |    0    |
-|          |        zext_ln450_1_fu_603        |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln450_fu_619         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln854_fu_643         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln855_fu_671         |    0    |    0    |    0    |    0    |    0    |
-|          |        zext_ln855_1_fu_681        |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln856_fu_691         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln857_fu_701         |    0    |    0    |    0    |    0    |    0    |
-|   zext   |        zext_ln855_2_fu_715        |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln860_fu_734         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln861_fu_743         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln862_fu_753         |    0    |    0    |    0    |    0    |    0    |
-|          |        zext_ln860_1_fu_782        |    0    |    0    |    0    |    0    |    0    |
-|          |        zext_ln860_2_fu_800        |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln863_fu_839         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln866_fu_848         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln867_fu_858         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln865_fu_880         |    0    |    0    |    0    |    0    |    0    |
-|          |        zext_ln865_1_fu_897        |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln868_fu_936         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln871_fu_945         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln872_fu_955         |    0    |    0    |    0    |    0    |    0    |
-|          |         zext_ln870_fu_977         |    0    |    0    |    0    |    0    |    0    |
-|          |        zext_ln870_1_fu_994        |    0    |    0    |    0    |    0    |    0    |
-|          |        zext_ln872_1_fu_1029       |    0    |    0    |    0    |    0    |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|          |             t_1_fu_469            |    0    |    0    |    0    |    0    |    0    |
-|          |             i_s_fu_593            |    0    |    0    |    0    |    0    |    0    |
-|partselect|           lshr_ln_fu_772          |    0    |    0    |    0    |    0    |    0    |
-|          |          lshr_ln1_fu_870          |    0    |    0    |    0    |    0    |    0    |
-|          |          lshr_ln2_fu_967          |    0    |    0    |    0    |    0    |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
-|   Total  |                                   |    0    | 44.7488 |  11813  |  35864  |    0    |
-|----------|-----------------------------------|---------|---------|---------|---------|---------|
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+| Operation|         Functional Unit         |   BRAM  |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|   call   |     grp_keccak_absorb_fu_395    |    0    | 27.7533 |   6747  |  18172  |    0    |
+|          | grp_keccak_squeezeblocks_fu_408 |    0    | 16.9955 |   5066  |  16943  |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|          |             i_fu_445            |    0    |    0    |    0    |    12   |    0    |
+|          |         add_ln47_fu_459         |    0    |    0    |    0    |    23   |    0    |
+|          |            t_0_fu_464           |    0    |    0    |    0    |    15   |    0    |
+|          |           i_11_fu_485           |    0    |    0    |    0    |    15   |    0    |
+|          |         add_ln416_fu_506        |    0    |    0    |    0    |    12   |    0    |
+|          |           i_13_fu_530           |    0    |    0    |    0    |    13   |    0    |
+|          |         add_ln31_fu_544         |    0    |    0    |    0    |    15   |    0    |
+|          |           i_12_fu_653           |    0    |    0    |    0    |    15   |    0    |
+|    add   |         add_ln855_fu_675        |    0    |    0    |    0    |    16   |    0    |
+|          |         add_ln856_fu_686        |    0    |    0    |    0    |    17   |    0    |
+|          |         add_ln857_fu_696        |    0    |    0    |    0    |    17   |    0    |
+|          |         add_ln861_fu_738        |    0    |    0    |    0    |    17   |    0    |
+|          |         add_ln862_fu_748        |    0    |    0    |    0    |    17   |    0    |
+|          |         add_ln866_fu_843        |    0    |    0    |    0    |    17   |    0    |
+|          |         add_ln867_fu_853        |    0    |    0    |    0    |    17   |    0    |
+|          |         add_ln871_fu_940        |    0    |    0    |    0    |    17   |    0    |
+|          |         add_ln872_fu_950        |    0    |    0    |    0    |    17   |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|          |         xor_ln417_fu_586        |    0    |    0    |    0    |    64   |    0    |
+|    xor   |         xor_ln450_fu_629        |    0    |    0    |    0    |    64   |    0    |
+|          |         xor_ln451_fu_636        |    0    |    0    |    0    |    64   |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|          |         sub_ln875_fu_758        |    0    |    0    |    0    |    26   |    0    |
+|    sub   |         sub_ln876_fu_863        |    0    |    0    |    0    |    26   |    0    |
+|          |         sub_ln877_fu_960        |    0    |    0    |    0    |    26   |    0    |
+|          |        sub_ln878_fu_1033        |    0    |    0    |    0    |    26   |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|          |             r_fu_580            |    0    |    0    |    0    |    64   |    0    |
+|          |         or_ln860_fu_786         |    0    |    0    |    0    |    0    |    0    |
+|          |         or_ln863_fu_825         |    0    |    0    |    0    |    14   |    0    |
+|    or    |         or_ln865_fu_884         |    0    |    0    |    0    |    0    |    0    |
+|          |         or_ln868_fu_922         |    0    |    0    |    0    |    12   |    0    |
+|          |         or_ln870_fu_981         |    0    |    0    |    0    |    0    |    0    |
+|          |         or_ln872_fu_1015        |    0    |    0    |    0    |    10   |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|          |         icmp_ln46_fu_439        |    0    |    0    |    0    |    9    |    0    |
+|          |        icmp_ln362_fu_479        |    0    |    0    |    0    |    11   |    0    |
+|   icmp   |        icmp_ln416_fu_500        |    0    |    0    |    0    |    9    |    0    |
+|          |         icmp_ln30_fu_524        |    0    |    0    |    0    |    9    |    0    |
+|          |        icmp_ln854_fu_647        |    0    |    0    |    0    |    11   |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|          |         shl_ln47_fu_421         |    0    |    0    |    0    |    0    |    0    |
+|    shl   |         shl_ln31_fu_574         |    0    |    0    |    0    |    19   |    0    |
+|          |         shl_ln450_fu_623        |    0    |    0    |    0    |    13   |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|   read   |      nonce_read_read_fu_164     |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|          |        trunc_ln47_fu_427        |    0    |    0    |    0    |    0    |    0    |
+|          |        trunc_ln31_fu_558        |    0    |    0    |    0    |    0    |    0    |
+|          |        trunc_ln450_fu_608       |    0    |    0    |    0    |    0    |    0    |
+|   trunc  |        trunc_ln855_fu_659       |    0    |    0    |    0    |    0    |    0    |
+|          |        trunc_ln858_fu_720       |    0    |    0    |    0    |    0    |    0    |
+|          |        trunc_ln863_fu_813       |    0    |    0    |    0    |    0    |    0    |
+|          |        trunc_ln868_fu_910       |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|          |         trunc_ln_fu_431         |    0    |    0    |    0    |    0    |    0    |
+|          |          shl_ln7_fu_512         |    0    |    0    |    0    |    0    |    0    |
+|          |           or_ln_fu_536          |    0    |    0    |    0    |    0    |    0    |
+|          |          shl_ln2_fu_562         |    0    |    0    |    0    |    0    |    0    |
+|          |          shl_ln6_fu_611         |    0    |    0    |    0    |    0    |    0    |
+|          |          shl_ln8_fu_663         |    0    |    0    |    0    |    0    |    0    |
+|          |           tmp_s_fu_706          |    0    |    0    |    0    |    0    |    0    |
+|          |          tmp_2_i_fu_724         |    0    |    0    |    0    |    0    |    0    |
+|          |        shl_ln855_1_fu_765       |    0    |    0    |    0    |    0    |    0    |
+|          |           tmp_2_fu_792          |    0    |    0    |    0    |    0    |    0    |
+|bitconcatenate|          shl_ln9_fu_805         |    0    |    0    |    0    |    0    |    0    |
+|          |           tmp_1_fu_817          |    0    |    0    |    0    |    0    |    0    |
+|          |        or_ln863_i_fu_831        |    0    |    0    |    0    |    0    |    0    |
+|          |           tmp_5_fu_889          |    0    |    0    |    0    |    0    |    0    |
+|          |          shl_ln_fu_902          |    0    |    0    |    0    |    0    |    0    |
+|          |           tmp_3_fu_914          |    0    |    0    |    0    |    0    |    0    |
+|          |        or_ln868_i_fu_928        |    0    |    0    |    0    |    0    |    0    |
+|          |           tmp_6_fu_986          |    0    |    0    |    0    |    0    |    0    |
+|          |          shl_ln1_fu_999         |    0    |    0    |    0    |    0    |    0    |
+|          |          tmp_4_fu_1007          |    0    |    0    |    0    |    0    |    0    |
+|          |        or_ln872_i_fu_1021       |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|          |         zext_ln47_fu_451        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln47_1_fu_455       |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln363_fu_491        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln416_fu_496        |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln26_fu_520        |    0    |    0    |    0    |    0    |    0    |
+|          |         zext_ln31_fu_549        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln31_1_fu_554       |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln31_2_fu_570       |    0    |    0    |    0    |    0    |    0    |
+|          |       zext_ln450_1_fu_603       |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln450_fu_619        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln854_fu_643        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln855_fu_671        |    0    |    0    |    0    |    0    |    0    |
+|          |       zext_ln855_1_fu_681       |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln856_fu_691        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln857_fu_701        |    0    |    0    |    0    |    0    |    0    |
+|   zext   |       zext_ln855_2_fu_715       |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln860_fu_734        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln861_fu_743        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln862_fu_753        |    0    |    0    |    0    |    0    |    0    |
+|          |       zext_ln860_1_fu_782       |    0    |    0    |    0    |    0    |    0    |
+|          |       zext_ln860_2_fu_800       |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln863_fu_839        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln866_fu_848        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln867_fu_858        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln865_fu_880        |    0    |    0    |    0    |    0    |    0    |
+|          |       zext_ln865_1_fu_897       |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln868_fu_936        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln871_fu_945        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln872_fu_955        |    0    |    0    |    0    |    0    |    0    |
+|          |        zext_ln870_fu_977        |    0    |    0    |    0    |    0    |    0    |
+|          |       zext_ln870_1_fu_994       |    0    |    0    |    0    |    0    |    0    |
+|          |       zext_ln872_1_fu_1029      |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|          |            t_1_fu_469           |    0    |    0    |    0    |    0    |    0    |
+|          |            i_s_fu_593           |    0    |    0    |    0    |    0    |    0    |
+|partselect|          lshr_ln_fu_772         |    0    |    0    |    0    |    0    |    0    |
+|          |         lshr_ln1_fu_870         |    0    |    0    |    0    |    0    |    0    |
+|          |         lshr_ln2_fu_967         |    0    |    0    |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
+|   Total  |                                 |    0    | 44.7488 |  11813  |  35864  |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|---------|
 
 Memories:
 +-------+--------+--------+--------+--------+

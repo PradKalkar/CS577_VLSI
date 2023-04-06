@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'polyveck_pack_w1'
 ================================================================
-* Date:           Tue Apr  4 22:25:41 2023
+* Date:           Tue Apr  4 23:21:16 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -233,7 +233,7 @@ State 3 <SV = 2> <Delay = 2.77>
 ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%i_0_i = phi i7 [ 0, %1 ], [ %i_19, %3 ]"   --->   Operation 21 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln915 = zext i7 %i_0_i to i9" [poly.c:915->polyvec.c:419]   --->   Operation 22 'zext' 'zext_ln915' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 23 [1/1] (1.23ns)   --->   "%icmp_ln915 = icmp eq i7 %i_0_i, -64" [poly.c:915->polyvec.c:419]   --->   Operation 23 'icmp' 'icmp_ln915' <Predicate = true> <Delay = 1.23> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%empty_37 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 24 'speclooptripcount' 'empty_37' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%empty_39 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 24 'speclooptripcount' 'empty_39' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (1.66ns)   --->   "%i_19 = add i7 %i_0_i, 1" [poly.c:915->polyvec.c:419]   --->   Operation 25 'add' 'i_19' <Predicate = true> <Delay = 1.66> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 26 [1/1] (0.00ns)   --->   "br i1 %icmp_ln915, label %polyw1_pack.exit.loopexit, label %3" [poly.c:915->polyvec.c:419]   --->   Operation 26 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln916 = trunc i7 %i_0_i to i6" [poly.c:916->polyvec.c:419]   --->   Operation 27 'trunc' 'trunc_ln916' <Predicate = (!icmp_ln915)> <Delay = 0.00>
@@ -243,8 +243,8 @@ ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln916_1 = zext i11 %tmp_s to 
 ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%w1_vec_coeffs_addr = getelementptr [1024 x i32]* %w1_vec_coeffs, i64 0, i64 %zext_ln916_1" [poly.c:916->polyvec.c:419]   --->   Operation 31 'getelementptr' 'w1_vec_coeffs_addr' <Predicate = (!icmp_ln915)> <Delay = 0.00>
 ST_3 : Operation 32 [2/2] (2.77ns)   --->   "%w1_vec_coeffs_load = load i32* %w1_vec_coeffs_addr, align 4" [poly.c:916->polyvec.c:419]   --->   Operation 32 'load' 'w1_vec_coeffs_load' <Predicate = (!icmp_ln915)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
 ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%or_ln917 = or i8 %shl_ln3, 1" [poly.c:917->polyvec.c:419]   --->   Operation 33 'or' 'or_ln917' <Predicate = (!icmp_ln915)> <Delay = 0.00>
-ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%tmp_9 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln917)" [poly.c:917->polyvec.c:419]   --->   Operation 34 'bitconcatenate' 'tmp_9' <Predicate = (!icmp_ln915)> <Delay = 0.00>
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%zext_ln917 = zext i11 %tmp_9 to i64" [poly.c:917->polyvec.c:419]   --->   Operation 35 'zext' 'zext_ln917' <Predicate = (!icmp_ln915)> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%tmp_7 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln917)" [poly.c:917->polyvec.c:419]   --->   Operation 34 'bitconcatenate' 'tmp_7' <Predicate = (!icmp_ln915)> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%zext_ln917 = zext i11 %tmp_7 to i64" [poly.c:917->polyvec.c:419]   --->   Operation 35 'zext' 'zext_ln917' <Predicate = (!icmp_ln915)> <Delay = 0.00>
 ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%w1_vec_coeffs_addr_1 = getelementptr [1024 x i32]* %w1_vec_coeffs, i64 0, i64 %zext_ln917" [poly.c:917->polyvec.c:419]   --->   Operation 36 'getelementptr' 'w1_vec_coeffs_addr_1' <Predicate = (!icmp_ln915)> <Delay = 0.00>
 ST_3 : Operation 37 [2/2] (2.77ns)   --->   "%w1_vec_coeffs_load_1 = load i32* %w1_vec_coeffs_addr_1, align 4" [poly.c:917->polyvec.c:419]   --->   Operation 37 'load' 'w1_vec_coeffs_load_1' <Predicate = (!icmp_ln915)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
 ST_3 : Operation 38 [1/1] (0.00ns)   --->   "br label %polyw1_pack.exit"   --->   Operation 38 'br' <Predicate = (icmp_ln915)> <Delay = 0.00>
@@ -266,13 +266,13 @@ ST_4 : Operation 51 [1/1] (0.80ns)   --->   "%or_ln917_1 = or i8 %shl_ln4, %trun
 ST_4 : Operation 52 [1/1] (2.77ns)   --->   "store i8 %or_ln917_1, i8* %r_addr, align 1" [poly.c:917->polyvec.c:419]   --->   Operation 52 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
 ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%trunc_ln9 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %w1_vec_coeffs_load_1, i32 2, i32 9)" [poly.c:918->polyvec.c:419]   --->   Operation 53 'partselect' 'trunc_ln9' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%or_ln919 = or i8 %shl_ln3, 2" [poly.c:919->polyvec.c:419]   --->   Operation 54 'or' 'or_ln919' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_10 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln919)" [poly.c:919->polyvec.c:419]   --->   Operation 55 'bitconcatenate' 'tmp_10' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%zext_ln919 = zext i11 %tmp_10 to i64" [poly.c:919->polyvec.c:419]   --->   Operation 56 'zext' 'zext_ln919' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_8 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln919)" [poly.c:919->polyvec.c:419]   --->   Operation 55 'bitconcatenate' 'tmp_8' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%zext_ln919 = zext i11 %tmp_8 to i64" [poly.c:919->polyvec.c:419]   --->   Operation 56 'zext' 'zext_ln919' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%w1_vec_coeffs_addr_2 = getelementptr [1024 x i32]* %w1_vec_coeffs, i64 0, i64 %zext_ln919" [poly.c:919->polyvec.c:419]   --->   Operation 57 'getelementptr' 'w1_vec_coeffs_addr_2' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 58 [2/2] (2.77ns)   --->   "%w1_vec_coeffs_load_2 = load i32* %w1_vec_coeffs_addr_2, align 4" [poly.c:919->polyvec.c:419]   --->   Operation 58 'load' 'w1_vec_coeffs_load_2' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
 ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%or_ln921 = or i8 %shl_ln3, 3" [poly.c:921->polyvec.c:419]   --->   Operation 59 'or' 'or_ln921' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_11 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln921)" [poly.c:921->polyvec.c:419]   --->   Operation 60 'bitconcatenate' 'tmp_11' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln921 = zext i11 %tmp_11 to i64" [poly.c:921->polyvec.c:419]   --->   Operation 61 'zext' 'zext_ln921' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_9 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 %or_ln921)" [poly.c:921->polyvec.c:419]   --->   Operation 60 'bitconcatenate' 'tmp_9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln921 = zext i11 %tmp_9 to i64" [poly.c:921->polyvec.c:419]   --->   Operation 61 'zext' 'zext_ln921' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 62 [1/1] (0.00ns)   --->   "%w1_vec_coeffs_addr_3 = getelementptr [1024 x i32]* %w1_vec_coeffs, i64 0, i64 %zext_ln921" [poly.c:921->polyvec.c:419]   --->   Operation 62 'getelementptr' 'w1_vec_coeffs_addr_3' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 63 [2/2] (2.77ns)   --->   "%w1_vec_coeffs_load_3 = load i32* %w1_vec_coeffs_addr_3, align 4" [poly.c:921->polyvec.c:419]   --->   Operation 63 'load' 'w1_vec_coeffs_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
 
@@ -340,7 +340,7 @@ ret_ln420            (ret              ) [ 000000]
 i_0_i                (phi              ) [ 000100]
 zext_ln915           (zext             ) [ 000010]
 icmp_ln915           (icmp             ) [ 001111]
-empty_37             (speclooptripcount) [ 000000]
+empty_39             (speclooptripcount) [ 000000]
 i_19                 (add              ) [ 001111]
 br_ln915             (br               ) [ 000000]
 trunc_ln916          (trunc            ) [ 000000]
@@ -349,7 +349,7 @@ tmp_s                (bitconcatenate   ) [ 000000]
 zext_ln916_1         (zext             ) [ 000000]
 w1_vec_coeffs_addr   (getelementptr    ) [ 000010]
 or_ln917             (or               ) [ 000000]
-tmp_9                (bitconcatenate   ) [ 000000]
+tmp_7                (bitconcatenate   ) [ 000000]
 zext_ln917           (zext             ) [ 000000]
 w1_vec_coeffs_addr_1 (getelementptr    ) [ 000010]
 br_ln0               (br               ) [ 011111]
@@ -369,11 +369,11 @@ or_ln917_1           (or               ) [ 000000]
 store_ln917          (store            ) [ 000000]
 trunc_ln9            (partselect       ) [ 000001]
 or_ln919             (or               ) [ 000000]
-tmp_10               (bitconcatenate   ) [ 000000]
+tmp_8                (bitconcatenate   ) [ 000000]
 zext_ln919           (zext             ) [ 000000]
 w1_vec_coeffs_addr_2 (getelementptr    ) [ 000001]
 or_ln921             (or               ) [ 000000]
-tmp_11               (bitconcatenate   ) [ 000000]
+tmp_9                (bitconcatenate   ) [ 000000]
 zext_ln921           (zext             ) [ 000000]
 w1_vec_coeffs_addr_3 (getelementptr    ) [ 000001]
 add_ln918            (add              ) [ 000000]
@@ -1070,7 +1070,7 @@ br_ln915             (br               ) [ 001111]
 </bind>
 </comp>
 
-<comp id="260" class="1004" name="tmp_9_fu_260">
+<comp id="260" class="1004" name="tmp_7_fu_260">
 <pin_list>
 <pin id="261" dir="0" index="0" bw="11" slack="0"/>
 <pin id="262" dir="0" index="1" bw="3" slack="1"/>
@@ -1079,7 +1079,7 @@ br_ln915             (br               ) [ 001111]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_9/3 "/>
+<opset="tmp_7/3 "/>
 </bind>
 </comp>
 
@@ -1235,7 +1235,7 @@ br_ln915             (br               ) [ 001111]
 </bind>
 </comp>
 
-<comp id="337" class="1004" name="tmp_10_fu_337">
+<comp id="337" class="1004" name="tmp_8_fu_337">
 <pin_list>
 <pin id="338" dir="0" index="0" bw="11" slack="0"/>
 <pin id="339" dir="0" index="1" bw="3" slack="2"/>
@@ -1244,7 +1244,7 @@ br_ln915             (br               ) [ 001111]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_10/4 "/>
+<opset="tmp_8/4 "/>
 </bind>
 </comp>
 
@@ -1271,7 +1271,7 @@ br_ln915             (br               ) [ 001111]
 </bind>
 </comp>
 
-<comp id="355" class="1004" name="tmp_11_fu_355">
+<comp id="355" class="1004" name="tmp_9_fu_355">
 <pin_list>
 <pin id="356" dir="0" index="0" bw="11" slack="0"/>
 <pin id="357" dir="0" index="1" bw="3" slack="2"/>
@@ -1280,7 +1280,7 @@ br_ln915             (br               ) [ 001111]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_11/4 "/>
+<opset="tmp_9/4 "/>
 </bind>
 </comp>
 
@@ -1944,7 +1944,7 @@ br_ln915             (br               ) [ 001111]
 		w1_vec_coeffs_addr : 4
 		w1_vec_coeffs_load : 5
 		or_ln917 : 3
-		tmp_9 : 3
+		tmp_7 : 3
 		zext_ln917 : 4
 		w1_vec_coeffs_addr_1 : 5
 		w1_vec_coeffs_load_1 : 6
@@ -2029,10 +2029,10 @@ br_ln915             (br               ) [ 001111]
 |          |  shl_ln419_1_fu_189  |    0    |    0    |
 |          |    shl_ln3_fu_231    |    0    |    0    |
 |          |     tmp_s_fu_239     |    0    |    0    |
-|bitconcatenate|     tmp_9_fu_260     |    0    |    0    |
+|bitconcatenate|     tmp_7_fu_260     |    0    |    0    |
 |          |    shl_ln4_fu_307    |    0    |    0    |
-|          |     tmp_10_fu_337    |    0    |    0    |
-|          |     tmp_11_fu_355    |    0    |    0    |
+|          |     tmp_8_fu_337     |    0    |    0    |
+|          |     tmp_9_fu_355     |    0    |    0    |
 |          |    shl_ln5_fu_395    |    0    |    0    |
 |          |    shl_ln6_fu_446    |    0    |    0    |
 |----------|----------------------|---------|---------|

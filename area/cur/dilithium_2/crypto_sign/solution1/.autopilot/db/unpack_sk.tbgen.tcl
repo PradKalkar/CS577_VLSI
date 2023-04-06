@@ -143,8 +143,8 @@ set RtlHierarchyInfo {[
 					{"ID" : "2", "SubInstance" : "grp_polyeta_unpack_fu_216", "Port" : "r_coeffs"}]},
 			{"Name" : "sk", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_polyeta_unpack_fu_216", "Port" : "a"},
-					{"ID" : "1", "SubInstance" : "grp_polyt0_unpack_fu_205", "Port" : "a"}]}]},
+					{"ID" : "1", "SubInstance" : "grp_polyt0_unpack_fu_205", "Port" : "a"},
+					{"ID" : "2", "SubInstance" : "grp_polyeta_unpack_fu_216", "Port" : "a"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_polyt0_unpack_fu_205", "Parent" : "0",
 		"CDFG" : "polyt0_unpack",
 		"Protocol" : "ap_ctrl_hs",

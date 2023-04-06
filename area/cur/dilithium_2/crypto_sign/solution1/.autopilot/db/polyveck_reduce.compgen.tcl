@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 70
+set id 69
 set name crypto_sign_mac_mibs
 set corename simcore_mac
 set op mac
@@ -93,7 +93,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 72 \
+    id 71 \
     name v_vec_coeffs \
     reset_level 1 \
     sync_rst true \

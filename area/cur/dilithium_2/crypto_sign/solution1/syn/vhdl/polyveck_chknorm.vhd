@@ -80,7 +80,7 @@ architecture behav of polyveck_chknorm is
     signal tmp_fu_119_p3 : STD_LOGIC_VECTOR (10 downto 0);
     signal zext_ln300_fu_143_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln300_fu_147_p2 : STD_LOGIC_VECTOR (11 downto 0);
-    signal tmp_3_fu_157_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_8_fu_157_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal shl_ln301_fu_173_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal t_fu_165_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal and_ln301_fu_179_p2 : STD_LOGIC_VECTOR (31 downto 0);
@@ -285,9 +285,9 @@ begin
     shl_ln301_fu_173_p2 <= std_logic_vector(shift_left(unsigned(v_vec_coeffs_q0),to_integer(unsigned('0' & ap_const_lv32_1(31-1 downto 0)))));
     t_6_fu_185_p2 <= std_logic_vector(unsigned(v_vec_coeffs_q0) - unsigned(and_ln301_fu_179_p2));
     t_fu_165_p3 <= 
-        ap_const_lv32_FFFFFFFF when (tmp_3_fu_157_p3(0) = '1') else 
+        ap_const_lv32_FFFFFFFF when (tmp_8_fu_157_p3(0) = '1') else 
         ap_const_lv32_0;
-    tmp_3_fu_157_p3 <= v_vec_coeffs_q0(31 downto 31);
+    tmp_8_fu_157_p3 <= v_vec_coeffs_q0(31 downto 31);
     tmp_fu_119_p3 <= (i_0_reg_69 & ap_const_lv8_0);
     v_vec_coeffs_address0 <= zext_ln300_1_fu_152_p1(10 - 1 downto 0);
 

@@ -752,7 +752,8 @@ int crypto_sign_signature(uint8_t *sig,
                           size_t mlen,
                           const uint8_t *sk)
 {
-  unsigned int n;
+#pragma HLS inline
+ unsigned int n;
   uint8_t seedbuf[2*32 + 3*48];
   uint8_t *rho, *tr, *key, *mu, *rhoprime;
   uint16_t nonce = 0;
@@ -846,7 +847,7 @@ rej:
   *siglen = (32 + 4*576 + (80 + 4));
   return 0;
 }
-# 197 "sign.c"
+# 198 "sign.c"
 __attribute__((sdx_kernel("crypto_sign", 0))) int crypto_sign(uint8_t sm[3300+(32 + 4*576 + (80 + 4))],
                 size_t *smlen,
                 const uint8_t m[3300],
@@ -854,7 +855,7 @@ __attribute__((sdx_kernel("crypto_sign", 0))) int crypto_sign(uint8_t sm[3300+(3
                 const uint8_t sk[(2*32 + 48 + 4*96 + 4*96 + 4*416)])
 {_ssdm_SpecArrayDimSize(sm, 5720);_ssdm_SpecArrayDimSize(m, 3300);_ssdm_SpecArrayDimSize(sk, 2544);
 #pragma HLS TOP name=crypto_sign
-# 202 "sign.c"
+# 203 "sign.c"
 
 
    size_t i;
@@ -867,7 +868,7 @@ __attribute__((sdx_kernel("crypto_sign", 0))) int crypto_sign(uint8_t sm[3300+(3
    *smlen += mlen;
    return 0;
 }
-# 228 "sign.c"
+# 229 "sign.c"
 int crypto_sign_verify(const uint8_t *sig,
                        size_t siglen,
                        const uint8_t *m,
@@ -936,7 +937,7 @@ int crypto_sign_verify(const uint8_t *sig,
 
   return 0;
 }
-# 311 "sign.c"
+# 312 "sign.c"
 int crypto_sign_open(uint8_t *m,
                      size_t *mlen,
                      const uint8_t *sm,

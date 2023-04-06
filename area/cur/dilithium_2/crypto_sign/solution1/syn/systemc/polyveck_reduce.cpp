@@ -38,11 +38,11 @@ const sc_lv<32> polyveck_reduce::ap_const_lv32_FF801FFF = "111111111000000000011
 const bool polyveck_reduce::ap_const_boolean_1 = true;
 
 polyveck_reduce::polyveck_reduce(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    crypto_sign_mac_mibs_U70 = new crypto_sign_mac_mibs<1,1,9,24,32,32>("crypto_sign_mac_mibs_U70");
-    crypto_sign_mac_mibs_U70->din0(trunc_ln_fu_127_p4);
-    crypto_sign_mac_mibs_U70->din1(grp_fu_141_p1);
-    crypto_sign_mac_mibs_U70->din2(v_vec_coeffs_q0);
-    crypto_sign_mac_mibs_U70->dout(grp_fu_141_p3);
+    crypto_sign_mac_mibs_U69 = new crypto_sign_mac_mibs<1,1,9,24,32,32>("crypto_sign_mac_mibs_U69");
+    crypto_sign_mac_mibs_U69->din0(trunc_ln_fu_127_p4);
+    crypto_sign_mac_mibs_U69->din1(grp_fu_141_p1);
+    crypto_sign_mac_mibs_U69->din2(v_vec_coeffs_q0);
+    crypto_sign_mac_mibs_U69->dout(grp_fu_141_p3);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -195,7 +195,7 @@ polyveck_reduce::~polyveck_reduce() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete crypto_sign_mac_mibs_U70;
+    delete crypto_sign_mac_mibs_U69;
 }
 
 void polyveck_reduce::thread_ap_clk_no_reset_() {

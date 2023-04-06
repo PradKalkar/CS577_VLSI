@@ -1159,7 +1159,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>crypto_sign_mac_mibs_U70</rtlName>
+              <rtlName>crypto_sign_mac_mibs_U69</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -1222,7 +1222,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>t</originalName>
-              <rtlName>crypto_sign_mac_mibs_U70</rtlName>
+              <rtlName>crypto_sign_mac_mibs_U69</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -3146,7 +3146,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>crypto_sign_mac_mibs_U70</first>
+          <first>crypto_sign_mac_mibs_U69</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

@@ -4835,7 +4835,7 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>tmp_5</name>
+						<name>tmp_26</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>377</lineNumber>
@@ -7467,7 +7467,7 @@
 				<Obj>
 					<type>3</type>
 					<id>89</id>
-					<name>keccak_absorb.1.exit</name>
+					<name>keccak_absorb.2.exit</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

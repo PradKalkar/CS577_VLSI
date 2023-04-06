@@ -52,7 +52,7 @@ polyveck_pointwise_p::polyveck_pointwise_p(sc_module_name name) : sc_module(name
 
     SC_METHOD(thread_add_ln181_fu_146_p2);
     sensitive << ( zext_ln176_reg_219 );
-    sensitive << ( zext_ln181_13_fu_142_p1 );
+    sensitive << ( zext_ln181_14_fu_142_p1 );
 
     SC_METHOD(thread_add_ln19_fu_194_p2);
     sensitive << ( mul_ln181_fu_164_p2 );
@@ -118,7 +118,7 @@ polyveck_pointwise_p::polyveck_pointwise_p(sc_module_name name) : sc_module(name
     sensitive << ( mul_ln19_fu_184_p1 );
 
     SC_METHOD(thread_r_vec_coeffs_address0);
-    sensitive << ( zext_ln181_14_reg_232 );
+    sensitive << ( zext_ln181_15_reg_232 );
     sensitive << ( ap_CS_fsm_state4 );
 
     SC_METHOD(thread_r_vec_coeffs_ce0);
@@ -145,7 +145,7 @@ polyveck_pointwise_p::polyveck_pointwise_p(sc_module_name name) : sc_module(name
 
     SC_METHOD(thread_v_vec_coeffs_address0);
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( zext_ln181_14_fu_151_p1 );
+    sensitive << ( zext_ln181_15_fu_151_p1 );
 
     SC_METHOD(thread_v_vec_coeffs_ce0);
     sensitive << ( ap_CS_fsm_state3 );
@@ -153,10 +153,10 @@ polyveck_pointwise_p::polyveck_pointwise_p(sc_module_name name) : sc_module(name
     SC_METHOD(thread_zext_ln176_fu_121_p1);
     sensitive << ( tmp_fu_113_p3 );
 
-    SC_METHOD(thread_zext_ln181_13_fu_142_p1);
+    SC_METHOD(thread_zext_ln181_14_fu_142_p1);
     sensitive << ( i_0_i_reg_90 );
 
-    SC_METHOD(thread_zext_ln181_14_fu_151_p1);
+    SC_METHOD(thread_zext_ln181_15_fu_151_p1);
     sensitive << ( add_ln181_fu_146_p2 );
 
     SC_METHOD(thread_zext_ln181_fu_137_p1);
@@ -209,15 +209,15 @@ polyveck_pointwise_p::polyveck_pointwise_p(sc_module_name name) : sc_module(name
     sc_trace(mVcdFile, i_18_fu_131_p2, "i_18_fu_131_p2");
     sc_trace(mVcdFile, i_18_reg_227, "i_18_reg_227");
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
-    sc_trace(mVcdFile, zext_ln181_14_fu_151_p1, "zext_ln181_14_fu_151_p1");
-    sc_trace(mVcdFile, zext_ln181_14_reg_232, "zext_ln181_14_reg_232");
+    sc_trace(mVcdFile, zext_ln181_15_fu_151_p1, "zext_ln181_15_fu_151_p1");
+    sc_trace(mVcdFile, zext_ln181_15_reg_232, "zext_ln181_15_reg_232");
     sc_trace(mVcdFile, icmp_ln180_fu_125_p2, "icmp_ln180_fu_125_p2");
     sc_trace(mVcdFile, i_0_reg_79, "i_0_reg_79");
     sc_trace(mVcdFile, i_0_i_reg_90, "i_0_i_reg_90");
     sc_trace(mVcdFile, ap_CS_fsm_state4, "ap_CS_fsm_state4");
     sc_trace(mVcdFile, zext_ln181_fu_137_p1, "zext_ln181_fu_137_p1");
     sc_trace(mVcdFile, tmp_fu_113_p3, "tmp_fu_113_p3");
-    sc_trace(mVcdFile, zext_ln181_13_fu_142_p1, "zext_ln181_13_fu_142_p1");
+    sc_trace(mVcdFile, zext_ln181_14_fu_142_p1, "zext_ln181_14_fu_142_p1");
     sc_trace(mVcdFile, add_ln181_fu_146_p2, "add_ln181_fu_146_p2");
     sc_trace(mVcdFile, mul_ln181_fu_164_p0, "mul_ln181_fu_164_p0");
     sc_trace(mVcdFile, mul_ln181_fu_164_p1, "mul_ln181_fu_164_p1");
@@ -269,7 +269,7 @@ void polyveck_pointwise_p::thread_ap_clk_no_reset_() {
         zext_ln176_reg_219 = zext_ln176_fu_121_p1.read();
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln180_fu_125_p2.read()))) {
-        zext_ln181_14_reg_232 = zext_ln181_14_fu_151_p1.read();
+        zext_ln181_15_reg_232 = zext_ln181_15_fu_151_p1.read();
     }
 }
 
@@ -286,7 +286,7 @@ void polyveck_pointwise_p::thread_a_coeffs_ce0() {
 }
 
 void polyveck_pointwise_p::thread_add_ln181_fu_146_p2() {
-    add_ln181_fu_146_p2 = (!zext_ln181_13_fu_142_p1.read().is_01() || !zext_ln176_reg_219.read().is_01())? sc_lv<12>(): (sc_biguint<12>(zext_ln181_13_fu_142_p1.read()) + sc_biguint<12>(zext_ln176_reg_219.read()));
+    add_ln181_fu_146_p2 = (!zext_ln181_14_fu_142_p1.read().is_01() || !zext_ln176_reg_219.read().is_01())? sc_lv<12>(): (sc_biguint<12>(zext_ln181_14_fu_142_p1.read()) + sc_biguint<12>(zext_ln176_reg_219.read()));
 }
 
 void polyveck_pointwise_p::thread_add_ln19_fu_194_p2() {
@@ -375,7 +375,7 @@ void polyveck_pointwise_p::thread_mul_ln19_fu_184_p2() {
 }
 
 void polyveck_pointwise_p::thread_r_vec_coeffs_address0() {
-    r_vec_coeffs_address0 =  (sc_lv<10>) (zext_ln181_14_reg_232.read());
+    r_vec_coeffs_address0 =  (sc_lv<10>) (zext_ln181_15_reg_232.read());
 }
 
 void polyveck_pointwise_p::thread_r_vec_coeffs_ce0() {
@@ -415,7 +415,7 @@ void polyveck_pointwise_p::thread_trunc_ln18_fu_170_p1() {
 }
 
 void polyveck_pointwise_p::thread_v_vec_coeffs_address0() {
-    v_vec_coeffs_address0 =  (sc_lv<10>) (zext_ln181_14_fu_151_p1.read());
+    v_vec_coeffs_address0 =  (sc_lv<10>) (zext_ln181_15_fu_151_p1.read());
 }
 
 void polyveck_pointwise_p::thread_v_vec_coeffs_ce0() {
@@ -430,12 +430,12 @@ void polyveck_pointwise_p::thread_zext_ln176_fu_121_p1() {
     zext_ln176_fu_121_p1 = esl_zext<12,11>(tmp_fu_113_p3.read());
 }
 
-void polyveck_pointwise_p::thread_zext_ln181_13_fu_142_p1() {
-    zext_ln181_13_fu_142_p1 = esl_zext<12,9>(i_0_i_reg_90.read());
+void polyveck_pointwise_p::thread_zext_ln181_14_fu_142_p1() {
+    zext_ln181_14_fu_142_p1 = esl_zext<12,9>(i_0_i_reg_90.read());
 }
 
-void polyveck_pointwise_p::thread_zext_ln181_14_fu_151_p1() {
-    zext_ln181_14_fu_151_p1 = esl_zext<64,12>(add_ln181_fu_146_p2.read());
+void polyveck_pointwise_p::thread_zext_ln181_15_fu_151_p1() {
+    zext_ln181_15_fu_151_p1 = esl_zext<64,12>(add_ln181_fu_146_p2.read());
 }
 
 void polyveck_pointwise_p::thread_zext_ln181_fu_137_p1() {

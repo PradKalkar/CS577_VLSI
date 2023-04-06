@@ -132,34 +132,13 @@
               <type>0</type>
               <id>5</id>
               <name>w_coeffs_offset_read</name>
-              <fileName>poly.c</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>181</lineNumber>
-              <contextFuncName>poly_pointwise_montgomery</contextFuncName>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
               <inlineStackInfo>
-                <count>1</count>
+                <count>0</count>
                 <item_version>0</item_version>
-                <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</first>
-                  <second class_id="11" tracking_level="0" version="0">
-                    <count>2</count>
-                    <item_version>0</item_version>
-                    <item class_id="12" tracking_level="0" version="0">
-                      <first class_id="13" tracking_level="0" version="0">
-                        <first>poly.c</first>
-                        <second>poly_pointwise_montgomery</second>
-                      </first>
-                      <second>181</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>polyvec.c</first>
-                        <second>polyvecl_pointwise_acc_montgomery</second>
-                      </first>
-                      <second>136</second>
-                    </item>
-                  </second>
-                </item>
               </inlineStackInfo>
               <originalName/>
               <rtlName/>
@@ -195,13 +174,13 @@
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
-                <item>
+                <item class_id="11" tracking_level="0" version="0">
                   <first>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</first>
-                  <second>
+                  <second class_id="12" tracking_level="0" version="0">
                     <count>2</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
+                    <item class_id="13" tracking_level="0" version="0">
+                      <first class_id="14" tracking_level="0" version="0">
                         <first>poly.c</first>
                         <second>poly_pointwise_montgomery</second>
                       </first>
@@ -299,7 +278,7 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>tmp_s</name>
+              <name>tmp_4</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -330,7 +309,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_s_fu_205_p3</rtlName>
+              <rtlName>tmp_4_fu_205_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>5</bitwidth>
@@ -356,7 +335,7 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>zext_ln181_3_cast</name>
+              <name>zext_ln181_3</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -381,13 +360,13 @@
                         <first>polyvec.c</first>
                         <second>polyvecl_pointwise_acc_montgomery</second>
                       </first>
-                      <second>136</second>
+                      <second>138</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln181_3_cast_fu_213_p1</rtlName>
+              <rtlName>zext_ln181_3_fu_213_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -775,7 +754,7 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>zext_ln181_3</name>
+              <name>zext_ln181_5</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -806,7 +785,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln181_3_fu_248_p1</rtlName>
+              <rtlName>zext_ln181_5_fu_248_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -886,7 +865,7 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>zext_ln181_5</name>
+              <name>zext_ln181_6</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -917,7 +896,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln181_5_fu_257_p1</rtlName>
+              <rtlName>zext_ln181_6_fu_257_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -998,7 +977,7 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>tmp_7</name>
+              <name>tmp_5</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -1029,7 +1008,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_7_fu_234_p4</rtlName>
+              <rtlName>tmp_5_fu_234_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>13</bitwidth>
@@ -1280,7 +1259,7 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>zext_ln181_6</name>
+              <name>zext_ln181_7</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -1931,7 +1910,7 @@
             <Obj>
               <type>0</type>
               <id>40</id>
-              <name>tmp_1</name>
+              <name>tmp_6</name>
               <fileName>reduce.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>19</lineNumber>
@@ -1969,7 +1948,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_1_fu_310_p4</rtlName>
+              <rtlName>tmp_6_fu_310_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>24</bitwidth>
@@ -2353,7 +2332,7 @@
             <Obj>
               <type>0</type>
               <id>52</id>
-              <name>zext_ln181_7</name>
+              <name>zext_ln181_8</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -2384,7 +2363,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln181_7_fu_331_p1</rtlName>
+              <rtlName>zext_ln181_8_fu_331_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -2521,7 +2500,7 @@
             <Obj>
               <type>0</type>
               <id>55</id>
-              <name>tmp_8</name>
+              <name>tmp_s</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -2552,7 +2531,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_8_fu_348_p3</rtlName>
+              <rtlName>tmp_s_fu_348_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>11</bitwidth>
@@ -2949,61 +2928,6 @@
             <Obj>
               <type>0</type>
               <id>66</id>
-              <name>zext_ln181_8</name>
-              <fileName>poly.c</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>181</lineNumber>
-              <contextFuncName>poly_pointwise_montgomery</contextFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</first>
-                  <second>
-                    <count>2</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>poly.c</first>
-                        <second>poly_pointwise_montgomery</second>
-                      </first>
-                      <second>181</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>polyvec.c</first>
-                        <second>polyvecl_pointwise_acc_montgomery</second>
-                      </first>
-                      <second>138</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>zext_ln181_8_fu_372_p1</rtlName>
-              <coreName/>
-            </Obj>
-            <bitwidth>12</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>237</item>
-          </oprand_edges>
-          <opcode>zext</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>52</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_57">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>67</id>
               <name>zext_ln181_9</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
@@ -3035,7 +2959,62 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln181_9_fu_376_p1</rtlName>
+              <rtlName>zext_ln181_9_fu_372_p1</rtlName>
+              <coreName/>
+            </Obj>
+            <bitwidth>12</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>237</item>
+          </oprand_edges>
+          <opcode>zext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>52</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_57">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>67</id>
+              <name>zext_ln181_10</name>
+              <fileName>poly.c</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>181</lineNumber>
+              <contextFuncName>poly_pointwise_montgomery</contextFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</first>
+                  <second>
+                    <count>2</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>poly.c</first>
+                        <second>poly_pointwise_montgomery</second>
+                      </first>
+                      <second>181</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>polyvec.c</first>
+                        <second>polyvecl_pointwise_acc_montgomery</second>
+                      </first>
+                      <second>138</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>zext_ln181_10_fu_376_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>14</bitwidth>
@@ -3115,7 +3094,7 @@
             <Obj>
               <type>0</type>
               <id>69</id>
-              <name>zext_ln181_10</name>
+              <name>zext_ln181_11</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -3146,7 +3125,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln181_10_fu_385_p1</rtlName>
+              <rtlName>zext_ln181_11_fu_385_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -3283,7 +3262,7 @@
             <Obj>
               <type>0</type>
               <id>72</id>
-              <name>zext_ln181_11</name>
+              <name>zext_ln181_12</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -3314,7 +3293,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln181_11_fu_395_p1</rtlName>
+              <rtlName>zext_ln181_12_fu_395_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -3450,7 +3429,7 @@
             <Obj>
               <type>0</type>
               <id>75</id>
-              <name>zext_ln181_12</name>
+              <name>zext_ln181_13</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>181</lineNumber>
@@ -4101,7 +4080,7 @@
             <Obj>
               <type>0</type>
               <id>86</id>
-              <name>tmp_2</name>
+              <name>tmp_7</name>
               <fileName>reduce.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>19</lineNumber>
@@ -4139,7 +4118,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_2_fu_453_p4</rtlName>
+              <rtlName>tmp_7_fu_453_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>24</bitwidth>
@@ -9515,7 +9494,7 @@
           </second>
         </item>
         <item>
-          <first>zext_ln181_3_cast_reg_523</first>
+          <first>zext_ln181_3_reg_523</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -11454,14 +11433,6 @@
         </second>
       </item>
       <item>
-        <first>tmp_1_fu_310</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>40</item>
-        </second>
-      </item>
-      <item>
         <first>tmp_26_cast_fu_340</first>
         <second>
           <count>1</count>
@@ -11470,15 +11441,15 @@
         </second>
       </item>
       <item>
-        <first>tmp_2_fu_453</first>
+        <first>tmp_4_fu_205</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>86</item>
+          <item>8</item>
         </second>
       </item>
       <item>
-        <first>tmp_7_fu_234</first>
+        <first>tmp_5_fu_234</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11486,11 +11457,19 @@
         </second>
       </item>
       <item>
-        <first>tmp_8_fu_348</first>
+        <first>tmp_6_fu_310</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>55</item>
+          <item>40</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_7_fu_453</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>86</item>
         </second>
       </item>
       <item>
@@ -11502,11 +11481,11 @@
         </second>
       </item>
       <item>
-        <first>tmp_s_fu_205</first>
+        <first>tmp_s_fu_348</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>8</item>
+          <item>55</item>
         </second>
       </item>
       <item>
@@ -11582,7 +11561,15 @@
         </second>
       </item>
       <item>
-        <first>zext_ln181_10_fu_385</first>
+        <first>zext_ln181_10_fu_376</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>67</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln181_11_fu_385</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11590,7 +11577,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln181_11_fu_395</first>
+        <first>zext_ln181_12_fu_395</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11598,7 +11585,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln181_12_fu_405</first>
+        <first>zext_ln181_13_fu_405</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11622,19 +11609,11 @@
         </second>
       </item>
       <item>
-        <first>zext_ln181_3_cast_fu_213</first>
+        <first>zext_ln181_3_fu_213</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>9</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln181_3_fu_248</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>20</item>
         </second>
       </item>
       <item>
@@ -11646,7 +11625,15 @@
         </second>
       </item>
       <item>
-        <first>zext_ln181_5_fu_257</first>
+        <first>zext_ln181_5_fu_248</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>20</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln181_6_fu_257</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11654,7 +11641,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln181_6_fu_262</first>
+        <first>zext_ln181_7_fu_262</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11662,7 +11649,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln181_7_fu_331</first>
+        <first>zext_ln181_8_fu_331</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11670,19 +11657,11 @@
         </second>
       </item>
       <item>
-        <first>zext_ln181_8_fu_372</first>
+        <first>zext_ln181_9_fu_372</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>66</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln181_9_fu_376</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>67</item>
         </second>
       </item>
       <item>
@@ -12101,7 +12080,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln181_3_cast_reg_523</first>
+        <first>zext_ln181_3_reg_523</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

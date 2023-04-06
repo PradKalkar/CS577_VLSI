@@ -242,10 +242,10 @@ poly_pointwise_montgomery.2.exit:4  br i1 %icmp_ln305, label %4, label %1
 
 <Node id="18" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_36 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)
+:2  %empty_38 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)
 
 ]]></Node>
-<StgValue><ssdm name="empty_36"/></StgValue>
+<StgValue><ssdm name="empty_38"/></StgValue>
 </operation>
 
 <operation id="18" st_id="3" stage="1" lat="1">
@@ -304,10 +304,10 @@ poly_pointwise_montgomery.2.exit:4  br i1 %icmp_ln305, label %4, label %1
 
 <Node id="23" bw="12" op_0_bw="9">
 <![CDATA[
-:1  %zext_ln181_13 = zext i9 %i_0_i to i12
+:1  %zext_ln181_14 = zext i9 %i_0_i to i12
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln181_13"/></StgValue>
+<StgValue><ssdm name="zext_ln181_14"/></StgValue>
 </operation>
 
 <operation id="22" st_id="3" stage="1" lat="1">
@@ -320,7 +320,7 @@ poly_pointwise_montgomery.2.exit:4  br i1 %icmp_ln305, label %4, label %1
 
 <Node id="24" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-:2  %add_ln181 = add i12 %zext_ln181_13, %zext_ln176
+:2  %add_ln181 = add i12 %zext_ln181_14, %zext_ln176
 
 ]]></Node>
 <StgValue><ssdm name="add_ln181"/></StgValue>
@@ -336,10 +336,10 @@ poly_pointwise_montgomery.2.exit:4  br i1 %icmp_ln305, label %4, label %1
 
 <Node id="25" bw="64" op_0_bw="12">
 <![CDATA[
-:3  %zext_ln181_14 = zext i12 %add_ln181 to i64
+:3  %zext_ln181_15 = zext i12 %add_ln181 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln181_14"/></StgValue>
+<StgValue><ssdm name="zext_ln181_15"/></StgValue>
 </operation>
 
 <operation id="24" st_id="3" stage="1" lat="1">
@@ -352,7 +352,7 @@ poly_pointwise_montgomery.2.exit:4  br i1 %icmp_ln305, label %4, label %1
 
 <Node id="27" bw="10" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:5  %v_vec_coeffs_addr = getelementptr [1024 x i32]* %v_vec_coeffs, i64 0, i64 %zext_ln181_14
+:5  %v_vec_coeffs_addr = getelementptr [1024 x i32]* %v_vec_coeffs, i64 0, i64 %zext_ln181_15
 
 ]]></Node>
 <StgValue><ssdm name="v_vec_coeffs_addr"/></StgValue>
@@ -434,7 +434,7 @@ poly_pointwise_montgomery.2.exit.loopexit:0  br label %poly_pointwise_montgomery
 
 <Node id="26" bw="10" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:4  %r_vec_coeffs_addr = getelementptr [1024 x i32]* %r_vec_coeffs, i64 0, i64 %zext_ln181_14
+:4  %r_vec_coeffs_addr = getelementptr [1024 x i32]* %r_vec_coeffs, i64 0, i64 %zext_ln181_15
 
 ]]></Node>
 <StgValue><ssdm name="r_vec_coeffs_addr"/></StgValue>

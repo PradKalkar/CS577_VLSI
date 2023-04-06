@@ -1809,7 +1809,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>tmp_9</name>
+						<name>tmp_7</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>917</lineNumber>
@@ -2705,7 +2705,7 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>tmp_10</name>
+						<name>tmp_8</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>919</lineNumber>
@@ -3601,7 +3601,7 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>tmp_11</name>
+						<name>tmp_9</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>921</lineNumber>
@@ -8011,7 +8011,15 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_10_fu_337</first>
+			<first>tmp_7_fu_260</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>42</item>
+			</second>
+		</item>
+		<item>
+			<first>tmp_8_fu_337</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8019,19 +8027,11 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_11_fu_355</first>
+			<first>tmp_9_fu_355</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>74</item>
-			</second>
-		</item>
-		<item>
-			<first>tmp_9_fu_260</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>42</item>
 			</second>
 		</item>
 		<item>

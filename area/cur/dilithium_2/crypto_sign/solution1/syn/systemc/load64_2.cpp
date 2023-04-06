@@ -93,7 +93,7 @@ load64_2::load64_2(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     SC_METHOD(thread_x_address0);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( zext_ln31_6_fu_90_p1 );
+    sensitive << ( zext_ln31_9_fu_90_p1 );
 
     SC_METHOD(thread_x_ce0);
     sensitive << ( ap_CS_fsm_state2 );
@@ -104,7 +104,7 @@ load64_2::load64_2(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_zext_ln31_2_fu_111_p1);
     sensitive << ( shl_ln_fu_103_p3 );
 
-    SC_METHOD(thread_zext_ln31_6_fu_90_p1);
+    SC_METHOD(thread_zext_ln31_9_fu_90_p1);
     sensitive << ( add_ln31_fu_85_p2 );
 
     SC_METHOD(thread_zext_ln31_fu_81_p1);
@@ -152,7 +152,7 @@ load64_2::load64_2(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
     sc_trace(mVcdFile, i_0_reg_41, "i_0_reg_41");
     sc_trace(mVcdFile, r_0_reg_53, "r_0_reg_53");
-    sc_trace(mVcdFile, zext_ln31_6_fu_90_p1, "zext_ln31_6_fu_90_p1");
+    sc_trace(mVcdFile, zext_ln31_9_fu_90_p1, "zext_ln31_9_fu_90_p1");
     sc_trace(mVcdFile, zext_ln31_fu_81_p1, "zext_ln31_fu_81_p1");
     sc_trace(mVcdFile, add_ln31_fu_85_p2, "add_ln31_fu_85_p2");
     sc_trace(mVcdFile, trunc_ln31_3_fu_99_p1, "trunc_ln31_3_fu_99_p1");
@@ -290,7 +290,7 @@ void load64_2::thread_trunc_ln31_fu_65_p1() {
 }
 
 void load64_2::thread_x_address0() {
-    x_address0 =  (sc_lv<13>) (zext_ln31_6_fu_90_p1.read());
+    x_address0 =  (sc_lv<13>) (zext_ln31_9_fu_90_p1.read());
 }
 
 void load64_2::thread_x_ce0() {
@@ -309,8 +309,8 @@ void load64_2::thread_zext_ln31_2_fu_111_p1() {
     zext_ln31_2_fu_111_p1 = esl_zext<64,6>(shl_ln_fu_103_p3.read());
 }
 
-void load64_2::thread_zext_ln31_6_fu_90_p1() {
-    zext_ln31_6_fu_90_p1 = esl_zext<64,14>(add_ln31_fu_85_p2.read());
+void load64_2::thread_zext_ln31_9_fu_90_p1() {
+    zext_ln31_9_fu_90_p1 = esl_zext<64,14>(add_ln31_fu_85_p2.read());
 }
 
 void load64_2::thread_zext_ln31_fu_81_p1() {

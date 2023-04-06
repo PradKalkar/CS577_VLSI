@@ -4835,7 +4835,7 @@
             <Obj>
               <type>0</type>
               <id>94</id>
-              <name>tmp_5</name>
+              <name>tmp_26</name>
               <fileName>poly.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>377</lineNumber>
@@ -4859,7 +4859,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_5_fu_509_p4</rtlName>
+              <rtlName>tmp_26_fu_509_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>24</bitwidth>
@@ -5009,7 +5009,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>off</originalName>
-              <rtlName>crypto_sign_urem_eOg_U47</rtlName>
+              <rtlName>crypto_sign_urem_eOg_U46</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -7467,7 +7467,7 @@
           <Obj>
             <type>3</type>
             <id>89</id>
-            <name>keccak_absorb.1.exit</name>
+            <name>keccak_absorb.2.exit</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -11295,7 +11295,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>crypto_sign_urem_eOg_U47 (crypto_sign_urem_eOg)</first>
+          <first>crypto_sign_urem_eOg_U46 (crypto_sign_urem_eOg)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -11343,7 +11343,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>3214</second>
+              <second>3224</second>
             </item>
             <item>
               <first>LUT</first>
@@ -13166,7 +13166,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item>
-          <first>crypto_sign_urem_eOg_U47</first>
+          <first>crypto_sign_urem_eOg_U46</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -13198,7 +13198,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>crypto_sign_urem_eOg_U47 (crypto_sign_urem_eOg)</first>
+          <first>crypto_sign_urem_eOg_U46 (crypto_sign_urem_eOg)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -15303,7 +15303,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_5_fu_509</first>
+        <first>tmp_26_fu_509</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

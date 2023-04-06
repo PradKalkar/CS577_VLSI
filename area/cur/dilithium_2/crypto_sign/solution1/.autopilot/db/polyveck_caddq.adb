@@ -931,7 +931,7 @@
             <Obj>
               <type>0</type>
               <id>25</id>
-              <name>tmp_4</name>
+              <name>tmp_9</name>
               <fileName>reduce.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>51</lineNumber>
@@ -969,7 +969,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_4_fu_119_p3</rtlName>
+              <rtlName>tmp_9_fu_119_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3504,7 +3504,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_4_fu_119</first>
+        <first>tmp_9_fu_119</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -256,10 +256,10 @@
 
 <Node id="19" bw="11" op_0_bw="11" op_1_bw="3" op_2_bw="6" op_3_bw="2">
 <![CDATA[
-:2  %tmp_5 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i6.i2(i3 %a_coeffs_offset_read, i6 %trunc_ln805, i2 0)
+:2  %tmp = call i11 @_ssdm_op_BitConcatenate.i11.i3.i6.i2(i3 %a_coeffs_offset_read, i6 %trunc_ln805, i2 0)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_5"/></StgValue>
+<StgValue><ssdm name="tmp"/></StgValue>
 </operation>
 
 <operation id="24" st_id="2" stage="1" lat="1">
@@ -272,7 +272,7 @@
 
 <Node id="20" bw="64" op_0_bw="11">
 <![CDATA[
-:3  %zext_ln805 = zext i11 %tmp_5 to i64
+:3  %zext_ln805 = zext i11 %tmp to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln805"/></StgValue>
@@ -566,10 +566,10 @@
 
 <Node id="25" bw="11" op_0_bw="11" op_1_bw="3" op_2_bw="8">
 <![CDATA[
-:8  %tmp_6 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln806)
+:8  %tmp_1 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln806)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_6"/></StgValue>
+<StgValue><ssdm name="tmp_1"/></StgValue>
 </operation>
 
 <operation id="44" st_id="4" stage="1" lat="1">
@@ -581,7 +581,7 @@
 
 <Node id="26" bw="64" op_0_bw="11">
 <![CDATA[
-:9  %zext_ln806 = zext i11 %tmp_6 to i64
+:9  %zext_ln806 = zext i11 %tmp_1 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln806"/></StgValue>
@@ -932,10 +932,10 @@
 
 <Node id="31" bw="11" op_0_bw="11" op_1_bw="3" op_2_bw="8">
 <![CDATA[
-:14  %tmp_7 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln807)
+:14  %tmp_2 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln807)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_7"/></StgValue>
+<StgValue><ssdm name="tmp_2"/></StgValue>
 </operation>
 
 <operation id="68" st_id="6" stage="1" lat="1">
@@ -947,7 +947,7 @@
 
 <Node id="32" bw="64" op_0_bw="11">
 <![CDATA[
-:15  %zext_ln807 = zext i11 %tmp_7 to i64
+:15  %zext_ln807 = zext i11 %tmp_2 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln807"/></StgValue>
@@ -1298,10 +1298,10 @@
 
 <Node id="37" bw="11" op_0_bw="11" op_1_bw="3" op_2_bw="8">
 <![CDATA[
-:20  %tmp_8 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln808)
+:20  %tmp_3 = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %a_coeffs_offset_read, i8 %or_ln808)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_8"/></StgValue>
+<StgValue><ssdm name="tmp_3"/></StgValue>
 </operation>
 
 <operation id="92" st_id="8" stage="1" lat="1">
@@ -1313,7 +1313,7 @@
 
 <Node id="38" bw="64" op_0_bw="11">
 <![CDATA[
-:21  %zext_ln808 = zext i11 %tmp_8 to i64
+:21  %zext_ln808 = zext i11 %tmp_3 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln808"/></StgValue>

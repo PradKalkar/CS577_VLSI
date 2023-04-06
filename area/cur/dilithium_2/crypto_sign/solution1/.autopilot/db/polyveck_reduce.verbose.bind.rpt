@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'polyveck_reduce'
 ================================================================
-* Date:           Tue Apr  4 22:25:19 2023
+* Date:           Tue Apr  4 23:20:58 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -100,7 +100,7 @@ ST_2 : Operation 14 [1/1] (0.00ns)   --->   "ret void" [polyvec.c:189]   --->   
 State 3 <SV = 2> <Delay = 4.53>
 ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%i_0_i = phi i9 [ 0, %1 ], [ %i_17, %3 ]"   --->   Operation 15 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 16 [1/1] (1.34ns)   --->   "%icmp_ln32 = icmp eq i9 %i_0_i, -256" [poly.c:32->polyvec.c:188]   --->   Operation 16 'icmp' 'icmp_ln32' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%empty_35 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 17 'speclooptripcount' 'empty_35' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%empty_37 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 17 'speclooptripcount' 'empty_37' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 18 [1/1] (1.73ns)   --->   "%i_17 = add i9 %i_0_i, 1" [poly.c:32->polyvec.c:188]   --->   Operation 18 'add' 'i_17' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 19 [1/1] (0.00ns)   --->   "br i1 %icmp_ln32, label %poly_reduce.exit.loopexit, label %3" [poly.c:32->polyvec.c:188]   --->   Operation 19 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln33 = zext i9 %i_0_i to i12" [poly.c:33->polyvec.c:188]   --->   Operation 20 'zext' 'zext_ln33' <Predicate = (!icmp_ln32)> <Delay = 0.00>
@@ -151,7 +151,7 @@ br_ln32           (br               ) [ 00111]
 ret_ln189         (ret              ) [ 00000]
 i_0_i             (phi              ) [ 00010]
 icmp_ln32         (icmp             ) [ 00111]
-empty_35          (speclooptripcount) [ 00000]
+empty_37          (speclooptripcount) [ 00000]
 i_17              (add              ) [ 00111]
 br_ln32           (br               ) [ 00000]
 zext_ln33         (zext             ) [ 00000]

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'polyvecl_uniform_gam'" level="0">
-<item name = "Date">Tue Apr  4 22:25:39 2023
+<item name = "Date">Tue Apr  4 23:21:14 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">crypto_sign</item>
@@ -32,7 +32,7 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_keccak_absorb_fu_395">keccak_absorb, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_keccak_squeezeblocks_1_fu_408">keccak_squeezeblocks_1, 1201, 1201, 12.010 ms, 12.010 ms, 1201, 1201, none</column>
+<column name="grp_keccak_squeezeblocks_fu_408">keccak_squeezeblocks, 1201, 1201, 12.010 ms, 12.010 ms, 1201, 1201, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -69,7 +69,7 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="grp_keccak_absorb_fu_395">keccak_absorb, 2, 0, 4437, 19335, 0</column>
-<column name="grp_keccak_squeezeblocks_1_fu_408">keccak_squeezeblocks_1, 2, 0, 3213, 17316, 0</column>
+<column name="grp_keccak_squeezeblocks_fu_408">keccak_squeezeblocks, 2, 0, 3213, 17316, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -160,7 +160,7 @@
 <column name="add_ln855_reg_1146">10, 0, 10, 0</column>
 <column name="ap_CS_fsm">20, 0, 20, 0</column>
 <column name="grp_keccak_absorb_fu_395_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_keccak_squeezeblocks_1_fu_408_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_keccak_squeezeblocks_fu_408_ap_start_reg">1, 0, 1, 0</column>
 <column name="i_0_i1_i_reg_360">4, 0, 4, 0</column>
 <column name="i_0_i_i_i_i_reg_338">5, 0, 5, 0</column>
 <column name="i_0_i_reg_384">7, 0, 7, 0</column>

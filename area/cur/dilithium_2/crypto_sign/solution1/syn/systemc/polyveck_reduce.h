@@ -38,7 +38,7 @@ struct polyveck_reduce : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    crypto_sign_mac_mibs<1,1,9,24,32,32>* crypto_sign_mac_mibs_U70;
+    crypto_sign_mac_mibs<1,1,9,24,32,32>* crypto_sign_mac_mibs_U69;
     sc_signal< sc_lv<4> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<3> > i_fu_77_p2;

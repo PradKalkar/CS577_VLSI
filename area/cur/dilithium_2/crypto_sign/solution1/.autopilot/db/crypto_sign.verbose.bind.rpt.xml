@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'crypto_sign'" level="0">
-<item name = "Date">Tue Apr  4 22:25:30 2023
+<item name = "Date">Tue Apr  4 23:21:05 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">crypto_sign</item>
@@ -31,12 +31,67 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_crypto_sign_signatur_fu_89">crypto_sign_signatur, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_poly_uniform_fu_1346">poly_uniform, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_polyvecl_uniform_gam_fu_1359">polyvecl_uniform_gam, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_keccak_absorb_3_fu_1369">keccak_absorb_3, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_poly_challenge_fu_1383">poly_challenge, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_KeccakF1600_StatePer_1_fu_1392">KeccakF1600_StatePer_1, 50, 50, 0.500 ms, 0.500 ms, 50, 50, none</column>
+<column name="grp_KeccakF1600_StatePer_fu_1399">KeccakF1600_StatePer, 50, 50, 0.500 ms, 0.500 ms, 50, 50, none</column>
+<column name="grp_unpack_sk_fu_1406">unpack_sk, 2570, 2570, 25.700 ms, 25.700 ms, 2570, 2570, none</column>
+<column name="grp_polyveck_invntt_tomo_fu_1416">polyveck_invntt_tomo, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_invntt_tomont_fu_1423">invntt_tomont, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_pack_sig_fu_1432">pack_sig, 4715, 4715, 47.150 ms, 47.150 ms, 4715, 4715, none</column>
+<column name="grp_ntt_1_fu_1440">ntt_1, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_ntt_fu_1447">ntt, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_polyvecl_pointwise_a_fu_1459">polyvecl_pointwise_a, 3595, 3595, 35.950 ms, 35.950 ms, 3595, 3595, none</column>
+<column name="grp_keccak_absorb_4203_fu_1468">keccak_absorb_4203, 115, 115, 1.150 ms, 1.150 ms, 115, 115, none</column>
+<column name="grp_polyveck_pack_w1_fu_1477">polyveck_pack_w1, 777, 777, 7.770 ms, 7.770 ms, 777, 777, none</column>
+<column name="grp_polyveck_pointwise_p_fu_1484">polyveck_pointwise_p, 2057, 2057, 20.570 ms, 20.570 ms, 2057, 2057, none</column>
+<column name="grp_polyveck_chknorm_fu_1491">polyveck_chknorm, 5, 2064, 50.000 us, 20.640 ms, 5, 2064, none</column>
+<column name="grp_polyveck_caddq_fu_1499">polyveck_caddq, 2057, 2057, 20.570 ms, 20.570 ms, 2057, 2057, none</column>
+<column name="grp_polyveck_reduce_fu_1504">polyveck_reduce, 2057, 2057, 20.570 ms, 20.570 ms, 2057, 2057, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">?, ?, 2, -, -, ?, no</column>
+<column name="- Loop 2">25, 25, 1, -, -, 25, no</column>
+<column name="- Loop 3">30, 30, 5, -, -, 6, no</column>
+<column name="- Loop 4">25, 25, 1, -, -, 25, no</column>
+<column name="- Loop 5">190, 190, 19, -, -, 10, no</column>
+<column name=" + Loop 5.1">16, 16, 2, -, -, 8, no</column>
+<column name="- Loop 6">30, 30, 5, -, -, 6, no</column>
+<column name="- Loop 7">?, ?, ?, -, -, 4, no</column>
+<column name=" + Loop 7.1">?, ?, ?, -, -, 4, no</column>
+<column name="- Loop 8">?, ?, ?, -, -, 4, no</column>
+<column name="- Loop 9">?, ?, ?, -, -, 4, no</column>
+<column name="- Loop 10">?, ?, ?, -, -, 4, no</column>
+<column name="- Loop 11">?, ?, ?, -, -, ?, no</column>
+<column name=" + Loop 11.1">511, 511, 2, -, -, 256, no</column>
+<column name=" + Loop 11.2">511, 511, 2, -, -, 256, no</column>
+<column name=" + Loop 11.3">511, 511, 2, -, -, 256, no</column>
+<column name=" + Loop 11.4">511, 511, 2, -, -, 256, no</column>
+<column name=" + Loop 11.5">?, ?, ?, -, -, 4, no</column>
+<column name=" + Loop 11.6">14388, 14388, 3597, -, -, 4, no</column>
+<column name=" + Loop 11.7">2056, 2056, 514, -, -, 4, no</column>
+<column name="  ++ Loop 11.7.1">512, 512, 2, -, -, 256, no</column>
+<column name=" + Loop 11.8">25, 25, 1, -, -, 25, no</column>
+<column name=" + Loop 11.9">20, 20, 5, -, -, 4, no</column>
+<column name=" + Loop 11.10">2056, 2056, 514, -, -, 4, no</column>
+<column name="  ++ Loop 11.10.1">512, 512, 2, -, -, 256, no</column>
+<column name=" + Loop 11.11">?, ?, ?, -, -, 4, no</column>
+<column name=" + Loop 11.12">2056, 2056, 514, -, -, 4, no</column>
+<column name="  ++ Loop 11.12.1">512, 512, 2, -, -, 256, no</column>
+<column name=" + Loop 11.13">2056, 2056, 514, -, -, 4, no</column>
+<column name="  ++ Loop 11.13.1">512, 512, 2, -, -, 256, no</column>
+<column name=" + Loop 11.14">4, 2062, 4 ~ 515, -, -, 1 ~ 4, no</column>
+<column name="  ++ Loop 11.14.1">2, 513, 2, -, -, 1 ~ 256, no</column>
+<column name=" + Loop 11.15">2056, 2056, 514, -, -, 4, no</column>
+<column name="  ++ Loop 11.15.1">512, 512, 2, -, -, 256, no</column>
+<column name=" + Loop 11.16">2056, 2056, 514, -, -, 4, no</column>
+<column name="  ++ Loop 11.16.1">512, 512, 2, -, -, 256, no</column>
+<column name=" + Loop 11.17">2056, 2056, 514, -, -, 4, no</column>
+<column name="  ++ Loop 11.17.1">512, 512, 2, -, -, 256, no</column>
 </table>
 </item>
 </section>

@@ -49,7 +49,7 @@ struct load64_2 : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_lv<4> > i_0_reg_41;
     sc_signal< sc_lv<64> > r_0_reg_53;
-    sc_signal< sc_lv<64> > zext_ln31_6_fu_90_p1;
+    sc_signal< sc_lv<64> > zext_ln31_9_fu_90_p1;
     sc_signal< sc_lv<14> > zext_ln31_fu_81_p1;
     sc_signal< sc_lv<14> > add_ln31_fu_85_p2;
     sc_signal< sc_lv<3> > trunc_ln31_3_fu_99_p1;
@@ -95,7 +95,7 @@ struct load64_2 : public sc_module {
     void thread_x_ce0();
     void thread_zext_ln31_1_fu_95_p1();
     void thread_zext_ln31_2_fu_111_p1();
-    void thread_zext_ln31_6_fu_90_p1();
+    void thread_zext_ln31_9_fu_90_p1();
     void thread_zext_ln31_fu_81_p1();
     void thread_ap_NS_fsm();
 };

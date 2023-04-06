@@ -69,7 +69,7 @@ wire   [63:0] zext_ln300_1_fu_152_p1;
 wire   [10:0] tmp_fu_119_p3;
 wire   [11:0] zext_ln300_fu_143_p1;
 wire   [11:0] add_ln300_fu_147_p2;
-wire   [0:0] tmp_3_fu_157_p3;
+wire   [0:0] tmp_8_fu_157_p3;
 wire   [31:0] shl_ln301_fu_173_p2;
 wire   [31:0] t_fu_165_p3;
 wire   [31:0] and_ln301_fu_179_p2;
@@ -262,9 +262,9 @@ assign shl_ln301_fu_173_p2 = v_vec_coeffs_q0 << 32'd1;
 
 assign t_6_fu_185_p2 = (v_vec_coeffs_q0 - and_ln301_fu_179_p2);
 
-assign t_fu_165_p3 = ((tmp_3_fu_157_p3[0:0] === 1'b1) ? 32'd4294967295 : 32'd0);
+assign t_fu_165_p3 = ((tmp_8_fu_157_p3[0:0] === 1'b1) ? 32'd4294967295 : 32'd0);
 
-assign tmp_3_fu_157_p3 = v_vec_coeffs_q0[32'd31];
+assign tmp_8_fu_157_p3 = v_vec_coeffs_q0[32'd31];
 
 assign tmp_fu_119_p3 = {{i_0_reg_69}, {8'd0}};
 

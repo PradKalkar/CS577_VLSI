@@ -94,8 +94,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "nonce", "Type" : "None", "Direction" : "I"},
 			{"Name" : "KeccakF_RoundConstan", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "8", "SubInstance" : "grp_keccak_squeezeblocks_2_fu_288", "Port" : "KeccakF_RoundConstan"},
-					{"ID" : "3", "SubInstance" : "grp_keccak_absorb_fu_275", "Port" : "KeccakF_RoundConstan"}]}]},
+					{"ID" : "3", "SubInstance" : "grp_keccak_absorb_fu_275", "Port" : "KeccakF_RoundConstan"},
+					{"ID" : "8", "SubInstance" : "grp_keccak_squeezeblocks_2_fu_288", "Port" : "KeccakF_RoundConstan"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.buf_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.state_s_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_keccak_absorb_fu_275", "Parent" : "0", "Child" : ["4", "5", "7"],
@@ -225,7 +225,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "len", "Type" : "None", "Direction" : "I"},
 			{"Name" : "buf_r", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "buflen", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.crypto_sign_urem_eOg_U47", "Parent" : "0"}]}
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.crypto_sign_urem_eOg_U46", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

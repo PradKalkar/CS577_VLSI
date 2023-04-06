@@ -90,10 +90,10 @@ struct ntt : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state7;
     sc_signal< sc_lv<32> > add_ln60_fu_366_p2;
     sc_signal< sc_lv<11> > tmp_fu_131_p3;
-    sc_signal< sc_lv<23> > tmp_7_fu_162_p4;
-    sc_signal< sc_lv<28> > tmp_8_fu_192_p4;
+    sc_signal< sc_lv<23> > tmp_28_fu_162_p4;
+    sc_signal< sc_lv<28> > tmp_29_fu_192_p4;
     sc_signal< sc_lv<31> > add_ln57_fu_206_p2;
-    sc_signal< sc_lv<1> > empty_51_fu_215_p2;
+    sc_signal< sc_lv<1> > empty_56_fu_215_p2;
     sc_signal< sc_lv<30> > trunc_ln55_fu_221_p1;
     sc_signal< sc_lv<30> > trunc_ln55_2_fu_225_p1;
     sc_signal< sc_lv<30> > start_fu_229_p3;
@@ -175,7 +175,7 @@ struct ntt : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_empty_51_fu_215_p2();
+    void thread_empty_56_fu_215_p2();
     void thread_icmp_ln54_fu_152_p2();
     void thread_icmp_ln55_fu_172_p2();
     void thread_icmp_ln57_fu_245_p2();
@@ -194,8 +194,8 @@ struct ntt : public sc_module {
     void thread_sub_ln59_fu_359_p2();
     void thread_t_8_fu_355_p1();
     void thread_t_fu_319_p2();
-    void thread_tmp_7_fu_162_p4();
-    void thread_tmp_8_fu_192_p4();
+    void thread_tmp_28_fu_162_p4();
+    void thread_tmp_29_fu_192_p4();
     void thread_tmp_fu_131_p3();
     void thread_trunc_ln18_fu_315_p1();
     void thread_trunc_ln55_2_fu_225_p1();

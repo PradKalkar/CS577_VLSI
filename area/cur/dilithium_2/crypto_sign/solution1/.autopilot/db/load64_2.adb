@@ -539,7 +539,7 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>zext_ln31_6</name>
+              <name>zext_ln31_9</name>
               <fileName>fips202.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>31</lineNumber>
@@ -563,7 +563,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln31_6_fu_90_p1</rtlName>
+              <rtlName>zext_ln31_9_fu_90_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -2729,7 +2729,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln31_6_fu_90</first>
+        <first>zext_ln31_9_fu_90</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

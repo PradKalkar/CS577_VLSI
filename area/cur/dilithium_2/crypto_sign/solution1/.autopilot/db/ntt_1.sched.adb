@@ -1062,7 +1062,7 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>empty_50</name>
+						<name>empty_55</name>
 						<fileName>ntt.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>55</lineNumber>
@@ -2962,7 +2962,7 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>tmp_6</name>
+						<name>tmp_27</name>
 						<fileName>ntt.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>54</lineNumber>

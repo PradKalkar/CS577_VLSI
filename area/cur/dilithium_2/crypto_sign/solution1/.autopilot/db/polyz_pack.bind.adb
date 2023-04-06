@@ -656,7 +656,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>tmp_5</name>
+						<name>tmp</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>805</lineNumber>
@@ -951,7 +951,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>tmp_6</name>
+						<name>tmp_1</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>806</lineNumber>
@@ -1245,7 +1245,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>tmp_7</name>
+						<name>tmp_2</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>807</lineNumber>
@@ -1539,7 +1539,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>tmp_8</name>
+						<name>tmp_3</name>
 						<fileName>poly.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>808</lineNumber>
@@ -10946,15 +10946,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_5_fu_269</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>19</item>
-			</second>
-		</item>
-		<item>
-			<first>tmp_6_fu_351</first>
+			<first>tmp_1_fu_351</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10962,7 +10954,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_7_fu_444</first>
+			<first>tmp_2_fu_444</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10970,11 +10962,19 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_8_fu_537</first>
+			<first>tmp_3_fu_537</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>37</item>
+			</second>
+		</item>
+		<item>
+			<first>tmp_fu_269</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>19</item>
 			</second>
 		</item>
 		<item>

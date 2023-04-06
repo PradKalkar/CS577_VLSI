@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'polyveck_reduce'" level="0">
-<item name = "Date">Tue Apr  4 22:25:40 2023
+<item name = "Date">Tue Apr  4 23:21:15 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">crypto_sign</item>
@@ -67,7 +67,7 @@
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="crypto_sign_mac_mibs_U70">crypto_sign_mac_mibs, i0 * i1 + i2</column>
+<column name="crypto_sign_mac_mibs_U69">crypto_sign_mac_mibs, i0 * i1 + i2</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">

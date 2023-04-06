@@ -112,7 +112,7 @@ wire   [10:0] sub_ln419_fu_201_p2;
 wire   [5:0] trunc_ln916_fu_227_p1;
 wire   [10:0] tmp_s_fu_239_p4;
 wire   [7:0] or_ln917_fu_254_p2;
-wire   [10:0] tmp_9_fu_260_p3;
+wire   [10:0] tmp_7_fu_260_p3;
 wire   [8:0] zext_ln916_fu_273_p1;
 wire  signed [11:0] sext_ln916_fu_285_p1;
 wire   [11:0] add_ln916_fu_289_p2;
@@ -121,9 +121,9 @@ wire   [1:0] trunc_ln917_fu_303_p1;
 wire   [7:0] shl_ln4_fu_307_p3;
 wire   [7:0] trunc_ln916_1_fu_276_p1;
 wire   [7:0] or_ln919_fu_332_p2;
-wire   [10:0] tmp_10_fu_337_p3;
+wire   [10:0] tmp_8_fu_337_p3;
 wire   [7:0] or_ln921_fu_350_p2;
-wire   [10:0] tmp_11_fu_355_p3;
+wire   [10:0] tmp_9_fu_355_p3;
 wire   [8:0] add_ln918_fu_368_p2;
 wire  signed [11:0] sext_ln918_fu_373_p1;
 wire   [11:0] add_ln918_1_fu_377_p2;
@@ -419,11 +419,11 @@ assign sub_ln419_fu_201_p2 = (zext_ln419_fu_185_p1 - zext_ln419_1_fu_197_p1);
 
 assign sub_ln916_fu_280_p2 = (zext_ln916_fu_273_p1 - zext_ln915_reg_476);
 
-assign tmp_10_fu_337_p3 = {{i_0_reg_138}, {or_ln919_fu_332_p2}};
+assign tmp_7_fu_260_p3 = {{i_0_reg_138}, {or_ln917_fu_254_p2}};
 
-assign tmp_11_fu_355_p3 = {{i_0_reg_138}, {or_ln921_fu_350_p2}};
+assign tmp_8_fu_337_p3 = {{i_0_reg_138}, {or_ln919_fu_332_p2}};
 
-assign tmp_9_fu_260_p3 = {{i_0_reg_138}, {or_ln917_fu_254_p2}};
+assign tmp_9_fu_355_p3 = {{i_0_reg_138}, {or_ln921_fu_350_p2}};
 
 assign tmp_s_fu_239_p4 = {{{i_0_reg_138}, {trunc_ln916_fu_227_p1}}, {2'd0}};
 
@@ -453,15 +453,15 @@ assign zext_ln916_2_fu_298_p1 = $unsigned(sext_ln916_1_fu_294_p1);
 
 assign zext_ln916_fu_273_p1 = shl_ln3_reg_489;
 
-assign zext_ln917_fu_268_p1 = tmp_9_fu_260_p3;
+assign zext_ln917_fu_268_p1 = tmp_7_fu_260_p3;
 
 assign zext_ln918_fu_386_p1 = $unsigned(sext_ln918_1_fu_382_p1);
 
-assign zext_ln919_fu_345_p1 = tmp_10_fu_337_p3;
+assign zext_ln919_fu_345_p1 = tmp_8_fu_337_p3;
 
 assign zext_ln920_fu_437_p1 = $unsigned(sext_ln920_1_fu_433_p1);
 
-assign zext_ln921_fu_363_p1 = tmp_11_fu_355_p3;
+assign zext_ln921_fu_363_p1 = tmp_9_fu_355_p3;
 
 always @ (posedge ap_clk) begin
     sext_ln910_reg_469[5:0] <= 6'b000000;

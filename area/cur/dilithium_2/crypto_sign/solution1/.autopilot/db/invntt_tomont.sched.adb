@@ -438,7 +438,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>tmp_11</name>
+						<name>tmp_32</name>
 						<fileName>ntt.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>83</lineNumber>
@@ -685,7 +685,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>tmp_12</name>
+						<name>tmp_33</name>
 						<fileName>ntt.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>84</lineNumber>
@@ -1225,7 +1225,7 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>empty_80</name>
+						<name>empty_81</name>
 						<fileName>ntt.c</fileName>
 						<fileDirectory>/home/anirudh/Desktop/Academics/vlsi_2/CS577_VLSI/area/cur/dilithium_2</fileDirectory>
 						<lineNumber>84</lineNumber>

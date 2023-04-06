@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'keccak_squeezeblocks_1'" level="0">
-<item name = "Date">Tue Apr  4 22:25:18 2023
+<item name = "Date">Tue Apr  4 23:20:59 2023
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">crypto_sign</item>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1201, 1201, 12.010 ms, 12.010 ms, 1201, 1201, none</column>
+<column name="">241, 241, 2.410 ms, 2.410 ms, 241, 241, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_KeccakF1600_StatePer_1_fu_117">KeccakF1600_StatePer_1, 50, 50, 0.500 ms, 0.500 ms, 50, 50, none</column>
+<column name="grp_KeccakF1600_StatePer_1_fu_118">KeccakF1600_StatePer_1, 50, 50, 0.500 ms, 0.500 ms, 50, 50, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">1200, 1200, 240, -, -, 5, no</column>
+<column name="- Loop 1">240, 240, 240, -, -, 1, no</column>
 <column name=" + Loop 1.1">187, 187, 11, -, -, 17, no</column>
 <column name="  ++ Loop 1.1.1">8, 8, 1, -, -, 8, no</column>
 </table>

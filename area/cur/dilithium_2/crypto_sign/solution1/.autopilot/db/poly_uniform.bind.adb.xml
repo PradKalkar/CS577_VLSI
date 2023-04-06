@@ -530,10 +530,10 @@
 
 <Node id="29" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-dilithium_shake128_stream_init.exit:0  %empty_40 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 0, i64 0)
+dilithium_shake128_stream_init.exit:0  %empty_42 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 0, i64 0)
 
 ]]></Node>
-<StgValue><ssdm name="empty_40"/></StgValue>
+<StgValue><ssdm name="empty_42"/></StgValue>
 </operation>
 
 <operation id="53" st_id="2" stage="1" lat="1">
@@ -594,10 +594,10 @@ dilithium_shake128_stream_init.exit:1  br label %.preheader.i
 
 <Node id="34" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader.i:2  %empty_41 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)
+.preheader.i:2  %empty_43 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)
 
 ]]></Node>
-<StgValue><ssdm name="empty_41"/></StgValue>
+<StgValue><ssdm name="empty_43"/></StgValue>
 </operation>
 
 <operation id="57" st_id="3" stage="1" lat="1">
@@ -639,7 +639,7 @@ dilithium_shake128_stream_init.exit:1  br label %.preheader.i
 
 <Node id="37" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader.i:5  br i1 %icmp_ln416, label %keccak_absorb.1.exit, label %3
+.preheader.i:5  br i1 %icmp_ln416, label %keccak_absorb.2.exit, label %3
 
 ]]></Node>
 <StgValue><ssdm name="br_ln416"/></StgValue>
@@ -703,7 +703,7 @@ dilithium_shake128_stream_init.exit:1  br label %.preheader.i
 
 <Node id="69" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="9" op_3_bw="7" op_4_bw="8" op_5_bw="8" op_6_bw="64">
 <![CDATA[
-keccak_absorb.1.exit:0  %state_pos_write_assi = call fastcc i32 @keccak_absorb([25 x i64]* %state_s, i9 168, i7 32, i8 %t_0, i8 %t_1)
+keccak_absorb.2.exit:0  %state_pos_write_assi = call fastcc i32 @keccak_absorb([25 x i64]* %state_s, i9 168, i7 32, i8 %t_0, i8 %t_1)
 
 ]]></Node>
 <StgValue><ssdm name="state_pos_write_assi"/></StgValue>
@@ -719,7 +719,7 @@ keccak_absorb.1.exit:0  %state_pos_write_assi = call fastcc i32 @keccak_absorb([
 
 <Node id="85" bw="2" op_0_bw="3">
 <![CDATA[
-keccak_absorb.1.exit:16  %trunc_ln375 = trunc i3 %a_coeffs_offset_read to i2
+keccak_absorb.2.exit:16  %trunc_ln375 = trunc i3 %a_coeffs_offset_read to i2
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln375"/></StgValue>
@@ -735,7 +735,7 @@ keccak_absorb.1.exit:16  %trunc_ln375 = trunc i3 %a_coeffs_offset_read to i2
 
 <Node id="86" bw="2" op_0_bw="3">
 <![CDATA[
-keccak_absorb.1.exit:17  %trunc_ln375_1 = trunc i3 %a_coeffs_offset1_rea to i2
+keccak_absorb.2.exit:17  %trunc_ln375_1 = trunc i3 %a_coeffs_offset1_rea to i2
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln375_1"/></StgValue>
@@ -798,10 +798,10 @@ keccak_absorb.1.exit:17  %trunc_ln375_1 = trunc i3 %a_coeffs_offset1_rea to i2
 
 <Node id="46" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:3  %empty_42 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
+:3  %empty_44 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
 
 ]]></Node>
-<StgValue><ssdm name="empty_42"/></StgValue>
+<StgValue><ssdm name="empty_44"/></StgValue>
 </operation>
 
 <operation id="70" st_id="4" stage="1" lat="1">
@@ -1144,7 +1144,7 @@ load64.1.exit14.i:4  br label %.preheader.i
 
 <Node id="69" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="9" op_3_bw="7" op_4_bw="8" op_5_bw="8" op_6_bw="64">
 <![CDATA[
-keccak_absorb.1.exit:0  %state_pos_write_assi = call fastcc i32 @keccak_absorb([25 x i64]* %state_s, i9 168, i7 32, i8 %t_0, i8 %t_1)
+keccak_absorb.2.exit:0  %state_pos_write_assi = call fastcc i32 @keccak_absorb([25 x i64]* %state_s, i9 168, i7 32, i8 %t_0, i8 %t_1)
 
 ]]></Node>
 <StgValue><ssdm name="state_pos_write_assi"/></StgValue>
@@ -1159,7 +1159,7 @@ keccak_absorb.1.exit:0  %state_pos_write_assi = call fastcc i32 @keccak_absorb([
 
 <Node id="70" bw="29" op_0_bw="29" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-keccak_absorb.1.exit:1  %i_s = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %state_pos_write_assi, i32 3, i32 31)
+keccak_absorb.2.exit:1  %i_s = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %state_pos_write_assi, i32 3, i32 31)
 
 ]]></Node>
 <StgValue><ssdm name="i_s"/></StgValue>
@@ -1174,7 +1174,7 @@ keccak_absorb.1.exit:1  %i_s = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32
 
 <Node id="75" bw="64" op_0_bw="29">
 <![CDATA[
-keccak_absorb.1.exit:6  %zext_ln450_2 = zext i29 %i_s to i64
+keccak_absorb.2.exit:6  %zext_ln450_2 = zext i29 %i_s to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln450_2"/></StgValue>
@@ -1189,7 +1189,7 @@ keccak_absorb.1.exit:6  %zext_ln450_2 = zext i29 %i_s to i64
 
 <Node id="76" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-keccak_absorb.1.exit:7  %state_s_addr_4 = getelementptr [25 x i64]* %state_s, i64 0, i64 %zext_ln450_2
+keccak_absorb.2.exit:7  %state_s_addr_4 = getelementptr [25 x i64]* %state_s, i64 0, i64 %zext_ln450_2
 
 ]]></Node>
 <StgValue><ssdm name="state_s_addr_4"/></StgValue>
@@ -1207,7 +1207,7 @@ keccak_absorb.1.exit:7  %state_s_addr_4 = getelementptr [25 x i64]* %state_s, i6
 
 <Node id="77" bw="64" op_0_bw="5" op_1_bw="32">
 <![CDATA[
-keccak_absorb.1.exit:8  %state_s_load = load i64* %state_s_addr_4, align 8
+keccak_absorb.2.exit:8  %state_s_load = load i64* %state_s_addr_4, align 8
 
 ]]></Node>
 <StgValue><ssdm name="state_s_load"/></StgValue>
@@ -1225,7 +1225,7 @@ keccak_absorb.1.exit:8  %state_s_load = load i64* %state_s_addr_4, align 8
 
 <Node id="71" bw="3" op_0_bw="32">
 <![CDATA[
-keccak_absorb.1.exit:2  %trunc_ln450 = trunc i32 %state_pos_write_assi to i3
+keccak_absorb.2.exit:2  %trunc_ln450 = trunc i32 %state_pos_write_assi to i3
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln450"/></StgValue>
@@ -1240,7 +1240,7 @@ keccak_absorb.1.exit:2  %trunc_ln450 = trunc i32 %state_pos_write_assi to i3
 
 <Node id="72" bw="6" op_0_bw="6" op_1_bw="3" op_2_bw="3">
 <![CDATA[
-keccak_absorb.1.exit:3  %shl_ln = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %trunc_ln450, i3 0)
+keccak_absorb.2.exit:3  %shl_ln = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %trunc_ln450, i3 0)
 
 ]]></Node>
 <StgValue><ssdm name="shl_ln"/></StgValue>
@@ -1255,7 +1255,7 @@ keccak_absorb.1.exit:3  %shl_ln = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %
 
 <Node id="73" bw="64" op_0_bw="6">
 <![CDATA[
-keccak_absorb.1.exit:4  %zext_ln450 = zext i6 %shl_ln to i64
+keccak_absorb.2.exit:4  %zext_ln450 = zext i6 %shl_ln to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln450"/></StgValue>
@@ -1270,7 +1270,7 @@ keccak_absorb.1.exit:4  %zext_ln450 = zext i6 %shl_ln to i64
 
 <Node id="74" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-keccak_absorb.1.exit:5  %shl_ln450 = shl i64 31, %zext_ln450
+keccak_absorb.2.exit:5  %shl_ln450 = shl i64 31, %zext_ln450
 
 ]]></Node>
 <StgValue><ssdm name="shl_ln450"/></StgValue>
@@ -1285,7 +1285,7 @@ keccak_absorb.1.exit:5  %shl_ln450 = shl i64 31, %zext_ln450
 
 <Node id="77" bw="64" op_0_bw="5" op_1_bw="32">
 <![CDATA[
-keccak_absorb.1.exit:8  %state_s_load = load i64* %state_s_addr_4, align 8
+keccak_absorb.2.exit:8  %state_s_load = load i64* %state_s_addr_4, align 8
 
 ]]></Node>
 <StgValue><ssdm name="state_s_load"/></StgValue>
@@ -1300,7 +1300,7 @@ keccak_absorb.1.exit:8  %state_s_load = load i64* %state_s_addr_4, align 8
 
 <Node id="78" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-keccak_absorb.1.exit:9  %xor_ln450 = xor i64 %state_s_load, %shl_ln450
+keccak_absorb.2.exit:9  %xor_ln450 = xor i64 %state_s_load, %shl_ln450
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln450"/></StgValue>
@@ -1315,7 +1315,7 @@ keccak_absorb.1.exit:9  %xor_ln450 = xor i64 %state_s_load, %shl_ln450
 
 <Node id="79" bw="0" op_0_bw="64" op_1_bw="5" op_2_bw="64">
 <![CDATA[
-keccak_absorb.1.exit:10  store i64 %xor_ln450, i64* %state_s_addr_4, align 8
+keccak_absorb.2.exit:10  store i64 %xor_ln450, i64* %state_s_addr_4, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln450"/></StgValue>
@@ -1333,7 +1333,7 @@ keccak_absorb.1.exit:10  store i64 %xor_ln450, i64* %state_s_addr_4, align 8
 
 <Node id="80" bw="5" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-keccak_absorb.1.exit:11  %state_s_addr_5 = getelementptr [25 x i64]* %state_s, i64 0, i64 20
+keccak_absorb.2.exit:11  %state_s_addr_5 = getelementptr [25 x i64]* %state_s, i64 0, i64 20
 
 ]]></Node>
 <StgValue><ssdm name="state_s_addr_5"/></StgValue>
@@ -1348,7 +1348,7 @@ keccak_absorb.1.exit:11  %state_s_addr_5 = getelementptr [25 x i64]* %state_s, i
 
 <Node id="81" bw="64" op_0_bw="5" op_1_bw="0">
 <![CDATA[
-keccak_absorb.1.exit:12  %state_s_load_3 = load i64* %state_s_addr_5, align 8
+keccak_absorb.2.exit:12  %state_s_load_3 = load i64* %state_s_addr_5, align 8
 
 ]]></Node>
 <StgValue><ssdm name="state_s_load_3"/></StgValue>
@@ -1366,7 +1366,7 @@ keccak_absorb.1.exit:12  %state_s_load_3 = load i64* %state_s_addr_5, align 8
 
 <Node id="81" bw="64" op_0_bw="5" op_1_bw="0">
 <![CDATA[
-keccak_absorb.1.exit:12  %state_s_load_3 = load i64* %state_s_addr_5, align 8
+keccak_absorb.2.exit:12  %state_s_load_3 = load i64* %state_s_addr_5, align 8
 
 ]]></Node>
 <StgValue><ssdm name="state_s_load_3"/></StgValue>
@@ -1381,7 +1381,7 @@ keccak_absorb.1.exit:12  %state_s_load_3 = load i64* %state_s_addr_5, align 8
 
 <Node id="82" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-keccak_absorb.1.exit:13  %xor_ln451 = xor i64 %state_s_load_3, -9223372036854775808
+keccak_absorb.2.exit:13  %xor_ln451 = xor i64 %state_s_load_3, -9223372036854775808
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln451"/></StgValue>
@@ -1396,7 +1396,7 @@ keccak_absorb.1.exit:13  %xor_ln451 = xor i64 %state_s_load_3, -9223372036854775
 
 <Node id="83" bw="0" op_0_bw="64" op_1_bw="5" op_2_bw="64">
 <![CDATA[
-keccak_absorb.1.exit:14  store i64 %xor_ln451, i64* %state_s_addr_5, align 8
+keccak_absorb.2.exit:14  store i64 %xor_ln451, i64* %state_s_addr_5, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln451"/></StgValue>
@@ -1414,7 +1414,7 @@ keccak_absorb.1.exit:14  store i64 %xor_ln451, i64* %state_s_addr_5, align 8
 
 <Node id="84" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="4" op_4_bw="64" op_5_bw="64" op_6_bw="0" op_7_bw="32">
 <![CDATA[
-keccak_absorb.1.exit:15  call fastcc void @keccak_squeezeblocks.2([842 x i8]* %buf, i2 0, i4 5, [25 x i64]* %state_s)
+keccak_absorb.2.exit:15  call fastcc void @keccak_squeezeblocks.2([842 x i8]* %buf, i2 0, i4 5, [25 x i64]* %state_s)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln619"/></StgValue>
@@ -1432,7 +1432,7 @@ keccak_absorb.1.exit:15  call fastcc void @keccak_squeezeblocks.2([842 x i8]* %b
 
 <Node id="84" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="4" op_4_bw="64" op_5_bw="64" op_6_bw="0" op_7_bw="32">
 <![CDATA[
-keccak_absorb.1.exit:15  call fastcc void @keccak_squeezeblocks.2([842 x i8]* %buf, i2 0, i4 5, [25 x i64]* %state_s)
+keccak_absorb.2.exit:15  call fastcc void @keccak_squeezeblocks.2([842 x i8]* %buf, i2 0, i4 5, [25 x i64]* %state_s)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln619"/></StgValue>
@@ -1450,7 +1450,7 @@ keccak_absorb.1.exit:15  call fastcc void @keccak_squeezeblocks.2([842 x i8]* %b
 
 <Node id="87" bw="32" op_0_bw="32" op_1_bw="23" op_2_bw="2" op_3_bw="2" op_4_bw="32" op_5_bw="10" op_6_bw="8" op_7_bw="11" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-keccak_absorb.1.exit:18  %ctr = call fastcc i32 @rej_uniform([4096 x i23]* %a_coeffs, i2 %trunc_ln375, i2 %trunc_ln375_1, i32 0, i10 256, [842 x i8]* %buf, i11 840)
+keccak_absorb.2.exit:18  %ctr = call fastcc i32 @rej_uniform([4096 x i23]* %a_coeffs, i2 %trunc_ln375, i2 %trunc_ln375_1, i32 0, i10 256, [842 x i8]* %buf, i11 840)
 
 ]]></Node>
 <StgValue><ssdm name="ctr"/></StgValue>
@@ -1468,7 +1468,7 @@ keccak_absorb.1.exit:18  %ctr = call fastcc i32 @rej_uniform([4096 x i23]* %a_co
 
 <Node id="87" bw="32" op_0_bw="32" op_1_bw="23" op_2_bw="2" op_3_bw="2" op_4_bw="32" op_5_bw="10" op_6_bw="8" op_7_bw="11" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-keccak_absorb.1.exit:18  %ctr = call fastcc i32 @rej_uniform([4096 x i23]* %a_coeffs, i2 %trunc_ln375, i2 %trunc_ln375_1, i32 0, i10 256, [842 x i8]* %buf, i11 840)
+keccak_absorb.2.exit:18  %ctr = call fastcc i32 @rej_uniform([4096 x i23]* %a_coeffs, i2 %trunc_ln375, i2 %trunc_ln375_1, i32 0, i10 256, [842 x i8]* %buf, i11 840)
 
 ]]></Node>
 <StgValue><ssdm name="ctr"/></StgValue>
@@ -1483,7 +1483,7 @@ keccak_absorb.1.exit:18  %ctr = call fastcc i32 @rej_uniform([4096 x i23]* %a_co
 
 <Node id="88" bw="0" op_0_bw="0">
 <![CDATA[
-keccak_absorb.1.exit:19  br label %6
+keccak_absorb.2.exit:19  br label %6
 
 ]]></Node>
 <StgValue><ssdm name="br_ln377"/></StgValue>
@@ -1501,7 +1501,7 @@ keccak_absorb.1.exit:19  br label %6
 
 <Node id="90" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
-:0  %ctr_0 = phi i32 [ %ctr, %keccak_absorb.1.exit ], [ %ctr_2, %10 ]
+:0  %ctr_0 = phi i32 [ %ctr, %keccak_absorb.2.exit ], [ %ctr_2, %10 ]
 
 ]]></Node>
 <StgValue><ssdm name="ctr_0"/></StgValue>
@@ -1516,7 +1516,7 @@ keccak_absorb.1.exit:19  br label %6
 
 <Node id="91" bw="9" op_0_bw="9" op_1_bw="0" op_2_bw="9" op_3_bw="0">
 <![CDATA[
-:1  %buflen_0 = phi i9 [ -184, %keccak_absorb.1.exit ], [ %zext_ln383, %10 ]
+:1  %buflen_0 = phi i9 [ -184, %keccak_absorb.2.exit ], [ %zext_ln383, %10 ]
 
 ]]></Node>
 <StgValue><ssdm name="buflen_0"/></StgValue>
@@ -1561,10 +1561,10 @@ keccak_absorb.1.exit:19  br label %6
 
 <Node id="94" bw="24" op_0_bw="24" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-:4  %tmp_5 = call i24 @_ssdm_op_PartSelect.i24.i32.i32.i32(i32 %ctr_0, i32 8, i32 31)
+:4  %tmp_26 = call i24 @_ssdm_op_PartSelect.i24.i32.i32.i32(i32 %ctr_0, i32 8, i32 31)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_5"/></StgValue>
+<StgValue><ssdm name="tmp_26"/></StgValue>
 </operation>
 
 <operation id="118" st_id="16" stage="1" lat="1">
@@ -1576,7 +1576,7 @@ keccak_absorb.1.exit:19  br label %6
 
 <Node id="95" bw="1" op_0_bw="24" op_1_bw="24">
 <![CDATA[
-:5  %icmp_ln377 = icmp eq i24 %tmp_5, 0
+:5  %icmp_ln377 = icmp eq i24 %tmp_26, 0
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln377"/></StgValue>
@@ -1977,10 +1977,10 @@ keccak_absorb.1.exit:19  br label %6
 
 <Node id="108" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:3  %empty_43 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 2, i64 0)
+:3  %empty_45 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 2, i64 0)
 
 ]]></Node>
-<StgValue><ssdm name="empty_43"/></StgValue>
+<StgValue><ssdm name="empty_45"/></StgValue>
 </operation>
 
 <operation id="143" st_id="29" stage="1" lat="1">
@@ -2450,13 +2450,13 @@ keccak_absorb.1.exit:19  br label %6
 </dataflow>
 <dataflow id="259" from="state_s_addr" to="store_ln363" fromId="49" toId="50">
 </dataflow>
-<dataflow id="260" from="_ssdm_op_SpecLoopTripCount" to="empty_40" fromId="243" toId="52">
+<dataflow id="260" from="_ssdm_op_SpecLoopTripCount" to="empty_42" fromId="243" toId="52">
 </dataflow>
-<dataflow id="261" from="StgValue_255" to="empty_40" fromId="255" toId="52">
+<dataflow id="261" from="StgValue_255" to="empty_42" fromId="255" toId="52">
 </dataflow>
-<dataflow id="262" from="StgValue_255" to="empty_40" fromId="255" toId="52">
+<dataflow id="262" from="StgValue_255" to="empty_42" fromId="255" toId="52">
 </dataflow>
-<dataflow id="263" from="StgValue_255" to="empty_40" fromId="255" toId="52">
+<dataflow id="263" from="StgValue_255" to="empty_42" fromId="255" toId="52">
 </dataflow>
 <dataflow id="264" from="add_ln416" to="i_3_i" fromId="58" toId="54">
 <BackEdge/>
@@ -2477,13 +2477,13 @@ keccak_absorb.1.exit:19  br label %6
 </dataflow>
 <dataflow id="269" from="i_3_i" to="zext_ln416" fromId="54" toId="55">
 </dataflow>
-<dataflow id="270" from="_ssdm_op_SpecLoopTripCount" to="empty_41" fromId="243" toId="56">
+<dataflow id="270" from="_ssdm_op_SpecLoopTripCount" to="empty_43" fromId="243" toId="56">
 </dataflow>
-<dataflow id="272" from="StgValue_271" to="empty_41" fromId="271" toId="56">
+<dataflow id="272" from="StgValue_271" to="empty_43" fromId="271" toId="56">
 </dataflow>
-<dataflow id="273" from="StgValue_271" to="empty_41" fromId="271" toId="56">
+<dataflow id="273" from="StgValue_271" to="empty_43" fromId="271" toId="56">
 </dataflow>
-<dataflow id="274" from="StgValue_271" to="empty_41" fromId="271" toId="56">
+<dataflow id="274" from="StgValue_271" to="empty_43" fromId="271" toId="56">
 </dataflow>
 <dataflow id="275" from="i_3_i" to="icmp_ln416" fromId="54" toId="57">
 </dataflow>
@@ -2559,13 +2559,13 @@ keccak_absorb.1.exit:19  br label %6
 </dataflow>
 <dataflow id="310" from="StgValue_309" to="icmp_ln30" fromId="309" toId="68">
 </dataflow>
-<dataflow id="311" from="_ssdm_op_SpecLoopTripCount" to="empty_42" fromId="243" toId="69">
+<dataflow id="311" from="_ssdm_op_SpecLoopTripCount" to="empty_44" fromId="243" toId="69">
 </dataflow>
-<dataflow id="313" from="StgValue_312" to="empty_42" fromId="312" toId="69">
+<dataflow id="313" from="StgValue_312" to="empty_44" fromId="312" toId="69">
 </dataflow>
-<dataflow id="314" from="StgValue_312" to="empty_42" fromId="312" toId="69">
+<dataflow id="314" from="StgValue_312" to="empty_44" fromId="312" toId="69">
 </dataflow>
-<dataflow id="315" from="StgValue_312" to="empty_42" fromId="312" toId="69">
+<dataflow id="315" from="StgValue_312" to="empty_44" fromId="312" toId="69">
 </dataflow>
 <dataflow id="316" from="i_0_i1_i" to="i_23" fromId="66" toId="70">
 </dataflow>
@@ -2795,15 +2795,15 @@ keccak_absorb.1.exit:19  br label %6
 </dataflow>
 <dataflow id="437" from="sext_ln377" to="zext_ln377" fromId="115" toId="116">
 </dataflow>
-<dataflow id="439" from="_ssdm_op_PartSelect.i24.i32.i32.i32" to="tmp_5" fromId="438" toId="117">
+<dataflow id="439" from="_ssdm_op_PartSelect.i24.i32.i32.i32" to="tmp_26" fromId="438" toId="117">
 </dataflow>
-<dataflow id="440" from="ctr_0" to="tmp_5" fromId="113" toId="117">
+<dataflow id="440" from="ctr_0" to="tmp_26" fromId="113" toId="117">
 </dataflow>
-<dataflow id="441" from="StgValue_230" to="tmp_5" fromId="230" toId="117">
+<dataflow id="441" from="StgValue_230" to="tmp_26" fromId="230" toId="117">
 </dataflow>
-<dataflow id="442" from="StgValue_361" to="tmp_5" fromId="361" toId="117">
+<dataflow id="442" from="StgValue_361" to="tmp_26" fromId="361" toId="117">
 </dataflow>
-<dataflow id="443" from="tmp_5" to="icmp_ln377" fromId="117" toId="118">
+<dataflow id="443" from="tmp_26" to="icmp_ln377" fromId="117" toId="118">
 </dataflow>
 <dataflow id="445" from="StgValue_444" to="icmp_ln377" fromId="444" toId="118">
 </dataflow>
@@ -2893,13 +2893,13 @@ keccak_absorb.1.exit:19  br label %6
 </dataflow>
 <dataflow id="485" from="trunc_ln378_1" to="icmp_ln379" fromId="135" toId="141">
 </dataflow>
-<dataflow id="486" from="_ssdm_op_SpecLoopTripCount" to="empty_43" fromId="243" toId="142">
+<dataflow id="486" from="_ssdm_op_SpecLoopTripCount" to="empty_45" fromId="243" toId="142">
 </dataflow>
-<dataflow id="487" from="StgValue_255" to="empty_43" fromId="255" toId="142">
+<dataflow id="487" from="StgValue_255" to="empty_45" fromId="255" toId="142">
 </dataflow>
-<dataflow id="489" from="StgValue_488" to="empty_43" fromId="488" toId="142">
+<dataflow id="489" from="StgValue_488" to="empty_45" fromId="488" toId="142">
 </dataflow>
-<dataflow id="490" from="StgValue_255" to="empty_43" fromId="255" toId="142">
+<dataflow id="490" from="StgValue_255" to="empty_45" fromId="255" toId="142">
 </dataflow>
 <dataflow id="491" from="i_0" to="i" fromId="139" toId="143">
 </dataflow>

@@ -68,10 +68,10 @@ wire    ap_CS_fsm_state2;
 wire   [10:0] or_ln172_fu_202_p2;
 reg   [10:0] or_ln172_reg_368;
 wire   [0:0] icmp_ln171_fu_174_p2;
-wire   [6:0] i_27_fu_215_p2;
+wire   [6:0] i_28_fu_215_p2;
 wire    ap_CS_fsm_state4;
-wire   [2:0] i_28_fu_247_p2;
-reg   [2:0] i_28_reg_391;
+wire   [2:0] i_29_fu_247_p2;
+reg   [2:0] i_29_reg_391;
 wire    ap_CS_fsm_state5;
 wire   [11:0] zext_ln181_fu_261_p1;
 reg   [11:0] zext_ln181_reg_396;
@@ -177,7 +177,7 @@ always @ (posedge ap_clk) begin
     if (((icmp_ln171_fu_174_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
         i_2_reg_125 <= 7'd0;
     end else if (((icmp_ln176_fu_209_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state4))) begin
-        i_2_reg_125 <= i_27_fu_215_p2;
+        i_2_reg_125 <= i_28_fu_215_p2;
     end
 end
 
@@ -185,7 +185,7 @@ always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state4) & (icmp_ln176_fu_209_p2 == 1'd1))) begin
         i_3_reg_136 <= 3'd0;
     end else if (((icmp_ln181_fu_265_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
-        i_3_reg_136 <= i_28_reg_391;
+        i_3_reg_136 <= i_29_reg_391;
     end
 end
 
@@ -207,7 +207,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        i_28_reg_391 <= i_28_fu_247_p2;
+        i_29_reg_391 <= i_29_fu_247_p2;
     end
 end
 
@@ -395,9 +395,9 @@ assign grp_polyz_pack_fu_160_ap_start = grp_polyz_pack_fu_160_ap_start_reg;
 
 assign h_vec_coeffs_address0 = zext_ln182_1_fu_286_p1;
 
-assign i_27_fu_215_p2 = (i_2_reg_125 + 7'd1);
+assign i_28_fu_215_p2 = (i_2_reg_125 + 7'd1);
 
-assign i_28_fu_247_p2 = (i_3_reg_136 + 3'd1);
+assign i_29_fu_247_p2 = (i_3_reg_136 + 3'd1);
 
 assign i_fu_180_p2 = (i_1_reg_113 + 3'd1);
 

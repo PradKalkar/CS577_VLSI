@@ -83,7 +83,7 @@ crypto_sign_mac_mibs #(
     .din1_WIDTH( 24 ),
     .din2_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-crypto_sign_mac_mibs_U70(
+crypto_sign_mac_mibs_U69(
     .din0(trunc_ln_fu_127_p4),
     .din1(grp_fu_141_p1),
     .din2(v_vec_coeffs_q0),

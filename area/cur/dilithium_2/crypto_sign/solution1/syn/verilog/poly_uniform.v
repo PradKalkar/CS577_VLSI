@@ -247,7 +247,7 @@ wire   [5:0] shl_ln_fu_469_p3;
 wire   [63:0] zext_ln450_fu_477_p1;
 wire   [63:0] shl_ln450_fu_481_p2;
 wire  signed [9:0] sext_ln377_fu_501_p1;
-wire   [23:0] tmp_5_fu_509_p4;
+wire   [23:0] tmp_26_fu_509_p4;
 wire   [2:0] grp_fu_525_p1;
 wire   [8:0] grp_fu_525_p2;
 wire   [10:0] zext_ln378_fu_539_p1;
@@ -385,7 +385,7 @@ crypto_sign_urem_eOg #(
     .din0_WIDTH( 9 ),
     .din1_WIDTH( 3 ),
     .dout_WIDTH( 9 ))
-crypto_sign_urem_eOg_U47(
+crypto_sign_urem_eOg_U46(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_525_ap_start),
@@ -1080,7 +1080,7 @@ assign icmp_ln30_fu_386_p2 = ((i_0_i1_i_reg_217 == 4'd8) ? 1'b1 : 1'b0);
 
 assign icmp_ln362_fu_335_p2 = ((i_0_i_i_i_reg_195 == 5'd25) ? 1'b1 : 1'b0);
 
-assign icmp_ln377_fu_519_p2 = ((tmp_5_fu_509_p4 == 24'd0) ? 1'b1 : 1'b0);
+assign icmp_ln377_fu_519_p2 = ((tmp_26_fu_509_p4 == 24'd0) ? 1'b1 : 1'b0);
 
 assign icmp_ln379_fu_552_p2 = ((i_0_reg_263 == trunc_ln378_1_reg_725) ? 1'b1 : 1'b0);
 
@@ -1114,7 +1114,7 @@ assign t_0_fu_317_p1 = nonce[7:0];
 
 assign t_1_fu_331_p1 = tmp_fu_321_p4;
 
-assign tmp_5_fu_509_p4 = {{ctr_0_reg_241[31:8]}};
+assign tmp_26_fu_509_p4 = {{ctr_0_reg_241[31:8]}};
 
 assign tmp_fu_321_p4 = {{nonce[9:8]}};
 
