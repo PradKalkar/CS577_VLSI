@@ -1,1 +1,3 @@
-Apr 4: area 9 14 136
+Apr 4 (Baseline): area 9 14 136
+Apr 6: 9 14 120
+Apr 6: area 8 9 92
