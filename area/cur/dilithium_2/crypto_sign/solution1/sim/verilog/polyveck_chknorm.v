@@ -55,8 +55,8 @@ wire   [2:0] i_fu_113_p2;
 reg   [2:0] i_reg_205;
 wire   [11:0] zext_ln287_fu_127_p1;
 reg   [11:0] zext_ln287_reg_210;
-wire   [8:0] i_20_fu_137_p2;
-reg   [8:0] i_20_reg_218;
+wire   [8:0] i_28_fu_137_p2;
+reg   [8:0] i_28_reg_218;
 wire    ap_CS_fsm_state3;
 wire   [0:0] icmp_ln298_fu_131_p2;
 reg   [2:0] i_0_reg_69;
@@ -69,7 +69,7 @@ wire   [63:0] zext_ln300_1_fu_152_p1;
 wire   [10:0] tmp_fu_119_p3;
 wire   [11:0] zext_ln300_fu_143_p1;
 wire   [11:0] add_ln300_fu_147_p2;
-wire   [0:0] tmp_3_fu_157_p3;
+wire   [0:0] tmp_8_fu_157_p3;
 wire   [31:0] shl_ln301_fu_173_p2;
 wire   [31:0] t_fu_165_p3;
 wire   [31:0] and_ln301_fu_179_p2;
@@ -103,7 +103,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((icmp_ln303_fu_191_p2 == 1'd1) & (icmp_ln325_reg_201 == 1'd0) & (1'b1 == ap_CS_fsm_state4))) begin
-        i_0_i_reg_80 <= i_20_reg_218;
+        i_0_i_reg_80 <= i_28_reg_218;
     end else if (((icmp_ln325_fu_107_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
         i_0_i_reg_80 <= 9'd0;
     end
@@ -133,7 +133,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        i_20_reg_218 <= i_20_fu_137_p2;
+        i_28_reg_218 <= i_28_fu_137_p2;
     end
 end
 
@@ -248,7 +248,7 @@ assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
 assign bound_cast_fu_103_p1 = bound;
 
-assign i_20_fu_137_p2 = (i_0_i_reg_80 + 9'd1);
+assign i_28_fu_137_p2 = (i_0_i_reg_80 + 9'd1);
 
 assign i_fu_113_p2 = (i_0_reg_69 + 3'd1);
 
@@ -262,9 +262,9 @@ assign shl_ln301_fu_173_p2 = v_vec_coeffs_q0 << 32'd1;
 
 assign t_6_fu_185_p2 = (v_vec_coeffs_q0 - and_ln301_fu_179_p2);
 
-assign t_fu_165_p3 = ((tmp_3_fu_157_p3[0:0] === 1'b1) ? 32'd4294967295 : 32'd0);
+assign t_fu_165_p3 = ((tmp_8_fu_157_p3[0:0] === 1'b1) ? 32'd4294967295 : 32'd0);
 
-assign tmp_3_fu_157_p3 = v_vec_coeffs_q0[32'd31];
+assign tmp_8_fu_157_p3 = v_vec_coeffs_q0[32'd31];
 
 assign tmp_fu_119_p3 = {{i_0_reg_69}, {8'd0}};
 

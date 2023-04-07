@@ -53,8 +53,8 @@ wire    ap_CS_fsm_state2;
 wire   [11:0] zext_ln46_fu_89_p1;
 reg   [11:0] zext_ln46_reg_150;
 wire   [0:0] icmp_ln202_fu_69_p2;
-wire   [8:0] i_21_fu_99_p2;
-reg   [8:0] i_21_reg_158;
+wire   [8:0] i_29_fu_99_p2;
+reg   [8:0] i_29_reg_158;
 wire    ap_CS_fsm_state3;
 reg   [9:0] v_vec_coeffs_addr_reg_163;
 wire   [0:0] icmp_ln50_fu_93_p2;
@@ -65,7 +65,7 @@ wire   [63:0] zext_ln51_1_fu_114_p1;
 wire   [10:0] tmp_fu_81_p3;
 wire   [11:0] zext_ln51_fu_105_p1;
 wire   [11:0] add_ln51_fu_109_p2;
-wire   [0:0] tmp_4_fu_119_p3;
+wire   [0:0] tmp_9_fu_119_p3;
 wire   [31:0] select_ln51_fu_127_p3;
 reg   [3:0] ap_NS_fsm;
 
@@ -84,7 +84,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        i_0_i_reg_58 <= i_21_reg_158;
+        i_0_i_reg_58 <= i_29_reg_158;
     end else if (((icmp_ln202_fu_69_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
         i_0_i_reg_58 <= 9'd0;
     end
@@ -100,7 +100,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        i_21_reg_158 <= i_21_fu_99_p2;
+        i_29_reg_158 <= i_29_fu_99_p2;
     end
 end
 
@@ -214,7 +214,7 @@ assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
 assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
-assign i_21_fu_99_p2 = (i_0_i_reg_58 + 9'd1);
+assign i_29_fu_99_p2 = (i_0_i_reg_58 + 9'd1);
 
 assign i_fu_75_p2 = (i_0_reg_47 + 3'd1);
 
@@ -222,9 +222,9 @@ assign icmp_ln202_fu_69_p2 = ((i_0_reg_47 == 3'd4) ? 1'b1 : 1'b0);
 
 assign icmp_ln50_fu_93_p2 = ((i_0_i_reg_58 == 9'd256) ? 1'b1 : 1'b0);
 
-assign select_ln51_fu_127_p3 = ((tmp_4_fu_119_p3[0:0] === 1'b1) ? 32'd8380417 : 32'd0);
+assign select_ln51_fu_127_p3 = ((tmp_9_fu_119_p3[0:0] === 1'b1) ? 32'd8380417 : 32'd0);
 
-assign tmp_4_fu_119_p3 = v_vec_coeffs_q0[32'd31];
+assign tmp_9_fu_119_p3 = v_vec_coeffs_q0[32'd31];
 
 assign tmp_fu_81_p3 = {{i_0_reg_47}, {8'd0}};
 

@@ -61,25 +61,25 @@ wire    ap_CS_fsm_state1;
 wire   [2:0] i_fu_107_p2;
 reg   [2:0] i_reg_214;
 wire    ap_CS_fsm_state2;
-wire   [11:0] zext_ln176_fu_121_p1;
-reg   [11:0] zext_ln176_reg_219;
+wire   [11:0] zext_ln177_fu_121_p1;
+reg   [11:0] zext_ln177_reg_219;
 wire   [0:0] icmp_ln305_fu_101_p2;
-wire   [8:0] i_26_fu_131_p2;
-reg   [8:0] i_26_reg_227;
+wire   [8:0] i_18_fu_131_p2;
+reg   [8:0] i_18_reg_227;
 wire    ap_CS_fsm_state3;
-wire   [63:0] zext_ln181_15_fu_151_p1;
-reg   [63:0] zext_ln181_15_reg_232;
-wire   [0:0] icmp_ln180_fu_125_p2;
+wire   [63:0] zext_ln182_14_fu_151_p1;
+reg   [63:0] zext_ln182_14_reg_232;
+wire   [0:0] icmp_ln181_fu_125_p2;
 reg   [2:0] i_0_reg_79;
 reg   [8:0] i_0_i_reg_90;
 wire    ap_CS_fsm_state4;
-wire   [63:0] zext_ln181_fu_137_p1;
+wire   [63:0] zext_ln182_fu_137_p1;
 wire   [10:0] tmp_fu_113_p3;
-wire   [11:0] zext_ln181_14_fu_142_p1;
-wire   [11:0] add_ln181_fu_146_p2;
-wire  signed [31:0] mul_ln181_fu_164_p0;
-wire  signed [31:0] mul_ln181_fu_164_p1;
-wire   [63:0] mul_ln181_fu_164_p2;
+wire   [11:0] zext_ln182_13_fu_142_p1;
+wire   [11:0] add_ln182_fu_146_p2;
+wire  signed [31:0] mul_ln182_fu_164_p0;
+wire  signed [31:0] mul_ln182_fu_164_p1;
+wire   [63:0] mul_ln182_fu_164_p2;
 wire  signed [31:0] trunc_ln18_fu_170_p1;
 wire   [31:0] t_fu_174_p2;
 wire  signed [31:0] mul_ln19_fu_184_p1;
@@ -103,14 +103,14 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        i_0_i_reg_90 <= i_26_reg_227;
+        i_0_i_reg_90 <= i_18_reg_227;
     end else if (((icmp_ln305_fu_101_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
         i_0_i_reg_90 <= 9'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln180_fu_125_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
+    if (((icmp_ln181_fu_125_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
         i_0_reg_79 <= i_reg_214;
     end else if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         i_0_reg_79 <= 3'd0;
@@ -119,7 +119,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        i_26_reg_227 <= i_26_fu_131_p2;
+        i_18_reg_227 <= i_18_fu_131_p2;
     end
 end
 
@@ -131,13 +131,13 @@ end
 
 always @ (posedge ap_clk) begin
     if (((icmp_ln305_fu_101_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        zext_ln176_reg_219[10 : 8] <= zext_ln176_fu_121_p1[10 : 8];
+        zext_ln177_reg_219[10 : 8] <= zext_ln177_fu_121_p1[10 : 8];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln180_fu_125_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
-        zext_ln181_15_reg_232[11 : 0] <= zext_ln181_15_fu_151_p1[11 : 0];
+    if (((icmp_ln181_fu_125_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
+        zext_ln182_14_reg_232[11 : 0] <= zext_ln182_14_fu_151_p1[11 : 0];
     end
 end
 
@@ -214,7 +214,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state3 : begin
-            if (((icmp_ln180_fu_125_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
+            if (((icmp_ln181_fu_125_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -229,11 +229,11 @@ always @ (*) begin
     endcase
 end
 
-assign a_coeffs_address0 = zext_ln181_fu_137_p1;
+assign a_coeffs_address0 = zext_ln182_fu_137_p1;
 
-assign add_ln181_fu_146_p2 = (zext_ln181_14_fu_142_p1 + zext_ln176_reg_219);
+assign add_ln182_fu_146_p2 = (zext_ln182_13_fu_142_p1 + zext_ln177_reg_219);
 
-assign add_ln19_fu_194_p2 = ($signed(sext_ln19_4_fu_190_p1) + $signed(mul_ln181_fu_164_p2));
+assign add_ln19_fu_194_p2 = ($signed(sext_ln19_4_fu_190_p1) + $signed(mul_ln182_fu_164_p2));
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -243,25 +243,25 @@ assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
 assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
-assign i_26_fu_131_p2 = (i_0_i_reg_90 + 9'd1);
+assign i_18_fu_131_p2 = (i_0_i_reg_90 + 9'd1);
 
 assign i_fu_107_p2 = (i_0_reg_79 + 3'd1);
 
-assign icmp_ln180_fu_125_p2 = ((i_0_i_reg_90 == 9'd256) ? 1'b1 : 1'b0);
+assign icmp_ln181_fu_125_p2 = ((i_0_i_reg_90 == 9'd256) ? 1'b1 : 1'b0);
 
 assign icmp_ln305_fu_101_p2 = ((i_0_reg_79 == 3'd4) ? 1'b1 : 1'b0);
 
-assign mul_ln181_fu_164_p0 = v_vec_coeffs_q0;
+assign mul_ln182_fu_164_p0 = v_vec_coeffs_q0;
 
-assign mul_ln181_fu_164_p1 = a_coeffs_q0;
+assign mul_ln182_fu_164_p1 = a_coeffs_q0;
 
-assign mul_ln181_fu_164_p2 = ($signed(mul_ln181_fu_164_p0) * $signed(mul_ln181_fu_164_p1));
+assign mul_ln182_fu_164_p2 = ($signed(mul_ln182_fu_164_p0) * $signed(mul_ln182_fu_164_p1));
 
 assign mul_ln19_fu_184_p1 = t_fu_174_p2;
 
 assign mul_ln19_fu_184_p2 = ($signed(55'd36028797010583551) * $signed(mul_ln19_fu_184_p1));
 
-assign r_vec_coeffs_address0 = zext_ln181_15_reg_232;
+assign r_vec_coeffs_address0 = zext_ln182_14_reg_232;
 
 assign r_vec_coeffs_d0 = {{add_ln19_fu_194_p2[63:32]}};
 
@@ -271,22 +271,22 @@ assign t_fu_174_p2 = ($signed({{1'b0}, {32'd58728449}}) * $signed(trunc_ln18_fu_
 
 assign tmp_fu_113_p3 = {{i_0_reg_79}, {8'd0}};
 
-assign trunc_ln18_fu_170_p1 = mul_ln181_fu_164_p2[31:0];
+assign trunc_ln18_fu_170_p1 = mul_ln182_fu_164_p2[31:0];
 
-assign v_vec_coeffs_address0 = zext_ln181_15_fu_151_p1;
+assign v_vec_coeffs_address0 = zext_ln182_14_fu_151_p1;
 
-assign zext_ln176_fu_121_p1 = tmp_fu_113_p3;
+assign zext_ln177_fu_121_p1 = tmp_fu_113_p3;
 
-assign zext_ln181_14_fu_142_p1 = i_0_i_reg_90;
+assign zext_ln182_13_fu_142_p1 = i_0_i_reg_90;
 
-assign zext_ln181_15_fu_151_p1 = add_ln181_fu_146_p2;
+assign zext_ln182_14_fu_151_p1 = add_ln182_fu_146_p2;
 
-assign zext_ln181_fu_137_p1 = i_0_i_reg_90;
+assign zext_ln182_fu_137_p1 = i_0_i_reg_90;
 
 always @ (posedge ap_clk) begin
-    zext_ln176_reg_219[7:0] <= 8'b00000000;
-    zext_ln176_reg_219[11] <= 1'b0;
-    zext_ln181_15_reg_232[63:12] <= 52'b0000000000000000000000000000000000000000000000000000;
+    zext_ln177_reg_219[7:0] <= 8'b00000000;
+    zext_ln177_reg_219[11] <= 1'b0;
+    zext_ln182_14_reg_232[63:12] <= 52'b0000000000000000000000000000000000000000000000000000;
 end
 
 endmodule //polyveck_pointwise_p

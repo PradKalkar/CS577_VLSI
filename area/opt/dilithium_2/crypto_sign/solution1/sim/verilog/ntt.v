@@ -107,10 +107,10 @@ wire   [31:0] sub_ln59_fu_359_p2;
 wire    ap_CS_fsm_state7;
 wire   [31:0] add_ln60_fu_366_p2;
 wire   [10:0] tmp_fu_131_p3;
-wire   [22:0] tmp_7_fu_162_p4;
-wire   [27:0] tmp_8_fu_192_p4;
+wire   [22:0] tmp_28_fu_162_p4;
+wire   [27:0] tmp_29_fu_192_p4;
 wire   [30:0] add_ln57_fu_206_p2;
-wire   [0:0] empty_52_fu_215_p2;
+wire   [0:0] empty_64_fu_215_p2;
 wire   [29:0] trunc_ln55_fu_221_p1;
 wire   [29:0] trunc_ln55_2_fu_225_p1;
 wire   [29:0] start_fu_229_p3;
@@ -410,11 +410,11 @@ assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
 
 assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 
-assign empty_52_fu_215_p2 = ((j_reg_110 > add_ln57_fu_206_p2) ? 1'b1 : 1'b0);
+assign empty_64_fu_215_p2 = ((j_reg_110 > add_ln57_fu_206_p2) ? 1'b1 : 1'b0);
 
 assign icmp_ln54_fu_152_p2 = ((len_0_reg_98 == 29'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln55_fu_172_p2 = ((tmp_7_fu_162_p4 == 23'd0) ? 1'b1 : 1'b0);
+assign icmp_ln55_fu_172_p2 = ((tmp_28_fu_162_p4 == 23'd0) ? 1'b1 : 1'b0);
 
 assign icmp_ln57_fu_245_p2 = ((j_0_reg_122 < zext_ln57_reg_417) ? 1'b1 : 1'b0);
 
@@ -440,7 +440,7 @@ assign sext_ln58_2_fu_311_p1 = mul_ln58_fu_306_p2;
 
 assign sext_ln58_fu_302_p0 = a_q0;
 
-assign start_fu_229_p3 = ((empty_52_fu_215_p2[0:0] === 1'b1) ? trunc_ln55_fu_221_p1 : trunc_ln55_2_fu_225_p1);
+assign start_fu_229_p3 = ((empty_64_fu_215_p2[0:0] === 1'b1) ? trunc_ln55_fu_221_p1 : trunc_ln55_2_fu_225_p1);
 
 assign sub_ln59_fu_359_p2 = ($signed(a_q1) - $signed(t_8_fu_355_p1));
 
@@ -448,9 +448,9 @@ assign t_8_fu_355_p1 = $signed(trunc_ln_fu_345_p4);
 
 assign t_fu_319_p2 = ($signed({{1'b0}, {32'd58728449}}) * $signed(trunc_ln18_fu_315_p1));
 
-assign tmp_7_fu_162_p4 = {{j_reg_110[30:8]}};
+assign tmp_28_fu_162_p4 = {{j_reg_110[30:8]}};
 
-assign tmp_8_fu_192_p4 = {{len_0_reg_98[28:1]}};
+assign tmp_29_fu_192_p4 = {{len_0_reg_98[28:1]}};
 
 assign tmp_fu_131_p3 = {{a_offset}, {8'd0}};
 
@@ -472,7 +472,7 @@ assign zetas_address0 = zext_ln56_fu_187_p1;
 
 assign zext_ln49_fu_139_p1 = tmp_fu_131_p3;
 
-assign zext_ln54_3_fu_202_p1 = tmp_8_fu_192_p4;
+assign zext_ln54_3_fu_202_p1 = tmp_29_fu_192_p4;
 
 assign zext_ln54_fu_148_p1 = len_0_reg_98;
 

@@ -63,8 +63,8 @@ architecture behav of polyveck_reduce is
     signal zext_ln28_fu_91_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal zext_ln28_reg_158 : STD_LOGIC_VECTOR (11 downto 0);
     signal icmp_ln187_fu_71_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_25_fu_101_p2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal i_25_reg_166 : STD_LOGIC_VECTOR (8 downto 0);
+    signal i_17_fu_101_p2 : STD_LOGIC_VECTOR (8 downto 0);
+    signal i_17_reg_166 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal v_vec_coeffs_addr_reg_171 : STD_LOGIC_VECTOR (9 downto 0);
@@ -101,7 +101,7 @@ architecture behav of polyveck_reduce is
 
 
 begin
-    crypto_sign_mac_mibs_U67 : component crypto_sign_mac_mibs
+    crypto_sign_mac_mibs_U52 : component crypto_sign_mac_mibs
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -135,7 +135,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-                i_0_i_reg_60 <= i_25_reg_166;
+                i_0_i_reg_60 <= i_17_reg_166;
             elsif (((icmp_ln187_fu_71_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                 i_0_i_reg_60 <= ap_const_lv9_0;
             end if; 
@@ -156,7 +156,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state3)) then
-                i_25_reg_166 <= i_25_fu_101_p2;
+                i_17_reg_166 <= i_17_fu_101_p2;
             end if;
         end if;
     end process;
@@ -251,7 +251,7 @@ begin
     end process;
 
     grp_fu_141_p1 <= ap_const_lv32_FF801FFF(24 - 1 downto 0);
-    i_25_fu_101_p2 <= std_logic_vector(unsigned(i_0_i_reg_60) + unsigned(ap_const_lv9_1));
+    i_17_fu_101_p2 <= std_logic_vector(unsigned(i_0_i_reg_60) + unsigned(ap_const_lv9_1));
     i_fu_77_p2 <= std_logic_vector(unsigned(i_0_reg_49) + unsigned(ap_const_lv3_1));
     icmp_ln187_fu_71_p2 <= "1" when (i_0_reg_49 = ap_const_lv3_4) else "0";
     icmp_ln32_fu_95_p2 <= "1" when (i_0_i_reg_60 = ap_const_lv9_100) else "0";

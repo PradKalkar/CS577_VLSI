@@ -96,8 +96,8 @@ wire   [63:0] zext_ln344_1_fu_251_p1;
 wire   [0:0] icmp_ln343_fu_223_p2;
 reg   [31:0] ctr_1_fu_40;
 wire   [31:0] ctr_fu_229_p2;
-wire   [22:0] tmp_1_fu_213_p4;
-wire   [11:0] tmp_4_fu_140_p4;
+wire   [22:0] tmp_s_fu_213_p4;
+wire   [11:0] tmp_7_fu_140_p4;
 wire   [31:0] pos_fu_187_p2;
 wire   [31:0] pos_1_fu_193_p2;
 wire   [6:0] trunc_ln341_fu_209_p1;
@@ -259,7 +259,7 @@ end
 
 assign a_address0 = zext_ln344_1_fu_251_p1;
 
-assign a_d0 = tmp_1_fu_213_p4;
+assign a_d0 = tmp_s_fu_213_p4;
 
 assign add_ln344_2_fu_246_p2 = (zext_ln344_1_cast_reg_278 + zext_ln344_fu_242_p1);
 
@@ -285,7 +285,7 @@ assign icmp_ln337_1_fu_177_p2 = ((pos_2_fu_171_p2 > buflen_cast_reg_268) ? 1'b1 
 
 assign icmp_ln337_fu_166_p2 = ((ctr_1_fu_40 < len_cast_reg_273) ? 1'b1 : 1'b0);
 
-assign icmp_ln343_fu_223_p2 = ((tmp_1_fu_213_p4 < 23'd8380417) ? 1'b1 : 1'b0);
+assign icmp_ln343_fu_223_p2 = ((tmp_s_fu_213_p4 < 23'd8380417) ? 1'b1 : 1'b0);
 
 assign len_cast_fu_136_p1 = len;
 
@@ -295,9 +295,9 @@ assign pos_2_fu_171_p2 = (pos_0_reg_120 + 32'd3);
 
 assign pos_fu_187_p2 = (32'd1 + pos_0_reg_120);
 
-assign tmp_1_fu_213_p4 = {{{trunc_ln341_fu_209_p1}, {buf_r_q0}}, {buf_load_reg_310}};
+assign tmp_7_fu_140_p4 = {{{a_offset}, {a_offset1}}, {8'd0}};
 
-assign tmp_4_fu_140_p4 = {{{a_offset}, {a_offset1}}, {8'd0}};
+assign tmp_s_fu_213_p4 = {{{trunc_ln341_fu_209_p1}, {buf_r_q0}}, {buf_load_reg_310}};
 
 assign trunc_ln341_fu_209_p1 = buf_r_q1[6:0];
 
@@ -311,7 +311,7 @@ assign zext_ln339_fu_199_p1 = pos_fu_187_p2;
 
 assign zext_ln340_fu_204_p1 = pos_1_fu_193_p2;
 
-assign zext_ln344_1_cast_fu_150_p1 = tmp_4_fu_140_p4;
+assign zext_ln344_1_cast_fu_150_p1 = tmp_7_fu_140_p4;
 
 assign zext_ln344_1_fu_251_p1 = add_ln344_2_fu_246_p2;
 

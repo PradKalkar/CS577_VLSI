@@ -65,54 +65,54 @@ $(ObjDir)/PQCgenKAT_sign.c_pre.c.tb.o : PQCgenKAT_sign.c_pre.c.tb.c $(ObjDir)/.d
 	$(Echo) "   Compiling (apcc) PQCgenKAT_sign.c_pre.c.tb.c" $(AVE_DIR_DLOG)
 	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/symmetric-shake.c_pre.c.tb.o : symmetric-shake.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) symmetric-shake.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/symmetric-aes.c_pre.c.tb.o : symmetric-aes.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) symmetric-aes.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/sign.c_pre.c.tb.o : sign.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) sign.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/rounding.c_pre.c.tb.o : rounding.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) rounding.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/rng.c_pre.c.tb.o : rng.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) rng.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/reduce.c_pre.c.tb.o : reduce.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) reduce.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/polyvec.c_pre.c.tb.o : polyvec.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) polyvec.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/poly.c_pre.c.tb.o : poly.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) poly.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/packing.c_pre.c.tb.o : packing.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) packing.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/ntt.c_pre.c.tb.o : ntt.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) ntt.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/fips202.c_pre.c.tb.o : fips202.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) fips202.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+$(ObjDir)/aes.c_pre.c.tb.o : aes.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) aes.c_pre.c.tb.c" $(AVE_DIR_DLOG)
 	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
 $(ObjDir)/aes256ctr.c_pre.c.tb.o : aes256ctr.c_pre.c.tb.c $(ObjDir)/.dir
 	$(Echo) "   Compiling (apcc) aes256ctr.c_pre.c.tb.c" $(AVE_DIR_DLOG)
 	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/aes.c_pre.c.tb.o : aes.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) aes.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+$(ObjDir)/fips202.c_pre.c.tb.o : fips202.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) fips202.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/ntt.c_pre.c.tb.o : ntt.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) ntt.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/packing.c_pre.c.tb.o : packing.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) packing.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/poly.c_pre.c.tb.o : poly.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) poly.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/polyvec.c_pre.c.tb.o : polyvec.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) polyvec.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/reduce.c_pre.c.tb.o : reduce.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) reduce.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/rng.c_pre.c.tb.o : rng.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) rng.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/rounding.c_pre.c.tb.o : rounding.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) rounding.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/sign.c_pre.c.tb.o : sign.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) sign.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/symmetric-aes.c_pre.c.tb.o : symmetric-aes.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) symmetric-aes.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/symmetric-shake.c_pre.c.tb.o : symmetric-shake.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) symmetric-shake.c_pre.c.tb.c" $(AVE_DIR_DLOG)
 	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \

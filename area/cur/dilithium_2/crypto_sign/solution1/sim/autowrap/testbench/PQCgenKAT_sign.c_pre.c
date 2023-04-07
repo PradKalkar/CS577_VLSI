@@ -1,11 +1,11 @@
-# 1 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c"
-# 1 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 1
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c"
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c" 2
 
 
 
@@ -748,7 +748,7 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ ));
 # 858 "/usr/include/stdio.h" 3 4
 extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
-# 9 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
+# 9 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c" 2
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 25 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -1799,7 +1799,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 # 1013 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
 # 1014 "/usr/include/stdlib.h" 2 3 4
-# 10 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
+# 10 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -2065,7 +2065,7 @@ extern char *__stpncpy (char *__restrict __dest,
 extern char *stpncpy (char *__restrict __dest,
         const char *__restrict __src, size_t __n)
      __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1, 2)));
-# 11 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
+# 11 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c" 2
 # 1 "/usr/include/ctype.h" 1 3 4
 # 46 "/usr/include/ctype.h" 3 4
 enum
@@ -2148,9 +2148,9 @@ extern int tolower_l (int __c, locale_t __l) __attribute__ ((__nothrow__ ));
 
 extern int __toupper_l (int __c, locale_t __l) __attribute__ ((__nothrow__ ));
 extern int toupper_l (int __c, locale_t __l) __attribute__ ((__nothrow__ ));
-# 12 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/rng.h" 1
-# 18 "/home/guest/Documents/experiments/dilithium_2/rng.h"
+# 12 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c" 2
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.h" 1
+# 18 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.h"
 typedef struct {
     unsigned char buffer[16];
     int buffer_pos;
@@ -2187,14 +2187,14 @@ randombytes_init(unsigned char *entropy_input,
 
 int
 randombytes(unsigned char *x, unsigned long long xlen);
-# 13 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/api.h" 1
+# 13 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c" 2
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/api.h" 1
 
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/config.h" 1
-# 5 "/home/guest/Documents/experiments/dilithium_2/api.h" 2
-# 23 "/home/guest/Documents/experiments/dilithium_2/api.h"
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/config.h" 1
+# 5 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/api.h" 2
+# 23 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/api.h"
 int crypto_sign_keypair(unsigned char *pk, unsigned char *sk);
 
 
@@ -2206,7 +2206,7 @@ int crypto_sign(unsigned char *sm, unsigned long long *smlen,
 int crypto_sign_open(unsigned char *m, unsigned long long *mlen,
                      const unsigned char *sm, unsigned long long smlen,
                      const unsigned char *pk);
-# 14 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c" 2
+# 14 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c" 2
 
 
 
@@ -2218,7 +2218,7 @@ int crypto_sign_open(unsigned char *m, unsigned long long *mlen,
 int FindMarker(FILE *infile, const char *marker);
 int ReadHex(FILE *infile, unsigned char *A, int Length, char *str);
 void fprintBstr(FILE *fp, char *S, unsigned char *A, unsigned long long L);
-# 36 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c"
+# 36 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c"
 char AlgName[] = "My Alg Name";
 int isxdigit2(int ch) {
  if(ch == '0' || ch == '1' || ch == '2' || ch == '3' || ch == '4' || ch == '5' || ch == '6' || ch == '7' || ch == '8' || ch == '9' || ch == 'A' || ch == 'B' || ch == 'C' || ch == 'D' || ch == 'E' || ch == 'F')
@@ -2353,7 +2353,7 @@ main()
 
 
     } while ( !done );
-# 179 "/home/guest/Documents/experiments/dilithium_2/PQCgenKAT_sign.c"
+# 179 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/PQCgenKAT_sign.c"
     fclose(fp_req);
     fclose(fp_rsp);
 

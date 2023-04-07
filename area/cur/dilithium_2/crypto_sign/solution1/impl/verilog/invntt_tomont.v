@@ -89,7 +89,7 @@ reg  signed [53:0] sext_ln86_reg_542;
 reg   [9:0] a_addr_reg_550;
 wire    ap_CS_fsm_state5;
 wire   [0:0] icmp_ln86_fu_274_p2;
-reg   [9:0] a_addr_15_reg_555;
+reg   [9:0] a_addr_16_reg_555;
 wire   [31:0] j_4_fu_317_p2;
 reg   [31:0] j_4_reg_561;
 wire   [9:0] add_ln84_fu_323_p2;
@@ -102,7 +102,7 @@ reg   [9:0] a_addr55_reg_584;
 wire   [0:0] icmp_ln95_fu_401_p2;
 reg   [8:0] len_0_reg_114;
 reg   [9:0] j_reg_126;
-wire   [0:0] tmp_30_fu_179_p3;
+wire   [0:0] tmp_10_fu_179_p3;
 reg   [31:0] j_0_reg_138;
 wire    ap_CS_fsm_state8;
 reg   [8:0] j_1_reg_147;
@@ -117,10 +117,10 @@ wire    ap_CS_fsm_state7;
 wire  signed [31:0] t_12_fu_396_p1;
 wire  signed [31:0] t_10_fu_481_p1;
 wire   [10:0] tmp_fu_158_p3;
-wire   [1:0] tmp_31_fu_191_p4;
+wire   [1:0] tmp_11_fu_191_p4;
 wire   [9:0] add_ln86_fu_233_p2;
 wire   [8:0] trunc_ln84_fu_248_p1;
-wire   [0:0] empty_71_fu_242_p2;
+wire   [0:0] empty_55_fu_242_p2;
 wire   [8:0] add_ln84_1_fu_252_p2;
 wire   [8:0] start_fu_258_p3;
 wire   [22:0] zeta_fu_227_p2;
@@ -162,7 +162,7 @@ initial begin
 #0 ap_CS_fsm = 10'd1;
 end
 
-ntt_zetas #(
+ntt_1_zetas #(
     .DataWidth( 23 ),
     .AddressRange( 256 ),
     .AddressWidth( 8 ))
@@ -191,7 +191,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_30_fu_179_p3 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((tmp_10_fu_179_p3 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
         j_1_reg_147 <= 9'd0;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
         j_1_reg_147 <= j_3_reg_579;
@@ -199,7 +199,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_30_fu_179_p3 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((tmp_10_fu_179_p3 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
         j_reg_126 <= 10'd0;
     end else if (((icmp_ln86_fu_274_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state5))) begin
         j_reg_126 <= add_ln84_fu_323_p2;
@@ -230,7 +230,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((icmp_ln86_fu_274_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state5))) begin
-        a_addr_15_reg_555 <= zext_ln88_3_fu_312_p1;
+        a_addr_16_reg_555 <= zext_ln88_3_fu_312_p1;
         a_addr_reg_550 <= zext_ln87_fu_288_p1;
         j_4_reg_561 <= j_4_fu_317_p2;
     end
@@ -284,7 +284,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state10)) begin
         a_address0 = a_addr55_reg_584;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        a_address0 = a_addr_15_reg_555;
+        a_address0 = a_addr_16_reg_555;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
         a_address0 = a_addr_reg_550;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
@@ -298,7 +298,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
         a_address1 = zext_ln96_1_fu_422_p1;
     end else if ((1'b1 == ap_CS_fsm_state7)) begin
-        a_address1 = a_addr_15_reg_555;
+        a_address1 = a_addr_16_reg_555;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
         a_address1 = zext_ln88_3_fu_312_p1;
     end else begin
@@ -384,7 +384,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((tmp_30_fu_179_p3 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((tmp_10_fu_179_p3 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state9;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -472,9 +472,9 @@ assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 
 assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
 
-assign empty_71_fu_242_p2 = ((j_reg_126 > add_ln86_fu_233_p2) ? 1'b1 : 1'b0);
+assign empty_55_fu_242_p2 = ((j_reg_126 > add_ln86_fu_233_p2) ? 1'b1 : 1'b0);
 
-assign icmp_ln84_fu_201_p2 = ((tmp_31_fu_191_p4 == 2'd0) ? 1'b1 : 1'b0);
+assign icmp_ln84_fu_201_p2 = ((tmp_11_fu_191_p4 == 2'd0) ? 1'b1 : 1'b0);
 
 assign icmp_ln86_fu_274_p2 = ((j_0_reg_138 < zext_ln86_reg_532) ? 1'b1 : 1'b0);
 
@@ -518,7 +518,7 @@ assign sext_ln96_1_fu_437_p1 = mul_ln96_fu_431_p2;
 
 assign sext_ln96_fu_427_p0 = a_q1;
 
-assign start_fu_258_p3 = ((empty_71_fu_242_p2[0:0] === 1'b1) ? trunc_ln84_fu_248_p1 : add_ln84_1_fu_252_p2);
+assign start_fu_258_p3 = ((empty_55_fu_242_p2[0:0] === 1'b1) ? trunc_ln84_fu_248_p1 : add_ln84_1_fu_252_p2);
 
 assign sub_ln89_fu_338_p2 = (t_reg_571 - a_q1);
 
@@ -530,9 +530,9 @@ assign t_12_fu_396_p1 = $signed(trunc_ln19_1_fu_386_p4);
 
 assign t_9_fu_445_p2 = ($signed({{1'b0}, {32'd58728449}}) * $signed(trunc_ln18_fu_441_p1));
 
-assign tmp_30_fu_179_p3 = len_0_reg_114[32'd8];
+assign tmp_10_fu_179_p3 = len_0_reg_114[32'd8];
 
-assign tmp_31_fu_191_p4 = {{j_reg_126[9:8]}};
+assign tmp_11_fu_191_p4 = {{j_reg_126[9:8]}};
 
 assign tmp_fu_158_p3 = {{a_offset}, {8'd0}};
 

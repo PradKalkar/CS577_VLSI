@@ -138,6 +138,7 @@ void poly_shiftl(poly *a) {
 * Arguments:   - poly *a: pointer to input/output polynomial
 **************************************************/
 void poly_ntt(poly *a) {
+  #pragma HLS inline 
   DBENCH_START();
 
   ntt(a->coeffs);
@@ -509,6 +510,7 @@ void poly_uniform_gamma1(poly *a,
 *              - const uint8_t mu[]: byte array containing seed of length SEEDBYTES
 **************************************************/
 void poly_challenge(poly *c, const uint8_t seed[SEEDBYTES]) {
+  #pragma HLS inline
   unsigned int i, b, pos;
   uint64_t signs;
   uint8_t buf[SHAKE256_RATE];

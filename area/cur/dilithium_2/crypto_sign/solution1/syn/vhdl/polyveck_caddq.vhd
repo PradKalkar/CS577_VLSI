@@ -61,8 +61,8 @@ architecture behav of polyveck_caddq is
     signal zext_ln46_fu_89_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal zext_ln46_reg_150 : STD_LOGIC_VECTOR (11 downto 0);
     signal icmp_ln202_fu_69_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_29_fu_99_p2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal i_29_reg_158 : STD_LOGIC_VECTOR (8 downto 0);
+    signal i_21_fu_99_p2 : STD_LOGIC_VECTOR (8 downto 0);
+    signal i_21_reg_158 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal v_vec_coeffs_addr_reg_163 : STD_LOGIC_VECTOR (9 downto 0);
@@ -75,7 +75,7 @@ architecture behav of polyveck_caddq is
     signal tmp_fu_81_p3 : STD_LOGIC_VECTOR (10 downto 0);
     signal zext_ln51_fu_105_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln51_fu_109_p2 : STD_LOGIC_VECTOR (11 downto 0);
-    signal tmp_9_fu_119_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_6_fu_119_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal select_ln51_fu_127_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (3 downto 0);
 
@@ -101,7 +101,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-                i_0_i_reg_58 <= i_29_reg_158;
+                i_0_i_reg_58 <= i_21_reg_158;
             elsif (((icmp_ln202_fu_69_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                 i_0_i_reg_58 <= ap_const_lv9_0;
             end if; 
@@ -122,7 +122,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state3)) then
-                i_29_reg_158 <= i_29_fu_99_p2;
+                i_21_reg_158 <= i_21_fu_99_p2;
             end if;
         end if;
     end process;
@@ -215,14 +215,14 @@ begin
         end if; 
     end process;
 
-    i_29_fu_99_p2 <= std_logic_vector(unsigned(i_0_i_reg_58) + unsigned(ap_const_lv9_1));
+    i_21_fu_99_p2 <= std_logic_vector(unsigned(i_0_i_reg_58) + unsigned(ap_const_lv9_1));
     i_fu_75_p2 <= std_logic_vector(unsigned(i_0_reg_47) + unsigned(ap_const_lv3_1));
     icmp_ln202_fu_69_p2 <= "1" when (i_0_reg_47 = ap_const_lv3_4) else "0";
     icmp_ln50_fu_93_p2 <= "1" when (i_0_i_reg_58 = ap_const_lv9_100) else "0";
     select_ln51_fu_127_p3 <= 
-        ap_const_lv32_7FE001 when (tmp_9_fu_119_p3(0) = '1') else 
+        ap_const_lv32_7FE001 when (tmp_6_fu_119_p3(0) = '1') else 
         ap_const_lv32_0;
-    tmp_9_fu_119_p3 <= v_vec_coeffs_q0(31 downto 31);
+    tmp_6_fu_119_p3 <= v_vec_coeffs_q0(31 downto 31);
     tmp_fu_81_p3 <= (i_0_reg_47 & ap_const_lv8_0);
 
     v_vec_coeffs_address0_assign_proc : process(ap_CS_fsm_state3, v_vec_coeffs_addr_reg_163, ap_CS_fsm_state4, zext_ln51_1_fu_114_p1)

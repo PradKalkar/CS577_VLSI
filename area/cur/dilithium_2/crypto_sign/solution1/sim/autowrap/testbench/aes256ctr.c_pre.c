@@ -1,12 +1,12 @@
-# 1 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.c"
-# 1 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.c" 1
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.c"
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.c" 2
-# 25 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.c"
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.c" 2
+# 25 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.c"
 # 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
 # 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -226,7 +226,7 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 26 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.c" 2
+# 26 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.c" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -503,13 +503,13 @@ extern char *__stpncpy (char *__restrict __dest,
 extern char *stpncpy (char *__restrict __dest,
         const char *__restrict __src, size_t __n)
      __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1, 2)));
-# 27 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.h" 1
+# 27 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.c" 2
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.h" 1
 
 
 
 # 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
-# 5 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.h" 2
+# 5 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.h" 2
 
 
 
@@ -536,7 +536,7 @@ void aes256ctr_init(aes256ctr_ctx *state,
 void aes256ctr_squeezeblocks(uint8_t *out,
                              size_t nblocks,
                              aes256ctr_ctx *state);
-# 28 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.c" 2
+# 28 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.c" 2
 
 static inline uint32_t br_dec32le(const uint8_t *src)
 {
@@ -579,7 +579,7 @@ static void br_range_enc32le(uint8_t *dst, const uint32_t *v, size_t num)
 
 static void br_aes_ct64_bitslice_Sbox(uint64_t *q)
 {
-# 80 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.c"
+# 80 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.c"
  uint64_t x0, x1, x2, x3, x4, x5, x6, x7;
  uint64_t y1, y2, y3, y4, y5, y6, y7, y8, y9;
  uint64_t y10, y11, y12, y13, y14, y15, y16, y17, y18, y19;
@@ -745,7 +745,7 @@ static void br_aes_ct64_bitslice_Sbox(uint64_t *q)
 
 static void br_aes_ct64_ortho(uint64_t *q)
 {
-# 257 "/home/guest/Documents/experiments/dilithium_2/aes256ctr.c"
+# 257 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes256ctr.c"
  do { uint64_t a, b; a = (q[0]); b = (q[1]); (q[0]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[1]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
  do { uint64_t a, b; a = (q[2]); b = (q[3]); (q[2]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[3]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
  do { uint64_t a, b; a = (q[4]); b = (q[5]); (q[4]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[5]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);

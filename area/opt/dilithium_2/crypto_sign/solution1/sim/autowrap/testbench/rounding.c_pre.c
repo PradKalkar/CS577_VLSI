@@ -1,11 +1,11 @@
-# 1 "/home/guest/Documents/experiments/dilithium_2/rounding.c"
-# 1 "/home/guest/Documents/experiments/dilithium_2/rounding.c" 1
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.c"
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/rounding.c" 2
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.c" 2
 # 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
 # 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -225,15 +225,15 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 2 "/home/guest/Documents/experiments/dilithium_2/rounding.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/params.h" 1
+# 2 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.c" 2
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/params.h" 1
 
 
 
-# 1 "/home/guest/Documents/experiments/dilithium_2/config.h" 1
-# 5 "/home/guest/Documents/experiments/dilithium_2/params.h" 2
-# 3 "/home/guest/Documents/experiments/dilithium_2/rounding.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/rounding.h" 1
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/config.h" 1
+# 5 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/params.h" 2
+# 3 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.c" 2
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.h" 1
 
 
 
@@ -251,8 +251,8 @@ unsigned int make_hint(int32_t a0, int32_t a1);
 
 
 int32_t use_hint(int32_t a, unsigned int hint);
-# 4 "/home/guest/Documents/experiments/dilithium_2/rounding.c" 2
-# 17 "/home/guest/Documents/experiments/dilithium_2/rounding.c"
+# 4 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.c" 2
+# 17 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.c"
 int32_t power2round(int32_t *a0, int32_t a) {
   int32_t a1;
 
@@ -260,7 +260,7 @@ int32_t power2round(int32_t *a0, int32_t a) {
   *a0 = a - (a1 << 13);
   return a1;
 }
-# 39 "/home/guest/Documents/experiments/dilithium_2/rounding.c"
+# 39 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.c"
 int32_t decompose(int32_t *a0, int32_t a) {
   int32_t a1;
 
@@ -277,14 +277,14 @@ int32_t decompose(int32_t *a0, int32_t a) {
   *a0 -= (((8380417 -1)/2 - *a0) >> 31) & 8380417;
   return a1;
 }
-# 68 "/home/guest/Documents/experiments/dilithium_2/rounding.c"
+# 68 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.c"
 unsigned int make_hint(int32_t a0, int32_t a1) {
   if(a0 <= ((8380417 -1)/88) || a0 > 8380417 - ((8380417 -1)/88) || (a0 == 8380417 - ((8380417 -1)/88) && a1 == 0))
     return 0;
 
   return 1;
 }
-# 85 "/home/guest/Documents/experiments/dilithium_2/rounding.c"
+# 85 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rounding.c"
 int32_t use_hint(int32_t a, unsigned int hint) {
   int32_t a0, a1;
 

@@ -38,11 +38,11 @@ const sc_lv<32> polyveck_reduce::ap_const_lv32_FF801FFF = "111111111000000000011
 const bool polyveck_reduce::ap_const_boolean_1 = true;
 
 polyveck_reduce::polyveck_reduce(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    crypto_sign_mac_mibs_U67 = new crypto_sign_mac_mibs<1,1,9,24,32,32>("crypto_sign_mac_mibs_U67");
-    crypto_sign_mac_mibs_U67->din0(trunc_ln_fu_127_p4);
-    crypto_sign_mac_mibs_U67->din1(grp_fu_141_p1);
-    crypto_sign_mac_mibs_U67->din2(v_vec_coeffs_q0);
-    crypto_sign_mac_mibs_U67->dout(grp_fu_141_p3);
+    crypto_sign_mac_mibs_U52 = new crypto_sign_mac_mibs<1,1,9,24,32,32>("crypto_sign_mac_mibs_U52");
+    crypto_sign_mac_mibs_U52->din0(trunc_ln_fu_127_p4);
+    crypto_sign_mac_mibs_U52->din1(grp_fu_141_p1);
+    crypto_sign_mac_mibs_U52->din2(v_vec_coeffs_q0);
+    crypto_sign_mac_mibs_U52->dout(grp_fu_141_p3);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -84,7 +84,7 @@ polyveck_reduce::polyveck_reduce(sc_module_name name) : sc_module(name), mVcdFil
     SC_METHOD(thread_grp_fu_141_p1);
     sensitive << ( ap_CS_fsm_state4 );
 
-    SC_METHOD(thread_i_25_fu_101_p2);
+    SC_METHOD(thread_i_17_fu_101_p2);
     sensitive << ( i_0_i_reg_60 );
 
     SC_METHOD(thread_i_fu_77_p2);
@@ -169,8 +169,8 @@ polyveck_reduce::polyveck_reduce(sc_module_name name) : sc_module(name), mVcdFil
     sc_trace(mVcdFile, zext_ln28_fu_91_p1, "zext_ln28_fu_91_p1");
     sc_trace(mVcdFile, zext_ln28_reg_158, "zext_ln28_reg_158");
     sc_trace(mVcdFile, icmp_ln187_fu_71_p2, "icmp_ln187_fu_71_p2");
-    sc_trace(mVcdFile, i_25_fu_101_p2, "i_25_fu_101_p2");
-    sc_trace(mVcdFile, i_25_reg_166, "i_25_reg_166");
+    sc_trace(mVcdFile, i_17_fu_101_p2, "i_17_fu_101_p2");
+    sc_trace(mVcdFile, i_17_reg_166, "i_17_reg_166");
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
     sc_trace(mVcdFile, v_vec_coeffs_addr_reg_171, "v_vec_coeffs_addr_reg_171");
     sc_trace(mVcdFile, icmp_ln32_fu_95_p2, "icmp_ln32_fu_95_p2");
@@ -195,7 +195,7 @@ polyveck_reduce::~polyveck_reduce() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete crypto_sign_mac_mibs_U67;
+    delete crypto_sign_mac_mibs_U52;
 }
 
 void polyveck_reduce::thread_ap_clk_no_reset_() {
@@ -205,7 +205,7 @@ void polyveck_reduce::thread_ap_clk_no_reset_() {
         ap_CS_fsm = ap_NS_fsm.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read())) {
-        i_0_i_reg_60 = i_25_reg_166.read();
+        i_0_i_reg_60 = i_17_reg_166.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
                 esl_seteq<1,1,1>(icmp_ln187_fu_71_p2.read(), ap_const_lv1_0))) {
         i_0_i_reg_60 = ap_const_lv9_0;
@@ -218,7 +218,7 @@ void polyveck_reduce::thread_ap_clk_no_reset_() {
         i_0_reg_49 = ap_const_lv3_0;
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        i_25_reg_166 = i_25_fu_101_p2.read();
+        i_17_reg_166 = i_17_fu_101_p2.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
         i_reg_153 = i_fu_77_p2.read();
@@ -288,8 +288,8 @@ void polyveck_reduce::thread_grp_fu_141_p1() {
     grp_fu_141_p1 =  (sc_lv<24>) (ap_const_lv32_FF801FFF);
 }
 
-void polyveck_reduce::thread_i_25_fu_101_p2() {
-    i_25_fu_101_p2 = (!i_0_i_reg_60.read().is_01() || !ap_const_lv9_1.is_01())? sc_lv<9>(): (sc_biguint<9>(i_0_i_reg_60.read()) + sc_biguint<9>(ap_const_lv9_1));
+void polyveck_reduce::thread_i_17_fu_101_p2() {
+    i_17_fu_101_p2 = (!i_0_i_reg_60.read().is_01() || !ap_const_lv9_1.is_01())? sc_lv<9>(): (sc_biguint<9>(i_0_i_reg_60.read()) + sc_biguint<9>(ap_const_lv9_1));
 }
 
 void polyveck_reduce::thread_i_fu_77_p2() {

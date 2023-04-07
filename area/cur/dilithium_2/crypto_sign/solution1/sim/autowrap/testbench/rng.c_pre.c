@@ -1,11 +1,11 @@
-# 1 "/home/guest/Documents/experiments/dilithium_2/rng.c"
-# 1 "/home/guest/Documents/experiments/dilithium_2/rng.c" 1
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.c"
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/rng.c" 2
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.c" 2
 
 
 
@@ -309,9 +309,9 @@ extern char *__stpncpy (char *__restrict __dest,
 extern char *stpncpy (char *__restrict __dest,
         const char *__restrict __src, size_t __n)
      __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1, 2)));
-# 9 "/home/guest/Documents/experiments/dilithium_2/rng.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/rng.h" 1
-# 11 "/home/guest/Documents/experiments/dilithium_2/rng.h"
+# 9 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.c" 2
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.h" 1
+# 11 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.h"
 # 1 "/usr/include/stdio.h" 1 3 4
 # 27 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -1016,7 +1016,7 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ ));
 # 858 "/usr/include/stdio.h" 3 4
 extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
-# 12 "/home/guest/Documents/experiments/dilithium_2/rng.h" 2
+# 12 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.h" 2
 
 
 
@@ -1059,8 +1059,8 @@ randombytes_init(unsigned char *entropy_input,
 
 int
 randombytes(unsigned char *x, unsigned long long xlen);
-# 10 "/home/guest/Documents/experiments/dilithium_2/rng.c" 2
-# 1 "/home/guest/Documents/experiments/dilithium_2/aes.h" 1
+# 10 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.c" 2
+# 1 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes.h" 1
 
 
 
@@ -1135,8 +1135,8 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 5 "/home/guest/Documents/experiments/dilithium_2/aes.h" 2
-# 43 "/home/guest/Documents/experiments/dilithium_2/aes.h"
+# 5 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes.h" 2
+# 43 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes.h"
 struct AES_ctx
 {
   uint8_t RoundKey[240];
@@ -1159,12 +1159,12 @@ void AES_ctx_set_iv(struct AES_ctx* ctx, const uint8_t* iv);
 
 void AES_ECB_encrypt(struct AES_ctx* ctx, state_t* buf);
 void AES_ECB_decrypt(struct AES_ctx* ctx, uint8_t* buf);
-# 74 "/home/guest/Documents/experiments/dilithium_2/aes.h"
+# 74 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes.h"
 void AES_CBC_encrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length);
 void AES_CBC_decrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length);
-# 87 "/home/guest/Documents/experiments/dilithium_2/aes.h"
+# 87 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/aes.h"
 void AES_CTR_xcrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length);
-# 11 "/home/guest/Documents/experiments/dilithium_2/rng.c" 2
+# 11 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.c" 2
 
 
 
@@ -1191,7 +1191,7 @@ void write_aes256_struct(unsigned char Key1[32], unsigned char V1[16], int resee
 }
 
 void AES256_ECB(unsigned char *key, unsigned char *ctr, unsigned char *buffer);
-# 45 "/home/guest/Documents/experiments/dilithium_2/rng.c"
+# 45 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.c"
 int
 seedexpander_init(AES_XOF_struct *ctx,
                   unsigned char *seed,
@@ -1380,7 +1380,7 @@ randombytes(unsigned char *x, unsigned long long xlen)
             }
         }
         AES256_ECB(DRBG_ctx.Key, DRBG_ctx.V, block);
-# 242 "/home/guest/Documents/experiments/dilithium_2/rng.c"
+# 242 "/home/guest/Documents/vlsi_2/area/cur/dilithium_2/rng.c"
         if ( xlen > 15 ) {
 
          int loop;

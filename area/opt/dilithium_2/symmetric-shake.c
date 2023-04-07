@@ -21,6 +21,7 @@ void dilithium_shake256_stream_init(keccak_state *state,
                                     const uint8_t seed[CRHBYTES],
                                     uint16_t nonce)
 {
+  #pragma HLS inline 
   uint8_t t[2];
   t[0] = nonce;
   t[1] = nonce >> 8;

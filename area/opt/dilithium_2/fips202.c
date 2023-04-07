@@ -86,7 +86,6 @@ static const uint64_t KeccakF_RoundConstants[NROUNDS] = {
 static void KeccakF1600_StatePermute(uint64_t state[25])
 {
         int round;
-
         uint64_t Aba, Abe, Abi, Abo, Abu;
         uint64_t Aga, Age, Agi, Ago, Agu;
         uint64_t Aka, Ake, Aki, Ako, Aku;
@@ -358,6 +357,7 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
 **************************************************/
 static void keccak_init(keccak_state *state)
 {
+  #pragma HLS inline
   unsigned int i;
   for(i=0;i<25;i++)
     state->s[i] = 0;
@@ -444,8 +444,8 @@ unsigned int keccak_absorb(uint64_t s[25],
 **************************************************/
 static void keccak_finalize(uint64_t s[25], unsigned int r, unsigned int pos, uint8_t p)
 {
+  #pragma HLS inline 
   unsigned int i,j;
-
   i = pos >> 3;
   j = pos & 7;
   s[i] ^= (uint64_t)p << 8*j;
@@ -470,8 +470,8 @@ static void keccak_squeezeblocks(uint8_t *out,
                                  uint64_t s[25],
                                  unsigned int r)
 {
+  #pragma HLS inline
   unsigned int i;
-
   while(nblocks > 0) {
     KeccakF1600_StatePermute(s);
     for(i=0;i<r/8;i++)
@@ -502,6 +502,7 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
                                    unsigned int r,
                                    unsigned int pos)
 {
+  #pragma HLS inline
   unsigned int i;
   uint8_t t[8];
 
@@ -585,7 +586,8 @@ void shake128_init(keccak_state *state)
 *              - size_t inlen:        length of input in bytes
 **************************************************/
 void shake128_absorb(keccak_state *state, const uint8_t *in, size_t inlen)
-{
+{ 
+  #pragma HLS inline 
   state->pos = keccak_absorb(state->s, SHAKE128_RATE, state->pos, in, inlen);
 }
 
@@ -646,6 +648,7 @@ void shake128_squeeze(uint8_t *out, size_t outlen, keccak_state *state)
 **************************************************/
 void shake256_init(keccak_state state[1])
 {
+  #pragma HLS inline
   keccak_init(state);
 }
 
@@ -661,6 +664,7 @@ void shake256_init(keccak_state state[1])
 **************************************************/
 void shake256_absorb(keccak_state state[1], const uint8_t in[32], size_t inlen)
 {
+  #pragma HLS inline
   state->pos = keccak_absorb(state->s, SHAKE256_RATE, state->pos, in, inlen);
 }
 
@@ -673,6 +677,7 @@ void shake256_absorb(keccak_state state[1], const uint8_t in[32], size_t inlen)
 **************************************************/
 void shake256_finalize(keccak_state state[1])
 {
+  #pragma HLS inline
   keccak_finalize(state->s, SHAKE256_RATE, state->pos, 0x1F);
   state->pos = 0;
 }
@@ -743,8 +748,8 @@ void shake128(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
 **************************************************/
 void shake256(uint8_t out[3*32], size_t outlen, const uint8_t in[32], size_t inlen)
 {
+  #pragma HLS inline
   keccak_state state[1];
-
   shake256_init(state);
   shake256_absorb(state, in, inlen);
   shake256_finalize(state);
