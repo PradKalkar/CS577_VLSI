@@ -74,8 +74,8 @@ wire   [11:0] zext_ln182_2_fu_201_p1;
 reg   [11:0] zext_ln182_2_reg_517;
 wire   [5:0] zext_ln182_3_cast_fu_213_p1;
 reg   [5:0] zext_ln182_3_cast_reg_523;
-wire   [8:0] i_14_fu_223_p2;
-reg   [8:0] i_14_reg_531;
+wire   [8:0] i_12_fu_223_p2;
+reg   [8:0] i_12_reg_531;
 wire    ap_CS_fsm_state2;
 wire   [0:0] icmp_ln181_fu_217_p2;
 wire   [13:0] tmp_19_cast_fu_340_p3;
@@ -84,12 +84,12 @@ wire    ap_CS_fsm_state4;
 wire   [0:0] icmp_ln137_fu_325_p2;
 wire   [11:0] zext_ln177_fu_356_p1;
 reg   [11:0] zext_ln177_reg_554;
-wire   [8:0] i_15_fu_366_p2;
-reg   [8:0] i_15_reg_562;
+wire   [8:0] i_13_fu_366_p2;
+reg   [8:0] i_13_reg_562;
 wire    ap_CS_fsm_state5;
 wire   [0:0] icmp_ln181_1_fu_360_p2;
-wire   [8:0] i_16_fu_474_p2;
-reg   [8:0] i_16_reg_580;
+wire   [8:0] i_14_fu_474_p2;
+reg   [8:0] i_14_reg_580;
 wire    ap_CS_fsm_state7;
 reg   [9:0] w_coeffs_addr_1_reg_585;
 wire   [0:0] icmp_ln87_fu_468_p2;
@@ -185,7 +185,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        i_0_i1_reg_170 <= i_15_reg_562;
+        i_0_i1_reg_170 <= i_13_reg_562;
     end else if (((icmp_ln137_fu_325_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state4))) begin
         i_0_i1_reg_170 <= 9'd0;
     end
@@ -195,13 +195,13 @@ always @ (posedge ap_clk) begin
     if (((icmp_ln181_1_fu_360_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state5))) begin
         i_0_i20_reg_182 <= 9'd0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        i_0_i20_reg_182 <= i_16_reg_580;
+        i_0_i20_reg_182 <= i_14_reg_580;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        i_0_i_reg_146 <= i_14_reg_531;
+        i_0_i_reg_146 <= i_12_reg_531;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
         i_0_i_reg_146 <= 9'd0;
     end
@@ -217,19 +217,19 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        i_14_reg_531 <= i_14_fu_223_p2;
+        i_12_reg_531 <= i_12_fu_223_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        i_15_reg_562 <= i_15_fu_366_p2;
+        i_13_reg_562 <= i_13_fu_366_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state7)) begin
-        i_16_reg_580 <= i_16_fu_474_p2;
+        i_14_reg_580 <= i_14_fu_474_p2;
     end
 end
 
@@ -461,11 +461,11 @@ assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
 
 assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 
-assign i_14_fu_223_p2 = (i_0_i_reg_146 + 9'd1);
+assign i_12_fu_223_p2 = (i_0_i_reg_146 + 9'd1);
 
-assign i_15_fu_366_p2 = (i_0_i1_reg_170 + 9'd1);
+assign i_13_fu_366_p2 = (i_0_i1_reg_170 + 9'd1);
 
-assign i_16_fu_474_p2 = (i_0_i20_reg_182 + 9'd1);
+assign i_14_fu_474_p2 = (i_0_i20_reg_182 + 9'd1);
 
 assign i_fu_499_p2 = (i_0_reg_158 + 3'd1);
 

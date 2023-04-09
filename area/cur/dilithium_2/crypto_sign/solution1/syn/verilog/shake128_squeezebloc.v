@@ -85,7 +85,7 @@ wire   [7:0] shl_ln_fu_186_p3;
 reg   [7:0] shl_ln_reg_309;
 wire    ap_CS_fsm_state5;
 reg   [63:0] state_s_load_reg_314;
-wire   [3:0] i_13_fu_200_p2;
+wire   [3:0] i_11_fu_200_p2;
 wire    ap_CS_fsm_state6;
 wire    grp_KeccakF1600_StatePer_1_fu_143_ap_start;
 wire    grp_KeccakF1600_StatePer_1_fu_143_ap_done;
@@ -109,15 +109,15 @@ reg    grp_KeccakF1600_StatePer_1_fu_143_ap_start_reg;
 wire    ap_CS_fsm_state2;
 wire   [0:0] icmp_ln475_fu_151_p2;
 wire   [63:0] zext_ln478_fu_169_p1;
-wire   [63:0] zext_ln48_6_fu_268_p1;
+wire   [63:0] zext_ln48_3_fu_268_p1;
 wire   [2:0] trunc_ln48_fu_206_p1;
-wire   [5:0] shl_ln4_fu_210_p3;
+wire   [5:0] shl_ln2_fu_210_p3;
 wire   [63:0] zext_ln48_fu_218_p1;
 wire   [63:0] lshr_ln48_fu_222_p2;
 wire   [7:0] tmp_1_fu_236_p4;
-wire   [7:0] zext_ln48_4_fu_232_p1;
-wire   [7:0] add_ln48_2_fu_253_p2;
-wire   [9:0] zext_ln48_5_fu_258_p1;
+wire   [7:0] zext_ln48_1_fu_232_p1;
+wire   [7:0] add_ln48_1_fu_253_p2;
+wire   [9:0] zext_ln48_2_fu_258_p1;
 wire   [9:0] tmp_fu_246_p3;
 wire   [9:0] add_ln48_fu_262_p2;
 reg   [5:0] ap_NS_fsm;
@@ -169,7 +169,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((icmp_ln47_fu_194_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state6))) begin
-        i_0_i2_reg_132 <= i_13_fu_200_p2;
+        i_0_i2_reg_132 <= i_11_fu_200_p2;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
         i_0_i2_reg_132 <= 4'd0;
     end
@@ -346,9 +346,9 @@ assign add_ln479_fu_174_p2 = (p_0_rec_i_reg_108 + 10'd168);
 
 assign add_ln480_fu_180_p2 = ($signed(nblocks_assign_1_reg_98) + $signed(4'd15));
 
-assign add_ln48_2_fu_253_p2 = (shl_ln_reg_309 + zext_ln48_4_fu_232_p1);
+assign add_ln48_1_fu_253_p2 = (shl_ln_reg_309 + zext_ln48_1_fu_232_p1);
 
-assign add_ln48_fu_262_p2 = (zext_ln48_5_fu_258_p1 + tmp_fu_246_p3);
+assign add_ln48_fu_262_p2 = (zext_ln48_2_fu_258_p1 + tmp_fu_246_p3);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -364,7 +364,7 @@ assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
 assign grp_KeccakF1600_StatePer_1_fu_143_ap_start = grp_KeccakF1600_StatePer_1_fu_143_ap_start_reg;
 
-assign i_13_fu_200_p2 = (i_0_i2_reg_132 + 4'd1);
+assign i_11_fu_200_p2 = (i_0_i2_reg_132 + 4'd1);
 
 assign i_fu_163_p2 = (i_0_i_reg_120 + 5'd1);
 
@@ -376,11 +376,11 @@ assign icmp_ln47_fu_194_p2 = ((i_0_i2_reg_132 == 4'd8) ? 1'b1 : 1'b0);
 
 assign lshr_ln48_fu_222_p2 = state_s_load_reg_314 >> zext_ln48_fu_218_p1;
 
-assign out_r_address0 = zext_ln48_6_fu_268_p1;
+assign out_r_address0 = zext_ln48_3_fu_268_p1;
 
 assign out_r_d0 = lshr_ln48_fu_222_p2[7:0];
 
-assign shl_ln4_fu_210_p3 = {{trunc_ln48_fu_206_p1}, {3'd0}};
+assign shl_ln2_fu_210_p3 = {{trunc_ln48_fu_206_p1}, {3'd0}};
 
 assign shl_ln_fu_186_p3 = {{i_0_i_reg_120}, {3'd0}};
 
@@ -398,13 +398,13 @@ assign trunc_ln48_fu_206_p1 = i_0_i2_reg_132[2:0];
 
 assign zext_ln478_fu_169_p1 = i_0_i_reg_120;
 
-assign zext_ln48_4_fu_232_p1 = i_0_i2_reg_132;
+assign zext_ln48_1_fu_232_p1 = i_0_i2_reg_132;
 
-assign zext_ln48_5_fu_258_p1 = add_ln48_2_fu_253_p2;
+assign zext_ln48_2_fu_258_p1 = add_ln48_1_fu_253_p2;
 
-assign zext_ln48_6_fu_268_p1 = add_ln48_fu_262_p2;
+assign zext_ln48_3_fu_268_p1 = add_ln48_fu_262_p2;
 
-assign zext_ln48_fu_218_p1 = shl_ln4_fu_210_p3;
+assign zext_ln48_fu_218_p1 = shl_ln2_fu_210_p3;
 
 always @ (posedge ap_clk) begin
     shl_ln_reg_309[2:0] <= 3'b000;

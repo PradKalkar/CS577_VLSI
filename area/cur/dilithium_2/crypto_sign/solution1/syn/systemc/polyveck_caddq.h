@@ -45,8 +45,8 @@ struct polyveck_caddq : public sc_module {
     sc_signal< sc_lv<12> > zext_ln46_fu_89_p1;
     sc_signal< sc_lv<12> > zext_ln46_reg_150;
     sc_signal< sc_lv<1> > icmp_ln202_fu_69_p2;
-    sc_signal< sc_lv<9> > i_21_fu_99_p2;
-    sc_signal< sc_lv<9> > i_21_reg_158;
+    sc_signal< sc_lv<9> > i_19_fu_99_p2;
+    sc_signal< sc_lv<9> > i_19_reg_158;
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_lv<10> > v_vec_coeffs_addr_reg_163;
     sc_signal< sc_lv<1> > icmp_ln50_fu_93_p2;
@@ -92,7 +92,7 @@ struct polyveck_caddq : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_i_21_fu_99_p2();
+    void thread_i_19_fu_99_p2();
     void thread_i_fu_75_p2();
     void thread_icmp_ln202_fu_69_p2();
     void thread_icmp_ln50_fu_93_p2();

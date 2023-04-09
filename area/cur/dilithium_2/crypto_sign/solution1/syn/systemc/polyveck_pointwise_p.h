@@ -50,8 +50,8 @@ struct polyveck_pointwise_p : public sc_module {
     sc_signal< sc_lv<12> > zext_ln177_fu_121_p1;
     sc_signal< sc_lv<12> > zext_ln177_reg_219;
     sc_signal< sc_lv<1> > icmp_ln305_fu_101_p2;
-    sc_signal< sc_lv<9> > i_18_fu_131_p2;
-    sc_signal< sc_lv<9> > i_18_reg_227;
+    sc_signal< sc_lv<9> > i_16_fu_131_p2;
+    sc_signal< sc_lv<9> > i_16_reg_227;
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_lv<64> > zext_ln182_14_fu_151_p1;
     sc_signal< sc_lv<64> > zext_ln182_14_reg_232;
@@ -110,7 +110,7 @@ struct polyveck_pointwise_p : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_i_18_fu_131_p2();
+    void thread_i_16_fu_131_p2();
     void thread_i_fu_107_p2();
     void thread_icmp_ln181_fu_125_p2();
     void thread_icmp_ln305_fu_101_p2();

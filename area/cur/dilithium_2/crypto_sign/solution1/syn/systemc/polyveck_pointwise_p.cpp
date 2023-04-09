@@ -84,7 +84,7 @@ polyveck_pointwise_p::polyveck_pointwise_p(sc_module_name name) : sc_module(name
     sensitive << ( ap_CS_fsm_state2 );
     sensitive << ( icmp_ln305_fu_101_p2 );
 
-    SC_METHOD(thread_i_18_fu_131_p2);
+    SC_METHOD(thread_i_16_fu_131_p2);
     sensitive << ( i_0_i_reg_90 );
 
     SC_METHOD(thread_i_fu_107_p2);
@@ -206,8 +206,8 @@ polyveck_pointwise_p::polyveck_pointwise_p(sc_module_name name) : sc_module(name
     sc_trace(mVcdFile, zext_ln177_fu_121_p1, "zext_ln177_fu_121_p1");
     sc_trace(mVcdFile, zext_ln177_reg_219, "zext_ln177_reg_219");
     sc_trace(mVcdFile, icmp_ln305_fu_101_p2, "icmp_ln305_fu_101_p2");
-    sc_trace(mVcdFile, i_18_fu_131_p2, "i_18_fu_131_p2");
-    sc_trace(mVcdFile, i_18_reg_227, "i_18_reg_227");
+    sc_trace(mVcdFile, i_16_fu_131_p2, "i_16_fu_131_p2");
+    sc_trace(mVcdFile, i_16_reg_227, "i_16_reg_227");
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
     sc_trace(mVcdFile, zext_ln182_14_fu_151_p1, "zext_ln182_14_fu_151_p1");
     sc_trace(mVcdFile, zext_ln182_14_reg_232, "zext_ln182_14_reg_232");
@@ -247,7 +247,7 @@ void polyveck_pointwise_p::thread_ap_clk_no_reset_() {
         ap_CS_fsm = ap_NS_fsm.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read())) {
-        i_0_i_reg_90 = i_18_reg_227.read();
+        i_0_i_reg_90 = i_16_reg_227.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
                 esl_seteq<1,1,1>(icmp_ln305_fu_101_p2.read(), ap_const_lv1_0))) {
         i_0_i_reg_90 = ap_const_lv9_0;
@@ -260,7 +260,7 @@ void polyveck_pointwise_p::thread_ap_clk_no_reset_() {
         i_0_reg_79 = ap_const_lv3_0;
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        i_18_reg_227 = i_18_fu_131_p2.read();
+        i_16_reg_227 = i_16_fu_131_p2.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
         i_reg_214 = i_fu_107_p2.read();
@@ -338,8 +338,8 @@ void polyveck_pointwise_p::thread_ap_ready() {
     }
 }
 
-void polyveck_pointwise_p::thread_i_18_fu_131_p2() {
-    i_18_fu_131_p2 = (!i_0_i_reg_90.read().is_01() || !ap_const_lv9_1.is_01())? sc_lv<9>(): (sc_biguint<9>(i_0_i_reg_90.read()) + sc_biguint<9>(ap_const_lv9_1));
+void polyveck_pointwise_p::thread_i_16_fu_131_p2() {
+    i_16_fu_131_p2 = (!i_0_i_reg_90.read().is_01() || !ap_const_lv9_1.is_01())? sc_lv<9>(): (sc_biguint<9>(i_0_i_reg_90.read()) + sc_biguint<9>(ap_const_lv9_1));
 }
 
 void polyveck_pointwise_p::thread_i_fu_107_p2() {

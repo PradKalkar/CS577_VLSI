@@ -177,7 +177,7 @@ architecture behav of polyt0_unpack is
     signal tmp_8_fu_527_p3 : STD_LOGIC_VECTOR (10 downto 0);
     signal zext_ln745_1_fu_517_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal tmp_4_fu_551_p3 : STD_LOGIC_VECTOR (10 downto 0);
-    signal shl_ln4_fu_539_p3 : STD_LOGIC_VECTOR (10 downto 0);
+    signal shl_ln2_fu_539_p3 : STD_LOGIC_VECTOR (10 downto 0);
     signal trunc_ln748_fu_547_p1 : STD_LOGIC_VECTOR (1 downto 0);
     signal or_ln748_fu_559_p2 : STD_LOGIC_VECTOR (10 downto 0);
     signal or_ln_fu_565_p3 : STD_LOGIC_VECTOR (12 downto 0);
@@ -206,7 +206,7 @@ architecture behav of polyt0_unpack is
     signal tmp_11_fu_738_p3 : STD_LOGIC_VECTOR (10 downto 0);
     signal zext_ln754_fu_729_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal tmp_7_fu_762_p3 : STD_LOGIC_VECTOR (8 downto 0);
-    signal shl_ln5_fu_750_p3 : STD_LOGIC_VECTOR (8 downto 0);
+    signal shl_ln3_fu_750_p3 : STD_LOGIC_VECTOR (8 downto 0);
     signal trunc_ln757_fu_758_p1 : STD_LOGIC_VECTOR (3 downto 0);
     signal or_ln757_fu_770_p2 : STD_LOGIC_VECTOR (8 downto 0);
     signal or_ln2_fu_776_p3 : STD_LOGIC_VECTOR (12 downto 0);
@@ -223,7 +223,7 @@ architecture behav of polyt0_unpack is
     signal tmp_12_fu_864_p3 : STD_LOGIC_VECTOR (10 downto 0);
     signal zext_ln759_fu_855_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal tmp_9_fu_888_p3 : STD_LOGIC_VECTOR (11 downto 0);
-    signal shl_ln6_fu_876_p3 : STD_LOGIC_VECTOR (11 downto 0);
+    signal shl_ln4_fu_876_p3 : STD_LOGIC_VECTOR (11 downto 0);
     signal trunc_ln762_fu_884_p1 : STD_LOGIC_VECTOR (0 downto 0);
     signal or_ln762_fu_896_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal or_ln3_fu_902_p3 : STD_LOGIC_VECTOR (12 downto 0);
@@ -249,7 +249,7 @@ architecture behav of polyt0_unpack is
     signal tmp_14_fu_1053_p3 : STD_LOGIC_VECTOR (10 downto 0);
     signal zext_ln768_fu_1044_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal tmp_1_fu_1077_p3 : STD_LOGIC_VECTOR (9 downto 0);
-    signal shl_ln7_fu_1065_p3 : STD_LOGIC_VECTOR (9 downto 0);
+    signal shl_ln5_fu_1065_p3 : STD_LOGIC_VECTOR (9 downto 0);
     signal trunc_ln771_fu_1073_p1 : STD_LOGIC_VECTOR (2 downto 0);
     signal or_ln771_fu_1085_p2 : STD_LOGIC_VECTOR (9 downto 0);
     signal or_ln5_fu_1091_p3 : STD_LOGIC_VECTOR (12 downto 0);
@@ -537,15 +537,15 @@ begin
     or_ln5_fu_1091_p3 <= (trunc_ln771_fu_1073_p1 & or_ln771_fu_1085_p2);
     or_ln6_fu_1145_p3 <= (a_q0 & lshr_ln6_reg_1295);
     or_ln745_fu_521_p2 <= (shl_ln_fu_500_p3 or ap_const_lv8_1);
-    or_ln748_fu_559_p2 <= (tmp_4_fu_551_p3 or shl_ln4_fu_539_p3);
+    or_ln748_fu_559_p2 <= (tmp_4_fu_551_p3 or shl_ln2_fu_539_p3);
     or_ln750_fu_638_p2 <= (shl_ln_reg_1230 or ap_const_lv8_2);
     or_ln754_fu_733_p2 <= (shl_ln_reg_1230 or ap_const_lv8_3);
-    or_ln757_fu_770_p2 <= (tmp_7_fu_762_p3 or shl_ln5_fu_750_p3);
+    or_ln757_fu_770_p2 <= (tmp_7_fu_762_p3 or shl_ln3_fu_750_p3);
     or_ln759_fu_859_p2 <= (shl_ln_reg_1230 or ap_const_lv8_4);
-    or_ln762_fu_896_p2 <= (tmp_9_fu_888_p3 or shl_ln6_fu_876_p3);
+    or_ln762_fu_896_p2 <= (tmp_9_fu_888_p3 or shl_ln4_fu_876_p3);
     or_ln764_fu_924_p2 <= (shl_ln_reg_1230 or ap_const_lv8_5);
     or_ln768_fu_1048_p2 <= (shl_ln_reg_1230 or ap_const_lv8_6);
-    or_ln771_fu_1085_p2 <= (tmp_1_fu_1077_p3 or shl_ln7_fu_1065_p3);
+    or_ln771_fu_1085_p2 <= (tmp_1_fu_1077_p3 or shl_ln5_fu_1065_p3);
     or_ln773_fu_1128_p2 <= (shl_ln_reg_1230 or ap_const_lv8_7);
     or_ln_fu_565_p3 <= (trunc_ln748_fu_547_p1 & or_ln748_fu_559_p2);
 
@@ -668,10 +668,10 @@ begin
 
         sext_ln784_fu_1162_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(sub_ln784_fu_1156_p2),32));
 
-    shl_ln4_fu_539_p3 <= (a_q0 & ap_const_lv3_0);
-    shl_ln5_fu_750_p3 <= (reg_366 & ap_const_lv1_0);
-    shl_ln6_fu_876_p3 <= (reg_366 & ap_const_lv4_0);
-    shl_ln7_fu_1065_p3 <= (a_q0 & ap_const_lv2_0);
+    shl_ln2_fu_539_p3 <= (a_q0 & ap_const_lv3_0);
+    shl_ln3_fu_750_p3 <= (reg_366 & ap_const_lv1_0);
+    shl_ln4_fu_876_p3 <= (reg_366 & ap_const_lv4_0);
+    shl_ln5_fu_1065_p3 <= (a_q0 & ap_const_lv2_0);
     shl_ln_fu_500_p3 <= (trunc_ln741_reg_1209 & ap_const_lv3_0);
     sub_ln777_fu_489_p2 <= std_logic_vector(unsigned(ap_const_lv14_1000) - unsigned(zext_ln745_fu_445_p1));
     sub_ln778_fu_627_p2 <= std_logic_vector(unsigned(ap_const_lv14_1000) - unsigned(zext_ln748_fu_573_p1));

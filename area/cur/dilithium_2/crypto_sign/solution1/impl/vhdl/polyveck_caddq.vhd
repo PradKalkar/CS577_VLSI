@@ -61,8 +61,8 @@ architecture behav of polyveck_caddq is
     signal zext_ln46_fu_89_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal zext_ln46_reg_150 : STD_LOGIC_VECTOR (11 downto 0);
     signal icmp_ln202_fu_69_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_21_fu_99_p2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal i_21_reg_158 : STD_LOGIC_VECTOR (8 downto 0);
+    signal i_19_fu_99_p2 : STD_LOGIC_VECTOR (8 downto 0);
+    signal i_19_reg_158 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal v_vec_coeffs_addr_reg_163 : STD_LOGIC_VECTOR (9 downto 0);
@@ -101,7 +101,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-                i_0_i_reg_58 <= i_21_reg_158;
+                i_0_i_reg_58 <= i_19_reg_158;
             elsif (((icmp_ln202_fu_69_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                 i_0_i_reg_58 <= ap_const_lv9_0;
             end if; 
@@ -122,7 +122,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state3)) then
-                i_21_reg_158 <= i_21_fu_99_p2;
+                i_19_reg_158 <= i_19_fu_99_p2;
             end if;
         end if;
     end process;
@@ -215,7 +215,7 @@ begin
         end if; 
     end process;
 
-    i_21_fu_99_p2 <= std_logic_vector(unsigned(i_0_i_reg_58) + unsigned(ap_const_lv9_1));
+    i_19_fu_99_p2 <= std_logic_vector(unsigned(i_0_i_reg_58) + unsigned(ap_const_lv9_1));
     i_fu_75_p2 <= std_logic_vector(unsigned(i_0_reg_47) + unsigned(ap_const_lv3_1));
     icmp_ln202_fu_69_p2 <= "1" when (i_0_reg_47 = ap_const_lv3_4) else "0";
     icmp_ln50_fu_93_p2 <= "1" when (i_0_i_reg_58 = ap_const_lv9_100) else "0";

@@ -68,8 +68,8 @@ architecture behav of polyveck_pointwise_p is
     signal zext_ln177_fu_121_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal zext_ln177_reg_219 : STD_LOGIC_VECTOR (11 downto 0);
     signal icmp_ln305_fu_101_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_18_fu_131_p2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal i_18_reg_227 : STD_LOGIC_VECTOR (8 downto 0);
+    signal i_16_fu_131_p2 : STD_LOGIC_VECTOR (8 downto 0);
+    signal i_16_reg_227 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal zext_ln182_14_fu_151_p1 : STD_LOGIC_VECTOR (63 downto 0);
@@ -116,7 +116,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-                i_0_i_reg_90 <= i_18_reg_227;
+                i_0_i_reg_90 <= i_16_reg_227;
             elsif (((icmp_ln305_fu_101_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                 i_0_i_reg_90 <= ap_const_lv9_0;
             end if; 
@@ -137,7 +137,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state3)) then
-                i_18_reg_227 <= i_18_fu_131_p2;
+                i_16_reg_227 <= i_16_fu_131_p2;
             end if;
         end if;
     end process;
@@ -243,7 +243,7 @@ begin
         end if; 
     end process;
 
-    i_18_fu_131_p2 <= std_logic_vector(unsigned(i_0_i_reg_90) + unsigned(ap_const_lv9_1));
+    i_16_fu_131_p2 <= std_logic_vector(unsigned(i_0_i_reg_90) + unsigned(ap_const_lv9_1));
     i_fu_107_p2 <= std_logic_vector(unsigned(i_0_reg_79) + unsigned(ap_const_lv3_1));
     icmp_ln181_fu_125_p2 <= "1" when (i_0_i_reg_90 = ap_const_lv9_100) else "0";
     icmp_ln305_fu_101_p2 <= "1" when (i_0_reg_79 = ap_const_lv3_4) else "0";

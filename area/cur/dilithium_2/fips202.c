@@ -697,6 +697,7 @@ void shake256_finalize(keccak_state state[1])
 **************************************************/
 void shake256_squeezeblocks(uint8_t *out, size_t nblocks, keccak_state state[1])
 {
+  #pragma HLS inline 
   keccak_squeezeblocks(out, nblocks, state->s, SHAKE256_RATE);
 }
 

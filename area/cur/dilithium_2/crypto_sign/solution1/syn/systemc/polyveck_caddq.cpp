@@ -71,7 +71,7 @@ polyveck_caddq::polyveck_caddq(sc_module_name name) : sc_module(name), mVcdFile(
     sensitive << ( ap_CS_fsm_state2 );
     sensitive << ( icmp_ln202_fu_69_p2 );
 
-    SC_METHOD(thread_i_21_fu_99_p2);
+    SC_METHOD(thread_i_19_fu_99_p2);
     sensitive << ( i_0_i_reg_58 );
 
     SC_METHOD(thread_i_fu_75_p2);
@@ -160,8 +160,8 @@ polyveck_caddq::polyveck_caddq(sc_module_name name) : sc_module(name), mVcdFile(
     sc_trace(mVcdFile, zext_ln46_fu_89_p1, "zext_ln46_fu_89_p1");
     sc_trace(mVcdFile, zext_ln46_reg_150, "zext_ln46_reg_150");
     sc_trace(mVcdFile, icmp_ln202_fu_69_p2, "icmp_ln202_fu_69_p2");
-    sc_trace(mVcdFile, i_21_fu_99_p2, "i_21_fu_99_p2");
-    sc_trace(mVcdFile, i_21_reg_158, "i_21_reg_158");
+    sc_trace(mVcdFile, i_19_fu_99_p2, "i_19_fu_99_p2");
+    sc_trace(mVcdFile, i_19_reg_158, "i_19_reg_158");
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
     sc_trace(mVcdFile, v_vec_coeffs_addr_reg_163, "v_vec_coeffs_addr_reg_163");
     sc_trace(mVcdFile, icmp_ln50_fu_93_p2, "icmp_ln50_fu_93_p2");
@@ -193,7 +193,7 @@ void polyveck_caddq::thread_ap_clk_no_reset_() {
         ap_CS_fsm = ap_NS_fsm.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read())) {
-        i_0_i_reg_58 = i_21_reg_158.read();
+        i_0_i_reg_58 = i_19_reg_158.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
                 esl_seteq<1,1,1>(icmp_ln202_fu_69_p2.read(), ap_const_lv1_0))) {
         i_0_i_reg_58 = ap_const_lv9_0;
@@ -206,7 +206,7 @@ void polyveck_caddq::thread_ap_clk_no_reset_() {
         i_0_reg_47 = ap_const_lv3_0;
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        i_21_reg_158 = i_21_fu_99_p2.read();
+        i_19_reg_158 = i_19_fu_99_p2.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
         i_reg_145 = i_fu_75_p2.read();
@@ -268,8 +268,8 @@ void polyveck_caddq::thread_ap_ready() {
     }
 }
 
-void polyveck_caddq::thread_i_21_fu_99_p2() {
-    i_21_fu_99_p2 = (!i_0_i_reg_58.read().is_01() || !ap_const_lv9_1.is_01())? sc_lv<9>(): (sc_biguint<9>(i_0_i_reg_58.read()) + sc_biguint<9>(ap_const_lv9_1));
+void polyveck_caddq::thread_i_19_fu_99_p2() {
+    i_19_fu_99_p2 = (!i_0_i_reg_58.read().is_01() || !ap_const_lv9_1.is_01())? sc_lv<9>(): (sc_biguint<9>(i_0_i_reg_58.read()) + sc_biguint<9>(ap_const_lv9_1));
 }
 
 void polyveck_caddq::thread_i_fu_75_p2() {

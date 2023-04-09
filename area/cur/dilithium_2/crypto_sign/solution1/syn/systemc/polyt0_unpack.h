@@ -125,7 +125,7 @@ struct polyt0_unpack : public sc_module {
     sc_signal< sc_lv<11> > tmp_8_fu_527_p3;
     sc_signal< sc_lv<8> > zext_ln745_1_fu_517_p1;
     sc_signal< sc_lv<11> > tmp_4_fu_551_p3;
-    sc_signal< sc_lv<11> > shl_ln4_fu_539_p3;
+    sc_signal< sc_lv<11> > shl_ln2_fu_539_p3;
     sc_signal< sc_lv<2> > trunc_ln748_fu_547_p1;
     sc_signal< sc_lv<11> > or_ln748_fu_559_p2;
     sc_signal< sc_lv<13> > or_ln_fu_565_p3;
@@ -154,7 +154,7 @@ struct polyt0_unpack : public sc_module {
     sc_signal< sc_lv<11> > tmp_11_fu_738_p3;
     sc_signal< sc_lv<8> > zext_ln754_fu_729_p1;
     sc_signal< sc_lv<9> > tmp_7_fu_762_p3;
-    sc_signal< sc_lv<9> > shl_ln5_fu_750_p3;
+    sc_signal< sc_lv<9> > shl_ln3_fu_750_p3;
     sc_signal< sc_lv<4> > trunc_ln757_fu_758_p1;
     sc_signal< sc_lv<9> > or_ln757_fu_770_p2;
     sc_signal< sc_lv<13> > or_ln2_fu_776_p3;
@@ -171,7 +171,7 @@ struct polyt0_unpack : public sc_module {
     sc_signal< sc_lv<11> > tmp_12_fu_864_p3;
     sc_signal< sc_lv<8> > zext_ln759_fu_855_p1;
     sc_signal< sc_lv<12> > tmp_9_fu_888_p3;
-    sc_signal< sc_lv<12> > shl_ln6_fu_876_p3;
+    sc_signal< sc_lv<12> > shl_ln4_fu_876_p3;
     sc_signal< sc_lv<1> > trunc_ln762_fu_884_p1;
     sc_signal< sc_lv<12> > or_ln762_fu_896_p2;
     sc_signal< sc_lv<13> > or_ln3_fu_902_p3;
@@ -197,7 +197,7 @@ struct polyt0_unpack : public sc_module {
     sc_signal< sc_lv<11> > tmp_14_fu_1053_p3;
     sc_signal< sc_lv<8> > zext_ln768_fu_1044_p1;
     sc_signal< sc_lv<10> > tmp_1_fu_1077_p3;
-    sc_signal< sc_lv<10> > shl_ln7_fu_1065_p3;
+    sc_signal< sc_lv<10> > shl_ln5_fu_1065_p3;
     sc_signal< sc_lv<3> > trunc_ln771_fu_1073_p1;
     sc_signal< sc_lv<10> > or_ln771_fu_1085_p2;
     sc_signal< sc_lv<13> > or_ln5_fu_1091_p3;
@@ -344,10 +344,10 @@ struct polyt0_unpack : public sc_module {
     void thread_sext_ln782_fu_1029_p1();
     void thread_sext_ln783_fu_1123_p1();
     void thread_sext_ln784_fu_1162_p1();
-    void thread_shl_ln4_fu_539_p3();
-    void thread_shl_ln5_fu_750_p3();
-    void thread_shl_ln6_fu_876_p3();
-    void thread_shl_ln7_fu_1065_p3();
+    void thread_shl_ln2_fu_539_p3();
+    void thread_shl_ln3_fu_750_p3();
+    void thread_shl_ln4_fu_876_p3();
+    void thread_shl_ln5_fu_1065_p3();
     void thread_shl_ln_fu_500_p3();
     void thread_sub_ln777_fu_489_p2();
     void thread_sub_ln778_fu_627_p2();

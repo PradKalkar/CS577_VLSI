@@ -93,7 +93,7 @@ struct ntt_1 : public sc_module {
     sc_signal< sc_lv<23> > tmp_7_fu_162_p4;
     sc_signal< sc_lv<28> > tmp_8_fu_192_p4;
     sc_signal< sc_lv<31> > add_ln57_fu_206_p2;
-    sc_signal< sc_lv<1> > empty_53_fu_215_p2;
+    sc_signal< sc_lv<1> > empty_52_fu_215_p2;
     sc_signal< sc_lv<30> > trunc_ln55_fu_221_p1;
     sc_signal< sc_lv<30> > trunc_ln55_1_fu_225_p1;
     sc_signal< sc_lv<30> > start_fu_229_p3;
@@ -175,7 +175,7 @@ struct ntt_1 : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_empty_53_fu_215_p2();
+    void thread_empty_52_fu_215_p2();
     void thread_icmp_ln54_fu_152_p2();
     void thread_icmp_ln55_fu_172_p2();
     void thread_icmp_ln57_fu_245_p2();

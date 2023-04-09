@@ -53,8 +53,8 @@ wire    ap_CS_fsm_state2;
 wire   [11:0] zext_ln28_fu_91_p1;
 reg   [11:0] zext_ln28_reg_158;
 wire   [0:0] icmp_ln187_fu_71_p2;
-wire   [8:0] i_17_fu_101_p2;
-reg   [8:0] i_17_reg_166;
+wire   [8:0] i_15_fu_101_p2;
+reg   [8:0] i_15_reg_166;
 wire    ap_CS_fsm_state3;
 reg   [9:0] v_vec_coeffs_addr_reg_171;
 wire   [0:0] icmp_ln32_fu_95_p2;
@@ -83,7 +83,7 @@ crypto_sign_mac_mibs #(
     .din1_WIDTH( 24 ),
     .din2_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-crypto_sign_mac_mibs_U52(
+crypto_sign_mac_mibs_U50(
     .din0(trunc_ln_fu_127_p4),
     .din1(grp_fu_141_p1),
     .din2(v_vec_coeffs_q0),
@@ -100,7 +100,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        i_0_i_reg_60 <= i_17_reg_166;
+        i_0_i_reg_60 <= i_15_reg_166;
     end else if (((icmp_ln187_fu_71_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
         i_0_i_reg_60 <= 9'd0;
     end
@@ -116,7 +116,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        i_17_reg_166 <= i_17_fu_101_p2;
+        i_15_reg_166 <= i_15_fu_101_p2;
     end
 end
 
@@ -234,7 +234,7 @@ assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
 assign grp_fu_141_p1 = 32'd4286586879;
 
-assign i_17_fu_101_p2 = (i_0_i_reg_60 + 9'd1);
+assign i_15_fu_101_p2 = (i_0_i_reg_60 + 9'd1);
 
 assign i_fu_77_p2 = (i_0_reg_49 + 3'd1);
 

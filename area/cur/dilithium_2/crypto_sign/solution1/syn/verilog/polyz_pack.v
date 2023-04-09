@@ -118,7 +118,7 @@ wire   [7:0] or_ln818_fu_506_p2;
 wire   [7:0] or_ln821_fu_599_p2;
 wire   [10:0] tmp_8_fu_269_p4;
 wire   [31:0] grp_fu_239_p2;
-wire   [8:0] shl_ln5_fu_288_p3;
+wire   [8:0] shl_ln3_fu_288_p3;
 wire   [9:0] zext_ln812_fu_295_p1;
 wire   [11:0] zext_ln812_1_fu_304_p1;
 wire   [11:0] add_ln812_1_fu_308_p2;
@@ -131,7 +131,7 @@ wire   [9:0] add_ln814_fu_382_p2;
 wire   [11:0] zext_ln814_fu_387_p1;
 wire   [11:0] add_ln814_1_fu_391_p2;
 wire   [5:0] trunc_ln815_fu_401_p1;
-wire   [7:0] shl_ln6_fu_405_p3;
+wire   [7:0] shl_ln4_fu_405_p3;
 wire   [7:0] or_ln809_fu_439_p2;
 wire   [10:0] tmp_s_fu_444_p3;
 wire   [9:0] add_ln816_fu_456_p2;
@@ -141,7 +141,7 @@ wire   [9:0] add_ln817_fu_475_p2;
 wire   [11:0] zext_ln817_fu_480_p1;
 wire   [11:0] add_ln817_1_fu_484_p2;
 wire   [3:0] trunc_ln818_fu_494_p1;
-wire   [7:0] shl_ln7_fu_498_p3;
+wire   [7:0] shl_ln5_fu_498_p3;
 wire   [7:0] or_ln810_fu_532_p2;
 wire   [10:0] tmp_1_fu_537_p3;
 wire   [9:0] add_ln819_fu_549_p2;
@@ -151,7 +151,7 @@ wire   [9:0] add_ln820_fu_568_p2;
 wire   [11:0] zext_ln820_fu_573_p1;
 wire   [11:0] add_ln820_1_fu_577_p2;
 wire   [1:0] trunc_ln821_fu_587_p1;
-wire   [7:0] shl_ln8_fu_591_p3;
+wire   [7:0] shl_ln6_fu_591_p3;
 wire   [9:0] add_ln822_fu_625_p2;
 wire   [11:0] zext_ln822_fu_630_p1;
 wire   [11:0] add_ln822_1_fu_634_p2;
@@ -469,19 +469,19 @@ assign or_ln809_fu_439_p2 = (shl_ln_reg_729 | 8'd2);
 
 assign or_ln810_fu_532_p2 = (shl_ln_reg_729 | 8'd3);
 
-assign or_ln815_fu_413_p2 = (trunc_ln2_reg_724 | shl_ln6_fu_405_p3);
+assign or_ln815_fu_413_p2 = (trunc_ln2_reg_724 | shl_ln4_fu_405_p3);
 
-assign or_ln818_fu_506_p2 = (trunc_ln4_reg_745 | shl_ln7_fu_498_p3);
+assign or_ln818_fu_506_p2 = (trunc_ln4_reg_745 | shl_ln5_fu_498_p3);
 
-assign or_ln821_fu_599_p2 = (trunc_ln6_reg_760 | shl_ln8_fu_591_p3);
+assign or_ln821_fu_599_p2 = (trunc_ln6_reg_760 | shl_ln6_fu_591_p3);
 
-assign shl_ln5_fu_288_p3 = {{trunc_ln807_reg_696}, {3'd0}};
+assign shl_ln3_fu_288_p3 = {{trunc_ln807_reg_696}, {3'd0}};
 
-assign shl_ln6_fu_405_p3 = {{trunc_ln815_fu_401_p1}, {2'd0}};
+assign shl_ln4_fu_405_p3 = {{trunc_ln815_fu_401_p1}, {2'd0}};
 
-assign shl_ln7_fu_498_p3 = {{trunc_ln818_fu_494_p1}, {4'd0}};
+assign shl_ln5_fu_498_p3 = {{trunc_ln818_fu_494_p1}, {4'd0}};
 
-assign shl_ln8_fu_591_p3 = {{trunc_ln821_fu_587_p1}, {6'd0}};
+assign shl_ln6_fu_591_p3 = {{trunc_ln821_fu_587_p1}, {6'd0}};
 
 assign shl_ln_fu_338_p3 = {{trunc_ln807_reg_696}, {2'd0}};
 
@@ -519,7 +519,7 @@ assign zext_ln812_2_fu_245_p1 = r_offset;
 
 assign zext_ln812_3_fu_313_p1 = add_ln812_1_fu_308_p2;
 
-assign zext_ln812_fu_295_p1 = shl_ln5_fu_288_p3;
+assign zext_ln812_fu_295_p1 = shl_ln3_fu_288_p3;
 
 assign zext_ln813_1_fu_377_p1 = add_ln813_1_fu_372_p2;
 

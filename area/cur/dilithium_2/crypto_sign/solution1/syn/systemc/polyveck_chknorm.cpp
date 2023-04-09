@@ -93,7 +93,7 @@ polyveck_chknorm::polyveck_chknorm(sc_module_name name) : sc_module(name), mVcdF
     SC_METHOD(thread_bound_cast_fu_103_p1);
     sensitive << ( bound );
 
-    SC_METHOD(thread_i_20_fu_137_p2);
+    SC_METHOD(thread_i_18_fu_137_p2);
     sensitive << ( i_0_i_reg_80 );
 
     SC_METHOD(thread_i_fu_113_p2);
@@ -191,8 +191,8 @@ polyveck_chknorm::polyveck_chknorm(sc_module_name name) : sc_module(name), mVcdF
     sc_trace(mVcdFile, i_reg_205, "i_reg_205");
     sc_trace(mVcdFile, zext_ln288_fu_127_p1, "zext_ln288_fu_127_p1");
     sc_trace(mVcdFile, zext_ln288_reg_210, "zext_ln288_reg_210");
-    sc_trace(mVcdFile, i_20_fu_137_p2, "i_20_fu_137_p2");
-    sc_trace(mVcdFile, i_20_reg_218, "i_20_reg_218");
+    sc_trace(mVcdFile, i_18_fu_137_p2, "i_18_fu_137_p2");
+    sc_trace(mVcdFile, i_18_reg_218, "i_18_reg_218");
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
     sc_trace(mVcdFile, icmp_ln299_fu_131_p2, "icmp_ln299_fu_131_p2");
     sc_trace(mVcdFile, i_0_reg_69, "i_0_reg_69");
@@ -241,7 +241,7 @@ void polyveck_chknorm::thread_ap_clk_no_reset_() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()) && 
          esl_seteq<1,1,1>(icmp_ln325_reg_201.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_lv1_1, icmp_ln304_fu_191_p2.read()))) {
-        i_0_i_reg_80 = i_20_reg_218.read();
+        i_0_i_reg_80 = i_18_reg_218.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
                 esl_seteq<1,1,1>(icmp_ln325_fu_107_p2.read(), ap_const_lv1_0))) {
         i_0_i_reg_80 = ap_const_lv9_0;
@@ -265,7 +265,7 @@ void polyveck_chknorm::thread_ap_clk_no_reset_() {
         bound_cast_reg_196 = bound_cast_fu_103_p1.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        i_20_reg_218 = i_20_fu_137_p2.read();
+        i_18_reg_218 = i_18_fu_137_p2.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
         i_reg_205 = i_fu_113_p2.read();
@@ -355,8 +355,8 @@ void polyveck_chknorm::thread_bound_cast_fu_103_p1() {
     bound_cast_fu_103_p1 = esl_zext<32,18>(bound.read());
 }
 
-void polyveck_chknorm::thread_i_20_fu_137_p2() {
-    i_20_fu_137_p2 = (!i_0_i_reg_80.read().is_01() || !ap_const_lv9_1.is_01())? sc_lv<9>(): (sc_biguint<9>(i_0_i_reg_80.read()) + sc_biguint<9>(ap_const_lv9_1));
+void polyveck_chknorm::thread_i_18_fu_137_p2() {
+    i_18_fu_137_p2 = (!i_0_i_reg_80.read().is_01() || !ap_const_lv9_1.is_01())? sc_lv<9>(): (sc_biguint<9>(i_0_i_reg_80.read()) + sc_biguint<9>(ap_const_lv9_1));
 }
 
 void polyveck_chknorm::thread_i_fu_113_p2() {

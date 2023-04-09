@@ -96,7 +96,7 @@ struct polyz_pack : public sc_module {
     sc_signal< sc_lv<8> > or_ln821_fu_599_p2;
     sc_signal< sc_lv<11> > tmp_8_fu_269_p4;
     sc_signal< sc_lv<32> > grp_fu_239_p2;
-    sc_signal< sc_lv<9> > shl_ln5_fu_288_p3;
+    sc_signal< sc_lv<9> > shl_ln3_fu_288_p3;
     sc_signal< sc_lv<10> > zext_ln812_fu_295_p1;
     sc_signal< sc_lv<12> > zext_ln812_1_fu_304_p1;
     sc_signal< sc_lv<12> > add_ln812_1_fu_308_p2;
@@ -109,7 +109,7 @@ struct polyz_pack : public sc_module {
     sc_signal< sc_lv<12> > zext_ln814_fu_387_p1;
     sc_signal< sc_lv<12> > add_ln814_1_fu_391_p2;
     sc_signal< sc_lv<6> > trunc_ln815_fu_401_p1;
-    sc_signal< sc_lv<8> > shl_ln6_fu_405_p3;
+    sc_signal< sc_lv<8> > shl_ln4_fu_405_p3;
     sc_signal< sc_lv<8> > or_ln809_fu_439_p2;
     sc_signal< sc_lv<11> > tmp_s_fu_444_p3;
     sc_signal< sc_lv<10> > add_ln816_fu_456_p2;
@@ -119,7 +119,7 @@ struct polyz_pack : public sc_module {
     sc_signal< sc_lv<12> > zext_ln817_fu_480_p1;
     sc_signal< sc_lv<12> > add_ln817_1_fu_484_p2;
     sc_signal< sc_lv<4> > trunc_ln818_fu_494_p1;
-    sc_signal< sc_lv<8> > shl_ln7_fu_498_p3;
+    sc_signal< sc_lv<8> > shl_ln5_fu_498_p3;
     sc_signal< sc_lv<8> > or_ln810_fu_532_p2;
     sc_signal< sc_lv<11> > tmp_1_fu_537_p3;
     sc_signal< sc_lv<10> > add_ln819_fu_549_p2;
@@ -129,7 +129,7 @@ struct polyz_pack : public sc_module {
     sc_signal< sc_lv<12> > zext_ln820_fu_573_p1;
     sc_signal< sc_lv<12> > add_ln820_1_fu_577_p2;
     sc_signal< sc_lv<2> > trunc_ln821_fu_587_p1;
-    sc_signal< sc_lv<8> > shl_ln8_fu_591_p3;
+    sc_signal< sc_lv<8> > shl_ln6_fu_591_p3;
     sc_signal< sc_lv<10> > add_ln822_fu_625_p2;
     sc_signal< sc_lv<12> > zext_ln822_fu_630_p1;
     sc_signal< sc_lv<12> > add_ln822_1_fu_634_p2;
@@ -241,10 +241,10 @@ struct polyz_pack : public sc_module {
     void thread_r_ce0();
     void thread_r_d0();
     void thread_r_we0();
-    void thread_shl_ln5_fu_288_p3();
-    void thread_shl_ln6_fu_405_p3();
-    void thread_shl_ln7_fu_498_p3();
-    void thread_shl_ln8_fu_591_p3();
+    void thread_shl_ln3_fu_288_p3();
+    void thread_shl_ln4_fu_405_p3();
+    void thread_shl_ln5_fu_498_p3();
+    void thread_shl_ln6_fu_591_p3();
     void thread_shl_ln_fu_338_p3();
     void thread_tmp_1_fu_537_p3();
     void thread_tmp_8_fu_269_p4();

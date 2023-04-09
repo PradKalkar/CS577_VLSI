@@ -157,7 +157,7 @@ ntt_1::ntt_1(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( ap_CS_fsm_state2 );
     sensitive << ( icmp_ln54_fu_152_p2 );
 
-    SC_METHOD(thread_empty_53_fu_215_p2);
+    SC_METHOD(thread_empty_52_fu_215_p2);
     sensitive << ( ap_CS_fsm_state4 );
     sensitive << ( j_reg_110 );
     sensitive << ( add_ln57_fu_206_p2 );
@@ -214,7 +214,7 @@ ntt_1::ntt_1(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( ap_CS_fsm_state6 );
 
     SC_METHOD(thread_start_fu_229_p3);
-    sensitive << ( empty_53_fu_215_p2 );
+    sensitive << ( empty_52_fu_215_p2 );
     sensitive << ( trunc_ln55_fu_221_p1 );
     sensitive << ( trunc_ln55_1_fu_225_p1 );
 
@@ -379,7 +379,7 @@ ntt_1::ntt_1(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, tmp_7_fu_162_p4, "tmp_7_fu_162_p4");
     sc_trace(mVcdFile, tmp_8_fu_192_p4, "tmp_8_fu_192_p4");
     sc_trace(mVcdFile, add_ln57_fu_206_p2, "add_ln57_fu_206_p2");
-    sc_trace(mVcdFile, empty_53_fu_215_p2, "empty_53_fu_215_p2");
+    sc_trace(mVcdFile, empty_52_fu_215_p2, "empty_52_fu_215_p2");
     sc_trace(mVcdFile, trunc_ln55_fu_221_p1, "trunc_ln55_fu_221_p1");
     sc_trace(mVcdFile, trunc_ln55_1_fu_225_p1, "trunc_ln55_1_fu_225_p1");
     sc_trace(mVcdFile, start_fu_229_p3, "start_fu_229_p3");
@@ -622,8 +622,8 @@ void ntt_1::thread_ap_ready() {
     }
 }
 
-void ntt_1::thread_empty_53_fu_215_p2() {
-    empty_53_fu_215_p2 = (!j_reg_110.read().is_01() || !add_ln57_fu_206_p2.read().is_01())? sc_lv<1>(): (sc_biguint<31>(j_reg_110.read()) > sc_biguint<31>(add_ln57_fu_206_p2.read()));
+void ntt_1::thread_empty_52_fu_215_p2() {
+    empty_52_fu_215_p2 = (!j_reg_110.read().is_01() || !add_ln57_fu_206_p2.read().is_01())? sc_lv<1>(): (sc_biguint<31>(j_reg_110.read()) > sc_biguint<31>(add_ln57_fu_206_p2.read()));
 }
 
 void ntt_1::thread_icmp_ln54_fu_152_p2() {
@@ -683,7 +683,7 @@ void ntt_1::thread_sext_ln58_fu_302_p0() {
 }
 
 void ntt_1::thread_start_fu_229_p3() {
-    start_fu_229_p3 = (!empty_53_fu_215_p2.read()[0].is_01())? sc_lv<30>(): ((empty_53_fu_215_p2.read()[0].to_bool())? trunc_ln55_fu_221_p1.read(): trunc_ln55_1_fu_225_p1.read());
+    start_fu_229_p3 = (!empty_52_fu_215_p2.read()[0].is_01())? sc_lv<30>(): ((empty_52_fu_215_p2.read()[0].to_bool())? trunc_ln55_fu_221_p1.read(): trunc_ln55_1_fu_225_p1.read());
 }
 
 void ntt_1::thread_sub_ln59_fu_359_p2() {

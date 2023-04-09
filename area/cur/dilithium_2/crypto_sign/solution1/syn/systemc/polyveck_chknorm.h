@@ -48,8 +48,8 @@ struct polyveck_chknorm : public sc_module {
     sc_signal< sc_lv<3> > i_reg_205;
     sc_signal< sc_lv<12> > zext_ln288_fu_127_p1;
     sc_signal< sc_lv<12> > zext_ln288_reg_210;
-    sc_signal< sc_lv<9> > i_20_fu_137_p2;
-    sc_signal< sc_lv<9> > i_20_reg_218;
+    sc_signal< sc_lv<9> > i_18_fu_137_p2;
+    sc_signal< sc_lv<9> > i_18_reg_218;
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_lv<1> > icmp_ln299_fu_131_p2;
     sc_signal< sc_lv<3> > i_0_reg_69;
@@ -105,7 +105,7 @@ struct polyveck_chknorm : public sc_module {
     void thread_ap_ready();
     void thread_ap_return();
     void thread_bound_cast_fu_103_p1();
-    void thread_i_20_fu_137_p2();
+    void thread_i_18_fu_137_p2();
     void thread_i_fu_113_p2();
     void thread_icmp_ln299_fu_131_p2();
     void thread_icmp_ln304_fu_191_p2();

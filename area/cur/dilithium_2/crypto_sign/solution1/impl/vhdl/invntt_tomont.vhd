@@ -140,7 +140,7 @@ architecture behav of invntt_tomont is
     signal tmp_11_fu_191_p4 : STD_LOGIC_VECTOR (1 downto 0);
     signal add_ln86_fu_233_p2 : STD_LOGIC_VECTOR (9 downto 0);
     signal trunc_ln84_fu_248_p1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal empty_55_fu_242_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_54_fu_242_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal add_ln84_1_fu_252_p2 : STD_LOGIC_VECTOR (8 downto 0);
     signal start_fu_258_p3 : STD_LOGIC_VECTOR (8 downto 0);
     signal zeta_fu_227_p2 : STD_LOGIC_VECTOR (22 downto 0);
@@ -154,7 +154,7 @@ architecture behav of invntt_tomont is
     signal mul_ln90_fu_347_p0 : STD_LOGIC_VECTOR (22 downto 0);
     signal mul_ln90_fu_347_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln90_fu_347_p2 : STD_LOGIC_VECTOR (53 downto 0);
-    signal trunc_ln18_2_fu_356_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal trunc_ln18_3_fu_356_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal t_11_fu_360_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln19_2_fu_370_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln19_2_fu_370_p2 : STD_LOGIC_VECTOR (54 downto 0);
@@ -529,7 +529,7 @@ begin
         end if; 
     end process;
 
-    empty_55_fu_242_p2 <= "1" when (unsigned(j_reg_126) > unsigned(add_ln86_fu_233_p2)) else "0";
+    empty_54_fu_242_p2 <= "1" when (unsigned(j_reg_126) > unsigned(add_ln86_fu_233_p2)) else "0";
     icmp_ln84_fu_201_p2 <= "1" when (tmp_11_fu_191_p4 = ap_const_lv2_0) else "0";
     icmp_ln86_fu_274_p2 <= "1" when (unsigned(j_0_reg_138) < unsigned(zext_ln86_reg_532)) else "0";
     icmp_ln95_fu_401_p2 <= "1" when (j_1_reg_147 = ap_const_lv9_100) else "0";
@@ -558,19 +558,19 @@ begin
 
     sext_ln96_fu_427_p0 <= a_q1;
     start_fu_258_p3 <= 
-        trunc_ln84_fu_248_p1 when (empty_55_fu_242_p2(0) = '1') else 
+        trunc_ln84_fu_248_p1 when (empty_54_fu_242_p2(0) = '1') else 
         add_ln84_1_fu_252_p2;
     sub_ln89_fu_338_p2 <= std_logic_vector(unsigned(t_reg_571) - unsigned(a_q1));
         t_10_fu_481_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln_fu_471_p4),32));
 
-    t_11_fu_360_p2 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(signed('0' &ap_const_lv32_3802001) * signed(trunc_ln18_2_fu_356_p1))), 32));
+    t_11_fu_360_p2 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(signed('0' &ap_const_lv32_3802001) * signed(trunc_ln18_3_fu_356_p1))), 32));
         t_12_fu_396_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln19_1_fu_386_p4),32));
 
     t_9_fu_445_p2 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(signed('0' &ap_const_lv32_3802001) * signed(trunc_ln18_fu_441_p1))), 32));
     tmp_10_fu_179_p3 <= len_0_reg_114(8 downto 8);
     tmp_11_fu_191_p4 <= j_reg_126(9 downto 8);
     tmp_fu_158_p3 <= (a_offset & ap_const_lv8_0);
-    trunc_ln18_2_fu_356_p1 <= mul_ln90_fu_347_p2(32 - 1 downto 0);
+    trunc_ln18_3_fu_356_p1 <= mul_ln90_fu_347_p2(32 - 1 downto 0);
     trunc_ln18_fu_441_p1 <= mul_ln96_fu_431_p2(32 - 1 downto 0);
     trunc_ln19_1_fu_386_p4 <= add_ln19_2_fu_380_p2(55 downto 32);
     trunc_ln84_fu_248_p1 <= j_reg_126(9 - 1 downto 0);

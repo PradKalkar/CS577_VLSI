@@ -38,7 +38,7 @@ struct polyveck_reduce : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    crypto_sign_mac_mibs<1,1,9,24,32,32>* crypto_sign_mac_mibs_U52;
+    crypto_sign_mac_mibs<1,1,9,24,32,32>* crypto_sign_mac_mibs_U50;
     sc_signal< sc_lv<4> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<3> > i_fu_77_p2;
@@ -47,8 +47,8 @@ struct polyveck_reduce : public sc_module {
     sc_signal< sc_lv<12> > zext_ln28_fu_91_p1;
     sc_signal< sc_lv<12> > zext_ln28_reg_158;
     sc_signal< sc_lv<1> > icmp_ln187_fu_71_p2;
-    sc_signal< sc_lv<9> > i_17_fu_101_p2;
-    sc_signal< sc_lv<9> > i_17_reg_166;
+    sc_signal< sc_lv<9> > i_15_fu_101_p2;
+    sc_signal< sc_lv<9> > i_15_reg_166;
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_lv<10> > v_vec_coeffs_addr_reg_171;
     sc_signal< sc_lv<1> > icmp_ln32_fu_95_p2;
@@ -100,7 +100,7 @@ struct polyveck_reduce : public sc_module {
     void thread_ap_idle();
     void thread_ap_ready();
     void thread_grp_fu_141_p1();
-    void thread_i_17_fu_101_p2();
+    void thread_i_15_fu_101_p2();
     void thread_i_fu_77_p2();
     void thread_icmp_ln187_fu_71_p2();
     void thread_icmp_ln32_fu_95_p2();
