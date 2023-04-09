@@ -26,6 +26,7 @@ void polyvec_matrix_pointwise_montgomery(polyveck *t, const polyvecl mat[K], con
   unsigned int i;
 
   for(i = 0; i < K; ++i)
+    #pragma HLS unroll
     polyvecl_pointwise_acc_montgomery(&t->vec[i], &mat[i], v);
 }
 
@@ -44,6 +45,7 @@ void polyvecl_uniform_gamma1(polyvecl *v, const uint8_t seed[SEEDBYTES], uint16_
   unsigned int i;
 
   for(i = 0; i < L; ++i)
+    #pragma HLS unroll
     poly_uniform_gamma1(&v->vec[i], seed, L*nonce + i);
 }
 
@@ -97,10 +99,8 @@ void polyvecl_add(polyvecl *w, const polyvecl *u, const polyvecl *v) {
 void polyvecl_ntt(polyvecl *v) {
   unsigned int i;
 
-  for(i = 0; i < L; ++i){
-	  #pragma HLS pipeline
-	  poly_ntt(&v->vec[i]);
-  }
+  for(i = 0; i < L; ++i)
+    poly_ntt(&v->vec[i]);
 }
 
 void polyvecl_invntt_tomont(polyvecl *v) {
@@ -113,10 +113,8 @@ void polyvecl_invntt_tomont(polyvecl *v) {
 void polyvecl_pointwise_poly_montgomery(polyvecl *r, const poly *a, const polyvecl *v) {
   unsigned int i;
 
-  for(i = 0; i < L; ++i){
-	#pragma HLS pipeline
+  for(i = 0; i < L; ++i)
     poly_pointwise_montgomery(&r->vec[i], a, &v->vec[i]);
-  }
 }
 
 /*************************************************
@@ -188,10 +186,9 @@ void polyveck_uniform_eta(polyveck *v, const uint8_t seed[SEEDBYTES], uint16_t n
 void polyveck_reduce(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i){
-    #pragma HLS pipeline
+  for(i = 0; i < K; ++i)
+    #pragma HLS unroll
     poly_reduce(&v->vec[i]);
-  }
 }
 
 /*************************************************
@@ -205,10 +202,9 @@ void polyveck_reduce(polyveck *v) {
 void polyveck_caddq(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i){
-    #pragma HLS pipeline
+  for(i = 0; i < K; ++i)
+  #pragma HLS unroll
     poly_caddq(&v->vec[i]);
-  }
 }
 
 /*************************************************
@@ -287,10 +283,8 @@ void polyveck_shiftl(polyveck *v) {
 void polyveck_ntt(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i){
-	  #pragma HLS pipeline
-	  poly_ntt(&v->vec[i]);
-  }
+  for(i = 0; i < K; ++i)
+    poly_ntt(&v->vec[i]);
 }
 
 /*************************************************
@@ -306,16 +300,16 @@ void polyveck_invntt_tomont(polyveck *v) {
   unsigned int i;
 
   for(i = 0; i < K; ++i)
+  #pragma HLS unroll
     poly_invntt_tomont(&v->vec[i]);
 }
 
 void polyveck_pointwise_poly_montgomery(polyveck *r, const poly *a, const polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i){
-    #pragma HLS pipeline
+  for(i = 0; i < K; ++i)
+    #pragma HLS unroll 
     poly_pointwise_montgomery(&r->vec[i], a, &v->vec[i]);
-  }
 }
 
 
@@ -334,12 +328,10 @@ void polyveck_pointwise_poly_montgomery(polyveck *r, const poly *a, const polyve
 int polyveck_chknorm(const polyveck *v, int32_t bound) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i){
-	#pragma HLS pipeline
-	if(poly_chknorm(&v->vec[i], bound)){
+  for(i = 0; i < K; ++i)
+  #pragma HLS unroll
+    if(poly_chknorm(&v->vec[i], bound))
       return 1;
-    }
-  }
 
   return 0;
 }
@@ -430,8 +422,7 @@ void polyveck_use_hint(polyveck *w, const polyveck *u, const polyveck *h) {
 void polyveck_pack_w1(uint8_t r[K*POLYW1_PACKEDBYTES], const polyveck *w1) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i){
-	#pragma HLS pipeline
+  for(i = 0; i < K; ++i)
+    #pragma HLS unroll
     polyw1_pack(&r[i*POLYW1_PACKEDBYTES], &w1->vec[i]);
-  }
 }

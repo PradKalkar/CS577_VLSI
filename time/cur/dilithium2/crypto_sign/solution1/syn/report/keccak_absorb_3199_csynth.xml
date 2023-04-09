@@ -21,33 +21,28 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>115</Best-caseLatency>
-<Average-caseLatency>115</Average-caseLatency>
-<Worst-caseLatency>115</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.150 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.150 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.150 ms</Worst-caseRealTimeLatency>
-<Interval-min>115</Interval-min>
-<Interval-max>115</Interval-max>
+<Best-caseLatency>31</Best-caseLatency>
+<Average-caseLatency>31</Average-caseLatency>
+<Worst-caseLatency>31</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.310 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.310 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.310 ms</Worst-caseRealTimeLatency>
+<Interval-min>31</Interval-min>
+<Interval-max>31</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <TripCount>6</TripCount>
-<Latency>114</Latency>
-<IterationLatency>19</IterationLatency>
-<Loop1.1>
-<TripCount>8</TripCount>
-<Latency>16</Latency>
-<IterationLatency>2</IterationLatency>
-</Loop1.1>
+<Latency>30</Latency>
+<IterationLatency>5</IterationLatency>
 </Loop1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>92</FF>
-<LUT>460</LUT>
+<FF>71</FF>
+<LUT>306</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <URAM>0</URAM>
@@ -207,6 +202,39 @@
 </RtlPorts>
 <RtlPorts>
 <name>m_q0</name>
+<Object>m</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>m_address1</name>
+<Object>m</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>m_ce1</name>
+<Object>m</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>m_q1</name>
 <Object>m</Object>
 <Type>array</Type>
 <Scope></Scope>

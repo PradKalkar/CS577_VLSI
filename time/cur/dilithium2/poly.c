@@ -29,10 +29,8 @@ void poly_reduce(poly *a) {
   unsigned int i;
   DBENCH_START();
 
-  for(i = 0; i < N; ++i){
-	#pragma HLS pipeline
+  for(i = 0; i < N; ++i)
     a->coeffs[i] = reduce32(a->coeffs[i]);
-  }
 
   DBENCH_STOP(*tred);
 }
@@ -49,10 +47,8 @@ void poly_caddq(poly *a) {
   unsigned int i;
   DBENCH_START();
 
-  for(i = 0; i < N; ++i){
-	  #pragma HLS pipeline
-	  a->coeffs[i] = caddq(a->coeffs[i]);
-  }
+  for(i = 0; i < N; ++i)
+    a->coeffs[i] = caddq(a->coeffs[i]);
 
   DBENCH_STOP(*tred);
 }
@@ -110,6 +106,7 @@ void poly_sub(poly *c, const poly *a, const poly *b) {
   DBENCH_START();
 
   for(i = 0; i < N; ++i)
+    #pragma HLS unroll
     c->coeffs[i] = a->coeffs[i] - b->coeffs[i];
 
   DBENCH_STOP(*tadd);
@@ -128,6 +125,7 @@ void poly_shiftl(poly *a) {
   DBENCH_START();
 
   for(i = 0; i < N; ++i)
+  #pragma HLS unroll
     a->coeffs[i] <<= D;
 
   DBENCH_STOP(*tmul);
@@ -181,10 +179,9 @@ void poly_pointwise_montgomery(poly *c, const poly *a, const poly *b) {
   unsigned int i;
   DBENCH_START();
 
-  for(i = 0; i < N; ++i){
-	#pragma HLS pipeline
+  for(i = 0; i < N; ++i)
+    #pragma HLS unroll
     c->coeffs[i] = montgomery_reduce((int64_t)a->coeffs[i] * b->coeffs[i]);
-  }
 
   DBENCH_STOP(*tmul);
 }
@@ -206,6 +203,7 @@ void poly_power2round(poly *a1, poly *a0, const poly *a) {
   DBENCH_START();
 
   for(i = 0; i < N; ++i)
+    #pragma HLS unroll
     a1->coeffs[i] = power2round(&a0->coeffs[i], a->coeffs[i]);
 
   DBENCH_STOP(*tround);
@@ -302,7 +300,6 @@ int poly_chknorm(const poly *a, int32_t B) {
      the probability for each coefficient is independent of secret
      data but we must not leak the sign of the centralized representative. */
   for(i = 0; i < N; ++i) {
-	#pragma HLS pipeline
     /* Absolute value */
     t = a->coeffs[i] >> 31;
     t = a->coeffs[i] - (t & 2*a->coeffs[i]);
@@ -382,6 +379,7 @@ void poly_uniform(poly *a,
   ctr = rej_uniform(a->coeffs, N, buf, buflen);
 
   while(ctr < N) {
+    #pragma HLS unroll
     off = buflen % 3;
     for(i = 0; i < off; ++i)
       buf[i] = buf[buflen - off + i];
@@ -531,9 +529,12 @@ void poly_challenge(poly *c, const uint8_t seed[SEEDBYTES]) {
     signs |= (uint64_t)buf[i] << 8*i;
   pos = 8;
 
-  for(i = 0; i < N; ++i)
+  for(i = 0; i < N; ++i){
+    #pragma HLS unroll
     c->coeffs[i] = 0;
+  }
   for(i = N-TAU; i < N; ++i) {
+    #pragma HLS unroll
     do {
       if(pos >= SHAKE256_RATE) {
         shake256_squeezeblocks(buf, 1, &state);
@@ -648,6 +649,7 @@ void polyt1_pack(uint8_t *r, const poly *a) {
   DBENCH_START();
 
   for(i = 0; i < N/4; ++i) {
+    #pragma HLS unroll
     r[5*i+0] = (a->coeffs[4*i+0] >> 0);
     r[5*i+1] = (a->coeffs[4*i+0] >> 8) | (a->coeffs[4*i+1] << 2);
     r[5*i+2] = (a->coeffs[4*i+1] >> 6) | (a->coeffs[4*i+2] << 4);
@@ -672,6 +674,7 @@ void polyt1_unpack(poly *r, const uint8_t *a) {
   DBENCH_START();
 
   for(i = 0; i < N/4; ++i) {
+    #pragma HLS unroll
     r->coeffs[4*i+0] = ((a[5*i+0] >> 0) | ((uint32_t)a[5*i+1] << 8)) & 0x3FF;
     r->coeffs[4*i+1] = ((a[5*i+1] >> 2) | ((uint32_t)a[5*i+2] << 6)) & 0x3FF;
     r->coeffs[4*i+2] = ((a[5*i+2] >> 4) | ((uint32_t)a[5*i+3] << 4)) & 0x3FF;
@@ -696,6 +699,7 @@ void polyt0_pack(uint8_t *r, const poly *a) {
   DBENCH_START();
 
   for(i = 0; i < N/8; ++i) {
+    #pragma HLS unroll
     t[0] = (1 << (D-1)) - a->coeffs[8*i+0];
     t[1] = (1 << (D-1)) - a->coeffs[8*i+1];
     t[2] = (1 << (D-1)) - a->coeffs[8*i+2];
@@ -743,6 +747,7 @@ void polyt0_unpack(poly *r, const uint8_t *a) {
   DBENCH_START();
 
   for(i = 0; i < N/8; ++i) {
+    #pragma HLS unroll
     r->coeffs[8*i+0]  = a[13*i+0];
     r->coeffs[8*i+0] |= (uint32_t)a[13*i+1] << 8;
     r->coeffs[8*i+0] &= 0x1FFF;
@@ -809,7 +814,7 @@ void polyz_pack(uint8_t *r, const poly *a) {
 
 #if GAMMA1 == (1 << 17)
   for(i = 0; i < N/4; ++i) {
-	#pragma HLS pipeline
+    #pragma HLS unroll
     t[0] = GAMMA1 - a->coeffs[4*i+0];
     t[1] = GAMMA1 - a->coeffs[4*i+1];
     t[2] = GAMMA1 - a->coeffs[4*i+2];
@@ -830,7 +835,6 @@ void polyz_pack(uint8_t *r, const poly *a) {
   }
 #elif GAMMA1 == (1 << 19)
   for(i = 0; i < N/2; ++i) {
-	#pragma HLS pipeline
     t[0] = GAMMA1 - a->coeffs[2*i+0];
     t[1] = GAMMA1 - a->coeffs[2*i+1];
 
@@ -861,6 +865,7 @@ void polyz_unpack(poly *r, const uint8_t *a) {
 
 #if GAMMA1 == (1 << 17)
   for(i = 0; i < N/4; ++i) {
+    #pragma HLS unroll
     r->coeffs[4*i+0]  = a[9*i+0];
     r->coeffs[4*i+0] |= (uint32_t)a[9*i+1] << 8;
     r->coeffs[4*i+0] |= (uint32_t)a[9*i+2] << 16;
@@ -922,7 +927,7 @@ void polyw1_pack(uint8_t *r, const poly *a) {
 
 #if GAMMA2 == (Q-1)/88
   for(i = 0; i < N/4; ++i) {
-	#pragma HLS pipeline
+    #pragma HLS unroll
     r[3*i+0]  = a->coeffs[4*i+0];
     r[3*i+0] |= a->coeffs[4*i+1] << 6;
     r[3*i+1]  = a->coeffs[4*i+1] >> 2;
@@ -931,10 +936,8 @@ void polyw1_pack(uint8_t *r, const poly *a) {
     r[3*i+2] |= a->coeffs[4*i+3] << 2;
   }
 #elif GAMMA2 == (Q-1)/32
-  for(i = 0; i < N/2; ++i){
-	#pragma HLS pipeline
+  for(i = 0; i < N/2; ++i)
     r[i] = a->coeffs[2*i+0] | (a->coeffs[2*i+1] << 4);
-  }
 #endif
 
   DBENCH_STOP(*tpack);

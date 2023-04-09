@@ -1,0 +1,205 @@
+
+
+================================================================
+== Vivado HLS Report for 'pqcrystals_dilithium_5'
+================================================================
+* Date:           Sat Apr  8 18:38:05 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        crypto_sign
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  | 10.00 us | 32.165 ns |   1.25 us  |
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     2059|     2059| 20.590 ms | 20.590 ms |  2059|  2059|   none  |
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------+-------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                    |                         |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |              Instance              |          Module         |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +------------------------------------+-------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_pqcrystals_dilithium_15_fu_104  |pqcrystals_dilithium_15  |      128|      128| 1.280 ms | 1.280 ms |  128|  128|   none  |
+        |grp_pqcrystals_dilithium_14_fu_116  |pqcrystals_dilithium_14  |      128|      128| 1.280 ms | 1.280 ms |  128|  128|   none  |
+        +------------------------------------+-------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |     1929|     1929|       643|          -|          -|     3|    no    |
+        | + Loop 1.1  |      512|      512|         2|          -|          -|   256|    no    |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|     108|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|   1048|     270|   33415|    -|
+|Memory           |        2|      -|       0|       0|    0|
+|Multiplexer      |        -|      -|       -|     317|    -|
+|Register         |        -|      -|      47|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        2|   1048|     317|   33840|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |      730|    740|  269200|  134600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |    ~0   |    141|   ~0   |      25|    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------+-------------------------+---------+-------+-----+-------+-----+
+    |              Instance              |          Module         | BRAM_18K| DSP48E|  FF |  LUT  | URAM|
+    +------------------------------------+-------------------------+---------+-------+-----+-------+-----+
+    |grp_pqcrystals_dilithium_14_fu_116  |pqcrystals_dilithium_14  |        0|    524|  133|  16445|    0|
+    |grp_pqcrystals_dilithium_15_fu_104  |pqcrystals_dilithium_15  |        0|    524|  137|  16970|    0|
+    +------------------------------------+-------------------------+---------+-------+-----+-------+-----+
+    |Total                               |                         |        0|   1048|  270|  33415|    0|
+    +------------------------------------+-------------------------+---------+-------+-----+-------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |   Memory   |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |t_coeffs_U  |pqcrystals_dilithhbi  |        2|  0|   0|    0|   256|   32|     1|         8192|
+    +------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total       |                      |        2|  0|   0|    0|   256|   32|     1|         8192|
+    +------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |add_ln88_1_fu_172_p2  |     +    |      0|  0|  19|          12|          12|
+    |add_ln88_fu_188_p2    |     +    |      0|  0|  39|          32|          32|
+    |i_2_fu_157_p2         |     +    |      0|  0|  16|           9|           1|
+    |i_fu_182_p2           |     +    |      0|  0|  12|           3|           1|
+    |icmp_ln139_fu_145_p2  |   icmp   |      0|  0|   9|           3|           4|
+    |icmp_ln87_fu_151_p2   |   icmp   |      0|  0|  13|           9|          10|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |Total                 |          |      0|  0| 108|          68|          60|
+    +----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm              |  38|          7|    1|          7|
+    |i_0_i_reg_93           |   9|          2|    9|         18|
+    |i_0_reg_81             |   9|          2|    3|          6|
+    |t_coeffs_address0      |  15|          3|    8|         24|
+    |t_coeffs_ce0           |  15|          3|    1|          3|
+    |t_coeffs_ce1           |   9|          2|    1|          2|
+    |t_coeffs_we0           |   9|          2|    1|          2|
+    |t_coeffs_we1           |   9|          2|    1|          2|
+    |u_vec_coeffs_address0  |  15|          3|   12|         36|
+    |u_vec_coeffs_address1  |  15|          3|   12|         36|
+    |u_vec_coeffs_ce0       |  15|          3|    1|          3|
+    |u_vec_coeffs_ce1       |  15|          3|    1|          3|
+    |v_vec_coeffs_address0  |  15|          3|   10|         30|
+    |v_vec_coeffs_address1  |  15|          3|   10|         30|
+    |v_vec_coeffs_ce0       |  15|          3|    1|          3|
+    |v_vec_coeffs_ce1       |  15|          3|    1|          3|
+    |w_coeffs_address0      |  21|          4|   10|         40|
+    |w_coeffs_ce0           |  15|          3|    1|          3|
+    |w_coeffs_ce1           |   9|          2|    1|          2|
+    |w_coeffs_d0            |  15|          3|   32|         96|
+    |w_coeffs_we0           |  15|          3|    1|          3|
+    |w_coeffs_we1           |   9|          2|    1|          2|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  | 317|         64|  119|        354|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------+----+----+-----+-----------+
+    |                       Name                      | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                        |   6|   0|    6|          0|
+    |grp_pqcrystals_dilithium_14_fu_116_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_15_fu_104_ap_start_reg  |   1|   0|    1|          0|
+    |i_0_i_reg_93                                     |   9|   0|    9|          0|
+    |i_0_reg_81                                       |   3|   0|    3|          0|
+    |i_2_reg_222                                      |   9|   0|    9|          0|
+    |tmp_reg_211                                      |   4|   0|   12|          8|
+    |trunc_ln138_1_reg_205                            |   2|   0|    2|          0|
+    |trunc_ln138_reg_200                              |   2|   0|    2|          0|
+    |w_coeffs_addr_reg_227                            |  10|   0|   10|          0|
+    +-------------------------------------------------+----+----+-----+-----------+
+    |Total                                            |  47|   0|   55|          8|
+    +-------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++-----------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                 |  in |    1| ap_ctrl_hs | pqcrystals_dilithium.5 | return value |
+|ap_rst                 |  in |    1| ap_ctrl_hs | pqcrystals_dilithium.5 | return value |
+|ap_start               |  in |    1| ap_ctrl_hs | pqcrystals_dilithium.5 | return value |
+|ap_done                | out |    1| ap_ctrl_hs | pqcrystals_dilithium.5 | return value |
+|ap_idle                | out |    1| ap_ctrl_hs | pqcrystals_dilithium.5 | return value |
+|ap_ready               | out |    1| ap_ctrl_hs | pqcrystals_dilithium.5 | return value |
+|w_coeffs_address0      | out |   10|  ap_memory |        w_coeffs        |     array    |
+|w_coeffs_ce0           | out |    1|  ap_memory |        w_coeffs        |     array    |
+|w_coeffs_we0           | out |    1|  ap_memory |        w_coeffs        |     array    |
+|w_coeffs_d0            | out |   32|  ap_memory |        w_coeffs        |     array    |
+|w_coeffs_q0            |  in |   32|  ap_memory |        w_coeffs        |     array    |
+|w_coeffs_address1      | out |   10|  ap_memory |        w_coeffs        |     array    |
+|w_coeffs_ce1           | out |    1|  ap_memory |        w_coeffs        |     array    |
+|w_coeffs_we1           | out |    1|  ap_memory |        w_coeffs        |     array    |
+|w_coeffs_d1            | out |   32|  ap_memory |        w_coeffs        |     array    |
+|w_coeffs_offset        |  in |    4|   ap_none  |     w_coeffs_offset    |    scalar    |
+|u_vec_coeffs_address0  | out |   12|  ap_memory |      u_vec_coeffs      |     array    |
+|u_vec_coeffs_ce0       | out |    1|  ap_memory |      u_vec_coeffs      |     array    |
+|u_vec_coeffs_q0        |  in |   23|  ap_memory |      u_vec_coeffs      |     array    |
+|u_vec_coeffs_address1  | out |   12|  ap_memory |      u_vec_coeffs      |     array    |
+|u_vec_coeffs_ce1       | out |    1|  ap_memory |      u_vec_coeffs      |     array    |
+|u_vec_coeffs_q1        |  in |   23|  ap_memory |      u_vec_coeffs      |     array    |
+|u_vec_coeffs_offset    |  in |    4|   ap_none  |   u_vec_coeffs_offset  |    scalar    |
+|v_vec_coeffs_address0  | out |   10|  ap_memory |      v_vec_coeffs      |     array    |
+|v_vec_coeffs_ce0       | out |    1|  ap_memory |      v_vec_coeffs      |     array    |
+|v_vec_coeffs_q0        |  in |   32|  ap_memory |      v_vec_coeffs      |     array    |
+|v_vec_coeffs_address1  | out |   10|  ap_memory |      v_vec_coeffs      |     array    |
+|v_vec_coeffs_ce1       | out |    1|  ap_memory |      v_vec_coeffs      |     array    |
+|v_vec_coeffs_q1        |  in |   32|  ap_memory |      v_vec_coeffs      |     array    |
++-----------------------+-----+-----+------------+------------------------+--------------+
+

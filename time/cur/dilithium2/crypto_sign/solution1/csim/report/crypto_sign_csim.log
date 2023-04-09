@@ -1,5 +1,26 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../sign.c in debug mode
+INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 11:12:30 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/84581680932550325159
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../symmetric-aes.c in debug mode
+INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 11:12:42 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/85151680932562922436
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../symmetric-shake.c in debug mode
+INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 11:12:55 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/85761680932575105825
+INFO: [APCC 202-1] APCC is done.
    Generating csim.exe
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

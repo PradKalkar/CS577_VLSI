@@ -5,7 +5,7 @@
         <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
     </Simulation>
     <files xmlns="">
-        <file name="../../PQCgenKAT_sign.c" sc="0" tb="1" cflags=" -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
+        <file name="../../PQCgenKAT_sign.c" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
         <file name="symmetric-shake.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="symmetric-aes.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="sign.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>

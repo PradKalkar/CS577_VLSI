@@ -41,16 +41,12 @@ void unpack_pk(uint8_t rho[SEEDBYTES],
 {
   unsigned int i;
 
-  for(i = 0; i < SEEDBYTES; ++i){
-	#pragma HLS PIPELINE
+  for(i = 0; i < SEEDBYTES; ++i)
     rho[i] = pk[i];
-  }
   pk += SEEDBYTES;
 
-  for(i = 0; i < K; ++i){
-    #pragma HLS PIPELINE
+  for(i = 0; i < K; ++i)
     polyt1_unpack(&t1->vec[i], pk + i*POLYT1_PACKEDBYTES);
-  }
 }
 
 /*************************************************
@@ -123,44 +119,34 @@ void unpack_sk(uint8_t rho[SEEDBYTES],
 {
   unsigned int i;
 
-  for(i = 0; i < SEEDBYTES; ++i){
-    #pragma HLS pipeline
+  for(i = 0; i < SEEDBYTES; ++i)
+    #pragma HLS unroll
     rho[i] = sk[i];
-  }
-
   sk += SEEDBYTES;
 
-  for(i = 0; i < SEEDBYTES; ++i){
-    #pragma HLS pipeline
+  for(i = 0; i < SEEDBYTES; ++i)
+    #pragma HLS unroll
     key[i] = sk[i];
-  }
-
   sk += SEEDBYTES;
 
-  for(i = 0; i < CRHBYTES; ++i){
-    #pragma HLS pipeline
+  for(i = 0; i < CRHBYTES; ++i)
+    #pragma HLS unroll
     tr[i] = sk[i];
-  }
   sk += CRHBYTES;
 
-  for(i=0; i < L; ++i){
-    #pragma HLS pipeline
+  for(i=0; i < L; ++i)
+    #pragma HLS unroll
     polyeta_unpack(&s1->vec[i], sk + i*POLYETA_PACKEDBYTES);
-  }
-
   sk += L*POLYETA_PACKEDBYTES;
 
-  for(i=0; i < K; ++i){
-    #pragma HLS pipeline
+  for(i=0; i < K; ++i)
+    #pragma HLS unroll
     polyeta_unpack(&s2->vec[i], sk + i*POLYETA_PACKEDBYTES);
-  }
-
   sk += K*POLYETA_PACKEDBYTES;
 
-  for(i=0; i < K; ++i){
-    #pragma HLS pipeline
+  for(i=0; i < K; ++i)
+    #pragma HLS unroll
     polyt0_unpack(&t0->vec[i], sk + i*POLYT0_PACKEDBYTES);
-  }
 }
 
 /*************************************************
@@ -180,31 +166,24 @@ void pack_sig(uint8_t sig[CRYPTO_BYTES],
 {
   unsigned int i, j, k;
 
-  for(i=0; i < SEEDBYTES; ++i) // size 32
-  {
-    #pragma HLS pipeline
+  for(i=0; i < SEEDBYTES; ++i)
+    #pragma HLS unroll
     sig[i] = c[i];
-  }
   sig += SEEDBYTES;
 
-  for(i = 0; i < L; ++i) // size 4
-  {
-    #pragma HLS pipeline
+  for(i = 0; i < L; ++i)
+  #pragma HLS unroll
     polyz_pack(sig + i*POLYZ_PACKEDBYTES, &z->vec[i]);
-  }
-
   sig += L*POLYZ_PACKEDBYTES;
 
   /* Encode h */
-  for(i = 0; i < OMEGA + K; ++i) // 80 + 4
-  {
-    #pragma HLS pipeline
+  for(i = 0; i < OMEGA + K; ++i)
+  #pragma HLS unroll
     sig[i] = 0;
-  }
 
   k = 0;
   for(i = 0; i < K; ++i) {
-    #pragma HLS pipeline
+    #pragma HLS unroll
     for(j = 0; j < N; ++j)
       if(h->vec[i].coeffs[j] != 0)
         sig[k++] = j;
@@ -244,13 +223,16 @@ int unpack_sig(uint8_t c[SEEDBYTES],
   /* Decode h */
   k = 0;
   for(i = 0; i < K; ++i) {
+    #pragma HLS unroll
     for(j = 0; j < N; ++j)
+    #pragma HLS unroll
       h->vec[i].coeffs[j] = 0;
 
     if(sig[OMEGA + i] < k || sig[OMEGA + i] > OMEGA)
       return 1;
 
     for(j = k; j < sig[OMEGA + i]; ++j) {
+      #pragma HLS unroll
       /* Coefficients are ordered for strong unforgeability */
       if(j > k && sig[j] <= sig[j-1]) return 1;
       h->vec[i].coeffs[sig[j]] = 1;
@@ -261,6 +243,7 @@ int unpack_sig(uint8_t c[SEEDBYTES],
 
   /* Extra indices are zero for strong unforgeability */
   for(j = k; j < OMEGA; ++j)
+  #pragma HLS unroll
     if(sig[j])
       return 1;
 

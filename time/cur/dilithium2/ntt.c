@@ -52,10 +52,12 @@ void ntt(int32_t a[N]) {
 
   k = 0;
   for(len = 128; len > 0; len >>= 1) {
-	#pragma HLS pipeline
+    #pragma HLS unroll
     for(start = 0; start < N; start = j + len) {
+      #pragma HLS unroll
       zeta = zetas[++k];
       for(j = start; j < start + len; ++j) {
+        #pragma HLS unroll
         t = montgomery_reduce((int64_t)zeta * a[j + len]);
         a[j + len] = a[j] - t;
         a[j] = a[j] + t;
@@ -82,9 +84,12 @@ void invntt_tomont(int32_t a[N]) {
 
   k = 256;
   for(len = 1; len < N; len <<= 1) {
+    #pragma HLS unroll
     for(start = 0; start < N; start = j + len) {
+      #pragma HLS unroll
       zeta = -zetas[--k];
       for(j = start; j < start + len; ++j) {
+        #pragma HLS unroll
         t = a[j];
         a[j] = t + a[j + len];
         a[j + len] = t - a[j + len];
@@ -94,6 +99,7 @@ void invntt_tomont(int32_t a[N]) {
   }
 
   for(j = 0; j < N; ++j) {
+    #pragma HLS unroll
     a[j] = montgomery_reduce((int64_t)f * a[j]);
   }
 }

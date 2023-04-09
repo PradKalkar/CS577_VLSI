@@ -27,9 +27,10 @@ uint64_t load64(const uint8_t x[8]) {
   unsigned int i;
   uint64_t r = 0;
 
-  for(i=0;i<8;i++)
+  for(i=0;i<8;i++){
+    #pragma HLS unroll
     r |= (uint64_t)x[i] << 8*i;
-
+  }
   return r;
 }
 
@@ -130,6 +131,7 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
 
         for( round = 0; round < NROUNDS; round += 2 )
         {
+          #pragma HLS unroll
             //    prepareTheta
             BCa = Aba^Aga^Aka^Ama^Asa;
             BCe = Abe^Age^Ake^Ame^Ase;
@@ -398,6 +400,7 @@ unsigned int keccak_absorb(uint64_t s[25],
 
   if(pos && mlen >= r-pos) {
     for(i=0;i<(r-pos)/8;i++)
+    #pragma HLS unroll
       s[pos/8+i] ^= load64(m+8*i);
     m += r-pos;
     mlen -= r-pos;
@@ -406,6 +409,7 @@ unsigned int keccak_absorb(uint64_t s[25],
   }
 
   while(mlen >= r) {
+    #pragma HLS unroll
     for(i=0;i<r/8;i++)
       s[i] ^= load64(m+8*i);
     m += r;
@@ -472,6 +476,7 @@ static void keccak_squeezeblocks(uint8_t *out,
   unsigned int i;
 
   while(nblocks > 0) {
+    #pragma HLS unroll
     KeccakF1600_StatePermute(s);
     for(i=0;i<r/8;i++)
       store64(out + 8*i, s[i]);
@@ -523,6 +528,7 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
   }
 
   while(outlen >= r) {
+    #pragma HLS unroll
     KeccakF1600_StatePermute(s);
     for(i=0;i<r/8;i++)
       store64(out+8*i,s[i]);
@@ -538,6 +544,7 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
 //  for(i=0;i<outlen/8;i++)
 //    store64(&out[8*i],s[pos/8+i]);
   for(i=0;i<outlen/8;i++) {
+    #pragma HLS unroll
 	    out[8*i+0] = s[pos/8+i]%256;
 	    out[8*i+1] = (s[pos/8+i] >> 8)%256;
 	    out[8*i+2] = (s[pos/8+i] >> 16)%256;

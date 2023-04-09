@@ -11,7 +11,7 @@ __SIM_DDS__ = 1
 
 TARGET := cosim.tv.exe
 
-AUTOPILOT_ROOT := /tools/Xilinx/Vivado/2019.2
+AUTOPILOT_ROOT := /media/storage/Vivado/2019.2
 AUTOPILOT_MACH := lnx64
 
 ifdef COSIM_M32
@@ -24,7 +24,7 @@ ifdef AP_GCC_M32
 endif
 IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := /tools/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin
+  AP_GCC_PATH := /media/storage/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin
 endif
 AUTOPILOT_TOOL = ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AUTOPILOT_TECH = ${AUTOPILOT_ROOT}/common/technology

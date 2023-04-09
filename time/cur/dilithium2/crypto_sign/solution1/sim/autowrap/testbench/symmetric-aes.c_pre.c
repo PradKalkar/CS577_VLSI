@@ -1,35 +1,46 @@
-# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric-aes.c"
-# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric-aes.c" 1
+# 1 "/media/storage/Time/dilithium2/symmetric-aes.c"
+# 1 "/media/storage/Time/dilithium2/symmetric-aes.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric-aes.c" 2
-# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
-# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
+# 1 "/media/storage/Time/dilithium2/symmetric-aes.c" 2
+# 1 "/media/storage/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/media/storage/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
 # 33 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 3 4
 # 1 "/usr/include/features.h" 1 3 4
-# 439 "/usr/include/features.h" 3 4
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 440 "/usr/include/features.h" 2 3 4
-# 461 "/usr/include/features.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-# 452 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 392 "/usr/include/features.h" 3 4
+# 1 "/usr/include/features-time64.h" 1 3 4
+# 20 "/usr/include/features-time64.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 453 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 21 "/usr/include/features-time64.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
+# 22 "/usr/include/features-time64.h" 2 3 4
+# 393 "/usr/include/features.h" 2 3 4
+# 464 "/usr/include/features.h" 3 4
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 465 "/usr/include/features.h" 2 3 4
+# 486 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
+# 559 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 560 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 454 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 462 "/usr/include/features.h" 2 3 4
-# 485 "/usr/include/features.h" 3 4
+# 561 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 487 "/usr/include/features.h" 2 3 4
+# 510 "/usr/include/features.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
 # 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
 # 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
-# 486 "/usr/include/features.h" 2 3 4
+# 511 "/usr/include/features.h" 2 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 2 3 4
 # 27 "/usr/include/stdint.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
@@ -37,6 +48,9 @@
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
 # 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
 # 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 
 
@@ -108,6 +122,7 @@ typedef unsigned int __id_t;
 typedef long int __time_t;
 typedef unsigned int __useconds_t;
 typedef long int __suseconds_t;
+typedef long int __suseconds64_t;
 
 typedef int __daddr_t;
 typedef int __key_t;
@@ -224,27 +239,27 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 2 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric-aes.c" 2
-# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric.h" 1
+# 34 "/media/storage/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
+# 2 "/media/storage/Time/dilithium2/symmetric-aes.c" 2
+# 1 "/media/storage/Time/dilithium2/symmetric.h" 1
 
 
 
 
-# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/params.h" 1
+# 1 "/media/storage/Time/dilithium2/params.h" 1
 
 
 
-# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/config.h" 1
-# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/params.h" 2
-# 6 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric.h" 2
-# 35 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric.h"
-# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/fips202.h" 1
+# 1 "/media/storage/Time/dilithium2/config.h" 1
+# 5 "/media/storage/Time/dilithium2/params.h" 2
+# 6 "/media/storage/Time/dilithium2/symmetric.h" 2
+# 35 "/media/storage/Time/dilithium2/symmetric.h"
+# 1 "/media/storage/Time/dilithium2/fips202.h" 1
 
 
 
-# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
-# 31 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3
+# 1 "/media/storage/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
+# 31 "/media/storage/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3
 typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
 
 
@@ -255,8 +270,8 @@ typedef __typeof__(sizeof(int)) size_t;
 
 
 typedef int wchar_t;
-# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/fips202.h" 2
-# 15 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/fips202.h"
+# 5 "/media/storage/Time/dilithium2/fips202.h" 2
+# 15 "/media/storage/Time/dilithium2/fips202.h"
 typedef struct {
   uint64_t s[25];
   unsigned int pos;
@@ -292,27 +307,27 @@ void shake256(uint8_t out[3*32], size_t outlen, const uint8_t in[32], size_t inl
 void sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen);
 
 void sha3_512(uint8_t h[64], const uint8_t *in, size_t inlen);
-# 36 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric.h" 2
+# 36 "/media/storage/Time/dilithium2/symmetric.h" 2
 
 typedef keccak_state stream128_state;
 typedef keccak_state stream256_state;
 
 
-void dilithium_shake128_stream_init(keccak_state *state,
+void pqcrystals_dilithium2_ref_dilithium_shake128_stream_init(keccak_state *state,
                                     const uint8_t seed[32],
                                     uint16_t nonce);
 
 
-void dilithium_shake256_stream_init(keccak_state *state,
+void pqcrystals_dilithium2_ref_dilithium_shake256_stream_init(keccak_state *state,
                                     const uint8_t seed[48],
                                     uint16_t nonce);
-# 3 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric-aes.c" 2
-# 1 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/aes256ctr.h" 1
+# 3 "/media/storage/Time/dilithium2/symmetric-aes.c" 2
+# 1 "/media/storage/Time/dilithium2/aes256ctr.h" 1
 
 
 
-# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
-# 5 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/aes256ctr.h" 2
+# 1 "/media/storage/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
+# 5 "/media/storage/Time/dilithium2/aes256ctr.h" 2
 
 
 
@@ -325,21 +340,21 @@ typedef struct {
 } aes256ctr_ctx;
 
 
-void aes256ctr_prf(uint8_t *out,
+void pqcrystals_aes256ctr_ref_prf(uint8_t *out,
                    size_t outlen,
                    const uint8_t key[32],
                    const uint8_t nonce[12]);
 
 
-void aes256ctr_init(aes256ctr_ctx *state,
+void pqcrystals_aes256ctr_ref_init(aes256ctr_ctx *state,
                     const uint8_t key[32],
                     const uint8_t nonce[12]);
 
 
-void aes256ctr_squeezeblocks(uint8_t *out,
+void pqcrystals_aes256ctr_ref_squeezeblocks(uint8_t *out,
                              size_t nblocks,
                              aes256ctr_ctx *state);
-# 4 "/home/guest/Documents/vlsi_2/time/cur/dilithium2/symmetric-aes.c" 2
+# 4 "/media/storage/Time/dilithium2/symmetric-aes.c" 2
 
 void dilithium_aes256ctr_init(aes256ctr_ctx *state,
                               const uint8_t key[32],
@@ -348,5 +363,5 @@ void dilithium_aes256ctr_init(aes256ctr_ctx *state,
   uint8_t expnonce[12] = {0};
   expnonce[0] = nonce;
   expnonce[1] = nonce >> 8;
-  aes256ctr_init(state, key, expnonce);
+  pqcrystals_aes256ctr_ref_init(state, key, expnonce);
 }

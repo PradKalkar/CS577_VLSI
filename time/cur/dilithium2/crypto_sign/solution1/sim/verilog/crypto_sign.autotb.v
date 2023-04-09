@@ -89,6 +89,7 @@ wire [12 : 0] sm_address1;
 wire  sm_ce1;
 wire  sm_we1;
 wire [7 : 0] sm_d1;
+wire [7 : 0] sm_q1;
 wire [63 : 0] smlen;
 wire  smlen_ap_vld;
 wire [11 : 0] m_address0;
@@ -132,6 +133,7 @@ wire ap_rst_n;
     .sm_ce1(sm_ce1),
     .sm_we1(sm_we1),
     .sm_d1(sm_d1),
+    .sm_q1(sm_q1),
     .smlen(smlen),
     .smlen_ap_vld(smlen_ap_vld),
     .m_address0(m_address0),
@@ -212,6 +214,7 @@ assign arraysm_we0 = sm_we0;
 assign arraysm_din0 = sm_d0;
 assign arraysm_address1 = sm_address1;
 assign arraysm_ce1 = sm_ce1;
+assign sm_q1 = arraysm_dout1;
 assign arraysm_we1 = sm_we1;
 assign arraysm_din1 = sm_d1;
 assign arraysm_ready= ready;

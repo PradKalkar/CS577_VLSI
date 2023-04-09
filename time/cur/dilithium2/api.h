@@ -19,7 +19,7 @@
 #define CRYPTO_BYTES 4595
 #endif
 
-//#define crypto_sign_keypair DILITHIUM_NAMESPACE(_keypair)
+#define crypto_sign_keypair DILITHIUM_NAMESPACE(_keypair)
 int crypto_sign_keypair(unsigned char *pk, unsigned char *sk);
 
 //#define crypto_sign DILITHIUM_NAMESPACE()
@@ -27,7 +27,7 @@ int crypto_sign(unsigned char *sm, unsigned long long *smlen,
                 const unsigned char *msg, unsigned long long len,
                 const unsigned char *sk);
 
-//#define crypto_sign_open DILITHIUM_NAMESPACE(_open)
+#define crypto_sign_open DILITHIUM_NAMESPACE(_open)
 int crypto_sign_open(unsigned char *m, unsigned long long *mlen,
                      const unsigned char *sm, unsigned long long smlen,
                      const unsigned char *pk);
