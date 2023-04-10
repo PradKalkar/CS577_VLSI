@@ -41,8 +41,8 @@ struct pqcrystals_dilithium_6 : public sc_module {
     pqcrystals_dilithium_16* grp_pqcrystals_dilithium_16_fu_35;
     sc_signal< sc_lv<8> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
-    sc_signal< sc_lv<17> > trunc_ln333_fu_48_p1;
-    sc_signal< sc_lv<17> > trunc_ln333_reg_53;
+    sc_signal< sc_lv<17> > trunc_ln339_fu_48_p1;
+    sc_signal< sc_lv<17> > trunc_ln339_reg_53;
     sc_signal< sc_lv<1> > grp_pqcrystals_dilithium_16_fu_35_ap_return;
     sc_signal< sc_lv<1> > tmp4_reg_58;
     sc_signal< sc_logic > ap_CS_fsm_state2;
@@ -117,7 +117,7 @@ struct pqcrystals_dilithium_6 : public sc_module {
     void thread_ap_return();
     void thread_grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset();
     void thread_grp_pqcrystals_dilithium_16_fu_35_ap_start();
-    void thread_trunc_ln333_fu_48_p1();
+    void thread_trunc_ln339_fu_48_p1();
     void thread_v_vec_coeffs_address0();
     void thread_v_vec_coeffs_ce0();
     void thread_ap_NS_fsm();

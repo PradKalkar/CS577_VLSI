@@ -25,9 +25,10 @@ void polyvec_matrix_expand(polyvecl mat[K], const uint8_t rho[SEEDBYTES]) {
 void polyvec_matrix_pointwise_montgomery(polyveck *t, const polyvecl mat[K], const polyvecl *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
     #pragma HLS unroll
     polyvecl_pointwise_acc_montgomery(&t->vec[i], &mat[i], v);
+  }
 }
 
 /**************************************************************/
@@ -44,9 +45,10 @@ void polyvecl_uniform_eta(polyvecl *v, const uint8_t seed[SEEDBYTES], uint16_t n
 void polyvecl_uniform_gamma1(polyvecl *v, const uint8_t seed[SEEDBYTES], uint16_t nonce) {
   unsigned int i;
 
-  for(i = 0; i < L; ++i)
+  for(i = 0; i < L; ++i){
     #pragma HLS unroll
     poly_uniform_gamma1(&v->vec[i], seed, L*nonce + i);
+  }
 }
 
 void polyvecl_reduce(polyvecl *v) {
@@ -186,9 +188,10 @@ void polyveck_uniform_eta(polyveck *v, const uint8_t seed[SEEDBYTES], uint16_t n
 void polyveck_reduce(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
     #pragma HLS unroll
     poly_reduce(&v->vec[i]);
+  }
 }
 
 /*************************************************
@@ -202,9 +205,10 @@ void polyveck_reduce(polyveck *v) {
 void polyveck_caddq(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
   #pragma HLS unroll
     poly_caddq(&v->vec[i]);
+  }
 }
 
 /*************************************************
@@ -299,17 +303,19 @@ void polyveck_ntt(polyveck *v) {
 void polyveck_invntt_tomont(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
   #pragma HLS unroll
     poly_invntt_tomont(&v->vec[i]);
+  }
 }
 
 void polyveck_pointwise_poly_montgomery(polyveck *r, const poly *a, const polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
     #pragma HLS unroll 
     poly_pointwise_montgomery(&r->vec[i], a, &v->vec[i]);
+  }
 }
 
 
@@ -328,10 +334,11 @@ void polyveck_pointwise_poly_montgomery(polyveck *r, const poly *a, const polyve
 int polyveck_chknorm(const polyveck *v, int32_t bound) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
   #pragma HLS unroll
     if(poly_chknorm(&v->vec[i], bound))
       return 1;
+  }
 
   return 0;
 }
@@ -422,7 +429,8 @@ void polyveck_use_hint(polyveck *w, const polyveck *u, const polyveck *h) {
 void polyveck_pack_w1(uint8_t r[K*POLYW1_PACKEDBYTES], const polyveck *w1) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  for(i = 0; i < K; ++i){
     #pragma HLS unroll
     polyw1_pack(&r[i*POLYW1_PACKEDBYTES], &w1->vec[i]);
+  }
 }

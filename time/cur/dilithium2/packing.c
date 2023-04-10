@@ -119,34 +119,40 @@ void unpack_sk(uint8_t rho[SEEDBYTES],
 {
   unsigned int i;
 
-  for(i = 0; i < SEEDBYTES; ++i)
+  for(i = 0; i < SEEDBYTES; ++i){
     #pragma HLS unroll
     rho[i] = sk[i];
+  }
   sk += SEEDBYTES;
 
-  for(i = 0; i < SEEDBYTES; ++i)
+  for(i = 0; i < SEEDBYTES; ++i){
     #pragma HLS unroll
     key[i] = sk[i];
+  }
   sk += SEEDBYTES;
 
-  for(i = 0; i < CRHBYTES; ++i)
+  for(i = 0; i < CRHBYTES; ++i){
     #pragma HLS unroll
     tr[i] = sk[i];
+  }
   sk += CRHBYTES;
 
-  for(i=0; i < L; ++i)
+  for(i=0; i < L; ++i){
     #pragma HLS unroll
     polyeta_unpack(&s1->vec[i], sk + i*POLYETA_PACKEDBYTES);
+  }
   sk += L*POLYETA_PACKEDBYTES;
 
-  for(i=0; i < K; ++i)
+  for(i=0; i < K; ++i){
     #pragma HLS unroll
     polyeta_unpack(&s2->vec[i], sk + i*POLYETA_PACKEDBYTES);
+  }
   sk += K*POLYETA_PACKEDBYTES;
 
-  for(i=0; i < K; ++i)
+  for(i=0; i < K; ++i){
     #pragma HLS unroll
     polyt0_unpack(&t0->vec[i], sk + i*POLYT0_PACKEDBYTES);
+  }
 }
 
 /*************************************************
@@ -166,20 +172,23 @@ void pack_sig(uint8_t sig[CRYPTO_BYTES],
 {
   unsigned int i, j, k;
 
-  for(i=0; i < SEEDBYTES; ++i)
-    #pragma HLS unroll
+  for(i=0; i < SEEDBYTES; ++i){
+    // #pragma HLS unroll
     sig[i] = c[i];
+  }
   sig += SEEDBYTES;
 
-  for(i = 0; i < L; ++i)
+  for(i = 0; i < L; ++i){
   #pragma HLS unroll
     polyz_pack(sig + i*POLYZ_PACKEDBYTES, &z->vec[i]);
+  }
   sig += L*POLYZ_PACKEDBYTES;
 
   /* Encode h */
-  for(i = 0; i < OMEGA + K; ++i)
-  #pragma HLS unroll
+  for(i = 0; i < OMEGA + K; ++i){
+//  #pragma HLS unroll
     sig[i] = 0;
+  }
 
   k = 0;
   for(i = 0; i < K; ++i) {
@@ -216,17 +225,19 @@ int unpack_sig(uint8_t c[SEEDBYTES],
     c[i] = sig[i];
   sig += SEEDBYTES;
 
-  for(i = 0; i < L; ++i)
+  for(i = 0; i < L; ++i){
+#pragma HLS unroll
     polyz_unpack(&z->vec[i], sig + i*POLYZ_PACKEDBYTES);
+  }
   sig += L*POLYZ_PACKEDBYTES;
 
   /* Decode h */
   k = 0;
   for(i = 0; i < K; ++i) {
-    #pragma HLS unroll
-    for(j = 0; j < N; ++j)
+    for(j = 0; j < N; ++j){
     #pragma HLS unroll
       h->vec[i].coeffs[j] = 0;
+    }
 
     if(sig[OMEGA + i] < k || sig[OMEGA + i] > OMEGA)
       return 1;
@@ -242,10 +253,11 @@ int unpack_sig(uint8_t c[SEEDBYTES],
   }
 
   /* Extra indices are zero for strong unforgeability */
-  for(j = k; j < OMEGA; ++j)
+  for(j = k; j < OMEGA; ++j){
   #pragma HLS unroll
     if(sig[j])
       return 1;
+  }
 
   return 0;
 }

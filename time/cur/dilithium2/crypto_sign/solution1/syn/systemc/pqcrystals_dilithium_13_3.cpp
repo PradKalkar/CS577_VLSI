@@ -1600,7 +1600,7 @@ void pqcrystals_dilithium_13::thread_b_coeffs_address0() {
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
         b_coeffs_address0 =  (sc_lv<10>) (tmp_2492_fu_7528_p3.read());
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) {
-        b_coeffs_address0 =  (sc_lv<10>) (zext_ln184_fu_7503_p1.read());
+        b_coeffs_address0 =  (sc_lv<10>) (zext_ln186_fu_7503_p1.read());
     } else {
         b_coeffs_address0 =  (sc_lv<10>) ("XXXXXXXXXX");
     }
@@ -2396,7 +2396,7 @@ void pqcrystals_dilithium_13::thread_c_coeffs_address0() {
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
         c_coeffs_address0 =  (sc_lv<10>) (tmp_2748_fu_7642_p3.read());
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        c_coeffs_address0 =  (sc_lv<10>) (zext_ln184_3_fu_7559_p1.read());
+        c_coeffs_address0 =  (sc_lv<10>) (zext_ln186_3_fu_7559_p1.read());
     } else {
         c_coeffs_address0 =  (sc_lv<10>) ("XXXXXXXXXX");
     }
@@ -3214,261 +3214,261 @@ void pqcrystals_dilithium_13::thread_c_coeffs_we1() {
 
 void pqcrystals_dilithium_13::thread_grp_pqcrystals_dilithium_22_fu_7483_a() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state129.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_254_fu_18481_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_254_fu_18481_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state128.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_252_fu_18423_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_252_fu_18423_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state127.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_250_fu_18337_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_250_fu_18337_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state126.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_248_fu_18251_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_248_fu_18251_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state125.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_246_fu_18165_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_246_fu_18165_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state124.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_244_fu_18079_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_244_fu_18079_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state123.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_242_fu_17993_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_242_fu_17993_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state122.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_240_fu_17907_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_240_fu_17907_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state121.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_238_fu_17821_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_238_fu_17821_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state120.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_236_fu_17735_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_236_fu_17735_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state119.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_234_fu_17649_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_234_fu_17649_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state118.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_232_fu_17563_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_232_fu_17563_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state117.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_230_fu_17477_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_230_fu_17477_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state116.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_228_fu_17391_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_228_fu_17391_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state115.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_226_fu_17305_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_226_fu_17305_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state114.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_224_fu_17219_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_224_fu_17219_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state113.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_222_fu_17133_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_222_fu_17133_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state112.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_220_fu_17047_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_220_fu_17047_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state111.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_218_fu_16961_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_218_fu_16961_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state110.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_216_fu_16875_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_216_fu_16875_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state109.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_214_fu_16789_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_214_fu_16789_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state108.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_212_fu_16703_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_212_fu_16703_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state107.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_210_fu_16617_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_210_fu_16617_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state106.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_208_fu_16531_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_208_fu_16531_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state105.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_206_fu_16445_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_206_fu_16445_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state104.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_204_fu_16359_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_204_fu_16359_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state103.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_202_fu_16273_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_202_fu_16273_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state102.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_200_fu_16187_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_200_fu_16187_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state101.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_198_fu_16101_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_198_fu_16101_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state100.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_196_fu_16015_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_196_fu_16015_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state99.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_194_fu_15929_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_194_fu_15929_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state98.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_192_fu_15843_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_192_fu_15843_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state97.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_190_fu_15757_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_190_fu_15757_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state96.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_188_fu_15671_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_188_fu_15671_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state95.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_186_fu_15585_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_186_fu_15585_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state94.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_184_fu_15499_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_184_fu_15499_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state93.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_182_fu_15413_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_182_fu_15413_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state92.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_180_fu_15327_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_180_fu_15327_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state91.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_178_fu_15241_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_178_fu_15241_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state90.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_176_fu_15155_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_176_fu_15155_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state89.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_174_fu_15069_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_174_fu_15069_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state88.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_172_fu_14983_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_172_fu_14983_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state87.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_170_fu_14897_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_170_fu_14897_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state86.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_168_fu_14811_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_168_fu_14811_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state85.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_166_fu_14725_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_166_fu_14725_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state84.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_164_fu_14639_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_164_fu_14639_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state83.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_162_fu_14553_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_162_fu_14553_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state82.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_160_fu_14467_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_160_fu_14467_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state81.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_158_fu_14381_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_158_fu_14381_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state80.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_156_fu_14295_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_156_fu_14295_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state79.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_154_fu_14209_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_154_fu_14209_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state78.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_152_fu_14123_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_152_fu_14123_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state77.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_150_fu_14037_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_150_fu_14037_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state76.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_148_fu_13951_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_148_fu_13951_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state75.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_146_fu_13865_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_146_fu_13865_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state74.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_144_fu_13779_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_144_fu_13779_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state73.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_142_fu_13693_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_142_fu_13693_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state72.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_140_fu_13607_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_140_fu_13607_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state71.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_138_fu_13521_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_138_fu_13521_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state70.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_136_fu_13435_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_136_fu_13435_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state69.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_134_fu_13349_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_134_fu_13349_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state68.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_132_fu_13263_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_132_fu_13263_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state67.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_130_fu_13177_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_130_fu_13177_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state66.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_128_fu_13091_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_128_fu_13091_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state65.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_126_fu_13005_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_126_fu_13005_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state64.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_124_fu_12919_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_124_fu_12919_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state63.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_122_fu_12833_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_122_fu_12833_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state62.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_120_fu_12747_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_120_fu_12747_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state61.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_118_fu_12661_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_118_fu_12661_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state60.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_116_fu_12575_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_116_fu_12575_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state59.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_114_fu_12489_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_114_fu_12489_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state58.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_112_fu_12403_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_112_fu_12403_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state57.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_110_fu_12317_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_110_fu_12317_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state56.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_108_fu_12231_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_108_fu_12231_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state55.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_106_fu_12145_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_106_fu_12145_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state54.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_104_fu_12059_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_104_fu_12059_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state53.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_102_fu_11973_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_102_fu_11973_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state52.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_100_fu_11887_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_100_fu_11887_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state51.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_98_fu_11801_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_98_fu_11801_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state50.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_96_fu_11715_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_96_fu_11715_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_94_fu_11629_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_94_fu_11629_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_92_fu_11543_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_92_fu_11543_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state47.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_90_fu_11457_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_90_fu_11457_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state46.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_88_fu_11371_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_88_fu_11371_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state45.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_86_fu_11285_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_86_fu_11285_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state44.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_84_fu_11199_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_84_fu_11199_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state43.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_82_fu_11113_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_82_fu_11113_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state42.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_80_fu_11027_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_80_fu_11027_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state41.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_78_fu_10941_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_78_fu_10941_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state40.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_76_fu_10855_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_76_fu_10855_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state39.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_74_fu_10769_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_74_fu_10769_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state38.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_72_fu_10683_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_72_fu_10683_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state37.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_70_fu_10597_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_70_fu_10597_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state36.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_68_fu_10511_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_68_fu_10511_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state35.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_66_fu_10425_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_66_fu_10425_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state34.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_64_fu_10339_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_64_fu_10339_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state33.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_62_fu_10253_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_62_fu_10253_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state32.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_60_fu_10167_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_60_fu_10167_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state31.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_58_fu_10081_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_58_fu_10081_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state30.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_56_fu_9995_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_56_fu_9995_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state29.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_54_fu_9909_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_54_fu_9909_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state28.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_52_fu_9823_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_52_fu_9823_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state27.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_50_fu_9737_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_50_fu_9737_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state26.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_48_fu_9651_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_48_fu_9651_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state25.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_46_fu_9565_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_46_fu_9565_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state24.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_44_fu_9479_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_44_fu_9479_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state23.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_42_fu_9393_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_42_fu_9393_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state22.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_40_fu_9307_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_40_fu_9307_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state21.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_38_fu_9221_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_38_fu_9221_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state20.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_36_fu_9135_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_36_fu_9135_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state19.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_34_fu_9049_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_34_fu_9049_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state18.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_32_fu_8963_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_32_fu_8963_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_30_fu_8877_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_30_fu_8877_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_28_fu_8791_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_28_fu_8791_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_26_fu_8705_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_26_fu_8705_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_24_fu_8619_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_24_fu_8619_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state13.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_22_fu_8533_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_22_fu_8533_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state12.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_20_fu_8447_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_20_fu_8447_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state11.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_18_fu_8361_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_18_fu_8361_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state10.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_16_fu_8275_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_16_fu_8275_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state9.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_14_fu_8189_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_14_fu_8189_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_12_fu_8103_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_12_fu_8103_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state7.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_10_fu_8017_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_10_fu_8017_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_8_fu_7931_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_8_fu_7931_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state5.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_6_fu_7845_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_6_fu_7845_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_4_fu_7759_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_4_fu_7759_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_2_fu_7673_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_2_fu_7673_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln184_fu_7587_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7483_a = mul_ln186_fu_7587_p2.read();
     } else {
         grp_pqcrystals_dilithium_22_fu_7483_a =  (sc_lv<64>) ("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
     }
@@ -3476,3664 +3476,3664 @@ void pqcrystals_dilithium_13::thread_grp_pqcrystals_dilithium_22_fu_7483_a() {
 
 void pqcrystals_dilithium_13::thread_grp_pqcrystals_dilithium_22_fu_7489_a() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state129.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_255_fu_18496_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_255_fu_18496_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state128.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_253_fu_18438_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_253_fu_18438_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state127.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_251_fu_18352_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_251_fu_18352_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state126.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_249_fu_18266_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_249_fu_18266_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state125.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_247_fu_18180_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_247_fu_18180_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state124.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_245_fu_18094_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_245_fu_18094_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state123.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_243_fu_18008_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_243_fu_18008_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state122.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_241_fu_17922_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_241_fu_17922_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state121.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_239_fu_17836_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_239_fu_17836_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state120.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_237_fu_17750_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_237_fu_17750_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state119.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_235_fu_17664_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_235_fu_17664_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state118.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_233_fu_17578_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_233_fu_17578_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state117.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_231_fu_17492_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_231_fu_17492_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state116.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_229_fu_17406_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_229_fu_17406_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state115.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_227_fu_17320_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_227_fu_17320_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state114.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_225_fu_17234_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_225_fu_17234_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state113.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_223_fu_17148_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_223_fu_17148_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state112.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_221_fu_17062_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_221_fu_17062_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state111.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_219_fu_16976_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_219_fu_16976_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state110.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_217_fu_16890_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_217_fu_16890_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state109.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_215_fu_16804_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_215_fu_16804_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state108.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_213_fu_16718_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_213_fu_16718_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state107.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_211_fu_16632_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_211_fu_16632_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state106.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_209_fu_16546_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_209_fu_16546_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state105.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_207_fu_16460_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_207_fu_16460_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state104.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_205_fu_16374_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_205_fu_16374_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state103.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_203_fu_16288_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_203_fu_16288_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state102.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_201_fu_16202_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_201_fu_16202_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state101.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_199_fu_16116_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_199_fu_16116_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state100.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_197_fu_16030_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_197_fu_16030_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state99.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_195_fu_15944_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_195_fu_15944_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state98.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_193_fu_15858_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_193_fu_15858_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state97.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_191_fu_15772_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_191_fu_15772_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state96.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_189_fu_15686_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_189_fu_15686_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state95.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_187_fu_15600_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_187_fu_15600_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state94.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_185_fu_15514_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_185_fu_15514_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state93.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_183_fu_15428_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_183_fu_15428_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state92.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_181_fu_15342_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_181_fu_15342_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state91.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_179_fu_15256_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_179_fu_15256_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state90.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_177_fu_15170_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_177_fu_15170_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state89.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_175_fu_15084_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_175_fu_15084_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state88.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_173_fu_14998_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_173_fu_14998_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state87.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_171_fu_14912_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_171_fu_14912_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state86.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_169_fu_14826_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_169_fu_14826_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state85.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_167_fu_14740_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_167_fu_14740_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state84.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_165_fu_14654_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_165_fu_14654_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state83.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_163_fu_14568_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_163_fu_14568_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state82.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_161_fu_14482_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_161_fu_14482_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state81.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_159_fu_14396_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_159_fu_14396_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state80.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_157_fu_14310_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_157_fu_14310_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state79.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_155_fu_14224_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_155_fu_14224_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state78.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_153_fu_14138_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_153_fu_14138_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state77.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_151_fu_14052_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_151_fu_14052_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state76.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_149_fu_13966_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_149_fu_13966_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state75.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_147_fu_13880_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_147_fu_13880_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state74.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_145_fu_13794_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_145_fu_13794_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state73.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_143_fu_13708_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_143_fu_13708_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state72.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_141_fu_13622_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_141_fu_13622_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state71.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_139_fu_13536_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_139_fu_13536_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state70.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_137_fu_13450_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_137_fu_13450_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state69.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_135_fu_13364_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_135_fu_13364_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state68.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_133_fu_13278_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_133_fu_13278_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state67.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_131_fu_13192_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_131_fu_13192_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state66.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_129_fu_13106_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_129_fu_13106_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state65.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_127_fu_13020_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_127_fu_13020_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state64.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_125_fu_12934_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_125_fu_12934_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state63.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_123_fu_12848_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_123_fu_12848_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state62.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_121_fu_12762_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_121_fu_12762_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state61.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_119_fu_12676_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_119_fu_12676_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state60.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_117_fu_12590_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_117_fu_12590_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state59.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_115_fu_12504_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_115_fu_12504_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state58.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_113_fu_12418_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_113_fu_12418_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state57.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_111_fu_12332_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_111_fu_12332_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state56.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_109_fu_12246_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_109_fu_12246_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state55.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_107_fu_12160_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_107_fu_12160_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state54.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_105_fu_12074_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_105_fu_12074_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state53.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_103_fu_11988_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_103_fu_11988_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state52.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_101_fu_11902_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_101_fu_11902_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state51.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_99_fu_11816_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_99_fu_11816_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state50.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_97_fu_11730_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_97_fu_11730_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_95_fu_11644_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_95_fu_11644_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_93_fu_11558_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_93_fu_11558_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state47.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_91_fu_11472_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_91_fu_11472_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state46.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_89_fu_11386_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_89_fu_11386_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state45.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_87_fu_11300_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_87_fu_11300_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state44.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_85_fu_11214_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_85_fu_11214_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state43.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_83_fu_11128_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_83_fu_11128_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state42.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_81_fu_11042_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_81_fu_11042_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state41.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_79_fu_10956_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_79_fu_10956_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state40.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_77_fu_10870_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_77_fu_10870_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state39.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_75_fu_10784_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_75_fu_10784_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state38.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_73_fu_10698_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_73_fu_10698_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state37.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_71_fu_10612_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_71_fu_10612_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state36.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_69_fu_10526_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_69_fu_10526_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state35.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_67_fu_10440_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_67_fu_10440_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state34.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_65_fu_10354_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_65_fu_10354_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state33.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_63_fu_10268_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_63_fu_10268_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state32.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_61_fu_10182_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_61_fu_10182_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state31.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_59_fu_10096_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_59_fu_10096_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state30.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_57_fu_10010_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_57_fu_10010_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state29.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_55_fu_9924_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_55_fu_9924_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state28.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_53_fu_9838_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_53_fu_9838_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state27.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_51_fu_9752_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_51_fu_9752_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state26.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_49_fu_9666_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_49_fu_9666_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state25.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_47_fu_9580_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_47_fu_9580_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state24.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_45_fu_9494_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_45_fu_9494_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state23.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_43_fu_9408_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_43_fu_9408_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state22.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_41_fu_9322_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_41_fu_9322_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state21.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_39_fu_9236_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_39_fu_9236_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state20.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_37_fu_9150_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_37_fu_9150_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state19.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_35_fu_9064_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_35_fu_9064_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state18.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_33_fu_8978_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_33_fu_8978_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_31_fu_8892_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_31_fu_8892_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_29_fu_8806_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_29_fu_8806_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_27_fu_8720_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_27_fu_8720_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state14.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_25_fu_8634_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_25_fu_8634_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state13.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_23_fu_8548_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_23_fu_8548_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state12.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_21_fu_8462_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_21_fu_8462_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state11.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_19_fu_8376_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_19_fu_8376_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state10.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_17_fu_8290_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_17_fu_8290_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state9.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_15_fu_8204_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_15_fu_8204_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_13_fu_8118_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_13_fu_8118_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state7.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_11_fu_8032_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_11_fu_8032_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_9_fu_7946_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_9_fu_7946_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state5.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_7_fu_7860_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_7_fu_7860_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_5_fu_7774_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_5_fu_7774_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_3_fu_7688_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_3_fu_7688_p2.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln184_1_fu_7602_p2.read();
+        grp_pqcrystals_dilithium_22_fu_7489_a = mul_ln186_1_fu_7602_p2.read();
     } else {
         grp_pqcrystals_dilithium_22_fu_7489_a =  (sc_lv<64>) ("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
     }
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_100_fu_11887_p0() {
-    mul_ln184_100_fu_11887_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_100_fu_11887_p0() {
+    mul_ln186_100_fu_11887_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_100_fu_11887_p1() {
-    mul_ln184_100_fu_11887_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_100_fu_11887_p1() {
+    mul_ln186_100_fu_11887_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_100_fu_11887_p2() {
-    mul_ln184_100_fu_11887_p2 = (!mul_ln184_100_fu_11887_p0.read().is_01() || !mul_ln184_100_fu_11887_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_100_fu_11887_p0.read()) * sc_bigint<32>(mul_ln184_100_fu_11887_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_100_fu_11887_p2() {
+    mul_ln186_100_fu_11887_p2 = (!mul_ln186_100_fu_11887_p0.read().is_01() || !mul_ln186_100_fu_11887_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_100_fu_11887_p0.read()) * sc_bigint<32>(mul_ln186_100_fu_11887_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_101_fu_11902_p0() {
-    mul_ln184_101_fu_11902_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_101_fu_11902_p0() {
+    mul_ln186_101_fu_11902_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_101_fu_11902_p1() {
-    mul_ln184_101_fu_11902_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_101_fu_11902_p1() {
+    mul_ln186_101_fu_11902_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_101_fu_11902_p2() {
-    mul_ln184_101_fu_11902_p2 = (!mul_ln184_101_fu_11902_p0.read().is_01() || !mul_ln184_101_fu_11902_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_101_fu_11902_p0.read()) * sc_bigint<32>(mul_ln184_101_fu_11902_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_101_fu_11902_p2() {
+    mul_ln186_101_fu_11902_p2 = (!mul_ln186_101_fu_11902_p0.read().is_01() || !mul_ln186_101_fu_11902_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_101_fu_11902_p0.read()) * sc_bigint<32>(mul_ln186_101_fu_11902_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_102_fu_11973_p0() {
-    mul_ln184_102_fu_11973_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_102_fu_11973_p0() {
+    mul_ln186_102_fu_11973_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_102_fu_11973_p1() {
-    mul_ln184_102_fu_11973_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_102_fu_11973_p1() {
+    mul_ln186_102_fu_11973_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_102_fu_11973_p2() {
-    mul_ln184_102_fu_11973_p2 = (!mul_ln184_102_fu_11973_p0.read().is_01() || !mul_ln184_102_fu_11973_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_102_fu_11973_p0.read()) * sc_bigint<32>(mul_ln184_102_fu_11973_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_102_fu_11973_p2() {
+    mul_ln186_102_fu_11973_p2 = (!mul_ln186_102_fu_11973_p0.read().is_01() || !mul_ln186_102_fu_11973_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_102_fu_11973_p0.read()) * sc_bigint<32>(mul_ln186_102_fu_11973_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_103_fu_11988_p0() {
-    mul_ln184_103_fu_11988_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_103_fu_11988_p0() {
+    mul_ln186_103_fu_11988_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_103_fu_11988_p1() {
-    mul_ln184_103_fu_11988_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_103_fu_11988_p1() {
+    mul_ln186_103_fu_11988_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_103_fu_11988_p2() {
-    mul_ln184_103_fu_11988_p2 = (!mul_ln184_103_fu_11988_p0.read().is_01() || !mul_ln184_103_fu_11988_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_103_fu_11988_p0.read()) * sc_bigint<32>(mul_ln184_103_fu_11988_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_103_fu_11988_p2() {
+    mul_ln186_103_fu_11988_p2 = (!mul_ln186_103_fu_11988_p0.read().is_01() || !mul_ln186_103_fu_11988_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_103_fu_11988_p0.read()) * sc_bigint<32>(mul_ln186_103_fu_11988_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_104_fu_12059_p0() {
-    mul_ln184_104_fu_12059_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_104_fu_12059_p0() {
+    mul_ln186_104_fu_12059_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_104_fu_12059_p1() {
-    mul_ln184_104_fu_12059_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_104_fu_12059_p1() {
+    mul_ln186_104_fu_12059_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_104_fu_12059_p2() {
-    mul_ln184_104_fu_12059_p2 = (!mul_ln184_104_fu_12059_p0.read().is_01() || !mul_ln184_104_fu_12059_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_104_fu_12059_p0.read()) * sc_bigint<32>(mul_ln184_104_fu_12059_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_104_fu_12059_p2() {
+    mul_ln186_104_fu_12059_p2 = (!mul_ln186_104_fu_12059_p0.read().is_01() || !mul_ln186_104_fu_12059_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_104_fu_12059_p0.read()) * sc_bigint<32>(mul_ln186_104_fu_12059_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_105_fu_12074_p0() {
-    mul_ln184_105_fu_12074_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_105_fu_12074_p0() {
+    mul_ln186_105_fu_12074_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_105_fu_12074_p1() {
-    mul_ln184_105_fu_12074_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_105_fu_12074_p1() {
+    mul_ln186_105_fu_12074_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_105_fu_12074_p2() {
-    mul_ln184_105_fu_12074_p2 = (!mul_ln184_105_fu_12074_p0.read().is_01() || !mul_ln184_105_fu_12074_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_105_fu_12074_p0.read()) * sc_bigint<32>(mul_ln184_105_fu_12074_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_105_fu_12074_p2() {
+    mul_ln186_105_fu_12074_p2 = (!mul_ln186_105_fu_12074_p0.read().is_01() || !mul_ln186_105_fu_12074_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_105_fu_12074_p0.read()) * sc_bigint<32>(mul_ln186_105_fu_12074_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_106_fu_12145_p0() {
-    mul_ln184_106_fu_12145_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_106_fu_12145_p0() {
+    mul_ln186_106_fu_12145_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_106_fu_12145_p1() {
-    mul_ln184_106_fu_12145_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_106_fu_12145_p1() {
+    mul_ln186_106_fu_12145_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_106_fu_12145_p2() {
-    mul_ln184_106_fu_12145_p2 = (!mul_ln184_106_fu_12145_p0.read().is_01() || !mul_ln184_106_fu_12145_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_106_fu_12145_p0.read()) * sc_bigint<32>(mul_ln184_106_fu_12145_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_106_fu_12145_p2() {
+    mul_ln186_106_fu_12145_p2 = (!mul_ln186_106_fu_12145_p0.read().is_01() || !mul_ln186_106_fu_12145_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_106_fu_12145_p0.read()) * sc_bigint<32>(mul_ln186_106_fu_12145_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_107_fu_12160_p0() {
-    mul_ln184_107_fu_12160_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_107_fu_12160_p0() {
+    mul_ln186_107_fu_12160_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_107_fu_12160_p1() {
-    mul_ln184_107_fu_12160_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_107_fu_12160_p1() {
+    mul_ln186_107_fu_12160_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_107_fu_12160_p2() {
-    mul_ln184_107_fu_12160_p2 = (!mul_ln184_107_fu_12160_p0.read().is_01() || !mul_ln184_107_fu_12160_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_107_fu_12160_p0.read()) * sc_bigint<32>(mul_ln184_107_fu_12160_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_107_fu_12160_p2() {
+    mul_ln186_107_fu_12160_p2 = (!mul_ln186_107_fu_12160_p0.read().is_01() || !mul_ln186_107_fu_12160_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_107_fu_12160_p0.read()) * sc_bigint<32>(mul_ln186_107_fu_12160_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_108_fu_12231_p0() {
-    mul_ln184_108_fu_12231_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_108_fu_12231_p0() {
+    mul_ln186_108_fu_12231_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_108_fu_12231_p1() {
-    mul_ln184_108_fu_12231_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_108_fu_12231_p1() {
+    mul_ln186_108_fu_12231_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_108_fu_12231_p2() {
-    mul_ln184_108_fu_12231_p2 = (!mul_ln184_108_fu_12231_p0.read().is_01() || !mul_ln184_108_fu_12231_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_108_fu_12231_p0.read()) * sc_bigint<32>(mul_ln184_108_fu_12231_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_108_fu_12231_p2() {
+    mul_ln186_108_fu_12231_p2 = (!mul_ln186_108_fu_12231_p0.read().is_01() || !mul_ln186_108_fu_12231_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_108_fu_12231_p0.read()) * sc_bigint<32>(mul_ln186_108_fu_12231_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_109_fu_12246_p0() {
-    mul_ln184_109_fu_12246_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_109_fu_12246_p0() {
+    mul_ln186_109_fu_12246_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_109_fu_12246_p1() {
-    mul_ln184_109_fu_12246_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_109_fu_12246_p1() {
+    mul_ln186_109_fu_12246_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_109_fu_12246_p2() {
-    mul_ln184_109_fu_12246_p2 = (!mul_ln184_109_fu_12246_p0.read().is_01() || !mul_ln184_109_fu_12246_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_109_fu_12246_p0.read()) * sc_bigint<32>(mul_ln184_109_fu_12246_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_109_fu_12246_p2() {
+    mul_ln186_109_fu_12246_p2 = (!mul_ln186_109_fu_12246_p0.read().is_01() || !mul_ln186_109_fu_12246_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_109_fu_12246_p0.read()) * sc_bigint<32>(mul_ln186_109_fu_12246_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_10_fu_8017_p0() {
-    mul_ln184_10_fu_8017_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_10_fu_8017_p0() {
+    mul_ln186_10_fu_8017_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_10_fu_8017_p1() {
-    mul_ln184_10_fu_8017_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_10_fu_8017_p1() {
+    mul_ln186_10_fu_8017_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_10_fu_8017_p2() {
-    mul_ln184_10_fu_8017_p2 = (!mul_ln184_10_fu_8017_p0.read().is_01() || !mul_ln184_10_fu_8017_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_10_fu_8017_p0.read()) * sc_bigint<32>(mul_ln184_10_fu_8017_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_10_fu_8017_p2() {
+    mul_ln186_10_fu_8017_p2 = (!mul_ln186_10_fu_8017_p0.read().is_01() || !mul_ln186_10_fu_8017_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_10_fu_8017_p0.read()) * sc_bigint<32>(mul_ln186_10_fu_8017_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_110_fu_12317_p0() {
-    mul_ln184_110_fu_12317_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_110_fu_12317_p0() {
+    mul_ln186_110_fu_12317_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_110_fu_12317_p1() {
-    mul_ln184_110_fu_12317_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_110_fu_12317_p1() {
+    mul_ln186_110_fu_12317_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_110_fu_12317_p2() {
-    mul_ln184_110_fu_12317_p2 = (!mul_ln184_110_fu_12317_p0.read().is_01() || !mul_ln184_110_fu_12317_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_110_fu_12317_p0.read()) * sc_bigint<32>(mul_ln184_110_fu_12317_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_110_fu_12317_p2() {
+    mul_ln186_110_fu_12317_p2 = (!mul_ln186_110_fu_12317_p0.read().is_01() || !mul_ln186_110_fu_12317_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_110_fu_12317_p0.read()) * sc_bigint<32>(mul_ln186_110_fu_12317_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_111_fu_12332_p0() {
-    mul_ln184_111_fu_12332_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_111_fu_12332_p0() {
+    mul_ln186_111_fu_12332_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_111_fu_12332_p1() {
-    mul_ln184_111_fu_12332_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_111_fu_12332_p1() {
+    mul_ln186_111_fu_12332_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_111_fu_12332_p2() {
-    mul_ln184_111_fu_12332_p2 = (!mul_ln184_111_fu_12332_p0.read().is_01() || !mul_ln184_111_fu_12332_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_111_fu_12332_p0.read()) * sc_bigint<32>(mul_ln184_111_fu_12332_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_111_fu_12332_p2() {
+    mul_ln186_111_fu_12332_p2 = (!mul_ln186_111_fu_12332_p0.read().is_01() || !mul_ln186_111_fu_12332_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_111_fu_12332_p0.read()) * sc_bigint<32>(mul_ln186_111_fu_12332_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_112_fu_12403_p0() {
-    mul_ln184_112_fu_12403_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_112_fu_12403_p0() {
+    mul_ln186_112_fu_12403_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_112_fu_12403_p1() {
-    mul_ln184_112_fu_12403_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_112_fu_12403_p1() {
+    mul_ln186_112_fu_12403_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_112_fu_12403_p2() {
-    mul_ln184_112_fu_12403_p2 = (!mul_ln184_112_fu_12403_p0.read().is_01() || !mul_ln184_112_fu_12403_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_112_fu_12403_p0.read()) * sc_bigint<32>(mul_ln184_112_fu_12403_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_112_fu_12403_p2() {
+    mul_ln186_112_fu_12403_p2 = (!mul_ln186_112_fu_12403_p0.read().is_01() || !mul_ln186_112_fu_12403_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_112_fu_12403_p0.read()) * sc_bigint<32>(mul_ln186_112_fu_12403_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_113_fu_12418_p0() {
-    mul_ln184_113_fu_12418_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_113_fu_12418_p0() {
+    mul_ln186_113_fu_12418_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_113_fu_12418_p1() {
-    mul_ln184_113_fu_12418_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_113_fu_12418_p1() {
+    mul_ln186_113_fu_12418_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_113_fu_12418_p2() {
-    mul_ln184_113_fu_12418_p2 = (!mul_ln184_113_fu_12418_p0.read().is_01() || !mul_ln184_113_fu_12418_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_113_fu_12418_p0.read()) * sc_bigint<32>(mul_ln184_113_fu_12418_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_113_fu_12418_p2() {
+    mul_ln186_113_fu_12418_p2 = (!mul_ln186_113_fu_12418_p0.read().is_01() || !mul_ln186_113_fu_12418_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_113_fu_12418_p0.read()) * sc_bigint<32>(mul_ln186_113_fu_12418_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_114_fu_12489_p0() {
-    mul_ln184_114_fu_12489_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_114_fu_12489_p0() {
+    mul_ln186_114_fu_12489_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_114_fu_12489_p1() {
-    mul_ln184_114_fu_12489_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_114_fu_12489_p1() {
+    mul_ln186_114_fu_12489_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_114_fu_12489_p2() {
-    mul_ln184_114_fu_12489_p2 = (!mul_ln184_114_fu_12489_p0.read().is_01() || !mul_ln184_114_fu_12489_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_114_fu_12489_p0.read()) * sc_bigint<32>(mul_ln184_114_fu_12489_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_114_fu_12489_p2() {
+    mul_ln186_114_fu_12489_p2 = (!mul_ln186_114_fu_12489_p0.read().is_01() || !mul_ln186_114_fu_12489_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_114_fu_12489_p0.read()) * sc_bigint<32>(mul_ln186_114_fu_12489_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_115_fu_12504_p0() {
-    mul_ln184_115_fu_12504_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_115_fu_12504_p0() {
+    mul_ln186_115_fu_12504_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_115_fu_12504_p1() {
-    mul_ln184_115_fu_12504_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_115_fu_12504_p1() {
+    mul_ln186_115_fu_12504_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_115_fu_12504_p2() {
-    mul_ln184_115_fu_12504_p2 = (!mul_ln184_115_fu_12504_p0.read().is_01() || !mul_ln184_115_fu_12504_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_115_fu_12504_p0.read()) * sc_bigint<32>(mul_ln184_115_fu_12504_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_115_fu_12504_p2() {
+    mul_ln186_115_fu_12504_p2 = (!mul_ln186_115_fu_12504_p0.read().is_01() || !mul_ln186_115_fu_12504_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_115_fu_12504_p0.read()) * sc_bigint<32>(mul_ln186_115_fu_12504_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_116_fu_12575_p0() {
-    mul_ln184_116_fu_12575_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_116_fu_12575_p0() {
+    mul_ln186_116_fu_12575_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_116_fu_12575_p1() {
-    mul_ln184_116_fu_12575_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_116_fu_12575_p1() {
+    mul_ln186_116_fu_12575_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_116_fu_12575_p2() {
-    mul_ln184_116_fu_12575_p2 = (!mul_ln184_116_fu_12575_p0.read().is_01() || !mul_ln184_116_fu_12575_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_116_fu_12575_p0.read()) * sc_bigint<32>(mul_ln184_116_fu_12575_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_116_fu_12575_p2() {
+    mul_ln186_116_fu_12575_p2 = (!mul_ln186_116_fu_12575_p0.read().is_01() || !mul_ln186_116_fu_12575_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_116_fu_12575_p0.read()) * sc_bigint<32>(mul_ln186_116_fu_12575_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_117_fu_12590_p0() {
-    mul_ln184_117_fu_12590_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_117_fu_12590_p0() {
+    mul_ln186_117_fu_12590_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_117_fu_12590_p1() {
-    mul_ln184_117_fu_12590_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_117_fu_12590_p1() {
+    mul_ln186_117_fu_12590_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_117_fu_12590_p2() {
-    mul_ln184_117_fu_12590_p2 = (!mul_ln184_117_fu_12590_p0.read().is_01() || !mul_ln184_117_fu_12590_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_117_fu_12590_p0.read()) * sc_bigint<32>(mul_ln184_117_fu_12590_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_117_fu_12590_p2() {
+    mul_ln186_117_fu_12590_p2 = (!mul_ln186_117_fu_12590_p0.read().is_01() || !mul_ln186_117_fu_12590_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_117_fu_12590_p0.read()) * sc_bigint<32>(mul_ln186_117_fu_12590_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_118_fu_12661_p0() {
-    mul_ln184_118_fu_12661_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_118_fu_12661_p0() {
+    mul_ln186_118_fu_12661_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_118_fu_12661_p1() {
-    mul_ln184_118_fu_12661_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_118_fu_12661_p1() {
+    mul_ln186_118_fu_12661_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_118_fu_12661_p2() {
-    mul_ln184_118_fu_12661_p2 = (!mul_ln184_118_fu_12661_p0.read().is_01() || !mul_ln184_118_fu_12661_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_118_fu_12661_p0.read()) * sc_bigint<32>(mul_ln184_118_fu_12661_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_118_fu_12661_p2() {
+    mul_ln186_118_fu_12661_p2 = (!mul_ln186_118_fu_12661_p0.read().is_01() || !mul_ln186_118_fu_12661_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_118_fu_12661_p0.read()) * sc_bigint<32>(mul_ln186_118_fu_12661_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_119_fu_12676_p0() {
-    mul_ln184_119_fu_12676_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_119_fu_12676_p0() {
+    mul_ln186_119_fu_12676_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_119_fu_12676_p1() {
-    mul_ln184_119_fu_12676_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_119_fu_12676_p1() {
+    mul_ln186_119_fu_12676_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_119_fu_12676_p2() {
-    mul_ln184_119_fu_12676_p2 = (!mul_ln184_119_fu_12676_p0.read().is_01() || !mul_ln184_119_fu_12676_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_119_fu_12676_p0.read()) * sc_bigint<32>(mul_ln184_119_fu_12676_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_119_fu_12676_p2() {
+    mul_ln186_119_fu_12676_p2 = (!mul_ln186_119_fu_12676_p0.read().is_01() || !mul_ln186_119_fu_12676_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_119_fu_12676_p0.read()) * sc_bigint<32>(mul_ln186_119_fu_12676_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_11_fu_8032_p0() {
-    mul_ln184_11_fu_8032_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_11_fu_8032_p0() {
+    mul_ln186_11_fu_8032_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_11_fu_8032_p1() {
-    mul_ln184_11_fu_8032_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_11_fu_8032_p1() {
+    mul_ln186_11_fu_8032_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_11_fu_8032_p2() {
-    mul_ln184_11_fu_8032_p2 = (!mul_ln184_11_fu_8032_p0.read().is_01() || !mul_ln184_11_fu_8032_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_11_fu_8032_p0.read()) * sc_bigint<32>(mul_ln184_11_fu_8032_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_11_fu_8032_p2() {
+    mul_ln186_11_fu_8032_p2 = (!mul_ln186_11_fu_8032_p0.read().is_01() || !mul_ln186_11_fu_8032_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_11_fu_8032_p0.read()) * sc_bigint<32>(mul_ln186_11_fu_8032_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_120_fu_12747_p0() {
-    mul_ln184_120_fu_12747_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_120_fu_12747_p0() {
+    mul_ln186_120_fu_12747_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_120_fu_12747_p1() {
-    mul_ln184_120_fu_12747_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_120_fu_12747_p1() {
+    mul_ln186_120_fu_12747_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_120_fu_12747_p2() {
-    mul_ln184_120_fu_12747_p2 = (!mul_ln184_120_fu_12747_p0.read().is_01() || !mul_ln184_120_fu_12747_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_120_fu_12747_p0.read()) * sc_bigint<32>(mul_ln184_120_fu_12747_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_120_fu_12747_p2() {
+    mul_ln186_120_fu_12747_p2 = (!mul_ln186_120_fu_12747_p0.read().is_01() || !mul_ln186_120_fu_12747_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_120_fu_12747_p0.read()) * sc_bigint<32>(mul_ln186_120_fu_12747_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_121_fu_12762_p0() {
-    mul_ln184_121_fu_12762_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_121_fu_12762_p0() {
+    mul_ln186_121_fu_12762_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_121_fu_12762_p1() {
-    mul_ln184_121_fu_12762_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_121_fu_12762_p1() {
+    mul_ln186_121_fu_12762_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_121_fu_12762_p2() {
-    mul_ln184_121_fu_12762_p2 = (!mul_ln184_121_fu_12762_p0.read().is_01() || !mul_ln184_121_fu_12762_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_121_fu_12762_p0.read()) * sc_bigint<32>(mul_ln184_121_fu_12762_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_121_fu_12762_p2() {
+    mul_ln186_121_fu_12762_p2 = (!mul_ln186_121_fu_12762_p0.read().is_01() || !mul_ln186_121_fu_12762_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_121_fu_12762_p0.read()) * sc_bigint<32>(mul_ln186_121_fu_12762_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_122_fu_12833_p0() {
-    mul_ln184_122_fu_12833_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_122_fu_12833_p0() {
+    mul_ln186_122_fu_12833_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_122_fu_12833_p1() {
-    mul_ln184_122_fu_12833_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_122_fu_12833_p1() {
+    mul_ln186_122_fu_12833_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_122_fu_12833_p2() {
-    mul_ln184_122_fu_12833_p2 = (!mul_ln184_122_fu_12833_p0.read().is_01() || !mul_ln184_122_fu_12833_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_122_fu_12833_p0.read()) * sc_bigint<32>(mul_ln184_122_fu_12833_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_122_fu_12833_p2() {
+    mul_ln186_122_fu_12833_p2 = (!mul_ln186_122_fu_12833_p0.read().is_01() || !mul_ln186_122_fu_12833_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_122_fu_12833_p0.read()) * sc_bigint<32>(mul_ln186_122_fu_12833_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_123_fu_12848_p0() {
-    mul_ln184_123_fu_12848_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_123_fu_12848_p0() {
+    mul_ln186_123_fu_12848_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_123_fu_12848_p1() {
-    mul_ln184_123_fu_12848_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_123_fu_12848_p1() {
+    mul_ln186_123_fu_12848_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_123_fu_12848_p2() {
-    mul_ln184_123_fu_12848_p2 = (!mul_ln184_123_fu_12848_p0.read().is_01() || !mul_ln184_123_fu_12848_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_123_fu_12848_p0.read()) * sc_bigint<32>(mul_ln184_123_fu_12848_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_123_fu_12848_p2() {
+    mul_ln186_123_fu_12848_p2 = (!mul_ln186_123_fu_12848_p0.read().is_01() || !mul_ln186_123_fu_12848_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_123_fu_12848_p0.read()) * sc_bigint<32>(mul_ln186_123_fu_12848_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_124_fu_12919_p0() {
-    mul_ln184_124_fu_12919_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_124_fu_12919_p0() {
+    mul_ln186_124_fu_12919_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_124_fu_12919_p1() {
-    mul_ln184_124_fu_12919_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_124_fu_12919_p1() {
+    mul_ln186_124_fu_12919_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_124_fu_12919_p2() {
-    mul_ln184_124_fu_12919_p2 = (!mul_ln184_124_fu_12919_p0.read().is_01() || !mul_ln184_124_fu_12919_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_124_fu_12919_p0.read()) * sc_bigint<32>(mul_ln184_124_fu_12919_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_124_fu_12919_p2() {
+    mul_ln186_124_fu_12919_p2 = (!mul_ln186_124_fu_12919_p0.read().is_01() || !mul_ln186_124_fu_12919_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_124_fu_12919_p0.read()) * sc_bigint<32>(mul_ln186_124_fu_12919_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_125_fu_12934_p0() {
-    mul_ln184_125_fu_12934_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_125_fu_12934_p0() {
+    mul_ln186_125_fu_12934_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_125_fu_12934_p1() {
-    mul_ln184_125_fu_12934_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_125_fu_12934_p1() {
+    mul_ln186_125_fu_12934_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_125_fu_12934_p2() {
-    mul_ln184_125_fu_12934_p2 = (!mul_ln184_125_fu_12934_p0.read().is_01() || !mul_ln184_125_fu_12934_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_125_fu_12934_p0.read()) * sc_bigint<32>(mul_ln184_125_fu_12934_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_125_fu_12934_p2() {
+    mul_ln186_125_fu_12934_p2 = (!mul_ln186_125_fu_12934_p0.read().is_01() || !mul_ln186_125_fu_12934_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_125_fu_12934_p0.read()) * sc_bigint<32>(mul_ln186_125_fu_12934_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_126_fu_13005_p0() {
-    mul_ln184_126_fu_13005_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_126_fu_13005_p0() {
+    mul_ln186_126_fu_13005_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_126_fu_13005_p1() {
-    mul_ln184_126_fu_13005_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_126_fu_13005_p1() {
+    mul_ln186_126_fu_13005_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_126_fu_13005_p2() {
-    mul_ln184_126_fu_13005_p2 = (!mul_ln184_126_fu_13005_p0.read().is_01() || !mul_ln184_126_fu_13005_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_126_fu_13005_p0.read()) * sc_bigint<32>(mul_ln184_126_fu_13005_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_126_fu_13005_p2() {
+    mul_ln186_126_fu_13005_p2 = (!mul_ln186_126_fu_13005_p0.read().is_01() || !mul_ln186_126_fu_13005_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_126_fu_13005_p0.read()) * sc_bigint<32>(mul_ln186_126_fu_13005_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_127_fu_13020_p0() {
-    mul_ln184_127_fu_13020_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_127_fu_13020_p0() {
+    mul_ln186_127_fu_13020_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_127_fu_13020_p1() {
-    mul_ln184_127_fu_13020_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_127_fu_13020_p1() {
+    mul_ln186_127_fu_13020_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_127_fu_13020_p2() {
-    mul_ln184_127_fu_13020_p2 = (!mul_ln184_127_fu_13020_p0.read().is_01() || !mul_ln184_127_fu_13020_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_127_fu_13020_p0.read()) * sc_bigint<32>(mul_ln184_127_fu_13020_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_127_fu_13020_p2() {
+    mul_ln186_127_fu_13020_p2 = (!mul_ln186_127_fu_13020_p0.read().is_01() || !mul_ln186_127_fu_13020_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_127_fu_13020_p0.read()) * sc_bigint<32>(mul_ln186_127_fu_13020_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_128_fu_13091_p0() {
-    mul_ln184_128_fu_13091_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_128_fu_13091_p0() {
+    mul_ln186_128_fu_13091_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_128_fu_13091_p1() {
-    mul_ln184_128_fu_13091_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_128_fu_13091_p1() {
+    mul_ln186_128_fu_13091_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_128_fu_13091_p2() {
-    mul_ln184_128_fu_13091_p2 = (!mul_ln184_128_fu_13091_p0.read().is_01() || !mul_ln184_128_fu_13091_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_128_fu_13091_p0.read()) * sc_bigint<32>(mul_ln184_128_fu_13091_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_128_fu_13091_p2() {
+    mul_ln186_128_fu_13091_p2 = (!mul_ln186_128_fu_13091_p0.read().is_01() || !mul_ln186_128_fu_13091_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_128_fu_13091_p0.read()) * sc_bigint<32>(mul_ln186_128_fu_13091_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_129_fu_13106_p0() {
-    mul_ln184_129_fu_13106_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_129_fu_13106_p0() {
+    mul_ln186_129_fu_13106_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_129_fu_13106_p1() {
-    mul_ln184_129_fu_13106_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_129_fu_13106_p1() {
+    mul_ln186_129_fu_13106_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_129_fu_13106_p2() {
-    mul_ln184_129_fu_13106_p2 = (!mul_ln184_129_fu_13106_p0.read().is_01() || !mul_ln184_129_fu_13106_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_129_fu_13106_p0.read()) * sc_bigint<32>(mul_ln184_129_fu_13106_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_129_fu_13106_p2() {
+    mul_ln186_129_fu_13106_p2 = (!mul_ln186_129_fu_13106_p0.read().is_01() || !mul_ln186_129_fu_13106_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_129_fu_13106_p0.read()) * sc_bigint<32>(mul_ln186_129_fu_13106_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_12_fu_8103_p0() {
-    mul_ln184_12_fu_8103_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_12_fu_8103_p0() {
+    mul_ln186_12_fu_8103_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_12_fu_8103_p1() {
-    mul_ln184_12_fu_8103_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_12_fu_8103_p1() {
+    mul_ln186_12_fu_8103_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_12_fu_8103_p2() {
-    mul_ln184_12_fu_8103_p2 = (!mul_ln184_12_fu_8103_p0.read().is_01() || !mul_ln184_12_fu_8103_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_12_fu_8103_p0.read()) * sc_bigint<32>(mul_ln184_12_fu_8103_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_12_fu_8103_p2() {
+    mul_ln186_12_fu_8103_p2 = (!mul_ln186_12_fu_8103_p0.read().is_01() || !mul_ln186_12_fu_8103_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_12_fu_8103_p0.read()) * sc_bigint<32>(mul_ln186_12_fu_8103_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_130_fu_13177_p0() {
-    mul_ln184_130_fu_13177_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_130_fu_13177_p0() {
+    mul_ln186_130_fu_13177_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_130_fu_13177_p1() {
-    mul_ln184_130_fu_13177_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_130_fu_13177_p1() {
+    mul_ln186_130_fu_13177_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_130_fu_13177_p2() {
-    mul_ln184_130_fu_13177_p2 = (!mul_ln184_130_fu_13177_p0.read().is_01() || !mul_ln184_130_fu_13177_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_130_fu_13177_p0.read()) * sc_bigint<32>(mul_ln184_130_fu_13177_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_130_fu_13177_p2() {
+    mul_ln186_130_fu_13177_p2 = (!mul_ln186_130_fu_13177_p0.read().is_01() || !mul_ln186_130_fu_13177_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_130_fu_13177_p0.read()) * sc_bigint<32>(mul_ln186_130_fu_13177_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_131_fu_13192_p0() {
-    mul_ln184_131_fu_13192_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_131_fu_13192_p0() {
+    mul_ln186_131_fu_13192_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_131_fu_13192_p1() {
-    mul_ln184_131_fu_13192_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_131_fu_13192_p1() {
+    mul_ln186_131_fu_13192_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_131_fu_13192_p2() {
-    mul_ln184_131_fu_13192_p2 = (!mul_ln184_131_fu_13192_p0.read().is_01() || !mul_ln184_131_fu_13192_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_131_fu_13192_p0.read()) * sc_bigint<32>(mul_ln184_131_fu_13192_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_131_fu_13192_p2() {
+    mul_ln186_131_fu_13192_p2 = (!mul_ln186_131_fu_13192_p0.read().is_01() || !mul_ln186_131_fu_13192_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_131_fu_13192_p0.read()) * sc_bigint<32>(mul_ln186_131_fu_13192_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_132_fu_13263_p0() {
-    mul_ln184_132_fu_13263_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_132_fu_13263_p0() {
+    mul_ln186_132_fu_13263_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_132_fu_13263_p1() {
-    mul_ln184_132_fu_13263_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_132_fu_13263_p1() {
+    mul_ln186_132_fu_13263_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_132_fu_13263_p2() {
-    mul_ln184_132_fu_13263_p2 = (!mul_ln184_132_fu_13263_p0.read().is_01() || !mul_ln184_132_fu_13263_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_132_fu_13263_p0.read()) * sc_bigint<32>(mul_ln184_132_fu_13263_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_132_fu_13263_p2() {
+    mul_ln186_132_fu_13263_p2 = (!mul_ln186_132_fu_13263_p0.read().is_01() || !mul_ln186_132_fu_13263_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_132_fu_13263_p0.read()) * sc_bigint<32>(mul_ln186_132_fu_13263_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_133_fu_13278_p0() {
-    mul_ln184_133_fu_13278_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_133_fu_13278_p0() {
+    mul_ln186_133_fu_13278_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_133_fu_13278_p1() {
-    mul_ln184_133_fu_13278_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_133_fu_13278_p1() {
+    mul_ln186_133_fu_13278_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_133_fu_13278_p2() {
-    mul_ln184_133_fu_13278_p2 = (!mul_ln184_133_fu_13278_p0.read().is_01() || !mul_ln184_133_fu_13278_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_133_fu_13278_p0.read()) * sc_bigint<32>(mul_ln184_133_fu_13278_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_133_fu_13278_p2() {
+    mul_ln186_133_fu_13278_p2 = (!mul_ln186_133_fu_13278_p0.read().is_01() || !mul_ln186_133_fu_13278_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_133_fu_13278_p0.read()) * sc_bigint<32>(mul_ln186_133_fu_13278_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_134_fu_13349_p0() {
-    mul_ln184_134_fu_13349_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_134_fu_13349_p0() {
+    mul_ln186_134_fu_13349_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_134_fu_13349_p1() {
-    mul_ln184_134_fu_13349_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_134_fu_13349_p1() {
+    mul_ln186_134_fu_13349_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_134_fu_13349_p2() {
-    mul_ln184_134_fu_13349_p2 = (!mul_ln184_134_fu_13349_p0.read().is_01() || !mul_ln184_134_fu_13349_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_134_fu_13349_p0.read()) * sc_bigint<32>(mul_ln184_134_fu_13349_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_134_fu_13349_p2() {
+    mul_ln186_134_fu_13349_p2 = (!mul_ln186_134_fu_13349_p0.read().is_01() || !mul_ln186_134_fu_13349_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_134_fu_13349_p0.read()) * sc_bigint<32>(mul_ln186_134_fu_13349_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_135_fu_13364_p0() {
-    mul_ln184_135_fu_13364_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_135_fu_13364_p0() {
+    mul_ln186_135_fu_13364_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_135_fu_13364_p1() {
-    mul_ln184_135_fu_13364_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_135_fu_13364_p1() {
+    mul_ln186_135_fu_13364_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_135_fu_13364_p2() {
-    mul_ln184_135_fu_13364_p2 = (!mul_ln184_135_fu_13364_p0.read().is_01() || !mul_ln184_135_fu_13364_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_135_fu_13364_p0.read()) * sc_bigint<32>(mul_ln184_135_fu_13364_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_135_fu_13364_p2() {
+    mul_ln186_135_fu_13364_p2 = (!mul_ln186_135_fu_13364_p0.read().is_01() || !mul_ln186_135_fu_13364_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_135_fu_13364_p0.read()) * sc_bigint<32>(mul_ln186_135_fu_13364_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_136_fu_13435_p0() {
-    mul_ln184_136_fu_13435_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_136_fu_13435_p0() {
+    mul_ln186_136_fu_13435_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_136_fu_13435_p1() {
-    mul_ln184_136_fu_13435_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_136_fu_13435_p1() {
+    mul_ln186_136_fu_13435_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_136_fu_13435_p2() {
-    mul_ln184_136_fu_13435_p2 = (!mul_ln184_136_fu_13435_p0.read().is_01() || !mul_ln184_136_fu_13435_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_136_fu_13435_p0.read()) * sc_bigint<32>(mul_ln184_136_fu_13435_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_136_fu_13435_p2() {
+    mul_ln186_136_fu_13435_p2 = (!mul_ln186_136_fu_13435_p0.read().is_01() || !mul_ln186_136_fu_13435_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_136_fu_13435_p0.read()) * sc_bigint<32>(mul_ln186_136_fu_13435_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_137_fu_13450_p0() {
-    mul_ln184_137_fu_13450_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_137_fu_13450_p0() {
+    mul_ln186_137_fu_13450_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_137_fu_13450_p1() {
-    mul_ln184_137_fu_13450_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_137_fu_13450_p1() {
+    mul_ln186_137_fu_13450_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_137_fu_13450_p2() {
-    mul_ln184_137_fu_13450_p2 = (!mul_ln184_137_fu_13450_p0.read().is_01() || !mul_ln184_137_fu_13450_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_137_fu_13450_p0.read()) * sc_bigint<32>(mul_ln184_137_fu_13450_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_137_fu_13450_p2() {
+    mul_ln186_137_fu_13450_p2 = (!mul_ln186_137_fu_13450_p0.read().is_01() || !mul_ln186_137_fu_13450_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_137_fu_13450_p0.read()) * sc_bigint<32>(mul_ln186_137_fu_13450_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_138_fu_13521_p0() {
-    mul_ln184_138_fu_13521_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_138_fu_13521_p0() {
+    mul_ln186_138_fu_13521_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_138_fu_13521_p1() {
-    mul_ln184_138_fu_13521_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_138_fu_13521_p1() {
+    mul_ln186_138_fu_13521_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_138_fu_13521_p2() {
-    mul_ln184_138_fu_13521_p2 = (!mul_ln184_138_fu_13521_p0.read().is_01() || !mul_ln184_138_fu_13521_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_138_fu_13521_p0.read()) * sc_bigint<32>(mul_ln184_138_fu_13521_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_138_fu_13521_p2() {
+    mul_ln186_138_fu_13521_p2 = (!mul_ln186_138_fu_13521_p0.read().is_01() || !mul_ln186_138_fu_13521_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_138_fu_13521_p0.read()) * sc_bigint<32>(mul_ln186_138_fu_13521_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_139_fu_13536_p0() {
-    mul_ln184_139_fu_13536_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_139_fu_13536_p0() {
+    mul_ln186_139_fu_13536_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_139_fu_13536_p1() {
-    mul_ln184_139_fu_13536_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_139_fu_13536_p1() {
+    mul_ln186_139_fu_13536_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_139_fu_13536_p2() {
-    mul_ln184_139_fu_13536_p2 = (!mul_ln184_139_fu_13536_p0.read().is_01() || !mul_ln184_139_fu_13536_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_139_fu_13536_p0.read()) * sc_bigint<32>(mul_ln184_139_fu_13536_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_139_fu_13536_p2() {
+    mul_ln186_139_fu_13536_p2 = (!mul_ln186_139_fu_13536_p0.read().is_01() || !mul_ln186_139_fu_13536_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_139_fu_13536_p0.read()) * sc_bigint<32>(mul_ln186_139_fu_13536_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_13_fu_8118_p0() {
-    mul_ln184_13_fu_8118_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_13_fu_8118_p0() {
+    mul_ln186_13_fu_8118_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_13_fu_8118_p1() {
-    mul_ln184_13_fu_8118_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_13_fu_8118_p1() {
+    mul_ln186_13_fu_8118_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_13_fu_8118_p2() {
-    mul_ln184_13_fu_8118_p2 = (!mul_ln184_13_fu_8118_p0.read().is_01() || !mul_ln184_13_fu_8118_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_13_fu_8118_p0.read()) * sc_bigint<32>(mul_ln184_13_fu_8118_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_13_fu_8118_p2() {
+    mul_ln186_13_fu_8118_p2 = (!mul_ln186_13_fu_8118_p0.read().is_01() || !mul_ln186_13_fu_8118_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_13_fu_8118_p0.read()) * sc_bigint<32>(mul_ln186_13_fu_8118_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_140_fu_13607_p0() {
-    mul_ln184_140_fu_13607_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_140_fu_13607_p0() {
+    mul_ln186_140_fu_13607_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_140_fu_13607_p1() {
-    mul_ln184_140_fu_13607_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_140_fu_13607_p1() {
+    mul_ln186_140_fu_13607_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_140_fu_13607_p2() {
-    mul_ln184_140_fu_13607_p2 = (!mul_ln184_140_fu_13607_p0.read().is_01() || !mul_ln184_140_fu_13607_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_140_fu_13607_p0.read()) * sc_bigint<32>(mul_ln184_140_fu_13607_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_140_fu_13607_p2() {
+    mul_ln186_140_fu_13607_p2 = (!mul_ln186_140_fu_13607_p0.read().is_01() || !mul_ln186_140_fu_13607_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_140_fu_13607_p0.read()) * sc_bigint<32>(mul_ln186_140_fu_13607_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_141_fu_13622_p0() {
-    mul_ln184_141_fu_13622_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_141_fu_13622_p0() {
+    mul_ln186_141_fu_13622_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_141_fu_13622_p1() {
-    mul_ln184_141_fu_13622_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_141_fu_13622_p1() {
+    mul_ln186_141_fu_13622_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_141_fu_13622_p2() {
-    mul_ln184_141_fu_13622_p2 = (!mul_ln184_141_fu_13622_p0.read().is_01() || !mul_ln184_141_fu_13622_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_141_fu_13622_p0.read()) * sc_bigint<32>(mul_ln184_141_fu_13622_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_141_fu_13622_p2() {
+    mul_ln186_141_fu_13622_p2 = (!mul_ln186_141_fu_13622_p0.read().is_01() || !mul_ln186_141_fu_13622_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_141_fu_13622_p0.read()) * sc_bigint<32>(mul_ln186_141_fu_13622_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_142_fu_13693_p0() {
-    mul_ln184_142_fu_13693_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_142_fu_13693_p0() {
+    mul_ln186_142_fu_13693_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_142_fu_13693_p1() {
-    mul_ln184_142_fu_13693_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_142_fu_13693_p1() {
+    mul_ln186_142_fu_13693_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_142_fu_13693_p2() {
-    mul_ln184_142_fu_13693_p2 = (!mul_ln184_142_fu_13693_p0.read().is_01() || !mul_ln184_142_fu_13693_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_142_fu_13693_p0.read()) * sc_bigint<32>(mul_ln184_142_fu_13693_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_142_fu_13693_p2() {
+    mul_ln186_142_fu_13693_p2 = (!mul_ln186_142_fu_13693_p0.read().is_01() || !mul_ln186_142_fu_13693_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_142_fu_13693_p0.read()) * sc_bigint<32>(mul_ln186_142_fu_13693_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_143_fu_13708_p0() {
-    mul_ln184_143_fu_13708_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_143_fu_13708_p0() {
+    mul_ln186_143_fu_13708_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_143_fu_13708_p1() {
-    mul_ln184_143_fu_13708_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_143_fu_13708_p1() {
+    mul_ln186_143_fu_13708_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_143_fu_13708_p2() {
-    mul_ln184_143_fu_13708_p2 = (!mul_ln184_143_fu_13708_p0.read().is_01() || !mul_ln184_143_fu_13708_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_143_fu_13708_p0.read()) * sc_bigint<32>(mul_ln184_143_fu_13708_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_143_fu_13708_p2() {
+    mul_ln186_143_fu_13708_p2 = (!mul_ln186_143_fu_13708_p0.read().is_01() || !mul_ln186_143_fu_13708_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_143_fu_13708_p0.read()) * sc_bigint<32>(mul_ln186_143_fu_13708_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_144_fu_13779_p0() {
-    mul_ln184_144_fu_13779_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_144_fu_13779_p0() {
+    mul_ln186_144_fu_13779_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_144_fu_13779_p1() {
-    mul_ln184_144_fu_13779_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_144_fu_13779_p1() {
+    mul_ln186_144_fu_13779_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_144_fu_13779_p2() {
-    mul_ln184_144_fu_13779_p2 = (!mul_ln184_144_fu_13779_p0.read().is_01() || !mul_ln184_144_fu_13779_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_144_fu_13779_p0.read()) * sc_bigint<32>(mul_ln184_144_fu_13779_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_144_fu_13779_p2() {
+    mul_ln186_144_fu_13779_p2 = (!mul_ln186_144_fu_13779_p0.read().is_01() || !mul_ln186_144_fu_13779_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_144_fu_13779_p0.read()) * sc_bigint<32>(mul_ln186_144_fu_13779_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_145_fu_13794_p0() {
-    mul_ln184_145_fu_13794_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_145_fu_13794_p0() {
+    mul_ln186_145_fu_13794_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_145_fu_13794_p1() {
-    mul_ln184_145_fu_13794_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_145_fu_13794_p1() {
+    mul_ln186_145_fu_13794_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_145_fu_13794_p2() {
-    mul_ln184_145_fu_13794_p2 = (!mul_ln184_145_fu_13794_p0.read().is_01() || !mul_ln184_145_fu_13794_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_145_fu_13794_p0.read()) * sc_bigint<32>(mul_ln184_145_fu_13794_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_145_fu_13794_p2() {
+    mul_ln186_145_fu_13794_p2 = (!mul_ln186_145_fu_13794_p0.read().is_01() || !mul_ln186_145_fu_13794_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_145_fu_13794_p0.read()) * sc_bigint<32>(mul_ln186_145_fu_13794_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_146_fu_13865_p0() {
-    mul_ln184_146_fu_13865_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_146_fu_13865_p0() {
+    mul_ln186_146_fu_13865_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_146_fu_13865_p1() {
-    mul_ln184_146_fu_13865_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_146_fu_13865_p1() {
+    mul_ln186_146_fu_13865_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_146_fu_13865_p2() {
-    mul_ln184_146_fu_13865_p2 = (!mul_ln184_146_fu_13865_p0.read().is_01() || !mul_ln184_146_fu_13865_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_146_fu_13865_p0.read()) * sc_bigint<32>(mul_ln184_146_fu_13865_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_146_fu_13865_p2() {
+    mul_ln186_146_fu_13865_p2 = (!mul_ln186_146_fu_13865_p0.read().is_01() || !mul_ln186_146_fu_13865_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_146_fu_13865_p0.read()) * sc_bigint<32>(mul_ln186_146_fu_13865_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_147_fu_13880_p0() {
-    mul_ln184_147_fu_13880_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_147_fu_13880_p0() {
+    mul_ln186_147_fu_13880_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_147_fu_13880_p1() {
-    mul_ln184_147_fu_13880_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_147_fu_13880_p1() {
+    mul_ln186_147_fu_13880_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_147_fu_13880_p2() {
-    mul_ln184_147_fu_13880_p2 = (!mul_ln184_147_fu_13880_p0.read().is_01() || !mul_ln184_147_fu_13880_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_147_fu_13880_p0.read()) * sc_bigint<32>(mul_ln184_147_fu_13880_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_147_fu_13880_p2() {
+    mul_ln186_147_fu_13880_p2 = (!mul_ln186_147_fu_13880_p0.read().is_01() || !mul_ln186_147_fu_13880_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_147_fu_13880_p0.read()) * sc_bigint<32>(mul_ln186_147_fu_13880_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_148_fu_13951_p0() {
-    mul_ln184_148_fu_13951_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_148_fu_13951_p0() {
+    mul_ln186_148_fu_13951_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_148_fu_13951_p1() {
-    mul_ln184_148_fu_13951_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_148_fu_13951_p1() {
+    mul_ln186_148_fu_13951_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_148_fu_13951_p2() {
-    mul_ln184_148_fu_13951_p2 = (!mul_ln184_148_fu_13951_p0.read().is_01() || !mul_ln184_148_fu_13951_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_148_fu_13951_p0.read()) * sc_bigint<32>(mul_ln184_148_fu_13951_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_148_fu_13951_p2() {
+    mul_ln186_148_fu_13951_p2 = (!mul_ln186_148_fu_13951_p0.read().is_01() || !mul_ln186_148_fu_13951_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_148_fu_13951_p0.read()) * sc_bigint<32>(mul_ln186_148_fu_13951_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_149_fu_13966_p0() {
-    mul_ln184_149_fu_13966_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_149_fu_13966_p0() {
+    mul_ln186_149_fu_13966_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_149_fu_13966_p1() {
-    mul_ln184_149_fu_13966_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_149_fu_13966_p1() {
+    mul_ln186_149_fu_13966_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_149_fu_13966_p2() {
-    mul_ln184_149_fu_13966_p2 = (!mul_ln184_149_fu_13966_p0.read().is_01() || !mul_ln184_149_fu_13966_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_149_fu_13966_p0.read()) * sc_bigint<32>(mul_ln184_149_fu_13966_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_149_fu_13966_p2() {
+    mul_ln186_149_fu_13966_p2 = (!mul_ln186_149_fu_13966_p0.read().is_01() || !mul_ln186_149_fu_13966_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_149_fu_13966_p0.read()) * sc_bigint<32>(mul_ln186_149_fu_13966_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_14_fu_8189_p0() {
-    mul_ln184_14_fu_8189_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_14_fu_8189_p0() {
+    mul_ln186_14_fu_8189_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_14_fu_8189_p1() {
-    mul_ln184_14_fu_8189_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_14_fu_8189_p1() {
+    mul_ln186_14_fu_8189_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_14_fu_8189_p2() {
-    mul_ln184_14_fu_8189_p2 = (!mul_ln184_14_fu_8189_p0.read().is_01() || !mul_ln184_14_fu_8189_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_14_fu_8189_p0.read()) * sc_bigint<32>(mul_ln184_14_fu_8189_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_14_fu_8189_p2() {
+    mul_ln186_14_fu_8189_p2 = (!mul_ln186_14_fu_8189_p0.read().is_01() || !mul_ln186_14_fu_8189_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_14_fu_8189_p0.read()) * sc_bigint<32>(mul_ln186_14_fu_8189_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_150_fu_14037_p0() {
-    mul_ln184_150_fu_14037_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_150_fu_14037_p0() {
+    mul_ln186_150_fu_14037_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_150_fu_14037_p1() {
-    mul_ln184_150_fu_14037_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_150_fu_14037_p1() {
+    mul_ln186_150_fu_14037_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_150_fu_14037_p2() {
-    mul_ln184_150_fu_14037_p2 = (!mul_ln184_150_fu_14037_p0.read().is_01() || !mul_ln184_150_fu_14037_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_150_fu_14037_p0.read()) * sc_bigint<32>(mul_ln184_150_fu_14037_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_150_fu_14037_p2() {
+    mul_ln186_150_fu_14037_p2 = (!mul_ln186_150_fu_14037_p0.read().is_01() || !mul_ln186_150_fu_14037_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_150_fu_14037_p0.read()) * sc_bigint<32>(mul_ln186_150_fu_14037_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_151_fu_14052_p0() {
-    mul_ln184_151_fu_14052_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_151_fu_14052_p0() {
+    mul_ln186_151_fu_14052_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_151_fu_14052_p1() {
-    mul_ln184_151_fu_14052_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_151_fu_14052_p1() {
+    mul_ln186_151_fu_14052_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_151_fu_14052_p2() {
-    mul_ln184_151_fu_14052_p2 = (!mul_ln184_151_fu_14052_p0.read().is_01() || !mul_ln184_151_fu_14052_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_151_fu_14052_p0.read()) * sc_bigint<32>(mul_ln184_151_fu_14052_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_151_fu_14052_p2() {
+    mul_ln186_151_fu_14052_p2 = (!mul_ln186_151_fu_14052_p0.read().is_01() || !mul_ln186_151_fu_14052_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_151_fu_14052_p0.read()) * sc_bigint<32>(mul_ln186_151_fu_14052_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_152_fu_14123_p0() {
-    mul_ln184_152_fu_14123_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_152_fu_14123_p0() {
+    mul_ln186_152_fu_14123_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_152_fu_14123_p1() {
-    mul_ln184_152_fu_14123_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_152_fu_14123_p1() {
+    mul_ln186_152_fu_14123_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_152_fu_14123_p2() {
-    mul_ln184_152_fu_14123_p2 = (!mul_ln184_152_fu_14123_p0.read().is_01() || !mul_ln184_152_fu_14123_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_152_fu_14123_p0.read()) * sc_bigint<32>(mul_ln184_152_fu_14123_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_152_fu_14123_p2() {
+    mul_ln186_152_fu_14123_p2 = (!mul_ln186_152_fu_14123_p0.read().is_01() || !mul_ln186_152_fu_14123_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_152_fu_14123_p0.read()) * sc_bigint<32>(mul_ln186_152_fu_14123_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_153_fu_14138_p0() {
-    mul_ln184_153_fu_14138_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_153_fu_14138_p0() {
+    mul_ln186_153_fu_14138_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_153_fu_14138_p1() {
-    mul_ln184_153_fu_14138_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_153_fu_14138_p1() {
+    mul_ln186_153_fu_14138_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_153_fu_14138_p2() {
-    mul_ln184_153_fu_14138_p2 = (!mul_ln184_153_fu_14138_p0.read().is_01() || !mul_ln184_153_fu_14138_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_153_fu_14138_p0.read()) * sc_bigint<32>(mul_ln184_153_fu_14138_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_153_fu_14138_p2() {
+    mul_ln186_153_fu_14138_p2 = (!mul_ln186_153_fu_14138_p0.read().is_01() || !mul_ln186_153_fu_14138_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_153_fu_14138_p0.read()) * sc_bigint<32>(mul_ln186_153_fu_14138_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_154_fu_14209_p0() {
-    mul_ln184_154_fu_14209_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_154_fu_14209_p0() {
+    mul_ln186_154_fu_14209_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_154_fu_14209_p1() {
-    mul_ln184_154_fu_14209_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_154_fu_14209_p1() {
+    mul_ln186_154_fu_14209_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_154_fu_14209_p2() {
-    mul_ln184_154_fu_14209_p2 = (!mul_ln184_154_fu_14209_p0.read().is_01() || !mul_ln184_154_fu_14209_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_154_fu_14209_p0.read()) * sc_bigint<32>(mul_ln184_154_fu_14209_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_154_fu_14209_p2() {
+    mul_ln186_154_fu_14209_p2 = (!mul_ln186_154_fu_14209_p0.read().is_01() || !mul_ln186_154_fu_14209_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_154_fu_14209_p0.read()) * sc_bigint<32>(mul_ln186_154_fu_14209_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_155_fu_14224_p0() {
-    mul_ln184_155_fu_14224_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_155_fu_14224_p0() {
+    mul_ln186_155_fu_14224_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_155_fu_14224_p1() {
-    mul_ln184_155_fu_14224_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_155_fu_14224_p1() {
+    mul_ln186_155_fu_14224_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_155_fu_14224_p2() {
-    mul_ln184_155_fu_14224_p2 = (!mul_ln184_155_fu_14224_p0.read().is_01() || !mul_ln184_155_fu_14224_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_155_fu_14224_p0.read()) * sc_bigint<32>(mul_ln184_155_fu_14224_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_155_fu_14224_p2() {
+    mul_ln186_155_fu_14224_p2 = (!mul_ln186_155_fu_14224_p0.read().is_01() || !mul_ln186_155_fu_14224_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_155_fu_14224_p0.read()) * sc_bigint<32>(mul_ln186_155_fu_14224_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_156_fu_14295_p0() {
-    mul_ln184_156_fu_14295_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_156_fu_14295_p0() {
+    mul_ln186_156_fu_14295_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_156_fu_14295_p1() {
-    mul_ln184_156_fu_14295_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_156_fu_14295_p1() {
+    mul_ln186_156_fu_14295_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_156_fu_14295_p2() {
-    mul_ln184_156_fu_14295_p2 = (!mul_ln184_156_fu_14295_p0.read().is_01() || !mul_ln184_156_fu_14295_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_156_fu_14295_p0.read()) * sc_bigint<32>(mul_ln184_156_fu_14295_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_156_fu_14295_p2() {
+    mul_ln186_156_fu_14295_p2 = (!mul_ln186_156_fu_14295_p0.read().is_01() || !mul_ln186_156_fu_14295_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_156_fu_14295_p0.read()) * sc_bigint<32>(mul_ln186_156_fu_14295_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_157_fu_14310_p0() {
-    mul_ln184_157_fu_14310_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_157_fu_14310_p0() {
+    mul_ln186_157_fu_14310_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_157_fu_14310_p1() {
-    mul_ln184_157_fu_14310_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_157_fu_14310_p1() {
+    mul_ln186_157_fu_14310_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_157_fu_14310_p2() {
-    mul_ln184_157_fu_14310_p2 = (!mul_ln184_157_fu_14310_p0.read().is_01() || !mul_ln184_157_fu_14310_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_157_fu_14310_p0.read()) * sc_bigint<32>(mul_ln184_157_fu_14310_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_157_fu_14310_p2() {
+    mul_ln186_157_fu_14310_p2 = (!mul_ln186_157_fu_14310_p0.read().is_01() || !mul_ln186_157_fu_14310_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_157_fu_14310_p0.read()) * sc_bigint<32>(mul_ln186_157_fu_14310_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_158_fu_14381_p0() {
-    mul_ln184_158_fu_14381_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_158_fu_14381_p0() {
+    mul_ln186_158_fu_14381_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_158_fu_14381_p1() {
-    mul_ln184_158_fu_14381_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_158_fu_14381_p1() {
+    mul_ln186_158_fu_14381_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_158_fu_14381_p2() {
-    mul_ln184_158_fu_14381_p2 = (!mul_ln184_158_fu_14381_p0.read().is_01() || !mul_ln184_158_fu_14381_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_158_fu_14381_p0.read()) * sc_bigint<32>(mul_ln184_158_fu_14381_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_158_fu_14381_p2() {
+    mul_ln186_158_fu_14381_p2 = (!mul_ln186_158_fu_14381_p0.read().is_01() || !mul_ln186_158_fu_14381_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_158_fu_14381_p0.read()) * sc_bigint<32>(mul_ln186_158_fu_14381_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_159_fu_14396_p0() {
-    mul_ln184_159_fu_14396_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_159_fu_14396_p0() {
+    mul_ln186_159_fu_14396_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_159_fu_14396_p1() {
-    mul_ln184_159_fu_14396_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_159_fu_14396_p1() {
+    mul_ln186_159_fu_14396_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_159_fu_14396_p2() {
-    mul_ln184_159_fu_14396_p2 = (!mul_ln184_159_fu_14396_p0.read().is_01() || !mul_ln184_159_fu_14396_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_159_fu_14396_p0.read()) * sc_bigint<32>(mul_ln184_159_fu_14396_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_159_fu_14396_p2() {
+    mul_ln186_159_fu_14396_p2 = (!mul_ln186_159_fu_14396_p0.read().is_01() || !mul_ln186_159_fu_14396_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_159_fu_14396_p0.read()) * sc_bigint<32>(mul_ln186_159_fu_14396_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_15_fu_8204_p0() {
-    mul_ln184_15_fu_8204_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_15_fu_8204_p0() {
+    mul_ln186_15_fu_8204_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_15_fu_8204_p1() {
-    mul_ln184_15_fu_8204_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_15_fu_8204_p1() {
+    mul_ln186_15_fu_8204_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_15_fu_8204_p2() {
-    mul_ln184_15_fu_8204_p2 = (!mul_ln184_15_fu_8204_p0.read().is_01() || !mul_ln184_15_fu_8204_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_15_fu_8204_p0.read()) * sc_bigint<32>(mul_ln184_15_fu_8204_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_15_fu_8204_p2() {
+    mul_ln186_15_fu_8204_p2 = (!mul_ln186_15_fu_8204_p0.read().is_01() || !mul_ln186_15_fu_8204_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_15_fu_8204_p0.read()) * sc_bigint<32>(mul_ln186_15_fu_8204_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_160_fu_14467_p0() {
-    mul_ln184_160_fu_14467_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_160_fu_14467_p0() {
+    mul_ln186_160_fu_14467_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_160_fu_14467_p1() {
-    mul_ln184_160_fu_14467_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_160_fu_14467_p1() {
+    mul_ln186_160_fu_14467_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_160_fu_14467_p2() {
-    mul_ln184_160_fu_14467_p2 = (!mul_ln184_160_fu_14467_p0.read().is_01() || !mul_ln184_160_fu_14467_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_160_fu_14467_p0.read()) * sc_bigint<32>(mul_ln184_160_fu_14467_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_160_fu_14467_p2() {
+    mul_ln186_160_fu_14467_p2 = (!mul_ln186_160_fu_14467_p0.read().is_01() || !mul_ln186_160_fu_14467_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_160_fu_14467_p0.read()) * sc_bigint<32>(mul_ln186_160_fu_14467_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_161_fu_14482_p0() {
-    mul_ln184_161_fu_14482_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_161_fu_14482_p0() {
+    mul_ln186_161_fu_14482_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_161_fu_14482_p1() {
-    mul_ln184_161_fu_14482_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_161_fu_14482_p1() {
+    mul_ln186_161_fu_14482_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_161_fu_14482_p2() {
-    mul_ln184_161_fu_14482_p2 = (!mul_ln184_161_fu_14482_p0.read().is_01() || !mul_ln184_161_fu_14482_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_161_fu_14482_p0.read()) * sc_bigint<32>(mul_ln184_161_fu_14482_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_161_fu_14482_p2() {
+    mul_ln186_161_fu_14482_p2 = (!mul_ln186_161_fu_14482_p0.read().is_01() || !mul_ln186_161_fu_14482_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_161_fu_14482_p0.read()) * sc_bigint<32>(mul_ln186_161_fu_14482_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_162_fu_14553_p0() {
-    mul_ln184_162_fu_14553_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_162_fu_14553_p0() {
+    mul_ln186_162_fu_14553_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_162_fu_14553_p1() {
-    mul_ln184_162_fu_14553_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_162_fu_14553_p1() {
+    mul_ln186_162_fu_14553_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_162_fu_14553_p2() {
-    mul_ln184_162_fu_14553_p2 = (!mul_ln184_162_fu_14553_p0.read().is_01() || !mul_ln184_162_fu_14553_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_162_fu_14553_p0.read()) * sc_bigint<32>(mul_ln184_162_fu_14553_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_162_fu_14553_p2() {
+    mul_ln186_162_fu_14553_p2 = (!mul_ln186_162_fu_14553_p0.read().is_01() || !mul_ln186_162_fu_14553_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_162_fu_14553_p0.read()) * sc_bigint<32>(mul_ln186_162_fu_14553_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_163_fu_14568_p0() {
-    mul_ln184_163_fu_14568_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_163_fu_14568_p0() {
+    mul_ln186_163_fu_14568_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_163_fu_14568_p1() {
-    mul_ln184_163_fu_14568_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_163_fu_14568_p1() {
+    mul_ln186_163_fu_14568_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_163_fu_14568_p2() {
-    mul_ln184_163_fu_14568_p2 = (!mul_ln184_163_fu_14568_p0.read().is_01() || !mul_ln184_163_fu_14568_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_163_fu_14568_p0.read()) * sc_bigint<32>(mul_ln184_163_fu_14568_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_163_fu_14568_p2() {
+    mul_ln186_163_fu_14568_p2 = (!mul_ln186_163_fu_14568_p0.read().is_01() || !mul_ln186_163_fu_14568_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_163_fu_14568_p0.read()) * sc_bigint<32>(mul_ln186_163_fu_14568_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_164_fu_14639_p0() {
-    mul_ln184_164_fu_14639_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_164_fu_14639_p0() {
+    mul_ln186_164_fu_14639_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_164_fu_14639_p1() {
-    mul_ln184_164_fu_14639_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_164_fu_14639_p1() {
+    mul_ln186_164_fu_14639_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_164_fu_14639_p2() {
-    mul_ln184_164_fu_14639_p2 = (!mul_ln184_164_fu_14639_p0.read().is_01() || !mul_ln184_164_fu_14639_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_164_fu_14639_p0.read()) * sc_bigint<32>(mul_ln184_164_fu_14639_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_164_fu_14639_p2() {
+    mul_ln186_164_fu_14639_p2 = (!mul_ln186_164_fu_14639_p0.read().is_01() || !mul_ln186_164_fu_14639_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_164_fu_14639_p0.read()) * sc_bigint<32>(mul_ln186_164_fu_14639_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_165_fu_14654_p0() {
-    mul_ln184_165_fu_14654_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_165_fu_14654_p0() {
+    mul_ln186_165_fu_14654_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_165_fu_14654_p1() {
-    mul_ln184_165_fu_14654_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_165_fu_14654_p1() {
+    mul_ln186_165_fu_14654_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_165_fu_14654_p2() {
-    mul_ln184_165_fu_14654_p2 = (!mul_ln184_165_fu_14654_p0.read().is_01() || !mul_ln184_165_fu_14654_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_165_fu_14654_p0.read()) * sc_bigint<32>(mul_ln184_165_fu_14654_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_165_fu_14654_p2() {
+    mul_ln186_165_fu_14654_p2 = (!mul_ln186_165_fu_14654_p0.read().is_01() || !mul_ln186_165_fu_14654_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_165_fu_14654_p0.read()) * sc_bigint<32>(mul_ln186_165_fu_14654_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_166_fu_14725_p0() {
-    mul_ln184_166_fu_14725_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_166_fu_14725_p0() {
+    mul_ln186_166_fu_14725_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_166_fu_14725_p1() {
-    mul_ln184_166_fu_14725_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_166_fu_14725_p1() {
+    mul_ln186_166_fu_14725_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_166_fu_14725_p2() {
-    mul_ln184_166_fu_14725_p2 = (!mul_ln184_166_fu_14725_p0.read().is_01() || !mul_ln184_166_fu_14725_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_166_fu_14725_p0.read()) * sc_bigint<32>(mul_ln184_166_fu_14725_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_166_fu_14725_p2() {
+    mul_ln186_166_fu_14725_p2 = (!mul_ln186_166_fu_14725_p0.read().is_01() || !mul_ln186_166_fu_14725_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_166_fu_14725_p0.read()) * sc_bigint<32>(mul_ln186_166_fu_14725_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_167_fu_14740_p0() {
-    mul_ln184_167_fu_14740_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_167_fu_14740_p0() {
+    mul_ln186_167_fu_14740_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_167_fu_14740_p1() {
-    mul_ln184_167_fu_14740_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_167_fu_14740_p1() {
+    mul_ln186_167_fu_14740_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_167_fu_14740_p2() {
-    mul_ln184_167_fu_14740_p2 = (!mul_ln184_167_fu_14740_p0.read().is_01() || !mul_ln184_167_fu_14740_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_167_fu_14740_p0.read()) * sc_bigint<32>(mul_ln184_167_fu_14740_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_167_fu_14740_p2() {
+    mul_ln186_167_fu_14740_p2 = (!mul_ln186_167_fu_14740_p0.read().is_01() || !mul_ln186_167_fu_14740_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_167_fu_14740_p0.read()) * sc_bigint<32>(mul_ln186_167_fu_14740_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_168_fu_14811_p0() {
-    mul_ln184_168_fu_14811_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_168_fu_14811_p0() {
+    mul_ln186_168_fu_14811_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_168_fu_14811_p1() {
-    mul_ln184_168_fu_14811_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_168_fu_14811_p1() {
+    mul_ln186_168_fu_14811_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_168_fu_14811_p2() {
-    mul_ln184_168_fu_14811_p2 = (!mul_ln184_168_fu_14811_p0.read().is_01() || !mul_ln184_168_fu_14811_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_168_fu_14811_p0.read()) * sc_bigint<32>(mul_ln184_168_fu_14811_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_168_fu_14811_p2() {
+    mul_ln186_168_fu_14811_p2 = (!mul_ln186_168_fu_14811_p0.read().is_01() || !mul_ln186_168_fu_14811_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_168_fu_14811_p0.read()) * sc_bigint<32>(mul_ln186_168_fu_14811_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_169_fu_14826_p0() {
-    mul_ln184_169_fu_14826_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_169_fu_14826_p0() {
+    mul_ln186_169_fu_14826_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_169_fu_14826_p1() {
-    mul_ln184_169_fu_14826_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_169_fu_14826_p1() {
+    mul_ln186_169_fu_14826_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_169_fu_14826_p2() {
-    mul_ln184_169_fu_14826_p2 = (!mul_ln184_169_fu_14826_p0.read().is_01() || !mul_ln184_169_fu_14826_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_169_fu_14826_p0.read()) * sc_bigint<32>(mul_ln184_169_fu_14826_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_169_fu_14826_p2() {
+    mul_ln186_169_fu_14826_p2 = (!mul_ln186_169_fu_14826_p0.read().is_01() || !mul_ln186_169_fu_14826_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_169_fu_14826_p0.read()) * sc_bigint<32>(mul_ln186_169_fu_14826_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_16_fu_8275_p0() {
-    mul_ln184_16_fu_8275_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_16_fu_8275_p0() {
+    mul_ln186_16_fu_8275_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_16_fu_8275_p1() {
-    mul_ln184_16_fu_8275_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_16_fu_8275_p1() {
+    mul_ln186_16_fu_8275_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_16_fu_8275_p2() {
-    mul_ln184_16_fu_8275_p2 = (!mul_ln184_16_fu_8275_p0.read().is_01() || !mul_ln184_16_fu_8275_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_16_fu_8275_p0.read()) * sc_bigint<32>(mul_ln184_16_fu_8275_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_16_fu_8275_p2() {
+    mul_ln186_16_fu_8275_p2 = (!mul_ln186_16_fu_8275_p0.read().is_01() || !mul_ln186_16_fu_8275_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_16_fu_8275_p0.read()) * sc_bigint<32>(mul_ln186_16_fu_8275_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_170_fu_14897_p0() {
-    mul_ln184_170_fu_14897_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_170_fu_14897_p0() {
+    mul_ln186_170_fu_14897_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_170_fu_14897_p1() {
-    mul_ln184_170_fu_14897_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_170_fu_14897_p1() {
+    mul_ln186_170_fu_14897_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_170_fu_14897_p2() {
-    mul_ln184_170_fu_14897_p2 = (!mul_ln184_170_fu_14897_p0.read().is_01() || !mul_ln184_170_fu_14897_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_170_fu_14897_p0.read()) * sc_bigint<32>(mul_ln184_170_fu_14897_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_170_fu_14897_p2() {
+    mul_ln186_170_fu_14897_p2 = (!mul_ln186_170_fu_14897_p0.read().is_01() || !mul_ln186_170_fu_14897_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_170_fu_14897_p0.read()) * sc_bigint<32>(mul_ln186_170_fu_14897_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_171_fu_14912_p0() {
-    mul_ln184_171_fu_14912_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_171_fu_14912_p0() {
+    mul_ln186_171_fu_14912_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_171_fu_14912_p1() {
-    mul_ln184_171_fu_14912_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_171_fu_14912_p1() {
+    mul_ln186_171_fu_14912_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_171_fu_14912_p2() {
-    mul_ln184_171_fu_14912_p2 = (!mul_ln184_171_fu_14912_p0.read().is_01() || !mul_ln184_171_fu_14912_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_171_fu_14912_p0.read()) * sc_bigint<32>(mul_ln184_171_fu_14912_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_171_fu_14912_p2() {
+    mul_ln186_171_fu_14912_p2 = (!mul_ln186_171_fu_14912_p0.read().is_01() || !mul_ln186_171_fu_14912_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_171_fu_14912_p0.read()) * sc_bigint<32>(mul_ln186_171_fu_14912_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_172_fu_14983_p0() {
-    mul_ln184_172_fu_14983_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_172_fu_14983_p0() {
+    mul_ln186_172_fu_14983_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_172_fu_14983_p1() {
-    mul_ln184_172_fu_14983_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_172_fu_14983_p1() {
+    mul_ln186_172_fu_14983_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_172_fu_14983_p2() {
-    mul_ln184_172_fu_14983_p2 = (!mul_ln184_172_fu_14983_p0.read().is_01() || !mul_ln184_172_fu_14983_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_172_fu_14983_p0.read()) * sc_bigint<32>(mul_ln184_172_fu_14983_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_172_fu_14983_p2() {
+    mul_ln186_172_fu_14983_p2 = (!mul_ln186_172_fu_14983_p0.read().is_01() || !mul_ln186_172_fu_14983_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_172_fu_14983_p0.read()) * sc_bigint<32>(mul_ln186_172_fu_14983_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_173_fu_14998_p0() {
-    mul_ln184_173_fu_14998_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_173_fu_14998_p0() {
+    mul_ln186_173_fu_14998_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_173_fu_14998_p1() {
-    mul_ln184_173_fu_14998_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_173_fu_14998_p1() {
+    mul_ln186_173_fu_14998_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_173_fu_14998_p2() {
-    mul_ln184_173_fu_14998_p2 = (!mul_ln184_173_fu_14998_p0.read().is_01() || !mul_ln184_173_fu_14998_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_173_fu_14998_p0.read()) * sc_bigint<32>(mul_ln184_173_fu_14998_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_173_fu_14998_p2() {
+    mul_ln186_173_fu_14998_p2 = (!mul_ln186_173_fu_14998_p0.read().is_01() || !mul_ln186_173_fu_14998_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_173_fu_14998_p0.read()) * sc_bigint<32>(mul_ln186_173_fu_14998_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_174_fu_15069_p0() {
-    mul_ln184_174_fu_15069_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_174_fu_15069_p0() {
+    mul_ln186_174_fu_15069_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_174_fu_15069_p1() {
-    mul_ln184_174_fu_15069_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_174_fu_15069_p1() {
+    mul_ln186_174_fu_15069_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_174_fu_15069_p2() {
-    mul_ln184_174_fu_15069_p2 = (!mul_ln184_174_fu_15069_p0.read().is_01() || !mul_ln184_174_fu_15069_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_174_fu_15069_p0.read()) * sc_bigint<32>(mul_ln184_174_fu_15069_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_174_fu_15069_p2() {
+    mul_ln186_174_fu_15069_p2 = (!mul_ln186_174_fu_15069_p0.read().is_01() || !mul_ln186_174_fu_15069_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_174_fu_15069_p0.read()) * sc_bigint<32>(mul_ln186_174_fu_15069_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_175_fu_15084_p0() {
-    mul_ln184_175_fu_15084_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_175_fu_15084_p0() {
+    mul_ln186_175_fu_15084_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_175_fu_15084_p1() {
-    mul_ln184_175_fu_15084_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_175_fu_15084_p1() {
+    mul_ln186_175_fu_15084_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_175_fu_15084_p2() {
-    mul_ln184_175_fu_15084_p2 = (!mul_ln184_175_fu_15084_p0.read().is_01() || !mul_ln184_175_fu_15084_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_175_fu_15084_p0.read()) * sc_bigint<32>(mul_ln184_175_fu_15084_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_175_fu_15084_p2() {
+    mul_ln186_175_fu_15084_p2 = (!mul_ln186_175_fu_15084_p0.read().is_01() || !mul_ln186_175_fu_15084_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_175_fu_15084_p0.read()) * sc_bigint<32>(mul_ln186_175_fu_15084_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_176_fu_15155_p0() {
-    mul_ln184_176_fu_15155_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_176_fu_15155_p0() {
+    mul_ln186_176_fu_15155_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_176_fu_15155_p1() {
-    mul_ln184_176_fu_15155_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_176_fu_15155_p1() {
+    mul_ln186_176_fu_15155_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_176_fu_15155_p2() {
-    mul_ln184_176_fu_15155_p2 = (!mul_ln184_176_fu_15155_p0.read().is_01() || !mul_ln184_176_fu_15155_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_176_fu_15155_p0.read()) * sc_bigint<32>(mul_ln184_176_fu_15155_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_176_fu_15155_p2() {
+    mul_ln186_176_fu_15155_p2 = (!mul_ln186_176_fu_15155_p0.read().is_01() || !mul_ln186_176_fu_15155_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_176_fu_15155_p0.read()) * sc_bigint<32>(mul_ln186_176_fu_15155_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_177_fu_15170_p0() {
-    mul_ln184_177_fu_15170_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_177_fu_15170_p0() {
+    mul_ln186_177_fu_15170_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_177_fu_15170_p1() {
-    mul_ln184_177_fu_15170_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_177_fu_15170_p1() {
+    mul_ln186_177_fu_15170_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_177_fu_15170_p2() {
-    mul_ln184_177_fu_15170_p2 = (!mul_ln184_177_fu_15170_p0.read().is_01() || !mul_ln184_177_fu_15170_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_177_fu_15170_p0.read()) * sc_bigint<32>(mul_ln184_177_fu_15170_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_177_fu_15170_p2() {
+    mul_ln186_177_fu_15170_p2 = (!mul_ln186_177_fu_15170_p0.read().is_01() || !mul_ln186_177_fu_15170_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_177_fu_15170_p0.read()) * sc_bigint<32>(mul_ln186_177_fu_15170_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_178_fu_15241_p0() {
-    mul_ln184_178_fu_15241_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_178_fu_15241_p0() {
+    mul_ln186_178_fu_15241_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_178_fu_15241_p1() {
-    mul_ln184_178_fu_15241_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_178_fu_15241_p1() {
+    mul_ln186_178_fu_15241_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_178_fu_15241_p2() {
-    mul_ln184_178_fu_15241_p2 = (!mul_ln184_178_fu_15241_p0.read().is_01() || !mul_ln184_178_fu_15241_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_178_fu_15241_p0.read()) * sc_bigint<32>(mul_ln184_178_fu_15241_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_178_fu_15241_p2() {
+    mul_ln186_178_fu_15241_p2 = (!mul_ln186_178_fu_15241_p0.read().is_01() || !mul_ln186_178_fu_15241_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_178_fu_15241_p0.read()) * sc_bigint<32>(mul_ln186_178_fu_15241_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_179_fu_15256_p0() {
-    mul_ln184_179_fu_15256_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_179_fu_15256_p0() {
+    mul_ln186_179_fu_15256_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_179_fu_15256_p1() {
-    mul_ln184_179_fu_15256_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_179_fu_15256_p1() {
+    mul_ln186_179_fu_15256_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_179_fu_15256_p2() {
-    mul_ln184_179_fu_15256_p2 = (!mul_ln184_179_fu_15256_p0.read().is_01() || !mul_ln184_179_fu_15256_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_179_fu_15256_p0.read()) * sc_bigint<32>(mul_ln184_179_fu_15256_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_179_fu_15256_p2() {
+    mul_ln186_179_fu_15256_p2 = (!mul_ln186_179_fu_15256_p0.read().is_01() || !mul_ln186_179_fu_15256_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_179_fu_15256_p0.read()) * sc_bigint<32>(mul_ln186_179_fu_15256_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_17_fu_8290_p0() {
-    mul_ln184_17_fu_8290_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_17_fu_8290_p0() {
+    mul_ln186_17_fu_8290_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_17_fu_8290_p1() {
-    mul_ln184_17_fu_8290_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_17_fu_8290_p1() {
+    mul_ln186_17_fu_8290_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_17_fu_8290_p2() {
-    mul_ln184_17_fu_8290_p2 = (!mul_ln184_17_fu_8290_p0.read().is_01() || !mul_ln184_17_fu_8290_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_17_fu_8290_p0.read()) * sc_bigint<32>(mul_ln184_17_fu_8290_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_17_fu_8290_p2() {
+    mul_ln186_17_fu_8290_p2 = (!mul_ln186_17_fu_8290_p0.read().is_01() || !mul_ln186_17_fu_8290_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_17_fu_8290_p0.read()) * sc_bigint<32>(mul_ln186_17_fu_8290_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_180_fu_15327_p0() {
-    mul_ln184_180_fu_15327_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_180_fu_15327_p0() {
+    mul_ln186_180_fu_15327_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_180_fu_15327_p1() {
-    mul_ln184_180_fu_15327_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_180_fu_15327_p1() {
+    mul_ln186_180_fu_15327_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_180_fu_15327_p2() {
-    mul_ln184_180_fu_15327_p2 = (!mul_ln184_180_fu_15327_p0.read().is_01() || !mul_ln184_180_fu_15327_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_180_fu_15327_p0.read()) * sc_bigint<32>(mul_ln184_180_fu_15327_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_180_fu_15327_p2() {
+    mul_ln186_180_fu_15327_p2 = (!mul_ln186_180_fu_15327_p0.read().is_01() || !mul_ln186_180_fu_15327_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_180_fu_15327_p0.read()) * sc_bigint<32>(mul_ln186_180_fu_15327_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_181_fu_15342_p0() {
-    mul_ln184_181_fu_15342_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_181_fu_15342_p0() {
+    mul_ln186_181_fu_15342_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_181_fu_15342_p1() {
-    mul_ln184_181_fu_15342_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_181_fu_15342_p1() {
+    mul_ln186_181_fu_15342_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_181_fu_15342_p2() {
-    mul_ln184_181_fu_15342_p2 = (!mul_ln184_181_fu_15342_p0.read().is_01() || !mul_ln184_181_fu_15342_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_181_fu_15342_p0.read()) * sc_bigint<32>(mul_ln184_181_fu_15342_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_181_fu_15342_p2() {
+    mul_ln186_181_fu_15342_p2 = (!mul_ln186_181_fu_15342_p0.read().is_01() || !mul_ln186_181_fu_15342_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_181_fu_15342_p0.read()) * sc_bigint<32>(mul_ln186_181_fu_15342_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_182_fu_15413_p0() {
-    mul_ln184_182_fu_15413_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_182_fu_15413_p0() {
+    mul_ln186_182_fu_15413_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_182_fu_15413_p1() {
-    mul_ln184_182_fu_15413_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_182_fu_15413_p1() {
+    mul_ln186_182_fu_15413_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_182_fu_15413_p2() {
-    mul_ln184_182_fu_15413_p2 = (!mul_ln184_182_fu_15413_p0.read().is_01() || !mul_ln184_182_fu_15413_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_182_fu_15413_p0.read()) * sc_bigint<32>(mul_ln184_182_fu_15413_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_182_fu_15413_p2() {
+    mul_ln186_182_fu_15413_p2 = (!mul_ln186_182_fu_15413_p0.read().is_01() || !mul_ln186_182_fu_15413_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_182_fu_15413_p0.read()) * sc_bigint<32>(mul_ln186_182_fu_15413_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_183_fu_15428_p0() {
-    mul_ln184_183_fu_15428_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_183_fu_15428_p0() {
+    mul_ln186_183_fu_15428_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_183_fu_15428_p1() {
-    mul_ln184_183_fu_15428_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_183_fu_15428_p1() {
+    mul_ln186_183_fu_15428_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_183_fu_15428_p2() {
-    mul_ln184_183_fu_15428_p2 = (!mul_ln184_183_fu_15428_p0.read().is_01() || !mul_ln184_183_fu_15428_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_183_fu_15428_p0.read()) * sc_bigint<32>(mul_ln184_183_fu_15428_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_183_fu_15428_p2() {
+    mul_ln186_183_fu_15428_p2 = (!mul_ln186_183_fu_15428_p0.read().is_01() || !mul_ln186_183_fu_15428_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_183_fu_15428_p0.read()) * sc_bigint<32>(mul_ln186_183_fu_15428_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_184_fu_15499_p0() {
-    mul_ln184_184_fu_15499_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_184_fu_15499_p0() {
+    mul_ln186_184_fu_15499_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_184_fu_15499_p1() {
-    mul_ln184_184_fu_15499_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_184_fu_15499_p1() {
+    mul_ln186_184_fu_15499_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_184_fu_15499_p2() {
-    mul_ln184_184_fu_15499_p2 = (!mul_ln184_184_fu_15499_p0.read().is_01() || !mul_ln184_184_fu_15499_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_184_fu_15499_p0.read()) * sc_bigint<32>(mul_ln184_184_fu_15499_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_184_fu_15499_p2() {
+    mul_ln186_184_fu_15499_p2 = (!mul_ln186_184_fu_15499_p0.read().is_01() || !mul_ln186_184_fu_15499_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_184_fu_15499_p0.read()) * sc_bigint<32>(mul_ln186_184_fu_15499_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_185_fu_15514_p0() {
-    mul_ln184_185_fu_15514_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_185_fu_15514_p0() {
+    mul_ln186_185_fu_15514_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_185_fu_15514_p1() {
-    mul_ln184_185_fu_15514_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_185_fu_15514_p1() {
+    mul_ln186_185_fu_15514_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_185_fu_15514_p2() {
-    mul_ln184_185_fu_15514_p2 = (!mul_ln184_185_fu_15514_p0.read().is_01() || !mul_ln184_185_fu_15514_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_185_fu_15514_p0.read()) * sc_bigint<32>(mul_ln184_185_fu_15514_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_185_fu_15514_p2() {
+    mul_ln186_185_fu_15514_p2 = (!mul_ln186_185_fu_15514_p0.read().is_01() || !mul_ln186_185_fu_15514_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_185_fu_15514_p0.read()) * sc_bigint<32>(mul_ln186_185_fu_15514_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_186_fu_15585_p0() {
-    mul_ln184_186_fu_15585_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_186_fu_15585_p0() {
+    mul_ln186_186_fu_15585_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_186_fu_15585_p1() {
-    mul_ln184_186_fu_15585_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_186_fu_15585_p1() {
+    mul_ln186_186_fu_15585_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_186_fu_15585_p2() {
-    mul_ln184_186_fu_15585_p2 = (!mul_ln184_186_fu_15585_p0.read().is_01() || !mul_ln184_186_fu_15585_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_186_fu_15585_p0.read()) * sc_bigint<32>(mul_ln184_186_fu_15585_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_186_fu_15585_p2() {
+    mul_ln186_186_fu_15585_p2 = (!mul_ln186_186_fu_15585_p0.read().is_01() || !mul_ln186_186_fu_15585_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_186_fu_15585_p0.read()) * sc_bigint<32>(mul_ln186_186_fu_15585_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_187_fu_15600_p0() {
-    mul_ln184_187_fu_15600_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_187_fu_15600_p0() {
+    mul_ln186_187_fu_15600_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_187_fu_15600_p1() {
-    mul_ln184_187_fu_15600_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_187_fu_15600_p1() {
+    mul_ln186_187_fu_15600_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_187_fu_15600_p2() {
-    mul_ln184_187_fu_15600_p2 = (!mul_ln184_187_fu_15600_p0.read().is_01() || !mul_ln184_187_fu_15600_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_187_fu_15600_p0.read()) * sc_bigint<32>(mul_ln184_187_fu_15600_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_187_fu_15600_p2() {
+    mul_ln186_187_fu_15600_p2 = (!mul_ln186_187_fu_15600_p0.read().is_01() || !mul_ln186_187_fu_15600_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_187_fu_15600_p0.read()) * sc_bigint<32>(mul_ln186_187_fu_15600_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_188_fu_15671_p0() {
-    mul_ln184_188_fu_15671_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_188_fu_15671_p0() {
+    mul_ln186_188_fu_15671_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_188_fu_15671_p1() {
-    mul_ln184_188_fu_15671_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_188_fu_15671_p1() {
+    mul_ln186_188_fu_15671_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_188_fu_15671_p2() {
-    mul_ln184_188_fu_15671_p2 = (!mul_ln184_188_fu_15671_p0.read().is_01() || !mul_ln184_188_fu_15671_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_188_fu_15671_p0.read()) * sc_bigint<32>(mul_ln184_188_fu_15671_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_188_fu_15671_p2() {
+    mul_ln186_188_fu_15671_p2 = (!mul_ln186_188_fu_15671_p0.read().is_01() || !mul_ln186_188_fu_15671_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_188_fu_15671_p0.read()) * sc_bigint<32>(mul_ln186_188_fu_15671_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_189_fu_15686_p0() {
-    mul_ln184_189_fu_15686_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_189_fu_15686_p0() {
+    mul_ln186_189_fu_15686_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_189_fu_15686_p1() {
-    mul_ln184_189_fu_15686_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_189_fu_15686_p1() {
+    mul_ln186_189_fu_15686_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_189_fu_15686_p2() {
-    mul_ln184_189_fu_15686_p2 = (!mul_ln184_189_fu_15686_p0.read().is_01() || !mul_ln184_189_fu_15686_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_189_fu_15686_p0.read()) * sc_bigint<32>(mul_ln184_189_fu_15686_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_189_fu_15686_p2() {
+    mul_ln186_189_fu_15686_p2 = (!mul_ln186_189_fu_15686_p0.read().is_01() || !mul_ln186_189_fu_15686_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_189_fu_15686_p0.read()) * sc_bigint<32>(mul_ln186_189_fu_15686_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_18_fu_8361_p0() {
-    mul_ln184_18_fu_8361_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_18_fu_8361_p0() {
+    mul_ln186_18_fu_8361_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_18_fu_8361_p1() {
-    mul_ln184_18_fu_8361_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_18_fu_8361_p1() {
+    mul_ln186_18_fu_8361_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_18_fu_8361_p2() {
-    mul_ln184_18_fu_8361_p2 = (!mul_ln184_18_fu_8361_p0.read().is_01() || !mul_ln184_18_fu_8361_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_18_fu_8361_p0.read()) * sc_bigint<32>(mul_ln184_18_fu_8361_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_18_fu_8361_p2() {
+    mul_ln186_18_fu_8361_p2 = (!mul_ln186_18_fu_8361_p0.read().is_01() || !mul_ln186_18_fu_8361_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_18_fu_8361_p0.read()) * sc_bigint<32>(mul_ln186_18_fu_8361_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_190_fu_15757_p0() {
-    mul_ln184_190_fu_15757_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_190_fu_15757_p0() {
+    mul_ln186_190_fu_15757_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_190_fu_15757_p1() {
-    mul_ln184_190_fu_15757_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_190_fu_15757_p1() {
+    mul_ln186_190_fu_15757_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_190_fu_15757_p2() {
-    mul_ln184_190_fu_15757_p2 = (!mul_ln184_190_fu_15757_p0.read().is_01() || !mul_ln184_190_fu_15757_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_190_fu_15757_p0.read()) * sc_bigint<32>(mul_ln184_190_fu_15757_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_190_fu_15757_p2() {
+    mul_ln186_190_fu_15757_p2 = (!mul_ln186_190_fu_15757_p0.read().is_01() || !mul_ln186_190_fu_15757_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_190_fu_15757_p0.read()) * sc_bigint<32>(mul_ln186_190_fu_15757_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_191_fu_15772_p0() {
-    mul_ln184_191_fu_15772_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_191_fu_15772_p0() {
+    mul_ln186_191_fu_15772_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_191_fu_15772_p1() {
-    mul_ln184_191_fu_15772_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_191_fu_15772_p1() {
+    mul_ln186_191_fu_15772_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_191_fu_15772_p2() {
-    mul_ln184_191_fu_15772_p2 = (!mul_ln184_191_fu_15772_p0.read().is_01() || !mul_ln184_191_fu_15772_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_191_fu_15772_p0.read()) * sc_bigint<32>(mul_ln184_191_fu_15772_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_191_fu_15772_p2() {
+    mul_ln186_191_fu_15772_p2 = (!mul_ln186_191_fu_15772_p0.read().is_01() || !mul_ln186_191_fu_15772_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_191_fu_15772_p0.read()) * sc_bigint<32>(mul_ln186_191_fu_15772_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_192_fu_15843_p0() {
-    mul_ln184_192_fu_15843_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_192_fu_15843_p0() {
+    mul_ln186_192_fu_15843_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_192_fu_15843_p1() {
-    mul_ln184_192_fu_15843_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_192_fu_15843_p1() {
+    mul_ln186_192_fu_15843_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_192_fu_15843_p2() {
-    mul_ln184_192_fu_15843_p2 = (!mul_ln184_192_fu_15843_p0.read().is_01() || !mul_ln184_192_fu_15843_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_192_fu_15843_p0.read()) * sc_bigint<32>(mul_ln184_192_fu_15843_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_192_fu_15843_p2() {
+    mul_ln186_192_fu_15843_p2 = (!mul_ln186_192_fu_15843_p0.read().is_01() || !mul_ln186_192_fu_15843_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_192_fu_15843_p0.read()) * sc_bigint<32>(mul_ln186_192_fu_15843_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_193_fu_15858_p0() {
-    mul_ln184_193_fu_15858_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_193_fu_15858_p0() {
+    mul_ln186_193_fu_15858_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_193_fu_15858_p1() {
-    mul_ln184_193_fu_15858_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_193_fu_15858_p1() {
+    mul_ln186_193_fu_15858_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_193_fu_15858_p2() {
-    mul_ln184_193_fu_15858_p2 = (!mul_ln184_193_fu_15858_p0.read().is_01() || !mul_ln184_193_fu_15858_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_193_fu_15858_p0.read()) * sc_bigint<32>(mul_ln184_193_fu_15858_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_193_fu_15858_p2() {
+    mul_ln186_193_fu_15858_p2 = (!mul_ln186_193_fu_15858_p0.read().is_01() || !mul_ln186_193_fu_15858_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_193_fu_15858_p0.read()) * sc_bigint<32>(mul_ln186_193_fu_15858_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_194_fu_15929_p0() {
-    mul_ln184_194_fu_15929_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_194_fu_15929_p0() {
+    mul_ln186_194_fu_15929_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_194_fu_15929_p1() {
-    mul_ln184_194_fu_15929_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_194_fu_15929_p1() {
+    mul_ln186_194_fu_15929_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_194_fu_15929_p2() {
-    mul_ln184_194_fu_15929_p2 = (!mul_ln184_194_fu_15929_p0.read().is_01() || !mul_ln184_194_fu_15929_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_194_fu_15929_p0.read()) * sc_bigint<32>(mul_ln184_194_fu_15929_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_194_fu_15929_p2() {
+    mul_ln186_194_fu_15929_p2 = (!mul_ln186_194_fu_15929_p0.read().is_01() || !mul_ln186_194_fu_15929_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_194_fu_15929_p0.read()) * sc_bigint<32>(mul_ln186_194_fu_15929_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_195_fu_15944_p0() {
-    mul_ln184_195_fu_15944_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_195_fu_15944_p0() {
+    mul_ln186_195_fu_15944_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_195_fu_15944_p1() {
-    mul_ln184_195_fu_15944_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_195_fu_15944_p1() {
+    mul_ln186_195_fu_15944_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_195_fu_15944_p2() {
-    mul_ln184_195_fu_15944_p2 = (!mul_ln184_195_fu_15944_p0.read().is_01() || !mul_ln184_195_fu_15944_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_195_fu_15944_p0.read()) * sc_bigint<32>(mul_ln184_195_fu_15944_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_195_fu_15944_p2() {
+    mul_ln186_195_fu_15944_p2 = (!mul_ln186_195_fu_15944_p0.read().is_01() || !mul_ln186_195_fu_15944_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_195_fu_15944_p0.read()) * sc_bigint<32>(mul_ln186_195_fu_15944_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_196_fu_16015_p0() {
-    mul_ln184_196_fu_16015_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_196_fu_16015_p0() {
+    mul_ln186_196_fu_16015_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_196_fu_16015_p1() {
-    mul_ln184_196_fu_16015_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_196_fu_16015_p1() {
+    mul_ln186_196_fu_16015_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_196_fu_16015_p2() {
-    mul_ln184_196_fu_16015_p2 = (!mul_ln184_196_fu_16015_p0.read().is_01() || !mul_ln184_196_fu_16015_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_196_fu_16015_p0.read()) * sc_bigint<32>(mul_ln184_196_fu_16015_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_196_fu_16015_p2() {
+    mul_ln186_196_fu_16015_p2 = (!mul_ln186_196_fu_16015_p0.read().is_01() || !mul_ln186_196_fu_16015_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_196_fu_16015_p0.read()) * sc_bigint<32>(mul_ln186_196_fu_16015_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_197_fu_16030_p0() {
-    mul_ln184_197_fu_16030_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_197_fu_16030_p0() {
+    mul_ln186_197_fu_16030_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_197_fu_16030_p1() {
-    mul_ln184_197_fu_16030_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_197_fu_16030_p1() {
+    mul_ln186_197_fu_16030_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_197_fu_16030_p2() {
-    mul_ln184_197_fu_16030_p2 = (!mul_ln184_197_fu_16030_p0.read().is_01() || !mul_ln184_197_fu_16030_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_197_fu_16030_p0.read()) * sc_bigint<32>(mul_ln184_197_fu_16030_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_197_fu_16030_p2() {
+    mul_ln186_197_fu_16030_p2 = (!mul_ln186_197_fu_16030_p0.read().is_01() || !mul_ln186_197_fu_16030_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_197_fu_16030_p0.read()) * sc_bigint<32>(mul_ln186_197_fu_16030_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_198_fu_16101_p0() {
-    mul_ln184_198_fu_16101_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_198_fu_16101_p0() {
+    mul_ln186_198_fu_16101_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_198_fu_16101_p1() {
-    mul_ln184_198_fu_16101_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_198_fu_16101_p1() {
+    mul_ln186_198_fu_16101_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_198_fu_16101_p2() {
-    mul_ln184_198_fu_16101_p2 = (!mul_ln184_198_fu_16101_p0.read().is_01() || !mul_ln184_198_fu_16101_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_198_fu_16101_p0.read()) * sc_bigint<32>(mul_ln184_198_fu_16101_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_198_fu_16101_p2() {
+    mul_ln186_198_fu_16101_p2 = (!mul_ln186_198_fu_16101_p0.read().is_01() || !mul_ln186_198_fu_16101_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_198_fu_16101_p0.read()) * sc_bigint<32>(mul_ln186_198_fu_16101_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_199_fu_16116_p0() {
-    mul_ln184_199_fu_16116_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_199_fu_16116_p0() {
+    mul_ln186_199_fu_16116_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_199_fu_16116_p1() {
-    mul_ln184_199_fu_16116_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_199_fu_16116_p1() {
+    mul_ln186_199_fu_16116_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_199_fu_16116_p2() {
-    mul_ln184_199_fu_16116_p2 = (!mul_ln184_199_fu_16116_p0.read().is_01() || !mul_ln184_199_fu_16116_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_199_fu_16116_p0.read()) * sc_bigint<32>(mul_ln184_199_fu_16116_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_199_fu_16116_p2() {
+    mul_ln186_199_fu_16116_p2 = (!mul_ln186_199_fu_16116_p0.read().is_01() || !mul_ln186_199_fu_16116_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_199_fu_16116_p0.read()) * sc_bigint<32>(mul_ln186_199_fu_16116_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_19_fu_8376_p0() {
-    mul_ln184_19_fu_8376_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_19_fu_8376_p0() {
+    mul_ln186_19_fu_8376_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_19_fu_8376_p1() {
-    mul_ln184_19_fu_8376_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_19_fu_8376_p1() {
+    mul_ln186_19_fu_8376_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_19_fu_8376_p2() {
-    mul_ln184_19_fu_8376_p2 = (!mul_ln184_19_fu_8376_p0.read().is_01() || !mul_ln184_19_fu_8376_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_19_fu_8376_p0.read()) * sc_bigint<32>(mul_ln184_19_fu_8376_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_19_fu_8376_p2() {
+    mul_ln186_19_fu_8376_p2 = (!mul_ln186_19_fu_8376_p0.read().is_01() || !mul_ln186_19_fu_8376_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_19_fu_8376_p0.read()) * sc_bigint<32>(mul_ln186_19_fu_8376_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_1_fu_7602_p0() {
-    mul_ln184_1_fu_7602_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_1_fu_7602_p0() {
+    mul_ln186_1_fu_7602_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_1_fu_7602_p1() {
-    mul_ln184_1_fu_7602_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_1_fu_7602_p1() {
+    mul_ln186_1_fu_7602_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_1_fu_7602_p2() {
-    mul_ln184_1_fu_7602_p2 = (!mul_ln184_1_fu_7602_p0.read().is_01() || !mul_ln184_1_fu_7602_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_1_fu_7602_p0.read()) * sc_bigint<32>(mul_ln184_1_fu_7602_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_1_fu_7602_p2() {
+    mul_ln186_1_fu_7602_p2 = (!mul_ln186_1_fu_7602_p0.read().is_01() || !mul_ln186_1_fu_7602_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_1_fu_7602_p0.read()) * sc_bigint<32>(mul_ln186_1_fu_7602_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_200_fu_16187_p0() {
-    mul_ln184_200_fu_16187_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_200_fu_16187_p0() {
+    mul_ln186_200_fu_16187_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_200_fu_16187_p1() {
-    mul_ln184_200_fu_16187_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_200_fu_16187_p1() {
+    mul_ln186_200_fu_16187_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_200_fu_16187_p2() {
-    mul_ln184_200_fu_16187_p2 = (!mul_ln184_200_fu_16187_p0.read().is_01() || !mul_ln184_200_fu_16187_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_200_fu_16187_p0.read()) * sc_bigint<32>(mul_ln184_200_fu_16187_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_200_fu_16187_p2() {
+    mul_ln186_200_fu_16187_p2 = (!mul_ln186_200_fu_16187_p0.read().is_01() || !mul_ln186_200_fu_16187_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_200_fu_16187_p0.read()) * sc_bigint<32>(mul_ln186_200_fu_16187_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_201_fu_16202_p0() {
-    mul_ln184_201_fu_16202_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_201_fu_16202_p0() {
+    mul_ln186_201_fu_16202_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_201_fu_16202_p1() {
-    mul_ln184_201_fu_16202_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_201_fu_16202_p1() {
+    mul_ln186_201_fu_16202_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_201_fu_16202_p2() {
-    mul_ln184_201_fu_16202_p2 = (!mul_ln184_201_fu_16202_p0.read().is_01() || !mul_ln184_201_fu_16202_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_201_fu_16202_p0.read()) * sc_bigint<32>(mul_ln184_201_fu_16202_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_201_fu_16202_p2() {
+    mul_ln186_201_fu_16202_p2 = (!mul_ln186_201_fu_16202_p0.read().is_01() || !mul_ln186_201_fu_16202_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_201_fu_16202_p0.read()) * sc_bigint<32>(mul_ln186_201_fu_16202_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_202_fu_16273_p0() {
-    mul_ln184_202_fu_16273_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_202_fu_16273_p0() {
+    mul_ln186_202_fu_16273_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_202_fu_16273_p1() {
-    mul_ln184_202_fu_16273_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_202_fu_16273_p1() {
+    mul_ln186_202_fu_16273_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_202_fu_16273_p2() {
-    mul_ln184_202_fu_16273_p2 = (!mul_ln184_202_fu_16273_p0.read().is_01() || !mul_ln184_202_fu_16273_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_202_fu_16273_p0.read()) * sc_bigint<32>(mul_ln184_202_fu_16273_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_202_fu_16273_p2() {
+    mul_ln186_202_fu_16273_p2 = (!mul_ln186_202_fu_16273_p0.read().is_01() || !mul_ln186_202_fu_16273_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_202_fu_16273_p0.read()) * sc_bigint<32>(mul_ln186_202_fu_16273_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_203_fu_16288_p0() {
-    mul_ln184_203_fu_16288_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_203_fu_16288_p0() {
+    mul_ln186_203_fu_16288_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_203_fu_16288_p1() {
-    mul_ln184_203_fu_16288_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_203_fu_16288_p1() {
+    mul_ln186_203_fu_16288_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_203_fu_16288_p2() {
-    mul_ln184_203_fu_16288_p2 = (!mul_ln184_203_fu_16288_p0.read().is_01() || !mul_ln184_203_fu_16288_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_203_fu_16288_p0.read()) * sc_bigint<32>(mul_ln184_203_fu_16288_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_203_fu_16288_p2() {
+    mul_ln186_203_fu_16288_p2 = (!mul_ln186_203_fu_16288_p0.read().is_01() || !mul_ln186_203_fu_16288_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_203_fu_16288_p0.read()) * sc_bigint<32>(mul_ln186_203_fu_16288_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_204_fu_16359_p0() {
-    mul_ln184_204_fu_16359_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_204_fu_16359_p0() {
+    mul_ln186_204_fu_16359_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_204_fu_16359_p1() {
-    mul_ln184_204_fu_16359_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_204_fu_16359_p1() {
+    mul_ln186_204_fu_16359_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_204_fu_16359_p2() {
-    mul_ln184_204_fu_16359_p2 = (!mul_ln184_204_fu_16359_p0.read().is_01() || !mul_ln184_204_fu_16359_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_204_fu_16359_p0.read()) * sc_bigint<32>(mul_ln184_204_fu_16359_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_204_fu_16359_p2() {
+    mul_ln186_204_fu_16359_p2 = (!mul_ln186_204_fu_16359_p0.read().is_01() || !mul_ln186_204_fu_16359_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_204_fu_16359_p0.read()) * sc_bigint<32>(mul_ln186_204_fu_16359_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_205_fu_16374_p0() {
-    mul_ln184_205_fu_16374_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_205_fu_16374_p0() {
+    mul_ln186_205_fu_16374_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_205_fu_16374_p1() {
-    mul_ln184_205_fu_16374_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_205_fu_16374_p1() {
+    mul_ln186_205_fu_16374_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_205_fu_16374_p2() {
-    mul_ln184_205_fu_16374_p2 = (!mul_ln184_205_fu_16374_p0.read().is_01() || !mul_ln184_205_fu_16374_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_205_fu_16374_p0.read()) * sc_bigint<32>(mul_ln184_205_fu_16374_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_205_fu_16374_p2() {
+    mul_ln186_205_fu_16374_p2 = (!mul_ln186_205_fu_16374_p0.read().is_01() || !mul_ln186_205_fu_16374_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_205_fu_16374_p0.read()) * sc_bigint<32>(mul_ln186_205_fu_16374_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_206_fu_16445_p0() {
-    mul_ln184_206_fu_16445_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_206_fu_16445_p0() {
+    mul_ln186_206_fu_16445_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_206_fu_16445_p1() {
-    mul_ln184_206_fu_16445_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_206_fu_16445_p1() {
+    mul_ln186_206_fu_16445_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_206_fu_16445_p2() {
-    mul_ln184_206_fu_16445_p2 = (!mul_ln184_206_fu_16445_p0.read().is_01() || !mul_ln184_206_fu_16445_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_206_fu_16445_p0.read()) * sc_bigint<32>(mul_ln184_206_fu_16445_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_206_fu_16445_p2() {
+    mul_ln186_206_fu_16445_p2 = (!mul_ln186_206_fu_16445_p0.read().is_01() || !mul_ln186_206_fu_16445_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_206_fu_16445_p0.read()) * sc_bigint<32>(mul_ln186_206_fu_16445_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_207_fu_16460_p0() {
-    mul_ln184_207_fu_16460_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_207_fu_16460_p0() {
+    mul_ln186_207_fu_16460_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_207_fu_16460_p1() {
-    mul_ln184_207_fu_16460_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_207_fu_16460_p1() {
+    mul_ln186_207_fu_16460_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_207_fu_16460_p2() {
-    mul_ln184_207_fu_16460_p2 = (!mul_ln184_207_fu_16460_p0.read().is_01() || !mul_ln184_207_fu_16460_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_207_fu_16460_p0.read()) * sc_bigint<32>(mul_ln184_207_fu_16460_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_207_fu_16460_p2() {
+    mul_ln186_207_fu_16460_p2 = (!mul_ln186_207_fu_16460_p0.read().is_01() || !mul_ln186_207_fu_16460_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_207_fu_16460_p0.read()) * sc_bigint<32>(mul_ln186_207_fu_16460_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_208_fu_16531_p0() {
-    mul_ln184_208_fu_16531_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_208_fu_16531_p0() {
+    mul_ln186_208_fu_16531_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_208_fu_16531_p1() {
-    mul_ln184_208_fu_16531_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_208_fu_16531_p1() {
+    mul_ln186_208_fu_16531_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_208_fu_16531_p2() {
-    mul_ln184_208_fu_16531_p2 = (!mul_ln184_208_fu_16531_p0.read().is_01() || !mul_ln184_208_fu_16531_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_208_fu_16531_p0.read()) * sc_bigint<32>(mul_ln184_208_fu_16531_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_208_fu_16531_p2() {
+    mul_ln186_208_fu_16531_p2 = (!mul_ln186_208_fu_16531_p0.read().is_01() || !mul_ln186_208_fu_16531_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_208_fu_16531_p0.read()) * sc_bigint<32>(mul_ln186_208_fu_16531_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_209_fu_16546_p0() {
-    mul_ln184_209_fu_16546_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_209_fu_16546_p0() {
+    mul_ln186_209_fu_16546_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_209_fu_16546_p1() {
-    mul_ln184_209_fu_16546_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_209_fu_16546_p1() {
+    mul_ln186_209_fu_16546_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_209_fu_16546_p2() {
-    mul_ln184_209_fu_16546_p2 = (!mul_ln184_209_fu_16546_p0.read().is_01() || !mul_ln184_209_fu_16546_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_209_fu_16546_p0.read()) * sc_bigint<32>(mul_ln184_209_fu_16546_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_209_fu_16546_p2() {
+    mul_ln186_209_fu_16546_p2 = (!mul_ln186_209_fu_16546_p0.read().is_01() || !mul_ln186_209_fu_16546_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_209_fu_16546_p0.read()) * sc_bigint<32>(mul_ln186_209_fu_16546_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_20_fu_8447_p0() {
-    mul_ln184_20_fu_8447_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_20_fu_8447_p0() {
+    mul_ln186_20_fu_8447_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_20_fu_8447_p1() {
-    mul_ln184_20_fu_8447_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_20_fu_8447_p1() {
+    mul_ln186_20_fu_8447_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_20_fu_8447_p2() {
-    mul_ln184_20_fu_8447_p2 = (!mul_ln184_20_fu_8447_p0.read().is_01() || !mul_ln184_20_fu_8447_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_20_fu_8447_p0.read()) * sc_bigint<32>(mul_ln184_20_fu_8447_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_20_fu_8447_p2() {
+    mul_ln186_20_fu_8447_p2 = (!mul_ln186_20_fu_8447_p0.read().is_01() || !mul_ln186_20_fu_8447_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_20_fu_8447_p0.read()) * sc_bigint<32>(mul_ln186_20_fu_8447_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_210_fu_16617_p0() {
-    mul_ln184_210_fu_16617_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_210_fu_16617_p0() {
+    mul_ln186_210_fu_16617_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_210_fu_16617_p1() {
-    mul_ln184_210_fu_16617_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_210_fu_16617_p1() {
+    mul_ln186_210_fu_16617_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_210_fu_16617_p2() {
-    mul_ln184_210_fu_16617_p2 = (!mul_ln184_210_fu_16617_p0.read().is_01() || !mul_ln184_210_fu_16617_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_210_fu_16617_p0.read()) * sc_bigint<32>(mul_ln184_210_fu_16617_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_210_fu_16617_p2() {
+    mul_ln186_210_fu_16617_p2 = (!mul_ln186_210_fu_16617_p0.read().is_01() || !mul_ln186_210_fu_16617_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_210_fu_16617_p0.read()) * sc_bigint<32>(mul_ln186_210_fu_16617_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_211_fu_16632_p0() {
-    mul_ln184_211_fu_16632_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_211_fu_16632_p0() {
+    mul_ln186_211_fu_16632_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_211_fu_16632_p1() {
-    mul_ln184_211_fu_16632_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_211_fu_16632_p1() {
+    mul_ln186_211_fu_16632_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_211_fu_16632_p2() {
-    mul_ln184_211_fu_16632_p2 = (!mul_ln184_211_fu_16632_p0.read().is_01() || !mul_ln184_211_fu_16632_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_211_fu_16632_p0.read()) * sc_bigint<32>(mul_ln184_211_fu_16632_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_211_fu_16632_p2() {
+    mul_ln186_211_fu_16632_p2 = (!mul_ln186_211_fu_16632_p0.read().is_01() || !mul_ln186_211_fu_16632_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_211_fu_16632_p0.read()) * sc_bigint<32>(mul_ln186_211_fu_16632_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_212_fu_16703_p0() {
-    mul_ln184_212_fu_16703_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_212_fu_16703_p0() {
+    mul_ln186_212_fu_16703_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_212_fu_16703_p1() {
-    mul_ln184_212_fu_16703_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_212_fu_16703_p1() {
+    mul_ln186_212_fu_16703_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_212_fu_16703_p2() {
-    mul_ln184_212_fu_16703_p2 = (!mul_ln184_212_fu_16703_p0.read().is_01() || !mul_ln184_212_fu_16703_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_212_fu_16703_p0.read()) * sc_bigint<32>(mul_ln184_212_fu_16703_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_212_fu_16703_p2() {
+    mul_ln186_212_fu_16703_p2 = (!mul_ln186_212_fu_16703_p0.read().is_01() || !mul_ln186_212_fu_16703_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_212_fu_16703_p0.read()) * sc_bigint<32>(mul_ln186_212_fu_16703_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_213_fu_16718_p0() {
-    mul_ln184_213_fu_16718_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_213_fu_16718_p0() {
+    mul_ln186_213_fu_16718_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_213_fu_16718_p1() {
-    mul_ln184_213_fu_16718_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_213_fu_16718_p1() {
+    mul_ln186_213_fu_16718_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_213_fu_16718_p2() {
-    mul_ln184_213_fu_16718_p2 = (!mul_ln184_213_fu_16718_p0.read().is_01() || !mul_ln184_213_fu_16718_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_213_fu_16718_p0.read()) * sc_bigint<32>(mul_ln184_213_fu_16718_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_213_fu_16718_p2() {
+    mul_ln186_213_fu_16718_p2 = (!mul_ln186_213_fu_16718_p0.read().is_01() || !mul_ln186_213_fu_16718_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_213_fu_16718_p0.read()) * sc_bigint<32>(mul_ln186_213_fu_16718_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_214_fu_16789_p0() {
-    mul_ln184_214_fu_16789_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_214_fu_16789_p0() {
+    mul_ln186_214_fu_16789_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_214_fu_16789_p1() {
-    mul_ln184_214_fu_16789_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_214_fu_16789_p1() {
+    mul_ln186_214_fu_16789_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_214_fu_16789_p2() {
-    mul_ln184_214_fu_16789_p2 = (!mul_ln184_214_fu_16789_p0.read().is_01() || !mul_ln184_214_fu_16789_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_214_fu_16789_p0.read()) * sc_bigint<32>(mul_ln184_214_fu_16789_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_214_fu_16789_p2() {
+    mul_ln186_214_fu_16789_p2 = (!mul_ln186_214_fu_16789_p0.read().is_01() || !mul_ln186_214_fu_16789_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_214_fu_16789_p0.read()) * sc_bigint<32>(mul_ln186_214_fu_16789_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_215_fu_16804_p0() {
-    mul_ln184_215_fu_16804_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_215_fu_16804_p0() {
+    mul_ln186_215_fu_16804_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_215_fu_16804_p1() {
-    mul_ln184_215_fu_16804_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_215_fu_16804_p1() {
+    mul_ln186_215_fu_16804_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_215_fu_16804_p2() {
-    mul_ln184_215_fu_16804_p2 = (!mul_ln184_215_fu_16804_p0.read().is_01() || !mul_ln184_215_fu_16804_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_215_fu_16804_p0.read()) * sc_bigint<32>(mul_ln184_215_fu_16804_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_215_fu_16804_p2() {
+    mul_ln186_215_fu_16804_p2 = (!mul_ln186_215_fu_16804_p0.read().is_01() || !mul_ln186_215_fu_16804_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_215_fu_16804_p0.read()) * sc_bigint<32>(mul_ln186_215_fu_16804_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_216_fu_16875_p0() {
-    mul_ln184_216_fu_16875_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_216_fu_16875_p0() {
+    mul_ln186_216_fu_16875_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_216_fu_16875_p1() {
-    mul_ln184_216_fu_16875_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_216_fu_16875_p1() {
+    mul_ln186_216_fu_16875_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_216_fu_16875_p2() {
-    mul_ln184_216_fu_16875_p2 = (!mul_ln184_216_fu_16875_p0.read().is_01() || !mul_ln184_216_fu_16875_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_216_fu_16875_p0.read()) * sc_bigint<32>(mul_ln184_216_fu_16875_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_216_fu_16875_p2() {
+    mul_ln186_216_fu_16875_p2 = (!mul_ln186_216_fu_16875_p0.read().is_01() || !mul_ln186_216_fu_16875_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_216_fu_16875_p0.read()) * sc_bigint<32>(mul_ln186_216_fu_16875_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_217_fu_16890_p0() {
-    mul_ln184_217_fu_16890_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_217_fu_16890_p0() {
+    mul_ln186_217_fu_16890_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_217_fu_16890_p1() {
-    mul_ln184_217_fu_16890_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_217_fu_16890_p1() {
+    mul_ln186_217_fu_16890_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_217_fu_16890_p2() {
-    mul_ln184_217_fu_16890_p2 = (!mul_ln184_217_fu_16890_p0.read().is_01() || !mul_ln184_217_fu_16890_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_217_fu_16890_p0.read()) * sc_bigint<32>(mul_ln184_217_fu_16890_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_217_fu_16890_p2() {
+    mul_ln186_217_fu_16890_p2 = (!mul_ln186_217_fu_16890_p0.read().is_01() || !mul_ln186_217_fu_16890_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_217_fu_16890_p0.read()) * sc_bigint<32>(mul_ln186_217_fu_16890_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_218_fu_16961_p0() {
-    mul_ln184_218_fu_16961_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_218_fu_16961_p0() {
+    mul_ln186_218_fu_16961_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_218_fu_16961_p1() {
-    mul_ln184_218_fu_16961_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_218_fu_16961_p1() {
+    mul_ln186_218_fu_16961_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_218_fu_16961_p2() {
-    mul_ln184_218_fu_16961_p2 = (!mul_ln184_218_fu_16961_p0.read().is_01() || !mul_ln184_218_fu_16961_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_218_fu_16961_p0.read()) * sc_bigint<32>(mul_ln184_218_fu_16961_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_218_fu_16961_p2() {
+    mul_ln186_218_fu_16961_p2 = (!mul_ln186_218_fu_16961_p0.read().is_01() || !mul_ln186_218_fu_16961_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_218_fu_16961_p0.read()) * sc_bigint<32>(mul_ln186_218_fu_16961_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_219_fu_16976_p0() {
-    mul_ln184_219_fu_16976_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_219_fu_16976_p0() {
+    mul_ln186_219_fu_16976_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_219_fu_16976_p1() {
-    mul_ln184_219_fu_16976_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_219_fu_16976_p1() {
+    mul_ln186_219_fu_16976_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_219_fu_16976_p2() {
-    mul_ln184_219_fu_16976_p2 = (!mul_ln184_219_fu_16976_p0.read().is_01() || !mul_ln184_219_fu_16976_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_219_fu_16976_p0.read()) * sc_bigint<32>(mul_ln184_219_fu_16976_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_219_fu_16976_p2() {
+    mul_ln186_219_fu_16976_p2 = (!mul_ln186_219_fu_16976_p0.read().is_01() || !mul_ln186_219_fu_16976_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_219_fu_16976_p0.read()) * sc_bigint<32>(mul_ln186_219_fu_16976_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_21_fu_8462_p0() {
-    mul_ln184_21_fu_8462_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_21_fu_8462_p0() {
+    mul_ln186_21_fu_8462_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_21_fu_8462_p1() {
-    mul_ln184_21_fu_8462_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_21_fu_8462_p1() {
+    mul_ln186_21_fu_8462_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_21_fu_8462_p2() {
-    mul_ln184_21_fu_8462_p2 = (!mul_ln184_21_fu_8462_p0.read().is_01() || !mul_ln184_21_fu_8462_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_21_fu_8462_p0.read()) * sc_bigint<32>(mul_ln184_21_fu_8462_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_21_fu_8462_p2() {
+    mul_ln186_21_fu_8462_p2 = (!mul_ln186_21_fu_8462_p0.read().is_01() || !mul_ln186_21_fu_8462_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_21_fu_8462_p0.read()) * sc_bigint<32>(mul_ln186_21_fu_8462_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_220_fu_17047_p0() {
-    mul_ln184_220_fu_17047_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_220_fu_17047_p0() {
+    mul_ln186_220_fu_17047_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_220_fu_17047_p1() {
-    mul_ln184_220_fu_17047_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_220_fu_17047_p1() {
+    mul_ln186_220_fu_17047_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_220_fu_17047_p2() {
-    mul_ln184_220_fu_17047_p2 = (!mul_ln184_220_fu_17047_p0.read().is_01() || !mul_ln184_220_fu_17047_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_220_fu_17047_p0.read()) * sc_bigint<32>(mul_ln184_220_fu_17047_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_220_fu_17047_p2() {
+    mul_ln186_220_fu_17047_p2 = (!mul_ln186_220_fu_17047_p0.read().is_01() || !mul_ln186_220_fu_17047_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_220_fu_17047_p0.read()) * sc_bigint<32>(mul_ln186_220_fu_17047_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_221_fu_17062_p0() {
-    mul_ln184_221_fu_17062_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_221_fu_17062_p0() {
+    mul_ln186_221_fu_17062_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_221_fu_17062_p1() {
-    mul_ln184_221_fu_17062_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_221_fu_17062_p1() {
+    mul_ln186_221_fu_17062_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_221_fu_17062_p2() {
-    mul_ln184_221_fu_17062_p2 = (!mul_ln184_221_fu_17062_p0.read().is_01() || !mul_ln184_221_fu_17062_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_221_fu_17062_p0.read()) * sc_bigint<32>(mul_ln184_221_fu_17062_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_221_fu_17062_p2() {
+    mul_ln186_221_fu_17062_p2 = (!mul_ln186_221_fu_17062_p0.read().is_01() || !mul_ln186_221_fu_17062_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_221_fu_17062_p0.read()) * sc_bigint<32>(mul_ln186_221_fu_17062_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_222_fu_17133_p0() {
-    mul_ln184_222_fu_17133_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_222_fu_17133_p0() {
+    mul_ln186_222_fu_17133_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_222_fu_17133_p1() {
-    mul_ln184_222_fu_17133_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_222_fu_17133_p1() {
+    mul_ln186_222_fu_17133_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_222_fu_17133_p2() {
-    mul_ln184_222_fu_17133_p2 = (!mul_ln184_222_fu_17133_p0.read().is_01() || !mul_ln184_222_fu_17133_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_222_fu_17133_p0.read()) * sc_bigint<32>(mul_ln184_222_fu_17133_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_222_fu_17133_p2() {
+    mul_ln186_222_fu_17133_p2 = (!mul_ln186_222_fu_17133_p0.read().is_01() || !mul_ln186_222_fu_17133_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_222_fu_17133_p0.read()) * sc_bigint<32>(mul_ln186_222_fu_17133_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_223_fu_17148_p0() {
-    mul_ln184_223_fu_17148_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_223_fu_17148_p0() {
+    mul_ln186_223_fu_17148_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_223_fu_17148_p1() {
-    mul_ln184_223_fu_17148_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_223_fu_17148_p1() {
+    mul_ln186_223_fu_17148_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_223_fu_17148_p2() {
-    mul_ln184_223_fu_17148_p2 = (!mul_ln184_223_fu_17148_p0.read().is_01() || !mul_ln184_223_fu_17148_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_223_fu_17148_p0.read()) * sc_bigint<32>(mul_ln184_223_fu_17148_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_223_fu_17148_p2() {
+    mul_ln186_223_fu_17148_p2 = (!mul_ln186_223_fu_17148_p0.read().is_01() || !mul_ln186_223_fu_17148_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_223_fu_17148_p0.read()) * sc_bigint<32>(mul_ln186_223_fu_17148_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_224_fu_17219_p0() {
-    mul_ln184_224_fu_17219_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_224_fu_17219_p0() {
+    mul_ln186_224_fu_17219_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_224_fu_17219_p1() {
-    mul_ln184_224_fu_17219_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_224_fu_17219_p1() {
+    mul_ln186_224_fu_17219_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_224_fu_17219_p2() {
-    mul_ln184_224_fu_17219_p2 = (!mul_ln184_224_fu_17219_p0.read().is_01() || !mul_ln184_224_fu_17219_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_224_fu_17219_p0.read()) * sc_bigint<32>(mul_ln184_224_fu_17219_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_224_fu_17219_p2() {
+    mul_ln186_224_fu_17219_p2 = (!mul_ln186_224_fu_17219_p0.read().is_01() || !mul_ln186_224_fu_17219_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_224_fu_17219_p0.read()) * sc_bigint<32>(mul_ln186_224_fu_17219_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_225_fu_17234_p0() {
-    mul_ln184_225_fu_17234_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_225_fu_17234_p0() {
+    mul_ln186_225_fu_17234_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_225_fu_17234_p1() {
-    mul_ln184_225_fu_17234_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_225_fu_17234_p1() {
+    mul_ln186_225_fu_17234_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_225_fu_17234_p2() {
-    mul_ln184_225_fu_17234_p2 = (!mul_ln184_225_fu_17234_p0.read().is_01() || !mul_ln184_225_fu_17234_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_225_fu_17234_p0.read()) * sc_bigint<32>(mul_ln184_225_fu_17234_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_225_fu_17234_p2() {
+    mul_ln186_225_fu_17234_p2 = (!mul_ln186_225_fu_17234_p0.read().is_01() || !mul_ln186_225_fu_17234_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_225_fu_17234_p0.read()) * sc_bigint<32>(mul_ln186_225_fu_17234_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_226_fu_17305_p0() {
-    mul_ln184_226_fu_17305_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_226_fu_17305_p0() {
+    mul_ln186_226_fu_17305_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_226_fu_17305_p1() {
-    mul_ln184_226_fu_17305_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_226_fu_17305_p1() {
+    mul_ln186_226_fu_17305_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_226_fu_17305_p2() {
-    mul_ln184_226_fu_17305_p2 = (!mul_ln184_226_fu_17305_p0.read().is_01() || !mul_ln184_226_fu_17305_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_226_fu_17305_p0.read()) * sc_bigint<32>(mul_ln184_226_fu_17305_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_226_fu_17305_p2() {
+    mul_ln186_226_fu_17305_p2 = (!mul_ln186_226_fu_17305_p0.read().is_01() || !mul_ln186_226_fu_17305_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_226_fu_17305_p0.read()) * sc_bigint<32>(mul_ln186_226_fu_17305_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_227_fu_17320_p0() {
-    mul_ln184_227_fu_17320_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_227_fu_17320_p0() {
+    mul_ln186_227_fu_17320_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_227_fu_17320_p1() {
-    mul_ln184_227_fu_17320_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_227_fu_17320_p1() {
+    mul_ln186_227_fu_17320_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_227_fu_17320_p2() {
-    mul_ln184_227_fu_17320_p2 = (!mul_ln184_227_fu_17320_p0.read().is_01() || !mul_ln184_227_fu_17320_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_227_fu_17320_p0.read()) * sc_bigint<32>(mul_ln184_227_fu_17320_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_227_fu_17320_p2() {
+    mul_ln186_227_fu_17320_p2 = (!mul_ln186_227_fu_17320_p0.read().is_01() || !mul_ln186_227_fu_17320_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_227_fu_17320_p0.read()) * sc_bigint<32>(mul_ln186_227_fu_17320_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_228_fu_17391_p0() {
-    mul_ln184_228_fu_17391_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_228_fu_17391_p0() {
+    mul_ln186_228_fu_17391_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_228_fu_17391_p1() {
-    mul_ln184_228_fu_17391_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_228_fu_17391_p1() {
+    mul_ln186_228_fu_17391_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_228_fu_17391_p2() {
-    mul_ln184_228_fu_17391_p2 = (!mul_ln184_228_fu_17391_p0.read().is_01() || !mul_ln184_228_fu_17391_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_228_fu_17391_p0.read()) * sc_bigint<32>(mul_ln184_228_fu_17391_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_228_fu_17391_p2() {
+    mul_ln186_228_fu_17391_p2 = (!mul_ln186_228_fu_17391_p0.read().is_01() || !mul_ln186_228_fu_17391_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_228_fu_17391_p0.read()) * sc_bigint<32>(mul_ln186_228_fu_17391_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_229_fu_17406_p0() {
-    mul_ln184_229_fu_17406_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_229_fu_17406_p0() {
+    mul_ln186_229_fu_17406_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_229_fu_17406_p1() {
-    mul_ln184_229_fu_17406_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_229_fu_17406_p1() {
+    mul_ln186_229_fu_17406_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_229_fu_17406_p2() {
-    mul_ln184_229_fu_17406_p2 = (!mul_ln184_229_fu_17406_p0.read().is_01() || !mul_ln184_229_fu_17406_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_229_fu_17406_p0.read()) * sc_bigint<32>(mul_ln184_229_fu_17406_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_229_fu_17406_p2() {
+    mul_ln186_229_fu_17406_p2 = (!mul_ln186_229_fu_17406_p0.read().is_01() || !mul_ln186_229_fu_17406_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_229_fu_17406_p0.read()) * sc_bigint<32>(mul_ln186_229_fu_17406_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_22_fu_8533_p0() {
-    mul_ln184_22_fu_8533_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_22_fu_8533_p0() {
+    mul_ln186_22_fu_8533_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_22_fu_8533_p1() {
-    mul_ln184_22_fu_8533_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_22_fu_8533_p1() {
+    mul_ln186_22_fu_8533_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_22_fu_8533_p2() {
-    mul_ln184_22_fu_8533_p2 = (!mul_ln184_22_fu_8533_p0.read().is_01() || !mul_ln184_22_fu_8533_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_22_fu_8533_p0.read()) * sc_bigint<32>(mul_ln184_22_fu_8533_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_22_fu_8533_p2() {
+    mul_ln186_22_fu_8533_p2 = (!mul_ln186_22_fu_8533_p0.read().is_01() || !mul_ln186_22_fu_8533_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_22_fu_8533_p0.read()) * sc_bigint<32>(mul_ln186_22_fu_8533_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_230_fu_17477_p0() {
-    mul_ln184_230_fu_17477_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_230_fu_17477_p0() {
+    mul_ln186_230_fu_17477_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_230_fu_17477_p1() {
-    mul_ln184_230_fu_17477_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_230_fu_17477_p1() {
+    mul_ln186_230_fu_17477_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_230_fu_17477_p2() {
-    mul_ln184_230_fu_17477_p2 = (!mul_ln184_230_fu_17477_p0.read().is_01() || !mul_ln184_230_fu_17477_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_230_fu_17477_p0.read()) * sc_bigint<32>(mul_ln184_230_fu_17477_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_230_fu_17477_p2() {
+    mul_ln186_230_fu_17477_p2 = (!mul_ln186_230_fu_17477_p0.read().is_01() || !mul_ln186_230_fu_17477_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_230_fu_17477_p0.read()) * sc_bigint<32>(mul_ln186_230_fu_17477_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_231_fu_17492_p0() {
-    mul_ln184_231_fu_17492_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_231_fu_17492_p0() {
+    mul_ln186_231_fu_17492_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_231_fu_17492_p1() {
-    mul_ln184_231_fu_17492_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_231_fu_17492_p1() {
+    mul_ln186_231_fu_17492_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_231_fu_17492_p2() {
-    mul_ln184_231_fu_17492_p2 = (!mul_ln184_231_fu_17492_p0.read().is_01() || !mul_ln184_231_fu_17492_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_231_fu_17492_p0.read()) * sc_bigint<32>(mul_ln184_231_fu_17492_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_231_fu_17492_p2() {
+    mul_ln186_231_fu_17492_p2 = (!mul_ln186_231_fu_17492_p0.read().is_01() || !mul_ln186_231_fu_17492_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_231_fu_17492_p0.read()) * sc_bigint<32>(mul_ln186_231_fu_17492_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_232_fu_17563_p0() {
-    mul_ln184_232_fu_17563_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_232_fu_17563_p0() {
+    mul_ln186_232_fu_17563_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_232_fu_17563_p1() {
-    mul_ln184_232_fu_17563_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_232_fu_17563_p1() {
+    mul_ln186_232_fu_17563_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_232_fu_17563_p2() {
-    mul_ln184_232_fu_17563_p2 = (!mul_ln184_232_fu_17563_p0.read().is_01() || !mul_ln184_232_fu_17563_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_232_fu_17563_p0.read()) * sc_bigint<32>(mul_ln184_232_fu_17563_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_232_fu_17563_p2() {
+    mul_ln186_232_fu_17563_p2 = (!mul_ln186_232_fu_17563_p0.read().is_01() || !mul_ln186_232_fu_17563_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_232_fu_17563_p0.read()) * sc_bigint<32>(mul_ln186_232_fu_17563_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_233_fu_17578_p0() {
-    mul_ln184_233_fu_17578_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_233_fu_17578_p0() {
+    mul_ln186_233_fu_17578_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_233_fu_17578_p1() {
-    mul_ln184_233_fu_17578_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_233_fu_17578_p1() {
+    mul_ln186_233_fu_17578_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_233_fu_17578_p2() {
-    mul_ln184_233_fu_17578_p2 = (!mul_ln184_233_fu_17578_p0.read().is_01() || !mul_ln184_233_fu_17578_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_233_fu_17578_p0.read()) * sc_bigint<32>(mul_ln184_233_fu_17578_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_233_fu_17578_p2() {
+    mul_ln186_233_fu_17578_p2 = (!mul_ln186_233_fu_17578_p0.read().is_01() || !mul_ln186_233_fu_17578_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_233_fu_17578_p0.read()) * sc_bigint<32>(mul_ln186_233_fu_17578_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_234_fu_17649_p0() {
-    mul_ln184_234_fu_17649_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_234_fu_17649_p0() {
+    mul_ln186_234_fu_17649_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_234_fu_17649_p1() {
-    mul_ln184_234_fu_17649_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_234_fu_17649_p1() {
+    mul_ln186_234_fu_17649_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_234_fu_17649_p2() {
-    mul_ln184_234_fu_17649_p2 = (!mul_ln184_234_fu_17649_p0.read().is_01() || !mul_ln184_234_fu_17649_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_234_fu_17649_p0.read()) * sc_bigint<32>(mul_ln184_234_fu_17649_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_234_fu_17649_p2() {
+    mul_ln186_234_fu_17649_p2 = (!mul_ln186_234_fu_17649_p0.read().is_01() || !mul_ln186_234_fu_17649_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_234_fu_17649_p0.read()) * sc_bigint<32>(mul_ln186_234_fu_17649_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_235_fu_17664_p0() {
-    mul_ln184_235_fu_17664_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_235_fu_17664_p0() {
+    mul_ln186_235_fu_17664_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_235_fu_17664_p1() {
-    mul_ln184_235_fu_17664_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_235_fu_17664_p1() {
+    mul_ln186_235_fu_17664_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_235_fu_17664_p2() {
-    mul_ln184_235_fu_17664_p2 = (!mul_ln184_235_fu_17664_p0.read().is_01() || !mul_ln184_235_fu_17664_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_235_fu_17664_p0.read()) * sc_bigint<32>(mul_ln184_235_fu_17664_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_235_fu_17664_p2() {
+    mul_ln186_235_fu_17664_p2 = (!mul_ln186_235_fu_17664_p0.read().is_01() || !mul_ln186_235_fu_17664_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_235_fu_17664_p0.read()) * sc_bigint<32>(mul_ln186_235_fu_17664_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_236_fu_17735_p0() {
-    mul_ln184_236_fu_17735_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_236_fu_17735_p0() {
+    mul_ln186_236_fu_17735_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_236_fu_17735_p1() {
-    mul_ln184_236_fu_17735_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_236_fu_17735_p1() {
+    mul_ln186_236_fu_17735_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_236_fu_17735_p2() {
-    mul_ln184_236_fu_17735_p2 = (!mul_ln184_236_fu_17735_p0.read().is_01() || !mul_ln184_236_fu_17735_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_236_fu_17735_p0.read()) * sc_bigint<32>(mul_ln184_236_fu_17735_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_236_fu_17735_p2() {
+    mul_ln186_236_fu_17735_p2 = (!mul_ln186_236_fu_17735_p0.read().is_01() || !mul_ln186_236_fu_17735_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_236_fu_17735_p0.read()) * sc_bigint<32>(mul_ln186_236_fu_17735_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_237_fu_17750_p0() {
-    mul_ln184_237_fu_17750_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_237_fu_17750_p0() {
+    mul_ln186_237_fu_17750_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_237_fu_17750_p1() {
-    mul_ln184_237_fu_17750_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_237_fu_17750_p1() {
+    mul_ln186_237_fu_17750_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_237_fu_17750_p2() {
-    mul_ln184_237_fu_17750_p2 = (!mul_ln184_237_fu_17750_p0.read().is_01() || !mul_ln184_237_fu_17750_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_237_fu_17750_p0.read()) * sc_bigint<32>(mul_ln184_237_fu_17750_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_237_fu_17750_p2() {
+    mul_ln186_237_fu_17750_p2 = (!mul_ln186_237_fu_17750_p0.read().is_01() || !mul_ln186_237_fu_17750_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_237_fu_17750_p0.read()) * sc_bigint<32>(mul_ln186_237_fu_17750_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_238_fu_17821_p0() {
-    mul_ln184_238_fu_17821_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_238_fu_17821_p0() {
+    mul_ln186_238_fu_17821_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_238_fu_17821_p1() {
-    mul_ln184_238_fu_17821_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_238_fu_17821_p1() {
+    mul_ln186_238_fu_17821_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_238_fu_17821_p2() {
-    mul_ln184_238_fu_17821_p2 = (!mul_ln184_238_fu_17821_p0.read().is_01() || !mul_ln184_238_fu_17821_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_238_fu_17821_p0.read()) * sc_bigint<32>(mul_ln184_238_fu_17821_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_238_fu_17821_p2() {
+    mul_ln186_238_fu_17821_p2 = (!mul_ln186_238_fu_17821_p0.read().is_01() || !mul_ln186_238_fu_17821_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_238_fu_17821_p0.read()) * sc_bigint<32>(mul_ln186_238_fu_17821_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_239_fu_17836_p0() {
-    mul_ln184_239_fu_17836_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_239_fu_17836_p0() {
+    mul_ln186_239_fu_17836_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_239_fu_17836_p1() {
-    mul_ln184_239_fu_17836_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_239_fu_17836_p1() {
+    mul_ln186_239_fu_17836_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_239_fu_17836_p2() {
-    mul_ln184_239_fu_17836_p2 = (!mul_ln184_239_fu_17836_p0.read().is_01() || !mul_ln184_239_fu_17836_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_239_fu_17836_p0.read()) * sc_bigint<32>(mul_ln184_239_fu_17836_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_239_fu_17836_p2() {
+    mul_ln186_239_fu_17836_p2 = (!mul_ln186_239_fu_17836_p0.read().is_01() || !mul_ln186_239_fu_17836_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_239_fu_17836_p0.read()) * sc_bigint<32>(mul_ln186_239_fu_17836_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_23_fu_8548_p0() {
-    mul_ln184_23_fu_8548_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_23_fu_8548_p0() {
+    mul_ln186_23_fu_8548_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_23_fu_8548_p1() {
-    mul_ln184_23_fu_8548_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_23_fu_8548_p1() {
+    mul_ln186_23_fu_8548_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_23_fu_8548_p2() {
-    mul_ln184_23_fu_8548_p2 = (!mul_ln184_23_fu_8548_p0.read().is_01() || !mul_ln184_23_fu_8548_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_23_fu_8548_p0.read()) * sc_bigint<32>(mul_ln184_23_fu_8548_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_23_fu_8548_p2() {
+    mul_ln186_23_fu_8548_p2 = (!mul_ln186_23_fu_8548_p0.read().is_01() || !mul_ln186_23_fu_8548_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_23_fu_8548_p0.read()) * sc_bigint<32>(mul_ln186_23_fu_8548_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_240_fu_17907_p0() {
-    mul_ln184_240_fu_17907_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_240_fu_17907_p0() {
+    mul_ln186_240_fu_17907_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_240_fu_17907_p1() {
-    mul_ln184_240_fu_17907_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_240_fu_17907_p1() {
+    mul_ln186_240_fu_17907_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_240_fu_17907_p2() {
-    mul_ln184_240_fu_17907_p2 = (!mul_ln184_240_fu_17907_p0.read().is_01() || !mul_ln184_240_fu_17907_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_240_fu_17907_p0.read()) * sc_bigint<32>(mul_ln184_240_fu_17907_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_240_fu_17907_p2() {
+    mul_ln186_240_fu_17907_p2 = (!mul_ln186_240_fu_17907_p0.read().is_01() || !mul_ln186_240_fu_17907_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_240_fu_17907_p0.read()) * sc_bigint<32>(mul_ln186_240_fu_17907_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_241_fu_17922_p0() {
-    mul_ln184_241_fu_17922_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_241_fu_17922_p0() {
+    mul_ln186_241_fu_17922_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_241_fu_17922_p1() {
-    mul_ln184_241_fu_17922_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_241_fu_17922_p1() {
+    mul_ln186_241_fu_17922_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_241_fu_17922_p2() {
-    mul_ln184_241_fu_17922_p2 = (!mul_ln184_241_fu_17922_p0.read().is_01() || !mul_ln184_241_fu_17922_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_241_fu_17922_p0.read()) * sc_bigint<32>(mul_ln184_241_fu_17922_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_241_fu_17922_p2() {
+    mul_ln186_241_fu_17922_p2 = (!mul_ln186_241_fu_17922_p0.read().is_01() || !mul_ln186_241_fu_17922_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_241_fu_17922_p0.read()) * sc_bigint<32>(mul_ln186_241_fu_17922_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_242_fu_17993_p0() {
-    mul_ln184_242_fu_17993_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_242_fu_17993_p0() {
+    mul_ln186_242_fu_17993_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_242_fu_17993_p1() {
-    mul_ln184_242_fu_17993_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_242_fu_17993_p1() {
+    mul_ln186_242_fu_17993_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_242_fu_17993_p2() {
-    mul_ln184_242_fu_17993_p2 = (!mul_ln184_242_fu_17993_p0.read().is_01() || !mul_ln184_242_fu_17993_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_242_fu_17993_p0.read()) * sc_bigint<32>(mul_ln184_242_fu_17993_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_242_fu_17993_p2() {
+    mul_ln186_242_fu_17993_p2 = (!mul_ln186_242_fu_17993_p0.read().is_01() || !mul_ln186_242_fu_17993_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_242_fu_17993_p0.read()) * sc_bigint<32>(mul_ln186_242_fu_17993_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_243_fu_18008_p0() {
-    mul_ln184_243_fu_18008_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_243_fu_18008_p0() {
+    mul_ln186_243_fu_18008_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_243_fu_18008_p1() {
-    mul_ln184_243_fu_18008_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_243_fu_18008_p1() {
+    mul_ln186_243_fu_18008_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_243_fu_18008_p2() {
-    mul_ln184_243_fu_18008_p2 = (!mul_ln184_243_fu_18008_p0.read().is_01() || !mul_ln184_243_fu_18008_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_243_fu_18008_p0.read()) * sc_bigint<32>(mul_ln184_243_fu_18008_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_243_fu_18008_p2() {
+    mul_ln186_243_fu_18008_p2 = (!mul_ln186_243_fu_18008_p0.read().is_01() || !mul_ln186_243_fu_18008_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_243_fu_18008_p0.read()) * sc_bigint<32>(mul_ln186_243_fu_18008_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_244_fu_18079_p0() {
-    mul_ln184_244_fu_18079_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_244_fu_18079_p0() {
+    mul_ln186_244_fu_18079_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_244_fu_18079_p1() {
-    mul_ln184_244_fu_18079_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_244_fu_18079_p1() {
+    mul_ln186_244_fu_18079_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_244_fu_18079_p2() {
-    mul_ln184_244_fu_18079_p2 = (!mul_ln184_244_fu_18079_p0.read().is_01() || !mul_ln184_244_fu_18079_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_244_fu_18079_p0.read()) * sc_bigint<32>(mul_ln184_244_fu_18079_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_244_fu_18079_p2() {
+    mul_ln186_244_fu_18079_p2 = (!mul_ln186_244_fu_18079_p0.read().is_01() || !mul_ln186_244_fu_18079_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_244_fu_18079_p0.read()) * sc_bigint<32>(mul_ln186_244_fu_18079_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_245_fu_18094_p0() {
-    mul_ln184_245_fu_18094_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_245_fu_18094_p0() {
+    mul_ln186_245_fu_18094_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_245_fu_18094_p1() {
-    mul_ln184_245_fu_18094_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_245_fu_18094_p1() {
+    mul_ln186_245_fu_18094_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_245_fu_18094_p2() {
-    mul_ln184_245_fu_18094_p2 = (!mul_ln184_245_fu_18094_p0.read().is_01() || !mul_ln184_245_fu_18094_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_245_fu_18094_p0.read()) * sc_bigint<32>(mul_ln184_245_fu_18094_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_245_fu_18094_p2() {
+    mul_ln186_245_fu_18094_p2 = (!mul_ln186_245_fu_18094_p0.read().is_01() || !mul_ln186_245_fu_18094_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_245_fu_18094_p0.read()) * sc_bigint<32>(mul_ln186_245_fu_18094_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_246_fu_18165_p0() {
-    mul_ln184_246_fu_18165_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_246_fu_18165_p0() {
+    mul_ln186_246_fu_18165_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_246_fu_18165_p1() {
-    mul_ln184_246_fu_18165_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_246_fu_18165_p1() {
+    mul_ln186_246_fu_18165_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_246_fu_18165_p2() {
-    mul_ln184_246_fu_18165_p2 = (!mul_ln184_246_fu_18165_p0.read().is_01() || !mul_ln184_246_fu_18165_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_246_fu_18165_p0.read()) * sc_bigint<32>(mul_ln184_246_fu_18165_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_246_fu_18165_p2() {
+    mul_ln186_246_fu_18165_p2 = (!mul_ln186_246_fu_18165_p0.read().is_01() || !mul_ln186_246_fu_18165_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_246_fu_18165_p0.read()) * sc_bigint<32>(mul_ln186_246_fu_18165_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_247_fu_18180_p0() {
-    mul_ln184_247_fu_18180_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_247_fu_18180_p0() {
+    mul_ln186_247_fu_18180_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_247_fu_18180_p1() {
-    mul_ln184_247_fu_18180_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_247_fu_18180_p1() {
+    mul_ln186_247_fu_18180_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_247_fu_18180_p2() {
-    mul_ln184_247_fu_18180_p2 = (!mul_ln184_247_fu_18180_p0.read().is_01() || !mul_ln184_247_fu_18180_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_247_fu_18180_p0.read()) * sc_bigint<32>(mul_ln184_247_fu_18180_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_247_fu_18180_p2() {
+    mul_ln186_247_fu_18180_p2 = (!mul_ln186_247_fu_18180_p0.read().is_01() || !mul_ln186_247_fu_18180_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_247_fu_18180_p0.read()) * sc_bigint<32>(mul_ln186_247_fu_18180_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_248_fu_18251_p0() {
-    mul_ln184_248_fu_18251_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_248_fu_18251_p0() {
+    mul_ln186_248_fu_18251_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_248_fu_18251_p1() {
-    mul_ln184_248_fu_18251_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_248_fu_18251_p1() {
+    mul_ln186_248_fu_18251_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_248_fu_18251_p2() {
-    mul_ln184_248_fu_18251_p2 = (!mul_ln184_248_fu_18251_p0.read().is_01() || !mul_ln184_248_fu_18251_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_248_fu_18251_p0.read()) * sc_bigint<32>(mul_ln184_248_fu_18251_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_248_fu_18251_p2() {
+    mul_ln186_248_fu_18251_p2 = (!mul_ln186_248_fu_18251_p0.read().is_01() || !mul_ln186_248_fu_18251_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_248_fu_18251_p0.read()) * sc_bigint<32>(mul_ln186_248_fu_18251_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_249_fu_18266_p0() {
-    mul_ln184_249_fu_18266_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_249_fu_18266_p0() {
+    mul_ln186_249_fu_18266_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_249_fu_18266_p1() {
-    mul_ln184_249_fu_18266_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_249_fu_18266_p1() {
+    mul_ln186_249_fu_18266_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_249_fu_18266_p2() {
-    mul_ln184_249_fu_18266_p2 = (!mul_ln184_249_fu_18266_p0.read().is_01() || !mul_ln184_249_fu_18266_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_249_fu_18266_p0.read()) * sc_bigint<32>(mul_ln184_249_fu_18266_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_249_fu_18266_p2() {
+    mul_ln186_249_fu_18266_p2 = (!mul_ln186_249_fu_18266_p0.read().is_01() || !mul_ln186_249_fu_18266_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_249_fu_18266_p0.read()) * sc_bigint<32>(mul_ln186_249_fu_18266_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_24_fu_8619_p0() {
-    mul_ln184_24_fu_8619_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_24_fu_8619_p0() {
+    mul_ln186_24_fu_8619_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_24_fu_8619_p1() {
-    mul_ln184_24_fu_8619_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_24_fu_8619_p1() {
+    mul_ln186_24_fu_8619_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_24_fu_8619_p2() {
-    mul_ln184_24_fu_8619_p2 = (!mul_ln184_24_fu_8619_p0.read().is_01() || !mul_ln184_24_fu_8619_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_24_fu_8619_p0.read()) * sc_bigint<32>(mul_ln184_24_fu_8619_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_24_fu_8619_p2() {
+    mul_ln186_24_fu_8619_p2 = (!mul_ln186_24_fu_8619_p0.read().is_01() || !mul_ln186_24_fu_8619_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_24_fu_8619_p0.read()) * sc_bigint<32>(mul_ln186_24_fu_8619_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_250_fu_18337_p0() {
-    mul_ln184_250_fu_18337_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_250_fu_18337_p0() {
+    mul_ln186_250_fu_18337_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_250_fu_18337_p1() {
-    mul_ln184_250_fu_18337_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_250_fu_18337_p1() {
+    mul_ln186_250_fu_18337_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_250_fu_18337_p2() {
-    mul_ln184_250_fu_18337_p2 = (!mul_ln184_250_fu_18337_p0.read().is_01() || !mul_ln184_250_fu_18337_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_250_fu_18337_p0.read()) * sc_bigint<32>(mul_ln184_250_fu_18337_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_250_fu_18337_p2() {
+    mul_ln186_250_fu_18337_p2 = (!mul_ln186_250_fu_18337_p0.read().is_01() || !mul_ln186_250_fu_18337_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_250_fu_18337_p0.read()) * sc_bigint<32>(mul_ln186_250_fu_18337_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_251_fu_18352_p0() {
-    mul_ln184_251_fu_18352_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_251_fu_18352_p0() {
+    mul_ln186_251_fu_18352_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_251_fu_18352_p1() {
-    mul_ln184_251_fu_18352_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_251_fu_18352_p1() {
+    mul_ln186_251_fu_18352_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_251_fu_18352_p2() {
-    mul_ln184_251_fu_18352_p2 = (!mul_ln184_251_fu_18352_p0.read().is_01() || !mul_ln184_251_fu_18352_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_251_fu_18352_p0.read()) * sc_bigint<32>(mul_ln184_251_fu_18352_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_251_fu_18352_p2() {
+    mul_ln186_251_fu_18352_p2 = (!mul_ln186_251_fu_18352_p0.read().is_01() || !mul_ln186_251_fu_18352_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_251_fu_18352_p0.read()) * sc_bigint<32>(mul_ln186_251_fu_18352_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_252_fu_18423_p0() {
-    mul_ln184_252_fu_18423_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_252_fu_18423_p0() {
+    mul_ln186_252_fu_18423_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_252_fu_18423_p1() {
-    mul_ln184_252_fu_18423_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_252_fu_18423_p1() {
+    mul_ln186_252_fu_18423_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_252_fu_18423_p2() {
-    mul_ln184_252_fu_18423_p2 = (!mul_ln184_252_fu_18423_p0.read().is_01() || !mul_ln184_252_fu_18423_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_252_fu_18423_p0.read()) * sc_bigint<32>(mul_ln184_252_fu_18423_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_252_fu_18423_p2() {
+    mul_ln186_252_fu_18423_p2 = (!mul_ln186_252_fu_18423_p0.read().is_01() || !mul_ln186_252_fu_18423_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_252_fu_18423_p0.read()) * sc_bigint<32>(mul_ln186_252_fu_18423_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_253_fu_18438_p0() {
-    mul_ln184_253_fu_18438_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_253_fu_18438_p0() {
+    mul_ln186_253_fu_18438_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_253_fu_18438_p1() {
-    mul_ln184_253_fu_18438_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_253_fu_18438_p1() {
+    mul_ln186_253_fu_18438_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_253_fu_18438_p2() {
-    mul_ln184_253_fu_18438_p2 = (!mul_ln184_253_fu_18438_p0.read().is_01() || !mul_ln184_253_fu_18438_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_253_fu_18438_p0.read()) * sc_bigint<32>(mul_ln184_253_fu_18438_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_253_fu_18438_p2() {
+    mul_ln186_253_fu_18438_p2 = (!mul_ln186_253_fu_18438_p0.read().is_01() || !mul_ln186_253_fu_18438_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_253_fu_18438_p0.read()) * sc_bigint<32>(mul_ln186_253_fu_18438_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_254_fu_18481_p0() {
-    mul_ln184_254_fu_18481_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_254_fu_18481_p0() {
+    mul_ln186_254_fu_18481_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_254_fu_18481_p1() {
-    mul_ln184_254_fu_18481_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_254_fu_18481_p1() {
+    mul_ln186_254_fu_18481_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_254_fu_18481_p2() {
-    mul_ln184_254_fu_18481_p2 = (!mul_ln184_254_fu_18481_p0.read().is_01() || !mul_ln184_254_fu_18481_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_254_fu_18481_p0.read()) * sc_bigint<32>(mul_ln184_254_fu_18481_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_254_fu_18481_p2() {
+    mul_ln186_254_fu_18481_p2 = (!mul_ln186_254_fu_18481_p0.read().is_01() || !mul_ln186_254_fu_18481_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_254_fu_18481_p0.read()) * sc_bigint<32>(mul_ln186_254_fu_18481_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_255_fu_18496_p0() {
-    mul_ln184_255_fu_18496_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_255_fu_18496_p0() {
+    mul_ln186_255_fu_18496_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_255_fu_18496_p1() {
-    mul_ln184_255_fu_18496_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_255_fu_18496_p1() {
+    mul_ln186_255_fu_18496_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_255_fu_18496_p2() {
-    mul_ln184_255_fu_18496_p2 = (!mul_ln184_255_fu_18496_p0.read().is_01() || !mul_ln184_255_fu_18496_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_255_fu_18496_p0.read()) * sc_bigint<32>(mul_ln184_255_fu_18496_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_255_fu_18496_p2() {
+    mul_ln186_255_fu_18496_p2 = (!mul_ln186_255_fu_18496_p0.read().is_01() || !mul_ln186_255_fu_18496_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_255_fu_18496_p0.read()) * sc_bigint<32>(mul_ln186_255_fu_18496_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_25_fu_8634_p0() {
-    mul_ln184_25_fu_8634_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_25_fu_8634_p0() {
+    mul_ln186_25_fu_8634_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_25_fu_8634_p1() {
-    mul_ln184_25_fu_8634_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_25_fu_8634_p1() {
+    mul_ln186_25_fu_8634_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_25_fu_8634_p2() {
-    mul_ln184_25_fu_8634_p2 = (!mul_ln184_25_fu_8634_p0.read().is_01() || !mul_ln184_25_fu_8634_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_25_fu_8634_p0.read()) * sc_bigint<32>(mul_ln184_25_fu_8634_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_25_fu_8634_p2() {
+    mul_ln186_25_fu_8634_p2 = (!mul_ln186_25_fu_8634_p0.read().is_01() || !mul_ln186_25_fu_8634_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_25_fu_8634_p0.read()) * sc_bigint<32>(mul_ln186_25_fu_8634_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_26_fu_8705_p0() {
-    mul_ln184_26_fu_8705_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_26_fu_8705_p0() {
+    mul_ln186_26_fu_8705_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_26_fu_8705_p1() {
-    mul_ln184_26_fu_8705_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_26_fu_8705_p1() {
+    mul_ln186_26_fu_8705_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_26_fu_8705_p2() {
-    mul_ln184_26_fu_8705_p2 = (!mul_ln184_26_fu_8705_p0.read().is_01() || !mul_ln184_26_fu_8705_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_26_fu_8705_p0.read()) * sc_bigint<32>(mul_ln184_26_fu_8705_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_26_fu_8705_p2() {
+    mul_ln186_26_fu_8705_p2 = (!mul_ln186_26_fu_8705_p0.read().is_01() || !mul_ln186_26_fu_8705_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_26_fu_8705_p0.read()) * sc_bigint<32>(mul_ln186_26_fu_8705_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_27_fu_8720_p0() {
-    mul_ln184_27_fu_8720_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_27_fu_8720_p0() {
+    mul_ln186_27_fu_8720_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_27_fu_8720_p1() {
-    mul_ln184_27_fu_8720_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_27_fu_8720_p1() {
+    mul_ln186_27_fu_8720_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_27_fu_8720_p2() {
-    mul_ln184_27_fu_8720_p2 = (!mul_ln184_27_fu_8720_p0.read().is_01() || !mul_ln184_27_fu_8720_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_27_fu_8720_p0.read()) * sc_bigint<32>(mul_ln184_27_fu_8720_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_27_fu_8720_p2() {
+    mul_ln186_27_fu_8720_p2 = (!mul_ln186_27_fu_8720_p0.read().is_01() || !mul_ln186_27_fu_8720_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_27_fu_8720_p0.read()) * sc_bigint<32>(mul_ln186_27_fu_8720_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_28_fu_8791_p0() {
-    mul_ln184_28_fu_8791_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_28_fu_8791_p0() {
+    mul_ln186_28_fu_8791_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_28_fu_8791_p1() {
-    mul_ln184_28_fu_8791_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_28_fu_8791_p1() {
+    mul_ln186_28_fu_8791_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_28_fu_8791_p2() {
-    mul_ln184_28_fu_8791_p2 = (!mul_ln184_28_fu_8791_p0.read().is_01() || !mul_ln184_28_fu_8791_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_28_fu_8791_p0.read()) * sc_bigint<32>(mul_ln184_28_fu_8791_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_28_fu_8791_p2() {
+    mul_ln186_28_fu_8791_p2 = (!mul_ln186_28_fu_8791_p0.read().is_01() || !mul_ln186_28_fu_8791_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_28_fu_8791_p0.read()) * sc_bigint<32>(mul_ln186_28_fu_8791_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_29_fu_8806_p0() {
-    mul_ln184_29_fu_8806_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_29_fu_8806_p0() {
+    mul_ln186_29_fu_8806_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_29_fu_8806_p1() {
-    mul_ln184_29_fu_8806_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_29_fu_8806_p1() {
+    mul_ln186_29_fu_8806_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_29_fu_8806_p2() {
-    mul_ln184_29_fu_8806_p2 = (!mul_ln184_29_fu_8806_p0.read().is_01() || !mul_ln184_29_fu_8806_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_29_fu_8806_p0.read()) * sc_bigint<32>(mul_ln184_29_fu_8806_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_29_fu_8806_p2() {
+    mul_ln186_29_fu_8806_p2 = (!mul_ln186_29_fu_8806_p0.read().is_01() || !mul_ln186_29_fu_8806_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_29_fu_8806_p0.read()) * sc_bigint<32>(mul_ln186_29_fu_8806_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_2_fu_7673_p0() {
-    mul_ln184_2_fu_7673_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_2_fu_7673_p0() {
+    mul_ln186_2_fu_7673_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_2_fu_7673_p1() {
-    mul_ln184_2_fu_7673_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_2_fu_7673_p1() {
+    mul_ln186_2_fu_7673_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_2_fu_7673_p2() {
-    mul_ln184_2_fu_7673_p2 = (!mul_ln184_2_fu_7673_p0.read().is_01() || !mul_ln184_2_fu_7673_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_2_fu_7673_p0.read()) * sc_bigint<32>(mul_ln184_2_fu_7673_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_2_fu_7673_p2() {
+    mul_ln186_2_fu_7673_p2 = (!mul_ln186_2_fu_7673_p0.read().is_01() || !mul_ln186_2_fu_7673_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_2_fu_7673_p0.read()) * sc_bigint<32>(mul_ln186_2_fu_7673_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_30_fu_8877_p0() {
-    mul_ln184_30_fu_8877_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_30_fu_8877_p0() {
+    mul_ln186_30_fu_8877_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_30_fu_8877_p1() {
-    mul_ln184_30_fu_8877_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_30_fu_8877_p1() {
+    mul_ln186_30_fu_8877_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_30_fu_8877_p2() {
-    mul_ln184_30_fu_8877_p2 = (!mul_ln184_30_fu_8877_p0.read().is_01() || !mul_ln184_30_fu_8877_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_30_fu_8877_p0.read()) * sc_bigint<32>(mul_ln184_30_fu_8877_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_30_fu_8877_p2() {
+    mul_ln186_30_fu_8877_p2 = (!mul_ln186_30_fu_8877_p0.read().is_01() || !mul_ln186_30_fu_8877_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_30_fu_8877_p0.read()) * sc_bigint<32>(mul_ln186_30_fu_8877_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_31_fu_8892_p0() {
-    mul_ln184_31_fu_8892_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_31_fu_8892_p0() {
+    mul_ln186_31_fu_8892_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_31_fu_8892_p1() {
-    mul_ln184_31_fu_8892_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_31_fu_8892_p1() {
+    mul_ln186_31_fu_8892_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_31_fu_8892_p2() {
-    mul_ln184_31_fu_8892_p2 = (!mul_ln184_31_fu_8892_p0.read().is_01() || !mul_ln184_31_fu_8892_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_31_fu_8892_p0.read()) * sc_bigint<32>(mul_ln184_31_fu_8892_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_31_fu_8892_p2() {
+    mul_ln186_31_fu_8892_p2 = (!mul_ln186_31_fu_8892_p0.read().is_01() || !mul_ln186_31_fu_8892_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_31_fu_8892_p0.read()) * sc_bigint<32>(mul_ln186_31_fu_8892_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_32_fu_8963_p0() {
-    mul_ln184_32_fu_8963_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_32_fu_8963_p0() {
+    mul_ln186_32_fu_8963_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_32_fu_8963_p1() {
-    mul_ln184_32_fu_8963_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_32_fu_8963_p1() {
+    mul_ln186_32_fu_8963_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_32_fu_8963_p2() {
-    mul_ln184_32_fu_8963_p2 = (!mul_ln184_32_fu_8963_p0.read().is_01() || !mul_ln184_32_fu_8963_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_32_fu_8963_p0.read()) * sc_bigint<32>(mul_ln184_32_fu_8963_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_32_fu_8963_p2() {
+    mul_ln186_32_fu_8963_p2 = (!mul_ln186_32_fu_8963_p0.read().is_01() || !mul_ln186_32_fu_8963_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_32_fu_8963_p0.read()) * sc_bigint<32>(mul_ln186_32_fu_8963_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_33_fu_8978_p0() {
-    mul_ln184_33_fu_8978_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_33_fu_8978_p0() {
+    mul_ln186_33_fu_8978_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_33_fu_8978_p1() {
-    mul_ln184_33_fu_8978_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_33_fu_8978_p1() {
+    mul_ln186_33_fu_8978_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_33_fu_8978_p2() {
-    mul_ln184_33_fu_8978_p2 = (!mul_ln184_33_fu_8978_p0.read().is_01() || !mul_ln184_33_fu_8978_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_33_fu_8978_p0.read()) * sc_bigint<32>(mul_ln184_33_fu_8978_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_33_fu_8978_p2() {
+    mul_ln186_33_fu_8978_p2 = (!mul_ln186_33_fu_8978_p0.read().is_01() || !mul_ln186_33_fu_8978_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_33_fu_8978_p0.read()) * sc_bigint<32>(mul_ln186_33_fu_8978_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_34_fu_9049_p0() {
-    mul_ln184_34_fu_9049_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_34_fu_9049_p0() {
+    mul_ln186_34_fu_9049_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_34_fu_9049_p1() {
-    mul_ln184_34_fu_9049_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_34_fu_9049_p1() {
+    mul_ln186_34_fu_9049_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_34_fu_9049_p2() {
-    mul_ln184_34_fu_9049_p2 = (!mul_ln184_34_fu_9049_p0.read().is_01() || !mul_ln184_34_fu_9049_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_34_fu_9049_p0.read()) * sc_bigint<32>(mul_ln184_34_fu_9049_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_34_fu_9049_p2() {
+    mul_ln186_34_fu_9049_p2 = (!mul_ln186_34_fu_9049_p0.read().is_01() || !mul_ln186_34_fu_9049_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_34_fu_9049_p0.read()) * sc_bigint<32>(mul_ln186_34_fu_9049_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_35_fu_9064_p0() {
-    mul_ln184_35_fu_9064_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_35_fu_9064_p0() {
+    mul_ln186_35_fu_9064_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_35_fu_9064_p1() {
-    mul_ln184_35_fu_9064_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_35_fu_9064_p1() {
+    mul_ln186_35_fu_9064_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_35_fu_9064_p2() {
-    mul_ln184_35_fu_9064_p2 = (!mul_ln184_35_fu_9064_p0.read().is_01() || !mul_ln184_35_fu_9064_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_35_fu_9064_p0.read()) * sc_bigint<32>(mul_ln184_35_fu_9064_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_35_fu_9064_p2() {
+    mul_ln186_35_fu_9064_p2 = (!mul_ln186_35_fu_9064_p0.read().is_01() || !mul_ln186_35_fu_9064_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_35_fu_9064_p0.read()) * sc_bigint<32>(mul_ln186_35_fu_9064_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_36_fu_9135_p0() {
-    mul_ln184_36_fu_9135_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_36_fu_9135_p0() {
+    mul_ln186_36_fu_9135_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_36_fu_9135_p1() {
-    mul_ln184_36_fu_9135_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_36_fu_9135_p1() {
+    mul_ln186_36_fu_9135_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_36_fu_9135_p2() {
-    mul_ln184_36_fu_9135_p2 = (!mul_ln184_36_fu_9135_p0.read().is_01() || !mul_ln184_36_fu_9135_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_36_fu_9135_p0.read()) * sc_bigint<32>(mul_ln184_36_fu_9135_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_36_fu_9135_p2() {
+    mul_ln186_36_fu_9135_p2 = (!mul_ln186_36_fu_9135_p0.read().is_01() || !mul_ln186_36_fu_9135_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_36_fu_9135_p0.read()) * sc_bigint<32>(mul_ln186_36_fu_9135_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_37_fu_9150_p0() {
-    mul_ln184_37_fu_9150_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_37_fu_9150_p0() {
+    mul_ln186_37_fu_9150_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_37_fu_9150_p1() {
-    mul_ln184_37_fu_9150_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_37_fu_9150_p1() {
+    mul_ln186_37_fu_9150_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_37_fu_9150_p2() {
-    mul_ln184_37_fu_9150_p2 = (!mul_ln184_37_fu_9150_p0.read().is_01() || !mul_ln184_37_fu_9150_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_37_fu_9150_p0.read()) * sc_bigint<32>(mul_ln184_37_fu_9150_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_37_fu_9150_p2() {
+    mul_ln186_37_fu_9150_p2 = (!mul_ln186_37_fu_9150_p0.read().is_01() || !mul_ln186_37_fu_9150_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_37_fu_9150_p0.read()) * sc_bigint<32>(mul_ln186_37_fu_9150_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_38_fu_9221_p0() {
-    mul_ln184_38_fu_9221_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_38_fu_9221_p0() {
+    mul_ln186_38_fu_9221_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_38_fu_9221_p1() {
-    mul_ln184_38_fu_9221_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_38_fu_9221_p1() {
+    mul_ln186_38_fu_9221_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_38_fu_9221_p2() {
-    mul_ln184_38_fu_9221_p2 = (!mul_ln184_38_fu_9221_p0.read().is_01() || !mul_ln184_38_fu_9221_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_38_fu_9221_p0.read()) * sc_bigint<32>(mul_ln184_38_fu_9221_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_38_fu_9221_p2() {
+    mul_ln186_38_fu_9221_p2 = (!mul_ln186_38_fu_9221_p0.read().is_01() || !mul_ln186_38_fu_9221_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_38_fu_9221_p0.read()) * sc_bigint<32>(mul_ln186_38_fu_9221_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_39_fu_9236_p0() {
-    mul_ln184_39_fu_9236_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_39_fu_9236_p0() {
+    mul_ln186_39_fu_9236_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_39_fu_9236_p1() {
-    mul_ln184_39_fu_9236_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_39_fu_9236_p1() {
+    mul_ln186_39_fu_9236_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_39_fu_9236_p2() {
-    mul_ln184_39_fu_9236_p2 = (!mul_ln184_39_fu_9236_p0.read().is_01() || !mul_ln184_39_fu_9236_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_39_fu_9236_p0.read()) * sc_bigint<32>(mul_ln184_39_fu_9236_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_39_fu_9236_p2() {
+    mul_ln186_39_fu_9236_p2 = (!mul_ln186_39_fu_9236_p0.read().is_01() || !mul_ln186_39_fu_9236_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_39_fu_9236_p0.read()) * sc_bigint<32>(mul_ln186_39_fu_9236_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_3_fu_7688_p0() {
-    mul_ln184_3_fu_7688_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_3_fu_7688_p0() {
+    mul_ln186_3_fu_7688_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_3_fu_7688_p1() {
-    mul_ln184_3_fu_7688_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_3_fu_7688_p1() {
+    mul_ln186_3_fu_7688_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_3_fu_7688_p2() {
-    mul_ln184_3_fu_7688_p2 = (!mul_ln184_3_fu_7688_p0.read().is_01() || !mul_ln184_3_fu_7688_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_3_fu_7688_p0.read()) * sc_bigint<32>(mul_ln184_3_fu_7688_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_3_fu_7688_p2() {
+    mul_ln186_3_fu_7688_p2 = (!mul_ln186_3_fu_7688_p0.read().is_01() || !mul_ln186_3_fu_7688_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_3_fu_7688_p0.read()) * sc_bigint<32>(mul_ln186_3_fu_7688_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_40_fu_9307_p0() {
-    mul_ln184_40_fu_9307_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_40_fu_9307_p0() {
+    mul_ln186_40_fu_9307_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_40_fu_9307_p1() {
-    mul_ln184_40_fu_9307_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_40_fu_9307_p1() {
+    mul_ln186_40_fu_9307_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_40_fu_9307_p2() {
-    mul_ln184_40_fu_9307_p2 = (!mul_ln184_40_fu_9307_p0.read().is_01() || !mul_ln184_40_fu_9307_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_40_fu_9307_p0.read()) * sc_bigint<32>(mul_ln184_40_fu_9307_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_40_fu_9307_p2() {
+    mul_ln186_40_fu_9307_p2 = (!mul_ln186_40_fu_9307_p0.read().is_01() || !mul_ln186_40_fu_9307_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_40_fu_9307_p0.read()) * sc_bigint<32>(mul_ln186_40_fu_9307_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_41_fu_9322_p0() {
-    mul_ln184_41_fu_9322_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_41_fu_9322_p0() {
+    mul_ln186_41_fu_9322_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_41_fu_9322_p1() {
-    mul_ln184_41_fu_9322_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_41_fu_9322_p1() {
+    mul_ln186_41_fu_9322_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_41_fu_9322_p2() {
-    mul_ln184_41_fu_9322_p2 = (!mul_ln184_41_fu_9322_p0.read().is_01() || !mul_ln184_41_fu_9322_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_41_fu_9322_p0.read()) * sc_bigint<32>(mul_ln184_41_fu_9322_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_41_fu_9322_p2() {
+    mul_ln186_41_fu_9322_p2 = (!mul_ln186_41_fu_9322_p0.read().is_01() || !mul_ln186_41_fu_9322_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_41_fu_9322_p0.read()) * sc_bigint<32>(mul_ln186_41_fu_9322_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_42_fu_9393_p0() {
-    mul_ln184_42_fu_9393_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_42_fu_9393_p0() {
+    mul_ln186_42_fu_9393_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_42_fu_9393_p1() {
-    mul_ln184_42_fu_9393_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_42_fu_9393_p1() {
+    mul_ln186_42_fu_9393_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_42_fu_9393_p2() {
-    mul_ln184_42_fu_9393_p2 = (!mul_ln184_42_fu_9393_p0.read().is_01() || !mul_ln184_42_fu_9393_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_42_fu_9393_p0.read()) * sc_bigint<32>(mul_ln184_42_fu_9393_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_42_fu_9393_p2() {
+    mul_ln186_42_fu_9393_p2 = (!mul_ln186_42_fu_9393_p0.read().is_01() || !mul_ln186_42_fu_9393_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_42_fu_9393_p0.read()) * sc_bigint<32>(mul_ln186_42_fu_9393_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_43_fu_9408_p0() {
-    mul_ln184_43_fu_9408_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_43_fu_9408_p0() {
+    mul_ln186_43_fu_9408_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_43_fu_9408_p1() {
-    mul_ln184_43_fu_9408_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_43_fu_9408_p1() {
+    mul_ln186_43_fu_9408_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_43_fu_9408_p2() {
-    mul_ln184_43_fu_9408_p2 = (!mul_ln184_43_fu_9408_p0.read().is_01() || !mul_ln184_43_fu_9408_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_43_fu_9408_p0.read()) * sc_bigint<32>(mul_ln184_43_fu_9408_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_43_fu_9408_p2() {
+    mul_ln186_43_fu_9408_p2 = (!mul_ln186_43_fu_9408_p0.read().is_01() || !mul_ln186_43_fu_9408_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_43_fu_9408_p0.read()) * sc_bigint<32>(mul_ln186_43_fu_9408_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_44_fu_9479_p0() {
-    mul_ln184_44_fu_9479_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_44_fu_9479_p0() {
+    mul_ln186_44_fu_9479_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_44_fu_9479_p1() {
-    mul_ln184_44_fu_9479_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_44_fu_9479_p1() {
+    mul_ln186_44_fu_9479_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_44_fu_9479_p2() {
-    mul_ln184_44_fu_9479_p2 = (!mul_ln184_44_fu_9479_p0.read().is_01() || !mul_ln184_44_fu_9479_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_44_fu_9479_p0.read()) * sc_bigint<32>(mul_ln184_44_fu_9479_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_44_fu_9479_p2() {
+    mul_ln186_44_fu_9479_p2 = (!mul_ln186_44_fu_9479_p0.read().is_01() || !mul_ln186_44_fu_9479_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_44_fu_9479_p0.read()) * sc_bigint<32>(mul_ln186_44_fu_9479_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_45_fu_9494_p0() {
-    mul_ln184_45_fu_9494_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_45_fu_9494_p0() {
+    mul_ln186_45_fu_9494_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_45_fu_9494_p1() {
-    mul_ln184_45_fu_9494_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_45_fu_9494_p1() {
+    mul_ln186_45_fu_9494_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_45_fu_9494_p2() {
-    mul_ln184_45_fu_9494_p2 = (!mul_ln184_45_fu_9494_p0.read().is_01() || !mul_ln184_45_fu_9494_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_45_fu_9494_p0.read()) * sc_bigint<32>(mul_ln184_45_fu_9494_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_45_fu_9494_p2() {
+    mul_ln186_45_fu_9494_p2 = (!mul_ln186_45_fu_9494_p0.read().is_01() || !mul_ln186_45_fu_9494_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_45_fu_9494_p0.read()) * sc_bigint<32>(mul_ln186_45_fu_9494_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_46_fu_9565_p0() {
-    mul_ln184_46_fu_9565_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_46_fu_9565_p0() {
+    mul_ln186_46_fu_9565_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_46_fu_9565_p1() {
-    mul_ln184_46_fu_9565_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_46_fu_9565_p1() {
+    mul_ln186_46_fu_9565_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_46_fu_9565_p2() {
-    mul_ln184_46_fu_9565_p2 = (!mul_ln184_46_fu_9565_p0.read().is_01() || !mul_ln184_46_fu_9565_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_46_fu_9565_p0.read()) * sc_bigint<32>(mul_ln184_46_fu_9565_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_46_fu_9565_p2() {
+    mul_ln186_46_fu_9565_p2 = (!mul_ln186_46_fu_9565_p0.read().is_01() || !mul_ln186_46_fu_9565_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_46_fu_9565_p0.read()) * sc_bigint<32>(mul_ln186_46_fu_9565_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_47_fu_9580_p0() {
-    mul_ln184_47_fu_9580_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_47_fu_9580_p0() {
+    mul_ln186_47_fu_9580_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_47_fu_9580_p1() {
-    mul_ln184_47_fu_9580_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_47_fu_9580_p1() {
+    mul_ln186_47_fu_9580_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_47_fu_9580_p2() {
-    mul_ln184_47_fu_9580_p2 = (!mul_ln184_47_fu_9580_p0.read().is_01() || !mul_ln184_47_fu_9580_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_47_fu_9580_p0.read()) * sc_bigint<32>(mul_ln184_47_fu_9580_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_47_fu_9580_p2() {
+    mul_ln186_47_fu_9580_p2 = (!mul_ln186_47_fu_9580_p0.read().is_01() || !mul_ln186_47_fu_9580_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_47_fu_9580_p0.read()) * sc_bigint<32>(mul_ln186_47_fu_9580_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_48_fu_9651_p0() {
-    mul_ln184_48_fu_9651_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_48_fu_9651_p0() {
+    mul_ln186_48_fu_9651_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_48_fu_9651_p1() {
-    mul_ln184_48_fu_9651_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_48_fu_9651_p1() {
+    mul_ln186_48_fu_9651_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_48_fu_9651_p2() {
-    mul_ln184_48_fu_9651_p2 = (!mul_ln184_48_fu_9651_p0.read().is_01() || !mul_ln184_48_fu_9651_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_48_fu_9651_p0.read()) * sc_bigint<32>(mul_ln184_48_fu_9651_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_48_fu_9651_p2() {
+    mul_ln186_48_fu_9651_p2 = (!mul_ln186_48_fu_9651_p0.read().is_01() || !mul_ln186_48_fu_9651_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_48_fu_9651_p0.read()) * sc_bigint<32>(mul_ln186_48_fu_9651_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_49_fu_9666_p0() {
-    mul_ln184_49_fu_9666_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_49_fu_9666_p0() {
+    mul_ln186_49_fu_9666_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_49_fu_9666_p1() {
-    mul_ln184_49_fu_9666_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_49_fu_9666_p1() {
+    mul_ln186_49_fu_9666_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_49_fu_9666_p2() {
-    mul_ln184_49_fu_9666_p2 = (!mul_ln184_49_fu_9666_p0.read().is_01() || !mul_ln184_49_fu_9666_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_49_fu_9666_p0.read()) * sc_bigint<32>(mul_ln184_49_fu_9666_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_49_fu_9666_p2() {
+    mul_ln186_49_fu_9666_p2 = (!mul_ln186_49_fu_9666_p0.read().is_01() || !mul_ln186_49_fu_9666_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_49_fu_9666_p0.read()) * sc_bigint<32>(mul_ln186_49_fu_9666_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_4_fu_7759_p0() {
-    mul_ln184_4_fu_7759_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_4_fu_7759_p0() {
+    mul_ln186_4_fu_7759_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_4_fu_7759_p1() {
-    mul_ln184_4_fu_7759_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_4_fu_7759_p1() {
+    mul_ln186_4_fu_7759_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_4_fu_7759_p2() {
-    mul_ln184_4_fu_7759_p2 = (!mul_ln184_4_fu_7759_p0.read().is_01() || !mul_ln184_4_fu_7759_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_4_fu_7759_p0.read()) * sc_bigint<32>(mul_ln184_4_fu_7759_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_4_fu_7759_p2() {
+    mul_ln186_4_fu_7759_p2 = (!mul_ln186_4_fu_7759_p0.read().is_01() || !mul_ln186_4_fu_7759_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_4_fu_7759_p0.read()) * sc_bigint<32>(mul_ln186_4_fu_7759_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_50_fu_9737_p0() {
-    mul_ln184_50_fu_9737_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_50_fu_9737_p0() {
+    mul_ln186_50_fu_9737_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_50_fu_9737_p1() {
-    mul_ln184_50_fu_9737_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_50_fu_9737_p1() {
+    mul_ln186_50_fu_9737_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_50_fu_9737_p2() {
-    mul_ln184_50_fu_9737_p2 = (!mul_ln184_50_fu_9737_p0.read().is_01() || !mul_ln184_50_fu_9737_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_50_fu_9737_p0.read()) * sc_bigint<32>(mul_ln184_50_fu_9737_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_50_fu_9737_p2() {
+    mul_ln186_50_fu_9737_p2 = (!mul_ln186_50_fu_9737_p0.read().is_01() || !mul_ln186_50_fu_9737_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_50_fu_9737_p0.read()) * sc_bigint<32>(mul_ln186_50_fu_9737_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_51_fu_9752_p0() {
-    mul_ln184_51_fu_9752_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_51_fu_9752_p0() {
+    mul_ln186_51_fu_9752_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_51_fu_9752_p1() {
-    mul_ln184_51_fu_9752_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_51_fu_9752_p1() {
+    mul_ln186_51_fu_9752_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_51_fu_9752_p2() {
-    mul_ln184_51_fu_9752_p2 = (!mul_ln184_51_fu_9752_p0.read().is_01() || !mul_ln184_51_fu_9752_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_51_fu_9752_p0.read()) * sc_bigint<32>(mul_ln184_51_fu_9752_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_51_fu_9752_p2() {
+    mul_ln186_51_fu_9752_p2 = (!mul_ln186_51_fu_9752_p0.read().is_01() || !mul_ln186_51_fu_9752_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_51_fu_9752_p0.read()) * sc_bigint<32>(mul_ln186_51_fu_9752_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_52_fu_9823_p0() {
-    mul_ln184_52_fu_9823_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_52_fu_9823_p0() {
+    mul_ln186_52_fu_9823_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_52_fu_9823_p1() {
-    mul_ln184_52_fu_9823_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_52_fu_9823_p1() {
+    mul_ln186_52_fu_9823_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_52_fu_9823_p2() {
-    mul_ln184_52_fu_9823_p2 = (!mul_ln184_52_fu_9823_p0.read().is_01() || !mul_ln184_52_fu_9823_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_52_fu_9823_p0.read()) * sc_bigint<32>(mul_ln184_52_fu_9823_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_52_fu_9823_p2() {
+    mul_ln186_52_fu_9823_p2 = (!mul_ln186_52_fu_9823_p0.read().is_01() || !mul_ln186_52_fu_9823_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_52_fu_9823_p0.read()) * sc_bigint<32>(mul_ln186_52_fu_9823_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_53_fu_9838_p0() {
-    mul_ln184_53_fu_9838_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_53_fu_9838_p0() {
+    mul_ln186_53_fu_9838_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_53_fu_9838_p1() {
-    mul_ln184_53_fu_9838_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_53_fu_9838_p1() {
+    mul_ln186_53_fu_9838_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_53_fu_9838_p2() {
-    mul_ln184_53_fu_9838_p2 = (!mul_ln184_53_fu_9838_p0.read().is_01() || !mul_ln184_53_fu_9838_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_53_fu_9838_p0.read()) * sc_bigint<32>(mul_ln184_53_fu_9838_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_53_fu_9838_p2() {
+    mul_ln186_53_fu_9838_p2 = (!mul_ln186_53_fu_9838_p0.read().is_01() || !mul_ln186_53_fu_9838_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_53_fu_9838_p0.read()) * sc_bigint<32>(mul_ln186_53_fu_9838_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_54_fu_9909_p0() {
-    mul_ln184_54_fu_9909_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_54_fu_9909_p0() {
+    mul_ln186_54_fu_9909_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_54_fu_9909_p1() {
-    mul_ln184_54_fu_9909_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_54_fu_9909_p1() {
+    mul_ln186_54_fu_9909_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_54_fu_9909_p2() {
-    mul_ln184_54_fu_9909_p2 = (!mul_ln184_54_fu_9909_p0.read().is_01() || !mul_ln184_54_fu_9909_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_54_fu_9909_p0.read()) * sc_bigint<32>(mul_ln184_54_fu_9909_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_54_fu_9909_p2() {
+    mul_ln186_54_fu_9909_p2 = (!mul_ln186_54_fu_9909_p0.read().is_01() || !mul_ln186_54_fu_9909_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_54_fu_9909_p0.read()) * sc_bigint<32>(mul_ln186_54_fu_9909_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_55_fu_9924_p0() {
-    mul_ln184_55_fu_9924_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_55_fu_9924_p0() {
+    mul_ln186_55_fu_9924_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_55_fu_9924_p1() {
-    mul_ln184_55_fu_9924_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_55_fu_9924_p1() {
+    mul_ln186_55_fu_9924_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_55_fu_9924_p2() {
-    mul_ln184_55_fu_9924_p2 = (!mul_ln184_55_fu_9924_p0.read().is_01() || !mul_ln184_55_fu_9924_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_55_fu_9924_p0.read()) * sc_bigint<32>(mul_ln184_55_fu_9924_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_55_fu_9924_p2() {
+    mul_ln186_55_fu_9924_p2 = (!mul_ln186_55_fu_9924_p0.read().is_01() || !mul_ln186_55_fu_9924_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_55_fu_9924_p0.read()) * sc_bigint<32>(mul_ln186_55_fu_9924_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_56_fu_9995_p0() {
-    mul_ln184_56_fu_9995_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_56_fu_9995_p0() {
+    mul_ln186_56_fu_9995_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_56_fu_9995_p1() {
-    mul_ln184_56_fu_9995_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_56_fu_9995_p1() {
+    mul_ln186_56_fu_9995_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_56_fu_9995_p2() {
-    mul_ln184_56_fu_9995_p2 = (!mul_ln184_56_fu_9995_p0.read().is_01() || !mul_ln184_56_fu_9995_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_56_fu_9995_p0.read()) * sc_bigint<32>(mul_ln184_56_fu_9995_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_56_fu_9995_p2() {
+    mul_ln186_56_fu_9995_p2 = (!mul_ln186_56_fu_9995_p0.read().is_01() || !mul_ln186_56_fu_9995_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_56_fu_9995_p0.read()) * sc_bigint<32>(mul_ln186_56_fu_9995_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_57_fu_10010_p0() {
-    mul_ln184_57_fu_10010_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_57_fu_10010_p0() {
+    mul_ln186_57_fu_10010_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_57_fu_10010_p1() {
-    mul_ln184_57_fu_10010_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_57_fu_10010_p1() {
+    mul_ln186_57_fu_10010_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_57_fu_10010_p2() {
-    mul_ln184_57_fu_10010_p2 = (!mul_ln184_57_fu_10010_p0.read().is_01() || !mul_ln184_57_fu_10010_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_57_fu_10010_p0.read()) * sc_bigint<32>(mul_ln184_57_fu_10010_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_57_fu_10010_p2() {
+    mul_ln186_57_fu_10010_p2 = (!mul_ln186_57_fu_10010_p0.read().is_01() || !mul_ln186_57_fu_10010_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_57_fu_10010_p0.read()) * sc_bigint<32>(mul_ln186_57_fu_10010_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_58_fu_10081_p0() {
-    mul_ln184_58_fu_10081_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_58_fu_10081_p0() {
+    mul_ln186_58_fu_10081_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_58_fu_10081_p1() {
-    mul_ln184_58_fu_10081_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_58_fu_10081_p1() {
+    mul_ln186_58_fu_10081_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_58_fu_10081_p2() {
-    mul_ln184_58_fu_10081_p2 = (!mul_ln184_58_fu_10081_p0.read().is_01() || !mul_ln184_58_fu_10081_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_58_fu_10081_p0.read()) * sc_bigint<32>(mul_ln184_58_fu_10081_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_58_fu_10081_p2() {
+    mul_ln186_58_fu_10081_p2 = (!mul_ln186_58_fu_10081_p0.read().is_01() || !mul_ln186_58_fu_10081_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_58_fu_10081_p0.read()) * sc_bigint<32>(mul_ln186_58_fu_10081_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_59_fu_10096_p0() {
-    mul_ln184_59_fu_10096_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_59_fu_10096_p0() {
+    mul_ln186_59_fu_10096_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_59_fu_10096_p1() {
-    mul_ln184_59_fu_10096_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_59_fu_10096_p1() {
+    mul_ln186_59_fu_10096_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_59_fu_10096_p2() {
-    mul_ln184_59_fu_10096_p2 = (!mul_ln184_59_fu_10096_p0.read().is_01() || !mul_ln184_59_fu_10096_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_59_fu_10096_p0.read()) * sc_bigint<32>(mul_ln184_59_fu_10096_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_59_fu_10096_p2() {
+    mul_ln186_59_fu_10096_p2 = (!mul_ln186_59_fu_10096_p0.read().is_01() || !mul_ln186_59_fu_10096_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_59_fu_10096_p0.read()) * sc_bigint<32>(mul_ln186_59_fu_10096_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_5_fu_7774_p0() {
-    mul_ln184_5_fu_7774_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_5_fu_7774_p0() {
+    mul_ln186_5_fu_7774_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_5_fu_7774_p1() {
-    mul_ln184_5_fu_7774_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_5_fu_7774_p1() {
+    mul_ln186_5_fu_7774_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_5_fu_7774_p2() {
-    mul_ln184_5_fu_7774_p2 = (!mul_ln184_5_fu_7774_p0.read().is_01() || !mul_ln184_5_fu_7774_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_5_fu_7774_p0.read()) * sc_bigint<32>(mul_ln184_5_fu_7774_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_5_fu_7774_p2() {
+    mul_ln186_5_fu_7774_p2 = (!mul_ln186_5_fu_7774_p0.read().is_01() || !mul_ln186_5_fu_7774_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_5_fu_7774_p0.read()) * sc_bigint<32>(mul_ln186_5_fu_7774_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_60_fu_10167_p0() {
-    mul_ln184_60_fu_10167_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_60_fu_10167_p0() {
+    mul_ln186_60_fu_10167_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_60_fu_10167_p1() {
-    mul_ln184_60_fu_10167_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_60_fu_10167_p1() {
+    mul_ln186_60_fu_10167_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_60_fu_10167_p2() {
-    mul_ln184_60_fu_10167_p2 = (!mul_ln184_60_fu_10167_p0.read().is_01() || !mul_ln184_60_fu_10167_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_60_fu_10167_p0.read()) * sc_bigint<32>(mul_ln184_60_fu_10167_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_60_fu_10167_p2() {
+    mul_ln186_60_fu_10167_p2 = (!mul_ln186_60_fu_10167_p0.read().is_01() || !mul_ln186_60_fu_10167_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_60_fu_10167_p0.read()) * sc_bigint<32>(mul_ln186_60_fu_10167_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_61_fu_10182_p0() {
-    mul_ln184_61_fu_10182_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_61_fu_10182_p0() {
+    mul_ln186_61_fu_10182_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_61_fu_10182_p1() {
-    mul_ln184_61_fu_10182_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_61_fu_10182_p1() {
+    mul_ln186_61_fu_10182_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_61_fu_10182_p2() {
-    mul_ln184_61_fu_10182_p2 = (!mul_ln184_61_fu_10182_p0.read().is_01() || !mul_ln184_61_fu_10182_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_61_fu_10182_p0.read()) * sc_bigint<32>(mul_ln184_61_fu_10182_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_61_fu_10182_p2() {
+    mul_ln186_61_fu_10182_p2 = (!mul_ln186_61_fu_10182_p0.read().is_01() || !mul_ln186_61_fu_10182_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_61_fu_10182_p0.read()) * sc_bigint<32>(mul_ln186_61_fu_10182_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_62_fu_10253_p0() {
-    mul_ln184_62_fu_10253_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_62_fu_10253_p0() {
+    mul_ln186_62_fu_10253_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_62_fu_10253_p1() {
-    mul_ln184_62_fu_10253_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_62_fu_10253_p1() {
+    mul_ln186_62_fu_10253_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_62_fu_10253_p2() {
-    mul_ln184_62_fu_10253_p2 = (!mul_ln184_62_fu_10253_p0.read().is_01() || !mul_ln184_62_fu_10253_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_62_fu_10253_p0.read()) * sc_bigint<32>(mul_ln184_62_fu_10253_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_62_fu_10253_p2() {
+    mul_ln186_62_fu_10253_p2 = (!mul_ln186_62_fu_10253_p0.read().is_01() || !mul_ln186_62_fu_10253_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_62_fu_10253_p0.read()) * sc_bigint<32>(mul_ln186_62_fu_10253_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_63_fu_10268_p0() {
-    mul_ln184_63_fu_10268_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_63_fu_10268_p0() {
+    mul_ln186_63_fu_10268_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_63_fu_10268_p1() {
-    mul_ln184_63_fu_10268_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_63_fu_10268_p1() {
+    mul_ln186_63_fu_10268_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_63_fu_10268_p2() {
-    mul_ln184_63_fu_10268_p2 = (!mul_ln184_63_fu_10268_p0.read().is_01() || !mul_ln184_63_fu_10268_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_63_fu_10268_p0.read()) * sc_bigint<32>(mul_ln184_63_fu_10268_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_63_fu_10268_p2() {
+    mul_ln186_63_fu_10268_p2 = (!mul_ln186_63_fu_10268_p0.read().is_01() || !mul_ln186_63_fu_10268_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_63_fu_10268_p0.read()) * sc_bigint<32>(mul_ln186_63_fu_10268_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_64_fu_10339_p0() {
-    mul_ln184_64_fu_10339_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_64_fu_10339_p0() {
+    mul_ln186_64_fu_10339_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_64_fu_10339_p1() {
-    mul_ln184_64_fu_10339_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_64_fu_10339_p1() {
+    mul_ln186_64_fu_10339_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_64_fu_10339_p2() {
-    mul_ln184_64_fu_10339_p2 = (!mul_ln184_64_fu_10339_p0.read().is_01() || !mul_ln184_64_fu_10339_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_64_fu_10339_p0.read()) * sc_bigint<32>(mul_ln184_64_fu_10339_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_64_fu_10339_p2() {
+    mul_ln186_64_fu_10339_p2 = (!mul_ln186_64_fu_10339_p0.read().is_01() || !mul_ln186_64_fu_10339_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_64_fu_10339_p0.read()) * sc_bigint<32>(mul_ln186_64_fu_10339_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_65_fu_10354_p0() {
-    mul_ln184_65_fu_10354_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_65_fu_10354_p0() {
+    mul_ln186_65_fu_10354_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_65_fu_10354_p1() {
-    mul_ln184_65_fu_10354_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_65_fu_10354_p1() {
+    mul_ln186_65_fu_10354_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_65_fu_10354_p2() {
-    mul_ln184_65_fu_10354_p2 = (!mul_ln184_65_fu_10354_p0.read().is_01() || !mul_ln184_65_fu_10354_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_65_fu_10354_p0.read()) * sc_bigint<32>(mul_ln184_65_fu_10354_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_65_fu_10354_p2() {
+    mul_ln186_65_fu_10354_p2 = (!mul_ln186_65_fu_10354_p0.read().is_01() || !mul_ln186_65_fu_10354_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_65_fu_10354_p0.read()) * sc_bigint<32>(mul_ln186_65_fu_10354_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_66_fu_10425_p0() {
-    mul_ln184_66_fu_10425_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_66_fu_10425_p0() {
+    mul_ln186_66_fu_10425_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_66_fu_10425_p1() {
-    mul_ln184_66_fu_10425_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_66_fu_10425_p1() {
+    mul_ln186_66_fu_10425_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_66_fu_10425_p2() {
-    mul_ln184_66_fu_10425_p2 = (!mul_ln184_66_fu_10425_p0.read().is_01() || !mul_ln184_66_fu_10425_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_66_fu_10425_p0.read()) * sc_bigint<32>(mul_ln184_66_fu_10425_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_66_fu_10425_p2() {
+    mul_ln186_66_fu_10425_p2 = (!mul_ln186_66_fu_10425_p0.read().is_01() || !mul_ln186_66_fu_10425_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_66_fu_10425_p0.read()) * sc_bigint<32>(mul_ln186_66_fu_10425_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_67_fu_10440_p0() {
-    mul_ln184_67_fu_10440_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_67_fu_10440_p0() {
+    mul_ln186_67_fu_10440_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_67_fu_10440_p1() {
-    mul_ln184_67_fu_10440_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_67_fu_10440_p1() {
+    mul_ln186_67_fu_10440_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_67_fu_10440_p2() {
-    mul_ln184_67_fu_10440_p2 = (!mul_ln184_67_fu_10440_p0.read().is_01() || !mul_ln184_67_fu_10440_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_67_fu_10440_p0.read()) * sc_bigint<32>(mul_ln184_67_fu_10440_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_67_fu_10440_p2() {
+    mul_ln186_67_fu_10440_p2 = (!mul_ln186_67_fu_10440_p0.read().is_01() || !mul_ln186_67_fu_10440_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_67_fu_10440_p0.read()) * sc_bigint<32>(mul_ln186_67_fu_10440_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_68_fu_10511_p0() {
-    mul_ln184_68_fu_10511_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_68_fu_10511_p0() {
+    mul_ln186_68_fu_10511_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_68_fu_10511_p1() {
-    mul_ln184_68_fu_10511_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_68_fu_10511_p1() {
+    mul_ln186_68_fu_10511_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_68_fu_10511_p2() {
-    mul_ln184_68_fu_10511_p2 = (!mul_ln184_68_fu_10511_p0.read().is_01() || !mul_ln184_68_fu_10511_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_68_fu_10511_p0.read()) * sc_bigint<32>(mul_ln184_68_fu_10511_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_68_fu_10511_p2() {
+    mul_ln186_68_fu_10511_p2 = (!mul_ln186_68_fu_10511_p0.read().is_01() || !mul_ln186_68_fu_10511_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_68_fu_10511_p0.read()) * sc_bigint<32>(mul_ln186_68_fu_10511_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_69_fu_10526_p0() {
-    mul_ln184_69_fu_10526_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_69_fu_10526_p0() {
+    mul_ln186_69_fu_10526_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_69_fu_10526_p1() {
-    mul_ln184_69_fu_10526_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_69_fu_10526_p1() {
+    mul_ln186_69_fu_10526_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_69_fu_10526_p2() {
-    mul_ln184_69_fu_10526_p2 = (!mul_ln184_69_fu_10526_p0.read().is_01() || !mul_ln184_69_fu_10526_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_69_fu_10526_p0.read()) * sc_bigint<32>(mul_ln184_69_fu_10526_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_69_fu_10526_p2() {
+    mul_ln186_69_fu_10526_p2 = (!mul_ln186_69_fu_10526_p0.read().is_01() || !mul_ln186_69_fu_10526_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_69_fu_10526_p0.read()) * sc_bigint<32>(mul_ln186_69_fu_10526_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_6_fu_7845_p0() {
-    mul_ln184_6_fu_7845_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_6_fu_7845_p0() {
+    mul_ln186_6_fu_7845_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_6_fu_7845_p1() {
-    mul_ln184_6_fu_7845_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_6_fu_7845_p1() {
+    mul_ln186_6_fu_7845_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_6_fu_7845_p2() {
-    mul_ln184_6_fu_7845_p2 = (!mul_ln184_6_fu_7845_p0.read().is_01() || !mul_ln184_6_fu_7845_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_6_fu_7845_p0.read()) * sc_bigint<32>(mul_ln184_6_fu_7845_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_6_fu_7845_p2() {
+    mul_ln186_6_fu_7845_p2 = (!mul_ln186_6_fu_7845_p0.read().is_01() || !mul_ln186_6_fu_7845_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_6_fu_7845_p0.read()) * sc_bigint<32>(mul_ln186_6_fu_7845_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_70_fu_10597_p0() {
-    mul_ln184_70_fu_10597_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_70_fu_10597_p0() {
+    mul_ln186_70_fu_10597_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_70_fu_10597_p1() {
-    mul_ln184_70_fu_10597_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_70_fu_10597_p1() {
+    mul_ln186_70_fu_10597_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_70_fu_10597_p2() {
-    mul_ln184_70_fu_10597_p2 = (!mul_ln184_70_fu_10597_p0.read().is_01() || !mul_ln184_70_fu_10597_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_70_fu_10597_p0.read()) * sc_bigint<32>(mul_ln184_70_fu_10597_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_70_fu_10597_p2() {
+    mul_ln186_70_fu_10597_p2 = (!mul_ln186_70_fu_10597_p0.read().is_01() || !mul_ln186_70_fu_10597_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_70_fu_10597_p0.read()) * sc_bigint<32>(mul_ln186_70_fu_10597_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_71_fu_10612_p0() {
-    mul_ln184_71_fu_10612_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_71_fu_10612_p0() {
+    mul_ln186_71_fu_10612_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_71_fu_10612_p1() {
-    mul_ln184_71_fu_10612_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_71_fu_10612_p1() {
+    mul_ln186_71_fu_10612_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_71_fu_10612_p2() {
-    mul_ln184_71_fu_10612_p2 = (!mul_ln184_71_fu_10612_p0.read().is_01() || !mul_ln184_71_fu_10612_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_71_fu_10612_p0.read()) * sc_bigint<32>(mul_ln184_71_fu_10612_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_71_fu_10612_p2() {
+    mul_ln186_71_fu_10612_p2 = (!mul_ln186_71_fu_10612_p0.read().is_01() || !mul_ln186_71_fu_10612_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_71_fu_10612_p0.read()) * sc_bigint<32>(mul_ln186_71_fu_10612_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_72_fu_10683_p0() {
-    mul_ln184_72_fu_10683_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_72_fu_10683_p0() {
+    mul_ln186_72_fu_10683_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_72_fu_10683_p1() {
-    mul_ln184_72_fu_10683_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_72_fu_10683_p1() {
+    mul_ln186_72_fu_10683_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_72_fu_10683_p2() {
-    mul_ln184_72_fu_10683_p2 = (!mul_ln184_72_fu_10683_p0.read().is_01() || !mul_ln184_72_fu_10683_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_72_fu_10683_p0.read()) * sc_bigint<32>(mul_ln184_72_fu_10683_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_72_fu_10683_p2() {
+    mul_ln186_72_fu_10683_p2 = (!mul_ln186_72_fu_10683_p0.read().is_01() || !mul_ln186_72_fu_10683_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_72_fu_10683_p0.read()) * sc_bigint<32>(mul_ln186_72_fu_10683_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_73_fu_10698_p0() {
-    mul_ln184_73_fu_10698_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_73_fu_10698_p0() {
+    mul_ln186_73_fu_10698_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_73_fu_10698_p1() {
-    mul_ln184_73_fu_10698_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_73_fu_10698_p1() {
+    mul_ln186_73_fu_10698_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_73_fu_10698_p2() {
-    mul_ln184_73_fu_10698_p2 = (!mul_ln184_73_fu_10698_p0.read().is_01() || !mul_ln184_73_fu_10698_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_73_fu_10698_p0.read()) * sc_bigint<32>(mul_ln184_73_fu_10698_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_73_fu_10698_p2() {
+    mul_ln186_73_fu_10698_p2 = (!mul_ln186_73_fu_10698_p0.read().is_01() || !mul_ln186_73_fu_10698_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_73_fu_10698_p0.read()) * sc_bigint<32>(mul_ln186_73_fu_10698_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_74_fu_10769_p0() {
-    mul_ln184_74_fu_10769_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_74_fu_10769_p0() {
+    mul_ln186_74_fu_10769_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_74_fu_10769_p1() {
-    mul_ln184_74_fu_10769_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_74_fu_10769_p1() {
+    mul_ln186_74_fu_10769_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_74_fu_10769_p2() {
-    mul_ln184_74_fu_10769_p2 = (!mul_ln184_74_fu_10769_p0.read().is_01() || !mul_ln184_74_fu_10769_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_74_fu_10769_p0.read()) * sc_bigint<32>(mul_ln184_74_fu_10769_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_74_fu_10769_p2() {
+    mul_ln186_74_fu_10769_p2 = (!mul_ln186_74_fu_10769_p0.read().is_01() || !mul_ln186_74_fu_10769_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_74_fu_10769_p0.read()) * sc_bigint<32>(mul_ln186_74_fu_10769_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_75_fu_10784_p0() {
-    mul_ln184_75_fu_10784_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_75_fu_10784_p0() {
+    mul_ln186_75_fu_10784_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_75_fu_10784_p1() {
-    mul_ln184_75_fu_10784_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_75_fu_10784_p1() {
+    mul_ln186_75_fu_10784_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_75_fu_10784_p2() {
-    mul_ln184_75_fu_10784_p2 = (!mul_ln184_75_fu_10784_p0.read().is_01() || !mul_ln184_75_fu_10784_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_75_fu_10784_p0.read()) * sc_bigint<32>(mul_ln184_75_fu_10784_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_75_fu_10784_p2() {
+    mul_ln186_75_fu_10784_p2 = (!mul_ln186_75_fu_10784_p0.read().is_01() || !mul_ln186_75_fu_10784_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_75_fu_10784_p0.read()) * sc_bigint<32>(mul_ln186_75_fu_10784_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_76_fu_10855_p0() {
-    mul_ln184_76_fu_10855_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_76_fu_10855_p0() {
+    mul_ln186_76_fu_10855_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_76_fu_10855_p1() {
-    mul_ln184_76_fu_10855_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_76_fu_10855_p1() {
+    mul_ln186_76_fu_10855_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_76_fu_10855_p2() {
-    mul_ln184_76_fu_10855_p2 = (!mul_ln184_76_fu_10855_p0.read().is_01() || !mul_ln184_76_fu_10855_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_76_fu_10855_p0.read()) * sc_bigint<32>(mul_ln184_76_fu_10855_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_76_fu_10855_p2() {
+    mul_ln186_76_fu_10855_p2 = (!mul_ln186_76_fu_10855_p0.read().is_01() || !mul_ln186_76_fu_10855_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_76_fu_10855_p0.read()) * sc_bigint<32>(mul_ln186_76_fu_10855_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_77_fu_10870_p0() {
-    mul_ln184_77_fu_10870_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_77_fu_10870_p0() {
+    mul_ln186_77_fu_10870_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_77_fu_10870_p1() {
-    mul_ln184_77_fu_10870_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_77_fu_10870_p1() {
+    mul_ln186_77_fu_10870_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_77_fu_10870_p2() {
-    mul_ln184_77_fu_10870_p2 = (!mul_ln184_77_fu_10870_p0.read().is_01() || !mul_ln184_77_fu_10870_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_77_fu_10870_p0.read()) * sc_bigint<32>(mul_ln184_77_fu_10870_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_77_fu_10870_p2() {
+    mul_ln186_77_fu_10870_p2 = (!mul_ln186_77_fu_10870_p0.read().is_01() || !mul_ln186_77_fu_10870_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_77_fu_10870_p0.read()) * sc_bigint<32>(mul_ln186_77_fu_10870_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_78_fu_10941_p0() {
-    mul_ln184_78_fu_10941_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_78_fu_10941_p0() {
+    mul_ln186_78_fu_10941_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_78_fu_10941_p1() {
-    mul_ln184_78_fu_10941_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_78_fu_10941_p1() {
+    mul_ln186_78_fu_10941_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_78_fu_10941_p2() {
-    mul_ln184_78_fu_10941_p2 = (!mul_ln184_78_fu_10941_p0.read().is_01() || !mul_ln184_78_fu_10941_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_78_fu_10941_p0.read()) * sc_bigint<32>(mul_ln184_78_fu_10941_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_78_fu_10941_p2() {
+    mul_ln186_78_fu_10941_p2 = (!mul_ln186_78_fu_10941_p0.read().is_01() || !mul_ln186_78_fu_10941_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_78_fu_10941_p0.read()) * sc_bigint<32>(mul_ln186_78_fu_10941_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_79_fu_10956_p0() {
-    mul_ln184_79_fu_10956_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_79_fu_10956_p0() {
+    mul_ln186_79_fu_10956_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_79_fu_10956_p1() {
-    mul_ln184_79_fu_10956_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_79_fu_10956_p1() {
+    mul_ln186_79_fu_10956_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_79_fu_10956_p2() {
-    mul_ln184_79_fu_10956_p2 = (!mul_ln184_79_fu_10956_p0.read().is_01() || !mul_ln184_79_fu_10956_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_79_fu_10956_p0.read()) * sc_bigint<32>(mul_ln184_79_fu_10956_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_79_fu_10956_p2() {
+    mul_ln186_79_fu_10956_p2 = (!mul_ln186_79_fu_10956_p0.read().is_01() || !mul_ln186_79_fu_10956_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_79_fu_10956_p0.read()) * sc_bigint<32>(mul_ln186_79_fu_10956_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_7_fu_7860_p0() {
-    mul_ln184_7_fu_7860_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_7_fu_7860_p0() {
+    mul_ln186_7_fu_7860_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_7_fu_7860_p1() {
-    mul_ln184_7_fu_7860_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_7_fu_7860_p1() {
+    mul_ln186_7_fu_7860_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_7_fu_7860_p2() {
-    mul_ln184_7_fu_7860_p2 = (!mul_ln184_7_fu_7860_p0.read().is_01() || !mul_ln184_7_fu_7860_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_7_fu_7860_p0.read()) * sc_bigint<32>(mul_ln184_7_fu_7860_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_7_fu_7860_p2() {
+    mul_ln186_7_fu_7860_p2 = (!mul_ln186_7_fu_7860_p0.read().is_01() || !mul_ln186_7_fu_7860_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_7_fu_7860_p0.read()) * sc_bigint<32>(mul_ln186_7_fu_7860_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_80_fu_11027_p0() {
-    mul_ln184_80_fu_11027_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_80_fu_11027_p0() {
+    mul_ln186_80_fu_11027_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_80_fu_11027_p1() {
-    mul_ln184_80_fu_11027_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_80_fu_11027_p1() {
+    mul_ln186_80_fu_11027_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_80_fu_11027_p2() {
-    mul_ln184_80_fu_11027_p2 = (!mul_ln184_80_fu_11027_p0.read().is_01() || !mul_ln184_80_fu_11027_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_80_fu_11027_p0.read()) * sc_bigint<32>(mul_ln184_80_fu_11027_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_80_fu_11027_p2() {
+    mul_ln186_80_fu_11027_p2 = (!mul_ln186_80_fu_11027_p0.read().is_01() || !mul_ln186_80_fu_11027_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_80_fu_11027_p0.read()) * sc_bigint<32>(mul_ln186_80_fu_11027_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_81_fu_11042_p0() {
-    mul_ln184_81_fu_11042_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_81_fu_11042_p0() {
+    mul_ln186_81_fu_11042_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_81_fu_11042_p1() {
-    mul_ln184_81_fu_11042_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_81_fu_11042_p1() {
+    mul_ln186_81_fu_11042_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_81_fu_11042_p2() {
-    mul_ln184_81_fu_11042_p2 = (!mul_ln184_81_fu_11042_p0.read().is_01() || !mul_ln184_81_fu_11042_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_81_fu_11042_p0.read()) * sc_bigint<32>(mul_ln184_81_fu_11042_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_81_fu_11042_p2() {
+    mul_ln186_81_fu_11042_p2 = (!mul_ln186_81_fu_11042_p0.read().is_01() || !mul_ln186_81_fu_11042_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_81_fu_11042_p0.read()) * sc_bigint<32>(mul_ln186_81_fu_11042_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_82_fu_11113_p0() {
-    mul_ln184_82_fu_11113_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_82_fu_11113_p0() {
+    mul_ln186_82_fu_11113_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_82_fu_11113_p1() {
-    mul_ln184_82_fu_11113_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_82_fu_11113_p1() {
+    mul_ln186_82_fu_11113_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_82_fu_11113_p2() {
-    mul_ln184_82_fu_11113_p2 = (!mul_ln184_82_fu_11113_p0.read().is_01() || !mul_ln184_82_fu_11113_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_82_fu_11113_p0.read()) * sc_bigint<32>(mul_ln184_82_fu_11113_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_82_fu_11113_p2() {
+    mul_ln186_82_fu_11113_p2 = (!mul_ln186_82_fu_11113_p0.read().is_01() || !mul_ln186_82_fu_11113_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_82_fu_11113_p0.read()) * sc_bigint<32>(mul_ln186_82_fu_11113_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_83_fu_11128_p0() {
-    mul_ln184_83_fu_11128_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_83_fu_11128_p0() {
+    mul_ln186_83_fu_11128_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_83_fu_11128_p1() {
-    mul_ln184_83_fu_11128_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_83_fu_11128_p1() {
+    mul_ln186_83_fu_11128_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_83_fu_11128_p2() {
-    mul_ln184_83_fu_11128_p2 = (!mul_ln184_83_fu_11128_p0.read().is_01() || !mul_ln184_83_fu_11128_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_83_fu_11128_p0.read()) * sc_bigint<32>(mul_ln184_83_fu_11128_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_83_fu_11128_p2() {
+    mul_ln186_83_fu_11128_p2 = (!mul_ln186_83_fu_11128_p0.read().is_01() || !mul_ln186_83_fu_11128_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_83_fu_11128_p0.read()) * sc_bigint<32>(mul_ln186_83_fu_11128_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_84_fu_11199_p0() {
-    mul_ln184_84_fu_11199_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_84_fu_11199_p0() {
+    mul_ln186_84_fu_11199_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_84_fu_11199_p1() {
-    mul_ln184_84_fu_11199_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_84_fu_11199_p1() {
+    mul_ln186_84_fu_11199_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_84_fu_11199_p2() {
-    mul_ln184_84_fu_11199_p2 = (!mul_ln184_84_fu_11199_p0.read().is_01() || !mul_ln184_84_fu_11199_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_84_fu_11199_p0.read()) * sc_bigint<32>(mul_ln184_84_fu_11199_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_84_fu_11199_p2() {
+    mul_ln186_84_fu_11199_p2 = (!mul_ln186_84_fu_11199_p0.read().is_01() || !mul_ln186_84_fu_11199_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_84_fu_11199_p0.read()) * sc_bigint<32>(mul_ln186_84_fu_11199_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_85_fu_11214_p0() {
-    mul_ln184_85_fu_11214_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_85_fu_11214_p0() {
+    mul_ln186_85_fu_11214_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_85_fu_11214_p1() {
-    mul_ln184_85_fu_11214_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_85_fu_11214_p1() {
+    mul_ln186_85_fu_11214_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_85_fu_11214_p2() {
-    mul_ln184_85_fu_11214_p2 = (!mul_ln184_85_fu_11214_p0.read().is_01() || !mul_ln184_85_fu_11214_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_85_fu_11214_p0.read()) * sc_bigint<32>(mul_ln184_85_fu_11214_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_85_fu_11214_p2() {
+    mul_ln186_85_fu_11214_p2 = (!mul_ln186_85_fu_11214_p0.read().is_01() || !mul_ln186_85_fu_11214_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_85_fu_11214_p0.read()) * sc_bigint<32>(mul_ln186_85_fu_11214_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_86_fu_11285_p0() {
-    mul_ln184_86_fu_11285_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_86_fu_11285_p0() {
+    mul_ln186_86_fu_11285_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_86_fu_11285_p1() {
-    mul_ln184_86_fu_11285_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_86_fu_11285_p1() {
+    mul_ln186_86_fu_11285_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_86_fu_11285_p2() {
-    mul_ln184_86_fu_11285_p2 = (!mul_ln184_86_fu_11285_p0.read().is_01() || !mul_ln184_86_fu_11285_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_86_fu_11285_p0.read()) * sc_bigint<32>(mul_ln184_86_fu_11285_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_86_fu_11285_p2() {
+    mul_ln186_86_fu_11285_p2 = (!mul_ln186_86_fu_11285_p0.read().is_01() || !mul_ln186_86_fu_11285_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_86_fu_11285_p0.read()) * sc_bigint<32>(mul_ln186_86_fu_11285_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_87_fu_11300_p0() {
-    mul_ln184_87_fu_11300_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_87_fu_11300_p0() {
+    mul_ln186_87_fu_11300_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_87_fu_11300_p1() {
-    mul_ln184_87_fu_11300_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_87_fu_11300_p1() {
+    mul_ln186_87_fu_11300_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_87_fu_11300_p2() {
-    mul_ln184_87_fu_11300_p2 = (!mul_ln184_87_fu_11300_p0.read().is_01() || !mul_ln184_87_fu_11300_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_87_fu_11300_p0.read()) * sc_bigint<32>(mul_ln184_87_fu_11300_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_87_fu_11300_p2() {
+    mul_ln186_87_fu_11300_p2 = (!mul_ln186_87_fu_11300_p0.read().is_01() || !mul_ln186_87_fu_11300_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_87_fu_11300_p0.read()) * sc_bigint<32>(mul_ln186_87_fu_11300_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_88_fu_11371_p0() {
-    mul_ln184_88_fu_11371_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_88_fu_11371_p0() {
+    mul_ln186_88_fu_11371_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_88_fu_11371_p1() {
-    mul_ln184_88_fu_11371_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_88_fu_11371_p1() {
+    mul_ln186_88_fu_11371_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_88_fu_11371_p2() {
-    mul_ln184_88_fu_11371_p2 = (!mul_ln184_88_fu_11371_p0.read().is_01() || !mul_ln184_88_fu_11371_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_88_fu_11371_p0.read()) * sc_bigint<32>(mul_ln184_88_fu_11371_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_88_fu_11371_p2() {
+    mul_ln186_88_fu_11371_p2 = (!mul_ln186_88_fu_11371_p0.read().is_01() || !mul_ln186_88_fu_11371_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_88_fu_11371_p0.read()) * sc_bigint<32>(mul_ln186_88_fu_11371_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_89_fu_11386_p0() {
-    mul_ln184_89_fu_11386_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_89_fu_11386_p0() {
+    mul_ln186_89_fu_11386_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_89_fu_11386_p1() {
-    mul_ln184_89_fu_11386_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_89_fu_11386_p1() {
+    mul_ln186_89_fu_11386_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_89_fu_11386_p2() {
-    mul_ln184_89_fu_11386_p2 = (!mul_ln184_89_fu_11386_p0.read().is_01() || !mul_ln184_89_fu_11386_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_89_fu_11386_p0.read()) * sc_bigint<32>(mul_ln184_89_fu_11386_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_89_fu_11386_p2() {
+    mul_ln186_89_fu_11386_p2 = (!mul_ln186_89_fu_11386_p0.read().is_01() || !mul_ln186_89_fu_11386_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_89_fu_11386_p0.read()) * sc_bigint<32>(mul_ln186_89_fu_11386_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_8_fu_7931_p0() {
-    mul_ln184_8_fu_7931_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_8_fu_7931_p0() {
+    mul_ln186_8_fu_7931_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_8_fu_7931_p1() {
-    mul_ln184_8_fu_7931_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_8_fu_7931_p1() {
+    mul_ln186_8_fu_7931_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_8_fu_7931_p2() {
-    mul_ln184_8_fu_7931_p2 = (!mul_ln184_8_fu_7931_p0.read().is_01() || !mul_ln184_8_fu_7931_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_8_fu_7931_p0.read()) * sc_bigint<32>(mul_ln184_8_fu_7931_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_8_fu_7931_p2() {
+    mul_ln186_8_fu_7931_p2 = (!mul_ln186_8_fu_7931_p0.read().is_01() || !mul_ln186_8_fu_7931_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_8_fu_7931_p0.read()) * sc_bigint<32>(mul_ln186_8_fu_7931_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_90_fu_11457_p0() {
-    mul_ln184_90_fu_11457_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_90_fu_11457_p0() {
+    mul_ln186_90_fu_11457_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_90_fu_11457_p1() {
-    mul_ln184_90_fu_11457_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_90_fu_11457_p1() {
+    mul_ln186_90_fu_11457_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_90_fu_11457_p2() {
-    mul_ln184_90_fu_11457_p2 = (!mul_ln184_90_fu_11457_p0.read().is_01() || !mul_ln184_90_fu_11457_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_90_fu_11457_p0.read()) * sc_bigint<32>(mul_ln184_90_fu_11457_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_90_fu_11457_p2() {
+    mul_ln186_90_fu_11457_p2 = (!mul_ln186_90_fu_11457_p0.read().is_01() || !mul_ln186_90_fu_11457_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_90_fu_11457_p0.read()) * sc_bigint<32>(mul_ln186_90_fu_11457_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_91_fu_11472_p0() {
-    mul_ln184_91_fu_11472_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_91_fu_11472_p0() {
+    mul_ln186_91_fu_11472_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_91_fu_11472_p1() {
-    mul_ln184_91_fu_11472_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_91_fu_11472_p1() {
+    mul_ln186_91_fu_11472_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_91_fu_11472_p2() {
-    mul_ln184_91_fu_11472_p2 = (!mul_ln184_91_fu_11472_p0.read().is_01() || !mul_ln184_91_fu_11472_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_91_fu_11472_p0.read()) * sc_bigint<32>(mul_ln184_91_fu_11472_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_91_fu_11472_p2() {
+    mul_ln186_91_fu_11472_p2 = (!mul_ln186_91_fu_11472_p0.read().is_01() || !mul_ln186_91_fu_11472_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_91_fu_11472_p0.read()) * sc_bigint<32>(mul_ln186_91_fu_11472_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_92_fu_11543_p0() {
-    mul_ln184_92_fu_11543_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_92_fu_11543_p0() {
+    mul_ln186_92_fu_11543_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_92_fu_11543_p1() {
-    mul_ln184_92_fu_11543_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_92_fu_11543_p1() {
+    mul_ln186_92_fu_11543_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_92_fu_11543_p2() {
-    mul_ln184_92_fu_11543_p2 = (!mul_ln184_92_fu_11543_p0.read().is_01() || !mul_ln184_92_fu_11543_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_92_fu_11543_p0.read()) * sc_bigint<32>(mul_ln184_92_fu_11543_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_92_fu_11543_p2() {
+    mul_ln186_92_fu_11543_p2 = (!mul_ln186_92_fu_11543_p0.read().is_01() || !mul_ln186_92_fu_11543_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_92_fu_11543_p0.read()) * sc_bigint<32>(mul_ln186_92_fu_11543_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_93_fu_11558_p0() {
-    mul_ln184_93_fu_11558_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_93_fu_11558_p0() {
+    mul_ln186_93_fu_11558_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_93_fu_11558_p1() {
-    mul_ln184_93_fu_11558_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_93_fu_11558_p1() {
+    mul_ln186_93_fu_11558_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_93_fu_11558_p2() {
-    mul_ln184_93_fu_11558_p2 = (!mul_ln184_93_fu_11558_p0.read().is_01() || !mul_ln184_93_fu_11558_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_93_fu_11558_p0.read()) * sc_bigint<32>(mul_ln184_93_fu_11558_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_93_fu_11558_p2() {
+    mul_ln186_93_fu_11558_p2 = (!mul_ln186_93_fu_11558_p0.read().is_01() || !mul_ln186_93_fu_11558_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_93_fu_11558_p0.read()) * sc_bigint<32>(mul_ln186_93_fu_11558_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_94_fu_11629_p0() {
-    mul_ln184_94_fu_11629_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_94_fu_11629_p0() {
+    mul_ln186_94_fu_11629_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_94_fu_11629_p1() {
-    mul_ln184_94_fu_11629_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_94_fu_11629_p1() {
+    mul_ln186_94_fu_11629_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_94_fu_11629_p2() {
-    mul_ln184_94_fu_11629_p2 = (!mul_ln184_94_fu_11629_p0.read().is_01() || !mul_ln184_94_fu_11629_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_94_fu_11629_p0.read()) * sc_bigint<32>(mul_ln184_94_fu_11629_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_94_fu_11629_p2() {
+    mul_ln186_94_fu_11629_p2 = (!mul_ln186_94_fu_11629_p0.read().is_01() || !mul_ln186_94_fu_11629_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_94_fu_11629_p0.read()) * sc_bigint<32>(mul_ln186_94_fu_11629_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_95_fu_11644_p0() {
-    mul_ln184_95_fu_11644_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_95_fu_11644_p0() {
+    mul_ln186_95_fu_11644_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_95_fu_11644_p1() {
-    mul_ln184_95_fu_11644_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_95_fu_11644_p1() {
+    mul_ln186_95_fu_11644_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_95_fu_11644_p2() {
-    mul_ln184_95_fu_11644_p2 = (!mul_ln184_95_fu_11644_p0.read().is_01() || !mul_ln184_95_fu_11644_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_95_fu_11644_p0.read()) * sc_bigint<32>(mul_ln184_95_fu_11644_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_95_fu_11644_p2() {
+    mul_ln186_95_fu_11644_p2 = (!mul_ln186_95_fu_11644_p0.read().is_01() || !mul_ln186_95_fu_11644_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_95_fu_11644_p0.read()) * sc_bigint<32>(mul_ln186_95_fu_11644_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_96_fu_11715_p0() {
-    mul_ln184_96_fu_11715_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_96_fu_11715_p0() {
+    mul_ln186_96_fu_11715_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_96_fu_11715_p1() {
-    mul_ln184_96_fu_11715_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_96_fu_11715_p1() {
+    mul_ln186_96_fu_11715_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_96_fu_11715_p2() {
-    mul_ln184_96_fu_11715_p2 = (!mul_ln184_96_fu_11715_p0.read().is_01() || !mul_ln184_96_fu_11715_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_96_fu_11715_p0.read()) * sc_bigint<32>(mul_ln184_96_fu_11715_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_96_fu_11715_p2() {
+    mul_ln186_96_fu_11715_p2 = (!mul_ln186_96_fu_11715_p0.read().is_01() || !mul_ln186_96_fu_11715_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_96_fu_11715_p0.read()) * sc_bigint<32>(mul_ln186_96_fu_11715_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_97_fu_11730_p0() {
-    mul_ln184_97_fu_11730_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_97_fu_11730_p0() {
+    mul_ln186_97_fu_11730_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_97_fu_11730_p1() {
-    mul_ln184_97_fu_11730_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_97_fu_11730_p1() {
+    mul_ln186_97_fu_11730_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_97_fu_11730_p2() {
-    mul_ln184_97_fu_11730_p2 = (!mul_ln184_97_fu_11730_p0.read().is_01() || !mul_ln184_97_fu_11730_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_97_fu_11730_p0.read()) * sc_bigint<32>(mul_ln184_97_fu_11730_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_97_fu_11730_p2() {
+    mul_ln186_97_fu_11730_p2 = (!mul_ln186_97_fu_11730_p0.read().is_01() || !mul_ln186_97_fu_11730_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_97_fu_11730_p0.read()) * sc_bigint<32>(mul_ln186_97_fu_11730_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_98_fu_11801_p0() {
-    mul_ln184_98_fu_11801_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_98_fu_11801_p0() {
+    mul_ln186_98_fu_11801_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_98_fu_11801_p1() {
-    mul_ln184_98_fu_11801_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_98_fu_11801_p1() {
+    mul_ln186_98_fu_11801_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_98_fu_11801_p2() {
-    mul_ln184_98_fu_11801_p2 = (!mul_ln184_98_fu_11801_p0.read().is_01() || !mul_ln184_98_fu_11801_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_98_fu_11801_p0.read()) * sc_bigint<32>(mul_ln184_98_fu_11801_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_98_fu_11801_p2() {
+    mul_ln186_98_fu_11801_p2 = (!mul_ln186_98_fu_11801_p0.read().is_01() || !mul_ln186_98_fu_11801_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_98_fu_11801_p0.read()) * sc_bigint<32>(mul_ln186_98_fu_11801_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_99_fu_11816_p0() {
-    mul_ln184_99_fu_11816_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_99_fu_11816_p0() {
+    mul_ln186_99_fu_11816_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_99_fu_11816_p1() {
-    mul_ln184_99_fu_11816_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_99_fu_11816_p1() {
+    mul_ln186_99_fu_11816_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_99_fu_11816_p2() {
-    mul_ln184_99_fu_11816_p2 = (!mul_ln184_99_fu_11816_p0.read().is_01() || !mul_ln184_99_fu_11816_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_99_fu_11816_p0.read()) * sc_bigint<32>(mul_ln184_99_fu_11816_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_99_fu_11816_p2() {
+    mul_ln186_99_fu_11816_p2 = (!mul_ln186_99_fu_11816_p0.read().is_01() || !mul_ln186_99_fu_11816_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_99_fu_11816_p0.read()) * sc_bigint<32>(mul_ln186_99_fu_11816_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_9_fu_7946_p0() {
-    mul_ln184_9_fu_7946_p0 = b_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_9_fu_7946_p0() {
+    mul_ln186_9_fu_7946_p0 = b_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_9_fu_7946_p1() {
-    mul_ln184_9_fu_7946_p1 = a_coeffs_q1.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_9_fu_7946_p1() {
+    mul_ln186_9_fu_7946_p1 = a_coeffs_q1.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_9_fu_7946_p2() {
-    mul_ln184_9_fu_7946_p2 = (!mul_ln184_9_fu_7946_p0.read().is_01() || !mul_ln184_9_fu_7946_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_9_fu_7946_p0.read()) * sc_bigint<32>(mul_ln184_9_fu_7946_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_9_fu_7946_p2() {
+    mul_ln186_9_fu_7946_p2 = (!mul_ln186_9_fu_7946_p0.read().is_01() || !mul_ln186_9_fu_7946_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_9_fu_7946_p0.read()) * sc_bigint<32>(mul_ln186_9_fu_7946_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_fu_7587_p0() {
-    mul_ln184_fu_7587_p0 = b_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_fu_7587_p0() {
+    mul_ln186_fu_7587_p0 = b_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_fu_7587_p1() {
-    mul_ln184_fu_7587_p1 = a_coeffs_q0.read();
+void pqcrystals_dilithium_13::thread_mul_ln186_fu_7587_p1() {
+    mul_ln186_fu_7587_p1 = a_coeffs_q0.read();
 }
 
-void pqcrystals_dilithium_13::thread_mul_ln184_fu_7587_p2() {
-    mul_ln184_fu_7587_p2 = (!mul_ln184_fu_7587_p0.read().is_01() || !mul_ln184_fu_7587_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln184_fu_7587_p0.read()) * sc_bigint<32>(mul_ln184_fu_7587_p1.read());
+void pqcrystals_dilithium_13::thread_mul_ln186_fu_7587_p2() {
+    mul_ln186_fu_7587_p2 = (!mul_ln186_fu_7587_p0.read().is_01() || !mul_ln186_fu_7587_p1.read().is_01())? sc_lv<64>(): sc_bigint<32>(mul_ln186_fu_7587_p0.read()) * sc_bigint<32>(mul_ln186_fu_7587_p1.read());
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1019_fu_7523_p2() {
-    or_ln184_1019_fu_7523_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2);
+void pqcrystals_dilithium_13::thread_or_ln186_1019_fu_7523_p2() {
+    or_ln186_1019_fu_7523_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1020_fu_7537_p2() {
-    or_ln184_1020_fu_7537_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3);
+void pqcrystals_dilithium_13::thread_or_ln186_1020_fu_7537_p2() {
+    or_ln186_1020_fu_7537_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1021_fu_7609_p2() {
-    or_ln184_1021_fu_7609_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4);
+void pqcrystals_dilithium_13::thread_or_ln186_1021_fu_7609_p2() {
+    or_ln186_1021_fu_7609_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1022_fu_7623_p2() {
-    or_ln184_1022_fu_7623_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_5);
+void pqcrystals_dilithium_13::thread_or_ln186_1022_fu_7623_p2() {
+    or_ln186_1022_fu_7623_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_5);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1023_fu_7695_p2() {
-    or_ln184_1023_fu_7695_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_6);
+void pqcrystals_dilithium_13::thread_or_ln186_1023_fu_7695_p2() {
+    or_ln186_1023_fu_7695_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_6);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1024_fu_7709_p2() {
-    or_ln184_1024_fu_7709_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_7);
+void pqcrystals_dilithium_13::thread_or_ln186_1024_fu_7709_p2() {
+    or_ln186_1024_fu_7709_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_7);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1025_fu_7781_p2() {
-    or_ln184_1025_fu_7781_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_8);
+void pqcrystals_dilithium_13::thread_or_ln186_1025_fu_7781_p2() {
+    or_ln186_1025_fu_7781_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_8);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1026_fu_7795_p2() {
-    or_ln184_1026_fu_7795_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_9);
+void pqcrystals_dilithium_13::thread_or_ln186_1026_fu_7795_p2() {
+    or_ln186_1026_fu_7795_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_9);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1027_fu_7867_p2() {
-    or_ln184_1027_fu_7867_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_A);
+void pqcrystals_dilithium_13::thread_or_ln186_1027_fu_7867_p2() {
+    or_ln186_1027_fu_7867_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_A);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1028_fu_7881_p2() {
-    or_ln184_1028_fu_7881_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_B);
+void pqcrystals_dilithium_13::thread_or_ln186_1028_fu_7881_p2() {
+    or_ln186_1028_fu_7881_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_B);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1029_fu_7953_p2() {
-    or_ln184_1029_fu_7953_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_C);
+void pqcrystals_dilithium_13::thread_or_ln186_1029_fu_7953_p2() {
+    or_ln186_1029_fu_7953_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_C);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1030_fu_7967_p2() {
-    or_ln184_1030_fu_7967_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_D);
+void pqcrystals_dilithium_13::thread_or_ln186_1030_fu_7967_p2() {
+    or_ln186_1030_fu_7967_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_D);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1031_fu_8039_p2() {
-    or_ln184_1031_fu_8039_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_E);
+void pqcrystals_dilithium_13::thread_or_ln186_1031_fu_8039_p2() {
+    or_ln186_1031_fu_8039_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_E);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1032_fu_8053_p2() {
-    or_ln184_1032_fu_8053_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_F);
+void pqcrystals_dilithium_13::thread_or_ln186_1032_fu_8053_p2() {
+    or_ln186_1032_fu_8053_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_F);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1033_fu_8125_p2() {
-    or_ln184_1033_fu_8125_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_10);
+void pqcrystals_dilithium_13::thread_or_ln186_1033_fu_8125_p2() {
+    or_ln186_1033_fu_8125_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_10);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1034_fu_8139_p2() {
-    or_ln184_1034_fu_8139_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_11);
+void pqcrystals_dilithium_13::thread_or_ln186_1034_fu_8139_p2() {
+    or_ln186_1034_fu_8139_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_11);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1035_fu_8211_p2() {
-    or_ln184_1035_fu_8211_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_12);
+void pqcrystals_dilithium_13::thread_or_ln186_1035_fu_8211_p2() {
+    or_ln186_1035_fu_8211_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_12);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1036_fu_8225_p2() {
-    or_ln184_1036_fu_8225_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_13);
+void pqcrystals_dilithium_13::thread_or_ln186_1036_fu_8225_p2() {
+    or_ln186_1036_fu_8225_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_13);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1037_fu_8297_p2() {
-    or_ln184_1037_fu_8297_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_14);
+void pqcrystals_dilithium_13::thread_or_ln186_1037_fu_8297_p2() {
+    or_ln186_1037_fu_8297_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_14);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1038_fu_8311_p2() {
-    or_ln184_1038_fu_8311_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_15);
+void pqcrystals_dilithium_13::thread_or_ln186_1038_fu_8311_p2() {
+    or_ln186_1038_fu_8311_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_15);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1039_fu_8383_p2() {
-    or_ln184_1039_fu_8383_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_16);
+void pqcrystals_dilithium_13::thread_or_ln186_1039_fu_8383_p2() {
+    or_ln186_1039_fu_8383_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_16);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1040_fu_8397_p2() {
-    or_ln184_1040_fu_8397_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_17);
+void pqcrystals_dilithium_13::thread_or_ln186_1040_fu_8397_p2() {
+    or_ln186_1040_fu_8397_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_17);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1041_fu_8469_p2() {
-    or_ln184_1041_fu_8469_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_18);
+void pqcrystals_dilithium_13::thread_or_ln186_1041_fu_8469_p2() {
+    or_ln186_1041_fu_8469_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_18);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1042_fu_8483_p2() {
-    or_ln184_1042_fu_8483_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_19);
+void pqcrystals_dilithium_13::thread_or_ln186_1042_fu_8483_p2() {
+    or_ln186_1042_fu_8483_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_19);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1043_fu_8555_p2() {
-    or_ln184_1043_fu_8555_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1A);
+void pqcrystals_dilithium_13::thread_or_ln186_1043_fu_8555_p2() {
+    or_ln186_1043_fu_8555_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1A);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1044_fu_8569_p2() {
-    or_ln184_1044_fu_8569_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1B);
+void pqcrystals_dilithium_13::thread_or_ln186_1044_fu_8569_p2() {
+    or_ln186_1044_fu_8569_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1B);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1045_fu_8641_p2() {
-    or_ln184_1045_fu_8641_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1C);
+void pqcrystals_dilithium_13::thread_or_ln186_1045_fu_8641_p2() {
+    or_ln186_1045_fu_8641_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1C);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1046_fu_8655_p2() {
-    or_ln184_1046_fu_8655_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1D);
+void pqcrystals_dilithium_13::thread_or_ln186_1046_fu_8655_p2() {
+    or_ln186_1046_fu_8655_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1D);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1047_fu_8727_p2() {
-    or_ln184_1047_fu_8727_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1E);
+void pqcrystals_dilithium_13::thread_or_ln186_1047_fu_8727_p2() {
+    or_ln186_1047_fu_8727_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1E);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1048_fu_8741_p2() {
-    or_ln184_1048_fu_8741_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1F);
+void pqcrystals_dilithium_13::thread_or_ln186_1048_fu_8741_p2() {
+    or_ln186_1048_fu_8741_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_1F);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1049_fu_8813_p2() {
-    or_ln184_1049_fu_8813_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_20);
+void pqcrystals_dilithium_13::thread_or_ln186_1049_fu_8813_p2() {
+    or_ln186_1049_fu_8813_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_20);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1050_fu_8827_p2() {
-    or_ln184_1050_fu_8827_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_21);
+void pqcrystals_dilithium_13::thread_or_ln186_1050_fu_8827_p2() {
+    or_ln186_1050_fu_8827_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_21);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1051_fu_8899_p2() {
-    or_ln184_1051_fu_8899_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_22);
+void pqcrystals_dilithium_13::thread_or_ln186_1051_fu_8899_p2() {
+    or_ln186_1051_fu_8899_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_22);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1052_fu_8913_p2() {
-    or_ln184_1052_fu_8913_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_23);
+void pqcrystals_dilithium_13::thread_or_ln186_1052_fu_8913_p2() {
+    or_ln186_1052_fu_8913_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_23);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1053_fu_8985_p2() {
-    or_ln184_1053_fu_8985_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_24);
+void pqcrystals_dilithium_13::thread_or_ln186_1053_fu_8985_p2() {
+    or_ln186_1053_fu_8985_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_24);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1054_fu_8999_p2() {
-    or_ln184_1054_fu_8999_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_25);
+void pqcrystals_dilithium_13::thread_or_ln186_1054_fu_8999_p2() {
+    or_ln186_1054_fu_8999_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_25);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1055_fu_9071_p2() {
-    or_ln184_1055_fu_9071_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_26);
+void pqcrystals_dilithium_13::thread_or_ln186_1055_fu_9071_p2() {
+    or_ln186_1055_fu_9071_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_26);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1056_fu_9085_p2() {
-    or_ln184_1056_fu_9085_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_27);
+void pqcrystals_dilithium_13::thread_or_ln186_1056_fu_9085_p2() {
+    or_ln186_1056_fu_9085_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_27);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1057_fu_9157_p2() {
-    or_ln184_1057_fu_9157_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_28);
+void pqcrystals_dilithium_13::thread_or_ln186_1057_fu_9157_p2() {
+    or_ln186_1057_fu_9157_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_28);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1058_fu_9171_p2() {
-    or_ln184_1058_fu_9171_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_29);
+void pqcrystals_dilithium_13::thread_or_ln186_1058_fu_9171_p2() {
+    or_ln186_1058_fu_9171_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_29);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1059_fu_9243_p2() {
-    or_ln184_1059_fu_9243_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2A);
+void pqcrystals_dilithium_13::thread_or_ln186_1059_fu_9243_p2() {
+    or_ln186_1059_fu_9243_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2A);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1060_fu_9257_p2() {
-    or_ln184_1060_fu_9257_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2B);
+void pqcrystals_dilithium_13::thread_or_ln186_1060_fu_9257_p2() {
+    or_ln186_1060_fu_9257_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2B);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1061_fu_9329_p2() {
-    or_ln184_1061_fu_9329_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2C);
+void pqcrystals_dilithium_13::thread_or_ln186_1061_fu_9329_p2() {
+    or_ln186_1061_fu_9329_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2C);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1062_fu_9343_p2() {
-    or_ln184_1062_fu_9343_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2D);
+void pqcrystals_dilithium_13::thread_or_ln186_1062_fu_9343_p2() {
+    or_ln186_1062_fu_9343_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2D);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1063_fu_9415_p2() {
-    or_ln184_1063_fu_9415_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2E);
+void pqcrystals_dilithium_13::thread_or_ln186_1063_fu_9415_p2() {
+    or_ln186_1063_fu_9415_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2E);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1064_fu_9429_p2() {
-    or_ln184_1064_fu_9429_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2F);
+void pqcrystals_dilithium_13::thread_or_ln186_1064_fu_9429_p2() {
+    or_ln186_1064_fu_9429_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_2F);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1065_fu_9501_p2() {
-    or_ln184_1065_fu_9501_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_30);
+void pqcrystals_dilithium_13::thread_or_ln186_1065_fu_9501_p2() {
+    or_ln186_1065_fu_9501_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_30);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1066_fu_9515_p2() {
-    or_ln184_1066_fu_9515_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_31);
+void pqcrystals_dilithium_13::thread_or_ln186_1066_fu_9515_p2() {
+    or_ln186_1066_fu_9515_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_31);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1067_fu_9587_p2() {
-    or_ln184_1067_fu_9587_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_32);
+void pqcrystals_dilithium_13::thread_or_ln186_1067_fu_9587_p2() {
+    or_ln186_1067_fu_9587_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_32);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1068_fu_9601_p2() {
-    or_ln184_1068_fu_9601_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_33);
+void pqcrystals_dilithium_13::thread_or_ln186_1068_fu_9601_p2() {
+    or_ln186_1068_fu_9601_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_33);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1069_fu_9673_p2() {
-    or_ln184_1069_fu_9673_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_34);
+void pqcrystals_dilithium_13::thread_or_ln186_1069_fu_9673_p2() {
+    or_ln186_1069_fu_9673_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_34);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1070_fu_9687_p2() {
-    or_ln184_1070_fu_9687_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_35);
+void pqcrystals_dilithium_13::thread_or_ln186_1070_fu_9687_p2() {
+    or_ln186_1070_fu_9687_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_35);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1071_fu_9759_p2() {
-    or_ln184_1071_fu_9759_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_36);
+void pqcrystals_dilithium_13::thread_or_ln186_1071_fu_9759_p2() {
+    or_ln186_1071_fu_9759_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_36);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1072_fu_9773_p2() {
-    or_ln184_1072_fu_9773_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_37);
+void pqcrystals_dilithium_13::thread_or_ln186_1072_fu_9773_p2() {
+    or_ln186_1072_fu_9773_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_37);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1073_fu_9845_p2() {
-    or_ln184_1073_fu_9845_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_38);
+void pqcrystals_dilithium_13::thread_or_ln186_1073_fu_9845_p2() {
+    or_ln186_1073_fu_9845_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_38);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1074_fu_9859_p2() {
-    or_ln184_1074_fu_9859_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_39);
+void pqcrystals_dilithium_13::thread_or_ln186_1074_fu_9859_p2() {
+    or_ln186_1074_fu_9859_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_39);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1075_fu_9931_p2() {
-    or_ln184_1075_fu_9931_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3A);
+void pqcrystals_dilithium_13::thread_or_ln186_1075_fu_9931_p2() {
+    or_ln186_1075_fu_9931_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3A);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1076_fu_9945_p2() {
-    or_ln184_1076_fu_9945_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3B);
+void pqcrystals_dilithium_13::thread_or_ln186_1076_fu_9945_p2() {
+    or_ln186_1076_fu_9945_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3B);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1077_fu_10017_p2() {
-    or_ln184_1077_fu_10017_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3C);
+void pqcrystals_dilithium_13::thread_or_ln186_1077_fu_10017_p2() {
+    or_ln186_1077_fu_10017_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3C);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1078_fu_10031_p2() {
-    or_ln184_1078_fu_10031_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3D);
+void pqcrystals_dilithium_13::thread_or_ln186_1078_fu_10031_p2() {
+    or_ln186_1078_fu_10031_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3D);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1079_fu_10103_p2() {
-    or_ln184_1079_fu_10103_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3E);
+void pqcrystals_dilithium_13::thread_or_ln186_1079_fu_10103_p2() {
+    or_ln186_1079_fu_10103_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3E);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1080_fu_10117_p2() {
-    or_ln184_1080_fu_10117_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3F);
+void pqcrystals_dilithium_13::thread_or_ln186_1080_fu_10117_p2() {
+    or_ln186_1080_fu_10117_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_3F);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1081_fu_10189_p2() {
-    or_ln184_1081_fu_10189_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_40);
+void pqcrystals_dilithium_13::thread_or_ln186_1081_fu_10189_p2() {
+    or_ln186_1081_fu_10189_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_40);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1082_fu_10203_p2() {
-    or_ln184_1082_fu_10203_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_41);
+void pqcrystals_dilithium_13::thread_or_ln186_1082_fu_10203_p2() {
+    or_ln186_1082_fu_10203_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_41);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1083_fu_10275_p2() {
-    or_ln184_1083_fu_10275_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_42);
+void pqcrystals_dilithium_13::thread_or_ln186_1083_fu_10275_p2() {
+    or_ln186_1083_fu_10275_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_42);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1084_fu_10289_p2() {
-    or_ln184_1084_fu_10289_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_43);
+void pqcrystals_dilithium_13::thread_or_ln186_1084_fu_10289_p2() {
+    or_ln186_1084_fu_10289_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_43);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1085_fu_10361_p2() {
-    or_ln184_1085_fu_10361_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_44);
+void pqcrystals_dilithium_13::thread_or_ln186_1085_fu_10361_p2() {
+    or_ln186_1085_fu_10361_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_44);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1086_fu_10375_p2() {
-    or_ln184_1086_fu_10375_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_45);
+void pqcrystals_dilithium_13::thread_or_ln186_1086_fu_10375_p2() {
+    or_ln186_1086_fu_10375_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_45);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1087_fu_10447_p2() {
-    or_ln184_1087_fu_10447_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_46);
+void pqcrystals_dilithium_13::thread_or_ln186_1087_fu_10447_p2() {
+    or_ln186_1087_fu_10447_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_46);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1088_fu_10461_p2() {
-    or_ln184_1088_fu_10461_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_47);
+void pqcrystals_dilithium_13::thread_or_ln186_1088_fu_10461_p2() {
+    or_ln186_1088_fu_10461_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_47);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1089_fu_10533_p2() {
-    or_ln184_1089_fu_10533_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_48);
+void pqcrystals_dilithium_13::thread_or_ln186_1089_fu_10533_p2() {
+    or_ln186_1089_fu_10533_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_48);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1090_fu_10547_p2() {
-    or_ln184_1090_fu_10547_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_49);
+void pqcrystals_dilithium_13::thread_or_ln186_1090_fu_10547_p2() {
+    or_ln186_1090_fu_10547_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_49);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1091_fu_10619_p2() {
-    or_ln184_1091_fu_10619_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4A);
+void pqcrystals_dilithium_13::thread_or_ln186_1091_fu_10619_p2() {
+    or_ln186_1091_fu_10619_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4A);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1092_fu_10633_p2() {
-    or_ln184_1092_fu_10633_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4B);
+void pqcrystals_dilithium_13::thread_or_ln186_1092_fu_10633_p2() {
+    or_ln186_1092_fu_10633_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4B);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1093_fu_10705_p2() {
-    or_ln184_1093_fu_10705_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4C);
+void pqcrystals_dilithium_13::thread_or_ln186_1093_fu_10705_p2() {
+    or_ln186_1093_fu_10705_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4C);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1094_fu_10719_p2() {
-    or_ln184_1094_fu_10719_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4D);
+void pqcrystals_dilithium_13::thread_or_ln186_1094_fu_10719_p2() {
+    or_ln186_1094_fu_10719_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4D);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1095_fu_10791_p2() {
-    or_ln184_1095_fu_10791_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4E);
+void pqcrystals_dilithium_13::thread_or_ln186_1095_fu_10791_p2() {
+    or_ln186_1095_fu_10791_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4E);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1096_fu_10805_p2() {
-    or_ln184_1096_fu_10805_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4F);
+void pqcrystals_dilithium_13::thread_or_ln186_1096_fu_10805_p2() {
+    or_ln186_1096_fu_10805_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_4F);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1097_fu_10877_p2() {
-    or_ln184_1097_fu_10877_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_50);
+void pqcrystals_dilithium_13::thread_or_ln186_1097_fu_10877_p2() {
+    or_ln186_1097_fu_10877_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_50);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1098_fu_10891_p2() {
-    or_ln184_1098_fu_10891_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_51);
+void pqcrystals_dilithium_13::thread_or_ln186_1098_fu_10891_p2() {
+    or_ln186_1098_fu_10891_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_51);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1099_fu_10963_p2() {
-    or_ln184_1099_fu_10963_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_52);
+void pqcrystals_dilithium_13::thread_or_ln186_1099_fu_10963_p2() {
+    or_ln186_1099_fu_10963_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_52);
 }
 
-void pqcrystals_dilithium_13::thread_or_ln184_1100_fu_10977_p2() {
-    or_ln184_1100_fu_10977_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_53);
+void pqcrystals_dilithium_13::thread_or_ln186_1100_fu_10977_p2() {
+    or_ln186_1100_fu_10977_p2 = (tmp_2490_reg_18503.read() | ap_const_lv12_53);
 }
 
 }

@@ -21,29 +21,25 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1076</Best-caseLatency>
-<Average-caseLatency>1076</Average-caseLatency>
-<Worst-caseLatency>1076</Worst-caseLatency>
-<Best-caseRealTimeLatency>10.760 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>10.760 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>10.760 ms</Worst-caseRealTimeLatency>
-<Interval-min>1076</Interval-min>
-<Interval-max>1076</Interval-max>
+<Best-caseLatency>486</Best-caseLatency>
+<Average-caseLatency>486</Average-caseLatency>
+<Worst-caseLatency>486</Worst-caseLatency>
+<Best-caseRealTimeLatency>4.860 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>4.860 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>4.860 ms</Worst-caseRealTimeLatency>
+<Interval-min>486</Interval-min>
+<Interval-max>486</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <TripCount>5</TripCount>
-<Latency>1075</Latency>
-<IterationLatency>215</IterationLatency>
+<Latency>485</Latency>
+<IterationLatency>97</IterationLatency>
 <Loop1.1>
 <TripCount>17</TripCount>
-<Latency>187</Latency>
-<IterationLatency>11</IterationLatency>
-<Loop1.1.1>
-<TripCount>8</TripCount>
-<Latency>8</Latency>
-<IterationLatency>1</IterationLatency>
-</Loop1.1.1>
+<Latency>68</Latency>
+<PipelineII>4</PipelineII>
+<PipelineDepth>5</PipelineDepth>
 </Loop1.1>
 </Loop1>
 </SummaryOfLoopLatency>
@@ -51,8 +47,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>3969</FF>
-<LUT>194451</LUT>
+<FF>3964</FF>
+<LUT>194425</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <URAM>0</URAM>
@@ -168,6 +164,50 @@
 </RtlPorts>
 <RtlPorts>
 <name>out_r_d0</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_address1</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>10</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_ce1</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_we1</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_d1</name>
 <Object>out_r</Object>
 <Type>array</Type>
 <Scope></Scope>

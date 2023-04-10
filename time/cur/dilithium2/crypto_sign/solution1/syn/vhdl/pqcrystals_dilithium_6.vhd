@@ -58,8 +58,8 @@ architecture behav of pqcrystals_dilithium_6 is
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal trunc_ln333_fu_48_p1 : STD_LOGIC_VECTOR (16 downto 0);
-    signal trunc_ln333_reg_53 : STD_LOGIC_VECTOR (16 downto 0);
+    signal trunc_ln339_fu_48_p1 : STD_LOGIC_VECTOR (16 downto 0);
+    signal trunc_ln339_reg_53 : STD_LOGIC_VECTOR (16 downto 0);
     signal grp_pqcrystals_dilithium_16_fu_35_ap_return : STD_LOGIC_VECTOR (0 downto 0);
     signal tmp4_reg_58 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
@@ -126,7 +126,7 @@ begin
         a_coeffs_ce0 => grp_pqcrystals_dilithium_16_fu_35_a_coeffs_ce0,
         a_coeffs_q0 => v_vec_coeffs_q0,
         a_coeffs_offset => grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset,
-        B => trunc_ln333_reg_53,
+        B => trunc_ln339_reg_53,
         ap_return => grp_pqcrystals_dilithium_16_fu_35_ap_return);
 
 
@@ -213,7 +213,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then
-                trunc_ln333_reg_53 <= trunc_ln333_fu_48_p1;
+                trunc_ln339_reg_53 <= trunc_ln339_fu_48_p1;
             end if;
         end if;
     end process;
@@ -366,7 +366,7 @@ begin
     end process;
 
     grp_pqcrystals_dilithium_16_fu_35_ap_start <= grp_pqcrystals_dilithium_16_fu_35_ap_start_reg;
-    trunc_ln333_fu_48_p1 <= bound(17 - 1 downto 0);
+    trunc_ln339_fu_48_p1 <= bound(17 - 1 downto 0);
     v_vec_coeffs_address0 <= grp_pqcrystals_dilithium_16_fu_35_a_coeffs_address0;
 
     v_vec_coeffs_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state4, ap_CS_fsm_state6, ap_predicate_op18_call_state6, grp_pqcrystals_dilithium_16_fu_35_a_coeffs_ce0, ap_CS_fsm_state8, ap_predicate_op22_call_state8)

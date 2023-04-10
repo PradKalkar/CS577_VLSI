@@ -1833,7 +1833,7 @@ struct pqcrystals_dilithium_23 : public sc_module {
     sc_signal< sc_lv<23> > mul_ln96_fu_6942_p0;
     sc_signal< sc_lv<32> > mul_ln96_fu_6942_p1;
     sc_signal< sc_lv<54> > mul_ln96_fu_6942_p2;
-    sc_signal< sc_lv<1> > empty_21_fu_6977_p2;
+    sc_signal< sc_lv<1> > empty_22_fu_6977_p2;
     sc_signal< sc_lv<12> > zext_ln93_3_fu_7000_p1;
     sc_signal< sc_lv<12> > add_ln93_1_fu_7004_p2;
     sc_signal< sc_lv<9> > add_ln94_8_fu_7014_p2;
@@ -1843,7 +1843,7 @@ struct pqcrystals_dilithium_23 : public sc_module {
     sc_signal< sc_lv<23> > mul_ln96_1_fu_7049_p0;
     sc_signal< sc_lv<32> > mul_ln96_1_fu_7049_p1;
     sc_signal< sc_lv<54> > mul_ln96_1_fu_7049_p2;
-    sc_signal< sc_lv<1> > empty_23_fu_7084_p2;
+    sc_signal< sc_lv<1> > empty_24_fu_7084_p2;
     sc_signal< sc_lv<12> > zext_ln93_5_fu_7107_p1;
     sc_signal< sc_lv<12> > add_ln93_2_fu_7111_p2;
     sc_signal< sc_lv<9> > add_ln94_2_fu_7121_p2;
@@ -1852,7 +1852,7 @@ struct pqcrystals_dilithium_23 : public sc_module {
     sc_signal< sc_lv<23> > mul_ln96_2_fu_7156_p0;
     sc_signal< sc_lv<32> > mul_ln96_2_fu_7156_p1;
     sc_signal< sc_lv<54> > mul_ln96_2_fu_7156_p2;
-    sc_signal< sc_lv<1> > empty_25_fu_7191_p2;
+    sc_signal< sc_lv<1> > empty_26_fu_7191_p2;
     sc_signal< sc_lv<12> > zext_ln93_7_fu_7214_p1;
     sc_signal< sc_lv<12> > add_ln93_3_fu_7218_p2;
     sc_signal< sc_lv<9> > add_ln94_3_fu_7228_p2;
@@ -1861,7 +1861,7 @@ struct pqcrystals_dilithium_23 : public sc_module {
     sc_signal< sc_lv<23> > mul_ln96_3_fu_7263_p0;
     sc_signal< sc_lv<32> > mul_ln96_3_fu_7263_p1;
     sc_signal< sc_lv<54> > mul_ln96_3_fu_7263_p2;
-    sc_signal< sc_lv<1> > empty_27_fu_7298_p2;
+    sc_signal< sc_lv<1> > empty_28_fu_7298_p2;
     sc_signal< sc_lv<12> > zext_ln93_9_fu_7321_p1;
     sc_signal< sc_lv<12> > add_ln93_4_fu_7325_p2;
     sc_signal< sc_lv<9> > add_ln94_4_fu_7335_p2;
@@ -1870,7 +1870,7 @@ struct pqcrystals_dilithium_23 : public sc_module {
     sc_signal< sc_lv<23> > mul_ln96_4_fu_7370_p0;
     sc_signal< sc_lv<32> > mul_ln96_4_fu_7370_p1;
     sc_signal< sc_lv<54> > mul_ln96_4_fu_7370_p2;
-    sc_signal< sc_lv<1> > empty_29_fu_7405_p2;
+    sc_signal< sc_lv<1> > empty_30_fu_7405_p2;
     sc_signal< sc_lv<12> > zext_ln93_11_fu_7428_p1;
     sc_signal< sc_lv<12> > add_ln93_5_fu_7432_p2;
     sc_signal< sc_lv<9> > add_ln94_5_fu_7442_p2;
@@ -1879,7 +1879,7 @@ struct pqcrystals_dilithium_23 : public sc_module {
     sc_signal< sc_lv<23> > mul_ln96_5_fu_7477_p0;
     sc_signal< sc_lv<32> > mul_ln96_5_fu_7477_p1;
     sc_signal< sc_lv<54> > mul_ln96_5_fu_7477_p2;
-    sc_signal< sc_lv<1> > empty_31_fu_7512_p2;
+    sc_signal< sc_lv<1> > empty_32_fu_7512_p2;
     sc_signal< sc_lv<12> > zext_ln93_13_fu_7535_p1;
     sc_signal< sc_lv<12> > add_ln93_6_fu_7539_p2;
     sc_signal< sc_lv<9> > add_ln94_6_fu_7549_p2;
@@ -1888,7 +1888,7 @@ struct pqcrystals_dilithium_23 : public sc_module {
     sc_signal< sc_lv<23> > mul_ln96_6_fu_7584_p0;
     sc_signal< sc_lv<32> > mul_ln96_6_fu_7584_p1;
     sc_signal< sc_lv<54> > mul_ln96_6_fu_7584_p2;
-    sc_signal< sc_lv<1> > empty_33_fu_7619_p2;
+    sc_signal< sc_lv<1> > empty_34_fu_7619_p2;
     sc_signal< sc_lv<12> > zext_ln93_15_fu_7642_p1;
     sc_signal< sc_lv<12> > add_ln93_7_fu_7646_p2;
     sc_signal< sc_lv<9> > add_ln94_7_fu_7656_p2;
@@ -3648,13 +3648,13 @@ struct pqcrystals_dilithium_23 : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_empty_21_fu_6977_p2();
-    void thread_empty_23_fu_7084_p2();
-    void thread_empty_25_fu_7191_p2();
-    void thread_empty_27_fu_7298_p2();
-    void thread_empty_29_fu_7405_p2();
-    void thread_empty_31_fu_7512_p2();
-    void thread_empty_33_fu_7619_p2();
+    void thread_empty_22_fu_6977_p2();
+    void thread_empty_24_fu_7084_p2();
+    void thread_empty_26_fu_7191_p2();
+    void thread_empty_28_fu_7298_p2();
+    void thread_empty_30_fu_7405_p2();
+    void thread_empty_32_fu_7512_p2();
+    void thread_empty_34_fu_7619_p2();
     void thread_empty_fu_6840_p2();
     void thread_grp_fu_2935_p2();
     void thread_grp_fu_2941_p2();

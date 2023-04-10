@@ -1,10 +1,10 @@
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:55:48 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2'
-Sourcing Tcl script '/media/storage/Time/dilithium2/crypto_sign/solution1/cosim.tcl'
-INFO: [HLS 200-10] Opening project '/media/storage/Time/dilithium2/crypto_sign'.
-INFO: [HLS 200-10] Opening solution '/media/storage/Time/dilithium2/crypto_sign/solution1'.
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:27:20 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2'
+Sourcing Tcl script '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/cosim.tcl'
+INFO: [HLS 200-10] Opening project '/home/guest/Downloads/time_242/dilithium2/crypto_sign'.
+INFO: [HLS 200-10] Opening solution '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10000ns.
 INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1250ns.
 INFO: [HLS 200-10] Setting target device to 'xc7a200t-fbg676-2'
@@ -13,141 +13,141 @@ INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -v
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
 INFO: [COSIM 212-47] Using XSIM for RTL simulation.
 INFO: [COSIM 212-14] Instrumenting C test bench ...
-   Build using "/media/storage/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Build using "/tools/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
    Compiling apatb_crypto_sign.cpp
-   Compiling (apcc) aes256ctr.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:56:30 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
+   Compiling (apcc) symmetric-aes.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:27:48 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/100201680960390144823
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) aes.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:56:38 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/100751680960398535345
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) fips202.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:56:46 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/101301680960406450070
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) ntt.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:56:55 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/101851680960415527651
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) packing.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:57:02 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/102401680960422622960
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) poly.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:57:09 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/102951680960430016910
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5458401681048668661323
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) polyvec.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:57:20 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:27:52 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/103501680960440073613
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5458951681048672993426
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) fips202.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:27:57 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5459501681048677071048
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) PQCgenKAT_sign.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:57:28 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:01 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-In file included from /media/storage/Time/dilithium2/PQCgenKAT_sign.c:1:
-/media/storage/Time/dilithium2/PQCgenKAT_sign.c:142:17: warning: incompatible pointer types passing 'unsigned long long *' to parameter of type 'unsigned long *' [-Wincompatible-pointer-types]
+In file included from /home/guest/Downloads/time_242/dilithium2/PQCgenKAT_sign.c:1:
+/home/guest/Downloads/time_242/dilithium2/PQCgenKAT_sign.c:142:17: warning: incompatible pointer types passing 'unsigned long long *' to parameter of type 'unsigned long *' [-Wincompatible-pointer-types]
 crypto_sign(sm, &smlen, m, mlen, sk))
                 ^~~~~~
 ./apatb_crypto_sign.h:8:20: note: passing argument to parameter 'smlen' here
 long unsigned int* smlen,
                    ^
 1 warning generated.
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/104051680960448174711
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) reduce.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:57:35 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/104601680960455632679
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) rng.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:57:42 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/105151680960462821795
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) rounding.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:57:50 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/105701680960470943063
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) sign.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:57:58 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/106251680960478493439
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) symmetric-aes.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:58:05 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/106801680960485904402
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5460051681048681871623
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) symmetric-shake.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'heemanth' on host 'Ubuntu.myguest.virtualbox.org' (Linux_x86_64 version 5.15.0-57-generic) on Sat Apr 08 18:58:13 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
-INFO: [HLS 200-10] In directory '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:05 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_heemanth/107351680960493115244
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5460601681048685946093
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) reduce.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:09 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5461151681048689876610
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) ntt.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:13 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5461701681048693815127
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) rng.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:17 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5462281681048697776343
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) sign.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:21 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5462831681048701853097
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) packing.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:25 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5463381681048705885458
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) poly.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:29 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5463961681048709963355
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) aes.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:34 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5464511681048714399923
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) aes256ctr.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:38 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5465071681048718626074
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) rounding.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:42 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5465621681048722927592
 INFO: [APCC 202-1] APCC is done.
    Generating cosim.tv.exe
 INFO: [COSIM 212-302] Starting C TB testing ... 
@@ -156,140 +156,140 @@ INFO: [COSIM 212-12] Generating RTL test bench ...
 INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
 INFO: [COSIM 212-323] Starting verilog simulation. 
 INFO: [COSIM 212-15] Starting XSIM ...
-INFO: [XSIM 43-3496] Using init file passed via -initfile option "/media/storage/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/tools/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: /media/storage/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_crypto_sign_top glbl -prj crypto_sign.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /media/storage/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s crypto_sign 
-Multi-threading is on. Using 2 slave threads.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_crypto_sign_top glbl -prj crypto_sign.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /tools/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s crypto_sign 
+Multi-threading is on. Using 14 slave threads.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
     LIBRARY_PATH
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_8.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithhbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithhbi_ram
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithhbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign_mac_mibs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_mac_mibs_DSP48_0
+INFO: [VRFC 10-311] analyzing module crypto_sign_mac_mibs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/keccak_absorb_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_21
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithcud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithcud_ram
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithcud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithyd2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithyd2_ram
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithyd2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithbkb_ram
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_crypto_sign_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/rej_uniform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rej_uniform
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/keccak_squeezeblocks.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/keccak_absorb_3199.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb_3199
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithqcK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithqcK_ram
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithqcK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_8.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_8
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign_mac_mAem.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign_mac_mAem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module crypto_sign_mac_mAem_DSP48_1
 INFO: [VRFC 10-311] analyzing module crypto_sign_mac_mAem
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign_mac_mBew.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crypto_sign_mac_mBew_DSP48_2
-INFO: [VRFC 10-311] analyzing module crypto_sign_mac_mBew
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign.autotb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module apatb_crypto_sign_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_21.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_21
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/keccak_absorb_2_t.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithkbM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithkbM_ram
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithkbM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/keccak_squeezeblocks_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_19.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_19
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/KeccakF1600_StatePer_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module KeccakF1600_StatePer_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_11
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/keccak_absorb_2_t.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module keccak_absorb_2_t_ram
 INFO: [VRFC 10-311] analyzing module keccak_absorb_2_t
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_14.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_14
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithpcA.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithpcA_ram
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithpcA
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/keccak_squeezeblocks_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_17.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/keccak_squeezeblocks_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_18.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_18
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithfYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithfYi_ram
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithfYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_17.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_17
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_6.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_6
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/keccak_absorb_3199.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module keccak_absorb_3199
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilitheOg.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_20
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/KeccakF1600_StatePer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module KeccakF1600_StatePer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithocq_ram
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/AESL_automem_sk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_sk
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/AESL_automem_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_m
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilitheOg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pqcrystals_dilitheOg_rom
 INFO: [VRFC 10-311] analyzing module pqcrystals_dilitheOg
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/keccak_absorb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithrcU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithrcU_ram
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithrcU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_23.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_23
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/keccak_absorb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module keccak_absorb
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/AESL_automem_sm.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_sm
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_9.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_9
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_12.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_12
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign_urem_dEe.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign_mac_mBew.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_mac_mBew_DSP48_2
+INFO: [VRFC 10-311] analyzing module crypto_sign_mac_mBew
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithpcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithpcA_ram
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithpcA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_22.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_22
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign_urem_dEe.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module crypto_sign_urem_dEe_div_u
 INFO: [VRFC 10-311] analyzing module crypto_sign_urem_dEe_div
 INFO: [VRFC 10-311] analyzing module crypto_sign_urem_dEe
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/KeccakF1600_StatePer_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module KeccakF1600_StatePer_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_16.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_16
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_18.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_18
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithyd2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithyd2_ram
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithyd2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_3
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/keccak_absorb_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module keccak_absorb_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_23.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_23
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_19.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_19
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithqcK.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithqcK_ram
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithqcK
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_22.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_22
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithcud.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithcud_ram
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithcud
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_5
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithbkb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithbkb_ram
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithbkb
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/keccak_squeezeblocks.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithkbM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithkbM_ram
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithkbM
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/AESL_automem_sk.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_sk
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/keccak_squeezeblocks_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/KeccakF1600_StatePer.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module KeccakF1600_StatePer
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crypto_sign
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithhbi.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithhbi_ram
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithhbi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_15.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_15.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_15
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/rej_uniform.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module rej_uniform
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithrcU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithrcU_ram
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithrcU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/AESL_automem_m.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_m
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign_mac_mibs.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crypto_sign_mac_mibs_DSP48_0
-INFO: [VRFC 10-311] analyzing module crypto_sign_mac_mibs
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_11.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_11
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithfYi.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithfYi_ram
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithfYi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithocq.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithocq_ram
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithocq
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_20.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_20
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_10.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_10
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_13.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_13
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_7.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/pqcrystals_dilithium_12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqcrystals_dilithium_12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/AESL_automem_sm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_sm
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
@@ -375,9 +375,9 @@ Built simulation snapshot crypto_sign
   **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
-source /media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/xsim.dir/crypto_sign/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/xsim.dir/crypto_sign/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Apr  8 19:00:37 2023. For additional details about this file, please refer to the WebTalk help file at /media/storage/Vivado/2019.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Sat Apr  8 19:00:37 2023...
+source /home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/xsim.dir/crypto_sign/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/xsim.dir/crypto_sign/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Apr  9 19:29:26 2023. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr  9 19:29:26 2023...
 
 ****** xsim v2019.2 (64-bit)
   **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
@@ -397,12 +397,12 @@ source crypto_sign.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 2 [n/a] @ "25000000"
-// RTL Simulation : 1 / 2 [n/a] @ "2911625000000"
-// RTL Simulation : 2 / 2 [n/a] @ "4848855000000"
+// RTL Simulation : 1 / 2 [n/a] @ "2743985000000"
+// RTL Simulation : 2 / 2 [n/a] @ "4538005000000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 4848895 us : File "/media/storage/Time/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign.autotb.v" Line 502
-run: Time (s): cpu = 00:00:00.70 ; elapsed = 00:49:57 . Memory (MB): peak = 1483.914 ; gain = 0.000 ; free physical = 1044 ; free virtual = 5504
+$finish called at time : 4538045 us : File "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign.autotb.v" Line 502
+run: Time (s): cpu = 00:00:00.08 ; elapsed = 00:17:40 . Memory (MB): peak = 1483.770 ; gain = 0.000 ; free physical = 3221 ; free virtual = 8105
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sat Apr  8 19:50:57 2023...
+INFO: [Common 17-206] Exiting xsim at Sun Apr  9 19:47:22 2023...
 INFO: [COSIM 212-316] Starting C post checking ...
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***

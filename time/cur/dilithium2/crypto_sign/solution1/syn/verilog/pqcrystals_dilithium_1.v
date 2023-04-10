@@ -51,183 +51,183 @@ parameter    ap_ST_fsm_state15 = 195'd16384;
 parameter    ap_ST_fsm_state16 = 195'd32768;
 parameter    ap_ST_fsm_state17 = 195'd65536;
 parameter    ap_ST_fsm_state18 = 195'd131072;
-parameter    ap_ST_fsm_state19 = 195'd262144;
-parameter    ap_ST_fsm_state20 = 195'd524288;
-parameter    ap_ST_fsm_state21 = 195'd1048576;
-parameter    ap_ST_fsm_state22 = 195'd2097152;
-parameter    ap_ST_fsm_state23 = 195'd4194304;
-parameter    ap_ST_fsm_state24 = 195'd8388608;
-parameter    ap_ST_fsm_state25 = 195'd16777216;
-parameter    ap_ST_fsm_state26 = 195'd33554432;
-parameter    ap_ST_fsm_state27 = 195'd67108864;
-parameter    ap_ST_fsm_state28 = 195'd134217728;
-parameter    ap_ST_fsm_state29 = 195'd268435456;
-parameter    ap_ST_fsm_state30 = 195'd536870912;
-parameter    ap_ST_fsm_state31 = 195'd1073741824;
-parameter    ap_ST_fsm_state32 = 195'd2147483648;
-parameter    ap_ST_fsm_state33 = 195'd4294967296;
-parameter    ap_ST_fsm_state34 = 195'd8589934592;
-parameter    ap_ST_fsm_state35 = 195'd17179869184;
-parameter    ap_ST_fsm_state36 = 195'd34359738368;
-parameter    ap_ST_fsm_state37 = 195'd68719476736;
-parameter    ap_ST_fsm_state38 = 195'd137438953472;
-parameter    ap_ST_fsm_state39 = 195'd274877906944;
-parameter    ap_ST_fsm_state40 = 195'd549755813888;
-parameter    ap_ST_fsm_state41 = 195'd1099511627776;
-parameter    ap_ST_fsm_state42 = 195'd2199023255552;
-parameter    ap_ST_fsm_state43 = 195'd4398046511104;
-parameter    ap_ST_fsm_state44 = 195'd8796093022208;
-parameter    ap_ST_fsm_state45 = 195'd17592186044416;
-parameter    ap_ST_fsm_state46 = 195'd35184372088832;
-parameter    ap_ST_fsm_state47 = 195'd70368744177664;
-parameter    ap_ST_fsm_state48 = 195'd140737488355328;
-parameter    ap_ST_fsm_state49 = 195'd281474976710656;
-parameter    ap_ST_fsm_state50 = 195'd562949953421312;
-parameter    ap_ST_fsm_state51 = 195'd1125899906842624;
-parameter    ap_ST_fsm_state52 = 195'd2251799813685248;
-parameter    ap_ST_fsm_state53 = 195'd4503599627370496;
-parameter    ap_ST_fsm_state54 = 195'd9007199254740992;
-parameter    ap_ST_fsm_state55 = 195'd18014398509481984;
-parameter    ap_ST_fsm_state56 = 195'd36028797018963968;
-parameter    ap_ST_fsm_state57 = 195'd72057594037927936;
-parameter    ap_ST_fsm_state58 = 195'd144115188075855872;
-parameter    ap_ST_fsm_state59 = 195'd288230376151711744;
-parameter    ap_ST_fsm_state60 = 195'd576460752303423488;
-parameter    ap_ST_fsm_state61 = 195'd1152921504606846976;
-parameter    ap_ST_fsm_state62 = 195'd2305843009213693952;
-parameter    ap_ST_fsm_state63 = 195'd4611686018427387904;
-parameter    ap_ST_fsm_state64 = 195'd9223372036854775808;
-parameter    ap_ST_fsm_state65 = 195'd18446744073709551616;
-parameter    ap_ST_fsm_state66 = 195'd36893488147419103232;
-parameter    ap_ST_fsm_state67 = 195'd73786976294838206464;
-parameter    ap_ST_fsm_state68 = 195'd147573952589676412928;
-parameter    ap_ST_fsm_state69 = 195'd295147905179352825856;
-parameter    ap_ST_fsm_state70 = 195'd590295810358705651712;
-parameter    ap_ST_fsm_state71 = 195'd1180591620717411303424;
-parameter    ap_ST_fsm_state72 = 195'd2361183241434822606848;
-parameter    ap_ST_fsm_state73 = 195'd4722366482869645213696;
-parameter    ap_ST_fsm_state74 = 195'd9444732965739290427392;
-parameter    ap_ST_fsm_state75 = 195'd18889465931478580854784;
-parameter    ap_ST_fsm_state76 = 195'd37778931862957161709568;
-parameter    ap_ST_fsm_state77 = 195'd75557863725914323419136;
-parameter    ap_ST_fsm_state78 = 195'd151115727451828646838272;
-parameter    ap_ST_fsm_state79 = 195'd302231454903657293676544;
-parameter    ap_ST_fsm_state80 = 195'd604462909807314587353088;
-parameter    ap_ST_fsm_state81 = 195'd1208925819614629174706176;
-parameter    ap_ST_fsm_state82 = 195'd2417851639229258349412352;
-parameter    ap_ST_fsm_state83 = 195'd4835703278458516698824704;
-parameter    ap_ST_fsm_state84 = 195'd9671406556917033397649408;
-parameter    ap_ST_fsm_state85 = 195'd19342813113834066795298816;
-parameter    ap_ST_fsm_state86 = 195'd38685626227668133590597632;
-parameter    ap_ST_fsm_state87 = 195'd77371252455336267181195264;
-parameter    ap_ST_fsm_state88 = 195'd154742504910672534362390528;
-parameter    ap_ST_fsm_state89 = 195'd309485009821345068724781056;
-parameter    ap_ST_fsm_state90 = 195'd618970019642690137449562112;
-parameter    ap_ST_fsm_state91 = 195'd1237940039285380274899124224;
-parameter    ap_ST_fsm_state92 = 195'd2475880078570760549798248448;
-parameter    ap_ST_fsm_state93 = 195'd4951760157141521099596496896;
-parameter    ap_ST_fsm_state94 = 195'd9903520314283042199192993792;
-parameter    ap_ST_fsm_state95 = 195'd19807040628566084398385987584;
-parameter    ap_ST_fsm_state96 = 195'd39614081257132168796771975168;
-parameter    ap_ST_fsm_state97 = 195'd79228162514264337593543950336;
-parameter    ap_ST_fsm_state98 = 195'd158456325028528675187087900672;
-parameter    ap_ST_fsm_state99 = 195'd316912650057057350374175801344;
-parameter    ap_ST_fsm_state100 = 195'd633825300114114700748351602688;
-parameter    ap_ST_fsm_state101 = 195'd1267650600228229401496703205376;
-parameter    ap_ST_fsm_state102 = 195'd2535301200456458802993406410752;
-parameter    ap_ST_fsm_state103 = 195'd5070602400912917605986812821504;
-parameter    ap_ST_fsm_state104 = 195'd10141204801825835211973625643008;
-parameter    ap_ST_fsm_state105 = 195'd20282409603651670423947251286016;
-parameter    ap_ST_fsm_state106 = 195'd40564819207303340847894502572032;
-parameter    ap_ST_fsm_state107 = 195'd81129638414606681695789005144064;
-parameter    ap_ST_fsm_state108 = 195'd162259276829213363391578010288128;
-parameter    ap_ST_fsm_state109 = 195'd324518553658426726783156020576256;
-parameter    ap_ST_fsm_state110 = 195'd649037107316853453566312041152512;
-parameter    ap_ST_fsm_state111 = 195'd1298074214633706907132624082305024;
-parameter    ap_ST_fsm_state112 = 195'd2596148429267413814265248164610048;
-parameter    ap_ST_fsm_state113 = 195'd5192296858534827628530496329220096;
-parameter    ap_ST_fsm_state114 = 195'd10384593717069655257060992658440192;
-parameter    ap_ST_fsm_state115 = 195'd20769187434139310514121985316880384;
-parameter    ap_ST_fsm_state116 = 195'd41538374868278621028243970633760768;
-parameter    ap_ST_fsm_state117 = 195'd83076749736557242056487941267521536;
-parameter    ap_ST_fsm_state118 = 195'd166153499473114484112975882535043072;
-parameter    ap_ST_fsm_state119 = 195'd332306998946228968225951765070086144;
-parameter    ap_ST_fsm_state120 = 195'd664613997892457936451903530140172288;
-parameter    ap_ST_fsm_state121 = 195'd1329227995784915872903807060280344576;
-parameter    ap_ST_fsm_state122 = 195'd2658455991569831745807614120560689152;
-parameter    ap_ST_fsm_state123 = 195'd5316911983139663491615228241121378304;
-parameter    ap_ST_fsm_state124 = 195'd10633823966279326983230456482242756608;
-parameter    ap_ST_fsm_state125 = 195'd21267647932558653966460912964485513216;
-parameter    ap_ST_fsm_state126 = 195'd42535295865117307932921825928971026432;
-parameter    ap_ST_fsm_state127 = 195'd85070591730234615865843651857942052864;
-parameter    ap_ST_fsm_state128 = 195'd170141183460469231731687303715884105728;
-parameter    ap_ST_fsm_state129 = 195'd340282366920938463463374607431768211456;
-parameter    ap_ST_fsm_state130 = 195'd680564733841876926926749214863536422912;
-parameter    ap_ST_fsm_state131 = 195'd1361129467683753853853498429727072845824;
-parameter    ap_ST_fsm_state132 = 195'd2722258935367507707706996859454145691648;
-parameter    ap_ST_fsm_state133 = 195'd5444517870735015415413993718908291383296;
-parameter    ap_ST_fsm_state134 = 195'd10889035741470030830827987437816582766592;
-parameter    ap_ST_fsm_state135 = 195'd21778071482940061661655974875633165533184;
-parameter    ap_ST_fsm_state136 = 195'd43556142965880123323311949751266331066368;
-parameter    ap_ST_fsm_state137 = 195'd87112285931760246646623899502532662132736;
-parameter    ap_ST_fsm_state138 = 195'd174224571863520493293247799005065324265472;
-parameter    ap_ST_fsm_state139 = 195'd348449143727040986586495598010130648530944;
-parameter    ap_ST_fsm_state140 = 195'd696898287454081973172991196020261297061888;
-parameter    ap_ST_fsm_state141 = 195'd1393796574908163946345982392040522594123776;
-parameter    ap_ST_fsm_state142 = 195'd2787593149816327892691964784081045188247552;
-parameter    ap_ST_fsm_state143 = 195'd5575186299632655785383929568162090376495104;
-parameter    ap_ST_fsm_state144 = 195'd11150372599265311570767859136324180752990208;
-parameter    ap_ST_fsm_state145 = 195'd22300745198530623141535718272648361505980416;
-parameter    ap_ST_fsm_state146 = 195'd44601490397061246283071436545296723011960832;
-parameter    ap_ST_fsm_state147 = 195'd89202980794122492566142873090593446023921664;
-parameter    ap_ST_fsm_state148 = 195'd178405961588244985132285746181186892047843328;
-parameter    ap_ST_fsm_state149 = 195'd356811923176489970264571492362373784095686656;
-parameter    ap_ST_fsm_state150 = 195'd713623846352979940529142984724747568191373312;
-parameter    ap_ST_fsm_state151 = 195'd1427247692705959881058285969449495136382746624;
-parameter    ap_ST_fsm_state152 = 195'd2854495385411919762116571938898990272765493248;
-parameter    ap_ST_fsm_state153 = 195'd5708990770823839524233143877797980545530986496;
-parameter    ap_ST_fsm_state154 = 195'd11417981541647679048466287755595961091061972992;
-parameter    ap_ST_fsm_state155 = 195'd22835963083295358096932575511191922182123945984;
-parameter    ap_ST_fsm_state156 = 195'd45671926166590716193865151022383844364247891968;
-parameter    ap_ST_fsm_state157 = 195'd91343852333181432387730302044767688728495783936;
-parameter    ap_ST_fsm_state158 = 195'd182687704666362864775460604089535377456991567872;
-parameter    ap_ST_fsm_state159 = 195'd365375409332725729550921208179070754913983135744;
-parameter    ap_ST_fsm_state160 = 195'd730750818665451459101842416358141509827966271488;
-parameter    ap_ST_fsm_state161 = 195'd1461501637330902918203684832716283019655932542976;
-parameter    ap_ST_fsm_state162 = 195'd2923003274661805836407369665432566039311865085952;
-parameter    ap_ST_fsm_state163 = 195'd5846006549323611672814739330865132078623730171904;
-parameter    ap_ST_fsm_state164 = 195'd11692013098647223345629478661730264157247460343808;
-parameter    ap_ST_fsm_state165 = 195'd23384026197294446691258957323460528314494920687616;
-parameter    ap_ST_fsm_state166 = 195'd46768052394588893382517914646921056628989841375232;
-parameter    ap_ST_fsm_state167 = 195'd93536104789177786765035829293842113257979682750464;
-parameter    ap_ST_fsm_state168 = 195'd187072209578355573530071658587684226515959365500928;
-parameter    ap_ST_fsm_state169 = 195'd374144419156711147060143317175368453031918731001856;
-parameter    ap_ST_fsm_state170 = 195'd748288838313422294120286634350736906063837462003712;
-parameter    ap_ST_fsm_state171 = 195'd1496577676626844588240573268701473812127674924007424;
-parameter    ap_ST_fsm_state172 = 195'd2993155353253689176481146537402947624255349848014848;
-parameter    ap_ST_fsm_state173 = 195'd5986310706507378352962293074805895248510699696029696;
-parameter    ap_ST_fsm_state174 = 195'd11972621413014756705924586149611790497021399392059392;
-parameter    ap_ST_fsm_state175 = 195'd23945242826029513411849172299223580994042798784118784;
-parameter    ap_ST_fsm_state176 = 195'd47890485652059026823698344598447161988085597568237568;
-parameter    ap_ST_fsm_state177 = 195'd95780971304118053647396689196894323976171195136475136;
-parameter    ap_ST_fsm_state178 = 195'd191561942608236107294793378393788647952342390272950272;
-parameter    ap_ST_fsm_state179 = 195'd383123885216472214589586756787577295904684780545900544;
-parameter    ap_ST_fsm_state180 = 195'd766247770432944429179173513575154591809369561091801088;
-parameter    ap_ST_fsm_state181 = 195'd1532495540865888858358347027150309183618739122183602176;
-parameter    ap_ST_fsm_state182 = 195'd3064991081731777716716694054300618367237478244367204352;
-parameter    ap_ST_fsm_state183 = 195'd6129982163463555433433388108601236734474956488734408704;
-parameter    ap_ST_fsm_state184 = 195'd12259964326927110866866776217202473468949912977468817408;
-parameter    ap_ST_fsm_state185 = 195'd24519928653854221733733552434404946937899825954937634816;
-parameter    ap_ST_fsm_state186 = 195'd49039857307708443467467104868809893875799651909875269632;
-parameter    ap_ST_fsm_state187 = 195'd98079714615416886934934209737619787751599303819750539264;
-parameter    ap_ST_fsm_state188 = 195'd196159429230833773869868419475239575503198607639501078528;
-parameter    ap_ST_fsm_state189 = 195'd392318858461667547739736838950479151006397215279002157056;
-parameter    ap_ST_fsm_state190 = 195'd784637716923335095479473677900958302012794430558004314112;
-parameter    ap_ST_fsm_state191 = 195'd1569275433846670190958947355801916604025588861116008628224;
-parameter    ap_ST_fsm_state192 = 195'd3138550867693340381917894711603833208051177722232017256448;
-parameter    ap_ST_fsm_state193 = 195'd6277101735386680763835789423207666416102355444464034512896;
-parameter    ap_ST_fsm_state194 = 195'd12554203470773361527671578846415332832204710888928069025792;
-parameter    ap_ST_fsm_state195 = 195'd25108406941546723055343157692830665664409421777856138051584;
+parameter    ap_ST_fsm_pp0_stage0 = 195'd262144;
+parameter    ap_ST_fsm_pp0_stage1 = 195'd524288;
+parameter    ap_ST_fsm_pp0_stage2 = 195'd1048576;
+parameter    ap_ST_fsm_pp0_stage3 = 195'd2097152;
+parameter    ap_ST_fsm_state24 = 195'd4194304;
+parameter    ap_ST_fsm_state25 = 195'd8388608;
+parameter    ap_ST_fsm_state26 = 195'd16777216;
+parameter    ap_ST_fsm_state27 = 195'd33554432;
+parameter    ap_ST_fsm_state28 = 195'd67108864;
+parameter    ap_ST_fsm_state29 = 195'd134217728;
+parameter    ap_ST_fsm_state30 = 195'd268435456;
+parameter    ap_ST_fsm_state31 = 195'd536870912;
+parameter    ap_ST_fsm_state32 = 195'd1073741824;
+parameter    ap_ST_fsm_state33 = 195'd2147483648;
+parameter    ap_ST_fsm_state34 = 195'd4294967296;
+parameter    ap_ST_fsm_state35 = 195'd8589934592;
+parameter    ap_ST_fsm_state36 = 195'd17179869184;
+parameter    ap_ST_fsm_state37 = 195'd34359738368;
+parameter    ap_ST_fsm_state38 = 195'd68719476736;
+parameter    ap_ST_fsm_state39 = 195'd137438953472;
+parameter    ap_ST_fsm_state40 = 195'd274877906944;
+parameter    ap_ST_fsm_state41 = 195'd549755813888;
+parameter    ap_ST_fsm_state42 = 195'd1099511627776;
+parameter    ap_ST_fsm_state43 = 195'd2199023255552;
+parameter    ap_ST_fsm_state44 = 195'd4398046511104;
+parameter    ap_ST_fsm_state45 = 195'd8796093022208;
+parameter    ap_ST_fsm_state46 = 195'd17592186044416;
+parameter    ap_ST_fsm_state47 = 195'd35184372088832;
+parameter    ap_ST_fsm_state48 = 195'd70368744177664;
+parameter    ap_ST_fsm_state49 = 195'd140737488355328;
+parameter    ap_ST_fsm_state50 = 195'd281474976710656;
+parameter    ap_ST_fsm_state51 = 195'd562949953421312;
+parameter    ap_ST_fsm_state52 = 195'd1125899906842624;
+parameter    ap_ST_fsm_state53 = 195'd2251799813685248;
+parameter    ap_ST_fsm_state54 = 195'd4503599627370496;
+parameter    ap_ST_fsm_state55 = 195'd9007199254740992;
+parameter    ap_ST_fsm_state56 = 195'd18014398509481984;
+parameter    ap_ST_fsm_state57 = 195'd36028797018963968;
+parameter    ap_ST_fsm_state58 = 195'd72057594037927936;
+parameter    ap_ST_fsm_state59 = 195'd144115188075855872;
+parameter    ap_ST_fsm_state60 = 195'd288230376151711744;
+parameter    ap_ST_fsm_state61 = 195'd576460752303423488;
+parameter    ap_ST_fsm_state62 = 195'd1152921504606846976;
+parameter    ap_ST_fsm_state63 = 195'd2305843009213693952;
+parameter    ap_ST_fsm_state64 = 195'd4611686018427387904;
+parameter    ap_ST_fsm_state65 = 195'd9223372036854775808;
+parameter    ap_ST_fsm_state66 = 195'd18446744073709551616;
+parameter    ap_ST_fsm_state67 = 195'd36893488147419103232;
+parameter    ap_ST_fsm_state68 = 195'd73786976294838206464;
+parameter    ap_ST_fsm_state69 = 195'd147573952589676412928;
+parameter    ap_ST_fsm_state70 = 195'd295147905179352825856;
+parameter    ap_ST_fsm_state71 = 195'd590295810358705651712;
+parameter    ap_ST_fsm_state72 = 195'd1180591620717411303424;
+parameter    ap_ST_fsm_state73 = 195'd2361183241434822606848;
+parameter    ap_ST_fsm_state74 = 195'd4722366482869645213696;
+parameter    ap_ST_fsm_state75 = 195'd9444732965739290427392;
+parameter    ap_ST_fsm_state76 = 195'd18889465931478580854784;
+parameter    ap_ST_fsm_state77 = 195'd37778931862957161709568;
+parameter    ap_ST_fsm_state78 = 195'd75557863725914323419136;
+parameter    ap_ST_fsm_state79 = 195'd151115727451828646838272;
+parameter    ap_ST_fsm_state80 = 195'd302231454903657293676544;
+parameter    ap_ST_fsm_state81 = 195'd604462909807314587353088;
+parameter    ap_ST_fsm_state82 = 195'd1208925819614629174706176;
+parameter    ap_ST_fsm_state83 = 195'd2417851639229258349412352;
+parameter    ap_ST_fsm_state84 = 195'd4835703278458516698824704;
+parameter    ap_ST_fsm_state85 = 195'd9671406556917033397649408;
+parameter    ap_ST_fsm_state86 = 195'd19342813113834066795298816;
+parameter    ap_ST_fsm_state87 = 195'd38685626227668133590597632;
+parameter    ap_ST_fsm_state88 = 195'd77371252455336267181195264;
+parameter    ap_ST_fsm_state89 = 195'd154742504910672534362390528;
+parameter    ap_ST_fsm_state90 = 195'd309485009821345068724781056;
+parameter    ap_ST_fsm_state91 = 195'd618970019642690137449562112;
+parameter    ap_ST_fsm_state92 = 195'd1237940039285380274899124224;
+parameter    ap_ST_fsm_state93 = 195'd2475880078570760549798248448;
+parameter    ap_ST_fsm_state94 = 195'd4951760157141521099596496896;
+parameter    ap_ST_fsm_state95 = 195'd9903520314283042199192993792;
+parameter    ap_ST_fsm_state96 = 195'd19807040628566084398385987584;
+parameter    ap_ST_fsm_state97 = 195'd39614081257132168796771975168;
+parameter    ap_ST_fsm_state98 = 195'd79228162514264337593543950336;
+parameter    ap_ST_fsm_state99 = 195'd158456325028528675187087900672;
+parameter    ap_ST_fsm_state100 = 195'd316912650057057350374175801344;
+parameter    ap_ST_fsm_state101 = 195'd633825300114114700748351602688;
+parameter    ap_ST_fsm_state102 = 195'd1267650600228229401496703205376;
+parameter    ap_ST_fsm_state103 = 195'd2535301200456458802993406410752;
+parameter    ap_ST_fsm_state104 = 195'd5070602400912917605986812821504;
+parameter    ap_ST_fsm_state105 = 195'd10141204801825835211973625643008;
+parameter    ap_ST_fsm_state106 = 195'd20282409603651670423947251286016;
+parameter    ap_ST_fsm_state107 = 195'd40564819207303340847894502572032;
+parameter    ap_ST_fsm_state108 = 195'd81129638414606681695789005144064;
+parameter    ap_ST_fsm_state109 = 195'd162259276829213363391578010288128;
+parameter    ap_ST_fsm_state110 = 195'd324518553658426726783156020576256;
+parameter    ap_ST_fsm_state111 = 195'd649037107316853453566312041152512;
+parameter    ap_ST_fsm_state112 = 195'd1298074214633706907132624082305024;
+parameter    ap_ST_fsm_state113 = 195'd2596148429267413814265248164610048;
+parameter    ap_ST_fsm_state114 = 195'd5192296858534827628530496329220096;
+parameter    ap_ST_fsm_state115 = 195'd10384593717069655257060992658440192;
+parameter    ap_ST_fsm_state116 = 195'd20769187434139310514121985316880384;
+parameter    ap_ST_fsm_state117 = 195'd41538374868278621028243970633760768;
+parameter    ap_ST_fsm_state118 = 195'd83076749736557242056487941267521536;
+parameter    ap_ST_fsm_state119 = 195'd166153499473114484112975882535043072;
+parameter    ap_ST_fsm_state120 = 195'd332306998946228968225951765070086144;
+parameter    ap_ST_fsm_state121 = 195'd664613997892457936451903530140172288;
+parameter    ap_ST_fsm_state122 = 195'd1329227995784915872903807060280344576;
+parameter    ap_ST_fsm_state123 = 195'd2658455991569831745807614120560689152;
+parameter    ap_ST_fsm_state124 = 195'd5316911983139663491615228241121378304;
+parameter    ap_ST_fsm_state125 = 195'd10633823966279326983230456482242756608;
+parameter    ap_ST_fsm_state126 = 195'd21267647932558653966460912964485513216;
+parameter    ap_ST_fsm_state127 = 195'd42535295865117307932921825928971026432;
+parameter    ap_ST_fsm_state128 = 195'd85070591730234615865843651857942052864;
+parameter    ap_ST_fsm_state129 = 195'd170141183460469231731687303715884105728;
+parameter    ap_ST_fsm_state130 = 195'd340282366920938463463374607431768211456;
+parameter    ap_ST_fsm_state131 = 195'd680564733841876926926749214863536422912;
+parameter    ap_ST_fsm_state132 = 195'd1361129467683753853853498429727072845824;
+parameter    ap_ST_fsm_state133 = 195'd2722258935367507707706996859454145691648;
+parameter    ap_ST_fsm_state134 = 195'd5444517870735015415413993718908291383296;
+parameter    ap_ST_fsm_state135 = 195'd10889035741470030830827987437816582766592;
+parameter    ap_ST_fsm_state136 = 195'd21778071482940061661655974875633165533184;
+parameter    ap_ST_fsm_state137 = 195'd43556142965880123323311949751266331066368;
+parameter    ap_ST_fsm_state138 = 195'd87112285931760246646623899502532662132736;
+parameter    ap_ST_fsm_state139 = 195'd174224571863520493293247799005065324265472;
+parameter    ap_ST_fsm_state140 = 195'd348449143727040986586495598010130648530944;
+parameter    ap_ST_fsm_state141 = 195'd696898287454081973172991196020261297061888;
+parameter    ap_ST_fsm_state142 = 195'd1393796574908163946345982392040522594123776;
+parameter    ap_ST_fsm_state143 = 195'd2787593149816327892691964784081045188247552;
+parameter    ap_ST_fsm_state144 = 195'd5575186299632655785383929568162090376495104;
+parameter    ap_ST_fsm_state145 = 195'd11150372599265311570767859136324180752990208;
+parameter    ap_ST_fsm_state146 = 195'd22300745198530623141535718272648361505980416;
+parameter    ap_ST_fsm_state147 = 195'd44601490397061246283071436545296723011960832;
+parameter    ap_ST_fsm_state148 = 195'd89202980794122492566142873090593446023921664;
+parameter    ap_ST_fsm_state149 = 195'd178405961588244985132285746181186892047843328;
+parameter    ap_ST_fsm_state150 = 195'd356811923176489970264571492362373784095686656;
+parameter    ap_ST_fsm_state151 = 195'd713623846352979940529142984724747568191373312;
+parameter    ap_ST_fsm_state152 = 195'd1427247692705959881058285969449495136382746624;
+parameter    ap_ST_fsm_state153 = 195'd2854495385411919762116571938898990272765493248;
+parameter    ap_ST_fsm_state154 = 195'd5708990770823839524233143877797980545530986496;
+parameter    ap_ST_fsm_state155 = 195'd11417981541647679048466287755595961091061972992;
+parameter    ap_ST_fsm_state156 = 195'd22835963083295358096932575511191922182123945984;
+parameter    ap_ST_fsm_state157 = 195'd45671926166590716193865151022383844364247891968;
+parameter    ap_ST_fsm_state158 = 195'd91343852333181432387730302044767688728495783936;
+parameter    ap_ST_fsm_state159 = 195'd182687704666362864775460604089535377456991567872;
+parameter    ap_ST_fsm_state160 = 195'd365375409332725729550921208179070754913983135744;
+parameter    ap_ST_fsm_state161 = 195'd730750818665451459101842416358141509827966271488;
+parameter    ap_ST_fsm_state162 = 195'd1461501637330902918203684832716283019655932542976;
+parameter    ap_ST_fsm_state163 = 195'd2923003274661805836407369665432566039311865085952;
+parameter    ap_ST_fsm_state164 = 195'd5846006549323611672814739330865132078623730171904;
+parameter    ap_ST_fsm_state165 = 195'd11692013098647223345629478661730264157247460343808;
+parameter    ap_ST_fsm_state166 = 195'd23384026197294446691258957323460528314494920687616;
+parameter    ap_ST_fsm_state167 = 195'd46768052394588893382517914646921056628989841375232;
+parameter    ap_ST_fsm_state168 = 195'd93536104789177786765035829293842113257979682750464;
+parameter    ap_ST_fsm_state169 = 195'd187072209578355573530071658587684226515959365500928;
+parameter    ap_ST_fsm_state170 = 195'd374144419156711147060143317175368453031918731001856;
+parameter    ap_ST_fsm_state171 = 195'd748288838313422294120286634350736906063837462003712;
+parameter    ap_ST_fsm_state172 = 195'd1496577676626844588240573268701473812127674924007424;
+parameter    ap_ST_fsm_state173 = 195'd2993155353253689176481146537402947624255349848014848;
+parameter    ap_ST_fsm_state174 = 195'd5986310706507378352962293074805895248510699696029696;
+parameter    ap_ST_fsm_state175 = 195'd11972621413014756705924586149611790497021399392059392;
+parameter    ap_ST_fsm_state176 = 195'd23945242826029513411849172299223580994042798784118784;
+parameter    ap_ST_fsm_state177 = 195'd47890485652059026823698344598447161988085597568237568;
+parameter    ap_ST_fsm_state178 = 195'd95780971304118053647396689196894323976171195136475136;
+parameter    ap_ST_fsm_state179 = 195'd191561942608236107294793378393788647952342390272950272;
+parameter    ap_ST_fsm_state180 = 195'd383123885216472214589586756787577295904684780545900544;
+parameter    ap_ST_fsm_state181 = 195'd766247770432944429179173513575154591809369561091801088;
+parameter    ap_ST_fsm_state182 = 195'd1532495540865888858358347027150309183618739122183602176;
+parameter    ap_ST_fsm_state183 = 195'd3064991081731777716716694054300618367237478244367204352;
+parameter    ap_ST_fsm_state184 = 195'd6129982163463555433433388108601236734474956488734408704;
+parameter    ap_ST_fsm_state185 = 195'd12259964326927110866866776217202473468949912977468817408;
+parameter    ap_ST_fsm_state186 = 195'd24519928653854221733733552434404946937899825954937634816;
+parameter    ap_ST_fsm_state187 = 195'd49039857307708443467467104868809893875799651909875269632;
+parameter    ap_ST_fsm_state188 = 195'd98079714615416886934934209737619787751599303819750539264;
+parameter    ap_ST_fsm_state189 = 195'd196159429230833773869868419475239575503198607639501078528;
+parameter    ap_ST_fsm_state190 = 195'd392318858461667547739736838950479151006397215279002157056;
+parameter    ap_ST_fsm_state191 = 195'd784637716923335095479473677900958302012794430558004314112;
+parameter    ap_ST_fsm_state192 = 195'd1569275433846670190958947355801916604025588861116008628224;
+parameter    ap_ST_fsm_state193 = 195'd3138550867693340381917894711603833208051177722232017256448;
+parameter    ap_ST_fsm_state194 = 195'd6277101735386680763835789423207666416102355444464034512896;
+parameter    ap_ST_fsm_state195 = 195'd12554203470773361527671578846415332832204710888928069025792;
+parameter    ap_ST_fsm_state196 = 195'd25108406941546723055343157692830665664409421777856138051584;
 
 input   ap_clk;
 input   ap_rst;
@@ -267,240 +267,261 @@ reg[7:0] sig_d1;
 
 (* fsm_encoding = "none" *) reg   [194:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [31:0] grp_keccak_absorb_2_fu_1278_ap_return;
-reg   [31:0] reg_1540;
+reg   [3:0] i_3_i1_reg_897;
+wire   [31:0] grp_keccak_absorb_2_fu_1289_ap_return;
+reg   [31:0] reg_1551;
 wire    ap_CS_fsm_state6;
-wire    grp_keccak_absorb_2_fu_1278_ap_ready;
-wire    grp_keccak_absorb_2_fu_1278_ap_done;
-wire    ap_CS_fsm_state103;
-reg   [7:0] reg_1544;
+wire    grp_keccak_absorb_2_fu_1289_ap_ready;
+wire    grp_keccak_absorb_2_fu_1289_ap_done;
+wire    ap_CS_fsm_state104;
+reg   [7:0] reg_1555;
 wire    ap_CS_fsm_state14;
-wire    ap_CS_fsm_state111;
-reg   [7:0] reg_1550;
-reg   [7:0] reg_1556;
-reg   [7:0] reg_1562;
-reg   [7:0] reg_1568;
-reg   [7:0] reg_1574;
+wire    ap_CS_fsm_state112;
+reg   [7:0] reg_1561;
+reg   [7:0] reg_1567;
+reg   [7:0] reg_1573;
+reg   [7:0] reg_1579;
+reg   [7:0] reg_1585;
 wire    ap_CS_fsm_state2;
-wire    grp_pqcrystals_dilithium_fu_1338_ap_ready;
-wire    grp_pqcrystals_dilithium_fu_1338_ap_done;
-wire   [4:0] i_5_fu_1586_p2;
+wire    grp_pqcrystals_dilithium_fu_1349_ap_ready;
+wire    grp_pqcrystals_dilithium_fu_1349_ap_done;
+wire   [4:0] i_6_fu_1597_p2;
 wire    ap_CS_fsm_state3;
-reg   [4:0] state_s_addr_reg_3266;
-wire   [4:0] state_s_addr_9_reg_3271;
+reg   [4:0] state_s_addr_reg_3276;
+wire   [4:0] state_s_addr_9_reg_3281;
 wire    ap_CS_fsm_state9;
-wire   [2:0] add_ln546_fu_1642_p2;
-reg   [2:0] add_ln546_reg_3279;
+wire   [2:0] add_ln555_fu_1653_p2;
+reg   [2:0] add_ln555_reg_3289;
 wire    ap_CS_fsm_state13;
-wire   [0:0] icmp_ln546_fu_1636_p2;
-wire   [5:0] shl_ln5_fu_1653_p3;
-reg   [5:0] shl_ln5_reg_3289;
-wire   [4:0] i_6_fu_1823_p2;
+wire   [0:0] icmp_ln555_fu_1647_p2;
+wire   [5:0] shl_ln5_fu_1664_p3;
+reg   [5:0] shl_ln5_reg_3299;
+wire   [0:0] icmp_ln364_1_fu_1828_p2;
 wire    ap_CS_fsm_state18;
-wire   [3:0] add_ln420_fu_1845_p2;
-reg   [3:0] add_ln420_reg_3310;
-wire    ap_CS_fsm_state19;
-wire   [7:0] zext_ln421_fu_1859_p1;
-reg   [7:0] zext_ln421_reg_3315;
-wire   [0:0] icmp_ln420_fu_1839_p2;
-reg   [4:0] state_0_s_addr_3_reg_3335;
+wire   [4:0] i_7_fu_1834_p2;
+wire   [0:0] icmp_ln422_fu_1845_p2;
+reg   [0:0] icmp_ln422_reg_3318;
+wire    ap_CS_fsm_pp0_stage0;
+wire    ap_block_state19_pp0_stage0_iter0;
+wire    ap_block_state23_pp0_stage0_iter1;
+wire    ap_block_pp0_stage0_11001;
+wire   [3:0] add_ln422_fu_1851_p2;
+reg   [3:0] add_ln422_reg_3322;
+reg    ap_enable_reg_pp0_iter0;
+wire   [7:0] zext_ln424_fu_1870_p1;
+reg   [7:0] zext_ln424_reg_3327;
+reg   [4:0] state_0_s_addr_3_reg_3347;
 wire   [7:0] seedbuf_q0;
 reg   [7:0] seedbuf_load_reg_3353;
-wire    ap_CS_fsm_state20;
+wire    ap_CS_fsm_pp0_stage1;
+wire    ap_block_state20_pp0_stage1_iter0;
+wire    ap_block_pp0_stage1_11001;
 wire   [7:0] seedbuf_q1;
 reg   [7:0] seedbuf_load_1_reg_3358;
-reg   [7:0] seedbuf_load_2_reg_3373;
-wire    ap_CS_fsm_state21;
-reg   [7:0] seedbuf_load_3_reg_3378;
-reg   [7:0] seedbuf_load_4_reg_3393;
-wire    ap_CS_fsm_state22;
-reg   [7:0] seedbuf_load_5_reg_3398;
-wire   [2:0] add_ln546_1_fu_1991_p2;
-reg   [2:0] add_ln546_1_reg_3416;
-wire    ap_CS_fsm_state27;
-wire   [0:0] icmp_ln546_1_fu_1985_p2;
-wire   [5:0] shl_ln548_1_fu_2002_p3;
-reg   [5:0] shl_ln548_1_reg_3426;
+wire   [63:0] state_0_s_q0;
+reg   [63:0] state_0_s_load_2_reg_3373;
+reg   [7:0] seedbuf_load_2_reg_3378;
+wire    ap_CS_fsm_pp0_stage2;
+wire    ap_block_state21_pp0_stage2_iter0;
+wire    ap_block_pp0_stage2_11001;
+reg   [7:0] seedbuf_load_3_reg_3383;
+reg   [7:0] seedbuf_load_4_reg_3398;
+wire    ap_CS_fsm_pp0_stage3;
+wire    ap_block_state22_pp0_stage3_iter0;
+wire    ap_block_pp0_stage3_11001;
+reg   [7:0] seedbuf_load_5_reg_3403;
+wire   [4:0] state_0_s_addr_1_reg_3418;
+wire    ap_CS_fsm_state24;
+wire   [4:0] state_0_s_addr_2_reg_3423;
+wire   [2:0] add_ln555_1_fu_2001_p2;
+reg   [2:0] add_ln555_1_reg_3431;
 wire    ap_CS_fsm_state28;
-reg   [7:0] trunc_ln550_1_reg_3436;
-reg   [7:0] trunc_ln551_1_reg_3441;
-reg   [7:0] trunc_ln552_1_reg_3446;
-reg   [7:0] trunc_ln553_1_reg_3451;
-reg   [7:0] trunc_ln554_1_reg_3456;
-reg   [7:0] trunc_ln555_1_reg_3461;
-wire   [2:0] i_7_fu_2243_p2;
-reg   [2:0] i_7_reg_3469;
-wire    ap_CS_fsm_state32;
-wire   [2:0] j_fu_2255_p2;
-reg   [2:0] j_reg_3477;
+wire   [0:0] icmp_ln555_1_fu_1995_p2;
+wire   [5:0] shl_ln557_1_fu_2012_p3;
+reg   [5:0] shl_ln557_1_reg_3441;
+wire    ap_CS_fsm_state29;
+reg   [7:0] trunc_ln559_1_reg_3451;
+reg   [7:0] trunc_ln560_1_reg_3456;
+reg   [7:0] trunc_ln561_1_reg_3461;
+reg   [7:0] trunc_ln562_1_reg_3466;
+reg   [7:0] trunc_ln563_1_reg_3471;
+reg   [7:0] trunc_ln564_1_reg_3476;
+wire   [2:0] i_9_fu_2253_p2;
+reg   [2:0] i_9_reg_3484;
 wire    ap_CS_fsm_state33;
-wire   [9:0] add_ln_fu_2265_p4;
-reg   [9:0] add_ln_reg_3482;
-wire   [0:0] icmp_ln21_fu_2249_p2;
-wire   [2:0] i_9_fu_2282_p2;
-reg   [2:0] i_9_reg_3490;
-wire    ap_CS_fsm_state35;
-wire   [2:0] i_10_fu_2294_p2;
-reg   [2:0] i_10_reg_3498;
-wire    ap_CS_fsm_state37;
-wire   [2:0] i_11_fu_2306_p2;
-reg   [2:0] i_11_reg_3506;
-wire    ap_CS_fsm_state39;
-wire   [15:0] nonce_fu_2312_p2;
-reg   [15:0] nonce_reg_3511;
-wire    ap_CS_fsm_state41;
-wire   [15:0] shl_ln49_fu_2318_p2;
-reg   [15:0] shl_ln49_reg_3516;
-wire   [15:0] or_ln49_fu_2325_p2;
-reg   [15:0] or_ln49_reg_3524;
-wire    ap_CS_fsm_state43;
-wire   [15:0] or_ln49_1_fu_2331_p2;
-reg   [15:0] or_ln49_1_reg_3529;
-wire    ap_CS_fsm_state45;
-wire   [15:0] or_ln49_2_fu_2337_p2;
-reg   [15:0] or_ln49_2_reg_3534;
-wire    ap_CS_fsm_state47;
-wire   [7:0] add_ln124_fu_2343_p2;
-reg   [7:0] add_ln124_reg_3539;
-wire    ap_CS_fsm_state49;
-wire   [63:0] zext_ln124_fu_2349_p1;
-reg   [63:0] zext_ln124_reg_3544;
-wire   [0:0] icmp_ln124_fu_2354_p2;
-reg   [0:0] icmp_ln124_reg_3554;
-wire   [7:0] add_ln124_1_fu_2365_p2;
-reg   [7:0] add_ln124_1_reg_3558;
-wire    ap_CS_fsm_state51;
-wire   [63:0] tmp_s_fu_2371_p3;
-reg   [63:0] tmp_s_reg_3563;
-wire   [0:0] icmp_ln124_1_fu_2380_p2;
-reg   [0:0] icmp_ln124_1_reg_3573;
-wire   [7:0] add_ln124_2_fu_2391_p2;
-reg   [7:0] add_ln124_2_reg_3577;
-wire    ap_CS_fsm_state53;
-wire   [63:0] tmp_3256_fu_2397_p3;
-reg   [63:0] tmp_3256_reg_3582;
-wire   [0:0] icmp_ln124_2_fu_2406_p2;
-reg   [0:0] icmp_ln124_2_reg_3592;
-wire   [7:0] add_ln124_3_fu_2417_p2;
-reg   [7:0] add_ln124_3_reg_3596;
-wire    ap_CS_fsm_state55;
-wire   [63:0] tmp_3257_fu_2423_p3;
-reg   [63:0] tmp_3257_reg_3601;
-wire   [0:0] icmp_ln124_3_fu_2432_p2;
-reg   [0:0] icmp_ln124_3_reg_3611;
-wire   [2:0] i_12_fu_2449_p2;
-reg   [2:0] i_12_reg_3618;
-wire    ap_CS_fsm_state57;
-wire   [2:0] i_13_fu_2461_p2;
-reg   [2:0] i_13_reg_3626;
-wire    ap_CS_fsm_state90;
-wire   [11:0] zext_ln225_fu_2475_p1;
-reg   [11:0] zext_ln225_reg_3631;
-wire   [0:0] icmp_ln378_fu_2455_p2;
-wire   [8:0] i_15_fu_2485_p2;
-reg   [8:0] i_15_reg_3639;
+wire   [2:0] j_fu_2265_p2;
+reg   [2:0] j_reg_3492;
+wire    ap_CS_fsm_state34;
+wire   [9:0] add_ln_fu_2275_p4;
+reg   [9:0] add_ln_reg_3497;
+wire   [0:0] icmp_ln21_fu_2259_p2;
+wire   [2:0] i_10_fu_2292_p2;
+reg   [2:0] i_10_reg_3505;
+wire    ap_CS_fsm_state36;
+wire   [2:0] i_11_fu_2304_p2;
+reg   [2:0] i_11_reg_3513;
+wire    ap_CS_fsm_state38;
+wire   [2:0] i_12_fu_2316_p2;
+reg   [2:0] i_12_reg_3521;
+wire    ap_CS_fsm_state40;
+wire   [15:0] nonce_fu_2322_p2;
+reg   [15:0] nonce_reg_3526;
+wire    ap_CS_fsm_state42;
+wire   [15:0] shl_ln50_fu_2328_p2;
+reg   [15:0] shl_ln50_reg_3531;
+wire   [15:0] or_ln50_fu_2335_p2;
+reg   [15:0] or_ln50_reg_3539;
+wire    ap_CS_fsm_state44;
+wire   [15:0] or_ln50_1_fu_2341_p2;
+reg   [15:0] or_ln50_1_reg_3544;
+wire    ap_CS_fsm_state46;
+wire   [15:0] or_ln50_2_fu_2347_p2;
+reg   [15:0] or_ln50_2_reg_3549;
+wire    ap_CS_fsm_state48;
+wire   [7:0] add_ln124_fu_2353_p2;
+reg   [7:0] add_ln124_reg_3554;
+wire    ap_CS_fsm_state50;
+wire   [63:0] zext_ln124_fu_2359_p1;
+reg   [63:0] zext_ln124_reg_3559;
+wire   [0:0] icmp_ln124_fu_2364_p2;
+reg   [0:0] icmp_ln124_reg_3569;
+wire   [7:0] add_ln124_1_fu_2375_p2;
+reg   [7:0] add_ln124_1_reg_3573;
+wire    ap_CS_fsm_state52;
+wire   [63:0] tmp_s_fu_2381_p3;
+reg   [63:0] tmp_s_reg_3578;
+wire   [0:0] icmp_ln124_1_fu_2390_p2;
+reg   [0:0] icmp_ln124_1_reg_3588;
+wire   [7:0] add_ln124_2_fu_2401_p2;
+reg   [7:0] add_ln124_2_reg_3592;
+wire    ap_CS_fsm_state54;
+wire   [63:0] tmp_3256_fu_2407_p3;
+reg   [63:0] tmp_3256_reg_3597;
+wire   [0:0] icmp_ln124_2_fu_2416_p2;
+reg   [0:0] icmp_ln124_2_reg_3607;
+wire   [7:0] add_ln124_3_fu_2427_p2;
+reg   [7:0] add_ln124_3_reg_3611;
+wire    ap_CS_fsm_state56;
+wire   [63:0] tmp_3257_fu_2433_p3;
+reg   [63:0] tmp_3257_reg_3616;
+wire   [0:0] icmp_ln124_3_fu_2442_p2;
+reg   [0:0] icmp_ln124_3_reg_3626;
+wire   [2:0] i_13_fu_2459_p2;
+reg   [2:0] i_13_reg_3633;
+wire    ap_CS_fsm_state58;
+wire   [2:0] i_14_fu_2471_p2;
+reg   [2:0] i_14_reg_3641;
 wire    ap_CS_fsm_state91;
-wire   [63:0] zext_ln230_1_fu_2500_p1;
-reg   [63:0] zext_ln230_1_reg_3644;
-wire   [0:0] icmp_ln229_fu_2479_p2;
-reg   [9:0] w1_vec_coeffs_addr_reg_3649;
-wire   [4:0] i_14_fu_2614_p2;
-wire    ap_CS_fsm_state100;
-reg   [4:0] state_s_addr_12_reg_3662;
-wire   [2:0] add_ln546_2_fu_2670_p2;
-reg   [2:0] add_ln546_2_reg_3670;
-wire    ap_CS_fsm_state110;
-wire   [0:0] icmp_ln546_2_fu_2664_p2;
-wire   [1:0] trunc_ln548_3_fu_2676_p1;
-reg   [1:0] trunc_ln548_3_reg_3680;
-wire   [4:0] shl_ln548_2_fu_2685_p3;
-reg   [4:0] shl_ln548_2_reg_3685;
-wire   [2:0] i_16_fu_2774_p2;
-reg   [2:0] i_16_reg_3698;
-wire    ap_CS_fsm_state118;
-wire   [3:0] zext_ln117_fu_2780_p1;
-reg   [3:0] zext_ln117_reg_3703;
-wire   [0:0] icmp_ln116_fu_2768_p2;
-wire   [2:0] i_17_fu_2792_p2;
-reg   [2:0] i_17_reg_3712;
-wire    ap_CS_fsm_state120;
-wire   [3:0] zext_ln162_fu_2798_p1;
-reg   [3:0] zext_ln162_reg_3717;
-wire   [0:0] icmp_ln109_fu_2786_p2;
-wire   [2:0] i_18_fu_2809_p2;
-reg   [2:0] i_18_reg_3725;
-wire    ap_CS_fsm_state122;
-wire   [11:0] zext_ln83_fu_2823_p1;
-reg   [11:0] zext_ln83_reg_3730;
-wire   [0:0] icmp_ln87_fu_2803_p2;
-wire   [8:0] i_20_fu_2833_p2;
-reg   [8:0] i_20_reg_3738;
+wire   [11:0] zext_ln228_fu_2485_p1;
+reg   [11:0] zext_ln228_reg_3646;
+wire   [0:0] icmp_ln385_fu_2465_p2;
+wire   [8:0] i_16_fu_2495_p2;
+reg   [8:0] i_16_reg_3654;
+wire    ap_CS_fsm_state92;
+wire   [63:0] zext_ln233_1_fu_2510_p1;
+reg   [63:0] zext_ln233_1_reg_3659;
+wire   [0:0] icmp_ln232_fu_2489_p2;
+reg   [9:0] w1_vec_coeffs_addr_reg_3664;
+wire   [4:0] i_15_fu_2624_p2;
+wire    ap_CS_fsm_state101;
+reg   [4:0] state_s_addr_12_reg_3677;
+wire   [2:0] add_ln555_2_fu_2680_p2;
+reg   [2:0] add_ln555_2_reg_3685;
+wire    ap_CS_fsm_state111;
+wire   [0:0] icmp_ln555_2_fu_2674_p2;
+wire   [1:0] trunc_ln557_3_fu_2686_p1;
+reg   [1:0] trunc_ln557_3_reg_3695;
+wire   [4:0] shl_ln557_2_fu_2695_p3;
+reg   [4:0] shl_ln557_2_reg_3700;
+wire   [2:0] i_17_fu_2784_p2;
+reg   [2:0] i_17_reg_3713;
+wire    ap_CS_fsm_state119;
+wire   [3:0] zext_ln119_fu_2790_p1;
+reg   [3:0] zext_ln119_reg_3718;
+wire   [0:0] icmp_ln118_fu_2778_p2;
+wire   [2:0] i_18_fu_2802_p2;
+reg   [2:0] i_18_reg_3727;
+wire    ap_CS_fsm_state121;
+wire   [3:0] zext_ln164_fu_2808_p1;
+reg   [3:0] zext_ln164_reg_3732;
+wire   [0:0] icmp_ln111_fu_2796_p2;
+wire   [2:0] i_19_fu_2819_p2;
+reg   [2:0] i_19_reg_3740;
 wire    ap_CS_fsm_state123;
-wire   [0:0] icmp_ln87_1_fu_2827_p2;
-reg   [9:0] z_vec_coeffs_addr_4_reg_3748;
-wire   [2:0] i_19_fu_2871_p2;
-reg   [2:0] i_19_reg_3756;
-wire    ap_CS_fsm_state125;
-wire   [11:0] zext_ln28_fu_2885_p1;
-reg   [11:0] zext_ln28_reg_3761;
-wire   [0:0] icmp_ln55_fu_2865_p2;
-wire   [8:0] i_22_fu_2895_p2;
-reg   [8:0] i_22_reg_3769;
+wire   [11:0] zext_ln83_fu_2833_p1;
+reg   [11:0] zext_ln83_reg_3745;
+wire   [0:0] icmp_ln89_fu_2813_p2;
+wire   [8:0] i_21_fu_2843_p2;
+reg   [8:0] i_21_reg_3753;
+wire    ap_CS_fsm_state124;
+wire   [0:0] icmp_ln87_fu_2837_p2;
+reg   [9:0] z_vec_coeffs_addr_4_reg_3763;
+wire   [2:0] i_20_fu_2881_p2;
+reg   [2:0] i_20_reg_3771;
 wire    ap_CS_fsm_state126;
-reg   [9:0] z_vec_coeffs_addr_5_reg_3774;
-wire   [0:0] icmp_ln32_fu_2889_p2;
-wire   [0:0] icmp_ln160_fu_2935_p2;
-reg   [0:0] icmp_ln160_reg_3779;
-wire    ap_CS_fsm_state128;
-wire   [2:0] i_21_fu_2941_p2;
-reg   [2:0] i_21_reg_3783;
-wire   [11:0] zext_ln291_fu_2955_p1;
-reg   [11:0] zext_ln291_reg_3788;
-wire   [8:0] i_23_fu_2965_p2;
-reg   [8:0] i_23_reg_3796;
+wire   [11:0] zext_ln28_fu_2895_p1;
+reg   [11:0] zext_ln28_reg_3776;
+wire   [0:0] icmp_ln57_fu_2875_p2;
+wire   [8:0] i_23_fu_2905_p2;
+reg   [8:0] i_23_reg_3784;
+wire    ap_CS_fsm_state127;
+reg   [9:0] z_vec_coeffs_addr_5_reg_3789;
+wire   [0:0] icmp_ln32_fu_2899_p2;
+wire   [0:0] icmp_ln162_fu_2945_p2;
+reg   [0:0] icmp_ln162_reg_3794;
 wire    ap_CS_fsm_state129;
-wire   [0:0] icmp_ln302_fu_2959_p2;
-wire   [2:0] i_24_fu_3031_p2;
-reg   [2:0] i_24_reg_3812;
-wire    ap_CS_fsm_state146;
-wire   [0:0] grp_pqcrystals_dilithium_6_fu_1423_ap_return;
-reg   [0:0] tmp_12_reg_3817;
-wire    ap_CS_fsm_state156;
-wire    grp_pqcrystals_dilithium_6_fu_1423_ap_ready;
-wire    grp_pqcrystals_dilithium_6_fu_1423_ap_done;
-reg   [0:0] tmp_21_reg_3821;
-wire    ap_CS_fsm_state181;
-wire   [2:0] i_25_fu_3043_p2;
-reg   [2:0] i_25_reg_3828;
+wire   [2:0] i_22_fu_2951_p2;
+reg   [2:0] i_22_reg_3798;
+wire   [11:0] zext_ln294_fu_2965_p1;
+reg   [11:0] zext_ln294_reg_3803;
+wire   [8:0] i_24_fu_2975_p2;
+reg   [8:0] i_24_reg_3811;
+wire    ap_CS_fsm_state130;
+wire   [0:0] icmp_ln305_fu_2969_p2;
+wire   [2:0] i_25_fu_3041_p2;
+reg   [2:0] i_25_reg_3827;
+wire    ap_CS_fsm_state147;
+wire   [0:0] grp_pqcrystals_dilithium_6_fu_1434_ap_return;
+reg   [0:0] tmp_12_reg_3832;
+wire    ap_CS_fsm_state157;
+wire    grp_pqcrystals_dilithium_6_fu_1434_ap_ready;
+wire    grp_pqcrystals_dilithium_6_fu_1434_ap_done;
+reg   [0:0] tmp_21_reg_3836;
 wire    ap_CS_fsm_state182;
-wire   [11:0] zext_ln83_1_fu_3057_p1;
-reg   [11:0] zext_ln83_1_reg_3833;
-wire   [0:0] icmp_ln238_fu_3037_p2;
-wire   [8:0] i_26_fu_3067_p2;
-reg   [8:0] i_26_reg_3841;
+wire   [2:0] i_26_fu_3053_p2;
+reg   [2:0] i_26_reg_3843;
 wire    ap_CS_fsm_state183;
-reg   [9:0] w0_vec_coeffs_addr_1_reg_3846;
-wire   [0:0] icmp_ln87_2_fu_3061_p2;
-wire   [2:0] i_27_fu_3101_p2;
-reg   [2:0] i_27_reg_3859;
-wire    ap_CS_fsm_state192;
-wire   [11:0] zext_ln248_fu_3115_p1;
-reg   [11:0] zext_ln248_reg_3864;
-wire   [0:0] icmp_ln399_fu_3095_p2;
-wire   [8:0] i_28_fu_3131_p2;
-reg   [8:0] i_28_reg_3875;
+wire   [11:0] zext_ln83_1_fu_3067_p1;
+reg   [11:0] zext_ln83_1_reg_3848;
+wire   [0:0] icmp_ln242_fu_3047_p2;
+wire   [8:0] i_27_fu_3077_p2;
+reg   [8:0] i_27_reg_3856;
+wire    ap_CS_fsm_state184;
+reg   [9:0] w0_vec_coeffs_addr_1_reg_3861;
+wire   [0:0] icmp_ln87_1_fu_3071_p2;
+wire   [2:0] i_28_fu_3111_p2;
+reg   [2:0] i_28_reg_3874;
 wire    ap_CS_fsm_state193;
-wire   [63:0] zext_ln253_1_fu_3146_p1;
-reg   [63:0] zext_ln253_1_reg_3880;
-wire   [0:0] icmp_ln252_fu_3125_p2;
-wire   [10:0] s_fu_3156_p2;
-wire   [8:0] s_1_fu_3219_p2;
+wire   [11:0] zext_ln251_fu_3125_p1;
+reg   [11:0] zext_ln251_reg_3879;
+wire   [0:0] icmp_ln406_fu_3105_p2;
+wire   [8:0] i_29_fu_3141_p2;
+reg   [8:0] i_29_reg_3890;
 wire    ap_CS_fsm_state194;
+wire   [63:0] zext_ln256_1_fu_3156_p1;
+reg   [63:0] zext_ln256_1_reg_3895;
+wire   [0:0] icmp_ln255_fu_3135_p2;
+wire   [10:0] s_fu_3166_p2;
+wire   [8:0] s_1_fu_3229_p2;
+wire    ap_CS_fsm_state195;
+wire    ap_block_pp0_stage0_subdone;
+reg    ap_condition_pp0_exit_iter0_state19;
+reg    ap_enable_reg_pp0_iter1;
+wire    ap_block_pp0_stage3_subdone;
 reg   [4:0] state_0_s_address0;
 reg    state_0_s_ce0;
 reg    state_0_s_we0;
 reg   [63:0] state_0_s_d0;
-wire   [63:0] state_0_s_q0;
 reg   [4:0] state_0_s_address1;
 reg    state_0_s_ce1;
 reg    state_0_s_we1;
@@ -600,7 +621,6 @@ wire   [31:0] cp_coeffs_q0;
 reg   [7:0] cp_coeffs_address1;
 reg    cp_coeffs_ce1;
 reg    cp_coeffs_we1;
-reg   [31:0] cp_coeffs_d1;
 wire   [31:0] cp_coeffs_q1;
 reg   [4:0] state_s_address0;
 reg    state_s_ce0;
@@ -612,418 +632,403 @@ reg    state_s_ce1;
 reg    state_s_we1;
 reg   [63:0] state_s_d1;
 wire   [63:0] state_s_q1;
-wire    grp_pqcrystals_dilithium_9_fu_1248_ap_start;
-wire    grp_pqcrystals_dilithium_9_fu_1248_ap_done;
-wire    grp_pqcrystals_dilithium_9_fu_1248_ap_idle;
-wire    grp_pqcrystals_dilithium_9_fu_1248_ap_ready;
-wire   [9:0] grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_address0;
-wire    grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_we0;
-wire   [18:0] grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_d0;
-reg   [3:0] grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_offset;
-wire   [7:0] grp_pqcrystals_dilithium_9_fu_1248_seed_address0;
-wire    grp_pqcrystals_dilithium_9_fu_1248_seed_ce0;
-wire   [7:0] grp_pqcrystals_dilithium_9_fu_1248_seed_address1;
-wire    grp_pqcrystals_dilithium_9_fu_1248_seed_ce1;
-reg   [15:0] grp_pqcrystals_dilithium_9_fu_1248_nonce;
-wire    grp_pqcrystals_dilithium_17_fu_1260_ap_start;
-wire    grp_pqcrystals_dilithium_17_fu_1260_ap_done;
-wire    grp_pqcrystals_dilithium_17_fu_1260_ap_idle;
-wire    grp_pqcrystals_dilithium_17_fu_1260_ap_ready;
-wire   [7:0] grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_address0;
-wire    grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_we0;
-wire   [31:0] grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_d0;
-wire   [7:0] grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_address1;
-wire    grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_ce1;
-wire    grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_we1;
-wire   [31:0] grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_d1;
-wire   [12:0] grp_pqcrystals_dilithium_17_fu_1260_seed_address0;
-wire    grp_pqcrystals_dilithium_17_fu_1260_seed_ce0;
-wire   [12:0] grp_pqcrystals_dilithium_17_fu_1260_seed_address1;
-wire    grp_pqcrystals_dilithium_17_fu_1260_seed_ce1;
-wire    grp_pqcrystals_dilithium_10_fu_1267_ap_start;
-wire    grp_pqcrystals_dilithium_10_fu_1267_ap_done;
-wire    grp_pqcrystals_dilithium_10_fu_1267_ap_idle;
-wire    grp_pqcrystals_dilithium_10_fu_1267_ap_ready;
-wire   [11:0] grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_address0;
-wire    grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_we0;
-wire   [22:0] grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_d0;
-wire   [7:0] grp_pqcrystals_dilithium_10_fu_1267_seed_address0;
-wire    grp_pqcrystals_dilithium_10_fu_1267_seed_ce0;
-wire   [7:0] grp_pqcrystals_dilithium_10_fu_1267_seed_address1;
-wire    grp_pqcrystals_dilithium_10_fu_1267_seed_ce1;
-wire    grp_keccak_absorb_2_fu_1278_ap_start;
-wire    grp_keccak_absorb_2_fu_1278_ap_idle;
-wire   [4:0] grp_keccak_absorb_2_fu_1278_s_address0;
-wire    grp_keccak_absorb_2_fu_1278_s_ce0;
-wire    grp_keccak_absorb_2_fu_1278_s_we0;
-wire   [63:0] grp_keccak_absorb_2_fu_1278_s_d0;
-wire   [4:0] grp_keccak_absorb_2_fu_1278_s_address1;
-wire    grp_keccak_absorb_2_fu_1278_s_ce1;
-wire    grp_keccak_absorb_2_fu_1278_s_we1;
-wire   [63:0] grp_keccak_absorb_2_fu_1278_s_d1;
-wire   [12:0] grp_keccak_absorb_2_fu_1278_m_address0;
-wire    grp_keccak_absorb_2_fu_1278_m_ce0;
-wire   [12:0] grp_keccak_absorb_2_fu_1278_m_address1;
-wire    grp_keccak_absorb_2_fu_1278_m_ce1;
-reg   [12:0] grp_keccak_absorb_2_fu_1278_m_offset;
-reg   [63:0] grp_keccak_absorb_2_fu_1278_mlen;
-wire    grp_KeccakF1600_StatePer_1_fu_1292_ap_start;
-wire    grp_KeccakF1600_StatePer_1_fu_1292_ap_done;
-wire    grp_KeccakF1600_StatePer_1_fu_1292_ap_idle;
-wire    grp_KeccakF1600_StatePer_1_fu_1292_ap_ready;
-wire   [4:0] grp_KeccakF1600_StatePer_1_fu_1292_state_address0;
-wire    grp_KeccakF1600_StatePer_1_fu_1292_state_ce0;
-wire    grp_KeccakF1600_StatePer_1_fu_1292_state_we0;
-wire   [63:0] grp_KeccakF1600_StatePer_1_fu_1292_state_d0;
-wire   [4:0] grp_KeccakF1600_StatePer_1_fu_1292_state_address1;
-wire    grp_KeccakF1600_StatePer_1_fu_1292_state_ce1;
-wire    grp_KeccakF1600_StatePer_1_fu_1292_state_we1;
-wire   [63:0] grp_KeccakF1600_StatePer_1_fu_1292_state_d1;
-wire    grp_KeccakF1600_StatePer_fu_1297_ap_start;
-wire    grp_KeccakF1600_StatePer_fu_1297_ap_done;
-wire    grp_KeccakF1600_StatePer_fu_1297_ap_idle;
-wire    grp_KeccakF1600_StatePer_fu_1297_ap_ready;
-wire   [4:0] grp_KeccakF1600_StatePer_fu_1297_state_0_address0;
-wire    grp_KeccakF1600_StatePer_fu_1297_state_0_ce0;
-wire    grp_KeccakF1600_StatePer_fu_1297_state_0_we0;
-wire   [63:0] grp_KeccakF1600_StatePer_fu_1297_state_0_d0;
-wire   [4:0] grp_KeccakF1600_StatePer_fu_1297_state_0_address1;
-wire    grp_KeccakF1600_StatePer_fu_1297_state_0_ce1;
-wire    grp_KeccakF1600_StatePer_fu_1297_state_0_we1;
-wire   [63:0] grp_KeccakF1600_StatePer_fu_1297_state_0_d1;
-wire    grp_pqcrystals_dilithium_21_fu_1302_ap_start;
-wire    grp_pqcrystals_dilithium_21_fu_1302_ap_done;
-wire    grp_pqcrystals_dilithium_21_fu_1302_ap_idle;
-wire    grp_pqcrystals_dilithium_21_fu_1302_ap_ready;
-wire   [9:0] grp_pqcrystals_dilithium_21_fu_1302_a_address0;
-wire    grp_pqcrystals_dilithium_21_fu_1302_a_ce0;
-wire    grp_pqcrystals_dilithium_21_fu_1302_a_we0;
-wire   [31:0] grp_pqcrystals_dilithium_21_fu_1302_a_d0;
-reg   [31:0] grp_pqcrystals_dilithium_21_fu_1302_a_q0;
-wire   [9:0] grp_pqcrystals_dilithium_21_fu_1302_a_address1;
-wire    grp_pqcrystals_dilithium_21_fu_1302_a_ce1;
-wire    grp_pqcrystals_dilithium_21_fu_1302_a_we1;
-wire   [31:0] grp_pqcrystals_dilithium_21_fu_1302_a_d1;
-reg   [31:0] grp_pqcrystals_dilithium_21_fu_1302_a_q1;
-reg   [2:0] grp_pqcrystals_dilithium_21_fu_1302_a_offset;
-wire    grp_pqcrystals_dilithium_20_fu_1314_ap_start;
-wire    grp_pqcrystals_dilithium_20_fu_1314_ap_done;
-wire    grp_pqcrystals_dilithium_20_fu_1314_ap_idle;
-wire    grp_pqcrystals_dilithium_20_fu_1314_ap_ready;
-wire   [7:0] grp_pqcrystals_dilithium_20_fu_1314_a_address0;
-wire    grp_pqcrystals_dilithium_20_fu_1314_a_ce0;
-wire    grp_pqcrystals_dilithium_20_fu_1314_a_we0;
-wire   [31:0] grp_pqcrystals_dilithium_20_fu_1314_a_d0;
-wire   [7:0] grp_pqcrystals_dilithium_20_fu_1314_a_address1;
-wire    grp_pqcrystals_dilithium_20_fu_1314_a_ce1;
-wire    grp_pqcrystals_dilithium_20_fu_1314_a_we1;
-wire   [31:0] grp_pqcrystals_dilithium_20_fu_1314_a_d1;
-wire    grp_pqcrystals_dilithium_5_fu_1321_ap_start;
-wire    grp_pqcrystals_dilithium_5_fu_1321_ap_done;
-wire    grp_pqcrystals_dilithium_5_fu_1321_ap_idle;
-wire    grp_pqcrystals_dilithium_5_fu_1321_ap_ready;
-wire   [9:0] grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_address0;
-wire    grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_we0;
-wire   [31:0] grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_d0;
-wire   [9:0] grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_address1;
-wire    grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_ce1;
-wire    grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_we1;
-wire   [31:0] grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_d1;
-reg   [3:0] grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_offset;
-wire   [11:0] grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_address0;
-wire    grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_ce0;
-wire   [11:0] grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_address1;
-wire    grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_ce1;
-reg   [3:0] grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_offset;
-wire   [9:0] grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_address0;
-wire    grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_ce0;
-wire   [9:0] grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_address1;
-wire    grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_ce1;
-wire    grp_pqcrystals_dilithium_fu_1338_ap_start;
-wire    grp_pqcrystals_dilithium_fu_1338_ap_idle;
-wire   [7:0] grp_pqcrystals_dilithium_fu_1338_rho_address0;
-wire    grp_pqcrystals_dilithium_fu_1338_rho_ce0;
-wire    grp_pqcrystals_dilithium_fu_1338_rho_we0;
-wire   [7:0] grp_pqcrystals_dilithium_fu_1338_rho_d0;
-wire   [7:0] grp_pqcrystals_dilithium_fu_1338_rho_address1;
-wire    grp_pqcrystals_dilithium_fu_1338_rho_ce1;
-wire    grp_pqcrystals_dilithium_fu_1338_rho_we1;
-wire   [7:0] grp_pqcrystals_dilithium_fu_1338_rho_d1;
-wire   [9:0] grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_address0;
-wire    grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_we0;
-wire   [31:0] grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_d0;
-wire   [9:0] grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_address1;
-wire    grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_ce1;
-wire    grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_we1;
-wire   [31:0] grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_d1;
-wire   [9:0] grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_address0;
-wire    grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_we0;
-wire   [31:0] grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_d0;
-wire   [9:0] grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_address1;
-wire    grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_ce1;
-wire    grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_we1;
-wire   [31:0] grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_d1;
-wire   [9:0] grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_address0;
-wire    grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_we0;
-wire   [31:0] grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_d0;
-wire   [9:0] grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_address1;
-wire    grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_ce1;
-wire    grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_we1;
-wire   [31:0] grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_d1;
-wire   [11:0] grp_pqcrystals_dilithium_fu_1338_sk_address0;
-wire    grp_pqcrystals_dilithium_fu_1338_sk_ce0;
-wire   [11:0] grp_pqcrystals_dilithium_fu_1338_sk_address1;
-wire    grp_pqcrystals_dilithium_fu_1338_sk_ce1;
-wire    grp_pqcrystals_dilithium_23_fu_1352_ap_start;
-wire    grp_pqcrystals_dilithium_23_fu_1352_ap_done;
-wire    grp_pqcrystals_dilithium_23_fu_1352_ap_idle;
-wire    grp_pqcrystals_dilithium_23_fu_1352_ap_ready;
-wire   [9:0] grp_pqcrystals_dilithium_23_fu_1352_a_address0;
-wire    grp_pqcrystals_dilithium_23_fu_1352_a_ce0;
-wire    grp_pqcrystals_dilithium_23_fu_1352_a_we0;
-wire   [31:0] grp_pqcrystals_dilithium_23_fu_1352_a_d0;
-reg   [31:0] grp_pqcrystals_dilithium_23_fu_1352_a_q0;
-wire   [9:0] grp_pqcrystals_dilithium_23_fu_1352_a_address1;
-wire    grp_pqcrystals_dilithium_23_fu_1352_a_ce1;
-wire    grp_pqcrystals_dilithium_23_fu_1352_a_we1;
-wire   [31:0] grp_pqcrystals_dilithium_23_fu_1352_a_d1;
-reg   [31:0] grp_pqcrystals_dilithium_23_fu_1352_a_q1;
-reg   [3:0] grp_pqcrystals_dilithium_23_fu_1352_a_offset;
-wire    grp_pqcrystals_dilithium_19_fu_1364_ap_start;
-wire    grp_pqcrystals_dilithium_19_fu_1364_ap_done;
-wire    grp_pqcrystals_dilithium_19_fu_1364_ap_idle;
-wire    grp_pqcrystals_dilithium_19_fu_1364_ap_ready;
-wire   [12:0] grp_pqcrystals_dilithium_19_fu_1364_sig_address0;
-wire    grp_pqcrystals_dilithium_19_fu_1364_sig_ce0;
-wire    grp_pqcrystals_dilithium_19_fu_1364_sig_we0;
-wire   [7:0] grp_pqcrystals_dilithium_19_fu_1364_sig_d0;
-wire   [12:0] grp_pqcrystals_dilithium_19_fu_1364_sig_address1;
-wire    grp_pqcrystals_dilithium_19_fu_1364_sig_ce1;
-wire    grp_pqcrystals_dilithium_19_fu_1364_sig_we1;
-wire   [7:0] grp_pqcrystals_dilithium_19_fu_1364_sig_d1;
-wire   [9:0] grp_pqcrystals_dilithium_19_fu_1364_z_vec_coeffs_address0;
-wire    grp_pqcrystals_dilithium_19_fu_1364_z_vec_coeffs_ce0;
-wire   [9:0] grp_pqcrystals_dilithium_19_fu_1364_h_vec_coeffs_address0;
-wire    grp_pqcrystals_dilithium_19_fu_1364_h_vec_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_11_fu_1372_ap_start;
-wire    grp_pqcrystals_dilithium_11_fu_1372_ap_done;
-wire    grp_pqcrystals_dilithium_11_fu_1372_ap_idle;
-wire    grp_pqcrystals_dilithium_11_fu_1372_ap_ready;
-wire   [9:0] grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_address0;
-wire    grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_we0;
-wire   [31:0] grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_d0;
-wire   [9:0] grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_address1;
-wire    grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_ce1;
-wire    grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_we1;
-wire   [31:0] grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_d1;
-wire   [9:0] grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_address0;
-wire    grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_ce0;
-wire   [9:0] grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_address1;
-wire    grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_ce1;
-wire    grp_pqcrystals_dilithium_13_fu_1380_ap_start;
-wire    grp_pqcrystals_dilithium_13_fu_1380_ap_done;
-wire    grp_pqcrystals_dilithium_13_fu_1380_ap_idle;
-wire    grp_pqcrystals_dilithium_13_fu_1380_ap_ready;
-wire   [9:0] grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_address0;
-wire    grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_we0;
-wire   [31:0] grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_d0;
-wire   [9:0] grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_address1;
-wire    grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_ce1;
-wire    grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_we1;
-wire   [31:0] grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_d1;
-reg   [3:0] grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_offset;
-wire   [7:0] grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_address0;
-wire    grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_ce0;
-wire   [7:0] grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_address1;
-wire    grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_ce1;
-wire   [9:0] grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_address0;
-wire    grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_ce0;
-reg   [31:0] grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q0;
-wire   [9:0] grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_address1;
-wire    grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_ce1;
-reg   [31:0] grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q1;
-reg   [3:0] grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_offset;
-wire    grp_pqcrystals_dilithium_4_fu_1397_ap_start;
-wire    grp_pqcrystals_dilithium_4_fu_1397_ap_done;
-wire    grp_pqcrystals_dilithium_4_fu_1397_ap_idle;
-wire    grp_pqcrystals_dilithium_4_fu_1397_ap_ready;
-wire   [12:0] grp_pqcrystals_dilithium_4_fu_1397_r_address0;
-wire    grp_pqcrystals_dilithium_4_fu_1397_r_ce0;
-wire    grp_pqcrystals_dilithium_4_fu_1397_r_we0;
-wire   [7:0] grp_pqcrystals_dilithium_4_fu_1397_r_d0;
-wire   [12:0] grp_pqcrystals_dilithium_4_fu_1397_r_address1;
-wire    grp_pqcrystals_dilithium_4_fu_1397_r_ce1;
-wire    grp_pqcrystals_dilithium_4_fu_1397_r_we1;
-wire   [7:0] grp_pqcrystals_dilithium_4_fu_1397_r_d1;
-reg   [10:0] grp_pqcrystals_dilithium_4_fu_1397_r_offset;
-wire   [9:0] grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_address0;
-wire    grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_ce0;
-wire   [9:0] grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_address1;
-wire    grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_ce1;
-reg   [3:0] grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_offset;
-wire    grp_keccak_absorb_3199_fu_1414_ap_start;
-wire    grp_keccak_absorb_3199_fu_1414_ap_done;
-wire    grp_keccak_absorb_3199_fu_1414_ap_idle;
-wire    grp_keccak_absorb_3199_fu_1414_ap_ready;
-wire   [4:0] grp_keccak_absorb_3199_fu_1414_s_address0;
-wire    grp_keccak_absorb_3199_fu_1414_s_ce0;
-wire    grp_keccak_absorb_3199_fu_1414_s_we0;
-wire   [63:0] grp_keccak_absorb_3199_fu_1414_s_d0;
-wire   [7:0] grp_keccak_absorb_3199_fu_1414_m_address0;
-wire    grp_keccak_absorb_3199_fu_1414_m_ce0;
-wire   [7:0] grp_keccak_absorb_3199_fu_1414_m_address1;
-wire    grp_keccak_absorb_3199_fu_1414_m_ce1;
-reg   [7:0] grp_keccak_absorb_3199_fu_1414_m_offset;
-wire    grp_pqcrystals_dilithium_6_fu_1423_ap_start;
-wire    grp_pqcrystals_dilithium_6_fu_1423_ap_idle;
-wire   [9:0] grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_address0;
-wire    grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_ce0;
-reg   [31:0] grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_q0;
-reg   [17:0] grp_pqcrystals_dilithium_6_fu_1423_bound;
-wire    grp_pqcrystals_dilithium_18_fu_1431_ap_start;
-wire    grp_pqcrystals_dilithium_18_fu_1431_ap_done;
-wire    grp_pqcrystals_dilithium_18_fu_1431_ap_idle;
-wire    grp_pqcrystals_dilithium_18_fu_1431_ap_ready;
-wire   [9:0] grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_address0;
-wire    grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_we0;
-wire   [31:0] grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_d0;
-reg   [31:0] grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_q0;
-reg   [3:0] grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_offset;
-wire    grp_pqcrystals_dilithium_12_fu_1441_ap_start;
-wire    grp_pqcrystals_dilithium_12_fu_1441_ap_done;
-wire    grp_pqcrystals_dilithium_12_fu_1441_ap_idle;
-wire    grp_pqcrystals_dilithium_12_fu_1441_ap_ready;
-wire   [9:0] grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_address0;
-wire    grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_we0;
-wire   [31:0] grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_d0;
-reg   [31:0] grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_q0;
-reg   [3:0] grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_offset;
-reg   [4:0] i_0_i_i_reg_852;
-wire   [0:0] icmp_ln364_fu_1580_p2;
-reg   [2:0] i_3_i_reg_863;
+wire    grp_pqcrystals_dilithium_9_fu_1259_ap_start;
+wire    grp_pqcrystals_dilithium_9_fu_1259_ap_done;
+wire    grp_pqcrystals_dilithium_9_fu_1259_ap_idle;
+wire    grp_pqcrystals_dilithium_9_fu_1259_ap_ready;
+wire   [9:0] grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_address0;
+wire    grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_we0;
+wire   [18:0] grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_d0;
+reg   [3:0] grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_offset;
+wire   [7:0] grp_pqcrystals_dilithium_9_fu_1259_seed_address0;
+wire    grp_pqcrystals_dilithium_9_fu_1259_seed_ce0;
+wire   [7:0] grp_pqcrystals_dilithium_9_fu_1259_seed_address1;
+wire    grp_pqcrystals_dilithium_9_fu_1259_seed_ce1;
+reg   [15:0] grp_pqcrystals_dilithium_9_fu_1259_nonce;
+wire    grp_pqcrystals_dilithium_17_fu_1271_ap_start;
+wire    grp_pqcrystals_dilithium_17_fu_1271_ap_done;
+wire    grp_pqcrystals_dilithium_17_fu_1271_ap_idle;
+wire    grp_pqcrystals_dilithium_17_fu_1271_ap_ready;
+wire   [7:0] grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_address0;
+wire    grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_we0;
+wire   [31:0] grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_d0;
+wire   [12:0] grp_pqcrystals_dilithium_17_fu_1271_seed_address0;
+wire    grp_pqcrystals_dilithium_17_fu_1271_seed_ce0;
+wire   [12:0] grp_pqcrystals_dilithium_17_fu_1271_seed_address1;
+wire    grp_pqcrystals_dilithium_17_fu_1271_seed_ce1;
+wire    grp_pqcrystals_dilithium_10_fu_1278_ap_start;
+wire    grp_pqcrystals_dilithium_10_fu_1278_ap_done;
+wire    grp_pqcrystals_dilithium_10_fu_1278_ap_idle;
+wire    grp_pqcrystals_dilithium_10_fu_1278_ap_ready;
+wire   [11:0] grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_address0;
+wire    grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_we0;
+wire   [22:0] grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_d0;
+wire   [7:0] grp_pqcrystals_dilithium_10_fu_1278_seed_address0;
+wire    grp_pqcrystals_dilithium_10_fu_1278_seed_ce0;
+wire   [7:0] grp_pqcrystals_dilithium_10_fu_1278_seed_address1;
+wire    grp_pqcrystals_dilithium_10_fu_1278_seed_ce1;
+wire    grp_keccak_absorb_2_fu_1289_ap_start;
+wire    grp_keccak_absorb_2_fu_1289_ap_idle;
+wire   [4:0] grp_keccak_absorb_2_fu_1289_s_address0;
+wire    grp_keccak_absorb_2_fu_1289_s_ce0;
+wire    grp_keccak_absorb_2_fu_1289_s_we0;
+wire   [63:0] grp_keccak_absorb_2_fu_1289_s_d0;
+wire   [4:0] grp_keccak_absorb_2_fu_1289_s_address1;
+wire    grp_keccak_absorb_2_fu_1289_s_ce1;
+wire    grp_keccak_absorb_2_fu_1289_s_we1;
+wire   [63:0] grp_keccak_absorb_2_fu_1289_s_d1;
+wire   [12:0] grp_keccak_absorb_2_fu_1289_m_address0;
+wire    grp_keccak_absorb_2_fu_1289_m_ce0;
+wire   [12:0] grp_keccak_absorb_2_fu_1289_m_address1;
+wire    grp_keccak_absorb_2_fu_1289_m_ce1;
+reg   [12:0] grp_keccak_absorb_2_fu_1289_m_offset;
+reg   [63:0] grp_keccak_absorb_2_fu_1289_mlen;
+wire    grp_KeccakF1600_StatePer_1_fu_1303_ap_start;
+wire    grp_KeccakF1600_StatePer_1_fu_1303_ap_done;
+wire    grp_KeccakF1600_StatePer_1_fu_1303_ap_idle;
+wire    grp_KeccakF1600_StatePer_1_fu_1303_ap_ready;
+wire   [4:0] grp_KeccakF1600_StatePer_1_fu_1303_state_address0;
+wire    grp_KeccakF1600_StatePer_1_fu_1303_state_ce0;
+wire    grp_KeccakF1600_StatePer_1_fu_1303_state_we0;
+wire   [63:0] grp_KeccakF1600_StatePer_1_fu_1303_state_d0;
+wire   [4:0] grp_KeccakF1600_StatePer_1_fu_1303_state_address1;
+wire    grp_KeccakF1600_StatePer_1_fu_1303_state_ce1;
+wire    grp_KeccakF1600_StatePer_1_fu_1303_state_we1;
+wire   [63:0] grp_KeccakF1600_StatePer_1_fu_1303_state_d1;
+wire    grp_KeccakF1600_StatePer_fu_1308_ap_start;
+wire    grp_KeccakF1600_StatePer_fu_1308_ap_done;
+wire    grp_KeccakF1600_StatePer_fu_1308_ap_idle;
+wire    grp_KeccakF1600_StatePer_fu_1308_ap_ready;
+wire   [4:0] grp_KeccakF1600_StatePer_fu_1308_state_0_address0;
+wire    grp_KeccakF1600_StatePer_fu_1308_state_0_ce0;
+wire    grp_KeccakF1600_StatePer_fu_1308_state_0_we0;
+wire   [63:0] grp_KeccakF1600_StatePer_fu_1308_state_0_d0;
+wire   [4:0] grp_KeccakF1600_StatePer_fu_1308_state_0_address1;
+wire    grp_KeccakF1600_StatePer_fu_1308_state_0_ce1;
+wire    grp_KeccakF1600_StatePer_fu_1308_state_0_we1;
+wire   [63:0] grp_KeccakF1600_StatePer_fu_1308_state_0_d1;
+wire    grp_pqcrystals_dilithium_21_fu_1313_ap_start;
+wire    grp_pqcrystals_dilithium_21_fu_1313_ap_done;
+wire    grp_pqcrystals_dilithium_21_fu_1313_ap_idle;
+wire    grp_pqcrystals_dilithium_21_fu_1313_ap_ready;
+wire   [9:0] grp_pqcrystals_dilithium_21_fu_1313_a_address0;
+wire    grp_pqcrystals_dilithium_21_fu_1313_a_ce0;
+wire    grp_pqcrystals_dilithium_21_fu_1313_a_we0;
+wire   [31:0] grp_pqcrystals_dilithium_21_fu_1313_a_d0;
+reg   [31:0] grp_pqcrystals_dilithium_21_fu_1313_a_q0;
+wire   [9:0] grp_pqcrystals_dilithium_21_fu_1313_a_address1;
+wire    grp_pqcrystals_dilithium_21_fu_1313_a_ce1;
+wire    grp_pqcrystals_dilithium_21_fu_1313_a_we1;
+wire   [31:0] grp_pqcrystals_dilithium_21_fu_1313_a_d1;
+reg   [31:0] grp_pqcrystals_dilithium_21_fu_1313_a_q1;
+reg   [2:0] grp_pqcrystals_dilithium_21_fu_1313_a_offset;
+wire    grp_pqcrystals_dilithium_20_fu_1325_ap_start;
+wire    grp_pqcrystals_dilithium_20_fu_1325_ap_done;
+wire    grp_pqcrystals_dilithium_20_fu_1325_ap_idle;
+wire    grp_pqcrystals_dilithium_20_fu_1325_ap_ready;
+wire   [7:0] grp_pqcrystals_dilithium_20_fu_1325_a_address0;
+wire    grp_pqcrystals_dilithium_20_fu_1325_a_ce0;
+wire    grp_pqcrystals_dilithium_20_fu_1325_a_we0;
+wire   [31:0] grp_pqcrystals_dilithium_20_fu_1325_a_d0;
+wire   [7:0] grp_pqcrystals_dilithium_20_fu_1325_a_address1;
+wire    grp_pqcrystals_dilithium_20_fu_1325_a_ce1;
+wire    grp_pqcrystals_dilithium_20_fu_1325_a_we1;
+wire   [31:0] grp_pqcrystals_dilithium_20_fu_1325_a_d1;
+wire    grp_pqcrystals_dilithium_5_fu_1332_ap_start;
+wire    grp_pqcrystals_dilithium_5_fu_1332_ap_done;
+wire    grp_pqcrystals_dilithium_5_fu_1332_ap_idle;
+wire    grp_pqcrystals_dilithium_5_fu_1332_ap_ready;
+wire   [9:0] grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_address0;
+wire    grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_we0;
+wire   [31:0] grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_d0;
+wire   [9:0] grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_address1;
+wire    grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_ce1;
+wire    grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_we1;
+wire   [31:0] grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_d1;
+reg   [3:0] grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_offset;
+wire   [11:0] grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_address0;
+wire    grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_ce0;
+wire   [11:0] grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_address1;
+wire    grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_ce1;
+reg   [3:0] grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_offset;
+wire   [9:0] grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_address0;
+wire    grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_ce0;
+wire   [9:0] grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_address1;
+wire    grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_ce1;
+wire    grp_pqcrystals_dilithium_fu_1349_ap_start;
+wire    grp_pqcrystals_dilithium_fu_1349_ap_idle;
+wire   [7:0] grp_pqcrystals_dilithium_fu_1349_rho_address0;
+wire    grp_pqcrystals_dilithium_fu_1349_rho_ce0;
+wire    grp_pqcrystals_dilithium_fu_1349_rho_we0;
+wire   [7:0] grp_pqcrystals_dilithium_fu_1349_rho_d0;
+wire   [7:0] grp_pqcrystals_dilithium_fu_1349_rho_address1;
+wire    grp_pqcrystals_dilithium_fu_1349_rho_ce1;
+wire    grp_pqcrystals_dilithium_fu_1349_rho_we1;
+wire   [7:0] grp_pqcrystals_dilithium_fu_1349_rho_d1;
+wire   [9:0] grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_address0;
+wire    grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_we0;
+wire   [31:0] grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_d0;
+wire   [9:0] grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_address1;
+wire    grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_ce1;
+wire    grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_we1;
+wire   [31:0] grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_d1;
+wire   [9:0] grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_address0;
+wire    grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_we0;
+wire   [31:0] grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_d0;
+wire   [9:0] grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_address1;
+wire    grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_ce1;
+wire    grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_we1;
+wire   [31:0] grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_d1;
+wire   [9:0] grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_address0;
+wire    grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_we0;
+wire   [31:0] grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_d0;
+wire   [9:0] grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_address1;
+wire    grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_ce1;
+wire    grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_we1;
+wire   [31:0] grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_d1;
+wire   [11:0] grp_pqcrystals_dilithium_fu_1349_sk_address0;
+wire    grp_pqcrystals_dilithium_fu_1349_sk_ce0;
+wire   [11:0] grp_pqcrystals_dilithium_fu_1349_sk_address1;
+wire    grp_pqcrystals_dilithium_fu_1349_sk_ce1;
+wire    grp_pqcrystals_dilithium_23_fu_1363_ap_start;
+wire    grp_pqcrystals_dilithium_23_fu_1363_ap_done;
+wire    grp_pqcrystals_dilithium_23_fu_1363_ap_idle;
+wire    grp_pqcrystals_dilithium_23_fu_1363_ap_ready;
+wire   [9:0] grp_pqcrystals_dilithium_23_fu_1363_a_address0;
+wire    grp_pqcrystals_dilithium_23_fu_1363_a_ce0;
+wire    grp_pqcrystals_dilithium_23_fu_1363_a_we0;
+wire   [31:0] grp_pqcrystals_dilithium_23_fu_1363_a_d0;
+reg   [31:0] grp_pqcrystals_dilithium_23_fu_1363_a_q0;
+wire   [9:0] grp_pqcrystals_dilithium_23_fu_1363_a_address1;
+wire    grp_pqcrystals_dilithium_23_fu_1363_a_ce1;
+wire    grp_pqcrystals_dilithium_23_fu_1363_a_we1;
+wire   [31:0] grp_pqcrystals_dilithium_23_fu_1363_a_d1;
+reg   [31:0] grp_pqcrystals_dilithium_23_fu_1363_a_q1;
+reg   [3:0] grp_pqcrystals_dilithium_23_fu_1363_a_offset;
+wire    grp_pqcrystals_dilithium_19_fu_1375_ap_start;
+wire    grp_pqcrystals_dilithium_19_fu_1375_ap_done;
+wire    grp_pqcrystals_dilithium_19_fu_1375_ap_idle;
+wire    grp_pqcrystals_dilithium_19_fu_1375_ap_ready;
+wire   [12:0] grp_pqcrystals_dilithium_19_fu_1375_sig_address0;
+wire    grp_pqcrystals_dilithium_19_fu_1375_sig_ce0;
+wire    grp_pqcrystals_dilithium_19_fu_1375_sig_we0;
+wire   [7:0] grp_pqcrystals_dilithium_19_fu_1375_sig_d0;
+wire   [12:0] grp_pqcrystals_dilithium_19_fu_1375_sig_address1;
+wire    grp_pqcrystals_dilithium_19_fu_1375_sig_ce1;
+wire    grp_pqcrystals_dilithium_19_fu_1375_sig_we1;
+wire   [7:0] grp_pqcrystals_dilithium_19_fu_1375_sig_d1;
+wire   [9:0] grp_pqcrystals_dilithium_19_fu_1375_z_vec_coeffs_address0;
+wire    grp_pqcrystals_dilithium_19_fu_1375_z_vec_coeffs_ce0;
+wire   [9:0] grp_pqcrystals_dilithium_19_fu_1375_h_vec_coeffs_address0;
+wire    grp_pqcrystals_dilithium_19_fu_1375_h_vec_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_11_fu_1383_ap_start;
+wire    grp_pqcrystals_dilithium_11_fu_1383_ap_done;
+wire    grp_pqcrystals_dilithium_11_fu_1383_ap_idle;
+wire    grp_pqcrystals_dilithium_11_fu_1383_ap_ready;
+wire   [9:0] grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_address0;
+wire    grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_we0;
+wire   [31:0] grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_d0;
+wire   [9:0] grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_address1;
+wire    grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_ce1;
+wire    grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_we1;
+wire   [31:0] grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_d1;
+wire   [9:0] grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_address0;
+wire    grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_ce0;
+wire   [9:0] grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_address1;
+wire    grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_ce1;
+wire    grp_pqcrystals_dilithium_13_fu_1391_ap_start;
+wire    grp_pqcrystals_dilithium_13_fu_1391_ap_done;
+wire    grp_pqcrystals_dilithium_13_fu_1391_ap_idle;
+wire    grp_pqcrystals_dilithium_13_fu_1391_ap_ready;
+wire   [9:0] grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_address0;
+wire    grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_we0;
+wire   [31:0] grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_d0;
+wire   [9:0] grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_address1;
+wire    grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_ce1;
+wire    grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_we1;
+wire   [31:0] grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_d1;
+reg   [3:0] grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_offset;
+wire   [7:0] grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_address0;
+wire    grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_ce0;
+wire   [7:0] grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_address1;
+wire    grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_ce1;
+wire   [9:0] grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_address0;
+wire    grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_ce0;
+reg   [31:0] grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q0;
+wire   [9:0] grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_address1;
+wire    grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_ce1;
+reg   [31:0] grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q1;
+reg   [3:0] grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_offset;
+wire    grp_pqcrystals_dilithium_4_fu_1408_ap_start;
+wire    grp_pqcrystals_dilithium_4_fu_1408_ap_done;
+wire    grp_pqcrystals_dilithium_4_fu_1408_ap_idle;
+wire    grp_pqcrystals_dilithium_4_fu_1408_ap_ready;
+wire   [12:0] grp_pqcrystals_dilithium_4_fu_1408_r_address0;
+wire    grp_pqcrystals_dilithium_4_fu_1408_r_ce0;
+wire    grp_pqcrystals_dilithium_4_fu_1408_r_we0;
+wire   [7:0] grp_pqcrystals_dilithium_4_fu_1408_r_d0;
+wire   [12:0] grp_pqcrystals_dilithium_4_fu_1408_r_address1;
+wire    grp_pqcrystals_dilithium_4_fu_1408_r_ce1;
+wire    grp_pqcrystals_dilithium_4_fu_1408_r_we1;
+wire   [7:0] grp_pqcrystals_dilithium_4_fu_1408_r_d1;
+reg   [10:0] grp_pqcrystals_dilithium_4_fu_1408_r_offset;
+wire   [9:0] grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_address0;
+wire    grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_ce0;
+wire   [9:0] grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_address1;
+wire    grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_ce1;
+reg   [3:0] grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_offset;
+wire    grp_keccak_absorb_3199_fu_1425_ap_start;
+wire    grp_keccak_absorb_3199_fu_1425_ap_done;
+wire    grp_keccak_absorb_3199_fu_1425_ap_idle;
+wire    grp_keccak_absorb_3199_fu_1425_ap_ready;
+wire   [4:0] grp_keccak_absorb_3199_fu_1425_s_address0;
+wire    grp_keccak_absorb_3199_fu_1425_s_ce0;
+wire   [4:0] grp_keccak_absorb_3199_fu_1425_s_address1;
+wire    grp_keccak_absorb_3199_fu_1425_s_ce1;
+wire    grp_keccak_absorb_3199_fu_1425_s_we1;
+wire   [63:0] grp_keccak_absorb_3199_fu_1425_s_d1;
+wire   [7:0] grp_keccak_absorb_3199_fu_1425_m_address0;
+wire    grp_keccak_absorb_3199_fu_1425_m_ce0;
+wire   [7:0] grp_keccak_absorb_3199_fu_1425_m_address1;
+wire    grp_keccak_absorb_3199_fu_1425_m_ce1;
+reg   [7:0] grp_keccak_absorb_3199_fu_1425_m_offset;
+wire    grp_pqcrystals_dilithium_6_fu_1434_ap_start;
+wire    grp_pqcrystals_dilithium_6_fu_1434_ap_idle;
+wire   [9:0] grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_address0;
+wire    grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_ce0;
+reg   [31:0] grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_q0;
+reg   [17:0] grp_pqcrystals_dilithium_6_fu_1434_bound;
+wire    grp_pqcrystals_dilithium_18_fu_1442_ap_start;
+wire    grp_pqcrystals_dilithium_18_fu_1442_ap_done;
+wire    grp_pqcrystals_dilithium_18_fu_1442_ap_idle;
+wire    grp_pqcrystals_dilithium_18_fu_1442_ap_ready;
+wire   [9:0] grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_address0;
+wire    grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_we0;
+wire   [31:0] grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_d0;
+reg   [31:0] grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_q0;
+reg   [3:0] grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_offset;
+wire    grp_pqcrystals_dilithium_12_fu_1452_ap_start;
+wire    grp_pqcrystals_dilithium_12_fu_1452_ap_done;
+wire    grp_pqcrystals_dilithium_12_fu_1452_ap_idle;
+wire    grp_pqcrystals_dilithium_12_fu_1452_ap_ready;
+wire   [9:0] grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_address0;
+wire    grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_we0;
+wire   [31:0] grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_d0;
+reg   [31:0] grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_q0;
+reg   [3:0] grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_offset;
+reg   [4:0] i_0_i_i_reg_863;
+wire   [0:0] icmp_ln364_fu_1591_p2;
+reg   [2:0] i_3_i_reg_874;
 wire    ap_CS_fsm_state12;
 wire    ap_CS_fsm_state17;
-reg   [4:0] i_0_i_i_i_reg_875;
-wire   [0:0] icmp_ln364_1_fu_1817_p2;
-reg   [3:0] i_3_i1_reg_886;
-wire    ap_CS_fsm_state23;
-reg   [2:0] i_3_i3_reg_897;
-wire    ap_CS_fsm_state26;
-wire    ap_CS_fsm_state31;
-reg   [2:0] i_0_i_reg_909;
-reg   [2:0] j_0_i_reg_921;
-wire    ap_CS_fsm_state34;
-wire   [0:0] icmp_ln20_fu_2237_p2;
-reg   [2:0] i_0_i3_reg_933;
-wire    ap_CS_fsm_state36;
-reg   [2:0] i_0_i5_reg_945;
-wire    ap_CS_fsm_state38;
-wire   [0:0] icmp_ln102_fu_2276_p2;
-reg   [2:0] i_0_i7_reg_957;
-wire    ap_CS_fsm_state40;
-wire   [0:0] icmp_ln286_fu_2288_p2;
-reg   [15:0] nonce_assign_reg_969;
-wire   [0:0] icmp_ln172_fu_3119_p2;
-wire   [0:0] icmp_ln286_1_fu_2300_p2;
-reg   [7:0] phi_ln124_reg_980;
-wire    ap_CS_fsm_state48;
-wire    ap_CS_fsm_state50;
-reg   [7:0] phi_ln124_1_reg_991;
-wire    ap_CS_fsm_state52;
-reg   [7:0] phi_ln124_2_reg_1002;
-wire    ap_CS_fsm_state54;
-reg   [7:0] phi_ln124_3_reg_1013;
-wire    ap_CS_fsm_state56;
-reg   [2:0] i_0_i12_reg_1024;
-wire    ap_CS_fsm_state58;
-reg   [2:0] i_0_i17_reg_1036;
-wire    ap_CS_fsm_state89;
-reg   [8:0] i_0_i_i18_reg_1047;
-wire    ap_CS_fsm_state92;
-reg   [4:0] i_0_i_i21_reg_1058;
-wire    ap_CS_fsm_state99;
-wire   [0:0] icmp_ln364_2_fu_2608_p2;
-reg   [2:0] i_3_i47_reg_1069;
-wire    ap_CS_fsm_state109;
-wire    ap_CS_fsm_state114;
-reg   [2:0] i_0_i41_reg_1080;
-wire    ap_CS_fsm_state117;
-wire    ap_CS_fsm_state119;
-reg   [2:0] i_0_i43_reg_1091;
-wire    ap_CS_fsm_state121;
-reg   [2:0] i_0_i45_reg_1102;
-reg   [8:0] i_0_i_i46_reg_1113;
-wire    ap_CS_fsm_state124;
-reg   [2:0] i_0_i51_reg_1124;
-reg   [8:0] i_0_i_i52_reg_1135;
-wire    ap_CS_fsm_state127;
-reg   [2:0] i_0_i85_reg_1146;
-reg   [8:0] i_0_i_i86_reg_1157;
-wire    ap_CS_fsm_state130;
-wire   [0:0] icmp_ln307_fu_3019_p2;
-reg   [2:0] i_0_i57_reg_1168;
-wire    ap_CS_fsm_state145;
-wire    ap_CS_fsm_state147;
-reg   [2:0] i_0_i59_reg_1180;
-reg   [8:0] i_0_i_i60_reg_1191;
-wire    ap_CS_fsm_state184;
-reg   [2:0] i_0_i87_reg_1202;
-wire    ap_CS_fsm_state191;
-reg   [10:0] n_reg_1213;
-reg   [8:0] i_0_i_i88_reg_1225;
-reg   [8:0] s_0_i_i_reg_1236;
-reg    grp_pqcrystals_dilithium_9_fu_1248_ap_start_reg;
-wire    ap_CS_fsm_state42;
-wire    ap_CS_fsm_state44;
-wire    ap_CS_fsm_state46;
-reg    grp_pqcrystals_dilithium_17_fu_1260_ap_start_reg;
-wire    ap_CS_fsm_state115;
-reg    grp_pqcrystals_dilithium_10_fu_1267_ap_start_reg;
-reg    grp_keccak_absorb_2_fu_1278_ap_start_reg;
-wire    ap_CS_fsm_state5;
-wire    ap_CS_fsm_state102;
-reg    grp_KeccakF1600_StatePer_1_fu_1292_ap_start_reg;
-wire    ap_CS_fsm_state11;
-wire    ap_CS_fsm_state108;
-reg    grp_KeccakF1600_StatePer_fu_1297_ap_start_reg;
-wire    ap_CS_fsm_state25;
-reg    grp_pqcrystals_dilithium_21_fu_1302_ap_start_reg;
-wire   [0:0] icmp_ln102_1_fu_2443_p2;
-reg    grp_pqcrystals_dilithium_20_fu_1314_ap_start_reg;
-wire    ap_CS_fsm_state116;
-reg    grp_pqcrystals_dilithium_5_fu_1321_ap_start_reg;
-wire    ap_CS_fsm_state60;
-wire    ap_CS_fsm_state62;
-wire    ap_CS_fsm_state64;
+reg   [4:0] i_0_i_i_i_reg_886;
+reg   [3:0] ap_phi_mux_i_3_i1_phi_fu_901_p4;
+wire    ap_block_pp0_stage0;
+reg   [2:0] i_3_i3_reg_908;
+wire    ap_CS_fsm_state27;
+wire    ap_CS_fsm_state32;
+reg   [2:0] i_0_i_reg_920;
+reg   [2:0] j_0_i_reg_932;
+wire    ap_CS_fsm_state35;
+wire   [0:0] icmp_ln20_fu_2247_p2;
+reg   [2:0] i_0_i3_reg_944;
+wire    ap_CS_fsm_state37;
+reg   [2:0] i_0_i5_reg_956;
+wire    ap_CS_fsm_state39;
+wire   [0:0] icmp_ln104_fu_2286_p2;
+reg   [2:0] i_0_i7_reg_968;
+wire    ap_CS_fsm_state41;
+wire   [0:0] icmp_ln290_fu_2298_p2;
+reg   [15:0] nonce_assign_reg_980;
+wire   [0:0] icmp_ln172_fu_3129_p2;
+wire   [0:0] icmp_ln290_1_fu_2310_p2;
+reg   [7:0] phi_ln124_reg_991;
+wire    ap_CS_fsm_state49;
+wire    ap_CS_fsm_state51;
+reg   [7:0] phi_ln124_1_reg_1002;
+wire    ap_CS_fsm_state53;
+reg   [7:0] phi_ln124_2_reg_1013;
+wire    ap_CS_fsm_state55;
+reg   [7:0] phi_ln124_3_reg_1024;
+wire    ap_CS_fsm_state57;
+reg   [2:0] i_0_i12_reg_1035;
 wire    ap_CS_fsm_state59;
+reg   [2:0] i_0_i17_reg_1047;
+wire    ap_CS_fsm_state90;
+reg   [8:0] i_0_i_i18_reg_1058;
+wire    ap_CS_fsm_state93;
+reg   [4:0] i_0_i_i21_reg_1069;
+wire    ap_CS_fsm_state100;
+wire   [0:0] icmp_ln364_2_fu_2618_p2;
+reg   [2:0] i_3_i46_reg_1080;
+wire    ap_CS_fsm_state110;
+wire    ap_CS_fsm_state115;
+reg   [2:0] i_0_i41_reg_1091;
+wire    ap_CS_fsm_state118;
+wire    ap_CS_fsm_state120;
+reg   [2:0] i_0_i43_reg_1102;
+wire    ap_CS_fsm_state122;
+reg   [2:0] i_0_i45_reg_1113;
+reg   [8:0] i_0_i_i46_reg_1124;
+wire    ap_CS_fsm_state125;
+reg   [2:0] i_0_i51_reg_1135;
+reg   [8:0] i_0_i_i52_reg_1146;
+wire    ap_CS_fsm_state128;
+reg   [2:0] i_0_i83_reg_1157;
+reg   [8:0] i_0_i_i84_reg_1168;
+wire    ap_CS_fsm_state131;
+wire   [0:0] icmp_ln310_fu_3029_p2;
+reg   [2:0] i_0_i57_reg_1179;
+wire    ap_CS_fsm_state146;
+wire    ap_CS_fsm_state148;
+reg   [2:0] i_0_i59_reg_1191;
+reg   [8:0] i_0_i_i60_reg_1202;
+wire    ap_CS_fsm_state185;
+reg   [2:0] i_0_i85_reg_1213;
+wire    ap_CS_fsm_state192;
+reg   [10:0] n_reg_1224;
+reg   [8:0] i_0_i_i86_reg_1236;
+reg   [8:0] s_0_i_i_reg_1247;
+reg    grp_pqcrystals_dilithium_9_fu_1259_ap_start_reg;
+wire    ap_CS_fsm_state43;
+wire    ap_CS_fsm_state45;
+wire    ap_CS_fsm_state47;
+reg    grp_pqcrystals_dilithium_17_fu_1271_ap_start_reg;
+wire    ap_CS_fsm_state116;
+reg    grp_pqcrystals_dilithium_10_fu_1278_ap_start_reg;
+reg    grp_keccak_absorb_2_fu_1289_ap_start_reg;
+wire    ap_CS_fsm_state5;
+wire    ap_CS_fsm_state103;
+reg    grp_KeccakF1600_StatePer_1_fu_1303_ap_start_reg;
+wire    ap_CS_fsm_state11;
+wire    ap_CS_fsm_state109;
+reg    grp_KeccakF1600_StatePer_fu_1308_ap_start_reg;
+wire    ap_CS_fsm_state26;
+reg    grp_pqcrystals_dilithium_21_fu_1313_ap_start_reg;
+wire   [0:0] icmp_ln104_1_fu_2453_p2;
+reg    grp_pqcrystals_dilithium_20_fu_1325_ap_start_reg;
+wire    ap_CS_fsm_state117;
+reg    grp_pqcrystals_dilithium_5_fu_1332_ap_start_reg;
 wire    ap_CS_fsm_state61;
 wire    ap_CS_fsm_state63;
 wire    ap_CS_fsm_state65;
-reg    grp_pqcrystals_dilithium_fu_1338_ap_start_reg;
-reg    grp_pqcrystals_dilithium_23_fu_1352_ap_start_reg;
-wire    ap_CS_fsm_state74;
-wire    ap_CS_fsm_state76;
-wire    ap_CS_fsm_state78;
-wire    ap_CS_fsm_state80;
-wire    ap_CS_fsm_state138;
-wire    ap_CS_fsm_state140;
-wire    ap_CS_fsm_state142;
-wire    ap_CS_fsm_state144;
-wire    ap_CS_fsm_state164;
-wire    ap_CS_fsm_state166;
-wire    ap_CS_fsm_state168;
-wire    ap_CS_fsm_state170;
+wire    ap_CS_fsm_state60;
+wire    ap_CS_fsm_state62;
+wire    ap_CS_fsm_state64;
+wire    ap_CS_fsm_state66;
+reg    grp_pqcrystals_dilithium_fu_1349_ap_start_reg;
+reg    grp_pqcrystals_dilithium_23_fu_1363_ap_start_reg;
 wire    ap_CS_fsm_state75;
 wire    ap_CS_fsm_state77;
 wire    ap_CS_fsm_state79;
@@ -1031,73 +1036,73 @@ wire    ap_CS_fsm_state81;
 wire    ap_CS_fsm_state139;
 wire    ap_CS_fsm_state141;
 wire    ap_CS_fsm_state143;
+wire    ap_CS_fsm_state145;
 wire    ap_CS_fsm_state165;
 wire    ap_CS_fsm_state167;
 wire    ap_CS_fsm_state169;
 wire    ap_CS_fsm_state171;
-reg    grp_pqcrystals_dilithium_19_fu_1364_ap_start_reg;
-wire    ap_CS_fsm_state195;
-reg    grp_pqcrystals_dilithium_11_fu_1372_ap_start_reg;
-wire   [0:0] icmp_ln256_fu_3025_p2;
-reg    grp_pqcrystals_dilithium_13_fu_1380_ap_start_reg;
-wire    ap_CS_fsm_state132;
-wire    ap_CS_fsm_state134;
-wire    ap_CS_fsm_state136;
-wire    ap_CS_fsm_state158;
-wire    ap_CS_fsm_state160;
-wire    ap_CS_fsm_state162;
-wire    ap_CS_fsm_state131;
+wire    ap_CS_fsm_state76;
+wire    ap_CS_fsm_state78;
+wire    ap_CS_fsm_state80;
+wire    ap_CS_fsm_state82;
+wire    ap_CS_fsm_state140;
+wire    ap_CS_fsm_state142;
+wire    ap_CS_fsm_state144;
+wire    ap_CS_fsm_state166;
+wire    ap_CS_fsm_state168;
+wire    ap_CS_fsm_state170;
+wire    ap_CS_fsm_state172;
+reg    grp_pqcrystals_dilithium_19_fu_1375_ap_start_reg;
+wire    ap_CS_fsm_state196;
+reg    grp_pqcrystals_dilithium_11_fu_1383_ap_start_reg;
+wire   [0:0] icmp_ln260_fu_3035_p2;
+reg    grp_pqcrystals_dilithium_13_fu_1391_ap_start_reg;
 wire    ap_CS_fsm_state133;
 wire    ap_CS_fsm_state135;
 wire    ap_CS_fsm_state137;
-wire    ap_CS_fsm_state157;
 wire    ap_CS_fsm_state159;
 wire    ap_CS_fsm_state161;
 wire    ap_CS_fsm_state163;
-reg    grp_pqcrystals_dilithium_4_fu_1397_ap_start_reg;
+wire    ap_CS_fsm_state132;
+wire    ap_CS_fsm_state134;
+wire    ap_CS_fsm_state136;
+wire    ap_CS_fsm_state138;
+wire    ap_CS_fsm_state158;
+wire    ap_CS_fsm_state160;
+wire    ap_CS_fsm_state162;
+wire    ap_CS_fsm_state164;
+reg    grp_pqcrystals_dilithium_4_fu_1408_ap_start_reg;
+wire    ap_CS_fsm_state95;
+wire    ap_CS_fsm_state97;
+wire    ap_CS_fsm_state99;
 wire    ap_CS_fsm_state94;
 wire    ap_CS_fsm_state96;
 wire    ap_CS_fsm_state98;
-wire    ap_CS_fsm_state93;
-wire    ap_CS_fsm_state95;
-wire    ap_CS_fsm_state97;
-reg    grp_keccak_absorb_3199_fu_1414_ap_start_reg;
+reg    grp_keccak_absorb_3199_fu_1425_ap_start_reg;
 wire    ap_CS_fsm_state4;
-wire    ap_CS_fsm_state101;
-reg    grp_pqcrystals_dilithium_6_fu_1423_ap_start_reg;
-wire    ap_CS_fsm_state155;
-wire    ap_CS_fsm_state180;
-reg    grp_pqcrystals_dilithium_18_fu_1431_ap_start_reg;
-wire    ap_CS_fsm_state82;
+wire    ap_CS_fsm_state102;
+reg    grp_pqcrystals_dilithium_6_fu_1434_ap_start_reg;
+wire    ap_CS_fsm_state156;
+wire    ap_CS_fsm_state181;
+reg    grp_pqcrystals_dilithium_18_fu_1442_ap_start_reg;
+wire    ap_CS_fsm_state83;
+wire    ap_CS_fsm_state85;
+wire    ap_CS_fsm_state87;
+wire    ap_CS_fsm_state89;
+wire    ap_CS_fsm_state187;
+wire    ap_CS_fsm_state189;
+wire    ap_CS_fsm_state191;
 wire    ap_CS_fsm_state84;
 wire    ap_CS_fsm_state86;
 wire    ap_CS_fsm_state88;
 wire    ap_CS_fsm_state186;
 wire    ap_CS_fsm_state188;
 wire    ap_CS_fsm_state190;
-wire    ap_CS_fsm_state83;
-wire    ap_CS_fsm_state85;
-wire    ap_CS_fsm_state87;
-wire    ap_CS_fsm_state185;
-wire    ap_CS_fsm_state187;
-wire    ap_CS_fsm_state189;
-reg    grp_pqcrystals_dilithium_12_fu_1441_ap_start_reg;
-wire    ap_CS_fsm_state66;
-wire    ap_CS_fsm_state68;
-wire    ap_CS_fsm_state70;
-wire    ap_CS_fsm_state72;
-wire    ap_CS_fsm_state149;
-wire    ap_CS_fsm_state151;
-wire    ap_CS_fsm_state153;
-wire    ap_CS_fsm_state172;
-wire    ap_CS_fsm_state174;
-wire    ap_CS_fsm_state176;
-wire    ap_CS_fsm_state178;
+reg    grp_pqcrystals_dilithium_12_fu_1452_ap_start_reg;
 wire    ap_CS_fsm_state67;
 wire    ap_CS_fsm_state69;
 wire    ap_CS_fsm_state71;
 wire    ap_CS_fsm_state73;
-wire    ap_CS_fsm_state148;
 wire    ap_CS_fsm_state150;
 wire    ap_CS_fsm_state152;
 wire    ap_CS_fsm_state154;
@@ -1105,235 +1110,256 @@ wire    ap_CS_fsm_state173;
 wire    ap_CS_fsm_state175;
 wire    ap_CS_fsm_state177;
 wire    ap_CS_fsm_state179;
-wire   [63:0] zext_ln365_fu_1592_p1;
-wire   [63:0] zext_ln454_1_fu_1597_p1;
-wire   [63:0] zext_ln546_fu_1631_p1;
-wire   [63:0] zext_ln548_1_fu_1671_p1;
-wire   [63:0] zext_ln549_1_fu_1692_p1;
-wire   [63:0] zext_ln550_1_fu_1712_p1;
+wire    ap_CS_fsm_state68;
+wire    ap_CS_fsm_state70;
+wire    ap_CS_fsm_state72;
+wire    ap_CS_fsm_state74;
+wire    ap_CS_fsm_state149;
+wire    ap_CS_fsm_state151;
+wire    ap_CS_fsm_state153;
+wire    ap_CS_fsm_state155;
+wire    ap_CS_fsm_state174;
+wire    ap_CS_fsm_state176;
+wire    ap_CS_fsm_state178;
+wire    ap_CS_fsm_state180;
+wire   [63:0] zext_ln365_fu_1603_p1;
+wire   [63:0] zext_ln462_1_fu_1608_p1;
+wire   [63:0] zext_ln555_fu_1642_p1;
+wire   [63:0] zext_ln557_1_fu_1682_p1;
+wire   [63:0] zext_ln558_1_fu_1703_p1;
+wire   [63:0] zext_ln559_1_fu_1723_p1;
 wire    ap_CS_fsm_state15;
-wire   [63:0] zext_ln551_1_fu_1732_p1;
-wire   [63:0] zext_ln552_1_fu_1752_p1;
+wire   [63:0] zext_ln560_1_fu_1743_p1;
+wire   [63:0] zext_ln561_1_fu_1763_p1;
 wire    ap_CS_fsm_state16;
-wire   [63:0] zext_ln553_1_fu_1772_p1;
-wire   [63:0] zext_ln554_1_fu_1792_p1;
-wire   [63:0] zext_ln555_1_fu_1812_p1;
-wire   [63:0] zext_ln365_1_fu_1829_p1;
-wire   [63:0] zext_ln421_1_fu_1869_p1;
-wire   [63:0] zext_ln32_fu_1880_p1;
-wire   [63:0] zext_ln420_fu_1834_p1;
-wire   [63:0] zext_ln32_1_fu_1890_p1;
-wire   [63:0] zext_ln32_2_fu_1900_p1;
-wire   [63:0] zext_ln32_3_fu_1910_p1;
-wire   [63:0] zext_ln32_4_fu_1920_p1;
-wire   [63:0] zext_ln32_5_fu_1930_p1;
-wire   [63:0] zext_ln32_6_fu_1940_p1;
-wire   [63:0] zext_ln546_1_fu_1980_p1;
-wire   [63:0] zext_ln548_3_fu_2020_p1;
-wire   [63:0] zext_ln549_3_fu_2052_p1;
-wire   [63:0] zext_ln550_3_fu_2132_p1;
-wire    ap_CS_fsm_state29;
-wire   [63:0] zext_ln551_3_fu_2152_p1;
-wire   [63:0] zext_ln552_3_fu_2172_p1;
+wire   [63:0] zext_ln562_1_fu_1783_p1;
+wire   [63:0] zext_ln563_1_fu_1803_p1;
+wire   [63:0] zext_ln564_1_fu_1823_p1;
+wire   [63:0] zext_ln365_1_fu_1840_p1;
+wire   [63:0] zext_ln424_1_fu_1880_p1;
+wire   [63:0] zext_ln32_fu_1891_p1;
+wire   [63:0] zext_ln422_fu_1857_p1;
+wire   [63:0] zext_ln32_1_fu_1901_p1;
+wire    ap_block_pp0_stage1;
+wire   [63:0] zext_ln32_2_fu_1911_p1;
+wire   [63:0] zext_ln32_3_fu_1921_p1;
+wire    ap_block_pp0_stage2;
+wire   [63:0] zext_ln32_4_fu_1931_p1;
+wire   [63:0] zext_ln32_5_fu_1941_p1;
+wire    ap_block_pp0_stage3;
+wire   [63:0] zext_ln32_6_fu_1951_p1;
+wire   [63:0] zext_ln555_1_fu_1990_p1;
+wire   [63:0] zext_ln557_3_fu_2030_p1;
+wire   [63:0] zext_ln558_3_fu_2062_p1;
+wire   [63:0] zext_ln559_3_fu_2142_p1;
 wire    ap_CS_fsm_state30;
-wire   [63:0] zext_ln553_3_fu_2192_p1;
-wire   [63:0] zext_ln554_3_fu_2212_p1;
-wire   [63:0] zext_ln555_3_fu_2232_p1;
-wire   [63:0] zext_ln365_2_fu_2620_p1;
-wire   [63:0] zext_ln454_3_fu_2625_p1;
-wire   [63:0] zext_ln546_2_fu_2659_p1;
-wire   [63:0] zext_ln548_4_fu_2692_p1;
-wire   [63:0] zext_ln549_4_fu_2703_p1;
-wire   [63:0] zext_ln550_4_fu_2713_p1;
-wire    ap_CS_fsm_state112;
-wire   [63:0] zext_ln551_4_fu_2723_p1;
-wire   [63:0] zext_ln552_4_fu_2733_p1;
+wire   [63:0] zext_ln560_3_fu_2162_p1;
+wire   [63:0] zext_ln561_3_fu_2182_p1;
+wire    ap_CS_fsm_state31;
+wire   [63:0] zext_ln562_3_fu_2202_p1;
+wire   [63:0] zext_ln563_3_fu_2222_p1;
+wire   [63:0] zext_ln564_3_fu_2242_p1;
+wire   [63:0] zext_ln365_2_fu_2630_p1;
+wire   [63:0] zext_ln462_3_fu_2635_p1;
+wire   [63:0] zext_ln555_2_fu_2669_p1;
+wire   [63:0] zext_ln557_4_fu_2702_p1;
+wire   [63:0] zext_ln558_4_fu_2713_p1;
+wire   [63:0] zext_ln559_4_fu_2723_p1;
 wire    ap_CS_fsm_state113;
-wire   [63:0] zext_ln553_4_fu_2743_p1;
-wire   [63:0] zext_ln554_4_fu_2753_p1;
-wire   [63:0] zext_ln555_4_fu_2763_p1;
-wire   [63:0] zext_ln88_3_fu_2848_p1;
-wire   [63:0] zext_ln33_2_fu_2910_p1;
-wire   [63:0] zext_ln304_2_fu_2980_p1;
-wire   [63:0] zext_ln88_5_fu_3082_p1;
+wire   [63:0] zext_ln560_4_fu_2733_p1;
+wire   [63:0] zext_ln561_4_fu_2743_p1;
+wire    ap_CS_fsm_state114;
+wire   [63:0] zext_ln562_4_fu_2753_p1;
+wire   [63:0] zext_ln563_4_fu_2763_p1;
+wire   [63:0] zext_ln564_4_fu_2773_p1;
+wire   [63:0] zext_ln88_3_fu_2858_p1;
+wire   [63:0] zext_ln33_2_fu_2920_p1;
+wire   [63:0] zext_ln307_2_fu_2990_p1;
+wire   [63:0] zext_ln88_5_fu_3092_p1;
 wire    ap_CS_fsm_state7;
 wire    ap_CS_fsm_state8;
-wire   [63:0] xor_ln454_fu_1624_p2;
+wire   [63:0] xor_ln462_fu_1635_p2;
 wire    ap_CS_fsm_state10;
-wire   [63:0] grp_fu_1461_p2;
-wire    ap_CS_fsm_state104;
+wire   [63:0] grp_fu_1472_p2;
 wire    ap_CS_fsm_state105;
-wire   [63:0] xor_ln454_2_fu_2652_p2;
 wire    ap_CS_fsm_state106;
+wire   [63:0] xor_ln462_2_fu_2662_p2;
 wire    ap_CS_fsm_state107;
-wire   [7:0] trunc_ln548_fu_1648_p1;
-wire   [7:0] trunc_ln548_1_fu_1997_p1;
-wire   [63:0] xor_ln421_fu_1959_p2;
-wire    ap_CS_fsm_state24;
-wire   [63:0] xor_ln454_1_fu_1966_p2;
-wire   [63:0] xor_ln455_1_fu_1973_p2;
-wire  signed [31:0] sext_ln124_fu_2360_p1;
-wire  signed [31:0] sext_ln124_1_fu_2386_p1;
-wire  signed [31:0] sext_ln124_2_fu_2412_p1;
-wire  signed [31:0] sext_ln124_3_fu_2438_p1;
-wire   [31:0] add_ln88_fu_2858_p2;
+wire    ap_CS_fsm_state108;
+wire   [7:0] trunc_ln557_fu_1659_p1;
+wire   [7:0] trunc_ln557_1_fu_2007_p1;
+wire   [63:0] xor_ln424_fu_1970_p2;
+wire    ap_CS_fsm_state25;
+wire   [63:0] xor_ln462_1_fu_1976_p2;
+wire   [63:0] xor_ln463_1_fu_1983_p2;
+wire  signed [31:0] sext_ln124_fu_2370_p1;
+wire  signed [31:0] sext_ln124_1_fu_2396_p1;
+wire  signed [31:0] sext_ln124_2_fu_2422_p1;
+wire  signed [31:0] sext_ln124_3_fu_2448_p1;
+wire   [31:0] add_ln88_fu_2868_p2;
+wire  signed [31:0] grp_fu_3254_p3;
+wire  signed [31:0] sext_ln48_1_fu_2586_p1;
+(* use_dsp48 = "no" *) wire   [31:0] sub_ln52_1_fu_2612_p2;
+wire   [31:0] add_ln88_1_fu_3098_p2;
+wire   [7:0] trunc_ln557_2_fu_2690_p1;
+wire   [31:0] zext_ln69_1_fu_3224_p1;
+wire   [28:0] grp_fu_1462_p4;
+wire   [2:0] trunc_ln462_fu_1613_p1;
+wire   [5:0] shl_ln_fu_1617_p3;
+wire   [63:0] zext_ln462_fu_1625_p1;
+wire   [63:0] shl_ln462_fu_1629_p2;
+wire   [7:0] zext_ln557_fu_1672_p1;
+wire   [7:0] add_ln557_fu_1676_p2;
+wire   [5:0] or_ln558_fu_1687_p2;
+wire   [7:0] zext_ln558_fu_1693_p1;
+wire   [7:0] add_ln558_fu_1697_p2;
+wire   [5:0] or_ln559_fu_1708_p2;
+wire   [7:0] zext_ln559_fu_1713_p1;
+wire   [7:0] add_ln559_fu_1717_p2;
+wire   [5:0] or_ln560_fu_1728_p2;
+wire   [7:0] zext_ln560_fu_1733_p1;
+wire   [7:0] add_ln560_fu_1737_p2;
+wire   [5:0] or_ln561_fu_1748_p2;
+wire   [7:0] zext_ln561_fu_1753_p1;
+wire   [7:0] add_ln561_fu_1757_p2;
+wire   [5:0] or_ln562_fu_1768_p2;
+wire   [7:0] zext_ln562_fu_1773_p1;
+wire   [7:0] add_ln562_fu_1777_p2;
+wire   [5:0] or_ln563_fu_1788_p2;
+wire   [7:0] zext_ln563_fu_1793_p1;
+wire   [7:0] add_ln563_fu_1797_p2;
+wire   [5:0] or_ln564_fu_1808_p2;
+wire   [7:0] zext_ln564_fu_1813_p1;
+wire   [7:0] add_ln564_fu_1817_p2;
+wire   [6:0] shl_ln6_fu_1862_p3;
+wire   [7:0] add_ln424_fu_1874_p2;
+wire   [7:0] add_ln32_fu_1885_p2;
+wire   [7:0] add_ln32_1_fu_1896_p2;
+wire   [7:0] add_ln32_2_fu_1906_p2;
+wire   [7:0] add_ln32_3_fu_1916_p2;
+wire   [7:0] add_ln32_4_fu_1926_p2;
+wire   [7:0] add_ln32_5_fu_1936_p2;
+wire   [7:0] add_ln32_6_fu_1946_p2;
+wire   [63:0] r_7_i2_i_fu_1956_p9;
+wire   [7:0] zext_ln557_2_fu_2020_p1;
+wire   [7:0] add_ln557_1_fu_2024_p2;
+wire   [5:0] or_ln558_1_fu_2046_p2;
+wire   [7:0] zext_ln558_2_fu_2052_p1;
+wire   [7:0] add_ln558_1_fu_2056_p2;
+wire   [5:0] or_ln559_1_fu_2127_p2;
+wire   [7:0] zext_ln559_2_fu_2132_p1;
+wire   [7:0] add_ln559_1_fu_2136_p2;
+wire   [5:0] or_ln560_1_fu_2147_p2;
+wire   [7:0] zext_ln560_2_fu_2152_p1;
+wire   [7:0] add_ln560_1_fu_2156_p2;
+wire   [5:0] or_ln561_1_fu_2167_p2;
+wire   [7:0] zext_ln561_2_fu_2172_p1;
+wire   [7:0] add_ln561_1_fu_2176_p2;
+wire   [5:0] or_ln562_1_fu_2187_p2;
+wire   [7:0] zext_ln562_2_fu_2192_p1;
+wire   [7:0] add_ln562_1_fu_2196_p2;
+wire   [5:0] or_ln563_1_fu_2207_p2;
+wire   [7:0] zext_ln563_2_fu_2212_p1;
+wire   [7:0] add_ln563_1_fu_2216_p2;
+wire   [5:0] or_ln564_1_fu_2227_p2;
+wire   [7:0] zext_ln564_2_fu_2232_p1;
+wire   [7:0] add_ln564_1_fu_2236_p2;
+wire   [1:0] trunc_ln22_fu_2271_p1;
+wire   [10:0] tmp_3258_fu_2477_p3;
+wire   [11:0] zext_ln233_fu_2501_p1;
+wire   [11:0] add_ln233_fu_2505_p2;
+wire   [31:0] add_ln42_fu_2515_p2;
+wire  signed [24:0] trunc_ln11_fu_2521_p4;
+wire  signed [31:0] grp_fu_3235_p3;
+wire  signed [7:0] trunc_ln12_fu_2535_p4;
+wire  signed [8:0] sext_ln47_fu_2544_p1;
+wire   [8:0] sub_ln48_fu_2548_p2;
+wire   [0:0] tmp_fu_2554_p3;
+wire   [0:0] xor_ln48_fu_2562_p2;
+wire   [7:0] select_ln48_fu_2568_p3;
+wire  signed [7:0] a1_1_fu_2576_p2;
 wire  signed [31:0] grp_fu_3244_p3;
-wire  signed [31:0] sext_ln48_1_fu_2576_p1;
-(* use_dsp48 = "no" *) wire   [31:0] sub_ln52_1_fu_2602_p2;
-wire   [31:0] add_ln88_1_fu_3088_p2;
-wire   [7:0] trunc_ln548_2_fu_2680_p1;
-wire   [31:0] zext_ln69_1_fu_3214_p1;
-wire   [28:0] grp_fu_1451_p4;
-wire   [2:0] trunc_ln454_fu_1602_p1;
-wire   [5:0] shl_ln_fu_1606_p3;
-wire   [63:0] zext_ln454_fu_1614_p1;
-wire   [63:0] shl_ln454_fu_1618_p2;
-wire   [7:0] zext_ln548_fu_1661_p1;
-wire   [7:0] add_ln548_fu_1665_p2;
-wire   [5:0] or_ln549_fu_1676_p2;
-wire   [7:0] zext_ln549_fu_1682_p1;
-wire   [7:0] add_ln549_fu_1686_p2;
-wire   [5:0] or_ln550_fu_1697_p2;
-wire   [7:0] zext_ln550_fu_1702_p1;
-wire   [7:0] add_ln550_fu_1706_p2;
-wire   [5:0] or_ln551_fu_1717_p2;
-wire   [7:0] zext_ln551_fu_1722_p1;
-wire   [7:0] add_ln551_fu_1726_p2;
-wire   [5:0] or_ln552_fu_1737_p2;
-wire   [7:0] zext_ln552_fu_1742_p1;
-wire   [7:0] add_ln552_fu_1746_p2;
-wire   [5:0] or_ln553_fu_1757_p2;
-wire   [7:0] zext_ln553_fu_1762_p1;
-wire   [7:0] add_ln553_fu_1766_p2;
-wire   [5:0] or_ln554_fu_1777_p2;
-wire   [7:0] zext_ln554_fu_1782_p1;
-wire   [7:0] add_ln554_fu_1786_p2;
-wire   [5:0] or_ln555_fu_1797_p2;
-wire   [7:0] zext_ln555_fu_1802_p1;
-wire   [7:0] add_ln555_fu_1806_p2;
-wire   [6:0] shl_ln6_fu_1851_p3;
-wire   [7:0] add_ln421_fu_1863_p2;
-wire   [7:0] add_ln32_fu_1874_p2;
-wire   [7:0] add_ln32_1_fu_1885_p2;
-wire   [7:0] add_ln32_2_fu_1895_p2;
-wire   [7:0] add_ln32_3_fu_1905_p2;
-wire   [7:0] add_ln32_4_fu_1915_p2;
-wire   [7:0] add_ln32_5_fu_1925_p2;
-wire   [7:0] add_ln32_6_fu_1935_p2;
-wire   [63:0] r_7_i2_i_fu_1945_p9;
-wire   [7:0] zext_ln548_2_fu_2010_p1;
-wire   [7:0] add_ln548_1_fu_2014_p2;
-wire   [5:0] or_ln549_1_fu_2036_p2;
-wire   [7:0] zext_ln549_2_fu_2042_p1;
-wire   [7:0] add_ln549_1_fu_2046_p2;
-wire   [5:0] or_ln550_1_fu_2117_p2;
-wire   [7:0] zext_ln550_2_fu_2122_p1;
-wire   [7:0] add_ln550_1_fu_2126_p2;
-wire   [5:0] or_ln551_1_fu_2137_p2;
-wire   [7:0] zext_ln551_2_fu_2142_p1;
-wire   [7:0] add_ln551_1_fu_2146_p2;
-wire   [5:0] or_ln552_1_fu_2157_p2;
-wire   [7:0] zext_ln552_2_fu_2162_p1;
-wire   [7:0] add_ln552_1_fu_2166_p2;
-wire   [5:0] or_ln553_1_fu_2177_p2;
-wire   [7:0] zext_ln553_2_fu_2182_p1;
-wire   [7:0] add_ln553_1_fu_2186_p2;
-wire   [5:0] or_ln554_1_fu_2197_p2;
-wire   [7:0] zext_ln554_2_fu_2202_p1;
-wire   [7:0] add_ln554_1_fu_2206_p2;
-wire   [5:0] or_ln555_1_fu_2217_p2;
-wire   [7:0] zext_ln555_2_fu_2222_p1;
-wire   [7:0] add_ln555_1_fu_2226_p2;
-wire   [1:0] trunc_ln22_fu_2261_p1;
-wire   [10:0] tmp_3258_fu_2467_p3;
-wire   [11:0] zext_ln230_fu_2491_p1;
-wire   [11:0] add_ln230_fu_2495_p2;
-wire   [31:0] add_ln42_fu_2505_p2;
-wire  signed [24:0] trunc_ln11_fu_2511_p4;
-wire  signed [31:0] grp_fu_3225_p3;
-wire  signed [7:0] trunc_ln12_fu_2525_p4;
-wire  signed [8:0] sext_ln47_fu_2534_p1;
-wire   [8:0] sub_ln48_fu_2538_p2;
-wire   [0:0] tmp_fu_2544_p3;
-wire   [0:0] xor_ln48_fu_2552_p2;
-wire   [7:0] select_ln48_fu_2558_p3;
-wire  signed [7:0] a1_1_fu_2566_p2;
-wire  signed [31:0] grp_fu_3234_p3;
-(* use_dsp48 = "no" *) wire   [31:0] sub_ln52_fu_2581_p2;
-wire   [0:0] tmp_494_fu_2586_p3;
-wire   [31:0] select_ln52_fu_2594_p3;
-wire   [2:0] trunc_ln454_1_fu_2630_p1;
-wire   [5:0] shl_ln454_2_fu_2634_p3;
-wire   [63:0] zext_ln454_2_fu_2642_p1;
-wire   [63:0] shl_ln454_1_fu_2646_p2;
-wire   [4:0] or_ln549_2_fu_2697_p2;
-wire   [4:0] or_ln550_2_fu_2708_p2;
-wire   [4:0] or_ln551_2_fu_2718_p2;
-wire   [4:0] or_ln552_2_fu_2728_p2;
-wire   [4:0] or_ln553_2_fu_2738_p2;
-wire   [4:0] or_ln554_2_fu_2748_p2;
-wire   [4:0] or_ln555_2_fu_2758_p2;
-wire   [10:0] tmp_3259_fu_2815_p3;
-wire   [11:0] zext_ln88_fu_2839_p1;
-wire   [11:0] add_ln88_14_fu_2843_p2;
-wire  signed [31:0] sext_ln88_fu_2854_p1;
-wire   [10:0] tmp_3260_fu_2877_p3;
-wire   [11:0] zext_ln33_fu_2901_p1;
-wire   [11:0] add_ln33_fu_2905_p2;
-wire   [31:0] add_ln36_fu_2915_p2;
-wire  signed [8:0] trunc_ln13_fu_2921_p4;
-wire   [10:0] tmp_3261_fu_2947_p3;
-wire   [11:0] zext_ln304_fu_2971_p1;
-wire   [11:0] add_ln304_fu_2975_p2;
-wire   [0:0] tmp_495_fu_2985_p3;
-wire   [31:0] shl_ln305_fu_3001_p2;
-wire   [31:0] t_5_fu_2993_p3;
-wire   [31:0] and_ln305_fu_3007_p2;
-wire   [31:0] t_6_fu_3013_p2;
-wire   [10:0] tmp_3262_fu_3049_p3;
-wire   [11:0] zext_ln88_4_fu_3073_p1;
-wire   [11:0] add_ln88_15_fu_3077_p2;
-wire   [10:0] tmp_3263_fu_3107_p3;
-wire   [11:0] zext_ln253_fu_3137_p1;
-wire   [11:0] add_ln253_fu_3141_p2;
-wire   [10:0] zext_ln252_fu_3152_p1;
-wire   [0:0] icmp_ln69_2_fu_3174_p2;
-wire   [0:0] icmp_ln69_3_fu_3180_p2;
-wire   [0:0] icmp_ln69_1_fu_3168_p2;
-wire   [0:0] and_ln69_fu_3186_p2;
-wire   [0:0] or_ln69_fu_3192_p2;
-wire   [0:0] icmp_ln69_fu_3162_p2;
-wire   [0:0] or_ln69_1_fu_3198_p2;
-wire   [0:0] xor_ln69_fu_3204_p2;
-wire   [8:0] zext_ln69_fu_3210_p1;
-wire   [14:0] grp_fu_3225_p0;
-wire   [24:0] grp_fu_3225_p2;
-wire  signed [18:0] grp_fu_3234_p0;
-wire  signed [23:0] grp_fu_3244_p1;
+(* use_dsp48 = "no" *) wire   [31:0] sub_ln52_fu_2591_p2;
+wire   [0:0] tmp_494_fu_2596_p3;
+wire   [31:0] select_ln52_fu_2604_p3;
+wire   [2:0] trunc_ln462_1_fu_2640_p1;
+wire   [5:0] shl_ln462_2_fu_2644_p3;
+wire   [63:0] zext_ln462_2_fu_2652_p1;
+wire   [63:0] shl_ln462_1_fu_2656_p2;
+wire   [4:0] or_ln558_2_fu_2707_p2;
+wire   [4:0] or_ln559_2_fu_2718_p2;
+wire   [4:0] or_ln560_2_fu_2728_p2;
+wire   [4:0] or_ln561_2_fu_2738_p2;
+wire   [4:0] or_ln562_2_fu_2748_p2;
+wire   [4:0] or_ln563_2_fu_2758_p2;
+wire   [4:0] or_ln564_2_fu_2768_p2;
+wire   [10:0] tmp_3259_fu_2825_p3;
+wire   [11:0] zext_ln88_fu_2849_p1;
+wire   [11:0] add_ln88_14_fu_2853_p2;
+wire  signed [31:0] sext_ln88_fu_2864_p1;
+wire   [10:0] tmp_3260_fu_2887_p3;
+wire   [11:0] zext_ln33_fu_2911_p1;
+wire   [11:0] add_ln33_fu_2915_p2;
+wire   [31:0] add_ln36_fu_2925_p2;
+wire  signed [8:0] trunc_ln13_fu_2931_p4;
+wire   [10:0] tmp_3261_fu_2957_p3;
+wire   [11:0] zext_ln307_fu_2981_p1;
+wire   [11:0] add_ln307_fu_2985_p2;
+wire   [0:0] tmp_495_fu_2995_p3;
+wire   [31:0] shl_ln308_fu_3011_p2;
+wire   [31:0] t_5_fu_3003_p3;
+wire   [31:0] and_ln308_fu_3017_p2;
+wire   [31:0] t_6_fu_3023_p2;
+wire   [10:0] tmp_3262_fu_3059_p3;
+wire   [11:0] zext_ln88_4_fu_3083_p1;
+wire   [11:0] add_ln88_15_fu_3087_p2;
+wire   [10:0] tmp_3263_fu_3117_p3;
+wire   [11:0] zext_ln256_fu_3147_p1;
+wire   [11:0] add_ln256_fu_3151_p2;
+wire   [10:0] zext_ln255_fu_3162_p1;
+wire   [0:0] icmp_ln69_2_fu_3184_p2;
+wire   [0:0] icmp_ln69_3_fu_3190_p2;
+wire   [0:0] icmp_ln69_1_fu_3178_p2;
+wire   [0:0] and_ln69_fu_3196_p2;
+wire   [0:0] or_ln69_fu_3202_p2;
+wire   [0:0] icmp_ln69_fu_3172_p2;
+wire   [0:0] or_ln69_1_fu_3208_p2;
+wire   [0:0] xor_ln69_fu_3214_p2;
+wire   [8:0] zext_ln69_fu_3220_p1;
+wire   [14:0] grp_fu_3235_p0;
+wire   [24:0] grp_fu_3235_p2;
+wire  signed [18:0] grp_fu_3244_p0;
+wire  signed [23:0] grp_fu_3254_p1;
 reg   [194:0] ap_NS_fsm;
+wire    ap_block_pp0_stage1_subdone;
+wire    ap_block_pp0_stage2_subdone;
+reg    ap_idle_pp0;
+wire    ap_enable_pp0;
 
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 195'd1;
-#0 grp_pqcrystals_dilithium_9_fu_1248_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_17_fu_1260_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_10_fu_1267_ap_start_reg = 1'b0;
-#0 grp_keccak_absorb_2_fu_1278_ap_start_reg = 1'b0;
-#0 grp_KeccakF1600_StatePer_1_fu_1292_ap_start_reg = 1'b0;
-#0 grp_KeccakF1600_StatePer_fu_1297_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_21_fu_1302_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_20_fu_1314_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_5_fu_1321_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_fu_1338_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_23_fu_1352_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_19_fu_1364_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_11_fu_1372_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_13_fu_1380_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_4_fu_1397_ap_start_reg = 1'b0;
-#0 grp_keccak_absorb_3199_fu_1414_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_6_fu_1423_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_18_fu_1431_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_12_fu_1441_ap_start_reg = 1'b0;
+#0 ap_enable_reg_pp0_iter0 = 1'b0;
+#0 ap_enable_reg_pp0_iter1 = 1'b0;
+#0 grp_pqcrystals_dilithium_9_fu_1259_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_17_fu_1271_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_10_fu_1278_ap_start_reg = 1'b0;
+#0 grp_keccak_absorb_2_fu_1289_ap_start_reg = 1'b0;
+#0 grp_KeccakF1600_StatePer_1_fu_1303_ap_start_reg = 1'b0;
+#0 grp_KeccakF1600_StatePer_fu_1308_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_21_fu_1313_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_20_fu_1325_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_5_fu_1332_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_fu_1349_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_23_fu_1363_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_19_fu_1375_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_11_fu_1383_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_13_fu_1391_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_4_fu_1408_ap_start_reg = 1'b0;
+#0 grp_keccak_absorb_3199_fu_1425_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_6_fu_1434_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_18_fu_1442_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_12_fu_1452_ap_start_reg = 1'b0;
 end
 
 pqcrystals_dilithcud #(
@@ -1384,9 +1410,9 @@ mat_vec_coeffs_U(
     .address0(mat_vec_coeffs_address0),
     .ce0(mat_vec_coeffs_ce0),
     .we0(mat_vec_coeffs_we0),
-    .d0(grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_d0),
+    .d0(grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_d0),
     .q0(mat_vec_coeffs_q0),
-    .address1(grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_address1),
+    .address1(grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_address1),
     .ce1(mat_vec_coeffs_ce1),
     .q1(mat_vec_coeffs_q1)
 );
@@ -1420,7 +1446,7 @@ y_vec_coeffs_U(
     .address0(y_vec_coeffs_address0),
     .ce0(y_vec_coeffs_ce0),
     .we0(y_vec_coeffs_we0),
-    .d0(grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_d0),
+    .d0(grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_d0),
     .q0(y_vec_coeffs_q0)
 );
 
@@ -1512,10 +1538,10 @@ w0_vec_coeffs_U(
     .we0(w0_vec_coeffs_we0),
     .d0(w0_vec_coeffs_d0),
     .q0(w0_vec_coeffs_q0),
-    .address1(grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_address1),
+    .address1(grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_address1),
     .ce1(w0_vec_coeffs_ce1),
     .we1(w0_vec_coeffs_we1),
-    .d1(grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_d1),
+    .d1(grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_d1),
     .q1(w0_vec_coeffs_q1)
 );
 
@@ -1553,7 +1579,7 @@ cp_coeffs_U(
     .address1(cp_coeffs_address1),
     .ce1(cp_coeffs_ce1),
     .we1(cp_coeffs_we1),
-    .d1(cp_coeffs_d1),
+    .d1(grp_pqcrystals_dilithium_20_fu_1325_a_d1),
     .q1(cp_coeffs_q1)
 );
 
@@ -1576,447 +1602,444 @@ state_s_U(
     .q1(state_s_q1)
 );
 
-pqcrystals_dilithium_9 grp_pqcrystals_dilithium_9_fu_1248(
+pqcrystals_dilithium_9 grp_pqcrystals_dilithium_9_fu_1259(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_9_fu_1248_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_9_fu_1248_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_9_fu_1248_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_9_fu_1248_ap_ready),
-    .a_coeffs_address0(grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_address0),
-    .a_coeffs_ce0(grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_ce0),
-    .a_coeffs_we0(grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_we0),
-    .a_coeffs_d0(grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_d0),
-    .a_coeffs_offset(grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_offset),
-    .seed_address0(grp_pqcrystals_dilithium_9_fu_1248_seed_address0),
-    .seed_ce0(grp_pqcrystals_dilithium_9_fu_1248_seed_ce0),
+    .ap_start(grp_pqcrystals_dilithium_9_fu_1259_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_9_fu_1259_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_9_fu_1259_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_9_fu_1259_ap_ready),
+    .a_coeffs_address0(grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_address0),
+    .a_coeffs_ce0(grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_ce0),
+    .a_coeffs_we0(grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_we0),
+    .a_coeffs_d0(grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_d0),
+    .a_coeffs_offset(grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_offset),
+    .seed_address0(grp_pqcrystals_dilithium_9_fu_1259_seed_address0),
+    .seed_ce0(grp_pqcrystals_dilithium_9_fu_1259_seed_ce0),
     .seed_q0(seedbuf_q0),
-    .seed_address1(grp_pqcrystals_dilithium_9_fu_1248_seed_address1),
-    .seed_ce1(grp_pqcrystals_dilithium_9_fu_1248_seed_ce1),
+    .seed_address1(grp_pqcrystals_dilithium_9_fu_1259_seed_address1),
+    .seed_ce1(grp_pqcrystals_dilithium_9_fu_1259_seed_ce1),
     .seed_q1(seedbuf_q1),
-    .nonce(grp_pqcrystals_dilithium_9_fu_1248_nonce)
+    .nonce(grp_pqcrystals_dilithium_9_fu_1259_nonce)
 );
 
-pqcrystals_dilithium_17 grp_pqcrystals_dilithium_17_fu_1260(
+pqcrystals_dilithium_17 grp_pqcrystals_dilithium_17_fu_1271(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_17_fu_1260_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_17_fu_1260_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_17_fu_1260_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_17_fu_1260_ap_ready),
-    .c_coeffs_address0(grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_address0),
-    .c_coeffs_ce0(grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_ce0),
-    .c_coeffs_we0(grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_we0),
-    .c_coeffs_d0(grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_d0),
+    .ap_start(grp_pqcrystals_dilithium_17_fu_1271_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_17_fu_1271_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_17_fu_1271_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_17_fu_1271_ap_ready),
+    .c_coeffs_address0(grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_address0),
+    .c_coeffs_ce0(grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_ce0),
+    .c_coeffs_we0(grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_we0),
+    .c_coeffs_d0(grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_d0),
     .c_coeffs_q0(cp_coeffs_q0),
-    .c_coeffs_address1(grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_address1),
-    .c_coeffs_ce1(grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_ce1),
-    .c_coeffs_we1(grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_we1),
-    .c_coeffs_d1(grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_d1),
-    .c_coeffs_q1(cp_coeffs_q1),
-    .seed_address0(grp_pqcrystals_dilithium_17_fu_1260_seed_address0),
-    .seed_ce0(grp_pqcrystals_dilithium_17_fu_1260_seed_ce0),
+    .seed_address0(grp_pqcrystals_dilithium_17_fu_1271_seed_address0),
+    .seed_ce0(grp_pqcrystals_dilithium_17_fu_1271_seed_ce0),
     .seed_q0(sig_q0),
-    .seed_address1(grp_pqcrystals_dilithium_17_fu_1260_seed_address1),
-    .seed_ce1(grp_pqcrystals_dilithium_17_fu_1260_seed_ce1),
+    .seed_address1(grp_pqcrystals_dilithium_17_fu_1271_seed_address1),
+    .seed_ce1(grp_pqcrystals_dilithium_17_fu_1271_seed_ce1),
     .seed_q1(sig_q1)
 );
 
-pqcrystals_dilithium_10 grp_pqcrystals_dilithium_10_fu_1267(
+pqcrystals_dilithium_10 grp_pqcrystals_dilithium_10_fu_1278(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_10_fu_1267_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_10_fu_1267_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_10_fu_1267_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_10_fu_1267_ap_ready),
-    .a_coeffs_address0(grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_address0),
-    .a_coeffs_ce0(grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_ce0),
-    .a_coeffs_we0(grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_we0),
-    .a_coeffs_d0(grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_d0),
-    .a_coeffs_offset(i_0_i_reg_909),
-    .a_coeffs_offset1(j_0_i_reg_921),
-    .seed_address0(grp_pqcrystals_dilithium_10_fu_1267_seed_address0),
-    .seed_ce0(grp_pqcrystals_dilithium_10_fu_1267_seed_ce0),
+    .ap_start(grp_pqcrystals_dilithium_10_fu_1278_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_10_fu_1278_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_10_fu_1278_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_10_fu_1278_ap_ready),
+    .a_coeffs_address0(grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_address0),
+    .a_coeffs_ce0(grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_ce0),
+    .a_coeffs_we0(grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_we0),
+    .a_coeffs_d0(grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_d0),
+    .a_coeffs_offset(i_0_i_reg_920),
+    .a_coeffs_offset1(j_0_i_reg_932),
+    .seed_address0(grp_pqcrystals_dilithium_10_fu_1278_seed_address0),
+    .seed_ce0(grp_pqcrystals_dilithium_10_fu_1278_seed_ce0),
     .seed_q0(seedbuf_q0),
-    .seed_address1(grp_pqcrystals_dilithium_10_fu_1267_seed_address1),
-    .seed_ce1(grp_pqcrystals_dilithium_10_fu_1267_seed_ce1),
+    .seed_address1(grp_pqcrystals_dilithium_10_fu_1278_seed_address1),
+    .seed_ce1(grp_pqcrystals_dilithium_10_fu_1278_seed_ce1),
     .seed_q1(seedbuf_q1),
-    .nonce(add_ln_reg_3482)
+    .nonce(add_ln_reg_3497)
 );
 
-keccak_absorb_2 grp_keccak_absorb_2_fu_1278(
+keccak_absorb_2 grp_keccak_absorb_2_fu_1289(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_keccak_absorb_2_fu_1278_ap_start),
-    .ap_done(grp_keccak_absorb_2_fu_1278_ap_done),
-    .ap_idle(grp_keccak_absorb_2_fu_1278_ap_idle),
-    .ap_ready(grp_keccak_absorb_2_fu_1278_ap_ready),
-    .s_address0(grp_keccak_absorb_2_fu_1278_s_address0),
-    .s_ce0(grp_keccak_absorb_2_fu_1278_s_ce0),
-    .s_we0(grp_keccak_absorb_2_fu_1278_s_we0),
-    .s_d0(grp_keccak_absorb_2_fu_1278_s_d0),
+    .ap_start(grp_keccak_absorb_2_fu_1289_ap_start),
+    .ap_done(grp_keccak_absorb_2_fu_1289_ap_done),
+    .ap_idle(grp_keccak_absorb_2_fu_1289_ap_idle),
+    .ap_ready(grp_keccak_absorb_2_fu_1289_ap_ready),
+    .s_address0(grp_keccak_absorb_2_fu_1289_s_address0),
+    .s_ce0(grp_keccak_absorb_2_fu_1289_s_ce0),
+    .s_we0(grp_keccak_absorb_2_fu_1289_s_we0),
+    .s_d0(grp_keccak_absorb_2_fu_1289_s_d0),
     .s_q0(state_s_q0),
-    .s_address1(grp_keccak_absorb_2_fu_1278_s_address1),
-    .s_ce1(grp_keccak_absorb_2_fu_1278_s_ce1),
-    .s_we1(grp_keccak_absorb_2_fu_1278_s_we1),
-    .s_d1(grp_keccak_absorb_2_fu_1278_s_d1),
+    .s_address1(grp_keccak_absorb_2_fu_1289_s_address1),
+    .s_ce1(grp_keccak_absorb_2_fu_1289_s_ce1),
+    .s_we1(grp_keccak_absorb_2_fu_1289_s_we1),
+    .s_d1(grp_keccak_absorb_2_fu_1289_s_d1),
     .s_q1(state_s_q1),
     .pos_r(7'd48),
-    .m_address0(grp_keccak_absorb_2_fu_1278_m_address0),
-    .m_ce0(grp_keccak_absorb_2_fu_1278_m_ce0),
+    .m_address0(grp_keccak_absorb_2_fu_1289_m_address0),
+    .m_ce0(grp_keccak_absorb_2_fu_1289_m_ce0),
     .m_q0(sig_q0),
-    .m_address1(grp_keccak_absorb_2_fu_1278_m_address1),
-    .m_ce1(grp_keccak_absorb_2_fu_1278_m_ce1),
+    .m_address1(grp_keccak_absorb_2_fu_1289_m_address1),
+    .m_ce1(grp_keccak_absorb_2_fu_1289_m_ce1),
     .m_q1(sig_q1),
-    .m_offset(grp_keccak_absorb_2_fu_1278_m_offset),
-    .mlen(grp_keccak_absorb_2_fu_1278_mlen),
-    .ap_return(grp_keccak_absorb_2_fu_1278_ap_return)
+    .m_offset(grp_keccak_absorb_2_fu_1289_m_offset),
+    .mlen(grp_keccak_absorb_2_fu_1289_mlen),
+    .ap_return(grp_keccak_absorb_2_fu_1289_ap_return)
 );
 
-KeccakF1600_StatePer_1 grp_KeccakF1600_StatePer_1_fu_1292(
+KeccakF1600_StatePer_1 grp_KeccakF1600_StatePer_1_fu_1303(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_KeccakF1600_StatePer_1_fu_1292_ap_start),
-    .ap_done(grp_KeccakF1600_StatePer_1_fu_1292_ap_done),
-    .ap_idle(grp_KeccakF1600_StatePer_1_fu_1292_ap_idle),
-    .ap_ready(grp_KeccakF1600_StatePer_1_fu_1292_ap_ready),
-    .state_address0(grp_KeccakF1600_StatePer_1_fu_1292_state_address0),
-    .state_ce0(grp_KeccakF1600_StatePer_1_fu_1292_state_ce0),
-    .state_we0(grp_KeccakF1600_StatePer_1_fu_1292_state_we0),
-    .state_d0(grp_KeccakF1600_StatePer_1_fu_1292_state_d0),
+    .ap_start(grp_KeccakF1600_StatePer_1_fu_1303_ap_start),
+    .ap_done(grp_KeccakF1600_StatePer_1_fu_1303_ap_done),
+    .ap_idle(grp_KeccakF1600_StatePer_1_fu_1303_ap_idle),
+    .ap_ready(grp_KeccakF1600_StatePer_1_fu_1303_ap_ready),
+    .state_address0(grp_KeccakF1600_StatePer_1_fu_1303_state_address0),
+    .state_ce0(grp_KeccakF1600_StatePer_1_fu_1303_state_ce0),
+    .state_we0(grp_KeccakF1600_StatePer_1_fu_1303_state_we0),
+    .state_d0(grp_KeccakF1600_StatePer_1_fu_1303_state_d0),
     .state_q0(state_s_q0),
-    .state_address1(grp_KeccakF1600_StatePer_1_fu_1292_state_address1),
-    .state_ce1(grp_KeccakF1600_StatePer_1_fu_1292_state_ce1),
-    .state_we1(grp_KeccakF1600_StatePer_1_fu_1292_state_we1),
-    .state_d1(grp_KeccakF1600_StatePer_1_fu_1292_state_d1),
+    .state_address1(grp_KeccakF1600_StatePer_1_fu_1303_state_address1),
+    .state_ce1(grp_KeccakF1600_StatePer_1_fu_1303_state_ce1),
+    .state_we1(grp_KeccakF1600_StatePer_1_fu_1303_state_we1),
+    .state_d1(grp_KeccakF1600_StatePer_1_fu_1303_state_d1),
     .state_q1(state_s_q1)
 );
 
-KeccakF1600_StatePer grp_KeccakF1600_StatePer_fu_1297(
+KeccakF1600_StatePer grp_KeccakF1600_StatePer_fu_1308(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_KeccakF1600_StatePer_fu_1297_ap_start),
-    .ap_done(grp_KeccakF1600_StatePer_fu_1297_ap_done),
-    .ap_idle(grp_KeccakF1600_StatePer_fu_1297_ap_idle),
-    .ap_ready(grp_KeccakF1600_StatePer_fu_1297_ap_ready),
-    .state_0_address0(grp_KeccakF1600_StatePer_fu_1297_state_0_address0),
-    .state_0_ce0(grp_KeccakF1600_StatePer_fu_1297_state_0_ce0),
-    .state_0_we0(grp_KeccakF1600_StatePer_fu_1297_state_0_we0),
-    .state_0_d0(grp_KeccakF1600_StatePer_fu_1297_state_0_d0),
+    .ap_start(grp_KeccakF1600_StatePer_fu_1308_ap_start),
+    .ap_done(grp_KeccakF1600_StatePer_fu_1308_ap_done),
+    .ap_idle(grp_KeccakF1600_StatePer_fu_1308_ap_idle),
+    .ap_ready(grp_KeccakF1600_StatePer_fu_1308_ap_ready),
+    .state_0_address0(grp_KeccakF1600_StatePer_fu_1308_state_0_address0),
+    .state_0_ce0(grp_KeccakF1600_StatePer_fu_1308_state_0_ce0),
+    .state_0_we0(grp_KeccakF1600_StatePer_fu_1308_state_0_we0),
+    .state_0_d0(grp_KeccakF1600_StatePer_fu_1308_state_0_d0),
     .state_0_q0(state_0_s_q0),
-    .state_0_address1(grp_KeccakF1600_StatePer_fu_1297_state_0_address1),
-    .state_0_ce1(grp_KeccakF1600_StatePer_fu_1297_state_0_ce1),
-    .state_0_we1(grp_KeccakF1600_StatePer_fu_1297_state_0_we1),
-    .state_0_d1(grp_KeccakF1600_StatePer_fu_1297_state_0_d1),
+    .state_0_address1(grp_KeccakF1600_StatePer_fu_1308_state_0_address1),
+    .state_0_ce1(grp_KeccakF1600_StatePer_fu_1308_state_0_ce1),
+    .state_0_we1(grp_KeccakF1600_StatePer_fu_1308_state_0_we1),
+    .state_0_d1(grp_KeccakF1600_StatePer_fu_1308_state_0_d1),
     .state_0_q1(state_0_s_q1)
 );
 
-pqcrystals_dilithium_21 grp_pqcrystals_dilithium_21_fu_1302(
+pqcrystals_dilithium_21 grp_pqcrystals_dilithium_21_fu_1313(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_21_fu_1302_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_21_fu_1302_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_21_fu_1302_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_21_fu_1302_ap_ready),
-    .a_address0(grp_pqcrystals_dilithium_21_fu_1302_a_address0),
-    .a_ce0(grp_pqcrystals_dilithium_21_fu_1302_a_ce0),
-    .a_we0(grp_pqcrystals_dilithium_21_fu_1302_a_we0),
-    .a_d0(grp_pqcrystals_dilithium_21_fu_1302_a_d0),
-    .a_q0(grp_pqcrystals_dilithium_21_fu_1302_a_q0),
-    .a_address1(grp_pqcrystals_dilithium_21_fu_1302_a_address1),
-    .a_ce1(grp_pqcrystals_dilithium_21_fu_1302_a_ce1),
-    .a_we1(grp_pqcrystals_dilithium_21_fu_1302_a_we1),
-    .a_d1(grp_pqcrystals_dilithium_21_fu_1302_a_d1),
-    .a_q1(grp_pqcrystals_dilithium_21_fu_1302_a_q1),
-    .a_offset(grp_pqcrystals_dilithium_21_fu_1302_a_offset)
+    .ap_start(grp_pqcrystals_dilithium_21_fu_1313_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_21_fu_1313_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_21_fu_1313_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_21_fu_1313_ap_ready),
+    .a_address0(grp_pqcrystals_dilithium_21_fu_1313_a_address0),
+    .a_ce0(grp_pqcrystals_dilithium_21_fu_1313_a_ce0),
+    .a_we0(grp_pqcrystals_dilithium_21_fu_1313_a_we0),
+    .a_d0(grp_pqcrystals_dilithium_21_fu_1313_a_d0),
+    .a_q0(grp_pqcrystals_dilithium_21_fu_1313_a_q0),
+    .a_address1(grp_pqcrystals_dilithium_21_fu_1313_a_address1),
+    .a_ce1(grp_pqcrystals_dilithium_21_fu_1313_a_ce1),
+    .a_we1(grp_pqcrystals_dilithium_21_fu_1313_a_we1),
+    .a_d1(grp_pqcrystals_dilithium_21_fu_1313_a_d1),
+    .a_q1(grp_pqcrystals_dilithium_21_fu_1313_a_q1),
+    .a_offset(grp_pqcrystals_dilithium_21_fu_1313_a_offset)
 );
 
-pqcrystals_dilithium_20 grp_pqcrystals_dilithium_20_fu_1314(
+pqcrystals_dilithium_20 grp_pqcrystals_dilithium_20_fu_1325(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_20_fu_1314_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_20_fu_1314_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_20_fu_1314_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_20_fu_1314_ap_ready),
-    .a_address0(grp_pqcrystals_dilithium_20_fu_1314_a_address0),
-    .a_ce0(grp_pqcrystals_dilithium_20_fu_1314_a_ce0),
-    .a_we0(grp_pqcrystals_dilithium_20_fu_1314_a_we0),
-    .a_d0(grp_pqcrystals_dilithium_20_fu_1314_a_d0),
+    .ap_start(grp_pqcrystals_dilithium_20_fu_1325_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_20_fu_1325_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_20_fu_1325_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_20_fu_1325_ap_ready),
+    .a_address0(grp_pqcrystals_dilithium_20_fu_1325_a_address0),
+    .a_ce0(grp_pqcrystals_dilithium_20_fu_1325_a_ce0),
+    .a_we0(grp_pqcrystals_dilithium_20_fu_1325_a_we0),
+    .a_d0(grp_pqcrystals_dilithium_20_fu_1325_a_d0),
     .a_q0(cp_coeffs_q0),
-    .a_address1(grp_pqcrystals_dilithium_20_fu_1314_a_address1),
-    .a_ce1(grp_pqcrystals_dilithium_20_fu_1314_a_ce1),
-    .a_we1(grp_pqcrystals_dilithium_20_fu_1314_a_we1),
-    .a_d1(grp_pqcrystals_dilithium_20_fu_1314_a_d1),
+    .a_address1(grp_pqcrystals_dilithium_20_fu_1325_a_address1),
+    .a_ce1(grp_pqcrystals_dilithium_20_fu_1325_a_ce1),
+    .a_we1(grp_pqcrystals_dilithium_20_fu_1325_a_we1),
+    .a_d1(grp_pqcrystals_dilithium_20_fu_1325_a_d1),
     .a_q1(cp_coeffs_q1)
 );
 
-pqcrystals_dilithium_5 grp_pqcrystals_dilithium_5_fu_1321(
+pqcrystals_dilithium_5 grp_pqcrystals_dilithium_5_fu_1332(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_5_fu_1321_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_5_fu_1321_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_5_fu_1321_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_5_fu_1321_ap_ready),
-    .w_coeffs_address0(grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_address0),
-    .w_coeffs_ce0(grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_ce0),
-    .w_coeffs_we0(grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_we0),
-    .w_coeffs_d0(grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_d0),
+    .ap_start(grp_pqcrystals_dilithium_5_fu_1332_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_5_fu_1332_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_5_fu_1332_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_5_fu_1332_ap_ready),
+    .w_coeffs_address0(grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_address0),
+    .w_coeffs_ce0(grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_ce0),
+    .w_coeffs_we0(grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_we0),
+    .w_coeffs_d0(grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_d0),
     .w_coeffs_q0(w1_vec_coeffs_q0),
-    .w_coeffs_address1(grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_address1),
-    .w_coeffs_ce1(grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_ce1),
-    .w_coeffs_we1(grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_we1),
-    .w_coeffs_d1(grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_d1),
-    .w_coeffs_offset(grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_offset),
-    .u_vec_coeffs_address0(grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_address0),
-    .u_vec_coeffs_ce0(grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_ce0),
+    .w_coeffs_address1(grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_address1),
+    .w_coeffs_ce1(grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_ce1),
+    .w_coeffs_we1(grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_we1),
+    .w_coeffs_d1(grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_d1),
+    .w_coeffs_offset(grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_offset),
+    .u_vec_coeffs_address0(grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_address0),
+    .u_vec_coeffs_ce0(grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_ce0),
     .u_vec_coeffs_q0(mat_vec_coeffs_q0),
-    .u_vec_coeffs_address1(grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_address1),
-    .u_vec_coeffs_ce1(grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_ce1),
+    .u_vec_coeffs_address1(grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_address1),
+    .u_vec_coeffs_ce1(grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_ce1),
     .u_vec_coeffs_q1(mat_vec_coeffs_q1),
-    .u_vec_coeffs_offset(grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_offset),
-    .v_vec_coeffs_address0(grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_address0),
-    .v_vec_coeffs_ce0(grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_ce0),
+    .u_vec_coeffs_offset(grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_offset),
+    .v_vec_coeffs_address0(grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_address0),
+    .v_vec_coeffs_ce0(grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_ce0),
     .v_vec_coeffs_q0(z_vec_coeffs_q0),
-    .v_vec_coeffs_address1(grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_address1),
-    .v_vec_coeffs_ce1(grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_ce1),
+    .v_vec_coeffs_address1(grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_address1),
+    .v_vec_coeffs_ce1(grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_ce1),
     .v_vec_coeffs_q1(z_vec_coeffs_q1)
 );
 
-pqcrystals_dilithium grp_pqcrystals_dilithium_fu_1338(
+pqcrystals_dilithium grp_pqcrystals_dilithium_fu_1349(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_fu_1338_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_fu_1338_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_fu_1338_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_fu_1338_ap_ready),
-    .rho_address0(grp_pqcrystals_dilithium_fu_1338_rho_address0),
-    .rho_ce0(grp_pqcrystals_dilithium_fu_1338_rho_ce0),
-    .rho_we0(grp_pqcrystals_dilithium_fu_1338_rho_we0),
-    .rho_d0(grp_pqcrystals_dilithium_fu_1338_rho_d0),
-    .rho_address1(grp_pqcrystals_dilithium_fu_1338_rho_address1),
-    .rho_ce1(grp_pqcrystals_dilithium_fu_1338_rho_ce1),
-    .rho_we1(grp_pqcrystals_dilithium_fu_1338_rho_we1),
-    .rho_d1(grp_pqcrystals_dilithium_fu_1338_rho_d1),
-    .t0_vec_coeffs_address0(grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_address0),
-    .t0_vec_coeffs_ce0(grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_ce0),
-    .t0_vec_coeffs_we0(grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_we0),
-    .t0_vec_coeffs_d0(grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_d0),
-    .t0_vec_coeffs_address1(grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_address1),
-    .t0_vec_coeffs_ce1(grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_ce1),
-    .t0_vec_coeffs_we1(grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_we1),
-    .t0_vec_coeffs_d1(grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_d1),
-    .s1_vec_coeffs_address0(grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_address0),
-    .s1_vec_coeffs_ce0(grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_ce0),
-    .s1_vec_coeffs_we0(grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_we0),
-    .s1_vec_coeffs_d0(grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_d0),
-    .s1_vec_coeffs_address1(grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_address1),
-    .s1_vec_coeffs_ce1(grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_ce1),
-    .s1_vec_coeffs_we1(grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_we1),
-    .s1_vec_coeffs_d1(grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_d1),
-    .s2_vec_coeffs_address0(grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_address0),
-    .s2_vec_coeffs_ce0(grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_ce0),
-    .s2_vec_coeffs_we0(grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_we0),
-    .s2_vec_coeffs_d0(grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_d0),
-    .s2_vec_coeffs_address1(grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_address1),
-    .s2_vec_coeffs_ce1(grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_ce1),
-    .s2_vec_coeffs_we1(grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_we1),
-    .s2_vec_coeffs_d1(grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_d1),
-    .sk_address0(grp_pqcrystals_dilithium_fu_1338_sk_address0),
-    .sk_ce0(grp_pqcrystals_dilithium_fu_1338_sk_ce0),
+    .ap_start(grp_pqcrystals_dilithium_fu_1349_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_fu_1349_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_fu_1349_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_fu_1349_ap_ready),
+    .rho_address0(grp_pqcrystals_dilithium_fu_1349_rho_address0),
+    .rho_ce0(grp_pqcrystals_dilithium_fu_1349_rho_ce0),
+    .rho_we0(grp_pqcrystals_dilithium_fu_1349_rho_we0),
+    .rho_d0(grp_pqcrystals_dilithium_fu_1349_rho_d0),
+    .rho_address1(grp_pqcrystals_dilithium_fu_1349_rho_address1),
+    .rho_ce1(grp_pqcrystals_dilithium_fu_1349_rho_ce1),
+    .rho_we1(grp_pqcrystals_dilithium_fu_1349_rho_we1),
+    .rho_d1(grp_pqcrystals_dilithium_fu_1349_rho_d1),
+    .t0_vec_coeffs_address0(grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_address0),
+    .t0_vec_coeffs_ce0(grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_ce0),
+    .t0_vec_coeffs_we0(grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_we0),
+    .t0_vec_coeffs_d0(grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_d0),
+    .t0_vec_coeffs_address1(grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_address1),
+    .t0_vec_coeffs_ce1(grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_ce1),
+    .t0_vec_coeffs_we1(grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_we1),
+    .t0_vec_coeffs_d1(grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_d1),
+    .s1_vec_coeffs_address0(grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_address0),
+    .s1_vec_coeffs_ce0(grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_ce0),
+    .s1_vec_coeffs_we0(grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_we0),
+    .s1_vec_coeffs_d0(grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_d0),
+    .s1_vec_coeffs_address1(grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_address1),
+    .s1_vec_coeffs_ce1(grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_ce1),
+    .s1_vec_coeffs_we1(grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_we1),
+    .s1_vec_coeffs_d1(grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_d1),
+    .s2_vec_coeffs_address0(grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_address0),
+    .s2_vec_coeffs_ce0(grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_ce0),
+    .s2_vec_coeffs_we0(grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_we0),
+    .s2_vec_coeffs_d0(grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_d0),
+    .s2_vec_coeffs_address1(grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_address1),
+    .s2_vec_coeffs_ce1(grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_ce1),
+    .s2_vec_coeffs_we1(grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_we1),
+    .s2_vec_coeffs_d1(grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_d1),
+    .sk_address0(grp_pqcrystals_dilithium_fu_1349_sk_address0),
+    .sk_ce0(grp_pqcrystals_dilithium_fu_1349_sk_ce0),
     .sk_q0(sk_q0),
-    .sk_address1(grp_pqcrystals_dilithium_fu_1338_sk_address1),
-    .sk_ce1(grp_pqcrystals_dilithium_fu_1338_sk_ce1),
+    .sk_address1(grp_pqcrystals_dilithium_fu_1349_sk_address1),
+    .sk_ce1(grp_pqcrystals_dilithium_fu_1349_sk_ce1),
     .sk_q1(sk_q1)
 );
 
-pqcrystals_dilithium_23 grp_pqcrystals_dilithium_23_fu_1352(
+pqcrystals_dilithium_23 grp_pqcrystals_dilithium_23_fu_1363(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_23_fu_1352_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_23_fu_1352_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_23_fu_1352_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_23_fu_1352_ap_ready),
-    .a_address0(grp_pqcrystals_dilithium_23_fu_1352_a_address0),
-    .a_ce0(grp_pqcrystals_dilithium_23_fu_1352_a_ce0),
-    .a_we0(grp_pqcrystals_dilithium_23_fu_1352_a_we0),
-    .a_d0(grp_pqcrystals_dilithium_23_fu_1352_a_d0),
-    .a_q0(grp_pqcrystals_dilithium_23_fu_1352_a_q0),
-    .a_address1(grp_pqcrystals_dilithium_23_fu_1352_a_address1),
-    .a_ce1(grp_pqcrystals_dilithium_23_fu_1352_a_ce1),
-    .a_we1(grp_pqcrystals_dilithium_23_fu_1352_a_we1),
-    .a_d1(grp_pqcrystals_dilithium_23_fu_1352_a_d1),
-    .a_q1(grp_pqcrystals_dilithium_23_fu_1352_a_q1),
-    .a_offset(grp_pqcrystals_dilithium_23_fu_1352_a_offset)
+    .ap_start(grp_pqcrystals_dilithium_23_fu_1363_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_23_fu_1363_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_23_fu_1363_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_23_fu_1363_ap_ready),
+    .a_address0(grp_pqcrystals_dilithium_23_fu_1363_a_address0),
+    .a_ce0(grp_pqcrystals_dilithium_23_fu_1363_a_ce0),
+    .a_we0(grp_pqcrystals_dilithium_23_fu_1363_a_we0),
+    .a_d0(grp_pqcrystals_dilithium_23_fu_1363_a_d0),
+    .a_q0(grp_pqcrystals_dilithium_23_fu_1363_a_q0),
+    .a_address1(grp_pqcrystals_dilithium_23_fu_1363_a_address1),
+    .a_ce1(grp_pqcrystals_dilithium_23_fu_1363_a_ce1),
+    .a_we1(grp_pqcrystals_dilithium_23_fu_1363_a_we1),
+    .a_d1(grp_pqcrystals_dilithium_23_fu_1363_a_d1),
+    .a_q1(grp_pqcrystals_dilithium_23_fu_1363_a_q1),
+    .a_offset(grp_pqcrystals_dilithium_23_fu_1363_a_offset)
 );
 
-pqcrystals_dilithium_19 grp_pqcrystals_dilithium_19_fu_1364(
+pqcrystals_dilithium_19 grp_pqcrystals_dilithium_19_fu_1375(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_19_fu_1364_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_19_fu_1364_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_19_fu_1364_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_19_fu_1364_ap_ready),
-    .sig_address0(grp_pqcrystals_dilithium_19_fu_1364_sig_address0),
-    .sig_ce0(grp_pqcrystals_dilithium_19_fu_1364_sig_ce0),
-    .sig_we0(grp_pqcrystals_dilithium_19_fu_1364_sig_we0),
-    .sig_d0(grp_pqcrystals_dilithium_19_fu_1364_sig_d0),
-    .sig_address1(grp_pqcrystals_dilithium_19_fu_1364_sig_address1),
-    .sig_ce1(grp_pqcrystals_dilithium_19_fu_1364_sig_ce1),
-    .sig_we1(grp_pqcrystals_dilithium_19_fu_1364_sig_we1),
-    .sig_d1(grp_pqcrystals_dilithium_19_fu_1364_sig_d1),
-    .z_vec_coeffs_address0(grp_pqcrystals_dilithium_19_fu_1364_z_vec_coeffs_address0),
-    .z_vec_coeffs_ce0(grp_pqcrystals_dilithium_19_fu_1364_z_vec_coeffs_ce0),
+    .ap_start(grp_pqcrystals_dilithium_19_fu_1375_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_19_fu_1375_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_19_fu_1375_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_19_fu_1375_ap_ready),
+    .sig_address0(grp_pqcrystals_dilithium_19_fu_1375_sig_address0),
+    .sig_ce0(grp_pqcrystals_dilithium_19_fu_1375_sig_ce0),
+    .sig_we0(grp_pqcrystals_dilithium_19_fu_1375_sig_we0),
+    .sig_d0(grp_pqcrystals_dilithium_19_fu_1375_sig_d0),
+    .sig_address1(grp_pqcrystals_dilithium_19_fu_1375_sig_address1),
+    .sig_ce1(grp_pqcrystals_dilithium_19_fu_1375_sig_ce1),
+    .sig_we1(grp_pqcrystals_dilithium_19_fu_1375_sig_we1),
+    .sig_d1(grp_pqcrystals_dilithium_19_fu_1375_sig_d1),
+    .z_vec_coeffs_address0(grp_pqcrystals_dilithium_19_fu_1375_z_vec_coeffs_address0),
+    .z_vec_coeffs_ce0(grp_pqcrystals_dilithium_19_fu_1375_z_vec_coeffs_ce0),
     .z_vec_coeffs_q0(z_vec_coeffs_q0),
-    .h_vec_coeffs_address0(grp_pqcrystals_dilithium_19_fu_1364_h_vec_coeffs_address0),
-    .h_vec_coeffs_ce0(grp_pqcrystals_dilithium_19_fu_1364_h_vec_coeffs_ce0),
+    .h_vec_coeffs_address0(grp_pqcrystals_dilithium_19_fu_1375_h_vec_coeffs_address0),
+    .h_vec_coeffs_ce0(grp_pqcrystals_dilithium_19_fu_1375_h_vec_coeffs_ce0),
     .h_vec_coeffs_q0(h_vec_coeffs_q0)
 );
 
-pqcrystals_dilithium_11 grp_pqcrystals_dilithium_11_fu_1372(
+pqcrystals_dilithium_11 grp_pqcrystals_dilithium_11_fu_1383(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_11_fu_1372_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_11_fu_1372_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_11_fu_1372_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_11_fu_1372_ap_ready),
-    .c_coeffs_address0(grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_address0),
-    .c_coeffs_ce0(grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_ce0),
-    .c_coeffs_we0(grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_we0),
-    .c_coeffs_d0(grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_d0),
+    .ap_start(grp_pqcrystals_dilithium_11_fu_1383_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_11_fu_1383_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_11_fu_1383_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_11_fu_1383_ap_ready),
+    .c_coeffs_address0(grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_address0),
+    .c_coeffs_ce0(grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_ce0),
+    .c_coeffs_we0(grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_we0),
+    .c_coeffs_d0(grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_d0),
     .c_coeffs_q0(w0_vec_coeffs_q0),
-    .c_coeffs_address1(grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_address1),
-    .c_coeffs_ce1(grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_ce1),
-    .c_coeffs_we1(grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_we1),
-    .c_coeffs_d1(grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_d1),
+    .c_coeffs_address1(grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_address1),
+    .c_coeffs_ce1(grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_ce1),
+    .c_coeffs_we1(grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_we1),
+    .c_coeffs_d1(grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_d1),
     .c_coeffs_q1(w0_vec_coeffs_q1),
-    .c_coeffs_offset(i_0_i57_reg_1168),
-    .b_coeffs_address0(grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_address0),
-    .b_coeffs_ce0(grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_ce0),
+    .c_coeffs_offset(i_0_i57_reg_1179),
+    .b_coeffs_address0(grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_address0),
+    .b_coeffs_ce0(grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_ce0),
     .b_coeffs_q0(h_vec_coeffs_q0),
-    .b_coeffs_address1(grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_address1),
-    .b_coeffs_ce1(grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_ce1),
+    .b_coeffs_address1(grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_address1),
+    .b_coeffs_ce1(grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_ce1),
     .b_coeffs_q1(h_vec_coeffs_q1)
 );
 
-pqcrystals_dilithium_13 grp_pqcrystals_dilithium_13_fu_1380(
+pqcrystals_dilithium_13 grp_pqcrystals_dilithium_13_fu_1391(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_13_fu_1380_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_13_fu_1380_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_13_fu_1380_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_13_fu_1380_ap_ready),
-    .c_coeffs_address0(grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_address0),
-    .c_coeffs_ce0(grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_ce0),
-    .c_coeffs_we0(grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_we0),
-    .c_coeffs_d0(grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_d0),
-    .c_coeffs_address1(grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_address1),
-    .c_coeffs_ce1(grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_ce1),
-    .c_coeffs_we1(grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_we1),
-    .c_coeffs_d1(grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_d1),
-    .c_coeffs_offset(grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_offset),
-    .a_coeffs_address0(grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_address0),
-    .a_coeffs_ce0(grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_ce0),
+    .ap_start(grp_pqcrystals_dilithium_13_fu_1391_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_13_fu_1391_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_13_fu_1391_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_13_fu_1391_ap_ready),
+    .c_coeffs_address0(grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_address0),
+    .c_coeffs_ce0(grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_ce0),
+    .c_coeffs_we0(grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_we0),
+    .c_coeffs_d0(grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_d0),
+    .c_coeffs_address1(grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_address1),
+    .c_coeffs_ce1(grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_ce1),
+    .c_coeffs_we1(grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_we1),
+    .c_coeffs_d1(grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_d1),
+    .c_coeffs_offset(grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_offset),
+    .a_coeffs_address0(grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_address0),
+    .a_coeffs_ce0(grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_ce0),
     .a_coeffs_q0(cp_coeffs_q0),
-    .a_coeffs_address1(grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_address1),
-    .a_coeffs_ce1(grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_ce1),
+    .a_coeffs_address1(grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_address1),
+    .a_coeffs_ce1(grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_ce1),
     .a_coeffs_q1(cp_coeffs_q1),
-    .b_coeffs_address0(grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_address0),
-    .b_coeffs_ce0(grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_ce0),
-    .b_coeffs_q0(grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q0),
-    .b_coeffs_address1(grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_address1),
-    .b_coeffs_ce1(grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_ce1),
-    .b_coeffs_q1(grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q1),
-    .b_coeffs_offset(grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_offset)
+    .b_coeffs_address0(grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_address0),
+    .b_coeffs_ce0(grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_ce0),
+    .b_coeffs_q0(grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q0),
+    .b_coeffs_address1(grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_address1),
+    .b_coeffs_ce1(grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_ce1),
+    .b_coeffs_q1(grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q1),
+    .b_coeffs_offset(grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_offset)
 );
 
-pqcrystals_dilithium_4 grp_pqcrystals_dilithium_4_fu_1397(
+pqcrystals_dilithium_4 grp_pqcrystals_dilithium_4_fu_1408(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_4_fu_1397_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_4_fu_1397_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_4_fu_1397_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_4_fu_1397_ap_ready),
-    .r_address0(grp_pqcrystals_dilithium_4_fu_1397_r_address0),
-    .r_ce0(grp_pqcrystals_dilithium_4_fu_1397_r_ce0),
-    .r_we0(grp_pqcrystals_dilithium_4_fu_1397_r_we0),
-    .r_d0(grp_pqcrystals_dilithium_4_fu_1397_r_d0),
-    .r_address1(grp_pqcrystals_dilithium_4_fu_1397_r_address1),
-    .r_ce1(grp_pqcrystals_dilithium_4_fu_1397_r_ce1),
-    .r_we1(grp_pqcrystals_dilithium_4_fu_1397_r_we1),
-    .r_d1(grp_pqcrystals_dilithium_4_fu_1397_r_d1),
-    .r_offset(grp_pqcrystals_dilithium_4_fu_1397_r_offset),
-    .a_coeffs_address0(grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_address0),
-    .a_coeffs_ce0(grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_ce0),
+    .ap_start(grp_pqcrystals_dilithium_4_fu_1408_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_4_fu_1408_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_4_fu_1408_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_4_fu_1408_ap_ready),
+    .r_address0(grp_pqcrystals_dilithium_4_fu_1408_r_address0),
+    .r_ce0(grp_pqcrystals_dilithium_4_fu_1408_r_ce0),
+    .r_we0(grp_pqcrystals_dilithium_4_fu_1408_r_we0),
+    .r_d0(grp_pqcrystals_dilithium_4_fu_1408_r_d0),
+    .r_address1(grp_pqcrystals_dilithium_4_fu_1408_r_address1),
+    .r_ce1(grp_pqcrystals_dilithium_4_fu_1408_r_ce1),
+    .r_we1(grp_pqcrystals_dilithium_4_fu_1408_r_we1),
+    .r_d1(grp_pqcrystals_dilithium_4_fu_1408_r_d1),
+    .r_offset(grp_pqcrystals_dilithium_4_fu_1408_r_offset),
+    .a_coeffs_address0(grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_address0),
+    .a_coeffs_ce0(grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_ce0),
     .a_coeffs_q0(w1_vec_coeffs_q0),
-    .a_coeffs_address1(grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_address1),
-    .a_coeffs_ce1(grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_ce1),
+    .a_coeffs_address1(grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_address1),
+    .a_coeffs_ce1(grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_ce1),
     .a_coeffs_q1(w1_vec_coeffs_q1),
-    .a_coeffs_offset(grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_offset)
+    .a_coeffs_offset(grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_offset)
 );
 
-keccak_absorb_3199 grp_keccak_absorb_3199_fu_1414(
+keccak_absorb_3199 grp_keccak_absorb_3199_fu_1425(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_keccak_absorb_3199_fu_1414_ap_start),
-    .ap_done(grp_keccak_absorb_3199_fu_1414_ap_done),
-    .ap_idle(grp_keccak_absorb_3199_fu_1414_ap_idle),
-    .ap_ready(grp_keccak_absorb_3199_fu_1414_ap_ready),
-    .s_address0(grp_keccak_absorb_3199_fu_1414_s_address0),
-    .s_ce0(grp_keccak_absorb_3199_fu_1414_s_ce0),
-    .s_we0(grp_keccak_absorb_3199_fu_1414_s_we0),
-    .s_d0(grp_keccak_absorb_3199_fu_1414_s_d0),
+    .ap_start(grp_keccak_absorb_3199_fu_1425_ap_start),
+    .ap_done(grp_keccak_absorb_3199_fu_1425_ap_done),
+    .ap_idle(grp_keccak_absorb_3199_fu_1425_ap_idle),
+    .ap_ready(grp_keccak_absorb_3199_fu_1425_ap_ready),
+    .s_address0(grp_keccak_absorb_3199_fu_1425_s_address0),
+    .s_ce0(grp_keccak_absorb_3199_fu_1425_s_ce0),
     .s_q0(state_s_q0),
-    .m_address0(grp_keccak_absorb_3199_fu_1414_m_address0),
-    .m_ce0(grp_keccak_absorb_3199_fu_1414_m_ce0),
+    .s_address1(grp_keccak_absorb_3199_fu_1425_s_address1),
+    .s_ce1(grp_keccak_absorb_3199_fu_1425_s_ce1),
+    .s_we1(grp_keccak_absorb_3199_fu_1425_s_we1),
+    .s_d1(grp_keccak_absorb_3199_fu_1425_s_d1),
+    .m_address0(grp_keccak_absorb_3199_fu_1425_m_address0),
+    .m_ce0(grp_keccak_absorb_3199_fu_1425_m_ce0),
     .m_q0(seedbuf_q0),
-    .m_address1(grp_keccak_absorb_3199_fu_1414_m_address1),
-    .m_ce1(grp_keccak_absorb_3199_fu_1414_m_ce1),
+    .m_address1(grp_keccak_absorb_3199_fu_1425_m_address1),
+    .m_ce1(grp_keccak_absorb_3199_fu_1425_m_ce1),
     .m_q1(seedbuf_q1),
-    .m_offset(grp_keccak_absorb_3199_fu_1414_m_offset)
+    .m_offset(grp_keccak_absorb_3199_fu_1425_m_offset)
 );
 
-pqcrystals_dilithium_6 grp_pqcrystals_dilithium_6_fu_1423(
+pqcrystals_dilithium_6 grp_pqcrystals_dilithium_6_fu_1434(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_6_fu_1423_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_6_fu_1423_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_6_fu_1423_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_6_fu_1423_ap_ready),
-    .v_vec_coeffs_address0(grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_address0),
-    .v_vec_coeffs_ce0(grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_ce0),
-    .v_vec_coeffs_q0(grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_q0),
-    .bound(grp_pqcrystals_dilithium_6_fu_1423_bound),
-    .ap_return(grp_pqcrystals_dilithium_6_fu_1423_ap_return)
+    .ap_start(grp_pqcrystals_dilithium_6_fu_1434_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_6_fu_1434_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_6_fu_1434_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_6_fu_1434_ap_ready),
+    .v_vec_coeffs_address0(grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_address0),
+    .v_vec_coeffs_ce0(grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_ce0),
+    .v_vec_coeffs_q0(grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_q0),
+    .bound(grp_pqcrystals_dilithium_6_fu_1434_bound),
+    .ap_return(grp_pqcrystals_dilithium_6_fu_1434_ap_return)
 );
 
-pqcrystals_dilithium_18 grp_pqcrystals_dilithium_18_fu_1431(
+pqcrystals_dilithium_18 grp_pqcrystals_dilithium_18_fu_1442(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_18_fu_1431_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_18_fu_1431_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_18_fu_1431_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_18_fu_1431_ap_ready),
-    .a_coeffs_address0(grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_address0),
-    .a_coeffs_ce0(grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_ce0),
-    .a_coeffs_we0(grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_we0),
-    .a_coeffs_d0(grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_d0),
-    .a_coeffs_q0(grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_q0),
-    .a_coeffs_offset(grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_offset)
+    .ap_start(grp_pqcrystals_dilithium_18_fu_1442_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_18_fu_1442_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_18_fu_1442_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_18_fu_1442_ap_ready),
+    .a_coeffs_address0(grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_address0),
+    .a_coeffs_ce0(grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_ce0),
+    .a_coeffs_we0(grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_we0),
+    .a_coeffs_d0(grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_d0),
+    .a_coeffs_q0(grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_q0),
+    .a_coeffs_offset(grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_offset)
 );
 
-pqcrystals_dilithium_12 grp_pqcrystals_dilithium_12_fu_1441(
+pqcrystals_dilithium_12 grp_pqcrystals_dilithium_12_fu_1452(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_12_fu_1441_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_12_fu_1441_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_12_fu_1441_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_12_fu_1441_ap_ready),
-    .a_coeffs_address0(grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_address0),
-    .a_coeffs_ce0(grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_ce0),
-    .a_coeffs_we0(grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_we0),
-    .a_coeffs_d0(grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_d0),
-    .a_coeffs_q0(grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_q0),
-    .a_coeffs_offset(grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_offset)
+    .ap_start(grp_pqcrystals_dilithium_12_fu_1452_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_12_fu_1452_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_12_fu_1452_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_12_fu_1452_ap_ready),
+    .a_coeffs_address0(grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_address0),
+    .a_coeffs_ce0(grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_ce0),
+    .a_coeffs_we0(grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_we0),
+    .a_coeffs_d0(grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_d0),
+    .a_coeffs_q0(grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_q0),
+    .a_coeffs_offset(grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_offset)
 );
 
 crypto_sign_mac_mAem #(
@@ -2027,10 +2050,10 @@ crypto_sign_mac_mAem #(
     .din2_WIDTH( 25 ),
     .dout_WIDTH( 32 ))
 crypto_sign_mac_mAem_U118(
-    .din0(grp_fu_3225_p0),
-    .din1(trunc_ln11_fu_2511_p4),
-    .din2(grp_fu_3225_p2),
-    .dout(grp_fu_3225_p3)
+    .din0(grp_fu_3235_p0),
+    .din1(trunc_ln11_fu_2521_p4),
+    .din2(grp_fu_3235_p2),
+    .dout(grp_fu_3235_p3)
 );
 
 crypto_sign_mac_mBew #(
@@ -2041,10 +2064,10 @@ crypto_sign_mac_mBew #(
     .din2_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
 crypto_sign_mac_mBew_U119(
-    .din0(grp_fu_3234_p0),
-    .din1(a1_1_fu_2566_p2),
+    .din0(grp_fu_3244_p0),
+    .din1(a1_1_fu_2576_p2),
     .din2(w1_vec_coeffs_q0),
-    .dout(grp_fu_3234_p3)
+    .dout(grp_fu_3244_p3)
 );
 
 crypto_sign_mac_mibs #(
@@ -2055,10 +2078,10 @@ crypto_sign_mac_mibs #(
     .din2_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
 crypto_sign_mac_mibs_U120(
-    .din0(trunc_ln13_fu_2921_p4),
-    .din1(grp_fu_3244_p1),
+    .din0(trunc_ln13_fu_2931_p4),
+    .din1(grp_fu_3254_p1),
     .din2(z_vec_coeffs_q0),
-    .dout(grp_fu_3244_p3)
+    .dout(grp_fu_3254_p3)
 );
 
 always @ (posedge ap_clk) begin
@@ -2071,907 +2094,946 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_KeccakF1600_StatePer_1_fu_1292_ap_start_reg <= 1'b0;
+        ap_enable_reg_pp0_iter0 <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state108) | (1'b1 == ap_CS_fsm_state11))) begin
-            grp_KeccakF1600_StatePer_1_fu_1292_ap_start_reg <= 1'b1;
-        end else if ((grp_KeccakF1600_StatePer_1_fu_1292_ap_ready == 1'b1)) begin
-            grp_KeccakF1600_StatePer_1_fu_1292_ap_start_reg <= 1'b0;
+        if (((1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_condition_pp0_exit_iter0_state19) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+            ap_enable_reg_pp0_iter0 <= 1'b0;
+        end else if (((icmp_ln364_1_fu_1828_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state18))) begin
+            ap_enable_reg_pp0_iter0 <= 1'b1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_KeccakF1600_StatePer_fu_1297_ap_start_reg <= 1'b0;
+        ap_enable_reg_pp0_iter1 <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state25)) begin
-            grp_KeccakF1600_StatePer_fu_1297_ap_start_reg <= 1'b1;
-        end else if ((grp_KeccakF1600_StatePer_fu_1297_ap_ready == 1'b1)) begin
-            grp_KeccakF1600_StatePer_fu_1297_ap_start_reg <= 1'b0;
+        if ((((1'b0 == ap_block_pp0_stage3_subdone) & (1'b1 == ap_CS_fsm_pp0_stage3)) | ((1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
+            ap_enable_reg_pp0_iter1 <= ap_enable_reg_pp0_iter0;
+        end else if (((icmp_ln364_1_fu_1828_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state18))) begin
+            ap_enable_reg_pp0_iter1 <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_keccak_absorb_2_fu_1278_ap_start_reg <= 1'b0;
+        grp_KeccakF1600_StatePer_1_fu_1303_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state5))) begin
-            grp_keccak_absorb_2_fu_1278_ap_start_reg <= 1'b1;
-        end else if ((grp_keccak_absorb_2_fu_1278_ap_ready == 1'b1)) begin
-            grp_keccak_absorb_2_fu_1278_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state109) | (1'b1 == ap_CS_fsm_state11))) begin
+            grp_KeccakF1600_StatePer_1_fu_1303_ap_start_reg <= 1'b1;
+        end else if ((grp_KeccakF1600_StatePer_1_fu_1303_ap_ready == 1'b1)) begin
+            grp_KeccakF1600_StatePer_1_fu_1303_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_keccak_absorb_3199_fu_1414_ap_start_reg <= 1'b0;
+        grp_KeccakF1600_StatePer_fu_1308_ap_start_reg <= 1'b0;
     end else begin
-        if ((((icmp_ln364_2_fu_2608_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state100)) | ((icmp_ln364_fu_1580_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3)))) begin
-            grp_keccak_absorb_3199_fu_1414_ap_start_reg <= 1'b1;
-        end else if ((grp_keccak_absorb_3199_fu_1414_ap_ready == 1'b1)) begin
-            grp_keccak_absorb_3199_fu_1414_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state26)) begin
+            grp_KeccakF1600_StatePer_fu_1308_ap_start_reg <= 1'b1;
+        end else if ((grp_KeccakF1600_StatePer_fu_1308_ap_ready == 1'b1)) begin
+            grp_KeccakF1600_StatePer_fu_1308_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_10_fu_1267_ap_start_reg <= 1'b0;
+        grp_keccak_absorb_2_fu_1289_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln21_fu_2249_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state33))) begin
-            grp_pqcrystals_dilithium_10_fu_1267_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_10_fu_1267_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_10_fu_1267_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state5))) begin
+            grp_keccak_absorb_2_fu_1289_ap_start_reg <= 1'b1;
+        end else if ((grp_keccak_absorb_2_fu_1289_ap_ready == 1'b1)) begin
+            grp_keccak_absorb_2_fu_1289_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_11_fu_1372_ap_start_reg <= 1'b0;
+        grp_keccak_absorb_3199_fu_1425_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln256_fu_3025_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state146))) begin
-            grp_pqcrystals_dilithium_11_fu_1372_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_11_fu_1372_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_11_fu_1372_ap_start_reg <= 1'b0;
+        if ((((icmp_ln364_2_fu_2618_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state101)) | ((icmp_ln364_fu_1591_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3)))) begin
+            grp_keccak_absorb_3199_fu_1425_ap_start_reg <= 1'b1;
+        end else if ((grp_keccak_absorb_3199_fu_1425_ap_ready == 1'b1)) begin
+            grp_keccak_absorb_3199_fu_1425_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_12_fu_1441_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_10_fu_1278_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state178) | (1'b1 == ap_CS_fsm_state176) | (1'b1 == ap_CS_fsm_state174) | (1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state153) | (1'b1 == ap_CS_fsm_state151) | (1'b1 == ap_CS_fsm_state149) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state68) | (1'b1 == ap_CS_fsm_state66) | ((icmp_ln256_fu_3025_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state146)))) begin
-            grp_pqcrystals_dilithium_12_fu_1441_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_12_fu_1441_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_12_fu_1441_ap_start_reg <= 1'b0;
+        if (((icmp_ln21_fu_2259_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state34))) begin
+            grp_pqcrystals_dilithium_10_fu_1278_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_10_fu_1278_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_10_fu_1278_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_13_fu_1380_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_11_fu_1383_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132) | ((grp_pqcrystals_dilithium_6_fu_1423_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1423_ap_return == 1'd0) & (1'b1 == ap_CS_fsm_state156)) | ((icmp_ln160_fu_2935_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state128)) | ((icmp_ln116_fu_2768_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state118)))) begin
-            grp_pqcrystals_dilithium_13_fu_1380_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_13_fu_1380_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_13_fu_1380_ap_start_reg <= 1'b0;
+        if (((icmp_ln260_fu_3035_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state147))) begin
+            grp_pqcrystals_dilithium_11_fu_1383_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_11_fu_1383_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_11_fu_1383_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_17_fu_1260_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_12_fu_1452_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln546_2_fu_2664_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state110))) begin
-            grp_pqcrystals_dilithium_17_fu_1260_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_17_fu_1260_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_17_fu_1260_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state179) | (1'b1 == ap_CS_fsm_state177) | (1'b1 == ap_CS_fsm_state175) | (1'b1 == ap_CS_fsm_state173) | (1'b1 == ap_CS_fsm_state154) | (1'b1 == ap_CS_fsm_state152) | (1'b1 == ap_CS_fsm_state150) | (1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state67) | ((icmp_ln260_fu_3035_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state147)))) begin
+            grp_pqcrystals_dilithium_12_fu_1452_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_12_fu_1452_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_12_fu_1452_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_18_fu_1431_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_13_fu_1391_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state190) | (1'b1 == ap_CS_fsm_state188) | (1'b1 == ap_CS_fsm_state186) | (1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state82) | ((icmp_ln238_fu_3037_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state182)))) begin
-            grp_pqcrystals_dilithium_18_fu_1431_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_18_fu_1431_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_18_fu_1431_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | ((grp_pqcrystals_dilithium_6_fu_1434_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1434_ap_return == 1'd0) & (1'b1 == ap_CS_fsm_state157)) | ((icmp_ln162_fu_2945_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state129)) | ((icmp_ln118_fu_2778_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state119)))) begin
+            grp_pqcrystals_dilithium_13_fu_1391_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_13_fu_1391_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_13_fu_1391_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_19_fu_1364_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_17_fu_1271_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln399_fu_3095_p2 == 1'd1) & (icmp_ln160_reg_3779 == 1'd1) & (tmp_21_reg_3821 == 1'd0) & (tmp_12_reg_3817 == 1'd0) & (icmp_ln172_fu_3119_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state192))) begin
-            grp_pqcrystals_dilithium_19_fu_1364_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_19_fu_1364_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_19_fu_1364_ap_start_reg <= 1'b0;
+        if (((icmp_ln555_2_fu_2674_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state111))) begin
+            grp_pqcrystals_dilithium_17_fu_1271_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_17_fu_1271_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_17_fu_1271_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_20_fu_1314_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_18_fu_1442_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state116)) begin
-            grp_pqcrystals_dilithium_20_fu_1314_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_20_fu_1314_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_20_fu_1314_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state191) | (1'b1 == ap_CS_fsm_state189) | (1'b1 == ap_CS_fsm_state187) | (1'b1 == ap_CS_fsm_state89) | (1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state83) | ((icmp_ln242_fu_3047_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state183)))) begin
+            grp_pqcrystals_dilithium_18_fu_1442_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_18_fu_1442_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_18_fu_1442_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_21_fu_1302_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_19_fu_1375_ap_start_reg <= 1'b0;
     end else begin
-        if ((((icmp_ln102_1_fu_2443_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state57)) | ((icmp_ln286_1_fu_2300_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state39)) | ((icmp_ln286_fu_2288_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state37)) | ((icmp_ln102_fu_2276_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state35)))) begin
-            grp_pqcrystals_dilithium_21_fu_1302_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_21_fu_1302_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_21_fu_1302_ap_start_reg <= 1'b0;
+        if (((icmp_ln406_fu_3105_p2 == 1'd1) & (icmp_ln162_reg_3794 == 1'd1) & (tmp_21_reg_3836 == 1'd0) & (tmp_12_reg_3832 == 1'd0) & (icmp_ln172_fu_3129_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state193))) begin
+            grp_pqcrystals_dilithium_19_fu_1375_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_19_fu_1375_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_19_fu_1375_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_23_fu_1352_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_20_fu_1325_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76) | (1'b1 == ap_CS_fsm_state74) | ((icmp_ln109_fu_2786_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state120)))) begin
-            grp_pqcrystals_dilithium_23_fu_1352_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_23_fu_1352_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_23_fu_1352_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state117)) begin
+            grp_pqcrystals_dilithium_20_fu_1325_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_20_fu_1325_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_20_fu_1325_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_4_fu_1397_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_21_fu_1313_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | ((icmp_ln378_fu_2455_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state90)))) begin
-            grp_pqcrystals_dilithium_4_fu_1397_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_4_fu_1397_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_4_fu_1397_ap_start_reg <= 1'b0;
+        if ((((icmp_ln104_1_fu_2453_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state58)) | ((icmp_ln290_1_fu_2310_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state40)) | ((icmp_ln290_fu_2298_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state38)) | ((icmp_ln104_fu_2286_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state36)))) begin
+            grp_pqcrystals_dilithium_21_fu_1313_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_21_fu_1313_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_21_fu_1313_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_5_fu_1321_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_23_fu_1363_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60) | ((icmp_ln102_1_fu_2443_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state57)))) begin
-            grp_pqcrystals_dilithium_5_fu_1321_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_5_fu_1321_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_5_fu_1321_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state145) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75) | ((icmp_ln111_fu_2796_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state121)))) begin
+            grp_pqcrystals_dilithium_23_fu_1363_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_23_fu_1363_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_23_fu_1363_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_6_fu_1423_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_4_fu_1408_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state180) | (1'b1 == ap_CS_fsm_state155))) begin
-            grp_pqcrystals_dilithium_6_fu_1423_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_6_fu_1423_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_6_fu_1423_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state99) | (1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | ((icmp_ln385_fu_2465_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state91)))) begin
+            grp_pqcrystals_dilithium_4_fu_1408_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_4_fu_1408_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_4_fu_1408_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_9_fu_1248_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_5_fu_1332_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state41))) begin
-            grp_pqcrystals_dilithium_9_fu_1248_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_9_fu_1248_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_9_fu_1248_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | ((icmp_ln104_1_fu_2453_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state58)))) begin
+            grp_pqcrystals_dilithium_5_fu_1332_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_5_fu_1332_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_5_fu_1332_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_fu_1338_ap_start_reg <= 1'b0;
+        grp_pqcrystals_dilithium_6_fu_1434_ap_start_reg <= 1'b0;
+    end else begin
+        if (((1'b1 == ap_CS_fsm_state181) | (1'b1 == ap_CS_fsm_state156))) begin
+            grp_pqcrystals_dilithium_6_fu_1434_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_6_fu_1434_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_6_fu_1434_ap_start_reg <= 1'b0;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (ap_rst == 1'b1) begin
+        grp_pqcrystals_dilithium_9_fu_1259_ap_start_reg <= 1'b0;
+    end else begin
+        if (((1'b1 == ap_CS_fsm_state48) | (1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state42))) begin
+            grp_pqcrystals_dilithium_9_fu_1259_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_9_fu_1259_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_9_fu_1259_ap_start_reg <= 1'b0;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (ap_rst == 1'b1) begin
+        grp_pqcrystals_dilithium_fu_1349_ap_start_reg <= 1'b0;
     end else begin
         if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_pqcrystals_dilithium_fu_1338_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_fu_1338_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_fu_1338_ap_start_reg <= 1'b0;
+            grp_pqcrystals_dilithium_fu_1349_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_fu_1349_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_fu_1349_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln124_3_reg_3611 == 1'd1) & (1'b1 == ap_CS_fsm_state56))) begin
-        i_0_i12_reg_1024 <= 3'd0;
-    end else if (((1'b1 == ap_CS_fsm_state58) & (grp_pqcrystals_dilithium_21_fu_1302_ap_done == 1'b1))) begin
-        i_0_i12_reg_1024 <= i_12_reg_3618;
+    if (((icmp_ln124_3_reg_3626 == 1'd1) & (1'b1 == ap_CS_fsm_state57))) begin
+        i_0_i12_reg_1035 <= 3'd0;
+    end else if (((1'b1 == ap_CS_fsm_state59) & (grp_pqcrystals_dilithium_21_fu_1313_ap_done == 1'b1))) begin
+        i_0_i12_reg_1035 <= i_13_reg_3633;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln229_fu_2479_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state91))) begin
-        i_0_i17_reg_1036 <= i_13_reg_3626;
-    end else if (((1'b1 == ap_CS_fsm_state89) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-        i_0_i17_reg_1036 <= 3'd0;
+    if (((icmp_ln232_fu_2489_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state92))) begin
+        i_0_i17_reg_1047 <= i_14_reg_3641;
+    end else if (((1'b1 == ap_CS_fsm_state90) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
+        i_0_i17_reg_1047 <= 3'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln20_fu_2237_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state32))) begin
-        i_0_i3_reg_933 <= 3'd0;
-    end else if (((1'b1 == ap_CS_fsm_state36) & (grp_pqcrystals_dilithium_21_fu_1302_ap_done == 1'b1))) begin
-        i_0_i3_reg_933 <= i_9_reg_3490;
+    if (((icmp_ln20_fu_2247_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state33))) begin
+        i_0_i3_reg_944 <= 3'd0;
+    end else if (((1'b1 == ap_CS_fsm_state37) & (grp_pqcrystals_dilithium_21_fu_1313_ap_done == 1'b1))) begin
+        i_0_i3_reg_944 <= i_10_reg_3505;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state119) & (grp_pqcrystals_dilithium_13_fu_1380_ap_done == 1'b1))) begin
-        i_0_i41_reg_1080 <= i_16_reg_3698;
-    end else if (((1'b1 == ap_CS_fsm_state117) & (grp_pqcrystals_dilithium_20_fu_1314_ap_done == 1'b1))) begin
-        i_0_i41_reg_1080 <= 3'd0;
+    if (((1'b1 == ap_CS_fsm_state120) & (grp_pqcrystals_dilithium_13_fu_1391_ap_done == 1'b1))) begin
+        i_0_i41_reg_1091 <= i_17_reg_3713;
+    end else if (((1'b1 == ap_CS_fsm_state118) & (grp_pqcrystals_dilithium_20_fu_1325_ap_done == 1'b1))) begin
+        i_0_i41_reg_1091 <= 3'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln116_fu_2768_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state118))) begin
-        i_0_i43_reg_1091 <= 3'd0;
-    end else if (((1'b1 == ap_CS_fsm_state121) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-        i_0_i43_reg_1091 <= i_17_reg_3712;
+    if (((icmp_ln118_fu_2778_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state119))) begin
+        i_0_i43_reg_1102 <= 3'd0;
+    end else if (((1'b1 == ap_CS_fsm_state122) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+        i_0_i43_reg_1102 <= i_18_reg_3727;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln109_fu_2786_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state120))) begin
-        i_0_i45_reg_1102 <= 3'd0;
-    end else if (((icmp_ln87_1_fu_2827_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state123))) begin
-        i_0_i45_reg_1102 <= i_18_reg_3725;
+    if (((icmp_ln111_fu_2796_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state121))) begin
+        i_0_i45_reg_1113 <= 3'd0;
+    end else if (((icmp_ln87_fu_2837_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state124))) begin
+        i_0_i45_reg_1113 <= i_19_reg_3740;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln87_fu_2803_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state122))) begin
-        i_0_i51_reg_1124 <= 3'd0;
-    end else if (((icmp_ln32_fu_2889_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state126))) begin
-        i_0_i51_reg_1124 <= i_19_reg_3756;
+    if (((icmp_ln89_fu_2813_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state123))) begin
+        i_0_i51_reg_1135 <= 3'd0;
+    end else if (((icmp_ln32_fu_2899_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state127))) begin
+        i_0_i51_reg_1135 <= i_20_reg_3771;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state147) & (grp_pqcrystals_dilithium_11_fu_1372_ap_done == 1'b1))) begin
-        i_0_i57_reg_1168 <= i_24_reg_3812;
-    end else if (((1'b1 == ap_CS_fsm_state145) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-        i_0_i57_reg_1168 <= 3'd0;
+    if (((1'b1 == ap_CS_fsm_state148) & (grp_pqcrystals_dilithium_11_fu_1383_ap_done == 1'b1))) begin
+        i_0_i57_reg_1179 <= i_25_reg_3827;
+    end else if (((1'b1 == ap_CS_fsm_state146) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+        i_0_i57_reg_1179 <= 3'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_pqcrystals_dilithium_6_fu_1423_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1423_ap_return == 1'd0) & (1'b1 == ap_CS_fsm_state181))) begin
-        i_0_i59_reg_1180 <= 3'd0;
-    end else if (((icmp_ln87_2_fu_3061_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state183))) begin
-        i_0_i59_reg_1180 <= i_25_reg_3828;
+    if (((grp_pqcrystals_dilithium_6_fu_1434_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1434_ap_return == 1'd0) & (1'b1 == ap_CS_fsm_state182))) begin
+        i_0_i59_reg_1191 <= 3'd0;
+    end else if (((icmp_ln87_1_fu_3071_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state184))) begin
+        i_0_i59_reg_1191 <= i_26_reg_3843;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln102_fu_2276_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state35))) begin
-        i_0_i5_reg_945 <= 3'd0;
-    end else if (((1'b1 == ap_CS_fsm_state38) & (grp_pqcrystals_dilithium_21_fu_1302_ap_done == 1'b1))) begin
-        i_0_i5_reg_945 <= i_10_reg_3498;
+    if (((icmp_ln104_fu_2286_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state36))) begin
+        i_0_i5_reg_956 <= 3'd0;
+    end else if (((1'b1 == ap_CS_fsm_state39) & (grp_pqcrystals_dilithium_21_fu_1313_ap_done == 1'b1))) begin
+        i_0_i5_reg_956 <= i_11_reg_3513;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln286_fu_2288_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state37))) begin
-        i_0_i7_reg_957 <= 3'd0;
-    end else if (((1'b1 == ap_CS_fsm_state40) & (grp_pqcrystals_dilithium_21_fu_1302_ap_done == 1'b1))) begin
-        i_0_i7_reg_957 <= i_11_reg_3506;
+    if (((icmp_ln290_fu_2298_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state38))) begin
+        i_0_i7_reg_968 <= 3'd0;
+    end else if (((1'b1 == ap_CS_fsm_state41) & (grp_pqcrystals_dilithium_21_fu_1313_ap_done == 1'b1))) begin
+        i_0_i7_reg_968 <= i_12_reg_3521;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln55_fu_2865_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state125))) begin
-        i_0_i85_reg_1146 <= 3'd0;
-    end else if (((icmp_ln302_fu_2959_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state129))) begin
-        i_0_i85_reg_1146 <= i_21_reg_3783;
+    if (((icmp_ln57_fu_2875_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state126))) begin
+        i_0_i83_reg_1157 <= 3'd0;
+    end else if (((icmp_ln305_fu_2969_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state130))) begin
+        i_0_i83_reg_1157 <= i_22_reg_3798;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln252_fu_3125_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state193))) begin
-        i_0_i87_reg_1202 <= i_27_reg_3859;
-    end else if (((1'b1 == ap_CS_fsm_state191) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-        i_0_i87_reg_1202 <= 3'd0;
+    if (((icmp_ln255_fu_3135_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state194))) begin
+        i_0_i85_reg_1213 <= i_28_reg_3874;
+    end else if (((1'b1 == ap_CS_fsm_state192) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
+        i_0_i85_reg_1213 <= 3'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state92)) begin
-        i_0_i_i18_reg_1047 <= i_15_reg_3639;
-    end else if (((icmp_ln378_fu_2455_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state90))) begin
-        i_0_i_i18_reg_1047 <= 9'd0;
+    if ((1'b1 == ap_CS_fsm_state93)) begin
+        i_0_i_i18_reg_1058 <= i_16_reg_3654;
+    end else if (((icmp_ln385_fu_2465_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state91))) begin
+        i_0_i_i18_reg_1058 <= 9'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln364_2_fu_2608_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state100))) begin
-        i_0_i_i21_reg_1058 <= i_14_fu_2614_p2;
-    end else if (((1'b1 == ap_CS_fsm_state99) & (grp_pqcrystals_dilithium_4_fu_1397_ap_done == 1'b1))) begin
-        i_0_i_i21_reg_1058 <= 5'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state124)) begin
-        i_0_i_i46_reg_1113 <= i_20_reg_3738;
-    end else if (((icmp_ln87_fu_2803_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state122))) begin
-        i_0_i_i46_reg_1113 <= 9'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state127)) begin
-        i_0_i_i52_reg_1135 <= i_22_reg_3769;
-    end else if (((icmp_ln55_fu_2865_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state125))) begin
-        i_0_i_i52_reg_1135 <= 9'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state184)) begin
-        i_0_i_i60_reg_1191 <= i_26_reg_3841;
-    end else if (((icmp_ln238_fu_3037_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state182))) begin
-        i_0_i_i60_reg_1191 <= 9'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln307_fu_3019_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state130))) begin
-        i_0_i_i86_reg_1157 <= i_23_reg_3796;
-    end else if (((icmp_ln160_fu_2935_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state128))) begin
-        i_0_i_i86_reg_1157 <= 9'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state194)) begin
-        i_0_i_i88_reg_1225 <= i_28_reg_3875;
-    end else if (((icmp_ln160_reg_3779 == 1'd1) & (icmp_ln399_fu_3095_p2 == 1'd0) & (tmp_21_reg_3821 == 1'd0) & (tmp_12_reg_3817 == 1'd0) & (1'b1 == ap_CS_fsm_state192))) begin
-        i_0_i_i88_reg_1225 <= 9'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln546_fu_1636_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state13))) begin
-        i_0_i_i_i_reg_875 <= 5'd0;
-    end else if (((icmp_ln364_1_fu_1817_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state18))) begin
-        i_0_i_i_i_reg_875 <= i_6_fu_1823_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln364_fu_1580_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
-        i_0_i_i_reg_852 <= i_5_fu_1586_p2;
-    end else if (((grp_pqcrystals_dilithium_fu_1338_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
-        i_0_i_i_reg_852 <= 5'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln546_1_fu_1985_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state27))) begin
-        i_0_i_reg_909 <= 3'd0;
-    end else if (((icmp_ln21_fu_2249_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state33))) begin
-        i_0_i_reg_909 <= i_7_reg_3469;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln364_1_fu_1817_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state18))) begin
-        i_3_i1_reg_886 <= 4'd0;
-    end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        i_3_i1_reg_886 <= add_ln420_reg_3310;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state31)) begin
-        i_3_i3_reg_897 <= add_ln546_1_reg_3416;
-    end else if (((1'b1 == ap_CS_fsm_state26) & (grp_KeccakF1600_StatePer_fu_1297_ap_done == 1'b1))) begin
-        i_3_i3_reg_897 <= 3'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state114)) begin
-        i_3_i47_reg_1069 <= add_ln546_2_reg_3670;
-    end else if (((1'b1 == ap_CS_fsm_state109) & (grp_KeccakF1600_StatePer_1_fu_1292_ap_done == 1'b1))) begin
-        i_3_i47_reg_1069 <= 3'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state17)) begin
-        i_3_i_reg_863 <= add_ln546_reg_3279;
-    end else if (((1'b1 == ap_CS_fsm_state12) & (grp_KeccakF1600_StatePer_1_fu_1292_ap_done == 1'b1))) begin
-        i_3_i_reg_863 <= 3'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln20_fu_2237_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state32))) begin
-        j_0_i_reg_921 <= 3'd0;
-    end else if (((1'b1 == ap_CS_fsm_state34) & (grp_pqcrystals_dilithium_10_fu_1267_ap_done == 1'b1))) begin
-        j_0_i_reg_921 <= j_reg_3477;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln252_fu_3125_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state193))) begin
-        n_reg_1213 <= s_fu_3156_p2;
-    end else if (((1'b1 == ap_CS_fsm_state191) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-        n_reg_1213 <= 11'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln286_1_fu_2300_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state39))) begin
-        nonce_assign_reg_969 <= 16'd0;
-    end else if (((1'b1 == ap_CS_fsm_state192) & ((icmp_ln160_reg_3779 == 1'd0) | ((tmp_12_reg_3817 == 1'd1) | ((tmp_21_reg_3821 == 1'd1) | ((icmp_ln399_fu_3095_p2 == 1'd1) & (icmp_ln172_fu_3119_p2 == 1'd1))))))) begin
-        nonce_assign_reg_969 <= nonce_reg_3511;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln124_reg_3554 == 1'd1) & (1'b1 == ap_CS_fsm_state50))) begin
-        phi_ln124_1_reg_991 <= 8'd0;
-    end else if (((icmp_ln124_1_reg_3573 == 1'd0) & (1'b1 == ap_CS_fsm_state52))) begin
-        phi_ln124_1_reg_991 <= add_ln124_1_reg_3558;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln124_1_reg_3573 == 1'd1) & (1'b1 == ap_CS_fsm_state52))) begin
-        phi_ln124_2_reg_1002 <= 8'd0;
-    end else if (((icmp_ln124_2_reg_3592 == 1'd0) & (1'b1 == ap_CS_fsm_state54))) begin
-        phi_ln124_2_reg_1002 <= add_ln124_2_reg_3577;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln124_2_reg_3592 == 1'd1) & (1'b1 == ap_CS_fsm_state54))) begin
-        phi_ln124_3_reg_1013 <= 8'd0;
-    end else if (((icmp_ln124_3_reg_3611 == 1'd0) & (1'b1 == ap_CS_fsm_state56))) begin
-        phi_ln124_3_reg_1013 <= add_ln124_3_reg_3596;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln124_reg_3554 == 1'd0) & (1'b1 == ap_CS_fsm_state50))) begin
-        phi_ln124_reg_980 <= add_ln124_reg_3539;
-    end else if (((grp_pqcrystals_dilithium_9_fu_1248_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state48))) begin
-        phi_ln124_reg_980 <= 8'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state194)) begin
-        s_0_i_i_reg_1236 <= s_1_fu_3219_p2;
-    end else if (((icmp_ln160_reg_3779 == 1'd1) & (icmp_ln399_fu_3095_p2 == 1'd0) & (tmp_21_reg_3821 == 1'd0) & (tmp_12_reg_3817 == 1'd0) & (1'b1 == ap_CS_fsm_state192))) begin
-        s_0_i_i_reg_1236 <= 9'd0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state51)) begin
-        add_ln124_1_reg_3558 <= add_ln124_1_fu_2365_p2;
-        icmp_ln124_1_reg_3573 <= icmp_ln124_1_fu_2380_p2;
-        tmp_s_reg_3563[7 : 0] <= tmp_s_fu_2371_p3[7 : 0];
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state53)) begin
-        add_ln124_2_reg_3577 <= add_ln124_2_fu_2391_p2;
-        icmp_ln124_2_reg_3592 <= icmp_ln124_2_fu_2406_p2;
-        tmp_3256_reg_3582[7 : 0] <= tmp_3256_fu_2397_p3[7 : 0];
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state55)) begin
-        add_ln124_3_reg_3596 <= add_ln124_3_fu_2417_p2;
-        icmp_ln124_3_reg_3611 <= icmp_ln124_3_fu_2432_p2;
-        tmp_3257_reg_3601[7 : 0] <= tmp_3257_fu_2423_p3[7 : 0];
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state49)) begin
-        add_ln124_reg_3539 <= add_ln124_fu_2343_p2;
-        icmp_ln124_reg_3554 <= icmp_ln124_fu_2354_p2;
-        zext_ln124_reg_3544[7 : 0] <= zext_ln124_fu_2349_p1[7 : 0];
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state19)) begin
-        add_ln420_reg_3310 <= add_ln420_fu_1845_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
-        add_ln546_1_reg_3416 <= add_ln546_1_fu_1991_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state110)) begin
-        add_ln546_2_reg_3670 <= add_ln546_2_fu_2670_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state13)) begin
-        add_ln546_reg_3279 <= add_ln546_fu_1642_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((icmp_ln21_fu_2249_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state33))) begin
-        add_ln_reg_3482[2 : 0] <= add_ln_fu_2265_p4[2 : 0];
-add_ln_reg_3482[9 : 8] <= add_ln_fu_2265_p4[9 : 8];
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state37)) begin
-        i_10_reg_3498 <= i_10_fu_2294_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        i_11_reg_3506 <= i_11_fu_2306_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state57)) begin
-        i_12_reg_3618 <= i_12_fu_2449_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state90)) begin
-        i_13_reg_3626 <= i_13_fu_2461_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state91)) begin
-        i_15_reg_3639 <= i_15_fu_2485_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state118)) begin
-        i_16_reg_3698 <= i_16_fu_2774_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state120)) begin
-        i_17_reg_3712 <= i_17_fu_2792_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state122)) begin
-        i_18_reg_3725 <= i_18_fu_2809_p2;
+    if (((icmp_ln364_2_fu_2618_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state101))) begin
+        i_0_i_i21_reg_1069 <= i_15_fu_2624_p2;
+    end else if (((1'b1 == ap_CS_fsm_state100) & (grp_pqcrystals_dilithium_4_fu_1408_ap_done == 1'b1))) begin
+        i_0_i_i21_reg_1069 <= 5'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state125)) begin
-        i_19_reg_3756 <= i_19_fu_2871_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state123)) begin
-        i_20_reg_3738 <= i_20_fu_2833_p2;
+        i_0_i_i46_reg_1124 <= i_21_reg_3753;
+    end else if (((icmp_ln89_fu_2813_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state123))) begin
+        i_0_i_i46_reg_1124 <= 9'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state128)) begin
-        i_21_reg_3783 <= i_21_fu_2941_p2;
-        icmp_ln160_reg_3779 <= icmp_ln160_fu_2935_p2;
+        i_0_i_i52_reg_1146 <= i_23_reg_3784;
+    end else if (((icmp_ln57_fu_2875_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state126))) begin
+        i_0_i_i52_reg_1146 <= 9'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state126)) begin
-        i_22_reg_3769 <= i_22_fu_2895_p2;
+    if ((1'b1 == ap_CS_fsm_state185)) begin
+        i_0_i_i60_reg_1202 <= i_27_reg_3856;
+    end else if (((icmp_ln242_fu_3047_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state183))) begin
+        i_0_i_i60_reg_1202 <= 9'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state129)) begin
-        i_23_reg_3796 <= i_23_fu_2965_p2;
+    if (((icmp_ln310_fu_3029_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state131))) begin
+        i_0_i_i84_reg_1168 <= i_24_reg_3811;
+    end else if (((icmp_ln162_fu_2945_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state129))) begin
+        i_0_i_i84_reg_1168 <= 9'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state146)) begin
-        i_24_reg_3812 <= i_24_fu_3031_p2;
+    if ((1'b1 == ap_CS_fsm_state195)) begin
+        i_0_i_i86_reg_1236 <= i_29_reg_3890;
+    end else if (((icmp_ln162_reg_3794 == 1'd1) & (icmp_ln406_fu_3105_p2 == 1'd0) & (tmp_21_reg_3836 == 1'd0) & (tmp_12_reg_3832 == 1'd0) & (1'b1 == ap_CS_fsm_state193))) begin
+        i_0_i_i86_reg_1236 <= 9'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state182)) begin
-        i_25_reg_3828 <= i_25_fu_3043_p2;
+    if (((icmp_ln555_fu_1647_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state13))) begin
+        i_0_i_i_i_reg_886 <= 5'd0;
+    end else if (((icmp_ln364_1_fu_1828_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state18))) begin
+        i_0_i_i_i_reg_886 <= i_7_fu_1834_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state183)) begin
-        i_26_reg_3841 <= i_26_fu_3067_p2;
+    if (((icmp_ln364_fu_1591_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
+        i_0_i_i_reg_863 <= i_6_fu_1597_p2;
+    end else if (((grp_pqcrystals_dilithium_fu_1349_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+        i_0_i_i_reg_863 <= 5'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln160_reg_3779 == 1'd1) & (tmp_21_reg_3821 == 1'd0) & (tmp_12_reg_3817 == 1'd0) & (1'b1 == ap_CS_fsm_state192))) begin
-        i_27_reg_3859 <= i_27_fu_3101_p2;
+    if (((icmp_ln555_1_fu_1995_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state28))) begin
+        i_0_i_reg_920 <= 3'd0;
+    end else if (((icmp_ln21_fu_2259_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state34))) begin
+        i_0_i_reg_920 <= i_9_reg_3484;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state193)) begin
-        i_28_reg_3875 <= i_28_fu_3131_p2;
+    if (((icmp_ln364_1_fu_1828_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state18))) begin
+        i_3_i1_reg_897 <= 4'd0;
+    end else if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln422_reg_3318 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        i_3_i1_reg_897 <= add_ln422_reg_3322;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state32)) begin
-        i_7_reg_3469 <= i_7_fu_2243_p2;
+        i_3_i3_reg_908 <= add_ln555_1_reg_3431;
+    end else if (((1'b1 == ap_CS_fsm_state27) & (grp_KeccakF1600_StatePer_fu_1308_ap_done == 1'b1))) begin
+        i_3_i3_reg_908 <= 3'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state35)) begin
-        i_9_reg_3490 <= i_9_fu_2282_p2;
+    if ((1'b1 == ap_CS_fsm_state115)) begin
+        i_3_i46_reg_1080 <= add_ln555_2_reg_3685;
+    end else if (((1'b1 == ap_CS_fsm_state110) & (grp_KeccakF1600_StatePer_1_fu_1303_ap_done == 1'b1))) begin
+        i_3_i46_reg_1080 <= 3'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state33)) begin
-        j_reg_3477 <= j_fu_2255_p2;
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        i_3_i_reg_874 <= add_ln555_reg_3289;
+    end else if (((1'b1 == ap_CS_fsm_state12) & (grp_KeccakF1600_StatePer_1_fu_1303_ap_done == 1'b1))) begin
+        i_3_i_reg_874 <= 3'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state41)) begin
-        nonce_reg_3511 <= nonce_fu_2312_p2;
-        shl_ln49_reg_3516[15 : 2] <= shl_ln49_fu_2318_p2[15 : 2];
+    if (((icmp_ln20_fu_2247_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state33))) begin
+        j_0_i_reg_932 <= 3'd0;
+    end else if (((1'b1 == ap_CS_fsm_state35) & (grp_pqcrystals_dilithium_10_fu_1278_ap_done == 1'b1))) begin
+        j_0_i_reg_932 <= j_reg_3492;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state45)) begin
-        or_ln49_1_reg_3529[15 : 2] <= or_ln49_1_fu_2331_p2[15 : 2];
+    if (((icmp_ln255_fu_3135_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state194))) begin
+        n_reg_1224 <= s_fu_3166_p2;
+    end else if (((1'b1 == ap_CS_fsm_state192) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
+        n_reg_1224 <= 11'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state47)) begin
-        or_ln49_2_reg_3534[15 : 2] <= or_ln49_2_fu_2337_p2[15 : 2];
+    if (((icmp_ln290_1_fu_2310_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state40))) begin
+        nonce_assign_reg_980 <= 16'd0;
+    end else if (((1'b1 == ap_CS_fsm_state193) & ((icmp_ln162_reg_3794 == 1'd0) | ((tmp_12_reg_3832 == 1'd1) | ((tmp_21_reg_3836 == 1'd1) | ((icmp_ln406_fu_3105_p2 == 1'd1) & (icmp_ln172_fu_3129_p2 == 1'd1))))))) begin
+        nonce_assign_reg_980 <= nonce_reg_3526;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state43)) begin
-        or_ln49_reg_3524[15 : 2] <= or_ln49_fu_2325_p2[15 : 2];
+    if (((icmp_ln124_reg_3569 == 1'd1) & (1'b1 == ap_CS_fsm_state51))) begin
+        phi_ln124_1_reg_1002 <= 8'd0;
+    end else if (((icmp_ln124_1_reg_3588 == 1'd0) & (1'b1 == ap_CS_fsm_state53))) begin
+        phi_ln124_1_reg_1002 <= add_ln124_1_reg_3573;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((grp_keccak_absorb_2_fu_1278_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state103)) | ((grp_keccak_absorb_2_fu_1278_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6)))) begin
-        reg_1540 <= grp_keccak_absorb_2_fu_1278_ap_return;
+    if (((icmp_ln124_1_reg_3588 == 1'd1) & (1'b1 == ap_CS_fsm_state53))) begin
+        phi_ln124_2_reg_1013 <= 8'd0;
+    end else if (((icmp_ln124_2_reg_3607 == 1'd0) & (1'b1 == ap_CS_fsm_state55))) begin
+        phi_ln124_2_reg_1013 <= add_ln124_2_reg_3592;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state111) | (1'b1 == ap_CS_fsm_state14))) begin
-        reg_1544 <= {{state_s_q0[23:16]}};
-        reg_1550 <= {{state_s_q0[31:24]}};
-        reg_1556 <= {{state_s_q0[39:32]}};
-        reg_1562 <= {{state_s_q0[47:40]}};
-        reg_1568 <= {{state_s_q0[55:48]}};
-        reg_1574 <= {{state_s_q0[63:56]}};
+    if (((icmp_ln124_2_reg_3607 == 1'd1) & (1'b1 == ap_CS_fsm_state55))) begin
+        phi_ln124_3_reg_1024 <= 8'd0;
+    end else if (((icmp_ln124_3_reg_3626 == 1'd0) & (1'b1 == ap_CS_fsm_state57))) begin
+        phi_ln124_3_reg_1024 <= add_ln124_3_reg_3611;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state20)) begin
-        seedbuf_load_1_reg_3358 <= seedbuf_q1;
-        seedbuf_load_reg_3353 <= seedbuf_q0;
+    if (((icmp_ln124_reg_3569 == 1'd0) & (1'b1 == ap_CS_fsm_state51))) begin
+        phi_ln124_reg_991 <= add_ln124_reg_3554;
+    end else if (((1'b1 == ap_CS_fsm_state49) & (grp_pqcrystals_dilithium_9_fu_1259_ap_done == 1'b1))) begin
+        phi_ln124_reg_991 <= 8'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        seedbuf_load_2_reg_3373 <= seedbuf_q0;
-        seedbuf_load_3_reg_3378 <= seedbuf_q1;
+    if ((1'b1 == ap_CS_fsm_state195)) begin
+        s_0_i_i_reg_1247 <= s_1_fu_3229_p2;
+    end else if (((icmp_ln162_reg_3794 == 1'd1) & (icmp_ln406_fu_3105_p2 == 1'd0) & (tmp_21_reg_3836 == 1'd0) & (tmp_12_reg_3832 == 1'd0) & (1'b1 == ap_CS_fsm_state193))) begin
+        s_0_i_i_reg_1247 <= 9'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
-        seedbuf_load_4_reg_3393 <= seedbuf_q0;
-        seedbuf_load_5_reg_3398 <= seedbuf_q1;
+    if ((1'b1 == ap_CS_fsm_state52)) begin
+        add_ln124_1_reg_3573 <= add_ln124_1_fu_2375_p2;
+        icmp_ln124_1_reg_3588 <= icmp_ln124_1_fu_2390_p2;
+        tmp_s_reg_3578[7 : 0] <= tmp_s_fu_2381_p3[7 : 0];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state54)) begin
+        add_ln124_2_reg_3592 <= add_ln124_2_fu_2401_p2;
+        icmp_ln124_2_reg_3607 <= icmp_ln124_2_fu_2416_p2;
+        tmp_3256_reg_3597[7 : 0] <= tmp_3256_fu_2407_p3[7 : 0];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state56)) begin
+        add_ln124_3_reg_3611 <= add_ln124_3_fu_2427_p2;
+        icmp_ln124_3_reg_3626 <= icmp_ln124_3_fu_2442_p2;
+        tmp_3257_reg_3616[7 : 0] <= tmp_3257_fu_2433_p3[7 : 0];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state50)) begin
+        add_ln124_reg_3554 <= add_ln124_fu_2353_p2;
+        icmp_ln124_reg_3569 <= icmp_ln124_fu_2364_p2;
+        zext_ln124_reg_3559[7 : 0] <= zext_ln124_fu_2359_p1[7 : 0];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        add_ln422_reg_3322 <= add_ln422_fu_1851_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state28)) begin
-        shl_ln548_1_reg_3426[5 : 3] <= shl_ln548_1_fu_2002_p3[5 : 3];
-        trunc_ln550_1_reg_3436 <= {{state_0_s_q1[23:16]}};
-        trunc_ln551_1_reg_3441 <= {{state_0_s_q1[31:24]}};
-        trunc_ln552_1_reg_3446 <= {{state_0_s_q1[39:32]}};
-        trunc_ln553_1_reg_3451 <= {{state_0_s_q1[47:40]}};
-        trunc_ln554_1_reg_3456 <= {{state_0_s_q1[55:48]}};
-        trunc_ln555_1_reg_3461 <= {{state_0_s_q1[63:56]}};
+        add_ln555_1_reg_3431 <= add_ln555_1_fu_2001_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state111)) begin
-        shl_ln548_2_reg_3685[4 : 3] <= shl_ln548_2_fu_2685_p3[4 : 3];
+        add_ln555_2_reg_3685 <= add_ln555_2_fu_2680_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
+        add_ln555_reg_3289 <= add_ln555_fu_1653_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((icmp_ln21_fu_2259_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state34))) begin
+        add_ln_reg_3497[2 : 0] <= add_ln_fu_2275_p4[2 : 0];
+add_ln_reg_3497[9 : 8] <= add_ln_fu_2275_p4[9 : 8];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        i_10_reg_3505 <= i_10_fu_2292_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state38)) begin
+        i_11_reg_3513 <= i_11_fu_2304_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state40)) begin
+        i_12_reg_3521 <= i_12_fu_2316_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state58)) begin
+        i_13_reg_3633 <= i_13_fu_2459_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state91)) begin
+        i_14_reg_3641 <= i_14_fu_2471_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state92)) begin
+        i_16_reg_3654 <= i_16_fu_2495_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state119)) begin
+        i_17_reg_3713 <= i_17_fu_2784_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state121)) begin
+        i_18_reg_3727 <= i_18_fu_2802_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state123)) begin
+        i_19_reg_3740 <= i_19_fu_2819_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state126)) begin
+        i_20_reg_3771 <= i_20_fu_2881_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state124)) begin
+        i_21_reg_3753 <= i_21_fu_2843_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state129)) begin
+        i_22_reg_3798 <= i_22_fu_2951_p2;
+        icmp_ln162_reg_3794 <= icmp_ln162_fu_2945_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state127)) begin
+        i_23_reg_3784 <= i_23_fu_2905_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state130)) begin
+        i_24_reg_3811 <= i_24_fu_2975_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state147)) begin
+        i_25_reg_3827 <= i_25_fu_3041_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state183)) begin
+        i_26_reg_3843 <= i_26_fu_3053_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state184)) begin
+        i_27_reg_3856 <= i_27_fu_3077_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((icmp_ln162_reg_3794 == 1'd1) & (tmp_21_reg_3836 == 1'd0) & (tmp_12_reg_3832 == 1'd0) & (1'b1 == ap_CS_fsm_state193))) begin
+        i_28_reg_3874 <= i_28_fu_3111_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state194)) begin
+        i_29_reg_3890 <= i_29_fu_3141_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state33)) begin
+        i_9_reg_3484 <= i_9_fu_2253_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        icmp_ln422_reg_3318 <= icmp_ln422_fu_1845_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state34)) begin
+        j_reg_3492 <= j_fu_2265_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state42)) begin
+        nonce_reg_3526 <= nonce_fu_2322_p2;
+        shl_ln50_reg_3531[15 : 2] <= shl_ln50_fu_2328_p2[15 : 2];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state46)) begin
+        or_ln50_1_reg_3544[15 : 2] <= or_ln50_1_fu_2341_p2[15 : 2];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state48)) begin
+        or_ln50_2_reg_3549[15 : 2] <= or_ln50_2_fu_2347_p2[15 : 2];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state44)) begin
+        or_ln50_reg_3539[15 : 2] <= or_ln50_fu_2335_p2[15 : 2];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((((grp_keccak_absorb_2_fu_1289_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state104)) | ((grp_keccak_absorb_2_fu_1289_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6)))) begin
+        reg_1551 <= grp_keccak_absorb_2_fu_1289_ap_return;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b1 == ap_CS_fsm_state112) | (1'b1 == ap_CS_fsm_state14))) begin
+        reg_1555 <= {{state_s_q0[23:16]}};
+        reg_1561 <= {{state_s_q0[31:24]}};
+        reg_1567 <= {{state_s_q0[39:32]}};
+        reg_1573 <= {{state_s_q0[47:40]}};
+        reg_1579 <= {{state_s_q0[55:48]}};
+        reg_1585 <= {{state_s_q0[63:56]}};
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage1_11001) & (icmp_ln422_reg_3318 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage1) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        seedbuf_load_1_reg_3358 <= seedbuf_q1;
+        seedbuf_load_reg_3353 <= seedbuf_q0;
+        state_0_s_load_2_reg_3373 <= state_0_s_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage2_11001) & (icmp_ln422_reg_3318 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        seedbuf_load_2_reg_3378 <= seedbuf_q0;
+        seedbuf_load_3_reg_3383 <= seedbuf_q1;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage3_11001) & (icmp_ln422_reg_3318 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage3) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        seedbuf_load_4_reg_3398 <= seedbuf_q0;
+        seedbuf_load_5_reg_3403 <= seedbuf_q1;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state29)) begin
+        shl_ln557_1_reg_3441[5 : 3] <= shl_ln557_1_fu_2012_p3[5 : 3];
+        trunc_ln559_1_reg_3451 <= {{state_0_s_q1[23:16]}};
+        trunc_ln560_1_reg_3456 <= {{state_0_s_q1[31:24]}};
+        trunc_ln561_1_reg_3461 <= {{state_0_s_q1[39:32]}};
+        trunc_ln562_1_reg_3466 <= {{state_0_s_q1[47:40]}};
+        trunc_ln563_1_reg_3471 <= {{state_0_s_q1[55:48]}};
+        trunc_ln564_1_reg_3476 <= {{state_0_s_q1[63:56]}};
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state112)) begin
+        shl_ln557_2_reg_3700[4 : 3] <= shl_ln557_2_fu_2695_p3[4 : 3];
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        shl_ln5_reg_3289[5 : 3] <= shl_ln5_fu_1653_p3[5 : 3];
+        shl_ln5_reg_3299[5 : 3] <= shl_ln5_fu_1664_p3[5 : 3];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln420_fu_1839_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state19))) begin
-        state_0_s_addr_3_reg_3335[3 : 0] <= zext_ln420_fu_1834_p1[3 : 0];
-        zext_ln421_reg_3315[6 : 3] <= zext_ln421_fu_1859_p1[6 : 3];
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln422_fu_1845_p2 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        state_0_s_addr_3_reg_3347[3 : 0] <= zext_ln422_fu_1857_p1[3 : 0];
+        zext_ln424_reg_3327[6 : 3] <= zext_ln424_fu_1870_p1[6 : 3];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_keccak_absorb_2_fu_1278_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state103))) begin
-        state_s_addr_12_reg_3662 <= zext_ln454_3_fu_2625_p1;
+    if (((grp_keccak_absorb_2_fu_1289_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state104))) begin
+        state_s_addr_12_reg_3677 <= zext_ln462_3_fu_2635_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_keccak_absorb_2_fu_1278_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
-        state_s_addr_reg_3266 <= zext_ln454_1_fu_1597_p1;
+    if (((grp_keccak_absorb_2_fu_1289_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+        state_s_addr_reg_3276 <= zext_ln462_1_fu_1608_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_pqcrystals_dilithium_6_fu_1423_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state156))) begin
-        tmp_12_reg_3817 <= grp_pqcrystals_dilithium_6_fu_1423_ap_return;
+    if (((grp_pqcrystals_dilithium_6_fu_1434_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state157))) begin
+        tmp_12_reg_3832 <= grp_pqcrystals_dilithium_6_fu_1434_ap_return;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_pqcrystals_dilithium_6_fu_1423_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state181))) begin
-        tmp_21_reg_3821 <= grp_pqcrystals_dilithium_6_fu_1423_ap_return;
+    if (((grp_pqcrystals_dilithium_6_fu_1434_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state182))) begin
+        tmp_21_reg_3836 <= grp_pqcrystals_dilithium_6_fu_1434_ap_return;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln546_2_fu_2664_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state110))) begin
-        trunc_ln548_3_reg_3680 <= trunc_ln548_3_fu_2676_p1;
+    if (((icmp_ln555_2_fu_2674_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state111))) begin
+        trunc_ln557_3_reg_3695 <= trunc_ln557_3_fu_2686_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln87_2_fu_3061_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state183))) begin
-        w0_vec_coeffs_addr_1_reg_3846 <= zext_ln88_5_fu_3082_p1;
+    if (((icmp_ln87_1_fu_3071_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state184))) begin
+        w0_vec_coeffs_addr_1_reg_3861 <= zext_ln88_5_fu_3092_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln229_fu_2479_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state91))) begin
-        w1_vec_coeffs_addr_reg_3649 <= zext_ln230_1_fu_2500_p1;
-        zext_ln230_1_reg_3644[11 : 0] <= zext_ln230_1_fu_2500_p1[11 : 0];
+    if (((icmp_ln232_fu_2489_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state92))) begin
+        w1_vec_coeffs_addr_reg_3664 <= zext_ln233_1_fu_2510_p1;
+        zext_ln233_1_reg_3659[11 : 0] <= zext_ln233_1_fu_2510_p1[11 : 0];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln87_1_fu_2827_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state123))) begin
-        z_vec_coeffs_addr_4_reg_3748 <= zext_ln88_3_fu_2848_p1;
+    if (((icmp_ln87_fu_2837_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state124))) begin
+        z_vec_coeffs_addr_4_reg_3763 <= zext_ln88_3_fu_2858_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln32_fu_2889_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state126))) begin
-        z_vec_coeffs_addr_5_reg_3774 <= zext_ln33_2_fu_2910_p1;
+    if (((icmp_ln32_fu_2899_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state127))) begin
+        z_vec_coeffs_addr_5_reg_3789 <= zext_ln33_2_fu_2920_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln116_fu_2768_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state118))) begin
-        zext_ln117_reg_3703[2 : 0] <= zext_ln117_fu_2780_p1[2 : 0];
+    if (((icmp_ln118_fu_2778_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state119))) begin
+        zext_ln119_reg_3718[2 : 0] <= zext_ln119_fu_2790_p1[2 : 0];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln109_fu_2786_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state120))) begin
-        zext_ln162_reg_3717[2 : 0] <= zext_ln162_fu_2798_p1[2 : 0];
+    if (((icmp_ln111_fu_2796_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state121))) begin
+        zext_ln164_reg_3732[2 : 0] <= zext_ln164_fu_2808_p1[2 : 0];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln378_fu_2455_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state90))) begin
-        zext_ln225_reg_3631[10 : 8] <= zext_ln225_fu_2475_p1[10 : 8];
+    if (((icmp_ln385_fu_2465_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state91))) begin
+        zext_ln228_reg_3646[10 : 8] <= zext_ln228_fu_2485_p1[10 : 8];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln160_reg_3779 == 1'd1) & (icmp_ln399_fu_3095_p2 == 1'd0) & (tmp_21_reg_3821 == 1'd0) & (tmp_12_reg_3817 == 1'd0) & (1'b1 == ap_CS_fsm_state192))) begin
-        zext_ln248_reg_3864[10 : 8] <= zext_ln248_fu_3115_p1[10 : 8];
+    if (((icmp_ln162_reg_3794 == 1'd1) & (icmp_ln406_fu_3105_p2 == 1'd0) & (tmp_21_reg_3836 == 1'd0) & (tmp_12_reg_3832 == 1'd0) & (1'b1 == ap_CS_fsm_state193))) begin
+        zext_ln251_reg_3879[10 : 8] <= zext_ln251_fu_3125_p1[10 : 8];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln252_fu_3125_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state193))) begin
-        zext_ln253_1_reg_3880[11 : 0] <= zext_ln253_1_fu_3146_p1[11 : 0];
+    if (((icmp_ln255_fu_3135_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state194))) begin
+        zext_ln256_1_reg_3895[11 : 0] <= zext_ln256_1_fu_3156_p1[11 : 0];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln55_fu_2865_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state125))) begin
-        zext_ln28_reg_3761[10 : 8] <= zext_ln28_fu_2885_p1[10 : 8];
+    if (((icmp_ln57_fu_2875_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state126))) begin
+        zext_ln28_reg_3776[10 : 8] <= zext_ln28_fu_2895_p1[10 : 8];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln160_fu_2935_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state128))) begin
-        zext_ln291_reg_3788[10 : 8] <= zext_ln291_fu_2955_p1[10 : 8];
+    if (((icmp_ln162_fu_2945_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state129))) begin
+        zext_ln294_reg_3803[10 : 8] <= zext_ln294_fu_2965_p1[10 : 8];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln238_fu_3037_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state182))) begin
-        zext_ln83_1_reg_3833[10 : 8] <= zext_ln83_1_fu_3057_p1[10 : 8];
+    if (((icmp_ln242_fu_3047_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state183))) begin
+        zext_ln83_1_reg_3848[10 : 8] <= zext_ln83_1_fu_3067_p1[10 : 8];
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln87_fu_2803_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state122))) begin
-        zext_ln83_reg_3730[10 : 8] <= zext_ln83_fu_2823_p1[10 : 8];
+    if (((icmp_ln89_fu_2813_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state123))) begin
+        zext_ln83_reg_3745[10 : 8] <= zext_ln83_fu_2833_p1[10 : 8];
     end
 end
 
 always @ (*) begin
-    if ((((1'b1 == ap_CS_fsm_state195) & (grp_pqcrystals_dilithium_19_fu_1364_ap_done == 1'b1)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if ((icmp_ln422_fu_1845_p2 == 1'd1)) begin
+        ap_condition_pp0_exit_iter0_state19 = 1'b1;
+    end else begin
+        ap_condition_pp0_exit_iter0_state19 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((((1'b1 == ap_CS_fsm_state196) & (grp_pqcrystals_dilithium_19_fu_1375_ap_done == 1'b1)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -2987,7 +3049,23 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state195) & (grp_pqcrystals_dilithium_19_fu_1364_ap_done == 1'b1))) begin
+    if (((ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter0 == 1'b0))) begin
+        ap_idle_pp0 = 1'b1;
+    end else begin
+        ap_idle_pp0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((icmp_ln422_reg_3318 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
+        ap_phi_mux_i_3_i1_phi_fu_901_p4 = add_ln422_reg_3322;
+    end else begin
+        ap_phi_mux_i_3_i1_phi_fu_901_p4 = i_3_i1_reg_897;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state196) & (grp_pqcrystals_dilithium_19_fu_1375_ap_done == 1'b1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -2995,608 +3073,592 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131) | (1'b1 == ap_CS_fsm_state119))) begin
-        cp_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state117)) begin
-        cp_coeffs_address0 = grp_pqcrystals_dilithium_20_fu_1314_a_address0;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        cp_coeffs_address0 = grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_address0;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132) | (1'b1 == ap_CS_fsm_state120))) begin
+        cp_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state118)) begin
+        cp_coeffs_address0 = grp_pqcrystals_dilithium_20_fu_1325_a_address0;
+    end else if ((1'b1 == ap_CS_fsm_state116)) begin
+        cp_coeffs_address0 = grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_address0;
     end else begin
         cp_coeffs_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131) | (1'b1 == ap_CS_fsm_state119))) begin
-        cp_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_address1;
-    end else if ((1'b1 == ap_CS_fsm_state117)) begin
-        cp_coeffs_address1 = grp_pqcrystals_dilithium_20_fu_1314_a_address1;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        cp_coeffs_address1 = grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_address1;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132) | (1'b1 == ap_CS_fsm_state120))) begin
+        cp_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_address1;
+    end else if ((1'b1 == ap_CS_fsm_state118)) begin
+        cp_coeffs_address1 = grp_pqcrystals_dilithium_20_fu_1325_a_address1;
     end else begin
         cp_coeffs_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131) | (1'b1 == ap_CS_fsm_state119))) begin
-        cp_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state117)) begin
-        cp_coeffs_ce0 = grp_pqcrystals_dilithium_20_fu_1314_a_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        cp_coeffs_ce0 = grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_ce0;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132) | (1'b1 == ap_CS_fsm_state120))) begin
+        cp_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state118)) begin
+        cp_coeffs_ce0 = grp_pqcrystals_dilithium_20_fu_1325_a_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state116)) begin
+        cp_coeffs_ce0 = grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_ce0;
     end else begin
         cp_coeffs_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131) | (1'b1 == ap_CS_fsm_state119))) begin
-        cp_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1380_a_coeffs_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state117)) begin
-        cp_coeffs_ce1 = grp_pqcrystals_dilithium_20_fu_1314_a_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        cp_coeffs_ce1 = grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_ce1;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132) | (1'b1 == ap_CS_fsm_state120))) begin
+        cp_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1391_a_coeffs_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state118)) begin
+        cp_coeffs_ce1 = grp_pqcrystals_dilithium_20_fu_1325_a_ce1;
     end else begin
         cp_coeffs_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state117)) begin
-        cp_coeffs_d0 = grp_pqcrystals_dilithium_20_fu_1314_a_d0;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        cp_coeffs_d0 = grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_d0;
+    if ((1'b1 == ap_CS_fsm_state118)) begin
+        cp_coeffs_d0 = grp_pqcrystals_dilithium_20_fu_1325_a_d0;
+    end else if ((1'b1 == ap_CS_fsm_state116)) begin
+        cp_coeffs_d0 = grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_d0;
     end else begin
         cp_coeffs_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state117)) begin
-        cp_coeffs_d1 = grp_pqcrystals_dilithium_20_fu_1314_a_d1;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        cp_coeffs_d1 = grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_d1;
-    end else begin
-        cp_coeffs_d1 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state117)) begin
-        cp_coeffs_we0 = grp_pqcrystals_dilithium_20_fu_1314_a_we0;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        cp_coeffs_we0 = grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_we0;
+    if ((1'b1 == ap_CS_fsm_state118)) begin
+        cp_coeffs_we0 = grp_pqcrystals_dilithium_20_fu_1325_a_we0;
+    end else if ((1'b1 == ap_CS_fsm_state116)) begin
+        cp_coeffs_we0 = grp_pqcrystals_dilithium_17_fu_1271_c_coeffs_we0;
     end else begin
         cp_coeffs_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state117)) begin
-        cp_coeffs_we1 = grp_pqcrystals_dilithium_20_fu_1314_a_we1;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        cp_coeffs_we1 = grp_pqcrystals_dilithium_17_fu_1260_c_coeffs_we1;
+    if ((1'b1 == ap_CS_fsm_state118)) begin
+        cp_coeffs_we1 = grp_pqcrystals_dilithium_20_fu_1325_a_we1;
     end else begin
         cp_coeffs_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state103)) begin
-        grp_keccak_absorb_2_fu_1278_m_offset = 13'd0;
+    if ((1'b1 == ap_CS_fsm_state104)) begin
+        grp_keccak_absorb_2_fu_1289_m_offset = 13'd0;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_keccak_absorb_2_fu_1278_m_offset = 13'd2420;
+        grp_keccak_absorb_2_fu_1289_m_offset = 13'd2420;
     end else begin
-        grp_keccak_absorb_2_fu_1278_m_offset = 'bx;
+        grp_keccak_absorb_2_fu_1289_m_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state103)) begin
-        grp_keccak_absorb_2_fu_1278_mlen = 64'd768;
+    if ((1'b1 == ap_CS_fsm_state104)) begin
+        grp_keccak_absorb_2_fu_1289_mlen = 64'd768;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_keccak_absorb_2_fu_1278_mlen = mlen;
+        grp_keccak_absorb_2_fu_1289_mlen = mlen;
     end else begin
-        grp_keccak_absorb_2_fu_1278_mlen = 'bx;
+        grp_keccak_absorb_2_fu_1289_mlen = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state101)) begin
-        grp_keccak_absorb_3199_fu_1414_m_offset = 8'd112;
+    if ((1'b1 == ap_CS_fsm_state102)) begin
+        grp_keccak_absorb_3199_fu_1425_m_offset = 8'd112;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_keccak_absorb_3199_fu_1414_m_offset = 8'd32;
+        grp_keccak_absorb_3199_fu_1425_m_offset = 8'd32;
     end else begin
-        grp_keccak_absorb_3199_fu_1414_m_offset = 'bx;
+        grp_keccak_absorb_3199_fu_1425_m_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state179) | (1'b1 == ap_CS_fsm_state154) | (1'b1 == ap_CS_fsm_state73))) begin
-        grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_offset = 4'd3;
-    end else if (((1'b1 == ap_CS_fsm_state177) | (1'b1 == ap_CS_fsm_state152) | (1'b1 == ap_CS_fsm_state71))) begin
-        grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_offset = 4'd2;
-    end else if (((1'b1 == ap_CS_fsm_state175) | (1'b1 == ap_CS_fsm_state150) | (1'b1 == ap_CS_fsm_state69))) begin
-        grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_offset = 4'd1;
-    end else if (((1'b1 == ap_CS_fsm_state173) | (1'b1 == ap_CS_fsm_state148) | (1'b1 == ap_CS_fsm_state67))) begin
-        grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_offset = 4'd0;
+    if (((1'b1 == ap_CS_fsm_state180) | (1'b1 == ap_CS_fsm_state155) | (1'b1 == ap_CS_fsm_state74))) begin
+        grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_offset = 4'd3;
+    end else if (((1'b1 == ap_CS_fsm_state178) | (1'b1 == ap_CS_fsm_state153) | (1'b1 == ap_CS_fsm_state72))) begin
+        grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_offset = 4'd2;
+    end else if (((1'b1 == ap_CS_fsm_state176) | (1'b1 == ap_CS_fsm_state151) | (1'b1 == ap_CS_fsm_state70))) begin
+        grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_offset = 4'd1;
+    end else if (((1'b1 == ap_CS_fsm_state174) | (1'b1 == ap_CS_fsm_state149) | (1'b1 == ap_CS_fsm_state68))) begin
+        grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_offset = 4'd0;
     end else begin
-        grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_offset = 'bx;
+        grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state179) | (1'b1 == ap_CS_fsm_state177) | (1'b1 == ap_CS_fsm_state175) | (1'b1 == ap_CS_fsm_state173))) begin
-        grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_q0 = h_vec_coeffs_q0;
-    end else if (((1'b1 == ap_CS_fsm_state154) | (1'b1 == ap_CS_fsm_state152) | (1'b1 == ap_CS_fsm_state150) | (1'b1 == ap_CS_fsm_state148))) begin
-        grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_q0 = w0_vec_coeffs_q0;
-    end else if (((1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state67))) begin
-        grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_q0 = w1_vec_coeffs_q0;
+    if (((1'b1 == ap_CS_fsm_state180) | (1'b1 == ap_CS_fsm_state178) | (1'b1 == ap_CS_fsm_state176) | (1'b1 == ap_CS_fsm_state174))) begin
+        grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_q0 = h_vec_coeffs_q0;
+    end else if (((1'b1 == ap_CS_fsm_state155) | (1'b1 == ap_CS_fsm_state153) | (1'b1 == ap_CS_fsm_state151) | (1'b1 == ap_CS_fsm_state149))) begin
+        grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_q0 = w0_vec_coeffs_q0;
+    end else if (((1'b1 == ap_CS_fsm_state74) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state68))) begin
+        grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_q0 = w1_vec_coeffs_q0;
     end else begin
-        grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_q0 = 'bx;
+        grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_q0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state137))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_offset = 4'd3;
-    end else if (((1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state135))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_offset = 4'd2;
-    end else if (((1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state133))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_offset = 4'd1;
-    end else if (((1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state131))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_offset = 4'd0;
-    end else if ((1'b1 == ap_CS_fsm_state119)) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_offset = zext_ln117_reg_3703;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state138))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_offset = 4'd3;
+    end else if (((1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state136))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_offset = 4'd2;
+    end else if (((1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state134))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_offset = 4'd1;
+    end else if (((1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state132))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_offset = 4'd0;
+    end else if ((1'b1 == ap_CS_fsm_state120)) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_offset = zext_ln119_reg_3718;
     end else begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_offset = 'bx;
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q0 = t0_vec_coeffs_q0;
-    end else if (((1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q0 = s2_vec_coeffs_q0;
-    end else if ((1'b1 == ap_CS_fsm_state119)) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q0 = s1_vec_coeffs_q0;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q0 = t0_vec_coeffs_q0;
+    end else if (((1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q0 = s2_vec_coeffs_q0;
+    end else if ((1'b1 == ap_CS_fsm_state120)) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q0 = s1_vec_coeffs_q0;
     end else begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q0 = 'bx;
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q1 = t0_vec_coeffs_q1;
-    end else if (((1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q1 = s2_vec_coeffs_q1;
-    end else if ((1'b1 == ap_CS_fsm_state119)) begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q1 = s1_vec_coeffs_q1;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q1 = t0_vec_coeffs_q1;
+    end else if (((1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q1 = s2_vec_coeffs_q1;
+    end else if ((1'b1 == ap_CS_fsm_state120)) begin
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q1 = s1_vec_coeffs_q1;
     end else begin
-        grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_q1 = 'bx;
+        grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state137))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_offset = 4'd3;
-    end else if (((1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state135))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_offset = 4'd2;
-    end else if (((1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state133))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_offset = 4'd1;
-    end else if (((1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state131))) begin
-        grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_offset = 4'd0;
-    end else if ((1'b1 == ap_CS_fsm_state119)) begin
-        grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_offset = zext_ln117_reg_3703;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state138))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_offset = 4'd3;
+    end else if (((1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state136))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_offset = 4'd2;
+    end else if (((1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state134))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_offset = 4'd1;
+    end else if (((1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state132))) begin
+        grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_offset = 4'd0;
+    end else if ((1'b1 == ap_CS_fsm_state120)) begin
+        grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_offset = zext_ln119_reg_3718;
     end else begin
-        grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_offset = 'bx;
+        grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state191) | (1'b1 == ap_CS_fsm_state89))) begin
-        grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_offset = 4'd3;
-    end else if (((1'b1 == ap_CS_fsm_state189) | (1'b1 == ap_CS_fsm_state87))) begin
-        grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_offset = 4'd2;
-    end else if (((1'b1 == ap_CS_fsm_state187) | (1'b1 == ap_CS_fsm_state85))) begin
-        grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_offset = 4'd1;
-    end else if (((1'b1 == ap_CS_fsm_state185) | (1'b1 == ap_CS_fsm_state83))) begin
-        grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_offset = 4'd0;
+    if (((1'b1 == ap_CS_fsm_state192) | (1'b1 == ap_CS_fsm_state90))) begin
+        grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_offset = 4'd3;
+    end else if (((1'b1 == ap_CS_fsm_state190) | (1'b1 == ap_CS_fsm_state88))) begin
+        grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_offset = 4'd2;
+    end else if (((1'b1 == ap_CS_fsm_state188) | (1'b1 == ap_CS_fsm_state86))) begin
+        grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_offset = 4'd1;
+    end else if (((1'b1 == ap_CS_fsm_state186) | (1'b1 == ap_CS_fsm_state84))) begin
+        grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_offset = 4'd0;
     end else begin
-        grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_offset = 'bx;
+        grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state189) | (1'b1 == ap_CS_fsm_state187) | (1'b1 == ap_CS_fsm_state185) | (1'b1 == ap_CS_fsm_state191))) begin
-        grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_q0 = w0_vec_coeffs_q0;
-    end else if (((1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state83) | (1'b1 == ap_CS_fsm_state89))) begin
-        grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_q0 = w1_vec_coeffs_q0;
+    if (((1'b1 == ap_CS_fsm_state190) | (1'b1 == ap_CS_fsm_state188) | (1'b1 == ap_CS_fsm_state186) | (1'b1 == ap_CS_fsm_state192))) begin
+        grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_q0 = w0_vec_coeffs_q0;
+    end else if (((1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state90))) begin
+        grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_q0 = w1_vec_coeffs_q0;
     end else begin
-        grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_q0 = 'bx;
+        grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_q0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state58)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_offset = i_0_i12_reg_1024;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_offset = i_0_i7_reg_957;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_offset = i_0_i5_reg_945;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_offset = i_0_i3_reg_933;
+    if ((1'b1 == ap_CS_fsm_state59)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_offset = i_0_i12_reg_1035;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_offset = i_0_i7_reg_968;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_offset = i_0_i5_reg_956;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_offset = i_0_i3_reg_944;
     end else begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_offset = 'bx;
+        grp_pqcrystals_dilithium_21_fu_1313_a_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state58)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_q0 = z_vec_coeffs_q0;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_q0 = t0_vec_coeffs_q0;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_q0 = s2_vec_coeffs_q0;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_q0 = s1_vec_coeffs_q0;
+    if ((1'b1 == ap_CS_fsm_state59)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_q0 = z_vec_coeffs_q0;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_q0 = t0_vec_coeffs_q0;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_q0 = s2_vec_coeffs_q0;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_q0 = s1_vec_coeffs_q0;
     end else begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_q0 = 'bx;
+        grp_pqcrystals_dilithium_21_fu_1313_a_q0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state58)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_q1 = z_vec_coeffs_q1;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_q1 = t0_vec_coeffs_q1;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_q1 = s2_vec_coeffs_q1;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_q1 = s1_vec_coeffs_q1;
+    if ((1'b1 == ap_CS_fsm_state59)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_q1 = z_vec_coeffs_q1;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_q1 = t0_vec_coeffs_q1;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_q1 = s2_vec_coeffs_q1;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        grp_pqcrystals_dilithium_21_fu_1313_a_q1 = s1_vec_coeffs_q1;
     end else begin
-        grp_pqcrystals_dilithium_21_fu_1302_a_q1 = 'bx;
+        grp_pqcrystals_dilithium_21_fu_1313_a_q1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state121)) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_offset = zext_ln162_reg_3717;
-    end else if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state145))) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_offset = 4'd3;
-    end else if (((1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state79))) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_offset = 4'd2;
-    end else if (((1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state77))) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_offset = 4'd1;
-    end else if (((1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state75))) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_offset = 4'd0;
+    if ((1'b1 == ap_CS_fsm_state122)) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_offset = zext_ln164_reg_3732;
+    end else if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state146))) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_offset = 4'd3;
+    end else if (((1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state80))) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_offset = 4'd2;
+    end else if (((1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state78))) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_offset = 4'd1;
+    end else if (((1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state76))) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_offset = 4'd0;
     end else begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_offset = 'bx;
+        grp_pqcrystals_dilithium_23_fu_1363_a_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state145))) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_q0 = h_vec_coeffs_q0;
-    end else if ((1'b1 == ap_CS_fsm_state121)) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_q0 = z_vec_coeffs_q0;
-    end else if (((1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75))) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_q0 = w1_vec_coeffs_q0;
+    if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state146))) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_q0 = h_vec_coeffs_q0;
+    end else if ((1'b1 == ap_CS_fsm_state122)) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_q0 = z_vec_coeffs_q0;
+    end else if (((1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76))) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_q0 = w1_vec_coeffs_q0;
     end else begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_q0 = 'bx;
+        grp_pqcrystals_dilithium_23_fu_1363_a_q0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state145))) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_q1 = h_vec_coeffs_q1;
-    end else if ((1'b1 == ap_CS_fsm_state121)) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_q1 = z_vec_coeffs_q1;
-    end else if (((1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75))) begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_q1 = w1_vec_coeffs_q1;
+    if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state146))) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_q1 = h_vec_coeffs_q1;
+    end else if ((1'b1 == ap_CS_fsm_state122)) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_q1 = z_vec_coeffs_q1;
+    end else if (((1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76))) begin
+        grp_pqcrystals_dilithium_23_fu_1363_a_q1 = w1_vec_coeffs_q1;
     end else begin
-        grp_pqcrystals_dilithium_23_fu_1352_a_q1 = 'bx;
+        grp_pqcrystals_dilithium_23_fu_1363_a_q1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state99)) begin
-        grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_offset = 4'd3;
-    end else if ((1'b1 == ap_CS_fsm_state97)) begin
-        grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_offset = 4'd2;
-    end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_offset = 4'd1;
-    end else if ((1'b1 == ap_CS_fsm_state93)) begin
-        grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_offset = 4'd0;
+    if ((1'b1 == ap_CS_fsm_state100)) begin
+        grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_offset = 4'd3;
+    end else if ((1'b1 == ap_CS_fsm_state98)) begin
+        grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_offset = 4'd2;
+    end else if ((1'b1 == ap_CS_fsm_state96)) begin
+        grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_offset = 4'd1;
+    end else if ((1'b1 == ap_CS_fsm_state94)) begin
+        grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_offset = 4'd0;
     end else begin
-        grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_offset = 'bx;
+        grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state99)) begin
-        grp_pqcrystals_dilithium_4_fu_1397_r_offset = 11'd576;
-    end else if ((1'b1 == ap_CS_fsm_state97)) begin
-        grp_pqcrystals_dilithium_4_fu_1397_r_offset = 11'd384;
-    end else if ((1'b1 == ap_CS_fsm_state95)) begin
-        grp_pqcrystals_dilithium_4_fu_1397_r_offset = 11'd192;
-    end else if ((1'b1 == ap_CS_fsm_state93)) begin
-        grp_pqcrystals_dilithium_4_fu_1397_r_offset = 11'd0;
+    if ((1'b1 == ap_CS_fsm_state100)) begin
+        grp_pqcrystals_dilithium_4_fu_1408_r_offset = 11'd576;
+    end else if ((1'b1 == ap_CS_fsm_state98)) begin
+        grp_pqcrystals_dilithium_4_fu_1408_r_offset = 11'd384;
+    end else if ((1'b1 == ap_CS_fsm_state96)) begin
+        grp_pqcrystals_dilithium_4_fu_1408_r_offset = 11'd192;
+    end else if ((1'b1 == ap_CS_fsm_state94)) begin
+        grp_pqcrystals_dilithium_4_fu_1408_r_offset = 11'd0;
     end else begin
-        grp_pqcrystals_dilithium_4_fu_1397_r_offset = 'bx;
+        grp_pqcrystals_dilithium_4_fu_1408_r_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state65)) begin
-        grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_offset = 4'd3;
-    end else if ((1'b1 == ap_CS_fsm_state63)) begin
-        grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_offset = 4'd2;
-    end else if ((1'b1 == ap_CS_fsm_state61)) begin
-        grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_offset = 4'd1;
-    end else if ((1'b1 == ap_CS_fsm_state59)) begin
-        grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_offset = 4'd0;
+    if ((1'b1 == ap_CS_fsm_state66)) begin
+        grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_offset = 4'd3;
+    end else if ((1'b1 == ap_CS_fsm_state64)) begin
+        grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_offset = 4'd2;
+    end else if ((1'b1 == ap_CS_fsm_state62)) begin
+        grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_offset = 4'd1;
+    end else if ((1'b1 == ap_CS_fsm_state60)) begin
+        grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_offset = 4'd0;
     end else begin
-        grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_offset = 'bx;
+        grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state65)) begin
-        grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_offset = 4'd3;
-    end else if ((1'b1 == ap_CS_fsm_state63)) begin
-        grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_offset = 4'd2;
-    end else if ((1'b1 == ap_CS_fsm_state61)) begin
-        grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_offset = 4'd1;
-    end else if ((1'b1 == ap_CS_fsm_state59)) begin
-        grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_offset = 4'd0;
+    if ((1'b1 == ap_CS_fsm_state66)) begin
+        grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_offset = 4'd3;
+    end else if ((1'b1 == ap_CS_fsm_state64)) begin
+        grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_offset = 4'd2;
+    end else if ((1'b1 == ap_CS_fsm_state62)) begin
+        grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_offset = 4'd1;
+    end else if ((1'b1 == ap_CS_fsm_state60)) begin
+        grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_offset = 4'd0;
     end else begin
-        grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_offset = 'bx;
+        grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state181)) begin
-        grp_pqcrystals_dilithium_6_fu_1423_bound = 18'd95232;
-    end else if ((1'b1 == ap_CS_fsm_state156)) begin
-        grp_pqcrystals_dilithium_6_fu_1423_bound = 18'd95154;
+    if ((1'b1 == ap_CS_fsm_state182)) begin
+        grp_pqcrystals_dilithium_6_fu_1434_bound = 18'd95232;
+    end else if ((1'b1 == ap_CS_fsm_state157)) begin
+        grp_pqcrystals_dilithium_6_fu_1434_bound = 18'd95154;
     end else begin
-        grp_pqcrystals_dilithium_6_fu_1423_bound = 'bx;
+        grp_pqcrystals_dilithium_6_fu_1434_bound = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state181)) begin
-        grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_q0 = h_vec_coeffs_q0;
-    end else if ((1'b1 == ap_CS_fsm_state156)) begin
-        grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_q0 = w0_vec_coeffs_q0;
+    if ((1'b1 == ap_CS_fsm_state182)) begin
+        grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_q0 = h_vec_coeffs_q0;
+    end else if ((1'b1 == ap_CS_fsm_state157)) begin
+        grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_q0 = w0_vec_coeffs_q0;
     end else begin
-        grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_q0 = 'bx;
+        grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_q0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state48)) begin
-        grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_offset = 4'd3;
-    end else if ((1'b1 == ap_CS_fsm_state46)) begin
-        grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_offset = 4'd2;
-    end else if ((1'b1 == ap_CS_fsm_state44)) begin
-        grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_offset = 4'd1;
-    end else if ((1'b1 == ap_CS_fsm_state42)) begin
-        grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_offset = 4'd0;
+    if ((1'b1 == ap_CS_fsm_state49)) begin
+        grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_offset = 4'd3;
+    end else if ((1'b1 == ap_CS_fsm_state47)) begin
+        grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_offset = 4'd2;
+    end else if ((1'b1 == ap_CS_fsm_state45)) begin
+        grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_offset = 4'd1;
+    end else if ((1'b1 == ap_CS_fsm_state43)) begin
+        grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_offset = 4'd0;
     end else begin
-        grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_offset = 'bx;
+        grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_offset = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state48)) begin
-        grp_pqcrystals_dilithium_9_fu_1248_nonce = or_ln49_2_reg_3534;
-    end else if ((1'b1 == ap_CS_fsm_state46)) begin
-        grp_pqcrystals_dilithium_9_fu_1248_nonce = or_ln49_1_reg_3529;
-    end else if ((1'b1 == ap_CS_fsm_state44)) begin
-        grp_pqcrystals_dilithium_9_fu_1248_nonce = or_ln49_reg_3524;
-    end else if ((1'b1 == ap_CS_fsm_state42)) begin
-        grp_pqcrystals_dilithium_9_fu_1248_nonce = shl_ln49_reg_3516;
+    if ((1'b1 == ap_CS_fsm_state49)) begin
+        grp_pqcrystals_dilithium_9_fu_1259_nonce = or_ln50_2_reg_3549;
+    end else if ((1'b1 == ap_CS_fsm_state47)) begin
+        grp_pqcrystals_dilithium_9_fu_1259_nonce = or_ln50_1_reg_3544;
+    end else if ((1'b1 == ap_CS_fsm_state45)) begin
+        grp_pqcrystals_dilithium_9_fu_1259_nonce = or_ln50_reg_3539;
+    end else if ((1'b1 == ap_CS_fsm_state43)) begin
+        grp_pqcrystals_dilithium_9_fu_1259_nonce = shl_ln50_reg_3531;
     end else begin
-        grp_pqcrystals_dilithium_9_fu_1248_nonce = 'bx;
+        grp_pqcrystals_dilithium_9_fu_1259_nonce = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state194)) begin
-        h_vec_coeffs_address0 = zext_ln253_1_reg_3880;
-    end else if ((1'b1 == ap_CS_fsm_state183)) begin
-        h_vec_coeffs_address0 = zext_ln88_5_fu_3082_p1;
-    end else if (((1'b1 == ap_CS_fsm_state179) | (1'b1 == ap_CS_fsm_state177) | (1'b1 == ap_CS_fsm_state175) | (1'b1 == ap_CS_fsm_state173))) begin
-        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state181)) begin
-        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_address0;
-    end else if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state147)) begin
-        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_19_fu_1364_h_vec_coeffs_address0;
-    end else if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state145))) begin
-        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_23_fu_1352_a_address0;
+    if ((1'b1 == ap_CS_fsm_state195)) begin
+        h_vec_coeffs_address0 = zext_ln256_1_reg_3895;
+    end else if ((1'b1 == ap_CS_fsm_state184)) begin
+        h_vec_coeffs_address0 = zext_ln88_5_fu_3092_p1;
+    end else if (((1'b1 == ap_CS_fsm_state180) | (1'b1 == ap_CS_fsm_state178) | (1'b1 == ap_CS_fsm_state176) | (1'b1 == ap_CS_fsm_state174))) begin
+        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state182)) begin
+        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_address0;
+    end else if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state148)) begin
+        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_19_fu_1375_h_vec_coeffs_address0;
+    end else if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state146))) begin
+        h_vec_coeffs_address0 = grp_pqcrystals_dilithium_23_fu_1363_a_address0;
     end else begin
         h_vec_coeffs_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        h_vec_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_address1;
-    end else if ((1'b1 == ap_CS_fsm_state147)) begin
-        h_vec_coeffs_address1 = grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_address1;
-    end else if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state145))) begin
-        h_vec_coeffs_address1 = grp_pqcrystals_dilithium_23_fu_1352_a_address1;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        h_vec_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_address1;
+    end else if ((1'b1 == ap_CS_fsm_state148)) begin
+        h_vec_coeffs_address1 = grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_address1;
+    end else if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state146))) begin
+        h_vec_coeffs_address1 = grp_pqcrystals_dilithium_23_fu_1363_a_address1;
     end else begin
         h_vec_coeffs_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state194) | (1'b1 == ap_CS_fsm_state183))) begin
+    if (((1'b1 == ap_CS_fsm_state195) | (1'b1 == ap_CS_fsm_state184))) begin
         h_vec_coeffs_ce0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state179) | (1'b1 == ap_CS_fsm_state177) | (1'b1 == ap_CS_fsm_state175) | (1'b1 == ap_CS_fsm_state173))) begin
-        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state181)) begin
-        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state147)) begin
-        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_19_fu_1364_h_vec_coeffs_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state145))) begin
-        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_23_fu_1352_a_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state180) | (1'b1 == ap_CS_fsm_state178) | (1'b1 == ap_CS_fsm_state176) | (1'b1 == ap_CS_fsm_state174))) begin
+        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state182)) begin
+        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state148)) begin
+        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_19_fu_1375_h_vec_coeffs_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state146))) begin
+        h_vec_coeffs_ce0 = grp_pqcrystals_dilithium_23_fu_1363_a_ce0;
     end else begin
         h_vec_coeffs_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        h_vec_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state147)) begin
-        h_vec_coeffs_ce1 = grp_pqcrystals_dilithium_11_fu_1372_b_coeffs_ce1;
-    end else if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state145))) begin
-        h_vec_coeffs_ce1 = grp_pqcrystals_dilithium_23_fu_1352_a_ce1;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        h_vec_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state148)) begin
+        h_vec_coeffs_ce1 = grp_pqcrystals_dilithium_11_fu_1383_b_coeffs_ce1;
+    end else if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state146))) begin
+        h_vec_coeffs_ce1 = grp_pqcrystals_dilithium_23_fu_1363_a_ce1;
     end else begin
         h_vec_coeffs_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state194)) begin
-        h_vec_coeffs_d0 = zext_ln69_1_fu_3214_p1;
-    end else if (((1'b1 == ap_CS_fsm_state179) | (1'b1 == ap_CS_fsm_state177) | (1'b1 == ap_CS_fsm_state175) | (1'b1 == ap_CS_fsm_state173))) begin
-        h_vec_coeffs_d0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_d0;
-    end else if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        h_vec_coeffs_d0 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_d0;
-    end else if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state145))) begin
-        h_vec_coeffs_d0 = grp_pqcrystals_dilithium_23_fu_1352_a_d0;
+    if ((1'b1 == ap_CS_fsm_state195)) begin
+        h_vec_coeffs_d0 = zext_ln69_1_fu_3224_p1;
+    end else if (((1'b1 == ap_CS_fsm_state180) | (1'b1 == ap_CS_fsm_state178) | (1'b1 == ap_CS_fsm_state176) | (1'b1 == ap_CS_fsm_state174))) begin
+        h_vec_coeffs_d0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_d0;
+    end else if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        h_vec_coeffs_d0 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_d0;
+    end else if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state146))) begin
+        h_vec_coeffs_d0 = grp_pqcrystals_dilithium_23_fu_1363_a_d0;
     end else begin
         h_vec_coeffs_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        h_vec_coeffs_d1 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_d1;
-    end else if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state145))) begin
-        h_vec_coeffs_d1 = grp_pqcrystals_dilithium_23_fu_1352_a_d1;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        h_vec_coeffs_d1 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_d1;
+    end else if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state146))) begin
+        h_vec_coeffs_d1 = grp_pqcrystals_dilithium_23_fu_1363_a_d1;
     end else begin
         h_vec_coeffs_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state194)) begin
+    if ((1'b1 == ap_CS_fsm_state195)) begin
         h_vec_coeffs_we0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state179) | (1'b1 == ap_CS_fsm_state177) | (1'b1 == ap_CS_fsm_state175) | (1'b1 == ap_CS_fsm_state173))) begin
-        h_vec_coeffs_we0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_we0;
-    end else if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        h_vec_coeffs_we0 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_we0;
-    end else if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state145))) begin
-        h_vec_coeffs_we0 = grp_pqcrystals_dilithium_23_fu_1352_a_we0;
+    end else if (((1'b1 == ap_CS_fsm_state180) | (1'b1 == ap_CS_fsm_state178) | (1'b1 == ap_CS_fsm_state176) | (1'b1 == ap_CS_fsm_state174))) begin
+        h_vec_coeffs_we0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_we0;
+    end else if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        h_vec_coeffs_we0 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_we0;
+    end else if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state146))) begin
+        h_vec_coeffs_we0 = grp_pqcrystals_dilithium_23_fu_1363_a_we0;
     end else begin
         h_vec_coeffs_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157) | (1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        h_vec_coeffs_we1 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_we1;
-    end else if (((1'b1 == ap_CS_fsm_state171) | (1'b1 == ap_CS_fsm_state169) | (1'b1 == ap_CS_fsm_state167) | (1'b1 == ap_CS_fsm_state165) | (1'b1 == ap_CS_fsm_state143) | (1'b1 == ap_CS_fsm_state141) | (1'b1 == ap_CS_fsm_state139) | (1'b1 == ap_CS_fsm_state145))) begin
-        h_vec_coeffs_we1 = grp_pqcrystals_dilithium_23_fu_1352_a_we1;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158) | (1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        h_vec_coeffs_we1 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_we1;
+    end else if (((1'b1 == ap_CS_fsm_state172) | (1'b1 == ap_CS_fsm_state170) | (1'b1 == ap_CS_fsm_state168) | (1'b1 == ap_CS_fsm_state166) | (1'b1 == ap_CS_fsm_state144) | (1'b1 == ap_CS_fsm_state142) | (1'b1 == ap_CS_fsm_state140) | (1'b1 == ap_CS_fsm_state146))) begin
+        h_vec_coeffs_we1 = grp_pqcrystals_dilithium_23_fu_1363_a_we1;
     end else begin
         h_vec_coeffs_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        mat_vec_coeffs_address0 = grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        mat_vec_coeffs_address0 = grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_address0;
+    if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        mat_vec_coeffs_address0 = grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state35)) begin
+        mat_vec_coeffs_address0 = grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_address0;
     end else begin
         mat_vec_coeffs_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        mat_vec_coeffs_ce0 = grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        mat_vec_coeffs_ce0 = grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_ce0;
+    if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        mat_vec_coeffs_ce0 = grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state35)) begin
+        mat_vec_coeffs_ce0 = grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_ce0;
     end else begin
         mat_vec_coeffs_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        mat_vec_coeffs_ce1 = grp_pqcrystals_dilithium_5_fu_1321_u_vec_coeffs_ce1;
+    if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        mat_vec_coeffs_ce1 = grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_ce1;
     end else begin
         mat_vec_coeffs_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state34)) begin
-        mat_vec_coeffs_we0 = grp_pqcrystals_dilithium_10_fu_1267_a_coeffs_we0;
+    if ((1'b1 == ap_CS_fsm_state35)) begin
+        mat_vec_coeffs_we0 = grp_pqcrystals_dilithium_10_fu_1278_a_coeffs_we0;
     end else begin
         mat_vec_coeffs_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state119)) begin
-        s1_vec_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_address0;
+    if ((1'b1 == ap_CS_fsm_state120)) begin
+        s1_vec_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        s1_vec_coeffs_address0 = grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        s1_vec_coeffs_address0 = grp_pqcrystals_dilithium_21_fu_1302_a_address0;
+        s1_vec_coeffs_address0 = grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        s1_vec_coeffs_address0 = grp_pqcrystals_dilithium_21_fu_1313_a_address0;
     end else begin
         s1_vec_coeffs_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state119)) begin
-        s1_vec_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_address1;
+    if ((1'b1 == ap_CS_fsm_state120)) begin
+        s1_vec_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        s1_vec_coeffs_address1 = grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_address1;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        s1_vec_coeffs_address1 = grp_pqcrystals_dilithium_21_fu_1302_a_address1;
+        s1_vec_coeffs_address1 = grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_address1;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        s1_vec_coeffs_address1 = grp_pqcrystals_dilithium_21_fu_1313_a_address1;
     end else begin
         s1_vec_coeffs_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state119)) begin
-        s1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_ce0;
+    if ((1'b1 == ap_CS_fsm_state120)) begin
+        s1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        s1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        s1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_21_fu_1302_a_ce0;
+        s1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        s1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_21_fu_1313_a_ce0;
     end else begin
         s1_vec_coeffs_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state119)) begin
-        s1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_ce1;
+    if ((1'b1 == ap_CS_fsm_state120)) begin
+        s1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        s1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        s1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_21_fu_1302_a_ce1;
+        s1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        s1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_21_fu_1313_a_ce1;
     end else begin
         s1_vec_coeffs_ce1 = 1'b0;
     end
@@ -3604,9 +3666,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        s1_vec_coeffs_d0 = grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_d0;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        s1_vec_coeffs_d0 = grp_pqcrystals_dilithium_21_fu_1302_a_d0;
+        s1_vec_coeffs_d0 = grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_d0;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        s1_vec_coeffs_d0 = grp_pqcrystals_dilithium_21_fu_1313_a_d0;
     end else begin
         s1_vec_coeffs_d0 = 'bx;
     end
@@ -3614,9 +3676,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        s1_vec_coeffs_d1 = grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_d1;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        s1_vec_coeffs_d1 = grp_pqcrystals_dilithium_21_fu_1302_a_d1;
+        s1_vec_coeffs_d1 = grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_d1;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        s1_vec_coeffs_d1 = grp_pqcrystals_dilithium_21_fu_1313_a_d1;
     end else begin
         s1_vec_coeffs_d1 = 'bx;
     end
@@ -3624,9 +3686,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        s1_vec_coeffs_we0 = grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_we0;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        s1_vec_coeffs_we0 = grp_pqcrystals_dilithium_21_fu_1302_a_we0;
+        s1_vec_coeffs_we0 = grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_we0;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        s1_vec_coeffs_we0 = grp_pqcrystals_dilithium_21_fu_1313_a_we0;
     end else begin
         s1_vec_coeffs_we0 = 1'b0;
     end
@@ -3634,57 +3696,57 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        s1_vec_coeffs_we1 = grp_pqcrystals_dilithium_fu_1338_s1_vec_coeffs_we1;
-    end else if ((1'b1 == ap_CS_fsm_state36)) begin
-        s1_vec_coeffs_we1 = grp_pqcrystals_dilithium_21_fu_1302_a_we1;
+        s1_vec_coeffs_we1 = grp_pqcrystals_dilithium_fu_1349_s1_vec_coeffs_we1;
+    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+        s1_vec_coeffs_we1 = grp_pqcrystals_dilithium_21_fu_1313_a_we1;
     end else begin
         s1_vec_coeffs_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        s2_vec_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_address0;
+    if (((1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        s2_vec_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        s2_vec_coeffs_address0 = grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        s2_vec_coeffs_address0 = grp_pqcrystals_dilithium_21_fu_1302_a_address0;
+        s2_vec_coeffs_address0 = grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        s2_vec_coeffs_address0 = grp_pqcrystals_dilithium_21_fu_1313_a_address0;
     end else begin
         s2_vec_coeffs_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        s2_vec_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_address1;
+    if (((1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        s2_vec_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        s2_vec_coeffs_address1 = grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_address1;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        s2_vec_coeffs_address1 = grp_pqcrystals_dilithium_21_fu_1302_a_address1;
+        s2_vec_coeffs_address1 = grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_address1;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        s2_vec_coeffs_address1 = grp_pqcrystals_dilithium_21_fu_1313_a_address1;
     end else begin
         s2_vec_coeffs_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        s2_vec_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_ce0;
+    if (((1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        s2_vec_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        s2_vec_coeffs_ce0 = grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        s2_vec_coeffs_ce0 = grp_pqcrystals_dilithium_21_fu_1302_a_ce0;
+        s2_vec_coeffs_ce0 = grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        s2_vec_coeffs_ce0 = grp_pqcrystals_dilithium_21_fu_1313_a_ce0;
     end else begin
         s2_vec_coeffs_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state137) | (1'b1 == ap_CS_fsm_state135) | (1'b1 == ap_CS_fsm_state133) | (1'b1 == ap_CS_fsm_state131))) begin
-        s2_vec_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_ce1;
+    if (((1'b1 == ap_CS_fsm_state138) | (1'b1 == ap_CS_fsm_state136) | (1'b1 == ap_CS_fsm_state134) | (1'b1 == ap_CS_fsm_state132))) begin
+        s2_vec_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        s2_vec_coeffs_ce1 = grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        s2_vec_coeffs_ce1 = grp_pqcrystals_dilithium_21_fu_1302_a_ce1;
+        s2_vec_coeffs_ce1 = grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        s2_vec_coeffs_ce1 = grp_pqcrystals_dilithium_21_fu_1313_a_ce1;
     end else begin
         s2_vec_coeffs_ce1 = 1'b0;
     end
@@ -3692,9 +3754,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        s2_vec_coeffs_d0 = grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_d0;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        s2_vec_coeffs_d0 = grp_pqcrystals_dilithium_21_fu_1302_a_d0;
+        s2_vec_coeffs_d0 = grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_d0;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        s2_vec_coeffs_d0 = grp_pqcrystals_dilithium_21_fu_1313_a_d0;
     end else begin
         s2_vec_coeffs_d0 = 'bx;
     end
@@ -3702,9 +3764,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        s2_vec_coeffs_d1 = grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_d1;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        s2_vec_coeffs_d1 = grp_pqcrystals_dilithium_21_fu_1302_a_d1;
+        s2_vec_coeffs_d1 = grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_d1;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        s2_vec_coeffs_d1 = grp_pqcrystals_dilithium_21_fu_1313_a_d1;
     end else begin
         s2_vec_coeffs_d1 = 'bx;
     end
@@ -3712,9 +3774,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        s2_vec_coeffs_we0 = grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_we0;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        s2_vec_coeffs_we0 = grp_pqcrystals_dilithium_21_fu_1302_a_we0;
+        s2_vec_coeffs_we0 = grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_we0;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        s2_vec_coeffs_we0 = grp_pqcrystals_dilithium_21_fu_1313_a_we0;
     end else begin
         s2_vec_coeffs_we0 = 1'b0;
     end
@@ -3722,581 +3784,585 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        s2_vec_coeffs_we1 = grp_pqcrystals_dilithium_fu_1338_s2_vec_coeffs_we1;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        s2_vec_coeffs_we1 = grp_pqcrystals_dilithium_21_fu_1302_a_we1;
+        s2_vec_coeffs_we1 = grp_pqcrystals_dilithium_fu_1349_s2_vec_coeffs_we1;
+    end else if ((1'b1 == ap_CS_fsm_state39)) begin
+        s2_vec_coeffs_we1 = grp_pqcrystals_dilithium_21_fu_1313_a_we1;
     end else begin
         s2_vec_coeffs_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state31)) begin
-        seedbuf_address0 = zext_ln554_3_fu_2212_p1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        seedbuf_address0 = zext_ln563_3_fu_2222_p1;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        seedbuf_address0 = zext_ln561_3_fu_2182_p1;
     end else if ((1'b1 == ap_CS_fsm_state30)) begin
-        seedbuf_address0 = zext_ln552_3_fu_2172_p1;
+        seedbuf_address0 = zext_ln559_3_fu_2142_p1;
     end else if ((1'b1 == ap_CS_fsm_state29)) begin
-        seedbuf_address0 = zext_ln550_3_fu_2132_p1;
-    end else if ((1'b1 == ap_CS_fsm_state28)) begin
-        seedbuf_address0 = zext_ln548_3_fu_2020_p1;
-    end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        seedbuf_address0 = zext_ln32_5_fu_1930_p1;
-    end else if ((1'b1 == ap_CS_fsm_state21)) begin
-        seedbuf_address0 = zext_ln32_3_fu_1910_p1;
-    end else if ((1'b1 == ap_CS_fsm_state20)) begin
-        seedbuf_address0 = zext_ln32_1_fu_1890_p1;
-    end else if ((1'b1 == ap_CS_fsm_state19)) begin
-        seedbuf_address0 = zext_ln421_1_fu_1869_p1;
+        seedbuf_address0 = zext_ln557_3_fu_2030_p1;
+    end else if (((1'b0 == ap_block_pp0_stage3) & (1'b1 == ap_CS_fsm_pp0_stage3) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        seedbuf_address0 = zext_ln32_5_fu_1941_p1;
+    end else if (((1'b0 == ap_block_pp0_stage2) & (1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        seedbuf_address0 = zext_ln32_3_fu_1921_p1;
+    end else if (((1'b0 == ap_block_pp0_stage1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        seedbuf_address0 = zext_ln32_1_fu_1901_p1;
+    end else if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
+        seedbuf_address0 = zext_ln424_1_fu_1880_p1;
     end else if ((1'b1 == ap_CS_fsm_state17)) begin
-        seedbuf_address0 = zext_ln554_1_fu_1792_p1;
+        seedbuf_address0 = zext_ln563_1_fu_1803_p1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        seedbuf_address0 = zext_ln552_1_fu_1752_p1;
+        seedbuf_address0 = zext_ln561_1_fu_1763_p1;
     end else if ((1'b1 == ap_CS_fsm_state15)) begin
-        seedbuf_address0 = zext_ln550_1_fu_1712_p1;
+        seedbuf_address0 = zext_ln559_1_fu_1723_p1;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        seedbuf_address0 = zext_ln548_1_fu_1671_p1;
-    end else if (((1'b1 == ap_CS_fsm_state101) | (1'b1 == ap_CS_fsm_state4))) begin
-        seedbuf_address0 = grp_keccak_absorb_3199_fu_1414_m_address0;
+        seedbuf_address0 = zext_ln557_1_fu_1682_p1;
+    end else if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state4))) begin
+        seedbuf_address0 = grp_keccak_absorb_3199_fu_1425_m_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        seedbuf_address0 = grp_pqcrystals_dilithium_fu_1338_rho_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        seedbuf_address0 = grp_pqcrystals_dilithium_10_fu_1267_seed_address0;
-    end else if (((1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state48))) begin
-        seedbuf_address0 = grp_pqcrystals_dilithium_9_fu_1248_seed_address0;
+        seedbuf_address0 = grp_pqcrystals_dilithium_fu_1349_rho_address0;
+    end else if ((1'b1 == ap_CS_fsm_state35)) begin
+        seedbuf_address0 = grp_pqcrystals_dilithium_10_fu_1278_seed_address0;
+    end else if (((1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state49))) begin
+        seedbuf_address0 = grp_pqcrystals_dilithium_9_fu_1259_seed_address0;
     end else begin
         seedbuf_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state31)) begin
-        seedbuf_address1 = zext_ln555_3_fu_2232_p1;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        seedbuf_address1 = zext_ln564_3_fu_2242_p1;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        seedbuf_address1 = zext_ln562_3_fu_2202_p1;
     end else if ((1'b1 == ap_CS_fsm_state30)) begin
-        seedbuf_address1 = zext_ln553_3_fu_2192_p1;
+        seedbuf_address1 = zext_ln560_3_fu_2162_p1;
     end else if ((1'b1 == ap_CS_fsm_state29)) begin
-        seedbuf_address1 = zext_ln551_3_fu_2152_p1;
-    end else if ((1'b1 == ap_CS_fsm_state28)) begin
-        seedbuf_address1 = zext_ln549_3_fu_2052_p1;
-    end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        seedbuf_address1 = zext_ln32_6_fu_1940_p1;
-    end else if ((1'b1 == ap_CS_fsm_state21)) begin
-        seedbuf_address1 = zext_ln32_4_fu_1920_p1;
-    end else if ((1'b1 == ap_CS_fsm_state20)) begin
-        seedbuf_address1 = zext_ln32_2_fu_1900_p1;
-    end else if ((1'b1 == ap_CS_fsm_state19)) begin
-        seedbuf_address1 = zext_ln32_fu_1880_p1;
+        seedbuf_address1 = zext_ln558_3_fu_2062_p1;
+    end else if (((1'b0 == ap_block_pp0_stage3) & (1'b1 == ap_CS_fsm_pp0_stage3) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        seedbuf_address1 = zext_ln32_6_fu_1951_p1;
+    end else if (((1'b0 == ap_block_pp0_stage2) & (1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        seedbuf_address1 = zext_ln32_4_fu_1931_p1;
+    end else if (((1'b0 == ap_block_pp0_stage1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        seedbuf_address1 = zext_ln32_2_fu_1911_p1;
+    end else if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
+        seedbuf_address1 = zext_ln32_fu_1891_p1;
     end else if ((1'b1 == ap_CS_fsm_state17)) begin
-        seedbuf_address1 = zext_ln555_1_fu_1812_p1;
+        seedbuf_address1 = zext_ln564_1_fu_1823_p1;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        seedbuf_address1 = zext_ln553_1_fu_1772_p1;
+        seedbuf_address1 = zext_ln562_1_fu_1783_p1;
     end else if ((1'b1 == ap_CS_fsm_state15)) begin
-        seedbuf_address1 = zext_ln551_1_fu_1732_p1;
+        seedbuf_address1 = zext_ln560_1_fu_1743_p1;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        seedbuf_address1 = zext_ln549_1_fu_1692_p1;
-    end else if (((1'b1 == ap_CS_fsm_state101) | (1'b1 == ap_CS_fsm_state4))) begin
-        seedbuf_address1 = grp_keccak_absorb_3199_fu_1414_m_address1;
+        seedbuf_address1 = zext_ln558_1_fu_1703_p1;
+    end else if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state4))) begin
+        seedbuf_address1 = grp_keccak_absorb_3199_fu_1425_m_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        seedbuf_address1 = grp_pqcrystals_dilithium_fu_1338_rho_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        seedbuf_address1 = grp_pqcrystals_dilithium_10_fu_1267_seed_address1;
-    end else if (((1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state48))) begin
-        seedbuf_address1 = grp_pqcrystals_dilithium_9_fu_1248_seed_address1;
+        seedbuf_address1 = grp_pqcrystals_dilithium_fu_1349_rho_address1;
+    end else if ((1'b1 == ap_CS_fsm_state35)) begin
+        seedbuf_address1 = grp_pqcrystals_dilithium_10_fu_1278_seed_address1;
+    end else if (((1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state49))) begin
+        seedbuf_address1 = grp_pqcrystals_dilithium_9_fu_1259_seed_address1;
     end else begin
         seedbuf_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state17))) begin
+    if (((1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state17) | ((1'b0 == ap_block_pp0_stage3_11001) & (1'b1 == ap_CS_fsm_pp0_stage3) & (ap_enable_reg_pp0_iter0 == 1'b1)) | ((1'b0 == ap_block_pp0_stage2_11001) & (1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0 == 1'b1)) | ((1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1) & (ap_enable_reg_pp0_iter0 == 1'b1)) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
         seedbuf_ce0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state101) | (1'b1 == ap_CS_fsm_state4))) begin
-        seedbuf_ce0 = grp_keccak_absorb_3199_fu_1414_m_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state4))) begin
+        seedbuf_ce0 = grp_keccak_absorb_3199_fu_1425_m_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        seedbuf_ce0 = grp_pqcrystals_dilithium_fu_1338_rho_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        seedbuf_ce0 = grp_pqcrystals_dilithium_10_fu_1267_seed_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state48))) begin
-        seedbuf_ce0 = grp_pqcrystals_dilithium_9_fu_1248_seed_ce0;
+        seedbuf_ce0 = grp_pqcrystals_dilithium_fu_1349_rho_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state35)) begin
+        seedbuf_ce0 = grp_pqcrystals_dilithium_10_fu_1278_seed_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state49))) begin
+        seedbuf_ce0 = grp_pqcrystals_dilithium_9_fu_1259_seed_ce0;
     end else begin
         seedbuf_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state17))) begin
+    if (((1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state17) | ((1'b0 == ap_block_pp0_stage3_11001) & (1'b1 == ap_CS_fsm_pp0_stage3) & (ap_enable_reg_pp0_iter0 == 1'b1)) | ((1'b0 == ap_block_pp0_stage2_11001) & (1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0 == 1'b1)) | ((1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1) & (ap_enable_reg_pp0_iter0 == 1'b1)) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
         seedbuf_ce1 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state101) | (1'b1 == ap_CS_fsm_state4))) begin
-        seedbuf_ce1 = grp_keccak_absorb_3199_fu_1414_m_ce1;
+    end else if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state4))) begin
+        seedbuf_ce1 = grp_keccak_absorb_3199_fu_1425_m_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        seedbuf_ce1 = grp_pqcrystals_dilithium_fu_1338_rho_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        seedbuf_ce1 = grp_pqcrystals_dilithium_10_fu_1267_seed_ce1;
-    end else if (((1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state48))) begin
-        seedbuf_ce1 = grp_pqcrystals_dilithium_9_fu_1248_seed_ce1;
+        seedbuf_ce1 = grp_pqcrystals_dilithium_fu_1349_rho_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state35)) begin
+        seedbuf_ce1 = grp_pqcrystals_dilithium_10_fu_1278_seed_ce1;
+    end else if (((1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state49))) begin
+        seedbuf_ce1 = grp_pqcrystals_dilithium_9_fu_1259_seed_ce1;
     end else begin
         seedbuf_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state31)) begin
-        seedbuf_d0 = trunc_ln554_1_reg_3456;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        seedbuf_d0 = trunc_ln563_1_reg_3471;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        seedbuf_d0 = trunc_ln561_1_reg_3461;
     end else if ((1'b1 == ap_CS_fsm_state30)) begin
-        seedbuf_d0 = trunc_ln552_1_reg_3446;
+        seedbuf_d0 = trunc_ln559_1_reg_3451;
     end else if ((1'b1 == ap_CS_fsm_state29)) begin
-        seedbuf_d0 = trunc_ln550_1_reg_3436;
-    end else if ((1'b1 == ap_CS_fsm_state28)) begin
-        seedbuf_d0 = trunc_ln548_1_fu_1997_p1;
+        seedbuf_d0 = trunc_ln557_1_fu_2007_p1;
     end else if ((1'b1 == ap_CS_fsm_state17)) begin
-        seedbuf_d0 = reg_1568;
+        seedbuf_d0 = reg_1579;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        seedbuf_d0 = reg_1556;
+        seedbuf_d0 = reg_1567;
     end else if ((1'b1 == ap_CS_fsm_state15)) begin
-        seedbuf_d0 = reg_1544;
+        seedbuf_d0 = reg_1555;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        seedbuf_d0 = trunc_ln548_fu_1648_p1;
+        seedbuf_d0 = trunc_ln557_fu_1659_p1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        seedbuf_d0 = grp_pqcrystals_dilithium_fu_1338_rho_d0;
+        seedbuf_d0 = grp_pqcrystals_dilithium_fu_1349_rho_d0;
     end else begin
         seedbuf_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state31)) begin
-        seedbuf_d1 = trunc_ln555_1_reg_3461;
+    if ((1'b1 == ap_CS_fsm_state32)) begin
+        seedbuf_d1 = trunc_ln564_1_reg_3476;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        seedbuf_d1 = trunc_ln562_1_reg_3466;
     end else if ((1'b1 == ap_CS_fsm_state30)) begin
-        seedbuf_d1 = trunc_ln553_1_reg_3451;
+        seedbuf_d1 = trunc_ln560_1_reg_3456;
     end else if ((1'b1 == ap_CS_fsm_state29)) begin
-        seedbuf_d1 = trunc_ln551_1_reg_3441;
-    end else if ((1'b1 == ap_CS_fsm_state28)) begin
         seedbuf_d1 = {{state_0_s_q1[15:8]}};
     end else if ((1'b1 == ap_CS_fsm_state17)) begin
-        seedbuf_d1 = reg_1574;
+        seedbuf_d1 = reg_1585;
     end else if ((1'b1 == ap_CS_fsm_state16)) begin
-        seedbuf_d1 = reg_1562;
+        seedbuf_d1 = reg_1573;
     end else if ((1'b1 == ap_CS_fsm_state15)) begin
-        seedbuf_d1 = reg_1550;
+        seedbuf_d1 = reg_1561;
     end else if ((1'b1 == ap_CS_fsm_state14)) begin
         seedbuf_d1 = {{state_s_q0[15:8]}};
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        seedbuf_d1 = grp_pqcrystals_dilithium_fu_1338_rho_d1;
+        seedbuf_d1 = grp_pqcrystals_dilithium_fu_1349_rho_d1;
     end else begin
         seedbuf_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state17))) begin
+    if (((1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state17))) begin
         seedbuf_we0 = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        seedbuf_we0 = grp_pqcrystals_dilithium_fu_1338_rho_we0;
+        seedbuf_we0 = grp_pqcrystals_dilithium_fu_1349_rho_we0;
     end else begin
         seedbuf_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state17))) begin
+    if (((1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state17))) begin
         seedbuf_we1 = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        seedbuf_we1 = grp_pqcrystals_dilithium_fu_1338_rho_we1;
+        seedbuf_we1 = grp_pqcrystals_dilithium_fu_1349_rho_we1;
     end else begin
         seedbuf_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state114)) begin
-        sig_address0 = zext_ln554_4_fu_2753_p1;
+    if ((1'b1 == ap_CS_fsm_state115)) begin
+        sig_address0 = zext_ln563_4_fu_2763_p1;
+    end else if ((1'b1 == ap_CS_fsm_state114)) begin
+        sig_address0 = zext_ln561_4_fu_2743_p1;
     end else if ((1'b1 == ap_CS_fsm_state113)) begin
-        sig_address0 = zext_ln552_4_fu_2733_p1;
+        sig_address0 = zext_ln559_4_fu_2723_p1;
     end else if ((1'b1 == ap_CS_fsm_state112)) begin
-        sig_address0 = zext_ln550_4_fu_2713_p1;
-    end else if ((1'b1 == ap_CS_fsm_state111)) begin
-        sig_address0 = zext_ln548_4_fu_2692_p1;
-    end else if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        sig_address0 = grp_pqcrystals_dilithium_4_fu_1397_r_address0;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        sig_address0 = grp_pqcrystals_dilithium_19_fu_1364_sig_address0;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        sig_address0 = grp_keccak_absorb_2_fu_1278_m_address0;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        sig_address0 = grp_pqcrystals_dilithium_17_fu_1260_seed_address0;
+        sig_address0 = zext_ln557_4_fu_2702_p1;
+    end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        sig_address0 = grp_pqcrystals_dilithium_4_fu_1408_r_address0;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        sig_address0 = grp_pqcrystals_dilithium_19_fu_1375_sig_address0;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        sig_address0 = grp_keccak_absorb_2_fu_1289_m_address0;
+    end else if ((1'b1 == ap_CS_fsm_state116)) begin
+        sig_address0 = grp_pqcrystals_dilithium_17_fu_1271_seed_address0;
     end else begin
         sig_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state114)) begin
-        sig_address1 = zext_ln555_4_fu_2763_p1;
+    if ((1'b1 == ap_CS_fsm_state115)) begin
+        sig_address1 = zext_ln564_4_fu_2773_p1;
+    end else if ((1'b1 == ap_CS_fsm_state114)) begin
+        sig_address1 = zext_ln562_4_fu_2753_p1;
     end else if ((1'b1 == ap_CS_fsm_state113)) begin
-        sig_address1 = zext_ln553_4_fu_2743_p1;
+        sig_address1 = zext_ln560_4_fu_2733_p1;
     end else if ((1'b1 == ap_CS_fsm_state112)) begin
-        sig_address1 = zext_ln551_4_fu_2723_p1;
-    end else if ((1'b1 == ap_CS_fsm_state111)) begin
-        sig_address1 = zext_ln549_4_fu_2703_p1;
-    end else if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        sig_address1 = grp_pqcrystals_dilithium_4_fu_1397_r_address1;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        sig_address1 = grp_pqcrystals_dilithium_19_fu_1364_sig_address1;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        sig_address1 = grp_keccak_absorb_2_fu_1278_m_address1;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        sig_address1 = grp_pqcrystals_dilithium_17_fu_1260_seed_address1;
+        sig_address1 = zext_ln558_4_fu_2713_p1;
+    end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        sig_address1 = grp_pqcrystals_dilithium_4_fu_1408_r_address1;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        sig_address1 = grp_pqcrystals_dilithium_19_fu_1375_sig_address1;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        sig_address1 = grp_keccak_absorb_2_fu_1289_m_address1;
+    end else if ((1'b1 == ap_CS_fsm_state116)) begin
+        sig_address1 = grp_pqcrystals_dilithium_17_fu_1271_seed_address1;
     end else begin
         sig_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state111) | (1'b1 == ap_CS_fsm_state113) | (1'b1 == ap_CS_fsm_state112) | (1'b1 == ap_CS_fsm_state114))) begin
+    if (((1'b1 == ap_CS_fsm_state112) | (1'b1 == ap_CS_fsm_state114) | (1'b1 == ap_CS_fsm_state113) | (1'b1 == ap_CS_fsm_state115))) begin
         sig_ce0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        sig_ce0 = grp_pqcrystals_dilithium_4_fu_1397_r_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        sig_ce0 = grp_pqcrystals_dilithium_19_fu_1364_sig_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        sig_ce0 = grp_keccak_absorb_2_fu_1278_m_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        sig_ce0 = grp_pqcrystals_dilithium_17_fu_1260_seed_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        sig_ce0 = grp_pqcrystals_dilithium_4_fu_1408_r_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        sig_ce0 = grp_pqcrystals_dilithium_19_fu_1375_sig_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        sig_ce0 = grp_keccak_absorb_2_fu_1289_m_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state116)) begin
+        sig_ce0 = grp_pqcrystals_dilithium_17_fu_1271_seed_ce0;
     end else begin
         sig_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state111) | (1'b1 == ap_CS_fsm_state113) | (1'b1 == ap_CS_fsm_state112) | (1'b1 == ap_CS_fsm_state114))) begin
+    if (((1'b1 == ap_CS_fsm_state112) | (1'b1 == ap_CS_fsm_state114) | (1'b1 == ap_CS_fsm_state113) | (1'b1 == ap_CS_fsm_state115))) begin
         sig_ce1 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        sig_ce1 = grp_pqcrystals_dilithium_4_fu_1397_r_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        sig_ce1 = grp_pqcrystals_dilithium_19_fu_1364_sig_ce1;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        sig_ce1 = grp_keccak_absorb_2_fu_1278_m_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state115)) begin
-        sig_ce1 = grp_pqcrystals_dilithium_17_fu_1260_seed_ce1;
+    end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        sig_ce1 = grp_pqcrystals_dilithium_4_fu_1408_r_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        sig_ce1 = grp_pqcrystals_dilithium_19_fu_1375_sig_ce1;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        sig_ce1 = grp_keccak_absorb_2_fu_1289_m_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state116)) begin
+        sig_ce1 = grp_pqcrystals_dilithium_17_fu_1271_seed_ce1;
     end else begin
         sig_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state114)) begin
-        sig_d0 = reg_1568;
+    if ((1'b1 == ap_CS_fsm_state115)) begin
+        sig_d0 = reg_1579;
+    end else if ((1'b1 == ap_CS_fsm_state114)) begin
+        sig_d0 = reg_1567;
     end else if ((1'b1 == ap_CS_fsm_state113)) begin
-        sig_d0 = reg_1556;
+        sig_d0 = reg_1555;
     end else if ((1'b1 == ap_CS_fsm_state112)) begin
-        sig_d0 = reg_1544;
-    end else if ((1'b1 == ap_CS_fsm_state111)) begin
-        sig_d0 = trunc_ln548_2_fu_2680_p1;
-    end else if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        sig_d0 = grp_pqcrystals_dilithium_4_fu_1397_r_d0;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        sig_d0 = grp_pqcrystals_dilithium_19_fu_1364_sig_d0;
+        sig_d0 = trunc_ln557_2_fu_2690_p1;
+    end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        sig_d0 = grp_pqcrystals_dilithium_4_fu_1408_r_d0;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        sig_d0 = grp_pqcrystals_dilithium_19_fu_1375_sig_d0;
     end else begin
         sig_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state114)) begin
-        sig_d1 = reg_1574;
+    if ((1'b1 == ap_CS_fsm_state115)) begin
+        sig_d1 = reg_1585;
+    end else if ((1'b1 == ap_CS_fsm_state114)) begin
+        sig_d1 = reg_1573;
     end else if ((1'b1 == ap_CS_fsm_state113)) begin
-        sig_d1 = reg_1562;
+        sig_d1 = reg_1561;
     end else if ((1'b1 == ap_CS_fsm_state112)) begin
-        sig_d1 = reg_1550;
-    end else if ((1'b1 == ap_CS_fsm_state111)) begin
         sig_d1 = {{state_s_q0[15:8]}};
-    end else if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        sig_d1 = grp_pqcrystals_dilithium_4_fu_1397_r_d1;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        sig_d1 = grp_pqcrystals_dilithium_19_fu_1364_sig_d1;
+    end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        sig_d1 = grp_pqcrystals_dilithium_4_fu_1408_r_d1;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        sig_d1 = grp_pqcrystals_dilithium_19_fu_1375_sig_d1;
     end else begin
         sig_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state111) | (1'b1 == ap_CS_fsm_state113) | (1'b1 == ap_CS_fsm_state112) | (1'b1 == ap_CS_fsm_state114))) begin
+    if (((1'b1 == ap_CS_fsm_state112) | (1'b1 == ap_CS_fsm_state114) | (1'b1 == ap_CS_fsm_state113) | (1'b1 == ap_CS_fsm_state115))) begin
         sig_we0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        sig_we0 = grp_pqcrystals_dilithium_4_fu_1397_r_we0;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        sig_we0 = grp_pqcrystals_dilithium_19_fu_1364_sig_we0;
+    end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        sig_we0 = grp_pqcrystals_dilithium_4_fu_1408_r_we0;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        sig_we0 = grp_pqcrystals_dilithium_19_fu_1375_sig_we0;
     end else begin
         sig_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state111) | (1'b1 == ap_CS_fsm_state113) | (1'b1 == ap_CS_fsm_state112) | (1'b1 == ap_CS_fsm_state114))) begin
+    if (((1'b1 == ap_CS_fsm_state112) | (1'b1 == ap_CS_fsm_state114) | (1'b1 == ap_CS_fsm_state113) | (1'b1 == ap_CS_fsm_state115))) begin
         sig_we1 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        sig_we1 = grp_pqcrystals_dilithium_4_fu_1397_r_we1;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        sig_we1 = grp_pqcrystals_dilithium_19_fu_1364_sig_we1;
+    end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        sig_we1 = grp_pqcrystals_dilithium_4_fu_1408_r_we1;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        sig_we1 = grp_pqcrystals_dilithium_19_fu_1375_sig_we1;
     end else begin
         sig_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state24)) begin
+    if ((1'b1 == ap_CS_fsm_state25)) begin
+        state_0_s_address0 = state_0_s_addr_2_reg_3423;
+    end else if ((1'b1 == ap_CS_fsm_state24)) begin
         state_0_s_address0 = 64'd16;
-    end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        state_0_s_address0 = state_0_s_addr_3_reg_3335;
-    end else if ((1'b1 == ap_CS_fsm_state19)) begin
-        state_0_s_address0 = 64'd10;
+    end else if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
+        state_0_s_address0 = zext_ln422_fu_1857_p1;
     end else if ((1'b1 == ap_CS_fsm_state18)) begin
-        state_0_s_address0 = zext_ln365_1_fu_1829_p1;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        state_0_s_address0 = grp_KeccakF1600_StatePer_fu_1297_state_0_address0;
+        state_0_s_address0 = zext_ln365_1_fu_1840_p1;
+    end else if ((1'b1 == ap_CS_fsm_state27)) begin
+        state_0_s_address0 = grp_KeccakF1600_StatePer_fu_1308_state_0_address0;
     end else begin
         state_0_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
-        state_0_s_address1 = zext_ln546_1_fu_1980_p1;
+    if ((1'b1 == ap_CS_fsm_state28)) begin
+        state_0_s_address1 = zext_ln555_1_fu_1990_p1;
+    end else if ((1'b1 == ap_CS_fsm_state25)) begin
+        state_0_s_address1 = state_0_s_addr_1_reg_3418;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
         state_0_s_address1 = 64'd10;
-    end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        state_0_s_address1 = state_0_s_addr_3_reg_3335;
-    end else if ((1'b1 == ap_CS_fsm_state19)) begin
-        state_0_s_address1 = 64'd16;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        state_0_s_address1 = grp_KeccakF1600_StatePer_fu_1297_state_0_address1;
+    end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
+        state_0_s_address1 = state_0_s_addr_3_reg_3347;
+    end else if ((1'b1 == ap_CS_fsm_state27)) begin
+        state_0_s_address1 = grp_KeccakF1600_StatePer_fu_1308_state_0_address1;
     end else begin
         state_0_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state18) | (1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23))) begin
+    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state18) | (1'b1 == ap_CS_fsm_state25) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
         state_0_s_ce0 = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        state_0_s_ce0 = grp_KeccakF1600_StatePer_fu_1297_state_0_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state27)) begin
+        state_0_s_ce0 = grp_KeccakF1600_StatePer_fu_1308_state_0_ce0;
     end else begin
         state_0_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state24))) begin
+    if (((1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state25) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
         state_0_s_ce1 = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        state_0_s_ce1 = grp_KeccakF1600_StatePer_fu_1297_state_0_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state27)) begin
+        state_0_s_ce1 = grp_KeccakF1600_StatePer_fu_1308_state_0_ce1;
     end else begin
         state_0_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state24)) begin
-        state_0_s_d0 = xor_ln455_1_fu_1973_p2;
-    end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        state_0_s_d0 = xor_ln421_fu_1959_p2;
+    if ((1'b1 == ap_CS_fsm_state25)) begin
+        state_0_s_d0 = xor_ln463_1_fu_1983_p2;
     end else if ((1'b1 == ap_CS_fsm_state18)) begin
         state_0_s_d0 = 64'd0;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        state_0_s_d0 = grp_KeccakF1600_StatePer_fu_1297_state_0_d0;
+    end else if ((1'b1 == ap_CS_fsm_state27)) begin
+        state_0_s_d0 = grp_KeccakF1600_StatePer_fu_1308_state_0_d0;
     end else begin
         state_0_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state24)) begin
-        state_0_s_d1 = xor_ln454_1_fu_1966_p2;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        state_0_s_d1 = grp_KeccakF1600_StatePer_fu_1297_state_0_d1;
+    if ((1'b1 == ap_CS_fsm_state25)) begin
+        state_0_s_d1 = xor_ln462_1_fu_1976_p2;
+    end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
+        state_0_s_d1 = xor_ln424_fu_1970_p2;
+    end else if ((1'b1 == ap_CS_fsm_state27)) begin
+        state_0_s_d1 = grp_KeccakF1600_StatePer_fu_1308_state_0_d1;
     end else begin
         state_0_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | ((icmp_ln364_1_fu_1817_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state18)))) begin
+    if (((1'b1 == ap_CS_fsm_state25) | ((icmp_ln364_1_fu_1828_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state18)))) begin
         state_0_s_we0 = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        state_0_s_we0 = grp_KeccakF1600_StatePer_fu_1297_state_0_we0;
+    end else if ((1'b1 == ap_CS_fsm_state27)) begin
+        state_0_s_we0 = grp_KeccakF1600_StatePer_fu_1308_state_0_we0;
     end else begin
         state_0_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state24)) begin
+    if (((1'b1 == ap_CS_fsm_state25) | ((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln422_reg_3318 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
         state_0_s_we1 = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        state_0_s_we1 = grp_KeccakF1600_StatePer_fu_1297_state_0_we1;
+    end else if ((1'b1 == ap_CS_fsm_state27)) begin
+        state_0_s_we1 = grp_KeccakF1600_StatePer_fu_1308_state_0_we1;
     end else begin
         state_0_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state110)) begin
-        state_s_address0 = zext_ln546_2_fu_2659_p1;
-    end else if (((1'b1 == ap_CS_fsm_state105) | (1'b1 == ap_CS_fsm_state104))) begin
-        state_s_address0 = state_s_addr_12_reg_3662;
-    end else if (((icmp_ln364_2_fu_2608_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state100))) begin
-        state_s_address0 = zext_ln365_2_fu_2620_p1;
+    if ((1'b1 == ap_CS_fsm_state111)) begin
+        state_s_address0 = zext_ln555_2_fu_2669_p1;
+    end else if (((1'b1 == ap_CS_fsm_state106) | (1'b1 == ap_CS_fsm_state105))) begin
+        state_s_address0 = state_s_addr_12_reg_3677;
+    end else if (((icmp_ln364_2_fu_2618_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state101))) begin
+        state_s_address0 = zext_ln365_2_fu_2630_p1;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        state_s_address0 = zext_ln546_fu_1631_p1;
-    end else if (((1'b1 == ap_CS_fsm_state107) | (1'b1 == ap_CS_fsm_state106) | (1'b1 == ap_CS_fsm_state10))) begin
-        state_s_address0 = state_s_addr_9_reg_3271;
+        state_s_address0 = zext_ln555_fu_1642_p1;
+    end else if (((1'b1 == ap_CS_fsm_state108) | (1'b1 == ap_CS_fsm_state107) | (1'b1 == ap_CS_fsm_state10))) begin
+        state_s_address0 = state_s_addr_9_reg_3281;
     end else if ((1'b1 == ap_CS_fsm_state9)) begin
         state_s_address0 = 64'd16;
     end else if (((1'b1 == ap_CS_fsm_state8) | (1'b1 == ap_CS_fsm_state7))) begin
-        state_s_address0 = state_s_addr_reg_3266;
-    end else if (((icmp_ln364_fu_1580_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
-        state_s_address0 = zext_ln365_fu_1592_p1;
-    end else if (((1'b1 == ap_CS_fsm_state101) | (1'b1 == ap_CS_fsm_state4))) begin
-        state_s_address0 = grp_keccak_absorb_3199_fu_1414_s_address0;
-    end else if (((1'b1 == ap_CS_fsm_state109) | (1'b1 == ap_CS_fsm_state12))) begin
-        state_s_address0 = grp_KeccakF1600_StatePer_1_fu_1292_state_address0;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        state_s_address0 = grp_keccak_absorb_2_fu_1278_s_address0;
+        state_s_address0 = state_s_addr_reg_3276;
+    end else if (((icmp_ln364_fu_1591_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
+        state_s_address0 = zext_ln365_fu_1603_p1;
+    end else if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state4))) begin
+        state_s_address0 = grp_keccak_absorb_3199_fu_1425_s_address0;
+    end else if (((1'b1 == ap_CS_fsm_state110) | (1'b1 == ap_CS_fsm_state12))) begin
+        state_s_address0 = grp_KeccakF1600_StatePer_1_fu_1303_state_address0;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        state_s_address0 = grp_keccak_absorb_2_fu_1289_s_address0;
     end else begin
         state_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state109) | (1'b1 == ap_CS_fsm_state12))) begin
-        state_s_address1 = grp_KeccakF1600_StatePer_1_fu_1292_state_address1;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        state_s_address1 = grp_keccak_absorb_2_fu_1278_s_address1;
+    if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state4))) begin
+        state_s_address1 = grp_keccak_absorb_3199_fu_1425_s_address1;
+    end else if (((1'b1 == ap_CS_fsm_state110) | (1'b1 == ap_CS_fsm_state12))) begin
+        state_s_address1 = grp_KeccakF1600_StatePer_1_fu_1303_state_address1;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        state_s_address1 = grp_keccak_absorb_2_fu_1289_s_address1;
     end else begin
         state_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state110) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state9) | (1'b1 == ap_CS_fsm_state107) | (1'b1 == ap_CS_fsm_state106) | (1'b1 == ap_CS_fsm_state105) | (1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state8) | (1'b1 == ap_CS_fsm_state7) | ((icmp_ln364_2_fu_2608_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state100)) | ((icmp_ln364_fu_1580_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3)))) begin
+    if (((1'b1 == ap_CS_fsm_state111) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state9) | (1'b1 == ap_CS_fsm_state108) | (1'b1 == ap_CS_fsm_state107) | (1'b1 == ap_CS_fsm_state106) | (1'b1 == ap_CS_fsm_state105) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state8) | (1'b1 == ap_CS_fsm_state7) | ((icmp_ln364_2_fu_2618_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state101)) | ((icmp_ln364_fu_1591_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3)))) begin
         state_s_ce0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state101) | (1'b1 == ap_CS_fsm_state4))) begin
-        state_s_ce0 = grp_keccak_absorb_3199_fu_1414_s_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state109) | (1'b1 == ap_CS_fsm_state12))) begin
-        state_s_ce0 = grp_KeccakF1600_StatePer_1_fu_1292_state_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        state_s_ce0 = grp_keccak_absorb_2_fu_1278_s_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state4))) begin
+        state_s_ce0 = grp_keccak_absorb_3199_fu_1425_s_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state110) | (1'b1 == ap_CS_fsm_state12))) begin
+        state_s_ce0 = grp_KeccakF1600_StatePer_1_fu_1303_state_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        state_s_ce0 = grp_keccak_absorb_2_fu_1289_s_ce0;
     end else begin
         state_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state109) | (1'b1 == ap_CS_fsm_state12))) begin
-        state_s_ce1 = grp_KeccakF1600_StatePer_1_fu_1292_state_ce1;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        state_s_ce1 = grp_keccak_absorb_2_fu_1278_s_ce1;
+    if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state4))) begin
+        state_s_ce1 = grp_keccak_absorb_3199_fu_1425_s_ce1;
+    end else if (((1'b1 == ap_CS_fsm_state110) | (1'b1 == ap_CS_fsm_state12))) begin
+        state_s_ce1 = grp_KeccakF1600_StatePer_1_fu_1303_state_ce1;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        state_s_ce1 = grp_keccak_absorb_2_fu_1289_s_ce1;
     end else begin
         state_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state105)) begin
-        state_s_d0 = xor_ln454_2_fu_2652_p2;
-    end else if (((1'b1 == ap_CS_fsm_state107) | (1'b1 == ap_CS_fsm_state10))) begin
-        state_s_d0 = grp_fu_1461_p2;
+    if ((1'b1 == ap_CS_fsm_state106)) begin
+        state_s_d0 = xor_ln462_2_fu_2662_p2;
+    end else if (((1'b1 == ap_CS_fsm_state108) | (1'b1 == ap_CS_fsm_state10))) begin
+        state_s_d0 = grp_fu_1472_p2;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        state_s_d0 = xor_ln454_fu_1624_p2;
-    end else if ((((icmp_ln364_2_fu_2608_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state100)) | ((icmp_ln364_fu_1580_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3)))) begin
+        state_s_d0 = xor_ln462_fu_1635_p2;
+    end else if ((((icmp_ln364_2_fu_2618_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state101)) | ((icmp_ln364_fu_1591_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3)))) begin
         state_s_d0 = 64'd0;
-    end else if (((1'b1 == ap_CS_fsm_state101) | (1'b1 == ap_CS_fsm_state4))) begin
-        state_s_d0 = grp_keccak_absorb_3199_fu_1414_s_d0;
-    end else if (((1'b1 == ap_CS_fsm_state109) | (1'b1 == ap_CS_fsm_state12))) begin
-        state_s_d0 = grp_KeccakF1600_StatePer_1_fu_1292_state_d0;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        state_s_d0 = grp_keccak_absorb_2_fu_1278_s_d0;
+    end else if (((1'b1 == ap_CS_fsm_state110) | (1'b1 == ap_CS_fsm_state12))) begin
+        state_s_d0 = grp_KeccakF1600_StatePer_1_fu_1303_state_d0;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        state_s_d0 = grp_keccak_absorb_2_fu_1289_s_d0;
     end else begin
         state_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state109) | (1'b1 == ap_CS_fsm_state12))) begin
-        state_s_d1 = grp_KeccakF1600_StatePer_1_fu_1292_state_d1;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        state_s_d1 = grp_keccak_absorb_2_fu_1278_s_d1;
+    if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state4))) begin
+        state_s_d1 = grp_keccak_absorb_3199_fu_1425_s_d1;
+    end else if (((1'b1 == ap_CS_fsm_state110) | (1'b1 == ap_CS_fsm_state12))) begin
+        state_s_d1 = grp_KeccakF1600_StatePer_1_fu_1303_state_d1;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        state_s_d1 = grp_keccak_absorb_2_fu_1289_s_d1;
     end else begin
         state_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state107) | (1'b1 == ap_CS_fsm_state105) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state8) | ((icmp_ln364_2_fu_2608_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state100)) | ((icmp_ln364_fu_1580_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3)))) begin
+    if (((1'b1 == ap_CS_fsm_state108) | (1'b1 == ap_CS_fsm_state106) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state8) | ((icmp_ln364_2_fu_2618_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state101)) | ((icmp_ln364_fu_1591_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3)))) begin
         state_s_we0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state101) | (1'b1 == ap_CS_fsm_state4))) begin
-        state_s_we0 = grp_keccak_absorb_3199_fu_1414_s_we0;
-    end else if (((1'b1 == ap_CS_fsm_state109) | (1'b1 == ap_CS_fsm_state12))) begin
-        state_s_we0 = grp_KeccakF1600_StatePer_1_fu_1292_state_we0;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        state_s_we0 = grp_keccak_absorb_2_fu_1278_s_we0;
+    end else if (((1'b1 == ap_CS_fsm_state110) | (1'b1 == ap_CS_fsm_state12))) begin
+        state_s_we0 = grp_KeccakF1600_StatePer_1_fu_1303_state_we0;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        state_s_we0 = grp_keccak_absorb_2_fu_1289_s_we0;
     end else begin
         state_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state109) | (1'b1 == ap_CS_fsm_state12))) begin
-        state_s_we1 = grp_KeccakF1600_StatePer_1_fu_1292_state_we1;
-    end else if (((1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state6))) begin
-        state_s_we1 = grp_keccak_absorb_2_fu_1278_s_we1;
+    if (((1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state4))) begin
+        state_s_we1 = grp_keccak_absorb_3199_fu_1425_s_we1;
+    end else if (((1'b1 == ap_CS_fsm_state110) | (1'b1 == ap_CS_fsm_state12))) begin
+        state_s_we1 = grp_KeccakF1600_StatePer_1_fu_1303_state_we1;
+    end else if (((1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state6))) begin
+        state_s_we1 = grp_keccak_absorb_2_fu_1289_s_we1;
     end else begin
         state_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157))) begin
-        t0_vec_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_address0;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158))) begin
+        t0_vec_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        t0_vec_coeffs_address0 = grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        t0_vec_coeffs_address0 = grp_pqcrystals_dilithium_21_fu_1302_a_address0;
+        t0_vec_coeffs_address0 = grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        t0_vec_coeffs_address0 = grp_pqcrystals_dilithium_21_fu_1313_a_address0;
     end else begin
         t0_vec_coeffs_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157))) begin
-        t0_vec_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_address1;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158))) begin
+        t0_vec_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        t0_vec_coeffs_address1 = grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_address1;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        t0_vec_coeffs_address1 = grp_pqcrystals_dilithium_21_fu_1302_a_address1;
+        t0_vec_coeffs_address1 = grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_address1;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        t0_vec_coeffs_address1 = grp_pqcrystals_dilithium_21_fu_1313_a_address1;
     end else begin
         t0_vec_coeffs_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157))) begin
-        t0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_ce0;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158))) begin
+        t0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        t0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        t0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_21_fu_1302_a_ce0;
+        t0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        t0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_21_fu_1313_a_ce0;
     end else begin
         t0_vec_coeffs_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state163) | (1'b1 == ap_CS_fsm_state161) | (1'b1 == ap_CS_fsm_state159) | (1'b1 == ap_CS_fsm_state157))) begin
-        t0_vec_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1380_b_coeffs_ce1;
+    if (((1'b1 == ap_CS_fsm_state164) | (1'b1 == ap_CS_fsm_state162) | (1'b1 == ap_CS_fsm_state160) | (1'b1 == ap_CS_fsm_state158))) begin
+        t0_vec_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        t0_vec_coeffs_ce1 = grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        t0_vec_coeffs_ce1 = grp_pqcrystals_dilithium_21_fu_1302_a_ce1;
+        t0_vec_coeffs_ce1 = grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        t0_vec_coeffs_ce1 = grp_pqcrystals_dilithium_21_fu_1313_a_ce1;
     end else begin
         t0_vec_coeffs_ce1 = 1'b0;
     end
@@ -4304,9 +4370,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        t0_vec_coeffs_d0 = grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_d0;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        t0_vec_coeffs_d0 = grp_pqcrystals_dilithium_21_fu_1302_a_d0;
+        t0_vec_coeffs_d0 = grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_d0;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        t0_vec_coeffs_d0 = grp_pqcrystals_dilithium_21_fu_1313_a_d0;
     end else begin
         t0_vec_coeffs_d0 = 'bx;
     end
@@ -4314,9 +4380,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        t0_vec_coeffs_d1 = grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_d1;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        t0_vec_coeffs_d1 = grp_pqcrystals_dilithium_21_fu_1302_a_d1;
+        t0_vec_coeffs_d1 = grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_d1;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        t0_vec_coeffs_d1 = grp_pqcrystals_dilithium_21_fu_1313_a_d1;
     end else begin
         t0_vec_coeffs_d1 = 'bx;
     end
@@ -4324,9 +4390,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        t0_vec_coeffs_we0 = grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_we0;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        t0_vec_coeffs_we0 = grp_pqcrystals_dilithium_21_fu_1302_a_we0;
+        t0_vec_coeffs_we0 = grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_we0;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        t0_vec_coeffs_we0 = grp_pqcrystals_dilithium_21_fu_1313_a_we0;
     end else begin
         t0_vec_coeffs_we0 = 1'b0;
     end
@@ -4334,387 +4400,387 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        t0_vec_coeffs_we1 = grp_pqcrystals_dilithium_fu_1338_t0_vec_coeffs_we1;
-    end else if ((1'b1 == ap_CS_fsm_state40)) begin
-        t0_vec_coeffs_we1 = grp_pqcrystals_dilithium_21_fu_1302_a_we1;
+        t0_vec_coeffs_we1 = grp_pqcrystals_dilithium_fu_1349_t0_vec_coeffs_we1;
+    end else if ((1'b1 == ap_CS_fsm_state41)) begin
+        t0_vec_coeffs_we1 = grp_pqcrystals_dilithium_21_fu_1313_a_we1;
     end else begin
         t0_vec_coeffs_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state193)) begin
-        w0_vec_coeffs_address0 = zext_ln253_1_fu_3146_p1;
+    if ((1'b1 == ap_CS_fsm_state194)) begin
+        w0_vec_coeffs_address0 = zext_ln256_1_fu_3156_p1;
+    end else if ((1'b1 == ap_CS_fsm_state185)) begin
+        w0_vec_coeffs_address0 = w0_vec_coeffs_addr_1_reg_3861;
     end else if ((1'b1 == ap_CS_fsm_state184)) begin
-        w0_vec_coeffs_address0 = w0_vec_coeffs_addr_1_reg_3846;
-    end else if ((1'b1 == ap_CS_fsm_state183)) begin
-        w0_vec_coeffs_address0 = zext_ln88_5_fu_3082_p1;
-    end else if ((1'b1 == ap_CS_fsm_state92)) begin
-        w0_vec_coeffs_address0 = zext_ln230_1_reg_3644;
-    end else if (((1'b1 == ap_CS_fsm_state154) | (1'b1 == ap_CS_fsm_state152) | (1'b1 == ap_CS_fsm_state150) | (1'b1 == ap_CS_fsm_state148))) begin
-        w0_vec_coeffs_address0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_address0;
-    end else if (((1'b1 == ap_CS_fsm_state189) | (1'b1 == ap_CS_fsm_state187) | (1'b1 == ap_CS_fsm_state185) | (1'b1 == ap_CS_fsm_state191))) begin
-        w0_vec_coeffs_address0 = grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state156)) begin
-        w0_vec_coeffs_address0 = grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state147)) begin
-        w0_vec_coeffs_address0 = grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_address0;
+        w0_vec_coeffs_address0 = zext_ln88_5_fu_3092_p1;
+    end else if ((1'b1 == ap_CS_fsm_state93)) begin
+        w0_vec_coeffs_address0 = zext_ln233_1_reg_3659;
+    end else if (((1'b1 == ap_CS_fsm_state155) | (1'b1 == ap_CS_fsm_state153) | (1'b1 == ap_CS_fsm_state151) | (1'b1 == ap_CS_fsm_state149))) begin
+        w0_vec_coeffs_address0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_address0;
+    end else if (((1'b1 == ap_CS_fsm_state190) | (1'b1 == ap_CS_fsm_state188) | (1'b1 == ap_CS_fsm_state186) | (1'b1 == ap_CS_fsm_state192))) begin
+        w0_vec_coeffs_address0 = grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state157)) begin
+        w0_vec_coeffs_address0 = grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state148)) begin
+        w0_vec_coeffs_address0 = grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_address0;
     end else begin
         w0_vec_coeffs_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state193) | (1'b1 == ap_CS_fsm_state183) | (1'b1 == ap_CS_fsm_state184) | (1'b1 == ap_CS_fsm_state92))) begin
+    if (((1'b1 == ap_CS_fsm_state194) | (1'b1 == ap_CS_fsm_state184) | (1'b1 == ap_CS_fsm_state185) | (1'b1 == ap_CS_fsm_state93))) begin
         w0_vec_coeffs_ce0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state154) | (1'b1 == ap_CS_fsm_state152) | (1'b1 == ap_CS_fsm_state150) | (1'b1 == ap_CS_fsm_state148))) begin
-        w0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state189) | (1'b1 == ap_CS_fsm_state187) | (1'b1 == ap_CS_fsm_state185) | (1'b1 == ap_CS_fsm_state191))) begin
-        w0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state156)) begin
-        w0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_6_fu_1423_v_vec_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state147)) begin
-        w0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state155) | (1'b1 == ap_CS_fsm_state153) | (1'b1 == ap_CS_fsm_state151) | (1'b1 == ap_CS_fsm_state149))) begin
+        w0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state190) | (1'b1 == ap_CS_fsm_state188) | (1'b1 == ap_CS_fsm_state186) | (1'b1 == ap_CS_fsm_state192))) begin
+        w0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state157)) begin
+        w0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state148)) begin
+        w0_vec_coeffs_ce0 = grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_ce0;
     end else begin
         w0_vec_coeffs_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state147)) begin
-        w0_vec_coeffs_ce1 = grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_ce1;
+    if ((1'b1 == ap_CS_fsm_state148)) begin
+        w0_vec_coeffs_ce1 = grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_ce1;
     end else begin
         w0_vec_coeffs_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state184)) begin
-        w0_vec_coeffs_d0 = add_ln88_1_fu_3088_p2;
-    end else if ((1'b1 == ap_CS_fsm_state92)) begin
-        w0_vec_coeffs_d0 = sub_ln52_1_fu_2602_p2;
-    end else if (((1'b1 == ap_CS_fsm_state154) | (1'b1 == ap_CS_fsm_state152) | (1'b1 == ap_CS_fsm_state150) | (1'b1 == ap_CS_fsm_state148))) begin
-        w0_vec_coeffs_d0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_d0;
-    end else if (((1'b1 == ap_CS_fsm_state189) | (1'b1 == ap_CS_fsm_state187) | (1'b1 == ap_CS_fsm_state185) | (1'b1 == ap_CS_fsm_state191))) begin
-        w0_vec_coeffs_d0 = grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_d0;
-    end else if ((1'b1 == ap_CS_fsm_state147)) begin
-        w0_vec_coeffs_d0 = grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_d0;
+    if ((1'b1 == ap_CS_fsm_state185)) begin
+        w0_vec_coeffs_d0 = add_ln88_1_fu_3098_p2;
+    end else if ((1'b1 == ap_CS_fsm_state93)) begin
+        w0_vec_coeffs_d0 = sub_ln52_1_fu_2612_p2;
+    end else if (((1'b1 == ap_CS_fsm_state155) | (1'b1 == ap_CS_fsm_state153) | (1'b1 == ap_CS_fsm_state151) | (1'b1 == ap_CS_fsm_state149))) begin
+        w0_vec_coeffs_d0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_d0;
+    end else if (((1'b1 == ap_CS_fsm_state190) | (1'b1 == ap_CS_fsm_state188) | (1'b1 == ap_CS_fsm_state186) | (1'b1 == ap_CS_fsm_state192))) begin
+        w0_vec_coeffs_d0 = grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_d0;
+    end else if ((1'b1 == ap_CS_fsm_state148)) begin
+        w0_vec_coeffs_d0 = grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_d0;
     end else begin
         w0_vec_coeffs_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state184) | (1'b1 == ap_CS_fsm_state92))) begin
+    if (((1'b1 == ap_CS_fsm_state185) | (1'b1 == ap_CS_fsm_state93))) begin
         w0_vec_coeffs_we0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state154) | (1'b1 == ap_CS_fsm_state152) | (1'b1 == ap_CS_fsm_state150) | (1'b1 == ap_CS_fsm_state148))) begin
-        w0_vec_coeffs_we0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_we0;
-    end else if (((1'b1 == ap_CS_fsm_state189) | (1'b1 == ap_CS_fsm_state187) | (1'b1 == ap_CS_fsm_state185) | (1'b1 == ap_CS_fsm_state191))) begin
-        w0_vec_coeffs_we0 = grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_we0;
-    end else if ((1'b1 == ap_CS_fsm_state147)) begin
-        w0_vec_coeffs_we0 = grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_we0;
+    end else if (((1'b1 == ap_CS_fsm_state155) | (1'b1 == ap_CS_fsm_state153) | (1'b1 == ap_CS_fsm_state151) | (1'b1 == ap_CS_fsm_state149))) begin
+        w0_vec_coeffs_we0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_we0;
+    end else if (((1'b1 == ap_CS_fsm_state190) | (1'b1 == ap_CS_fsm_state188) | (1'b1 == ap_CS_fsm_state186) | (1'b1 == ap_CS_fsm_state192))) begin
+        w0_vec_coeffs_we0 = grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_we0;
+    end else if ((1'b1 == ap_CS_fsm_state148)) begin
+        w0_vec_coeffs_we0 = grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_we0;
     end else begin
         w0_vec_coeffs_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state147)) begin
-        w0_vec_coeffs_we1 = grp_pqcrystals_dilithium_11_fu_1372_c_coeffs_we1;
+    if ((1'b1 == ap_CS_fsm_state148)) begin
+        w0_vec_coeffs_we1 = grp_pqcrystals_dilithium_11_fu_1383_c_coeffs_we1;
     end else begin
         w0_vec_coeffs_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state193)) begin
-        w1_vec_coeffs_address0 = zext_ln253_1_fu_3146_p1;
+    if ((1'b1 == ap_CS_fsm_state194)) begin
+        w1_vec_coeffs_address0 = zext_ln256_1_fu_3156_p1;
+    end else if ((1'b1 == ap_CS_fsm_state93)) begin
+        w1_vec_coeffs_address0 = w1_vec_coeffs_addr_reg_3664;
     end else if ((1'b1 == ap_CS_fsm_state92)) begin
-        w1_vec_coeffs_address0 = w1_vec_coeffs_addr_reg_3649;
-    end else if ((1'b1 == ap_CS_fsm_state91)) begin
-        w1_vec_coeffs_address0 = zext_ln230_1_fu_2500_p1;
-    end else if (((1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state67))) begin
-        w1_vec_coeffs_address0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_address0;
-    end else if (((1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state83) | (1'b1 == ap_CS_fsm_state89))) begin
-        w1_vec_coeffs_address0 = grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_address0;
-    end else if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        w1_vec_coeffs_address0 = grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_address0;
-    end else if (((1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75))) begin
-        w1_vec_coeffs_address0 = grp_pqcrystals_dilithium_23_fu_1352_a_address0;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        w1_vec_coeffs_address0 = grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_address0;
+        w1_vec_coeffs_address0 = zext_ln233_1_fu_2510_p1;
+    end else if (((1'b1 == ap_CS_fsm_state74) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state68))) begin
+        w1_vec_coeffs_address0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_address0;
+    end else if (((1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state90))) begin
+        w1_vec_coeffs_address0 = grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_address0;
+    end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        w1_vec_coeffs_address0 = grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_address0;
+    end else if (((1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76))) begin
+        w1_vec_coeffs_address0 = grp_pqcrystals_dilithium_23_fu_1363_a_address0;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        w1_vec_coeffs_address0 = grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_address0;
     end else begin
         w1_vec_coeffs_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        w1_vec_coeffs_address1 = grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_address1;
-    end else if (((1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75))) begin
-        w1_vec_coeffs_address1 = grp_pqcrystals_dilithium_23_fu_1352_a_address1;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        w1_vec_coeffs_address1 = grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_address1;
+    if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        w1_vec_coeffs_address1 = grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_address1;
+    end else if (((1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76))) begin
+        w1_vec_coeffs_address1 = grp_pqcrystals_dilithium_23_fu_1363_a_address1;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        w1_vec_coeffs_address1 = grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_address1;
     end else begin
         w1_vec_coeffs_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state193) | (1'b1 == ap_CS_fsm_state91) | (1'b1 == ap_CS_fsm_state92))) begin
+    if (((1'b1 == ap_CS_fsm_state194) | (1'b1 == ap_CS_fsm_state92) | (1'b1 == ap_CS_fsm_state93))) begin
         w1_vec_coeffs_ce0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state67))) begin
-        w1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state83) | (1'b1 == ap_CS_fsm_state89))) begin
-        w1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        w1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75))) begin
-        w1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_23_fu_1352_a_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        w1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state74) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state68))) begin
+        w1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state90))) begin
+        w1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        w1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76))) begin
+        w1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_23_fu_1363_a_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        w1_vec_coeffs_ce0 = grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_ce0;
     end else begin
         w1_vec_coeffs_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state99))) begin
-        w1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_4_fu_1397_a_coeffs_ce1;
-    end else if (((1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75))) begin
-        w1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_23_fu_1352_a_ce1;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        w1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_ce1;
+    if (((1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state100))) begin
+        w1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_ce1;
+    end else if (((1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76))) begin
+        w1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_23_fu_1363_a_ce1;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        w1_vec_coeffs_ce1 = grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_ce1;
     end else begin
         w1_vec_coeffs_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state92)) begin
-        w1_vec_coeffs_d0 = sext_ln48_1_fu_2576_p1;
-    end else if (((1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state67))) begin
-        w1_vec_coeffs_d0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_d0;
-    end else if (((1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state83) | (1'b1 == ap_CS_fsm_state89))) begin
-        w1_vec_coeffs_d0 = grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_d0;
-    end else if (((1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75))) begin
-        w1_vec_coeffs_d0 = grp_pqcrystals_dilithium_23_fu_1352_a_d0;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        w1_vec_coeffs_d0 = grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_d0;
+    if ((1'b1 == ap_CS_fsm_state93)) begin
+        w1_vec_coeffs_d0 = sext_ln48_1_fu_2586_p1;
+    end else if (((1'b1 == ap_CS_fsm_state74) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state68))) begin
+        w1_vec_coeffs_d0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_d0;
+    end else if (((1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state90))) begin
+        w1_vec_coeffs_d0 = grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_d0;
+    end else if (((1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76))) begin
+        w1_vec_coeffs_d0 = grp_pqcrystals_dilithium_23_fu_1363_a_d0;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        w1_vec_coeffs_d0 = grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_d0;
     end else begin
         w1_vec_coeffs_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75))) begin
-        w1_vec_coeffs_d1 = grp_pqcrystals_dilithium_23_fu_1352_a_d1;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        w1_vec_coeffs_d1 = grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_d1;
+    if (((1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76))) begin
+        w1_vec_coeffs_d1 = grp_pqcrystals_dilithium_23_fu_1363_a_d1;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        w1_vec_coeffs_d1 = grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_d1;
     end else begin
         w1_vec_coeffs_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state92)) begin
+    if ((1'b1 == ap_CS_fsm_state93)) begin
         w1_vec_coeffs_we0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state67))) begin
-        w1_vec_coeffs_we0 = grp_pqcrystals_dilithium_12_fu_1441_a_coeffs_we0;
-    end else if (((1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state83) | (1'b1 == ap_CS_fsm_state89))) begin
-        w1_vec_coeffs_we0 = grp_pqcrystals_dilithium_18_fu_1431_a_coeffs_we0;
-    end else if (((1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75))) begin
-        w1_vec_coeffs_we0 = grp_pqcrystals_dilithium_23_fu_1352_a_we0;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        w1_vec_coeffs_we0 = grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_we0;
+    end else if (((1'b1 == ap_CS_fsm_state74) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state68))) begin
+        w1_vec_coeffs_we0 = grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_we0;
+    end else if (((1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state90))) begin
+        w1_vec_coeffs_we0 = grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_we0;
+    end else if (((1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76))) begin
+        w1_vec_coeffs_we0 = grp_pqcrystals_dilithium_23_fu_1363_a_we0;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        w1_vec_coeffs_we0 = grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_we0;
     end else begin
         w1_vec_coeffs_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state75))) begin
-        w1_vec_coeffs_we1 = grp_pqcrystals_dilithium_23_fu_1352_a_we1;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        w1_vec_coeffs_we1 = grp_pqcrystals_dilithium_5_fu_1321_w_coeffs_we1;
+    if (((1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state76))) begin
+        w1_vec_coeffs_we1 = grp_pqcrystals_dilithium_23_fu_1363_a_we1;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        w1_vec_coeffs_we1 = grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_we1;
     end else begin
         w1_vec_coeffs_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state123)) begin
-        y_vec_coeffs_address0 = zext_ln88_3_fu_2848_p1;
-    end else if ((1'b1 == ap_CS_fsm_state55)) begin
-        y_vec_coeffs_address0 = tmp_3257_fu_2423_p3;
-    end else if ((1'b1 == ap_CS_fsm_state53)) begin
-        y_vec_coeffs_address0 = tmp_3256_fu_2397_p3;
-    end else if ((1'b1 == ap_CS_fsm_state51)) begin
-        y_vec_coeffs_address0 = tmp_s_fu_2371_p3;
-    end else if ((1'b1 == ap_CS_fsm_state49)) begin
-        y_vec_coeffs_address0 = zext_ln124_fu_2349_p1;
-    end else if (((1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state48))) begin
-        y_vec_coeffs_address0 = grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_address0;
+    if ((1'b1 == ap_CS_fsm_state124)) begin
+        y_vec_coeffs_address0 = zext_ln88_3_fu_2858_p1;
+    end else if ((1'b1 == ap_CS_fsm_state56)) begin
+        y_vec_coeffs_address0 = tmp_3257_fu_2433_p3;
+    end else if ((1'b1 == ap_CS_fsm_state54)) begin
+        y_vec_coeffs_address0 = tmp_3256_fu_2407_p3;
+    end else if ((1'b1 == ap_CS_fsm_state52)) begin
+        y_vec_coeffs_address0 = tmp_s_fu_2381_p3;
+    end else if ((1'b1 == ap_CS_fsm_state50)) begin
+        y_vec_coeffs_address0 = zext_ln124_fu_2359_p1;
+    end else if (((1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state49))) begin
+        y_vec_coeffs_address0 = grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_address0;
     end else begin
         y_vec_coeffs_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state123) | (1'b1 == ap_CS_fsm_state55) | (1'b1 == ap_CS_fsm_state53) | (1'b1 == ap_CS_fsm_state51) | (1'b1 == ap_CS_fsm_state49))) begin
+    if (((1'b1 == ap_CS_fsm_state124) | (1'b1 == ap_CS_fsm_state56) | (1'b1 == ap_CS_fsm_state54) | (1'b1 == ap_CS_fsm_state52) | (1'b1 == ap_CS_fsm_state50))) begin
         y_vec_coeffs_ce0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state48))) begin
-        y_vec_coeffs_ce0 = grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state49))) begin
+        y_vec_coeffs_ce0 = grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_ce0;
     end else begin
         y_vec_coeffs_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state48))) begin
-        y_vec_coeffs_we0 = grp_pqcrystals_dilithium_9_fu_1248_a_coeffs_we0;
+    if (((1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state49))) begin
+        y_vec_coeffs_we0 = grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_we0;
     end else begin
         y_vec_coeffs_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state129)) begin
-        z_vec_coeffs_address0 = zext_ln304_2_fu_2980_p1;
+    if ((1'b1 == ap_CS_fsm_state130)) begin
+        z_vec_coeffs_address0 = zext_ln307_2_fu_2990_p1;
+    end else if ((1'b1 == ap_CS_fsm_state128)) begin
+        z_vec_coeffs_address0 = z_vec_coeffs_addr_5_reg_3789;
     end else if ((1'b1 == ap_CS_fsm_state127)) begin
-        z_vec_coeffs_address0 = z_vec_coeffs_addr_5_reg_3774;
-    end else if ((1'b1 == ap_CS_fsm_state126)) begin
-        z_vec_coeffs_address0 = zext_ln33_2_fu_2910_p1;
+        z_vec_coeffs_address0 = zext_ln33_2_fu_2920_p1;
+    end else if ((1'b1 == ap_CS_fsm_state125)) begin
+        z_vec_coeffs_address0 = z_vec_coeffs_addr_4_reg_3763;
     end else if ((1'b1 == ap_CS_fsm_state124)) begin
-        z_vec_coeffs_address0 = z_vec_coeffs_addr_4_reg_3748;
-    end else if ((1'b1 == ap_CS_fsm_state123)) begin
-        z_vec_coeffs_address0 = zext_ln88_3_fu_2848_p1;
-    end else if ((1'b1 == ap_CS_fsm_state56)) begin
-        z_vec_coeffs_address0 = tmp_3257_reg_3601;
-    end else if ((1'b1 == ap_CS_fsm_state54)) begin
-        z_vec_coeffs_address0 = tmp_3256_reg_3582;
-    end else if ((1'b1 == ap_CS_fsm_state52)) begin
-        z_vec_coeffs_address0 = tmp_s_reg_3563;
-    end else if ((1'b1 == ap_CS_fsm_state50)) begin
-        z_vec_coeffs_address0 = zext_ln124_reg_3544;
-    end else if ((1'b1 == ap_CS_fsm_state119)) begin
-        z_vec_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        z_vec_coeffs_address0 = grp_pqcrystals_dilithium_19_fu_1364_z_vec_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state121)) begin
-        z_vec_coeffs_address0 = grp_pqcrystals_dilithium_23_fu_1352_a_address0;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        z_vec_coeffs_address0 = grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_address0;
-    end else if ((1'b1 == ap_CS_fsm_state58)) begin
-        z_vec_coeffs_address0 = grp_pqcrystals_dilithium_21_fu_1302_a_address0;
+        z_vec_coeffs_address0 = zext_ln88_3_fu_2858_p1;
+    end else if ((1'b1 == ap_CS_fsm_state57)) begin
+        z_vec_coeffs_address0 = tmp_3257_reg_3616;
+    end else if ((1'b1 == ap_CS_fsm_state55)) begin
+        z_vec_coeffs_address0 = tmp_3256_reg_3597;
+    end else if ((1'b1 == ap_CS_fsm_state53)) begin
+        z_vec_coeffs_address0 = tmp_s_reg_3578;
+    end else if ((1'b1 == ap_CS_fsm_state51)) begin
+        z_vec_coeffs_address0 = zext_ln124_reg_3559;
+    end else if ((1'b1 == ap_CS_fsm_state120)) begin
+        z_vec_coeffs_address0 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        z_vec_coeffs_address0 = grp_pqcrystals_dilithium_19_fu_1375_z_vec_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state122)) begin
+        z_vec_coeffs_address0 = grp_pqcrystals_dilithium_23_fu_1363_a_address0;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        z_vec_coeffs_address0 = grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_address0;
+    end else if ((1'b1 == ap_CS_fsm_state59)) begin
+        z_vec_coeffs_address0 = grp_pqcrystals_dilithium_21_fu_1313_a_address0;
     end else begin
         z_vec_coeffs_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state119)) begin
-        z_vec_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_address1;
-    end else if ((1'b1 == ap_CS_fsm_state121)) begin
-        z_vec_coeffs_address1 = grp_pqcrystals_dilithium_23_fu_1352_a_address1;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        z_vec_coeffs_address1 = grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_address1;
-    end else if ((1'b1 == ap_CS_fsm_state58)) begin
-        z_vec_coeffs_address1 = grp_pqcrystals_dilithium_21_fu_1302_a_address1;
+    if ((1'b1 == ap_CS_fsm_state120)) begin
+        z_vec_coeffs_address1 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_address1;
+    end else if ((1'b1 == ap_CS_fsm_state122)) begin
+        z_vec_coeffs_address1 = grp_pqcrystals_dilithium_23_fu_1363_a_address1;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        z_vec_coeffs_address1 = grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_address1;
+    end else if ((1'b1 == ap_CS_fsm_state59)) begin
+        z_vec_coeffs_address1 = grp_pqcrystals_dilithium_21_fu_1313_a_address1;
     end else begin
         z_vec_coeffs_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state129) | (1'b1 == ap_CS_fsm_state126) | (1'b1 == ap_CS_fsm_state123) | (1'b1 == ap_CS_fsm_state127) | (1'b1 == ap_CS_fsm_state124) | (1'b1 == ap_CS_fsm_state56) | (1'b1 == ap_CS_fsm_state54) | (1'b1 == ap_CS_fsm_state52) | (1'b1 == ap_CS_fsm_state50))) begin
+    if (((1'b1 == ap_CS_fsm_state130) | (1'b1 == ap_CS_fsm_state127) | (1'b1 == ap_CS_fsm_state124) | (1'b1 == ap_CS_fsm_state128) | (1'b1 == ap_CS_fsm_state125) | (1'b1 == ap_CS_fsm_state57) | (1'b1 == ap_CS_fsm_state55) | (1'b1 == ap_CS_fsm_state53) | (1'b1 == ap_CS_fsm_state51))) begin
         z_vec_coeffs_ce0 = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state119)) begin
-        z_vec_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state195)) begin
-        z_vec_coeffs_ce0 = grp_pqcrystals_dilithium_19_fu_1364_z_vec_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state121)) begin
-        z_vec_coeffs_ce0 = grp_pqcrystals_dilithium_23_fu_1352_a_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        z_vec_coeffs_ce0 = grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state58)) begin
-        z_vec_coeffs_ce0 = grp_pqcrystals_dilithium_21_fu_1302_a_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state120)) begin
+        z_vec_coeffs_ce0 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state196)) begin
+        z_vec_coeffs_ce0 = grp_pqcrystals_dilithium_19_fu_1375_z_vec_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state122)) begin
+        z_vec_coeffs_ce0 = grp_pqcrystals_dilithium_23_fu_1363_a_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        z_vec_coeffs_ce0 = grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state59)) begin
+        z_vec_coeffs_ce0 = grp_pqcrystals_dilithium_21_fu_1313_a_ce0;
     end else begin
         z_vec_coeffs_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state119)) begin
-        z_vec_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state121)) begin
-        z_vec_coeffs_ce1 = grp_pqcrystals_dilithium_23_fu_1352_a_ce1;
-    end else if (((1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state59))) begin
-        z_vec_coeffs_ce1 = grp_pqcrystals_dilithium_5_fu_1321_v_vec_coeffs_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state58)) begin
-        z_vec_coeffs_ce1 = grp_pqcrystals_dilithium_21_fu_1302_a_ce1;
+    if ((1'b1 == ap_CS_fsm_state120)) begin
+        z_vec_coeffs_ce1 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state122)) begin
+        z_vec_coeffs_ce1 = grp_pqcrystals_dilithium_23_fu_1363_a_ce1;
+    end else if (((1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60))) begin
+        z_vec_coeffs_ce1 = grp_pqcrystals_dilithium_5_fu_1332_v_vec_coeffs_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state59)) begin
+        z_vec_coeffs_ce1 = grp_pqcrystals_dilithium_21_fu_1313_a_ce1;
     end else begin
         z_vec_coeffs_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state127)) begin
-        z_vec_coeffs_d0 = grp_fu_3244_p3;
-    end else if ((1'b1 == ap_CS_fsm_state124)) begin
-        z_vec_coeffs_d0 = add_ln88_fu_2858_p2;
-    end else if ((1'b1 == ap_CS_fsm_state56)) begin
-        z_vec_coeffs_d0 = sext_ln124_3_fu_2438_p1;
-    end else if ((1'b1 == ap_CS_fsm_state54)) begin
-        z_vec_coeffs_d0 = sext_ln124_2_fu_2412_p1;
-    end else if ((1'b1 == ap_CS_fsm_state52)) begin
-        z_vec_coeffs_d0 = sext_ln124_1_fu_2386_p1;
-    end else if ((1'b1 == ap_CS_fsm_state50)) begin
-        z_vec_coeffs_d0 = sext_ln124_fu_2360_p1;
-    end else if ((1'b1 == ap_CS_fsm_state119)) begin
-        z_vec_coeffs_d0 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_d0;
-    end else if ((1'b1 == ap_CS_fsm_state121)) begin
-        z_vec_coeffs_d0 = grp_pqcrystals_dilithium_23_fu_1352_a_d0;
-    end else if ((1'b1 == ap_CS_fsm_state58)) begin
-        z_vec_coeffs_d0 = grp_pqcrystals_dilithium_21_fu_1302_a_d0;
+    if ((1'b1 == ap_CS_fsm_state128)) begin
+        z_vec_coeffs_d0 = grp_fu_3254_p3;
+    end else if ((1'b1 == ap_CS_fsm_state125)) begin
+        z_vec_coeffs_d0 = add_ln88_fu_2868_p2;
+    end else if ((1'b1 == ap_CS_fsm_state57)) begin
+        z_vec_coeffs_d0 = sext_ln124_3_fu_2448_p1;
+    end else if ((1'b1 == ap_CS_fsm_state55)) begin
+        z_vec_coeffs_d0 = sext_ln124_2_fu_2422_p1;
+    end else if ((1'b1 == ap_CS_fsm_state53)) begin
+        z_vec_coeffs_d0 = sext_ln124_1_fu_2396_p1;
+    end else if ((1'b1 == ap_CS_fsm_state51)) begin
+        z_vec_coeffs_d0 = sext_ln124_fu_2370_p1;
+    end else if ((1'b1 == ap_CS_fsm_state120)) begin
+        z_vec_coeffs_d0 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_d0;
+    end else if ((1'b1 == ap_CS_fsm_state122)) begin
+        z_vec_coeffs_d0 = grp_pqcrystals_dilithium_23_fu_1363_a_d0;
+    end else if ((1'b1 == ap_CS_fsm_state59)) begin
+        z_vec_coeffs_d0 = grp_pqcrystals_dilithium_21_fu_1313_a_d0;
     end else begin
         z_vec_coeffs_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state119)) begin
-        z_vec_coeffs_d1 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_d1;
-    end else if ((1'b1 == ap_CS_fsm_state121)) begin
-        z_vec_coeffs_d1 = grp_pqcrystals_dilithium_23_fu_1352_a_d1;
-    end else if ((1'b1 == ap_CS_fsm_state58)) begin
-        z_vec_coeffs_d1 = grp_pqcrystals_dilithium_21_fu_1302_a_d1;
+    if ((1'b1 == ap_CS_fsm_state120)) begin
+        z_vec_coeffs_d1 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_d1;
+    end else if ((1'b1 == ap_CS_fsm_state122)) begin
+        z_vec_coeffs_d1 = grp_pqcrystals_dilithium_23_fu_1363_a_d1;
+    end else if ((1'b1 == ap_CS_fsm_state59)) begin
+        z_vec_coeffs_d1 = grp_pqcrystals_dilithium_21_fu_1313_a_d1;
     end else begin
         z_vec_coeffs_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state127) | (1'b1 == ap_CS_fsm_state124) | (1'b1 == ap_CS_fsm_state56) | (1'b1 == ap_CS_fsm_state54) | (1'b1 == ap_CS_fsm_state52) | (1'b1 == ap_CS_fsm_state50))) begin
+    if (((1'b1 == ap_CS_fsm_state128) | (1'b1 == ap_CS_fsm_state125) | (1'b1 == ap_CS_fsm_state57) | (1'b1 == ap_CS_fsm_state55) | (1'b1 == ap_CS_fsm_state53) | (1'b1 == ap_CS_fsm_state51))) begin
         z_vec_coeffs_we0 = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state119)) begin
-        z_vec_coeffs_we0 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_we0;
-    end else if ((1'b1 == ap_CS_fsm_state121)) begin
-        z_vec_coeffs_we0 = grp_pqcrystals_dilithium_23_fu_1352_a_we0;
-    end else if ((1'b1 == ap_CS_fsm_state58)) begin
-        z_vec_coeffs_we0 = grp_pqcrystals_dilithium_21_fu_1302_a_we0;
+    end else if ((1'b1 == ap_CS_fsm_state120)) begin
+        z_vec_coeffs_we0 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_we0;
+    end else if ((1'b1 == ap_CS_fsm_state122)) begin
+        z_vec_coeffs_we0 = grp_pqcrystals_dilithium_23_fu_1363_a_we0;
+    end else if ((1'b1 == ap_CS_fsm_state59)) begin
+        z_vec_coeffs_we0 = grp_pqcrystals_dilithium_21_fu_1313_a_we0;
     end else begin
         z_vec_coeffs_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state119)) begin
-        z_vec_coeffs_we1 = grp_pqcrystals_dilithium_13_fu_1380_c_coeffs_we1;
-    end else if ((1'b1 == ap_CS_fsm_state121)) begin
-        z_vec_coeffs_we1 = grp_pqcrystals_dilithium_23_fu_1352_a_we1;
-    end else if ((1'b1 == ap_CS_fsm_state58)) begin
-        z_vec_coeffs_we1 = grp_pqcrystals_dilithium_21_fu_1302_a_we1;
+    if ((1'b1 == ap_CS_fsm_state120)) begin
+        z_vec_coeffs_we1 = grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_we1;
+    end else if ((1'b1 == ap_CS_fsm_state122)) begin
+        z_vec_coeffs_we1 = grp_pqcrystals_dilithium_23_fu_1363_a_we1;
+    end else if ((1'b1 == ap_CS_fsm_state59)) begin
+        z_vec_coeffs_we1 = grp_pqcrystals_dilithium_21_fu_1313_a_we1;
     end else begin
         z_vec_coeffs_we1 = 1'b0;
     end
@@ -4730,21 +4796,21 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((grp_pqcrystals_dilithium_fu_1338_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((grp_pqcrystals_dilithium_fu_1349_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end
         end
         ap_ST_fsm_state3 : begin
-            if (((icmp_ln364_fu_1580_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
+            if (((icmp_ln364_fu_1591_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end
         end
         ap_ST_fsm_state4 : begin
-            if (((1'b1 == ap_CS_fsm_state4) & (grp_keccak_absorb_3199_fu_1414_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state4) & (grp_keccak_absorb_3199_fu_1425_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state5;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -4754,7 +4820,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state6;
         end
         ap_ST_fsm_state6 : begin
-            if (((grp_keccak_absorb_2_fu_1278_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+            if (((grp_keccak_absorb_2_fu_1289_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
                 ap_NS_fsm = ap_ST_fsm_state7;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state6;
@@ -4776,14 +4842,14 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state12;
         end
         ap_ST_fsm_state12 : begin
-            if (((1'b1 == ap_CS_fsm_state12) & (grp_KeccakF1600_StatePer_1_fu_1292_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state12) & (grp_KeccakF1600_StatePer_1_fu_1303_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state13;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state12;
             end
         end
         ap_ST_fsm_state13 : begin
-            if (((icmp_ln546_fu_1636_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state13))) begin
+            if (((icmp_ln555_fu_1647_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state13))) begin
                 ap_NS_fsm = ap_ST_fsm_state18;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state14;
@@ -4802,30 +4868,41 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state13;
         end
         ap_ST_fsm_state18 : begin
-            if (((icmp_ln364_1_fu_1817_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state18))) begin
-                ap_NS_fsm = ap_ST_fsm_state19;
+            if (((icmp_ln364_1_fu_1828_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state18))) begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage0;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state18;
             end
         end
-        ap_ST_fsm_state19 : begin
-            if (((icmp_ln420_fu_1839_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state19))) begin
+        ap_ST_fsm_pp0_stage0 : begin
+            if ((~((1'b0 == ap_block_pp0_stage0_subdone) & (icmp_ln422_fu_1845_p2 == 1'd1) & (ap_enable_reg_pp0_iter0 == 1'b1)) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage1;
+            end else if (((1'b0 == ap_block_pp0_stage0_subdone) & (icmp_ln422_fu_1845_p2 == 1'd1) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state24;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state20;
+                ap_NS_fsm = ap_ST_fsm_pp0_stage0;
             end
         end
-        ap_ST_fsm_state20 : begin
-            ap_NS_fsm = ap_ST_fsm_state21;
+        ap_ST_fsm_pp0_stage1 : begin
+            if ((1'b0 == ap_block_pp0_stage1_subdone)) begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage2;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage1;
+            end
         end
-        ap_ST_fsm_state21 : begin
-            ap_NS_fsm = ap_ST_fsm_state22;
+        ap_ST_fsm_pp0_stage2 : begin
+            if ((1'b0 == ap_block_pp0_stage2_subdone)) begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage3;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage2;
+            end
         end
-        ap_ST_fsm_state22 : begin
-            ap_NS_fsm = ap_ST_fsm_state23;
-        end
-        ap_ST_fsm_state23 : begin
-            ap_NS_fsm = ap_ST_fsm_state19;
+        ap_ST_fsm_pp0_stage3 : begin
+            if ((1'b0 == ap_block_pp0_stage3_subdone)) begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage0;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage3;
+            end
         end
         ap_ST_fsm_state24 : begin
             ap_NS_fsm = ap_ST_fsm_state25;
@@ -4834,21 +4911,21 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state26;
         end
         ap_ST_fsm_state26 : begin
-            if (((1'b1 == ap_CS_fsm_state26) & (grp_KeccakF1600_StatePer_fu_1297_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state27;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state26;
-            end
+            ap_NS_fsm = ap_ST_fsm_state27;
         end
         ap_ST_fsm_state27 : begin
-            if (((icmp_ln546_1_fu_1985_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state27))) begin
-                ap_NS_fsm = ap_ST_fsm_state32;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state27) & (grp_KeccakF1600_StatePer_fu_1308_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state28;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state27;
             end
         end
         ap_ST_fsm_state28 : begin
-            ap_NS_fsm = ap_ST_fsm_state29;
+            if (((icmp_ln555_1_fu_1995_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state28))) begin
+                ap_NS_fsm = ap_ST_fsm_state33;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state29;
+            end
         end
         ap_ST_fsm_state29 : begin
             ap_NS_fsm = ap_ST_fsm_state30;
@@ -4857,402 +4934,402 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state31;
         end
         ap_ST_fsm_state31 : begin
-            ap_NS_fsm = ap_ST_fsm_state27;
+            ap_NS_fsm = ap_ST_fsm_state32;
         end
         ap_ST_fsm_state32 : begin
-            if (((icmp_ln20_fu_2237_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state32))) begin
-                ap_NS_fsm = ap_ST_fsm_state35;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state33;
-            end
+            ap_NS_fsm = ap_ST_fsm_state28;
         end
         ap_ST_fsm_state33 : begin
-            if (((icmp_ln21_fu_2249_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state33))) begin
-                ap_NS_fsm = ap_ST_fsm_state32;
+            if (((icmp_ln20_fu_2247_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state33))) begin
+                ap_NS_fsm = ap_ST_fsm_state36;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state34;
             end
         end
         ap_ST_fsm_state34 : begin
-            if (((1'b1 == ap_CS_fsm_state34) & (grp_pqcrystals_dilithium_10_fu_1267_ap_done == 1'b1))) begin
+            if (((icmp_ln21_fu_2259_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state34))) begin
                 ap_NS_fsm = ap_ST_fsm_state33;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state34;
+                ap_NS_fsm = ap_ST_fsm_state35;
             end
         end
         ap_ST_fsm_state35 : begin
-            if (((icmp_ln102_fu_2276_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state35))) begin
-                ap_NS_fsm = ap_ST_fsm_state37;
+            if (((1'b1 == ap_CS_fsm_state35) & (grp_pqcrystals_dilithium_10_fu_1278_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state34;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state36;
+                ap_NS_fsm = ap_ST_fsm_state35;
             end
         end
         ap_ST_fsm_state36 : begin
-            if (((1'b1 == ap_CS_fsm_state36) & (grp_pqcrystals_dilithium_21_fu_1302_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state35;
+            if (((icmp_ln104_fu_2286_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state36))) begin
+                ap_NS_fsm = ap_ST_fsm_state38;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state36;
+                ap_NS_fsm = ap_ST_fsm_state37;
             end
         end
         ap_ST_fsm_state37 : begin
-            if (((icmp_ln286_fu_2288_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state37))) begin
-                ap_NS_fsm = ap_ST_fsm_state39;
+            if (((1'b1 == ap_CS_fsm_state37) & (grp_pqcrystals_dilithium_21_fu_1313_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state36;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state38;
+                ap_NS_fsm = ap_ST_fsm_state37;
             end
         end
         ap_ST_fsm_state38 : begin
-            if (((1'b1 == ap_CS_fsm_state38) & (grp_pqcrystals_dilithium_21_fu_1302_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state37;
+            if (((icmp_ln290_fu_2298_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state38))) begin
+                ap_NS_fsm = ap_ST_fsm_state40;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state38;
+                ap_NS_fsm = ap_ST_fsm_state39;
             end
         end
         ap_ST_fsm_state39 : begin
-            if (((icmp_ln286_1_fu_2300_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state39))) begin
-                ap_NS_fsm = ap_ST_fsm_state41;
+            if (((1'b1 == ap_CS_fsm_state39) & (grp_pqcrystals_dilithium_21_fu_1313_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state38;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state40;
+                ap_NS_fsm = ap_ST_fsm_state39;
             end
         end
         ap_ST_fsm_state40 : begin
-            if (((1'b1 == ap_CS_fsm_state40) & (grp_pqcrystals_dilithium_21_fu_1302_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state39;
+            if (((icmp_ln290_1_fu_2310_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state40))) begin
+                ap_NS_fsm = ap_ST_fsm_state42;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state40;
+                ap_NS_fsm = ap_ST_fsm_state41;
             end
         end
         ap_ST_fsm_state41 : begin
-            ap_NS_fsm = ap_ST_fsm_state42;
+            if (((1'b1 == ap_CS_fsm_state41) & (grp_pqcrystals_dilithium_21_fu_1313_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state40;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state41;
+            end
         end
         ap_ST_fsm_state42 : begin
-            if (((grp_pqcrystals_dilithium_9_fu_1248_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state42))) begin
-                ap_NS_fsm = ap_ST_fsm_state43;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state42;
-            end
+            ap_NS_fsm = ap_ST_fsm_state43;
         end
         ap_ST_fsm_state43 : begin
-            ap_NS_fsm = ap_ST_fsm_state44;
+            if (((1'b1 == ap_CS_fsm_state43) & (grp_pqcrystals_dilithium_9_fu_1259_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state44;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state43;
+            end
         end
         ap_ST_fsm_state44 : begin
-            if (((grp_pqcrystals_dilithium_9_fu_1248_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state44))) begin
-                ap_NS_fsm = ap_ST_fsm_state45;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state44;
-            end
+            ap_NS_fsm = ap_ST_fsm_state45;
         end
         ap_ST_fsm_state45 : begin
-            ap_NS_fsm = ap_ST_fsm_state46;
+            if (((1'b1 == ap_CS_fsm_state45) & (grp_pqcrystals_dilithium_9_fu_1259_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state46;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state45;
+            end
         end
         ap_ST_fsm_state46 : begin
-            if (((grp_pqcrystals_dilithium_9_fu_1248_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state46))) begin
-                ap_NS_fsm = ap_ST_fsm_state47;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state46;
-            end
+            ap_NS_fsm = ap_ST_fsm_state47;
         end
         ap_ST_fsm_state47 : begin
-            ap_NS_fsm = ap_ST_fsm_state48;
+            if (((1'b1 == ap_CS_fsm_state47) & (grp_pqcrystals_dilithium_9_fu_1259_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state48;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state47;
+            end
         end
         ap_ST_fsm_state48 : begin
-            if (((grp_pqcrystals_dilithium_9_fu_1248_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state48))) begin
-                ap_NS_fsm = ap_ST_fsm_state49;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state48;
-            end
+            ap_NS_fsm = ap_ST_fsm_state49;
         end
         ap_ST_fsm_state49 : begin
-            ap_NS_fsm = ap_ST_fsm_state50;
-        end
-        ap_ST_fsm_state50 : begin
-            if (((icmp_ln124_reg_3554 == 1'd1) & (1'b1 == ap_CS_fsm_state50))) begin
-                ap_NS_fsm = ap_ST_fsm_state51;
+            if (((1'b1 == ap_CS_fsm_state49) & (grp_pqcrystals_dilithium_9_fu_1259_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state50;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state49;
             end
         end
+        ap_ST_fsm_state50 : begin
+            ap_NS_fsm = ap_ST_fsm_state51;
+        end
         ap_ST_fsm_state51 : begin
-            ap_NS_fsm = ap_ST_fsm_state52;
+            if (((icmp_ln124_reg_3569 == 1'd1) & (1'b1 == ap_CS_fsm_state51))) begin
+                ap_NS_fsm = ap_ST_fsm_state52;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state50;
+            end
         end
         ap_ST_fsm_state52 : begin
-            if (((icmp_ln124_1_reg_3573 == 1'd1) & (1'b1 == ap_CS_fsm_state52))) begin
-                ap_NS_fsm = ap_ST_fsm_state53;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state51;
-            end
+            ap_NS_fsm = ap_ST_fsm_state53;
         end
         ap_ST_fsm_state53 : begin
-            ap_NS_fsm = ap_ST_fsm_state54;
+            if (((icmp_ln124_1_reg_3588 == 1'd1) & (1'b1 == ap_CS_fsm_state53))) begin
+                ap_NS_fsm = ap_ST_fsm_state54;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state52;
+            end
         end
         ap_ST_fsm_state54 : begin
-            if (((icmp_ln124_2_reg_3592 == 1'd1) & (1'b1 == ap_CS_fsm_state54))) begin
-                ap_NS_fsm = ap_ST_fsm_state55;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state53;
-            end
+            ap_NS_fsm = ap_ST_fsm_state55;
         end
         ap_ST_fsm_state55 : begin
-            ap_NS_fsm = ap_ST_fsm_state56;
-        end
-        ap_ST_fsm_state56 : begin
-            if (((icmp_ln124_3_reg_3611 == 1'd1) & (1'b1 == ap_CS_fsm_state56))) begin
-                ap_NS_fsm = ap_ST_fsm_state57;
+            if (((icmp_ln124_2_reg_3607 == 1'd1) & (1'b1 == ap_CS_fsm_state55))) begin
+                ap_NS_fsm = ap_ST_fsm_state56;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state55;
+                ap_NS_fsm = ap_ST_fsm_state54;
             end
         end
+        ap_ST_fsm_state56 : begin
+            ap_NS_fsm = ap_ST_fsm_state57;
+        end
         ap_ST_fsm_state57 : begin
-            if (((icmp_ln102_1_fu_2443_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state57))) begin
-                ap_NS_fsm = ap_ST_fsm_state59;
-            end else begin
+            if (((icmp_ln124_3_reg_3626 == 1'd1) & (1'b1 == ap_CS_fsm_state57))) begin
                 ap_NS_fsm = ap_ST_fsm_state58;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state56;
             end
         end
         ap_ST_fsm_state58 : begin
-            if (((1'b1 == ap_CS_fsm_state58) & (grp_pqcrystals_dilithium_21_fu_1302_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state57;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state58;
-            end
-        end
-        ap_ST_fsm_state59 : begin
-            if (((1'b1 == ap_CS_fsm_state59) & (grp_pqcrystals_dilithium_5_fu_1321_ap_done == 1'b1))) begin
+            if (((icmp_ln104_1_fu_2453_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state58))) begin
                 ap_NS_fsm = ap_ST_fsm_state60;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state59;
             end
         end
+        ap_ST_fsm_state59 : begin
+            if (((1'b1 == ap_CS_fsm_state59) & (grp_pqcrystals_dilithium_21_fu_1313_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state58;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state59;
+            end
+        end
         ap_ST_fsm_state60 : begin
-            ap_NS_fsm = ap_ST_fsm_state61;
+            if (((1'b1 == ap_CS_fsm_state60) & (grp_pqcrystals_dilithium_5_fu_1332_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state61;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state60;
+            end
         end
         ap_ST_fsm_state61 : begin
-            if (((1'b1 == ap_CS_fsm_state61) & (grp_pqcrystals_dilithium_5_fu_1321_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state62;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state61;
-            end
+            ap_NS_fsm = ap_ST_fsm_state62;
         end
         ap_ST_fsm_state62 : begin
-            ap_NS_fsm = ap_ST_fsm_state63;
+            if (((1'b1 == ap_CS_fsm_state62) & (grp_pqcrystals_dilithium_5_fu_1332_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state63;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state62;
+            end
         end
         ap_ST_fsm_state63 : begin
-            if (((1'b1 == ap_CS_fsm_state63) & (grp_pqcrystals_dilithium_5_fu_1321_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state64;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state63;
-            end
+            ap_NS_fsm = ap_ST_fsm_state64;
         end
         ap_ST_fsm_state64 : begin
-            ap_NS_fsm = ap_ST_fsm_state65;
+            if (((1'b1 == ap_CS_fsm_state64) & (grp_pqcrystals_dilithium_5_fu_1332_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state65;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state64;
+            end
         end
         ap_ST_fsm_state65 : begin
-            if (((1'b1 == ap_CS_fsm_state65) & (grp_pqcrystals_dilithium_5_fu_1321_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state66;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state65;
-            end
+            ap_NS_fsm = ap_ST_fsm_state66;
         end
         ap_ST_fsm_state66 : begin
-            ap_NS_fsm = ap_ST_fsm_state67;
+            if (((1'b1 == ap_CS_fsm_state66) & (grp_pqcrystals_dilithium_5_fu_1332_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state67;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state66;
+            end
         end
         ap_ST_fsm_state67 : begin
-            if (((1'b1 == ap_CS_fsm_state67) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state68;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state67;
-            end
+            ap_NS_fsm = ap_ST_fsm_state68;
         end
         ap_ST_fsm_state68 : begin
-            ap_NS_fsm = ap_ST_fsm_state69;
+            if (((1'b1 == ap_CS_fsm_state68) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state69;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state68;
+            end
         end
         ap_ST_fsm_state69 : begin
-            if (((1'b1 == ap_CS_fsm_state69) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state70;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state69;
-            end
+            ap_NS_fsm = ap_ST_fsm_state70;
         end
         ap_ST_fsm_state70 : begin
-            ap_NS_fsm = ap_ST_fsm_state71;
+            if (((1'b1 == ap_CS_fsm_state70) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state71;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state70;
+            end
         end
         ap_ST_fsm_state71 : begin
-            if (((1'b1 == ap_CS_fsm_state71) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state72;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state71;
-            end
+            ap_NS_fsm = ap_ST_fsm_state72;
         end
         ap_ST_fsm_state72 : begin
-            ap_NS_fsm = ap_ST_fsm_state73;
+            if (((1'b1 == ap_CS_fsm_state72) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state73;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state72;
+            end
         end
         ap_ST_fsm_state73 : begin
-            if (((1'b1 == ap_CS_fsm_state73) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state74;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state73;
-            end
+            ap_NS_fsm = ap_ST_fsm_state74;
         end
         ap_ST_fsm_state74 : begin
-            ap_NS_fsm = ap_ST_fsm_state75;
+            if (((1'b1 == ap_CS_fsm_state74) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state75;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state74;
+            end
         end
         ap_ST_fsm_state75 : begin
-            if (((1'b1 == ap_CS_fsm_state75) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state76;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state75;
-            end
+            ap_NS_fsm = ap_ST_fsm_state76;
         end
         ap_ST_fsm_state76 : begin
-            ap_NS_fsm = ap_ST_fsm_state77;
+            if (((1'b1 == ap_CS_fsm_state76) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state77;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state76;
+            end
         end
         ap_ST_fsm_state77 : begin
-            if (((1'b1 == ap_CS_fsm_state77) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state78;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state77;
-            end
+            ap_NS_fsm = ap_ST_fsm_state78;
         end
         ap_ST_fsm_state78 : begin
-            ap_NS_fsm = ap_ST_fsm_state79;
+            if (((1'b1 == ap_CS_fsm_state78) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state79;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state78;
+            end
         end
         ap_ST_fsm_state79 : begin
-            if (((1'b1 == ap_CS_fsm_state79) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state80;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state79;
-            end
+            ap_NS_fsm = ap_ST_fsm_state80;
         end
         ap_ST_fsm_state80 : begin
-            ap_NS_fsm = ap_ST_fsm_state81;
+            if (((1'b1 == ap_CS_fsm_state80) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state81;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state80;
+            end
         end
         ap_ST_fsm_state81 : begin
-            if (((1'b1 == ap_CS_fsm_state81) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state82;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state81;
-            end
+            ap_NS_fsm = ap_ST_fsm_state82;
         end
         ap_ST_fsm_state82 : begin
-            ap_NS_fsm = ap_ST_fsm_state83;
+            if (((1'b1 == ap_CS_fsm_state82) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state83;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state82;
+            end
         end
         ap_ST_fsm_state83 : begin
-            if (((1'b1 == ap_CS_fsm_state83) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state84;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state83;
-            end
+            ap_NS_fsm = ap_ST_fsm_state84;
         end
         ap_ST_fsm_state84 : begin
-            ap_NS_fsm = ap_ST_fsm_state85;
+            if (((1'b1 == ap_CS_fsm_state84) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state85;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state84;
+            end
         end
         ap_ST_fsm_state85 : begin
-            if (((1'b1 == ap_CS_fsm_state85) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state86;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state85;
-            end
+            ap_NS_fsm = ap_ST_fsm_state86;
         end
         ap_ST_fsm_state86 : begin
-            ap_NS_fsm = ap_ST_fsm_state87;
+            if (((1'b1 == ap_CS_fsm_state86) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state87;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state86;
+            end
         end
         ap_ST_fsm_state87 : begin
-            if (((1'b1 == ap_CS_fsm_state87) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state88;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state87;
-            end
+            ap_NS_fsm = ap_ST_fsm_state88;
         end
         ap_ST_fsm_state88 : begin
-            ap_NS_fsm = ap_ST_fsm_state89;
-        end
-        ap_ST_fsm_state89 : begin
-            if (((1'b1 == ap_CS_fsm_state89) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state90;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state88) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state89;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state88;
             end
         end
+        ap_ST_fsm_state89 : begin
+            ap_NS_fsm = ap_ST_fsm_state90;
+        end
         ap_ST_fsm_state90 : begin
-            if (((icmp_ln378_fu_2455_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state90))) begin
+            if (((1'b1 == ap_CS_fsm_state90) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state91;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state90;
+            end
+        end
+        ap_ST_fsm_state91 : begin
+            if (((icmp_ln385_fu_2465_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state91))) begin
+                ap_NS_fsm = ap_ST_fsm_state92;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state94;
+            end
+        end
+        ap_ST_fsm_state92 : begin
+            if (((icmp_ln232_fu_2489_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state92))) begin
                 ap_NS_fsm = ap_ST_fsm_state91;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state93;
             end
         end
-        ap_ST_fsm_state91 : begin
-            if (((icmp_ln229_fu_2479_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state91))) begin
-                ap_NS_fsm = ap_ST_fsm_state90;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state92;
-            end
-        end
-        ap_ST_fsm_state92 : begin
-            ap_NS_fsm = ap_ST_fsm_state91;
-        end
         ap_ST_fsm_state93 : begin
-            if (((1'b1 == ap_CS_fsm_state93) & (grp_pqcrystals_dilithium_4_fu_1397_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state94;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state93;
-            end
+            ap_NS_fsm = ap_ST_fsm_state92;
         end
         ap_ST_fsm_state94 : begin
-            ap_NS_fsm = ap_ST_fsm_state95;
+            if (((1'b1 == ap_CS_fsm_state94) & (grp_pqcrystals_dilithium_4_fu_1408_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state95;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state94;
+            end
         end
         ap_ST_fsm_state95 : begin
-            if (((1'b1 == ap_CS_fsm_state95) & (grp_pqcrystals_dilithium_4_fu_1397_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state96;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state95;
-            end
+            ap_NS_fsm = ap_ST_fsm_state96;
         end
         ap_ST_fsm_state96 : begin
-            ap_NS_fsm = ap_ST_fsm_state97;
+            if (((1'b1 == ap_CS_fsm_state96) & (grp_pqcrystals_dilithium_4_fu_1408_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state97;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state96;
+            end
         end
         ap_ST_fsm_state97 : begin
-            if (((1'b1 == ap_CS_fsm_state97) & (grp_pqcrystals_dilithium_4_fu_1397_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state98;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state97;
-            end
+            ap_NS_fsm = ap_ST_fsm_state98;
         end
         ap_ST_fsm_state98 : begin
-            ap_NS_fsm = ap_ST_fsm_state99;
-        end
-        ap_ST_fsm_state99 : begin
-            if (((1'b1 == ap_CS_fsm_state99) & (grp_pqcrystals_dilithium_4_fu_1397_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state100;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state98) & (grp_pqcrystals_dilithium_4_fu_1408_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state99;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state98;
             end
         end
+        ap_ST_fsm_state99 : begin
+            ap_NS_fsm = ap_ST_fsm_state100;
+        end
         ap_ST_fsm_state100 : begin
-            if (((icmp_ln364_2_fu_2608_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state100))) begin
-                ap_NS_fsm = ap_ST_fsm_state100;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state100) & (grp_pqcrystals_dilithium_4_fu_1408_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state101;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state100;
             end
         end
         ap_ST_fsm_state101 : begin
-            if (((1'b1 == ap_CS_fsm_state101) & (grp_keccak_absorb_3199_fu_1414_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state102;
-            end else begin
+            if (((icmp_ln364_2_fu_2618_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state101))) begin
                 ap_NS_fsm = ap_ST_fsm_state101;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state102;
             end
         end
         ap_ST_fsm_state102 : begin
-            ap_NS_fsm = ap_ST_fsm_state103;
-        end
-        ap_ST_fsm_state103 : begin
-            if (((grp_keccak_absorb_2_fu_1278_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state103))) begin
-                ap_NS_fsm = ap_ST_fsm_state104;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state102) & (grp_keccak_absorb_3199_fu_1425_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state103;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state102;
             end
         end
+        ap_ST_fsm_state103 : begin
+            ap_NS_fsm = ap_ST_fsm_state104;
+        end
         ap_ST_fsm_state104 : begin
-            ap_NS_fsm = ap_ST_fsm_state105;
+            if (((grp_keccak_absorb_2_fu_1289_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state104))) begin
+                ap_NS_fsm = ap_ST_fsm_state105;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state104;
+            end
         end
         ap_ST_fsm_state105 : begin
             ap_NS_fsm = ap_ST_fsm_state106;
@@ -5267,21 +5344,21 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state109;
         end
         ap_ST_fsm_state109 : begin
-            if (((1'b1 == ap_CS_fsm_state109) & (grp_KeccakF1600_StatePer_1_fu_1292_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state110;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state109;
-            end
+            ap_NS_fsm = ap_ST_fsm_state110;
         end
         ap_ST_fsm_state110 : begin
-            if (((icmp_ln546_2_fu_2664_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state110))) begin
-                ap_NS_fsm = ap_ST_fsm_state115;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state110) & (grp_KeccakF1600_StatePer_1_fu_1303_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state111;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state110;
             end
         end
         ap_ST_fsm_state111 : begin
-            ap_NS_fsm = ap_ST_fsm_state112;
+            if (((icmp_ln555_2_fu_2674_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state111))) begin
+                ap_NS_fsm = ap_ST_fsm_state116;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state112;
+            end
         end
         ap_ST_fsm_state112 : begin
             ap_NS_fsm = ap_ST_fsm_state113;
@@ -5290,455 +5367,458 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state114;
         end
         ap_ST_fsm_state114 : begin
-            ap_NS_fsm = ap_ST_fsm_state110;
+            ap_NS_fsm = ap_ST_fsm_state115;
         end
         ap_ST_fsm_state115 : begin
-            if (((grp_pqcrystals_dilithium_17_fu_1260_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state115))) begin
-                ap_NS_fsm = ap_ST_fsm_state116;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state115;
-            end
+            ap_NS_fsm = ap_ST_fsm_state111;
         end
         ap_ST_fsm_state116 : begin
-            ap_NS_fsm = ap_ST_fsm_state117;
-        end
-        ap_ST_fsm_state117 : begin
-            if (((1'b1 == ap_CS_fsm_state117) & (grp_pqcrystals_dilithium_20_fu_1314_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state118;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state116) & (grp_pqcrystals_dilithium_17_fu_1271_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state117;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state116;
             end
         end
+        ap_ST_fsm_state117 : begin
+            ap_NS_fsm = ap_ST_fsm_state118;
+        end
         ap_ST_fsm_state118 : begin
-            if (((icmp_ln116_fu_2768_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state118))) begin
-                ap_NS_fsm = ap_ST_fsm_state120;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state118) & (grp_pqcrystals_dilithium_20_fu_1325_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state119;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state118;
             end
         end
         ap_ST_fsm_state119 : begin
-            if (((1'b1 == ap_CS_fsm_state119) & (grp_pqcrystals_dilithium_13_fu_1380_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state118;
+            if (((icmp_ln118_fu_2778_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state119))) begin
+                ap_NS_fsm = ap_ST_fsm_state121;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state119;
+                ap_NS_fsm = ap_ST_fsm_state120;
             end
         end
         ap_ST_fsm_state120 : begin
-            if (((icmp_ln109_fu_2786_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state120))) begin
-                ap_NS_fsm = ap_ST_fsm_state122;
+            if (((1'b1 == ap_CS_fsm_state120) & (grp_pqcrystals_dilithium_13_fu_1391_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state119;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state121;
+                ap_NS_fsm = ap_ST_fsm_state120;
             end
         end
         ap_ST_fsm_state121 : begin
-            if (((1'b1 == ap_CS_fsm_state121) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state120;
+            if (((icmp_ln111_fu_2796_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state121))) begin
+                ap_NS_fsm = ap_ST_fsm_state123;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state121;
+                ap_NS_fsm = ap_ST_fsm_state122;
             end
         end
         ap_ST_fsm_state122 : begin
-            if (((icmp_ln87_fu_2803_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state122))) begin
-                ap_NS_fsm = ap_ST_fsm_state125;
+            if (((1'b1 == ap_CS_fsm_state122) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state121;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state123;
+                ap_NS_fsm = ap_ST_fsm_state122;
             end
         end
         ap_ST_fsm_state123 : begin
-            if (((icmp_ln87_1_fu_2827_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state123))) begin
-                ap_NS_fsm = ap_ST_fsm_state122;
+            if (((icmp_ln89_fu_2813_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state123))) begin
+                ap_NS_fsm = ap_ST_fsm_state126;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state124;
             end
         end
         ap_ST_fsm_state124 : begin
-            ap_NS_fsm = ap_ST_fsm_state123;
-        end
-        ap_ST_fsm_state125 : begin
-            if (((icmp_ln55_fu_2865_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state125))) begin
-                ap_NS_fsm = ap_ST_fsm_state128;
+            if (((icmp_ln87_fu_2837_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state124))) begin
+                ap_NS_fsm = ap_ST_fsm_state123;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state126;
+                ap_NS_fsm = ap_ST_fsm_state125;
             end
         end
+        ap_ST_fsm_state125 : begin
+            ap_NS_fsm = ap_ST_fsm_state124;
+        end
         ap_ST_fsm_state126 : begin
-            if (((icmp_ln32_fu_2889_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state126))) begin
-                ap_NS_fsm = ap_ST_fsm_state125;
+            if (((icmp_ln57_fu_2875_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state126))) begin
+                ap_NS_fsm = ap_ST_fsm_state129;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state127;
             end
         end
         ap_ST_fsm_state127 : begin
-            ap_NS_fsm = ap_ST_fsm_state126;
+            if (((icmp_ln32_fu_2899_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state127))) begin
+                ap_NS_fsm = ap_ST_fsm_state126;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state128;
+            end
         end
         ap_ST_fsm_state128 : begin
-            if (((icmp_ln160_fu_2935_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state128))) begin
+            ap_NS_fsm = ap_ST_fsm_state127;
+        end
+        ap_ST_fsm_state129 : begin
+            if (((icmp_ln162_fu_2945_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state129))) begin
+                ap_NS_fsm = ap_ST_fsm_state130;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state132;
+            end
+        end
+        ap_ST_fsm_state130 : begin
+            if (((icmp_ln305_fu_2969_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state130))) begin
                 ap_NS_fsm = ap_ST_fsm_state129;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state131;
             end
         end
-        ap_ST_fsm_state129 : begin
-            if (((icmp_ln302_fu_2959_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state129))) begin
-                ap_NS_fsm = ap_ST_fsm_state128;
+        ap_ST_fsm_state131 : begin
+            if (((icmp_ln310_fu_3029_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state131))) begin
+                ap_NS_fsm = ap_ST_fsm_state193;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state130;
             end
         end
-        ap_ST_fsm_state130 : begin
-            if (((icmp_ln307_fu_3019_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state130))) begin
-                ap_NS_fsm = ap_ST_fsm_state192;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state129;
-            end
-        end
-        ap_ST_fsm_state131 : begin
-            if (((1'b1 == ap_CS_fsm_state131) & (grp_pqcrystals_dilithium_13_fu_1380_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state132;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state131;
-            end
-        end
         ap_ST_fsm_state132 : begin
-            ap_NS_fsm = ap_ST_fsm_state133;
+            if (((1'b1 == ap_CS_fsm_state132) & (grp_pqcrystals_dilithium_13_fu_1391_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state133;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state132;
+            end
         end
         ap_ST_fsm_state133 : begin
-            if (((1'b1 == ap_CS_fsm_state133) & (grp_pqcrystals_dilithium_13_fu_1380_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state134;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state133;
-            end
+            ap_NS_fsm = ap_ST_fsm_state134;
         end
         ap_ST_fsm_state134 : begin
-            ap_NS_fsm = ap_ST_fsm_state135;
+            if (((1'b1 == ap_CS_fsm_state134) & (grp_pqcrystals_dilithium_13_fu_1391_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state135;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state134;
+            end
         end
         ap_ST_fsm_state135 : begin
-            if (((1'b1 == ap_CS_fsm_state135) & (grp_pqcrystals_dilithium_13_fu_1380_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state136;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state135;
-            end
+            ap_NS_fsm = ap_ST_fsm_state136;
         end
         ap_ST_fsm_state136 : begin
-            ap_NS_fsm = ap_ST_fsm_state137;
+            if (((1'b1 == ap_CS_fsm_state136) & (grp_pqcrystals_dilithium_13_fu_1391_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state137;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state136;
+            end
         end
         ap_ST_fsm_state137 : begin
-            if (((1'b1 == ap_CS_fsm_state137) & (grp_pqcrystals_dilithium_13_fu_1380_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state138;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state137;
-            end
+            ap_NS_fsm = ap_ST_fsm_state138;
         end
         ap_ST_fsm_state138 : begin
-            ap_NS_fsm = ap_ST_fsm_state139;
+            if (((1'b1 == ap_CS_fsm_state138) & (grp_pqcrystals_dilithium_13_fu_1391_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state139;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state138;
+            end
         end
         ap_ST_fsm_state139 : begin
-            if (((1'b1 == ap_CS_fsm_state139) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state140;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state139;
-            end
+            ap_NS_fsm = ap_ST_fsm_state140;
         end
         ap_ST_fsm_state140 : begin
-            ap_NS_fsm = ap_ST_fsm_state141;
+            if (((1'b1 == ap_CS_fsm_state140) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state141;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state140;
+            end
         end
         ap_ST_fsm_state141 : begin
-            if (((1'b1 == ap_CS_fsm_state141) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state142;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state141;
-            end
+            ap_NS_fsm = ap_ST_fsm_state142;
         end
         ap_ST_fsm_state142 : begin
-            ap_NS_fsm = ap_ST_fsm_state143;
+            if (((1'b1 == ap_CS_fsm_state142) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state143;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state142;
+            end
         end
         ap_ST_fsm_state143 : begin
-            if (((1'b1 == ap_CS_fsm_state143) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state144;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state143;
-            end
+            ap_NS_fsm = ap_ST_fsm_state144;
         end
         ap_ST_fsm_state144 : begin
-            ap_NS_fsm = ap_ST_fsm_state145;
-        end
-        ap_ST_fsm_state145 : begin
-            if (((1'b1 == ap_CS_fsm_state145) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state146;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state144) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state145;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state144;
             end
         end
+        ap_ST_fsm_state145 : begin
+            ap_NS_fsm = ap_ST_fsm_state146;
+        end
         ap_ST_fsm_state146 : begin
-            if (((icmp_ln256_fu_3025_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state146))) begin
-                ap_NS_fsm = ap_ST_fsm_state148;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state146) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state147;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state146;
             end
         end
         ap_ST_fsm_state147 : begin
-            if (((1'b1 == ap_CS_fsm_state147) & (grp_pqcrystals_dilithium_11_fu_1372_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state146;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state147;
-            end
-        end
-        ap_ST_fsm_state148 : begin
-            if (((1'b1 == ap_CS_fsm_state148) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
+            if (((icmp_ln260_fu_3035_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state147))) begin
                 ap_NS_fsm = ap_ST_fsm_state149;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state148;
             end
         end
+        ap_ST_fsm_state148 : begin
+            if (((1'b1 == ap_CS_fsm_state148) & (grp_pqcrystals_dilithium_11_fu_1383_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state147;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state148;
+            end
+        end
         ap_ST_fsm_state149 : begin
-            ap_NS_fsm = ap_ST_fsm_state150;
+            if (((1'b1 == ap_CS_fsm_state149) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state150;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state149;
+            end
         end
         ap_ST_fsm_state150 : begin
-            if (((1'b1 == ap_CS_fsm_state150) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state151;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state150;
-            end
+            ap_NS_fsm = ap_ST_fsm_state151;
         end
         ap_ST_fsm_state151 : begin
-            ap_NS_fsm = ap_ST_fsm_state152;
+            if (((1'b1 == ap_CS_fsm_state151) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state152;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state151;
+            end
         end
         ap_ST_fsm_state152 : begin
-            if (((1'b1 == ap_CS_fsm_state152) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state153;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state152;
-            end
+            ap_NS_fsm = ap_ST_fsm_state153;
         end
         ap_ST_fsm_state153 : begin
-            ap_NS_fsm = ap_ST_fsm_state154;
+            if (((1'b1 == ap_CS_fsm_state153) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state154;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state153;
+            end
         end
         ap_ST_fsm_state154 : begin
-            if (((1'b1 == ap_CS_fsm_state154) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state155;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state154;
-            end
+            ap_NS_fsm = ap_ST_fsm_state155;
         end
         ap_ST_fsm_state155 : begin
-            ap_NS_fsm = ap_ST_fsm_state156;
-        end
-        ap_ST_fsm_state156 : begin
-            if (((grp_pqcrystals_dilithium_6_fu_1423_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1423_ap_return == 1'd1) & (1'b1 == ap_CS_fsm_state156))) begin
-                ap_NS_fsm = ap_ST_fsm_state192;
-            end else if (((grp_pqcrystals_dilithium_6_fu_1423_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1423_ap_return == 1'd0) & (1'b1 == ap_CS_fsm_state156))) begin
-                ap_NS_fsm = ap_ST_fsm_state157;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state155) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state156;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state155;
             end
         end
+        ap_ST_fsm_state156 : begin
+            ap_NS_fsm = ap_ST_fsm_state157;
+        end
         ap_ST_fsm_state157 : begin
-            if (((1'b1 == ap_CS_fsm_state157) & (grp_pqcrystals_dilithium_13_fu_1380_ap_done == 1'b1))) begin
+            if (((grp_pqcrystals_dilithium_6_fu_1434_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1434_ap_return == 1'd1) & (1'b1 == ap_CS_fsm_state157))) begin
+                ap_NS_fsm = ap_ST_fsm_state193;
+            end else if (((grp_pqcrystals_dilithium_6_fu_1434_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1434_ap_return == 1'd0) & (1'b1 == ap_CS_fsm_state157))) begin
                 ap_NS_fsm = ap_ST_fsm_state158;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state157;
             end
         end
         ap_ST_fsm_state158 : begin
-            ap_NS_fsm = ap_ST_fsm_state159;
+            if (((1'b1 == ap_CS_fsm_state158) & (grp_pqcrystals_dilithium_13_fu_1391_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state159;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state158;
+            end
         end
         ap_ST_fsm_state159 : begin
-            if (((1'b1 == ap_CS_fsm_state159) & (grp_pqcrystals_dilithium_13_fu_1380_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state160;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state159;
-            end
+            ap_NS_fsm = ap_ST_fsm_state160;
         end
         ap_ST_fsm_state160 : begin
-            ap_NS_fsm = ap_ST_fsm_state161;
+            if (((1'b1 == ap_CS_fsm_state160) & (grp_pqcrystals_dilithium_13_fu_1391_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state161;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state160;
+            end
         end
         ap_ST_fsm_state161 : begin
-            if (((1'b1 == ap_CS_fsm_state161) & (grp_pqcrystals_dilithium_13_fu_1380_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state162;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state161;
-            end
+            ap_NS_fsm = ap_ST_fsm_state162;
         end
         ap_ST_fsm_state162 : begin
-            ap_NS_fsm = ap_ST_fsm_state163;
+            if (((1'b1 == ap_CS_fsm_state162) & (grp_pqcrystals_dilithium_13_fu_1391_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state163;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state162;
+            end
         end
         ap_ST_fsm_state163 : begin
-            if (((1'b1 == ap_CS_fsm_state163) & (grp_pqcrystals_dilithium_13_fu_1380_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state164;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state163;
-            end
+            ap_NS_fsm = ap_ST_fsm_state164;
         end
         ap_ST_fsm_state164 : begin
-            ap_NS_fsm = ap_ST_fsm_state165;
+            if (((1'b1 == ap_CS_fsm_state164) & (grp_pqcrystals_dilithium_13_fu_1391_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state165;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state164;
+            end
         end
         ap_ST_fsm_state165 : begin
-            if (((1'b1 == ap_CS_fsm_state165) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state166;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state165;
-            end
+            ap_NS_fsm = ap_ST_fsm_state166;
         end
         ap_ST_fsm_state166 : begin
-            ap_NS_fsm = ap_ST_fsm_state167;
+            if (((1'b1 == ap_CS_fsm_state166) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state167;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state166;
+            end
         end
         ap_ST_fsm_state167 : begin
-            if (((1'b1 == ap_CS_fsm_state167) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state168;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state167;
-            end
+            ap_NS_fsm = ap_ST_fsm_state168;
         end
         ap_ST_fsm_state168 : begin
-            ap_NS_fsm = ap_ST_fsm_state169;
+            if (((1'b1 == ap_CS_fsm_state168) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state169;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state168;
+            end
         end
         ap_ST_fsm_state169 : begin
-            if (((1'b1 == ap_CS_fsm_state169) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state170;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state169;
-            end
+            ap_NS_fsm = ap_ST_fsm_state170;
         end
         ap_ST_fsm_state170 : begin
-            ap_NS_fsm = ap_ST_fsm_state171;
+            if (((1'b1 == ap_CS_fsm_state170) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state171;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state170;
+            end
         end
         ap_ST_fsm_state171 : begin
-            if (((1'b1 == ap_CS_fsm_state171) & (grp_pqcrystals_dilithium_23_fu_1352_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state172;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state171;
-            end
+            ap_NS_fsm = ap_ST_fsm_state172;
         end
         ap_ST_fsm_state172 : begin
-            ap_NS_fsm = ap_ST_fsm_state173;
+            if (((1'b1 == ap_CS_fsm_state172) & (grp_pqcrystals_dilithium_23_fu_1363_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state173;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state172;
+            end
         end
         ap_ST_fsm_state173 : begin
-            if (((1'b1 == ap_CS_fsm_state173) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state174;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state173;
-            end
+            ap_NS_fsm = ap_ST_fsm_state174;
         end
         ap_ST_fsm_state174 : begin
-            ap_NS_fsm = ap_ST_fsm_state175;
+            if (((1'b1 == ap_CS_fsm_state174) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state175;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state174;
+            end
         end
         ap_ST_fsm_state175 : begin
-            if (((1'b1 == ap_CS_fsm_state175) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state176;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state175;
-            end
+            ap_NS_fsm = ap_ST_fsm_state176;
         end
         ap_ST_fsm_state176 : begin
-            ap_NS_fsm = ap_ST_fsm_state177;
+            if (((1'b1 == ap_CS_fsm_state176) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state177;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state176;
+            end
         end
         ap_ST_fsm_state177 : begin
-            if (((1'b1 == ap_CS_fsm_state177) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state178;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state177;
-            end
+            ap_NS_fsm = ap_ST_fsm_state178;
         end
         ap_ST_fsm_state178 : begin
-            ap_NS_fsm = ap_ST_fsm_state179;
+            if (((1'b1 == ap_CS_fsm_state178) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state179;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state178;
+            end
         end
         ap_ST_fsm_state179 : begin
-            if (((1'b1 == ap_CS_fsm_state179) & (grp_pqcrystals_dilithium_12_fu_1441_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state180;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state179;
-            end
+            ap_NS_fsm = ap_ST_fsm_state180;
         end
         ap_ST_fsm_state180 : begin
-            ap_NS_fsm = ap_ST_fsm_state181;
-        end
-        ap_ST_fsm_state181 : begin
-            if (((grp_pqcrystals_dilithium_6_fu_1423_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1423_ap_return == 1'd0) & (1'b1 == ap_CS_fsm_state181))) begin
-                ap_NS_fsm = ap_ST_fsm_state182;
-            end else if (((grp_pqcrystals_dilithium_6_fu_1423_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1423_ap_return == 1'd1) & (1'b1 == ap_CS_fsm_state181))) begin
-                ap_NS_fsm = ap_ST_fsm_state192;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state180) & (grp_pqcrystals_dilithium_12_fu_1452_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state181;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state180;
             end
         end
+        ap_ST_fsm_state181 : begin
+            ap_NS_fsm = ap_ST_fsm_state182;
+        end
         ap_ST_fsm_state182 : begin
-            if (((icmp_ln238_fu_3037_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state182))) begin
+            if (((grp_pqcrystals_dilithium_6_fu_1434_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1434_ap_return == 1'd0) & (1'b1 == ap_CS_fsm_state182))) begin
+                ap_NS_fsm = ap_ST_fsm_state183;
+            end else if (((grp_pqcrystals_dilithium_6_fu_1434_ap_done == 1'b1) & (grp_pqcrystals_dilithium_6_fu_1434_ap_return == 1'd1) & (1'b1 == ap_CS_fsm_state182))) begin
+                ap_NS_fsm = ap_ST_fsm_state193;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state182;
+            end
+        end
+        ap_ST_fsm_state183 : begin
+            if (((icmp_ln242_fu_3047_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state183))) begin
+                ap_NS_fsm = ap_ST_fsm_state184;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state186;
+            end
+        end
+        ap_ST_fsm_state184 : begin
+            if (((icmp_ln87_1_fu_3071_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state184))) begin
                 ap_NS_fsm = ap_ST_fsm_state183;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state185;
             end
         end
-        ap_ST_fsm_state183 : begin
-            if (((icmp_ln87_2_fu_3061_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state183))) begin
-                ap_NS_fsm = ap_ST_fsm_state182;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state184;
-            end
-        end
-        ap_ST_fsm_state184 : begin
-            ap_NS_fsm = ap_ST_fsm_state183;
-        end
         ap_ST_fsm_state185 : begin
-            if (((1'b1 == ap_CS_fsm_state185) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state186;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state185;
-            end
+            ap_NS_fsm = ap_ST_fsm_state184;
         end
         ap_ST_fsm_state186 : begin
-            ap_NS_fsm = ap_ST_fsm_state187;
+            if (((1'b1 == ap_CS_fsm_state186) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state187;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state186;
+            end
         end
         ap_ST_fsm_state187 : begin
-            if (((1'b1 == ap_CS_fsm_state187) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state188;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state187;
-            end
+            ap_NS_fsm = ap_ST_fsm_state188;
         end
         ap_ST_fsm_state188 : begin
-            ap_NS_fsm = ap_ST_fsm_state189;
+            if (((1'b1 == ap_CS_fsm_state188) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state189;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state188;
+            end
         end
         ap_ST_fsm_state189 : begin
-            if (((1'b1 == ap_CS_fsm_state189) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state190;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state189;
-            end
+            ap_NS_fsm = ap_ST_fsm_state190;
         end
         ap_ST_fsm_state190 : begin
-            ap_NS_fsm = ap_ST_fsm_state191;
-        end
-        ap_ST_fsm_state191 : begin
-            if (((1'b1 == ap_CS_fsm_state191) & (grp_pqcrystals_dilithium_18_fu_1431_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state192;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state190) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state191;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state190;
             end
         end
+        ap_ST_fsm_state191 : begin
+            ap_NS_fsm = ap_ST_fsm_state192;
+        end
         ap_ST_fsm_state192 : begin
-            if (((1'b1 == ap_CS_fsm_state192) & ((icmp_ln160_reg_3779 == 1'd0) | ((tmp_12_reg_3817 == 1'd1) | ((tmp_21_reg_3821 == 1'd1) | ((icmp_ln399_fu_3095_p2 == 1'd1) & (icmp_ln172_fu_3119_p2 == 1'd1))))))) begin
-                ap_NS_fsm = ap_ST_fsm_state41;
-            end else if (((icmp_ln399_fu_3095_p2 == 1'd1) & (icmp_ln160_reg_3779 == 1'd1) & (tmp_21_reg_3821 == 1'd0) & (tmp_12_reg_3817 == 1'd0) & (icmp_ln172_fu_3119_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state192))) begin
-                ap_NS_fsm = ap_ST_fsm_state195;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state192) & (grp_pqcrystals_dilithium_18_fu_1442_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state193;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state192;
             end
         end
         ap_ST_fsm_state193 : begin
-            if (((icmp_ln252_fu_3125_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state193))) begin
-                ap_NS_fsm = ap_ST_fsm_state192;
+            if (((1'b1 == ap_CS_fsm_state193) & ((icmp_ln162_reg_3794 == 1'd0) | ((tmp_12_reg_3832 == 1'd1) | ((tmp_21_reg_3836 == 1'd1) | ((icmp_ln406_fu_3105_p2 == 1'd1) & (icmp_ln172_fu_3129_p2 == 1'd1))))))) begin
+                ap_NS_fsm = ap_ST_fsm_state42;
+            end else if (((icmp_ln406_fu_3105_p2 == 1'd1) & (icmp_ln162_reg_3794 == 1'd1) & (tmp_21_reg_3836 == 1'd0) & (tmp_12_reg_3832 == 1'd0) & (icmp_ln172_fu_3129_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state193))) begin
+                ap_NS_fsm = ap_ST_fsm_state196;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state194;
             end
         end
         ap_ST_fsm_state194 : begin
-            ap_NS_fsm = ap_ST_fsm_state193;
-        end
-        ap_ST_fsm_state195 : begin
-            if (((1'b1 == ap_CS_fsm_state195) & (grp_pqcrystals_dilithium_19_fu_1364_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state1;
+            if (((icmp_ln255_fu_3135_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state194))) begin
+                ap_NS_fsm = ap_ST_fsm_state193;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state195;
+            end
+        end
+        ap_ST_fsm_state195 : begin
+            ap_NS_fsm = ap_ST_fsm_state194;
+        end
+        ap_ST_fsm_state196 : begin
+            if (((1'b1 == ap_CS_fsm_state196) & (grp_pqcrystals_dilithium_19_fu_1375_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state1;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state196;
             end
         end
         default : begin
@@ -5747,1038 +5827,1078 @@ always @ (*) begin
     endcase
 end
 
-assign a1_1_fu_2566_p2 = (trunc_ln12_fu_2525_p4 & select_ln48_fu_2558_p3);
+assign a1_1_fu_2576_p2 = (trunc_ln12_fu_2535_p4 & select_ln48_fu_2568_p3);
 
-assign add_ln124_1_fu_2365_p2 = (phi_ln124_1_reg_991 + 8'd1);
+assign add_ln124_1_fu_2375_p2 = (phi_ln124_1_reg_1002 + 8'd1);
 
-assign add_ln124_2_fu_2391_p2 = (phi_ln124_2_reg_1002 + 8'd1);
+assign add_ln124_2_fu_2401_p2 = (phi_ln124_2_reg_1013 + 8'd1);
 
-assign add_ln124_3_fu_2417_p2 = (phi_ln124_3_reg_1013 + 8'd1);
+assign add_ln124_3_fu_2427_p2 = (phi_ln124_3_reg_1024 + 8'd1);
 
-assign add_ln124_fu_2343_p2 = (phi_ln124_reg_980 + 8'd1);
+assign add_ln124_fu_2353_p2 = (phi_ln124_reg_991 + 8'd1);
 
-assign add_ln230_fu_2495_p2 = (zext_ln225_reg_3631 + zext_ln230_fu_2491_p1);
+assign add_ln233_fu_2505_p2 = (zext_ln228_reg_3646 + zext_ln233_fu_2501_p1);
 
-assign add_ln253_fu_3141_p2 = (zext_ln248_reg_3864 + zext_ln253_fu_3137_p1);
+assign add_ln256_fu_3151_p2 = (zext_ln251_reg_3879 + zext_ln256_fu_3147_p1);
 
-assign add_ln304_fu_2975_p2 = (zext_ln291_reg_3788 + zext_ln304_fu_2971_p1);
+assign add_ln307_fu_2985_p2 = (zext_ln294_reg_3803 + zext_ln307_fu_2981_p1);
 
-assign add_ln32_1_fu_1885_p2 = (zext_ln421_reg_3315 + 8'd82);
+assign add_ln32_1_fu_1896_p2 = (zext_ln424_reg_3327 + 8'd82);
 
-assign add_ln32_2_fu_1895_p2 = (zext_ln421_reg_3315 + 8'd83);
+assign add_ln32_2_fu_1906_p2 = (zext_ln424_reg_3327 + 8'd83);
 
-assign add_ln32_3_fu_1905_p2 = (zext_ln421_reg_3315 + 8'd84);
+assign add_ln32_3_fu_1916_p2 = (zext_ln424_reg_3327 + 8'd84);
 
-assign add_ln32_4_fu_1915_p2 = (zext_ln421_reg_3315 + 8'd85);
+assign add_ln32_4_fu_1926_p2 = (zext_ln424_reg_3327 + 8'd85);
 
-assign add_ln32_5_fu_1925_p2 = (zext_ln421_reg_3315 + 8'd86);
+assign add_ln32_5_fu_1936_p2 = (zext_ln424_reg_3327 + 8'd86);
 
-assign add_ln32_6_fu_1935_p2 = (zext_ln421_reg_3315 + 8'd87);
+assign add_ln32_6_fu_1946_p2 = (zext_ln424_reg_3327 + 8'd87);
 
-assign add_ln32_fu_1874_p2 = (zext_ln421_fu_1859_p1 + 8'd81);
+assign add_ln32_fu_1885_p2 = (zext_ln424_fu_1870_p1 + 8'd81);
 
-assign add_ln33_fu_2905_p2 = (zext_ln28_reg_3761 + zext_ln33_fu_2901_p1);
+assign add_ln33_fu_2915_p2 = (zext_ln28_reg_3776 + zext_ln33_fu_2911_p1);
 
-assign add_ln36_fu_2915_p2 = (z_vec_coeffs_q0 + 32'd4194304);
+assign add_ln36_fu_2925_p2 = (z_vec_coeffs_q0 + 32'd4194304);
 
-assign add_ln420_fu_1845_p2 = (i_3_i1_reg_886 + 4'd1);
+assign add_ln422_fu_1851_p2 = (ap_phi_mux_i_3_i1_phi_fu_901_p4 + 4'd1);
 
-assign add_ln421_fu_1863_p2 = (zext_ln421_fu_1859_p1 + 8'd80);
+assign add_ln424_fu_1874_p2 = (zext_ln424_fu_1870_p1 + 8'd80);
 
-assign add_ln42_fu_2505_p2 = (32'd127 + w1_vec_coeffs_q0);
+assign add_ln42_fu_2515_p2 = (32'd127 + w1_vec_coeffs_q0);
 
-assign add_ln546_1_fu_1991_p2 = (i_3_i3_reg_897 + 3'd1);
+assign add_ln555_1_fu_2001_p2 = (i_3_i3_reg_908 + 3'd1);
 
-assign add_ln546_2_fu_2670_p2 = (i_3_i47_reg_1069 + 3'd1);
+assign add_ln555_2_fu_2680_p2 = (i_3_i46_reg_1080 + 3'd1);
 
-assign add_ln546_fu_1642_p2 = (i_3_i_reg_863 + 3'd1);
+assign add_ln555_fu_1653_p2 = (i_3_i_reg_874 + 3'd1);
 
-assign add_ln548_1_fu_2014_p2 = ($signed(8'd160) + $signed(zext_ln548_2_fu_2010_p1));
+assign add_ln557_1_fu_2024_p2 = ($signed(8'd160) + $signed(zext_ln557_2_fu_2020_p1));
 
-assign add_ln548_fu_1665_p2 = (8'd112 + zext_ln548_fu_1661_p1);
+assign add_ln557_fu_1676_p2 = (8'd112 + zext_ln557_fu_1672_p1);
 
-assign add_ln549_1_fu_2046_p2 = ($signed(8'd160) + $signed(zext_ln549_2_fu_2042_p1));
+assign add_ln558_1_fu_2056_p2 = ($signed(8'd160) + $signed(zext_ln558_2_fu_2052_p1));
 
-assign add_ln549_fu_1686_p2 = (8'd112 + zext_ln549_fu_1682_p1);
+assign add_ln558_fu_1697_p2 = (8'd112 + zext_ln558_fu_1693_p1);
 
-assign add_ln550_1_fu_2126_p2 = ($signed(8'd160) + $signed(zext_ln550_2_fu_2122_p1));
+assign add_ln559_1_fu_2136_p2 = ($signed(8'd160) + $signed(zext_ln559_2_fu_2132_p1));
 
-assign add_ln550_fu_1706_p2 = (8'd112 + zext_ln550_fu_1702_p1);
+assign add_ln559_fu_1717_p2 = (8'd112 + zext_ln559_fu_1713_p1);
 
-assign add_ln551_1_fu_2146_p2 = ($signed(8'd160) + $signed(zext_ln551_2_fu_2142_p1));
+assign add_ln560_1_fu_2156_p2 = ($signed(8'd160) + $signed(zext_ln560_2_fu_2152_p1));
 
-assign add_ln551_fu_1726_p2 = (8'd112 + zext_ln551_fu_1722_p1);
+assign add_ln560_fu_1737_p2 = (8'd112 + zext_ln560_fu_1733_p1);
 
-assign add_ln552_1_fu_2166_p2 = ($signed(8'd160) + $signed(zext_ln552_2_fu_2162_p1));
+assign add_ln561_1_fu_2176_p2 = ($signed(8'd160) + $signed(zext_ln561_2_fu_2172_p1));
 
-assign add_ln552_fu_1746_p2 = (8'd112 + zext_ln552_fu_1742_p1);
+assign add_ln561_fu_1757_p2 = (8'd112 + zext_ln561_fu_1753_p1);
 
-assign add_ln553_1_fu_2186_p2 = ($signed(8'd160) + $signed(zext_ln553_2_fu_2182_p1));
+assign add_ln562_1_fu_2196_p2 = ($signed(8'd160) + $signed(zext_ln562_2_fu_2192_p1));
 
-assign add_ln553_fu_1766_p2 = (8'd112 + zext_ln553_fu_1762_p1);
+assign add_ln562_fu_1777_p2 = (8'd112 + zext_ln562_fu_1773_p1);
 
-assign add_ln554_1_fu_2206_p2 = ($signed(8'd160) + $signed(zext_ln554_2_fu_2202_p1));
+assign add_ln563_1_fu_2216_p2 = ($signed(8'd160) + $signed(zext_ln563_2_fu_2212_p1));
 
-assign add_ln554_fu_1786_p2 = (8'd112 + zext_ln554_fu_1782_p1);
+assign add_ln563_fu_1797_p2 = (8'd112 + zext_ln563_fu_1793_p1);
 
-assign add_ln555_1_fu_2226_p2 = ($signed(8'd160) + $signed(zext_ln555_2_fu_2222_p1));
+assign add_ln564_1_fu_2236_p2 = ($signed(8'd160) + $signed(zext_ln564_2_fu_2232_p1));
 
-assign add_ln555_fu_1806_p2 = (8'd112 + zext_ln555_fu_1802_p1);
+assign add_ln564_fu_1817_p2 = (8'd112 + zext_ln564_fu_1813_p1);
 
-assign add_ln88_14_fu_2843_p2 = (zext_ln83_reg_3730 + zext_ln88_fu_2839_p1);
+assign add_ln88_14_fu_2853_p2 = (zext_ln83_reg_3745 + zext_ln88_fu_2849_p1);
 
-assign add_ln88_15_fu_3077_p2 = (zext_ln83_1_reg_3833 + zext_ln88_4_fu_3073_p1);
+assign add_ln88_15_fu_3087_p2 = (zext_ln83_1_reg_3848 + zext_ln88_4_fu_3083_p1);
 
-assign add_ln88_1_fu_3088_p2 = (w0_vec_coeffs_q0 + h_vec_coeffs_q0);
+assign add_ln88_1_fu_3098_p2 = (w0_vec_coeffs_q0 + h_vec_coeffs_q0);
 
-assign add_ln88_fu_2858_p2 = ($signed(z_vec_coeffs_q0) + $signed(sext_ln88_fu_2854_p1));
+assign add_ln88_fu_2868_p2 = ($signed(z_vec_coeffs_q0) + $signed(sext_ln88_fu_2864_p1));
 
-assign add_ln_fu_2265_p4 = {{{trunc_ln22_fu_2261_p1}, {5'd0}}, {j_0_i_reg_921}};
+assign add_ln_fu_2275_p4 = {{{trunc_ln22_fu_2271_p1}, {5'd0}}, {j_0_i_reg_932}};
 
-assign and_ln305_fu_3007_p2 = (t_5_fu_2993_p3 & shl_ln305_fu_3001_p2);
+assign and_ln308_fu_3017_p2 = (t_5_fu_3003_p3 & shl_ln308_fu_3011_p2);
 
-assign and_ln69_fu_3186_p2 = (icmp_ln69_3_fu_3180_p2 & icmp_ln69_2_fu_3174_p2);
+assign and_ln69_fu_3196_p2 = (icmp_ln69_3_fu_3190_p2 & icmp_ln69_2_fu_3184_p2);
+
+assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd18];
+
+assign ap_CS_fsm_pp0_stage1 = ap_CS_fsm[32'd19];
+
+assign ap_CS_fsm_pp0_stage2 = ap_CS_fsm[32'd20];
+
+assign ap_CS_fsm_pp0_stage3 = ap_CS_fsm[32'd21];
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 assign ap_CS_fsm_state10 = ap_CS_fsm[32'd9];
 
-assign ap_CS_fsm_state100 = ap_CS_fsm[32'd99];
+assign ap_CS_fsm_state100 = ap_CS_fsm[32'd98];
 
-assign ap_CS_fsm_state101 = ap_CS_fsm[32'd100];
+assign ap_CS_fsm_state101 = ap_CS_fsm[32'd99];
 
-assign ap_CS_fsm_state102 = ap_CS_fsm[32'd101];
+assign ap_CS_fsm_state102 = ap_CS_fsm[32'd100];
 
-assign ap_CS_fsm_state103 = ap_CS_fsm[32'd102];
+assign ap_CS_fsm_state103 = ap_CS_fsm[32'd101];
 
-assign ap_CS_fsm_state104 = ap_CS_fsm[32'd103];
+assign ap_CS_fsm_state104 = ap_CS_fsm[32'd102];
 
-assign ap_CS_fsm_state105 = ap_CS_fsm[32'd104];
+assign ap_CS_fsm_state105 = ap_CS_fsm[32'd103];
 
-assign ap_CS_fsm_state106 = ap_CS_fsm[32'd105];
+assign ap_CS_fsm_state106 = ap_CS_fsm[32'd104];
 
-assign ap_CS_fsm_state107 = ap_CS_fsm[32'd106];
+assign ap_CS_fsm_state107 = ap_CS_fsm[32'd105];
 
-assign ap_CS_fsm_state108 = ap_CS_fsm[32'd107];
+assign ap_CS_fsm_state108 = ap_CS_fsm[32'd106];
 
-assign ap_CS_fsm_state109 = ap_CS_fsm[32'd108];
+assign ap_CS_fsm_state109 = ap_CS_fsm[32'd107];
 
 assign ap_CS_fsm_state11 = ap_CS_fsm[32'd10];
 
-assign ap_CS_fsm_state110 = ap_CS_fsm[32'd109];
+assign ap_CS_fsm_state110 = ap_CS_fsm[32'd108];
 
-assign ap_CS_fsm_state111 = ap_CS_fsm[32'd110];
+assign ap_CS_fsm_state111 = ap_CS_fsm[32'd109];
 
-assign ap_CS_fsm_state112 = ap_CS_fsm[32'd111];
+assign ap_CS_fsm_state112 = ap_CS_fsm[32'd110];
 
-assign ap_CS_fsm_state113 = ap_CS_fsm[32'd112];
+assign ap_CS_fsm_state113 = ap_CS_fsm[32'd111];
 
-assign ap_CS_fsm_state114 = ap_CS_fsm[32'd113];
+assign ap_CS_fsm_state114 = ap_CS_fsm[32'd112];
 
-assign ap_CS_fsm_state115 = ap_CS_fsm[32'd114];
+assign ap_CS_fsm_state115 = ap_CS_fsm[32'd113];
 
-assign ap_CS_fsm_state116 = ap_CS_fsm[32'd115];
+assign ap_CS_fsm_state116 = ap_CS_fsm[32'd114];
 
-assign ap_CS_fsm_state117 = ap_CS_fsm[32'd116];
+assign ap_CS_fsm_state117 = ap_CS_fsm[32'd115];
 
-assign ap_CS_fsm_state118 = ap_CS_fsm[32'd117];
+assign ap_CS_fsm_state118 = ap_CS_fsm[32'd116];
 
-assign ap_CS_fsm_state119 = ap_CS_fsm[32'd118];
+assign ap_CS_fsm_state119 = ap_CS_fsm[32'd117];
 
 assign ap_CS_fsm_state12 = ap_CS_fsm[32'd11];
 
-assign ap_CS_fsm_state120 = ap_CS_fsm[32'd119];
+assign ap_CS_fsm_state120 = ap_CS_fsm[32'd118];
 
-assign ap_CS_fsm_state121 = ap_CS_fsm[32'd120];
+assign ap_CS_fsm_state121 = ap_CS_fsm[32'd119];
 
-assign ap_CS_fsm_state122 = ap_CS_fsm[32'd121];
+assign ap_CS_fsm_state122 = ap_CS_fsm[32'd120];
 
-assign ap_CS_fsm_state123 = ap_CS_fsm[32'd122];
+assign ap_CS_fsm_state123 = ap_CS_fsm[32'd121];
 
-assign ap_CS_fsm_state124 = ap_CS_fsm[32'd123];
+assign ap_CS_fsm_state124 = ap_CS_fsm[32'd122];
 
-assign ap_CS_fsm_state125 = ap_CS_fsm[32'd124];
+assign ap_CS_fsm_state125 = ap_CS_fsm[32'd123];
 
-assign ap_CS_fsm_state126 = ap_CS_fsm[32'd125];
+assign ap_CS_fsm_state126 = ap_CS_fsm[32'd124];
 
-assign ap_CS_fsm_state127 = ap_CS_fsm[32'd126];
+assign ap_CS_fsm_state127 = ap_CS_fsm[32'd125];
 
-assign ap_CS_fsm_state128 = ap_CS_fsm[32'd127];
+assign ap_CS_fsm_state128 = ap_CS_fsm[32'd126];
 
-assign ap_CS_fsm_state129 = ap_CS_fsm[32'd128];
+assign ap_CS_fsm_state129 = ap_CS_fsm[32'd127];
 
 assign ap_CS_fsm_state13 = ap_CS_fsm[32'd12];
 
-assign ap_CS_fsm_state130 = ap_CS_fsm[32'd129];
+assign ap_CS_fsm_state130 = ap_CS_fsm[32'd128];
 
-assign ap_CS_fsm_state131 = ap_CS_fsm[32'd130];
+assign ap_CS_fsm_state131 = ap_CS_fsm[32'd129];
 
-assign ap_CS_fsm_state132 = ap_CS_fsm[32'd131];
+assign ap_CS_fsm_state132 = ap_CS_fsm[32'd130];
 
-assign ap_CS_fsm_state133 = ap_CS_fsm[32'd132];
+assign ap_CS_fsm_state133 = ap_CS_fsm[32'd131];
 
-assign ap_CS_fsm_state134 = ap_CS_fsm[32'd133];
+assign ap_CS_fsm_state134 = ap_CS_fsm[32'd132];
 
-assign ap_CS_fsm_state135 = ap_CS_fsm[32'd134];
+assign ap_CS_fsm_state135 = ap_CS_fsm[32'd133];
 
-assign ap_CS_fsm_state136 = ap_CS_fsm[32'd135];
+assign ap_CS_fsm_state136 = ap_CS_fsm[32'd134];
 
-assign ap_CS_fsm_state137 = ap_CS_fsm[32'd136];
+assign ap_CS_fsm_state137 = ap_CS_fsm[32'd135];
 
-assign ap_CS_fsm_state138 = ap_CS_fsm[32'd137];
+assign ap_CS_fsm_state138 = ap_CS_fsm[32'd136];
 
-assign ap_CS_fsm_state139 = ap_CS_fsm[32'd138];
+assign ap_CS_fsm_state139 = ap_CS_fsm[32'd137];
 
 assign ap_CS_fsm_state14 = ap_CS_fsm[32'd13];
 
-assign ap_CS_fsm_state140 = ap_CS_fsm[32'd139];
+assign ap_CS_fsm_state140 = ap_CS_fsm[32'd138];
 
-assign ap_CS_fsm_state141 = ap_CS_fsm[32'd140];
+assign ap_CS_fsm_state141 = ap_CS_fsm[32'd139];
 
-assign ap_CS_fsm_state142 = ap_CS_fsm[32'd141];
+assign ap_CS_fsm_state142 = ap_CS_fsm[32'd140];
 
-assign ap_CS_fsm_state143 = ap_CS_fsm[32'd142];
+assign ap_CS_fsm_state143 = ap_CS_fsm[32'd141];
 
-assign ap_CS_fsm_state144 = ap_CS_fsm[32'd143];
+assign ap_CS_fsm_state144 = ap_CS_fsm[32'd142];
 
-assign ap_CS_fsm_state145 = ap_CS_fsm[32'd144];
+assign ap_CS_fsm_state145 = ap_CS_fsm[32'd143];
 
-assign ap_CS_fsm_state146 = ap_CS_fsm[32'd145];
+assign ap_CS_fsm_state146 = ap_CS_fsm[32'd144];
 
-assign ap_CS_fsm_state147 = ap_CS_fsm[32'd146];
+assign ap_CS_fsm_state147 = ap_CS_fsm[32'd145];
 
-assign ap_CS_fsm_state148 = ap_CS_fsm[32'd147];
+assign ap_CS_fsm_state148 = ap_CS_fsm[32'd146];
 
-assign ap_CS_fsm_state149 = ap_CS_fsm[32'd148];
+assign ap_CS_fsm_state149 = ap_CS_fsm[32'd147];
 
 assign ap_CS_fsm_state15 = ap_CS_fsm[32'd14];
 
-assign ap_CS_fsm_state150 = ap_CS_fsm[32'd149];
+assign ap_CS_fsm_state150 = ap_CS_fsm[32'd148];
 
-assign ap_CS_fsm_state151 = ap_CS_fsm[32'd150];
+assign ap_CS_fsm_state151 = ap_CS_fsm[32'd149];
 
-assign ap_CS_fsm_state152 = ap_CS_fsm[32'd151];
+assign ap_CS_fsm_state152 = ap_CS_fsm[32'd150];
 
-assign ap_CS_fsm_state153 = ap_CS_fsm[32'd152];
+assign ap_CS_fsm_state153 = ap_CS_fsm[32'd151];
 
-assign ap_CS_fsm_state154 = ap_CS_fsm[32'd153];
+assign ap_CS_fsm_state154 = ap_CS_fsm[32'd152];
 
-assign ap_CS_fsm_state155 = ap_CS_fsm[32'd154];
+assign ap_CS_fsm_state155 = ap_CS_fsm[32'd153];
 
-assign ap_CS_fsm_state156 = ap_CS_fsm[32'd155];
+assign ap_CS_fsm_state156 = ap_CS_fsm[32'd154];
 
-assign ap_CS_fsm_state157 = ap_CS_fsm[32'd156];
+assign ap_CS_fsm_state157 = ap_CS_fsm[32'd155];
 
-assign ap_CS_fsm_state158 = ap_CS_fsm[32'd157];
+assign ap_CS_fsm_state158 = ap_CS_fsm[32'd156];
 
-assign ap_CS_fsm_state159 = ap_CS_fsm[32'd158];
+assign ap_CS_fsm_state159 = ap_CS_fsm[32'd157];
 
 assign ap_CS_fsm_state16 = ap_CS_fsm[32'd15];
 
-assign ap_CS_fsm_state160 = ap_CS_fsm[32'd159];
+assign ap_CS_fsm_state160 = ap_CS_fsm[32'd158];
 
-assign ap_CS_fsm_state161 = ap_CS_fsm[32'd160];
+assign ap_CS_fsm_state161 = ap_CS_fsm[32'd159];
 
-assign ap_CS_fsm_state162 = ap_CS_fsm[32'd161];
+assign ap_CS_fsm_state162 = ap_CS_fsm[32'd160];
 
-assign ap_CS_fsm_state163 = ap_CS_fsm[32'd162];
+assign ap_CS_fsm_state163 = ap_CS_fsm[32'd161];
 
-assign ap_CS_fsm_state164 = ap_CS_fsm[32'd163];
+assign ap_CS_fsm_state164 = ap_CS_fsm[32'd162];
 
-assign ap_CS_fsm_state165 = ap_CS_fsm[32'd164];
+assign ap_CS_fsm_state165 = ap_CS_fsm[32'd163];
 
-assign ap_CS_fsm_state166 = ap_CS_fsm[32'd165];
+assign ap_CS_fsm_state166 = ap_CS_fsm[32'd164];
 
-assign ap_CS_fsm_state167 = ap_CS_fsm[32'd166];
+assign ap_CS_fsm_state167 = ap_CS_fsm[32'd165];
 
-assign ap_CS_fsm_state168 = ap_CS_fsm[32'd167];
+assign ap_CS_fsm_state168 = ap_CS_fsm[32'd166];
 
-assign ap_CS_fsm_state169 = ap_CS_fsm[32'd168];
+assign ap_CS_fsm_state169 = ap_CS_fsm[32'd167];
 
 assign ap_CS_fsm_state17 = ap_CS_fsm[32'd16];
 
-assign ap_CS_fsm_state170 = ap_CS_fsm[32'd169];
+assign ap_CS_fsm_state170 = ap_CS_fsm[32'd168];
 
-assign ap_CS_fsm_state171 = ap_CS_fsm[32'd170];
+assign ap_CS_fsm_state171 = ap_CS_fsm[32'd169];
 
-assign ap_CS_fsm_state172 = ap_CS_fsm[32'd171];
+assign ap_CS_fsm_state172 = ap_CS_fsm[32'd170];
 
-assign ap_CS_fsm_state173 = ap_CS_fsm[32'd172];
+assign ap_CS_fsm_state173 = ap_CS_fsm[32'd171];
 
-assign ap_CS_fsm_state174 = ap_CS_fsm[32'd173];
+assign ap_CS_fsm_state174 = ap_CS_fsm[32'd172];
 
-assign ap_CS_fsm_state175 = ap_CS_fsm[32'd174];
+assign ap_CS_fsm_state175 = ap_CS_fsm[32'd173];
 
-assign ap_CS_fsm_state176 = ap_CS_fsm[32'd175];
+assign ap_CS_fsm_state176 = ap_CS_fsm[32'd174];
 
-assign ap_CS_fsm_state177 = ap_CS_fsm[32'd176];
+assign ap_CS_fsm_state177 = ap_CS_fsm[32'd175];
 
-assign ap_CS_fsm_state178 = ap_CS_fsm[32'd177];
+assign ap_CS_fsm_state178 = ap_CS_fsm[32'd176];
 
-assign ap_CS_fsm_state179 = ap_CS_fsm[32'd178];
+assign ap_CS_fsm_state179 = ap_CS_fsm[32'd177];
 
 assign ap_CS_fsm_state18 = ap_CS_fsm[32'd17];
 
-assign ap_CS_fsm_state180 = ap_CS_fsm[32'd179];
+assign ap_CS_fsm_state180 = ap_CS_fsm[32'd178];
 
-assign ap_CS_fsm_state181 = ap_CS_fsm[32'd180];
+assign ap_CS_fsm_state181 = ap_CS_fsm[32'd179];
 
-assign ap_CS_fsm_state182 = ap_CS_fsm[32'd181];
+assign ap_CS_fsm_state182 = ap_CS_fsm[32'd180];
 
-assign ap_CS_fsm_state183 = ap_CS_fsm[32'd182];
+assign ap_CS_fsm_state183 = ap_CS_fsm[32'd181];
 
-assign ap_CS_fsm_state184 = ap_CS_fsm[32'd183];
+assign ap_CS_fsm_state184 = ap_CS_fsm[32'd182];
 
-assign ap_CS_fsm_state185 = ap_CS_fsm[32'd184];
+assign ap_CS_fsm_state185 = ap_CS_fsm[32'd183];
 
-assign ap_CS_fsm_state186 = ap_CS_fsm[32'd185];
+assign ap_CS_fsm_state186 = ap_CS_fsm[32'd184];
 
-assign ap_CS_fsm_state187 = ap_CS_fsm[32'd186];
+assign ap_CS_fsm_state187 = ap_CS_fsm[32'd185];
 
-assign ap_CS_fsm_state188 = ap_CS_fsm[32'd187];
+assign ap_CS_fsm_state188 = ap_CS_fsm[32'd186];
 
-assign ap_CS_fsm_state189 = ap_CS_fsm[32'd188];
+assign ap_CS_fsm_state189 = ap_CS_fsm[32'd187];
 
-assign ap_CS_fsm_state19 = ap_CS_fsm[32'd18];
+assign ap_CS_fsm_state190 = ap_CS_fsm[32'd188];
 
-assign ap_CS_fsm_state190 = ap_CS_fsm[32'd189];
+assign ap_CS_fsm_state191 = ap_CS_fsm[32'd189];
 
-assign ap_CS_fsm_state191 = ap_CS_fsm[32'd190];
+assign ap_CS_fsm_state192 = ap_CS_fsm[32'd190];
 
-assign ap_CS_fsm_state192 = ap_CS_fsm[32'd191];
+assign ap_CS_fsm_state193 = ap_CS_fsm[32'd191];
 
-assign ap_CS_fsm_state193 = ap_CS_fsm[32'd192];
+assign ap_CS_fsm_state194 = ap_CS_fsm[32'd192];
 
-assign ap_CS_fsm_state194 = ap_CS_fsm[32'd193];
+assign ap_CS_fsm_state195 = ap_CS_fsm[32'd193];
 
-assign ap_CS_fsm_state195 = ap_CS_fsm[32'd194];
+assign ap_CS_fsm_state196 = ap_CS_fsm[32'd194];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
-assign ap_CS_fsm_state20 = ap_CS_fsm[32'd19];
+assign ap_CS_fsm_state24 = ap_CS_fsm[32'd22];
 
-assign ap_CS_fsm_state21 = ap_CS_fsm[32'd20];
+assign ap_CS_fsm_state25 = ap_CS_fsm[32'd23];
 
-assign ap_CS_fsm_state22 = ap_CS_fsm[32'd21];
+assign ap_CS_fsm_state26 = ap_CS_fsm[32'd24];
 
-assign ap_CS_fsm_state23 = ap_CS_fsm[32'd22];
+assign ap_CS_fsm_state27 = ap_CS_fsm[32'd25];
 
-assign ap_CS_fsm_state24 = ap_CS_fsm[32'd23];
+assign ap_CS_fsm_state28 = ap_CS_fsm[32'd26];
 
-assign ap_CS_fsm_state25 = ap_CS_fsm[32'd24];
-
-assign ap_CS_fsm_state26 = ap_CS_fsm[32'd25];
-
-assign ap_CS_fsm_state27 = ap_CS_fsm[32'd26];
-
-assign ap_CS_fsm_state28 = ap_CS_fsm[32'd27];
-
-assign ap_CS_fsm_state29 = ap_CS_fsm[32'd28];
+assign ap_CS_fsm_state29 = ap_CS_fsm[32'd27];
 
 assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
-assign ap_CS_fsm_state30 = ap_CS_fsm[32'd29];
+assign ap_CS_fsm_state30 = ap_CS_fsm[32'd28];
 
-assign ap_CS_fsm_state31 = ap_CS_fsm[32'd30];
+assign ap_CS_fsm_state31 = ap_CS_fsm[32'd29];
 
-assign ap_CS_fsm_state32 = ap_CS_fsm[32'd31];
+assign ap_CS_fsm_state32 = ap_CS_fsm[32'd30];
 
-assign ap_CS_fsm_state33 = ap_CS_fsm[32'd32];
+assign ap_CS_fsm_state33 = ap_CS_fsm[32'd31];
 
-assign ap_CS_fsm_state34 = ap_CS_fsm[32'd33];
+assign ap_CS_fsm_state34 = ap_CS_fsm[32'd32];
 
-assign ap_CS_fsm_state35 = ap_CS_fsm[32'd34];
+assign ap_CS_fsm_state35 = ap_CS_fsm[32'd33];
 
-assign ap_CS_fsm_state36 = ap_CS_fsm[32'd35];
+assign ap_CS_fsm_state36 = ap_CS_fsm[32'd34];
 
-assign ap_CS_fsm_state37 = ap_CS_fsm[32'd36];
+assign ap_CS_fsm_state37 = ap_CS_fsm[32'd35];
 
-assign ap_CS_fsm_state38 = ap_CS_fsm[32'd37];
+assign ap_CS_fsm_state38 = ap_CS_fsm[32'd36];
 
-assign ap_CS_fsm_state39 = ap_CS_fsm[32'd38];
+assign ap_CS_fsm_state39 = ap_CS_fsm[32'd37];
 
 assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
-assign ap_CS_fsm_state40 = ap_CS_fsm[32'd39];
+assign ap_CS_fsm_state40 = ap_CS_fsm[32'd38];
 
-assign ap_CS_fsm_state41 = ap_CS_fsm[32'd40];
+assign ap_CS_fsm_state41 = ap_CS_fsm[32'd39];
 
-assign ap_CS_fsm_state42 = ap_CS_fsm[32'd41];
+assign ap_CS_fsm_state42 = ap_CS_fsm[32'd40];
 
-assign ap_CS_fsm_state43 = ap_CS_fsm[32'd42];
+assign ap_CS_fsm_state43 = ap_CS_fsm[32'd41];
 
-assign ap_CS_fsm_state44 = ap_CS_fsm[32'd43];
+assign ap_CS_fsm_state44 = ap_CS_fsm[32'd42];
 
-assign ap_CS_fsm_state45 = ap_CS_fsm[32'd44];
+assign ap_CS_fsm_state45 = ap_CS_fsm[32'd43];
 
-assign ap_CS_fsm_state46 = ap_CS_fsm[32'd45];
+assign ap_CS_fsm_state46 = ap_CS_fsm[32'd44];
 
-assign ap_CS_fsm_state47 = ap_CS_fsm[32'd46];
+assign ap_CS_fsm_state47 = ap_CS_fsm[32'd45];
 
-assign ap_CS_fsm_state48 = ap_CS_fsm[32'd47];
+assign ap_CS_fsm_state48 = ap_CS_fsm[32'd46];
 
-assign ap_CS_fsm_state49 = ap_CS_fsm[32'd48];
+assign ap_CS_fsm_state49 = ap_CS_fsm[32'd47];
 
 assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
 
-assign ap_CS_fsm_state50 = ap_CS_fsm[32'd49];
+assign ap_CS_fsm_state50 = ap_CS_fsm[32'd48];
 
-assign ap_CS_fsm_state51 = ap_CS_fsm[32'd50];
+assign ap_CS_fsm_state51 = ap_CS_fsm[32'd49];
 
-assign ap_CS_fsm_state52 = ap_CS_fsm[32'd51];
+assign ap_CS_fsm_state52 = ap_CS_fsm[32'd50];
 
-assign ap_CS_fsm_state53 = ap_CS_fsm[32'd52];
+assign ap_CS_fsm_state53 = ap_CS_fsm[32'd51];
 
-assign ap_CS_fsm_state54 = ap_CS_fsm[32'd53];
+assign ap_CS_fsm_state54 = ap_CS_fsm[32'd52];
 
-assign ap_CS_fsm_state55 = ap_CS_fsm[32'd54];
+assign ap_CS_fsm_state55 = ap_CS_fsm[32'd53];
 
-assign ap_CS_fsm_state56 = ap_CS_fsm[32'd55];
+assign ap_CS_fsm_state56 = ap_CS_fsm[32'd54];
 
-assign ap_CS_fsm_state57 = ap_CS_fsm[32'd56];
+assign ap_CS_fsm_state57 = ap_CS_fsm[32'd55];
 
-assign ap_CS_fsm_state58 = ap_CS_fsm[32'd57];
+assign ap_CS_fsm_state58 = ap_CS_fsm[32'd56];
 
-assign ap_CS_fsm_state59 = ap_CS_fsm[32'd58];
+assign ap_CS_fsm_state59 = ap_CS_fsm[32'd57];
 
 assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
-assign ap_CS_fsm_state60 = ap_CS_fsm[32'd59];
+assign ap_CS_fsm_state60 = ap_CS_fsm[32'd58];
 
-assign ap_CS_fsm_state61 = ap_CS_fsm[32'd60];
+assign ap_CS_fsm_state61 = ap_CS_fsm[32'd59];
 
-assign ap_CS_fsm_state62 = ap_CS_fsm[32'd61];
+assign ap_CS_fsm_state62 = ap_CS_fsm[32'd60];
 
-assign ap_CS_fsm_state63 = ap_CS_fsm[32'd62];
+assign ap_CS_fsm_state63 = ap_CS_fsm[32'd61];
 
-assign ap_CS_fsm_state64 = ap_CS_fsm[32'd63];
+assign ap_CS_fsm_state64 = ap_CS_fsm[32'd62];
 
-assign ap_CS_fsm_state65 = ap_CS_fsm[32'd64];
+assign ap_CS_fsm_state65 = ap_CS_fsm[32'd63];
 
-assign ap_CS_fsm_state66 = ap_CS_fsm[32'd65];
+assign ap_CS_fsm_state66 = ap_CS_fsm[32'd64];
 
-assign ap_CS_fsm_state67 = ap_CS_fsm[32'd66];
+assign ap_CS_fsm_state67 = ap_CS_fsm[32'd65];
 
-assign ap_CS_fsm_state68 = ap_CS_fsm[32'd67];
+assign ap_CS_fsm_state68 = ap_CS_fsm[32'd66];
 
-assign ap_CS_fsm_state69 = ap_CS_fsm[32'd68];
+assign ap_CS_fsm_state69 = ap_CS_fsm[32'd67];
 
 assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
 
-assign ap_CS_fsm_state70 = ap_CS_fsm[32'd69];
+assign ap_CS_fsm_state70 = ap_CS_fsm[32'd68];
 
-assign ap_CS_fsm_state71 = ap_CS_fsm[32'd70];
+assign ap_CS_fsm_state71 = ap_CS_fsm[32'd69];
 
-assign ap_CS_fsm_state72 = ap_CS_fsm[32'd71];
+assign ap_CS_fsm_state72 = ap_CS_fsm[32'd70];
 
-assign ap_CS_fsm_state73 = ap_CS_fsm[32'd72];
+assign ap_CS_fsm_state73 = ap_CS_fsm[32'd71];
 
-assign ap_CS_fsm_state74 = ap_CS_fsm[32'd73];
+assign ap_CS_fsm_state74 = ap_CS_fsm[32'd72];
 
-assign ap_CS_fsm_state75 = ap_CS_fsm[32'd74];
+assign ap_CS_fsm_state75 = ap_CS_fsm[32'd73];
 
-assign ap_CS_fsm_state76 = ap_CS_fsm[32'd75];
+assign ap_CS_fsm_state76 = ap_CS_fsm[32'd74];
 
-assign ap_CS_fsm_state77 = ap_CS_fsm[32'd76];
+assign ap_CS_fsm_state77 = ap_CS_fsm[32'd75];
 
-assign ap_CS_fsm_state78 = ap_CS_fsm[32'd77];
+assign ap_CS_fsm_state78 = ap_CS_fsm[32'd76];
 
-assign ap_CS_fsm_state79 = ap_CS_fsm[32'd78];
+assign ap_CS_fsm_state79 = ap_CS_fsm[32'd77];
 
 assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 
-assign ap_CS_fsm_state80 = ap_CS_fsm[32'd79];
+assign ap_CS_fsm_state80 = ap_CS_fsm[32'd78];
 
-assign ap_CS_fsm_state81 = ap_CS_fsm[32'd80];
+assign ap_CS_fsm_state81 = ap_CS_fsm[32'd79];
 
-assign ap_CS_fsm_state82 = ap_CS_fsm[32'd81];
+assign ap_CS_fsm_state82 = ap_CS_fsm[32'd80];
 
-assign ap_CS_fsm_state83 = ap_CS_fsm[32'd82];
+assign ap_CS_fsm_state83 = ap_CS_fsm[32'd81];
 
-assign ap_CS_fsm_state84 = ap_CS_fsm[32'd83];
+assign ap_CS_fsm_state84 = ap_CS_fsm[32'd82];
 
-assign ap_CS_fsm_state85 = ap_CS_fsm[32'd84];
+assign ap_CS_fsm_state85 = ap_CS_fsm[32'd83];
 
-assign ap_CS_fsm_state86 = ap_CS_fsm[32'd85];
+assign ap_CS_fsm_state86 = ap_CS_fsm[32'd84];
 
-assign ap_CS_fsm_state87 = ap_CS_fsm[32'd86];
+assign ap_CS_fsm_state87 = ap_CS_fsm[32'd85];
 
-assign ap_CS_fsm_state88 = ap_CS_fsm[32'd87];
+assign ap_CS_fsm_state88 = ap_CS_fsm[32'd86];
 
-assign ap_CS_fsm_state89 = ap_CS_fsm[32'd88];
+assign ap_CS_fsm_state89 = ap_CS_fsm[32'd87];
 
 assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
 
-assign ap_CS_fsm_state90 = ap_CS_fsm[32'd89];
+assign ap_CS_fsm_state90 = ap_CS_fsm[32'd88];
 
-assign ap_CS_fsm_state91 = ap_CS_fsm[32'd90];
+assign ap_CS_fsm_state91 = ap_CS_fsm[32'd89];
 
-assign ap_CS_fsm_state92 = ap_CS_fsm[32'd91];
+assign ap_CS_fsm_state92 = ap_CS_fsm[32'd90];
 
-assign ap_CS_fsm_state93 = ap_CS_fsm[32'd92];
+assign ap_CS_fsm_state93 = ap_CS_fsm[32'd91];
 
-assign ap_CS_fsm_state94 = ap_CS_fsm[32'd93];
+assign ap_CS_fsm_state94 = ap_CS_fsm[32'd92];
 
-assign ap_CS_fsm_state95 = ap_CS_fsm[32'd94];
+assign ap_CS_fsm_state95 = ap_CS_fsm[32'd93];
 
-assign ap_CS_fsm_state96 = ap_CS_fsm[32'd95];
+assign ap_CS_fsm_state96 = ap_CS_fsm[32'd94];
 
-assign ap_CS_fsm_state97 = ap_CS_fsm[32'd96];
+assign ap_CS_fsm_state97 = ap_CS_fsm[32'd95];
 
-assign ap_CS_fsm_state98 = ap_CS_fsm[32'd97];
+assign ap_CS_fsm_state98 = ap_CS_fsm[32'd96];
 
-assign ap_CS_fsm_state99 = ap_CS_fsm[32'd98];
+assign ap_CS_fsm_state99 = ap_CS_fsm[32'd97];
 
-assign grp_KeccakF1600_StatePer_1_fu_1292_ap_start = grp_KeccakF1600_StatePer_1_fu_1292_ap_start_reg;
+assign ap_block_pp0_stage0 = ~(1'b1 == 1'b1);
 
-assign grp_KeccakF1600_StatePer_fu_1297_ap_start = grp_KeccakF1600_StatePer_fu_1297_ap_start_reg;
+assign ap_block_pp0_stage0_11001 = ~(1'b1 == 1'b1);
 
-assign grp_fu_1451_p4 = {{grp_keccak_absorb_2_fu_1278_ap_return[31:3]}};
+assign ap_block_pp0_stage0_subdone = ~(1'b1 == 1'b1);
 
-assign grp_fu_1461_p2 = (state_s_q0 ^ 64'd9223372036854775808);
+assign ap_block_pp0_stage1 = ~(1'b1 == 1'b1);
 
-assign grp_fu_3225_p0 = 32'd11275;
+assign ap_block_pp0_stage1_11001 = ~(1'b1 == 1'b1);
 
-assign grp_fu_3225_p2 = 32'd8388608;
+assign ap_block_pp0_stage1_subdone = ~(1'b1 == 1'b1);
 
-assign grp_fu_3234_p0 = 27'd134027264;
+assign ap_block_pp0_stage2 = ~(1'b1 == 1'b1);
 
-assign grp_fu_3244_p1 = 32'd4286586879;
+assign ap_block_pp0_stage2_11001 = ~(1'b1 == 1'b1);
 
-assign grp_keccak_absorb_2_fu_1278_ap_start = grp_keccak_absorb_2_fu_1278_ap_start_reg;
+assign ap_block_pp0_stage2_subdone = ~(1'b1 == 1'b1);
 
-assign grp_keccak_absorb_3199_fu_1414_ap_start = grp_keccak_absorb_3199_fu_1414_ap_start_reg;
+assign ap_block_pp0_stage3 = ~(1'b1 == 1'b1);
 
-assign grp_pqcrystals_dilithium_10_fu_1267_ap_start = grp_pqcrystals_dilithium_10_fu_1267_ap_start_reg;
+assign ap_block_pp0_stage3_11001 = ~(1'b1 == 1'b1);
 
-assign grp_pqcrystals_dilithium_11_fu_1372_ap_start = grp_pqcrystals_dilithium_11_fu_1372_ap_start_reg;
+assign ap_block_pp0_stage3_subdone = ~(1'b1 == 1'b1);
 
-assign grp_pqcrystals_dilithium_12_fu_1441_ap_start = grp_pqcrystals_dilithium_12_fu_1441_ap_start_reg;
+assign ap_block_state19_pp0_stage0_iter0 = ~(1'b1 == 1'b1);
 
-assign grp_pqcrystals_dilithium_13_fu_1380_ap_start = grp_pqcrystals_dilithium_13_fu_1380_ap_start_reg;
+assign ap_block_state20_pp0_stage1_iter0 = ~(1'b1 == 1'b1);
 
-assign grp_pqcrystals_dilithium_17_fu_1260_ap_start = grp_pqcrystals_dilithium_17_fu_1260_ap_start_reg;
+assign ap_block_state21_pp0_stage2_iter0 = ~(1'b1 == 1'b1);
 
-assign grp_pqcrystals_dilithium_18_fu_1431_ap_start = grp_pqcrystals_dilithium_18_fu_1431_ap_start_reg;
+assign ap_block_state22_pp0_stage3_iter0 = ~(1'b1 == 1'b1);
 
-assign grp_pqcrystals_dilithium_19_fu_1364_ap_start = grp_pqcrystals_dilithium_19_fu_1364_ap_start_reg;
+assign ap_block_state23_pp0_stage0_iter1 = ~(1'b1 == 1'b1);
 
-assign grp_pqcrystals_dilithium_20_fu_1314_ap_start = grp_pqcrystals_dilithium_20_fu_1314_ap_start_reg;
+assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
-assign grp_pqcrystals_dilithium_21_fu_1302_ap_start = grp_pqcrystals_dilithium_21_fu_1302_ap_start_reg;
+assign grp_KeccakF1600_StatePer_1_fu_1303_ap_start = grp_KeccakF1600_StatePer_1_fu_1303_ap_start_reg;
 
-assign grp_pqcrystals_dilithium_23_fu_1352_ap_start = grp_pqcrystals_dilithium_23_fu_1352_ap_start_reg;
+assign grp_KeccakF1600_StatePer_fu_1308_ap_start = grp_KeccakF1600_StatePer_fu_1308_ap_start_reg;
 
-assign grp_pqcrystals_dilithium_4_fu_1397_ap_start = grp_pqcrystals_dilithium_4_fu_1397_ap_start_reg;
+assign grp_fu_1462_p4 = {{grp_keccak_absorb_2_fu_1289_ap_return[31:3]}};
 
-assign grp_pqcrystals_dilithium_5_fu_1321_ap_start = grp_pqcrystals_dilithium_5_fu_1321_ap_start_reg;
+assign grp_fu_1472_p2 = (state_s_q0 ^ 64'd9223372036854775808);
 
-assign grp_pqcrystals_dilithium_6_fu_1423_ap_start = grp_pqcrystals_dilithium_6_fu_1423_ap_start_reg;
+assign grp_fu_3235_p0 = 32'd11275;
 
-assign grp_pqcrystals_dilithium_9_fu_1248_ap_start = grp_pqcrystals_dilithium_9_fu_1248_ap_start_reg;
+assign grp_fu_3235_p2 = 32'd8388608;
 
-assign grp_pqcrystals_dilithium_fu_1338_ap_start = grp_pqcrystals_dilithium_fu_1338_ap_start_reg;
+assign grp_fu_3244_p0 = 27'd134027264;
 
-assign i_10_fu_2294_p2 = (i_0_i5_reg_945 + 3'd1);
+assign grp_fu_3254_p1 = 32'd4286586879;
 
-assign i_11_fu_2306_p2 = (i_0_i7_reg_957 + 3'd1);
+assign grp_keccak_absorb_2_fu_1289_ap_start = grp_keccak_absorb_2_fu_1289_ap_start_reg;
 
-assign i_12_fu_2449_p2 = (i_0_i12_reg_1024 + 3'd1);
+assign grp_keccak_absorb_3199_fu_1425_ap_start = grp_keccak_absorb_3199_fu_1425_ap_start_reg;
 
-assign i_13_fu_2461_p2 = (i_0_i17_reg_1036 + 3'd1);
+assign grp_pqcrystals_dilithium_10_fu_1278_ap_start = grp_pqcrystals_dilithium_10_fu_1278_ap_start_reg;
 
-assign i_14_fu_2614_p2 = (i_0_i_i21_reg_1058 + 5'd1);
+assign grp_pqcrystals_dilithium_11_fu_1383_ap_start = grp_pqcrystals_dilithium_11_fu_1383_ap_start_reg;
 
-assign i_15_fu_2485_p2 = (i_0_i_i18_reg_1047 + 9'd1);
+assign grp_pqcrystals_dilithium_12_fu_1452_ap_start = grp_pqcrystals_dilithium_12_fu_1452_ap_start_reg;
 
-assign i_16_fu_2774_p2 = (i_0_i41_reg_1080 + 3'd1);
+assign grp_pqcrystals_dilithium_13_fu_1391_ap_start = grp_pqcrystals_dilithium_13_fu_1391_ap_start_reg;
 
-assign i_17_fu_2792_p2 = (i_0_i43_reg_1091 + 3'd1);
+assign grp_pqcrystals_dilithium_17_fu_1271_ap_start = grp_pqcrystals_dilithium_17_fu_1271_ap_start_reg;
 
-assign i_18_fu_2809_p2 = (i_0_i45_reg_1102 + 3'd1);
+assign grp_pqcrystals_dilithium_18_fu_1442_ap_start = grp_pqcrystals_dilithium_18_fu_1442_ap_start_reg;
 
-assign i_19_fu_2871_p2 = (i_0_i51_reg_1124 + 3'd1);
+assign grp_pqcrystals_dilithium_19_fu_1375_ap_start = grp_pqcrystals_dilithium_19_fu_1375_ap_start_reg;
 
-assign i_20_fu_2833_p2 = (i_0_i_i46_reg_1113 + 9'd1);
+assign grp_pqcrystals_dilithium_20_fu_1325_ap_start = grp_pqcrystals_dilithium_20_fu_1325_ap_start_reg;
 
-assign i_21_fu_2941_p2 = (i_0_i85_reg_1146 + 3'd1);
+assign grp_pqcrystals_dilithium_21_fu_1313_ap_start = grp_pqcrystals_dilithium_21_fu_1313_ap_start_reg;
 
-assign i_22_fu_2895_p2 = (i_0_i_i52_reg_1135 + 9'd1);
+assign grp_pqcrystals_dilithium_23_fu_1363_ap_start = grp_pqcrystals_dilithium_23_fu_1363_ap_start_reg;
 
-assign i_23_fu_2965_p2 = (i_0_i_i86_reg_1157 + 9'd1);
+assign grp_pqcrystals_dilithium_4_fu_1408_ap_start = grp_pqcrystals_dilithium_4_fu_1408_ap_start_reg;
 
-assign i_24_fu_3031_p2 = (i_0_i57_reg_1168 + 3'd1);
+assign grp_pqcrystals_dilithium_5_fu_1332_ap_start = grp_pqcrystals_dilithium_5_fu_1332_ap_start_reg;
 
-assign i_25_fu_3043_p2 = (i_0_i59_reg_1180 + 3'd1);
+assign grp_pqcrystals_dilithium_6_fu_1434_ap_start = grp_pqcrystals_dilithium_6_fu_1434_ap_start_reg;
 
-assign i_26_fu_3067_p2 = (i_0_i_i60_reg_1191 + 9'd1);
+assign grp_pqcrystals_dilithium_9_fu_1259_ap_start = grp_pqcrystals_dilithium_9_fu_1259_ap_start_reg;
 
-assign i_27_fu_3101_p2 = (i_0_i87_reg_1202 + 3'd1);
+assign grp_pqcrystals_dilithium_fu_1349_ap_start = grp_pqcrystals_dilithium_fu_1349_ap_start_reg;
 
-assign i_28_fu_3131_p2 = (i_0_i_i88_reg_1225 + 9'd1);
+assign i_10_fu_2292_p2 = (i_0_i3_reg_944 + 3'd1);
 
-assign i_5_fu_1586_p2 = (i_0_i_i_reg_852 + 5'd1);
+assign i_11_fu_2304_p2 = (i_0_i5_reg_956 + 3'd1);
 
-assign i_6_fu_1823_p2 = (i_0_i_i_i_reg_875 + 5'd1);
+assign i_12_fu_2316_p2 = (i_0_i7_reg_968 + 3'd1);
 
-assign i_7_fu_2243_p2 = (i_0_i_reg_909 + 3'd1);
+assign i_13_fu_2459_p2 = (i_0_i12_reg_1035 + 3'd1);
 
-assign i_9_fu_2282_p2 = (i_0_i3_reg_933 + 3'd1);
+assign i_14_fu_2471_p2 = (i_0_i17_reg_1047 + 3'd1);
 
-assign icmp_ln102_1_fu_2443_p2 = ((i_0_i12_reg_1024 == 3'd4) ? 1'b1 : 1'b0);
+assign i_15_fu_2624_p2 = (i_0_i_i21_reg_1069 + 5'd1);
 
-assign icmp_ln102_fu_2276_p2 = ((i_0_i3_reg_933 == 3'd4) ? 1'b1 : 1'b0);
+assign i_16_fu_2495_p2 = (i_0_i_i18_reg_1058 + 9'd1);
 
-assign icmp_ln109_fu_2786_p2 = ((i_0_i43_reg_1091 == 3'd4) ? 1'b1 : 1'b0);
+assign i_17_fu_2784_p2 = (i_0_i41_reg_1091 + 3'd1);
 
-assign icmp_ln116_fu_2768_p2 = ((i_0_i41_reg_1080 == 3'd4) ? 1'b1 : 1'b0);
+assign i_18_fu_2802_p2 = (i_0_i43_reg_1102 + 3'd1);
 
-assign icmp_ln124_1_fu_2380_p2 = ((phi_ln124_1_reg_991 == 8'd255) ? 1'b1 : 1'b0);
+assign i_19_fu_2819_p2 = (i_0_i45_reg_1113 + 3'd1);
 
-assign icmp_ln124_2_fu_2406_p2 = ((phi_ln124_2_reg_1002 == 8'd255) ? 1'b1 : 1'b0);
+assign i_20_fu_2881_p2 = (i_0_i51_reg_1135 + 3'd1);
 
-assign icmp_ln124_3_fu_2432_p2 = ((phi_ln124_3_reg_1013 == 8'd255) ? 1'b1 : 1'b0);
+assign i_21_fu_2843_p2 = (i_0_i_i46_reg_1124 + 9'd1);
 
-assign icmp_ln124_fu_2354_p2 = ((phi_ln124_reg_980 == 8'd255) ? 1'b1 : 1'b0);
+assign i_22_fu_2951_p2 = (i_0_i83_reg_1157 + 3'd1);
 
-assign icmp_ln160_fu_2935_p2 = ((i_0_i85_reg_1146 == 3'd4) ? 1'b1 : 1'b0);
+assign i_23_fu_2905_p2 = (i_0_i_i52_reg_1146 + 9'd1);
 
-assign icmp_ln172_fu_3119_p2 = ((n_reg_1213 > 11'd80) ? 1'b1 : 1'b0);
+assign i_24_fu_2975_p2 = (i_0_i_i84_reg_1168 + 9'd1);
 
-assign icmp_ln20_fu_2237_p2 = ((i_0_i_reg_909 == 3'd4) ? 1'b1 : 1'b0);
+assign i_25_fu_3041_p2 = (i_0_i57_reg_1179 + 3'd1);
 
-assign icmp_ln21_fu_2249_p2 = ((j_0_i_reg_921 == 3'd4) ? 1'b1 : 1'b0);
+assign i_26_fu_3053_p2 = (i_0_i59_reg_1191 + 3'd1);
 
-assign icmp_ln229_fu_2479_p2 = ((i_0_i_i18_reg_1047 == 9'd256) ? 1'b1 : 1'b0);
+assign i_27_fu_3077_p2 = (i_0_i_i60_reg_1202 + 9'd1);
 
-assign icmp_ln238_fu_3037_p2 = ((i_0_i59_reg_1180 == 3'd4) ? 1'b1 : 1'b0);
+assign i_28_fu_3111_p2 = (i_0_i85_reg_1213 + 3'd1);
 
-assign icmp_ln252_fu_3125_p2 = ((i_0_i_i88_reg_1225 == 9'd256) ? 1'b1 : 1'b0);
+assign i_29_fu_3141_p2 = (i_0_i_i86_reg_1236 + 9'd1);
 
-assign icmp_ln256_fu_3025_p2 = ((i_0_i57_reg_1168 == 3'd4) ? 1'b1 : 1'b0);
+assign i_6_fu_1597_p2 = (i_0_i_i_reg_863 + 5'd1);
 
-assign icmp_ln286_1_fu_2300_p2 = ((i_0_i7_reg_957 == 3'd4) ? 1'b1 : 1'b0);
+assign i_7_fu_1834_p2 = (i_0_i_i_i_reg_886 + 5'd1);
 
-assign icmp_ln286_fu_2288_p2 = ((i_0_i5_reg_945 == 3'd4) ? 1'b1 : 1'b0);
+assign i_9_fu_2253_p2 = (i_0_i_reg_920 + 3'd1);
 
-assign icmp_ln302_fu_2959_p2 = ((i_0_i_i86_reg_1157 == 9'd256) ? 1'b1 : 1'b0);
+assign icmp_ln104_1_fu_2453_p2 = ((i_0_i12_reg_1035 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln307_fu_3019_p2 = (($signed(t_6_fu_3013_p2) < $signed(32'd130994)) ? 1'b1 : 1'b0);
+assign icmp_ln104_fu_2286_p2 = ((i_0_i3_reg_944 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln32_fu_2889_p2 = ((i_0_i_i52_reg_1135 == 9'd256) ? 1'b1 : 1'b0);
+assign icmp_ln111_fu_2796_p2 = ((i_0_i43_reg_1102 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln364_1_fu_1817_p2 = ((i_0_i_i_i_reg_875 == 5'd25) ? 1'b1 : 1'b0);
+assign icmp_ln118_fu_2778_p2 = ((i_0_i41_reg_1091 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln364_2_fu_2608_p2 = ((i_0_i_i21_reg_1058 == 5'd25) ? 1'b1 : 1'b0);
+assign icmp_ln124_1_fu_2390_p2 = ((phi_ln124_1_reg_1002 == 8'd255) ? 1'b1 : 1'b0);
 
-assign icmp_ln364_fu_1580_p2 = ((i_0_i_i_reg_852 == 5'd25) ? 1'b1 : 1'b0);
+assign icmp_ln124_2_fu_2416_p2 = ((phi_ln124_2_reg_1013 == 8'd255) ? 1'b1 : 1'b0);
 
-assign icmp_ln378_fu_2455_p2 = ((i_0_i17_reg_1036 == 3'd4) ? 1'b1 : 1'b0);
+assign icmp_ln124_3_fu_2442_p2 = ((phi_ln124_3_reg_1024 == 8'd255) ? 1'b1 : 1'b0);
 
-assign icmp_ln399_fu_3095_p2 = ((i_0_i87_reg_1202 == 3'd4) ? 1'b1 : 1'b0);
+assign icmp_ln124_fu_2364_p2 = ((phi_ln124_reg_991 == 8'd255) ? 1'b1 : 1'b0);
 
-assign icmp_ln420_fu_1839_p2 = ((i_3_i1_reg_886 == 4'd10) ? 1'b1 : 1'b0);
+assign icmp_ln162_fu_2945_p2 = ((i_0_i83_reg_1157 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln546_1_fu_1985_p2 = ((i_3_i3_reg_897 == 3'd6) ? 1'b1 : 1'b0);
+assign icmp_ln172_fu_3129_p2 = ((n_reg_1224 > 11'd80) ? 1'b1 : 1'b0);
 
-assign icmp_ln546_2_fu_2664_p2 = ((i_3_i47_reg_1069 == 3'd4) ? 1'b1 : 1'b0);
+assign icmp_ln20_fu_2247_p2 = ((i_0_i_reg_920 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln546_fu_1636_p2 = ((i_3_i_reg_863 == 3'd6) ? 1'b1 : 1'b0);
+assign icmp_ln21_fu_2259_p2 = ((j_0_i_reg_932 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln55_fu_2865_p2 = ((i_0_i51_reg_1124 == 3'd4) ? 1'b1 : 1'b0);
+assign icmp_ln232_fu_2489_p2 = ((i_0_i_i18_reg_1058 == 9'd256) ? 1'b1 : 1'b0);
 
-assign icmp_ln69_1_fu_3168_p2 = (($signed(w0_vec_coeffs_q0) > $signed(32'd8285185)) ? 1'b1 : 1'b0);
+assign icmp_ln242_fu_3047_p2 = ((i_0_i59_reg_1191 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln69_2_fu_3174_p2 = ((w0_vec_coeffs_q0 == 32'd8285185) ? 1'b1 : 1'b0);
+assign icmp_ln255_fu_3135_p2 = ((i_0_i_i86_reg_1236 == 9'd256) ? 1'b1 : 1'b0);
 
-assign icmp_ln69_3_fu_3180_p2 = ((w1_vec_coeffs_q0 == 32'd0) ? 1'b1 : 1'b0);
+assign icmp_ln260_fu_3035_p2 = ((i_0_i57_reg_1179 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln69_fu_3162_p2 = (($signed(w0_vec_coeffs_q0) < $signed(32'd95233)) ? 1'b1 : 1'b0);
+assign icmp_ln290_1_fu_2310_p2 = ((i_0_i7_reg_968 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln87_1_fu_2827_p2 = ((i_0_i_i46_reg_1113 == 9'd256) ? 1'b1 : 1'b0);
+assign icmp_ln290_fu_2298_p2 = ((i_0_i5_reg_956 == 3'd4) ? 1'b1 : 1'b0);
 
-assign icmp_ln87_2_fu_3061_p2 = ((i_0_i_i60_reg_1191 == 9'd256) ? 1'b1 : 1'b0);
+assign icmp_ln305_fu_2969_p2 = ((i_0_i_i84_reg_1168 == 9'd256) ? 1'b1 : 1'b0);
 
-assign icmp_ln87_fu_2803_p2 = ((i_0_i45_reg_1102 == 3'd4) ? 1'b1 : 1'b0);
+assign icmp_ln310_fu_3029_p2 = (($signed(t_6_fu_3023_p2) < $signed(32'd130994)) ? 1'b1 : 1'b0);
 
-assign j_fu_2255_p2 = (j_0_i_reg_921 + 3'd1);
+assign icmp_ln32_fu_2899_p2 = ((i_0_i_i52_reg_1146 == 9'd256) ? 1'b1 : 1'b0);
 
-assign nonce_fu_2312_p2 = (16'd1 + nonce_assign_reg_969);
+assign icmp_ln364_1_fu_1828_p2 = ((i_0_i_i_i_reg_886 == 5'd25) ? 1'b1 : 1'b0);
 
-assign or_ln49_1_fu_2331_p2 = (shl_ln49_reg_3516 | 16'd2);
+assign icmp_ln364_2_fu_2618_p2 = ((i_0_i_i21_reg_1069 == 5'd25) ? 1'b1 : 1'b0);
 
-assign or_ln49_2_fu_2337_p2 = (shl_ln49_reg_3516 | 16'd3);
+assign icmp_ln364_fu_1591_p2 = ((i_0_i_i_reg_863 == 5'd25) ? 1'b1 : 1'b0);
 
-assign or_ln49_fu_2325_p2 = (shl_ln49_reg_3516 | 16'd1);
+assign icmp_ln385_fu_2465_p2 = ((i_0_i17_reg_1047 == 3'd4) ? 1'b1 : 1'b0);
 
-assign or_ln549_1_fu_2036_p2 = (shl_ln548_1_fu_2002_p3 | 6'd1);
+assign icmp_ln406_fu_3105_p2 = ((i_0_i85_reg_1213 == 3'd4) ? 1'b1 : 1'b0);
 
-assign or_ln549_2_fu_2697_p2 = (shl_ln548_2_fu_2685_p3 | 5'd1);
+assign icmp_ln422_fu_1845_p2 = ((ap_phi_mux_i_3_i1_phi_fu_901_p4 == 4'd10) ? 1'b1 : 1'b0);
 
-assign or_ln549_fu_1676_p2 = (shl_ln5_fu_1653_p3 | 6'd1);
+assign icmp_ln555_1_fu_1995_p2 = ((i_3_i3_reg_908 == 3'd6) ? 1'b1 : 1'b0);
 
-assign or_ln550_1_fu_2117_p2 = (shl_ln548_1_reg_3426 | 6'd2);
+assign icmp_ln555_2_fu_2674_p2 = ((i_3_i46_reg_1080 == 3'd4) ? 1'b1 : 1'b0);
 
-assign or_ln550_2_fu_2708_p2 = (shl_ln548_2_reg_3685 | 5'd2);
+assign icmp_ln555_fu_1647_p2 = ((i_3_i_reg_874 == 3'd6) ? 1'b1 : 1'b0);
 
-assign or_ln550_fu_1697_p2 = (shl_ln5_reg_3289 | 6'd2);
+assign icmp_ln57_fu_2875_p2 = ((i_0_i51_reg_1135 == 3'd4) ? 1'b1 : 1'b0);
 
-assign or_ln551_1_fu_2137_p2 = (shl_ln548_1_reg_3426 | 6'd3);
+assign icmp_ln69_1_fu_3178_p2 = (($signed(w0_vec_coeffs_q0) > $signed(32'd8285185)) ? 1'b1 : 1'b0);
 
-assign or_ln551_2_fu_2718_p2 = (shl_ln548_2_reg_3685 | 5'd3);
+assign icmp_ln69_2_fu_3184_p2 = ((w0_vec_coeffs_q0 == 32'd8285185) ? 1'b1 : 1'b0);
 
-assign or_ln551_fu_1717_p2 = (shl_ln5_reg_3289 | 6'd3);
+assign icmp_ln69_3_fu_3190_p2 = ((w1_vec_coeffs_q0 == 32'd0) ? 1'b1 : 1'b0);
 
-assign or_ln552_1_fu_2157_p2 = (shl_ln548_1_reg_3426 | 6'd4);
+assign icmp_ln69_fu_3172_p2 = (($signed(w0_vec_coeffs_q0) < $signed(32'd95233)) ? 1'b1 : 1'b0);
 
-assign or_ln552_2_fu_2728_p2 = (shl_ln548_2_reg_3685 | 5'd4);
+assign icmp_ln87_1_fu_3071_p2 = ((i_0_i_i60_reg_1202 == 9'd256) ? 1'b1 : 1'b0);
 
-assign or_ln552_fu_1737_p2 = (shl_ln5_reg_3289 | 6'd4);
+assign icmp_ln87_fu_2837_p2 = ((i_0_i_i46_reg_1124 == 9'd256) ? 1'b1 : 1'b0);
 
-assign or_ln553_1_fu_2177_p2 = (shl_ln548_1_reg_3426 | 6'd5);
+assign icmp_ln89_fu_2813_p2 = ((i_0_i45_reg_1113 == 3'd4) ? 1'b1 : 1'b0);
 
-assign or_ln553_2_fu_2738_p2 = (shl_ln548_2_reg_3685 | 5'd5);
+assign j_fu_2265_p2 = (j_0_i_reg_932 + 3'd1);
 
-assign or_ln553_fu_1757_p2 = (shl_ln5_reg_3289 | 6'd5);
+assign nonce_fu_2322_p2 = (16'd1 + nonce_assign_reg_980);
 
-assign or_ln554_1_fu_2197_p2 = (shl_ln548_1_reg_3426 | 6'd6);
+assign or_ln50_1_fu_2341_p2 = (shl_ln50_reg_3531 | 16'd2);
 
-assign or_ln554_2_fu_2748_p2 = (shl_ln548_2_reg_3685 | 5'd6);
+assign or_ln50_2_fu_2347_p2 = (shl_ln50_reg_3531 | 16'd3);
 
-assign or_ln554_fu_1777_p2 = (shl_ln5_reg_3289 | 6'd6);
+assign or_ln50_fu_2335_p2 = (shl_ln50_reg_3531 | 16'd1);
 
-assign or_ln555_1_fu_2217_p2 = (shl_ln548_1_reg_3426 | 6'd7);
+assign or_ln558_1_fu_2046_p2 = (shl_ln557_1_fu_2012_p3 | 6'd1);
 
-assign or_ln555_2_fu_2758_p2 = (shl_ln548_2_reg_3685 | 5'd7);
+assign or_ln558_2_fu_2707_p2 = (shl_ln557_2_fu_2695_p3 | 5'd1);
 
-assign or_ln555_fu_1797_p2 = (shl_ln5_reg_3289 | 6'd7);
+assign or_ln558_fu_1687_p2 = (shl_ln5_fu_1664_p3 | 6'd1);
 
-assign or_ln69_1_fu_3198_p2 = (or_ln69_fu_3192_p2 | icmp_ln69_fu_3162_p2);
+assign or_ln559_1_fu_2127_p2 = (shl_ln557_1_reg_3441 | 6'd2);
 
-assign or_ln69_fu_3192_p2 = (icmp_ln69_1_fu_3168_p2 | and_ln69_fu_3186_p2);
+assign or_ln559_2_fu_2718_p2 = (shl_ln557_2_reg_3700 | 5'd2);
 
-assign r_7_i2_i_fu_1945_p9 = {{{{{{{{seedbuf_q1}, {seedbuf_q0}}, {seedbuf_load_5_reg_3398}}, {seedbuf_load_4_reg_3393}}, {seedbuf_load_3_reg_3378}}, {seedbuf_load_2_reg_3373}}, {seedbuf_load_1_reg_3358}}, {seedbuf_load_reg_3353}};
+assign or_ln559_fu_1708_p2 = (shl_ln5_reg_3299 | 6'd2);
 
-assign s_1_fu_3219_p2 = (s_0_i_i_reg_1236 + zext_ln69_fu_3210_p1);
+assign or_ln560_1_fu_2147_p2 = (shl_ln557_1_reg_3441 | 6'd3);
 
-assign s_fu_3156_p2 = (zext_ln252_fu_3152_p1 + n_reg_1213);
+assign or_ln560_2_fu_2728_p2 = (shl_ln557_2_reg_3700 | 5'd3);
 
-assign select_ln48_fu_2558_p3 = ((xor_ln48_fu_2552_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign or_ln560_fu_1728_p2 = (shl_ln5_reg_3299 | 6'd3);
 
-assign select_ln52_fu_2594_p3 = ((tmp_494_fu_2586_p3[0:0] === 1'b1) ? 32'd8380417 : 32'd0);
+assign or_ln561_1_fu_2167_p2 = (shl_ln557_1_reg_3441 | 6'd4);
 
-assign sext_ln124_1_fu_2386_p1 = $signed(y_vec_coeffs_q0);
+assign or_ln561_2_fu_2738_p2 = (shl_ln557_2_reg_3700 | 5'd4);
 
-assign sext_ln124_2_fu_2412_p1 = $signed(y_vec_coeffs_q0);
+assign or_ln561_fu_1748_p2 = (shl_ln5_reg_3299 | 6'd4);
 
-assign sext_ln124_3_fu_2438_p1 = $signed(y_vec_coeffs_q0);
+assign or_ln562_1_fu_2187_p2 = (shl_ln557_1_reg_3441 | 6'd5);
 
-assign sext_ln124_fu_2360_p1 = $signed(y_vec_coeffs_q0);
+assign or_ln562_2_fu_2748_p2 = (shl_ln557_2_reg_3700 | 5'd5);
 
-assign sext_ln47_fu_2534_p1 = trunc_ln12_fu_2525_p4;
+assign or_ln562_fu_1768_p2 = (shl_ln5_reg_3299 | 6'd5);
 
-assign sext_ln48_1_fu_2576_p1 = a1_1_fu_2566_p2;
+assign or_ln563_1_fu_2207_p2 = (shl_ln557_1_reg_3441 | 6'd6);
 
-assign sext_ln88_fu_2854_p1 = $signed(y_vec_coeffs_q0);
+assign or_ln563_2_fu_2758_p2 = (shl_ln557_2_reg_3700 | 5'd6);
 
-assign shl_ln305_fu_3001_p2 = z_vec_coeffs_q0 << 32'd1;
+assign or_ln563_fu_1788_p2 = (shl_ln5_reg_3299 | 6'd6);
 
-assign shl_ln454_1_fu_2646_p2 = 64'd31 << zext_ln454_2_fu_2642_p1;
+assign or_ln564_1_fu_2227_p2 = (shl_ln557_1_reg_3441 | 6'd7);
 
-assign shl_ln454_2_fu_2634_p3 = {{trunc_ln454_1_fu_2630_p1}, {3'd0}};
+assign or_ln564_2_fu_2768_p2 = (shl_ln557_2_reg_3700 | 5'd7);
 
-assign shl_ln454_fu_1618_p2 = 64'd31 << zext_ln454_fu_1614_p1;
+assign or_ln564_fu_1808_p2 = (shl_ln5_reg_3299 | 6'd7);
 
-assign shl_ln49_fu_2318_p2 = nonce_assign_reg_969 << 16'd2;
+assign or_ln69_1_fu_3208_p2 = (or_ln69_fu_3202_p2 | icmp_ln69_fu_3172_p2);
 
-assign shl_ln548_1_fu_2002_p3 = {{i_3_i3_reg_897}, {3'd0}};
+assign or_ln69_fu_3202_p2 = (icmp_ln69_1_fu_3178_p2 | and_ln69_fu_3196_p2);
 
-assign shl_ln548_2_fu_2685_p3 = {{trunc_ln548_3_reg_3680}, {3'd0}};
+assign r_7_i2_i_fu_1956_p9 = {{{{{{{{seedbuf_q1}, {seedbuf_q0}}, {seedbuf_load_5_reg_3403}}, {seedbuf_load_4_reg_3398}}, {seedbuf_load_3_reg_3383}}, {seedbuf_load_2_reg_3378}}, {seedbuf_load_1_reg_3358}}, {seedbuf_load_reg_3353}};
 
-assign shl_ln5_fu_1653_p3 = {{i_3_i_reg_863}, {3'd0}};
+assign s_1_fu_3229_p2 = (s_0_i_i_reg_1247 + zext_ln69_fu_3220_p1);
 
-assign shl_ln6_fu_1851_p3 = {{i_3_i1_reg_886}, {3'd0}};
+assign s_fu_3166_p2 = (zext_ln255_fu_3162_p1 + n_reg_1224);
 
-assign shl_ln_fu_1606_p3 = {{trunc_ln454_fu_1602_p1}, {3'd0}};
+assign select_ln48_fu_2568_p3 = ((xor_ln48_fu_2562_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
 
-assign sk_address0 = grp_pqcrystals_dilithium_fu_1338_sk_address0;
+assign select_ln52_fu_2604_p3 = ((tmp_494_fu_2596_p3[0:0] === 1'b1) ? 32'd8380417 : 32'd0);
 
-assign sk_address1 = grp_pqcrystals_dilithium_fu_1338_sk_address1;
+assign sext_ln124_1_fu_2396_p1 = $signed(y_vec_coeffs_q0);
 
-assign sk_ce0 = grp_pqcrystals_dilithium_fu_1338_sk_ce0;
+assign sext_ln124_2_fu_2422_p1 = $signed(y_vec_coeffs_q0);
 
-assign sk_ce1 = grp_pqcrystals_dilithium_fu_1338_sk_ce1;
+assign sext_ln124_3_fu_2448_p1 = $signed(y_vec_coeffs_q0);
 
-assign state_s_addr_9_reg_3271 = 64'd16;
+assign sext_ln124_fu_2370_p1 = $signed(y_vec_coeffs_q0);
 
-assign sub_ln48_fu_2538_p2 = ($signed(9'd43) - $signed(sext_ln47_fu_2534_p1));
+assign sext_ln47_fu_2544_p1 = trunc_ln12_fu_2535_p4;
 
-assign sub_ln52_1_fu_2602_p2 = ($signed(grp_fu_3234_p3) - $signed(select_ln52_fu_2594_p3));
+assign sext_ln48_1_fu_2586_p1 = a1_1_fu_2576_p2;
 
-assign sub_ln52_fu_2581_p2 = ($signed(32'd4190208) - $signed(grp_fu_3234_p3));
+assign sext_ln88_fu_2864_p1 = $signed(y_vec_coeffs_q0);
 
-assign t_5_fu_2993_p3 = ((tmp_495_fu_2985_p3[0:0] === 1'b1) ? 32'd4294967295 : 32'd0);
+assign shl_ln308_fu_3011_p2 = z_vec_coeffs_q0 << 32'd1;
 
-assign t_6_fu_3013_p2 = (z_vec_coeffs_q0 - and_ln305_fu_3007_p2);
+assign shl_ln462_1_fu_2656_p2 = 64'd31 << zext_ln462_2_fu_2652_p1;
 
-assign tmp_3256_fu_2397_p3 = {{56'd2}, {phi_ln124_2_reg_1002}};
+assign shl_ln462_2_fu_2644_p3 = {{trunc_ln462_1_fu_2640_p1}, {3'd0}};
 
-assign tmp_3257_fu_2423_p3 = {{56'd3}, {phi_ln124_3_reg_1013}};
+assign shl_ln462_fu_1629_p2 = 64'd31 << zext_ln462_fu_1625_p1;
 
-assign tmp_3258_fu_2467_p3 = {{i_0_i17_reg_1036}, {8'd0}};
+assign shl_ln50_fu_2328_p2 = nonce_assign_reg_980 << 16'd2;
 
-assign tmp_3259_fu_2815_p3 = {{i_0_i45_reg_1102}, {8'd0}};
+assign shl_ln557_1_fu_2012_p3 = {{i_3_i3_reg_908}, {3'd0}};
 
-assign tmp_3260_fu_2877_p3 = {{i_0_i51_reg_1124}, {8'd0}};
+assign shl_ln557_2_fu_2695_p3 = {{trunc_ln557_3_reg_3695}, {3'd0}};
 
-assign tmp_3261_fu_2947_p3 = {{i_0_i85_reg_1146}, {8'd0}};
+assign shl_ln5_fu_1664_p3 = {{i_3_i_reg_874}, {3'd0}};
 
-assign tmp_3262_fu_3049_p3 = {{i_0_i59_reg_1180}, {8'd0}};
+assign shl_ln6_fu_1862_p3 = {{ap_phi_mux_i_3_i1_phi_fu_901_p4}, {3'd0}};
 
-assign tmp_3263_fu_3107_p3 = {{i_0_i87_reg_1202}, {8'd0}};
+assign shl_ln_fu_1617_p3 = {{trunc_ln462_fu_1613_p1}, {3'd0}};
 
-assign tmp_494_fu_2586_p3 = sub_ln52_fu_2581_p2[32'd31];
+assign sk_address0 = grp_pqcrystals_dilithium_fu_1349_sk_address0;
 
-assign tmp_495_fu_2985_p3 = z_vec_coeffs_q0[32'd31];
+assign sk_address1 = grp_pqcrystals_dilithium_fu_1349_sk_address1;
 
-assign tmp_fu_2544_p3 = sub_ln48_fu_2538_p2[32'd8];
+assign sk_ce0 = grp_pqcrystals_dilithium_fu_1349_sk_ce0;
 
-assign tmp_s_fu_2371_p3 = {{56'd1}, {phi_ln124_1_reg_991}};
+assign sk_ce1 = grp_pqcrystals_dilithium_fu_1349_sk_ce1;
 
-assign trunc_ln11_fu_2511_p4 = {{add_ln42_fu_2505_p2[31:7]}};
+assign state_0_s_addr_1_reg_3418 = 64'd10;
 
-assign trunc_ln12_fu_2525_p4 = {{grp_fu_3225_p3[31:24]}};
+assign state_0_s_addr_2_reg_3423 = 64'd16;
 
-assign trunc_ln13_fu_2921_p4 = {{add_ln36_fu_2915_p2[31:23]}};
+assign state_s_addr_9_reg_3281 = 64'd16;
 
-assign trunc_ln22_fu_2261_p1 = i_0_i_reg_909[1:0];
+assign sub_ln48_fu_2548_p2 = ($signed(9'd43) - $signed(sext_ln47_fu_2544_p1));
 
-assign trunc_ln454_1_fu_2630_p1 = reg_1540[2:0];
+assign sub_ln52_1_fu_2612_p2 = ($signed(grp_fu_3244_p3) - $signed(select_ln52_fu_2604_p3));
 
-assign trunc_ln454_fu_1602_p1 = reg_1540[2:0];
+assign sub_ln52_fu_2591_p2 = ($signed(32'd4190208) - $signed(grp_fu_3244_p3));
 
-assign trunc_ln548_1_fu_1997_p1 = state_0_s_q1[7:0];
+assign t_5_fu_3003_p3 = ((tmp_495_fu_2995_p3[0:0] === 1'b1) ? 32'd4294967295 : 32'd0);
 
-assign trunc_ln548_2_fu_2680_p1 = state_s_q0[7:0];
+assign t_6_fu_3023_p2 = (z_vec_coeffs_q0 - and_ln308_fu_3017_p2);
 
-assign trunc_ln548_3_fu_2676_p1 = i_3_i47_reg_1069[1:0];
+assign tmp_3256_fu_2407_p3 = {{56'd2}, {phi_ln124_2_reg_1013}};
 
-assign trunc_ln548_fu_1648_p1 = state_s_q0[7:0];
+assign tmp_3257_fu_2433_p3 = {{56'd3}, {phi_ln124_3_reg_1024}};
 
-assign xor_ln421_fu_1959_p2 = (state_0_s_q1 ^ r_7_i2_i_fu_1945_p9);
+assign tmp_3258_fu_2477_p3 = {{i_0_i17_reg_1047}, {8'd0}};
 
-assign xor_ln454_1_fu_1966_p2 = (state_0_s_q0 ^ 64'd31);
+assign tmp_3259_fu_2825_p3 = {{i_0_i45_reg_1113}, {8'd0}};
 
-assign xor_ln454_2_fu_2652_p2 = (state_s_q0 ^ shl_ln454_1_fu_2646_p2);
+assign tmp_3260_fu_2887_p3 = {{i_0_i51_reg_1135}, {8'd0}};
 
-assign xor_ln454_fu_1624_p2 = (state_s_q0 ^ shl_ln454_fu_1618_p2);
+assign tmp_3261_fu_2957_p3 = {{i_0_i83_reg_1157}, {8'd0}};
 
-assign xor_ln455_1_fu_1973_p2 = (state_0_s_q1 ^ 64'd9223372036854775808);
+assign tmp_3262_fu_3059_p3 = {{i_0_i59_reg_1191}, {8'd0}};
 
-assign xor_ln48_fu_2552_p2 = (tmp_fu_2544_p3 ^ 1'd1);
+assign tmp_3263_fu_3117_p3 = {{i_0_i85_reg_1213}, {8'd0}};
 
-assign xor_ln69_fu_3204_p2 = (or_ln69_1_fu_3198_p2 ^ 1'd1);
+assign tmp_494_fu_2596_p3 = sub_ln52_fu_2591_p2[32'd31];
 
-assign zext_ln117_fu_2780_p1 = i_0_i41_reg_1080;
+assign tmp_495_fu_2995_p3 = z_vec_coeffs_q0[32'd31];
 
-assign zext_ln124_fu_2349_p1 = phi_ln124_reg_980;
+assign tmp_fu_2554_p3 = sub_ln48_fu_2548_p2[32'd8];
 
-assign zext_ln162_fu_2798_p1 = i_0_i43_reg_1091;
+assign tmp_s_fu_2381_p3 = {{56'd1}, {phi_ln124_1_reg_1002}};
 
-assign zext_ln225_fu_2475_p1 = tmp_3258_fu_2467_p3;
+assign trunc_ln11_fu_2521_p4 = {{add_ln42_fu_2515_p2[31:7]}};
 
-assign zext_ln230_1_fu_2500_p1 = add_ln230_fu_2495_p2;
+assign trunc_ln12_fu_2535_p4 = {{grp_fu_3235_p3[31:24]}};
 
-assign zext_ln230_fu_2491_p1 = i_0_i_i18_reg_1047;
+assign trunc_ln13_fu_2931_p4 = {{add_ln36_fu_2925_p2[31:23]}};
 
-assign zext_ln248_fu_3115_p1 = tmp_3263_fu_3107_p3;
+assign trunc_ln22_fu_2271_p1 = i_0_i_reg_920[1:0];
 
-assign zext_ln252_fu_3152_p1 = s_0_i_i_reg_1236;
+assign trunc_ln462_1_fu_2640_p1 = reg_1551[2:0];
 
-assign zext_ln253_1_fu_3146_p1 = add_ln253_fu_3141_p2;
+assign trunc_ln462_fu_1613_p1 = reg_1551[2:0];
 
-assign zext_ln253_fu_3137_p1 = i_0_i_i88_reg_1225;
+assign trunc_ln557_1_fu_2007_p1 = state_0_s_q1[7:0];
 
-assign zext_ln28_fu_2885_p1 = tmp_3260_fu_2877_p3;
+assign trunc_ln557_2_fu_2690_p1 = state_s_q0[7:0];
 
-assign zext_ln291_fu_2955_p1 = tmp_3261_fu_2947_p3;
+assign trunc_ln557_3_fu_2686_p1 = i_3_i46_reg_1080[1:0];
 
-assign zext_ln304_2_fu_2980_p1 = add_ln304_fu_2975_p2;
+assign trunc_ln557_fu_1659_p1 = state_s_q0[7:0];
 
-assign zext_ln304_fu_2971_p1 = i_0_i_i86_reg_1157;
+assign xor_ln424_fu_1970_p2 = (state_0_s_load_2_reg_3373 ^ r_7_i2_i_fu_1956_p9);
 
-assign zext_ln32_1_fu_1890_p1 = add_ln32_1_fu_1885_p2;
+assign xor_ln462_1_fu_1976_p2 = (state_0_s_q1 ^ 64'd31);
 
-assign zext_ln32_2_fu_1900_p1 = add_ln32_2_fu_1895_p2;
+assign xor_ln462_2_fu_2662_p2 = (state_s_q0 ^ shl_ln462_1_fu_2656_p2);
 
-assign zext_ln32_3_fu_1910_p1 = add_ln32_3_fu_1905_p2;
+assign xor_ln462_fu_1635_p2 = (state_s_q0 ^ shl_ln462_fu_1629_p2);
 
-assign zext_ln32_4_fu_1920_p1 = add_ln32_4_fu_1915_p2;
+assign xor_ln463_1_fu_1983_p2 = (state_0_s_q0 ^ 64'd9223372036854775808);
 
-assign zext_ln32_5_fu_1930_p1 = add_ln32_5_fu_1925_p2;
+assign xor_ln48_fu_2562_p2 = (tmp_fu_2554_p3 ^ 1'd1);
 
-assign zext_ln32_6_fu_1940_p1 = add_ln32_6_fu_1935_p2;
+assign xor_ln69_fu_3214_p2 = (or_ln69_1_fu_3208_p2 ^ 1'd1);
 
-assign zext_ln32_fu_1880_p1 = add_ln32_fu_1874_p2;
+assign zext_ln119_fu_2790_p1 = i_0_i41_reg_1091;
 
-assign zext_ln33_2_fu_2910_p1 = add_ln33_fu_2905_p2;
+assign zext_ln124_fu_2359_p1 = phi_ln124_reg_991;
 
-assign zext_ln33_fu_2901_p1 = i_0_i_i52_reg_1135;
+assign zext_ln164_fu_2808_p1 = i_0_i43_reg_1102;
 
-assign zext_ln365_1_fu_1829_p1 = i_0_i_i_i_reg_875;
+assign zext_ln228_fu_2485_p1 = tmp_3258_fu_2477_p3;
 
-assign zext_ln365_2_fu_2620_p1 = i_0_i_i21_reg_1058;
+assign zext_ln233_1_fu_2510_p1 = add_ln233_fu_2505_p2;
 
-assign zext_ln365_fu_1592_p1 = i_0_i_i_reg_852;
+assign zext_ln233_fu_2501_p1 = i_0_i_i18_reg_1058;
 
-assign zext_ln420_fu_1834_p1 = i_3_i1_reg_886;
+assign zext_ln251_fu_3125_p1 = tmp_3263_fu_3117_p3;
 
-assign zext_ln421_1_fu_1869_p1 = add_ln421_fu_1863_p2;
+assign zext_ln255_fu_3162_p1 = s_0_i_i_reg_1247;
 
-assign zext_ln421_fu_1859_p1 = shl_ln6_fu_1851_p3;
+assign zext_ln256_1_fu_3156_p1 = add_ln256_fu_3151_p2;
 
-assign zext_ln454_1_fu_1597_p1 = grp_fu_1451_p4;
+assign zext_ln256_fu_3147_p1 = i_0_i_i86_reg_1236;
 
-assign zext_ln454_2_fu_2642_p1 = shl_ln454_2_fu_2634_p3;
+assign zext_ln28_fu_2895_p1 = tmp_3260_fu_2887_p3;
 
-assign zext_ln454_3_fu_2625_p1 = grp_fu_1451_p4;
+assign zext_ln294_fu_2965_p1 = tmp_3261_fu_2957_p3;
 
-assign zext_ln454_fu_1614_p1 = shl_ln_fu_1606_p3;
+assign zext_ln307_2_fu_2990_p1 = add_ln307_fu_2985_p2;
 
-assign zext_ln546_1_fu_1980_p1 = i_3_i3_reg_897;
+assign zext_ln307_fu_2981_p1 = i_0_i_i84_reg_1168;
 
-assign zext_ln546_2_fu_2659_p1 = i_3_i47_reg_1069;
+assign zext_ln32_1_fu_1901_p1 = add_ln32_1_fu_1896_p2;
 
-assign zext_ln546_fu_1631_p1 = i_3_i_reg_863;
+assign zext_ln32_2_fu_1911_p1 = add_ln32_2_fu_1906_p2;
 
-assign zext_ln548_1_fu_1671_p1 = add_ln548_fu_1665_p2;
+assign zext_ln32_3_fu_1921_p1 = add_ln32_3_fu_1916_p2;
 
-assign zext_ln548_2_fu_2010_p1 = shl_ln548_1_fu_2002_p3;
+assign zext_ln32_4_fu_1931_p1 = add_ln32_4_fu_1926_p2;
 
-assign zext_ln548_3_fu_2020_p1 = add_ln548_1_fu_2014_p2;
+assign zext_ln32_5_fu_1941_p1 = add_ln32_5_fu_1936_p2;
 
-assign zext_ln548_4_fu_2692_p1 = shl_ln548_2_fu_2685_p3;
+assign zext_ln32_6_fu_1951_p1 = add_ln32_6_fu_1946_p2;
 
-assign zext_ln548_fu_1661_p1 = shl_ln5_fu_1653_p3;
+assign zext_ln32_fu_1891_p1 = add_ln32_fu_1885_p2;
 
-assign zext_ln549_1_fu_1692_p1 = add_ln549_fu_1686_p2;
+assign zext_ln33_2_fu_2920_p1 = add_ln33_fu_2915_p2;
 
-assign zext_ln549_2_fu_2042_p1 = or_ln549_1_fu_2036_p2;
+assign zext_ln33_fu_2911_p1 = i_0_i_i52_reg_1146;
 
-assign zext_ln549_3_fu_2052_p1 = add_ln549_1_fu_2046_p2;
+assign zext_ln365_1_fu_1840_p1 = i_0_i_i_i_reg_886;
 
-assign zext_ln549_4_fu_2703_p1 = or_ln549_2_fu_2697_p2;
+assign zext_ln365_2_fu_2630_p1 = i_0_i_i21_reg_1069;
 
-assign zext_ln549_fu_1682_p1 = or_ln549_fu_1676_p2;
+assign zext_ln365_fu_1603_p1 = i_0_i_i_reg_863;
 
-assign zext_ln550_1_fu_1712_p1 = add_ln550_fu_1706_p2;
+assign zext_ln422_fu_1857_p1 = ap_phi_mux_i_3_i1_phi_fu_901_p4;
 
-assign zext_ln550_2_fu_2122_p1 = or_ln550_1_fu_2117_p2;
+assign zext_ln424_1_fu_1880_p1 = add_ln424_fu_1874_p2;
 
-assign zext_ln550_3_fu_2132_p1 = add_ln550_1_fu_2126_p2;
+assign zext_ln424_fu_1870_p1 = shl_ln6_fu_1862_p3;
 
-assign zext_ln550_4_fu_2713_p1 = or_ln550_2_fu_2708_p2;
+assign zext_ln462_1_fu_1608_p1 = grp_fu_1462_p4;
 
-assign zext_ln550_fu_1702_p1 = or_ln550_fu_1697_p2;
+assign zext_ln462_2_fu_2652_p1 = shl_ln462_2_fu_2644_p3;
 
-assign zext_ln551_1_fu_1732_p1 = add_ln551_fu_1726_p2;
+assign zext_ln462_3_fu_2635_p1 = grp_fu_1462_p4;
 
-assign zext_ln551_2_fu_2142_p1 = or_ln551_1_fu_2137_p2;
+assign zext_ln462_fu_1625_p1 = shl_ln_fu_1617_p3;
 
-assign zext_ln551_3_fu_2152_p1 = add_ln551_1_fu_2146_p2;
+assign zext_ln555_1_fu_1990_p1 = i_3_i3_reg_908;
 
-assign zext_ln551_4_fu_2723_p1 = or_ln551_2_fu_2718_p2;
+assign zext_ln555_2_fu_2669_p1 = i_3_i46_reg_1080;
 
-assign zext_ln551_fu_1722_p1 = or_ln551_fu_1717_p2;
+assign zext_ln555_fu_1642_p1 = i_3_i_reg_874;
 
-assign zext_ln552_1_fu_1752_p1 = add_ln552_fu_1746_p2;
+assign zext_ln557_1_fu_1682_p1 = add_ln557_fu_1676_p2;
 
-assign zext_ln552_2_fu_2162_p1 = or_ln552_1_fu_2157_p2;
+assign zext_ln557_2_fu_2020_p1 = shl_ln557_1_fu_2012_p3;
 
-assign zext_ln552_3_fu_2172_p1 = add_ln552_1_fu_2166_p2;
+assign zext_ln557_3_fu_2030_p1 = add_ln557_1_fu_2024_p2;
 
-assign zext_ln552_4_fu_2733_p1 = or_ln552_2_fu_2728_p2;
+assign zext_ln557_4_fu_2702_p1 = shl_ln557_2_fu_2695_p3;
 
-assign zext_ln552_fu_1742_p1 = or_ln552_fu_1737_p2;
+assign zext_ln557_fu_1672_p1 = shl_ln5_fu_1664_p3;
 
-assign zext_ln553_1_fu_1772_p1 = add_ln553_fu_1766_p2;
+assign zext_ln558_1_fu_1703_p1 = add_ln558_fu_1697_p2;
 
-assign zext_ln553_2_fu_2182_p1 = or_ln553_1_fu_2177_p2;
+assign zext_ln558_2_fu_2052_p1 = or_ln558_1_fu_2046_p2;
 
-assign zext_ln553_3_fu_2192_p1 = add_ln553_1_fu_2186_p2;
+assign zext_ln558_3_fu_2062_p1 = add_ln558_1_fu_2056_p2;
 
-assign zext_ln553_4_fu_2743_p1 = or_ln553_2_fu_2738_p2;
+assign zext_ln558_4_fu_2713_p1 = or_ln558_2_fu_2707_p2;
 
-assign zext_ln553_fu_1762_p1 = or_ln553_fu_1757_p2;
+assign zext_ln558_fu_1693_p1 = or_ln558_fu_1687_p2;
 
-assign zext_ln554_1_fu_1792_p1 = add_ln554_fu_1786_p2;
+assign zext_ln559_1_fu_1723_p1 = add_ln559_fu_1717_p2;
 
-assign zext_ln554_2_fu_2202_p1 = or_ln554_1_fu_2197_p2;
+assign zext_ln559_2_fu_2132_p1 = or_ln559_1_fu_2127_p2;
 
-assign zext_ln554_3_fu_2212_p1 = add_ln554_1_fu_2206_p2;
+assign zext_ln559_3_fu_2142_p1 = add_ln559_1_fu_2136_p2;
 
-assign zext_ln554_4_fu_2753_p1 = or_ln554_2_fu_2748_p2;
+assign zext_ln559_4_fu_2723_p1 = or_ln559_2_fu_2718_p2;
 
-assign zext_ln554_fu_1782_p1 = or_ln554_fu_1777_p2;
+assign zext_ln559_fu_1713_p1 = or_ln559_fu_1708_p2;
 
-assign zext_ln555_1_fu_1812_p1 = add_ln555_fu_1806_p2;
+assign zext_ln560_1_fu_1743_p1 = add_ln560_fu_1737_p2;
 
-assign zext_ln555_2_fu_2222_p1 = or_ln555_1_fu_2217_p2;
+assign zext_ln560_2_fu_2152_p1 = or_ln560_1_fu_2147_p2;
 
-assign zext_ln555_3_fu_2232_p1 = add_ln555_1_fu_2226_p2;
+assign zext_ln560_3_fu_2162_p1 = add_ln560_1_fu_2156_p2;
 
-assign zext_ln555_4_fu_2763_p1 = or_ln555_2_fu_2758_p2;
+assign zext_ln560_4_fu_2733_p1 = or_ln560_2_fu_2728_p2;
 
-assign zext_ln555_fu_1802_p1 = or_ln555_fu_1797_p2;
+assign zext_ln560_fu_1733_p1 = or_ln560_fu_1728_p2;
 
-assign zext_ln69_1_fu_3214_p1 = xor_ln69_fu_3204_p2;
+assign zext_ln561_1_fu_1763_p1 = add_ln561_fu_1757_p2;
 
-assign zext_ln69_fu_3210_p1 = xor_ln69_fu_3204_p2;
+assign zext_ln561_2_fu_2172_p1 = or_ln561_1_fu_2167_p2;
 
-assign zext_ln83_1_fu_3057_p1 = tmp_3262_fu_3049_p3;
+assign zext_ln561_3_fu_2182_p1 = add_ln561_1_fu_2176_p2;
 
-assign zext_ln83_fu_2823_p1 = tmp_3259_fu_2815_p3;
+assign zext_ln561_4_fu_2743_p1 = or_ln561_2_fu_2738_p2;
 
-assign zext_ln88_3_fu_2848_p1 = add_ln88_14_fu_2843_p2;
+assign zext_ln561_fu_1753_p1 = or_ln561_fu_1748_p2;
 
-assign zext_ln88_4_fu_3073_p1 = i_0_i_i60_reg_1191;
+assign zext_ln562_1_fu_1783_p1 = add_ln562_fu_1777_p2;
 
-assign zext_ln88_5_fu_3082_p1 = add_ln88_15_fu_3077_p2;
+assign zext_ln562_2_fu_2192_p1 = or_ln562_1_fu_2187_p2;
 
-assign zext_ln88_fu_2839_p1 = i_0_i_i46_reg_1113;
+assign zext_ln562_3_fu_2202_p1 = add_ln562_1_fu_2196_p2;
+
+assign zext_ln562_4_fu_2753_p1 = or_ln562_2_fu_2748_p2;
+
+assign zext_ln562_fu_1773_p1 = or_ln562_fu_1768_p2;
+
+assign zext_ln563_1_fu_1803_p1 = add_ln563_fu_1797_p2;
+
+assign zext_ln563_2_fu_2212_p1 = or_ln563_1_fu_2207_p2;
+
+assign zext_ln563_3_fu_2222_p1 = add_ln563_1_fu_2216_p2;
+
+assign zext_ln563_4_fu_2763_p1 = or_ln563_2_fu_2758_p2;
+
+assign zext_ln563_fu_1793_p1 = or_ln563_fu_1788_p2;
+
+assign zext_ln564_1_fu_1823_p1 = add_ln564_fu_1817_p2;
+
+assign zext_ln564_2_fu_2232_p1 = or_ln564_1_fu_2227_p2;
+
+assign zext_ln564_3_fu_2242_p1 = add_ln564_1_fu_2236_p2;
+
+assign zext_ln564_4_fu_2773_p1 = or_ln564_2_fu_2768_p2;
+
+assign zext_ln564_fu_1813_p1 = or_ln564_fu_1808_p2;
+
+assign zext_ln69_1_fu_3224_p1 = xor_ln69_fu_3214_p2;
+
+assign zext_ln69_fu_3220_p1 = xor_ln69_fu_3214_p2;
+
+assign zext_ln83_1_fu_3067_p1 = tmp_3262_fu_3059_p3;
+
+assign zext_ln83_fu_2833_p1 = tmp_3259_fu_2825_p3;
+
+assign zext_ln88_3_fu_2858_p1 = add_ln88_14_fu_2853_p2;
+
+assign zext_ln88_4_fu_3083_p1 = i_0_i_i60_reg_1202;
+
+assign zext_ln88_5_fu_3092_p1 = add_ln88_15_fu_3087_p2;
+
+assign zext_ln88_fu_2849_p1 = i_0_i_i46_reg_1124;
 
 always @ (posedge ap_clk) begin
-    shl_ln5_reg_3289[2:0] <= 3'b000;
-    zext_ln421_reg_3315[2:0] <= 3'b000;
-    zext_ln421_reg_3315[7] <= 1'b0;
-    state_0_s_addr_3_reg_3335[4] <= 1'b0;
-    shl_ln548_1_reg_3426[2:0] <= 3'b000;
-    add_ln_reg_3482[7:3] <= 5'b00000;
-    shl_ln49_reg_3516[1:0] <= 2'b00;
-    or_ln49_reg_3524[1:0] <= 2'b01;
-    or_ln49_1_reg_3529[1:0] <= 2'b10;
-    or_ln49_2_reg_3534[1:0] <= 2'b11;
-    zext_ln124_reg_3544[63:8] <= 56'b00000000000000000000000000000000000000000000000000000000;
-    tmp_s_reg_3563[63:8] <= 56'b00000000000000000000000000000000000000000000000000000001;
-    tmp_3256_reg_3582[63:8] <= 56'b00000000000000000000000000000000000000000000000000000010;
-    tmp_3257_reg_3601[63:8] <= 56'b00000000000000000000000000000000000000000000000000000011;
-    zext_ln225_reg_3631[7:0] <= 8'b00000000;
-    zext_ln225_reg_3631[11] <= 1'b0;
-    zext_ln230_1_reg_3644[63:12] <= 52'b0000000000000000000000000000000000000000000000000000;
-    shl_ln548_2_reg_3685[2:0] <= 3'b000;
-    zext_ln117_reg_3703[3] <= 1'b0;
-    zext_ln162_reg_3717[3] <= 1'b0;
-    zext_ln83_reg_3730[7:0] <= 8'b00000000;
-    zext_ln83_reg_3730[11] <= 1'b0;
-    zext_ln28_reg_3761[7:0] <= 8'b00000000;
-    zext_ln28_reg_3761[11] <= 1'b0;
-    zext_ln291_reg_3788[7:0] <= 8'b00000000;
-    zext_ln291_reg_3788[11] <= 1'b0;
-    zext_ln83_1_reg_3833[7:0] <= 8'b00000000;
-    zext_ln83_1_reg_3833[11] <= 1'b0;
-    zext_ln248_reg_3864[7:0] <= 8'b00000000;
-    zext_ln248_reg_3864[11] <= 1'b0;
-    zext_ln253_1_reg_3880[63:12] <= 52'b0000000000000000000000000000000000000000000000000000;
+    shl_ln5_reg_3299[2:0] <= 3'b000;
+    zext_ln424_reg_3327[2:0] <= 3'b000;
+    zext_ln424_reg_3327[7] <= 1'b0;
+    state_0_s_addr_3_reg_3347[4] <= 1'b0;
+    shl_ln557_1_reg_3441[2:0] <= 3'b000;
+    add_ln_reg_3497[7:3] <= 5'b00000;
+    shl_ln50_reg_3531[1:0] <= 2'b00;
+    or_ln50_reg_3539[1:0] <= 2'b01;
+    or_ln50_1_reg_3544[1:0] <= 2'b10;
+    or_ln50_2_reg_3549[1:0] <= 2'b11;
+    zext_ln124_reg_3559[63:8] <= 56'b00000000000000000000000000000000000000000000000000000000;
+    tmp_s_reg_3578[63:8] <= 56'b00000000000000000000000000000000000000000000000000000001;
+    tmp_3256_reg_3597[63:8] <= 56'b00000000000000000000000000000000000000000000000000000010;
+    tmp_3257_reg_3616[63:8] <= 56'b00000000000000000000000000000000000000000000000000000011;
+    zext_ln228_reg_3646[7:0] <= 8'b00000000;
+    zext_ln228_reg_3646[11] <= 1'b0;
+    zext_ln233_1_reg_3659[63:12] <= 52'b0000000000000000000000000000000000000000000000000000;
+    shl_ln557_2_reg_3700[2:0] <= 3'b000;
+    zext_ln119_reg_3718[3] <= 1'b0;
+    zext_ln164_reg_3732[3] <= 1'b0;
+    zext_ln83_reg_3745[7:0] <= 8'b00000000;
+    zext_ln83_reg_3745[11] <= 1'b0;
+    zext_ln28_reg_3776[7:0] <= 8'b00000000;
+    zext_ln28_reg_3776[11] <= 1'b0;
+    zext_ln294_reg_3803[7:0] <= 8'b00000000;
+    zext_ln294_reg_3803[11] <= 1'b0;
+    zext_ln83_1_reg_3848[7:0] <= 8'b00000000;
+    zext_ln83_1_reg_3848[11] <= 1'b0;
+    zext_ln251_reg_3879[7:0] <= 8'b00000000;
+    zext_ln251_reg_3879[11] <= 1'b0;
+    zext_ln256_1_reg_3895[63:12] <= 52'b0000000000000000000000000000000000000000000000000000;
 end
 
 endmodule //pqcrystals_dilithium_1

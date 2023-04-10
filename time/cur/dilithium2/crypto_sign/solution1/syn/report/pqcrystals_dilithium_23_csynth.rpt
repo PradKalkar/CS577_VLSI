@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pqcrystals_dilithium_23'
 ================================================================
-* Date:           Sat Apr  8 18:38:22 2023
+* Date:           Sun Apr  9 19:23:11 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -449,13 +449,13 @@
     |grp_fu_2935_p2             |     -    |      0|  0|   30|           1|          23|
     |grp_fu_2965_p2             |     -    |      0|  0|   39|          32|          32|
     |grp_fu_2971_p2             |     -    |      0|  0|   39|          32|          32|
-    |empty_21_fu_6977_p2        |   icmp   |      0|  0|   13|           9|           9|
-    |empty_23_fu_7084_p2        |   icmp   |      0|  0|   13|           9|           9|
-    |empty_25_fu_7191_p2        |   icmp   |      0|  0|   13|           9|           9|
-    |empty_27_fu_7298_p2        |   icmp   |      0|  0|   13|           9|           9|
-    |empty_29_fu_7405_p2        |   icmp   |      0|  0|   13|           9|           9|
-    |empty_31_fu_7512_p2        |   icmp   |      0|  0|   13|           9|           9|
-    |empty_33_fu_7619_p2        |   icmp   |      0|  0|   13|           9|           9|
+    |empty_22_fu_6977_p2        |   icmp   |      0|  0|   13|           9|           9|
+    |empty_24_fu_7084_p2        |   icmp   |      0|  0|   13|           9|           9|
+    |empty_26_fu_7191_p2        |   icmp   |      0|  0|   13|           9|           9|
+    |empty_28_fu_7298_p2        |   icmp   |      0|  0|   13|           9|           9|
+    |empty_30_fu_7405_p2        |   icmp   |      0|  0|   13|           9|           9|
+    |empty_32_fu_7512_p2        |   icmp   |      0|  0|   13|           9|           9|
+    |empty_34_fu_7619_p2        |   icmp   |      0|  0|   13|           9|           9|
     |empty_fu_6840_p2           |   icmp   |      0|  0|   13|           9|           9|
     |icmp_ln91_1_fu_6995_p2     |   icmp   |      0|  0|   13|           9|           9|
     |icmp_ln91_2_fu_7102_p2     |   icmp   |      0|  0|   13|           9|           9|

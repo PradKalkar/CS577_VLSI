@@ -11360,3 +11360,1167 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10000ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1250ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a200t-fbg676-2'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement.
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'aes.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'aes256ctr.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'fips202.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'ntt.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'packing.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'poly.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'polyvec.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'reduce.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'rng.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'rounding.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'sign.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'symmetric-aes.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'symmetric-shake.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 930.941 ; gain = 526.004 ; free physical = 824 ; free virtual = 8162
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 930.941 ; gain = 526.004 ; free physical = 824 ; free virtual = 8162
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 930.941 ; gain = 526.004 ; free physical = 820 ; free virtual = 8159
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'keccak_init.1' into 'shake256_init.1' (fips202.c:664) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64' into 'keccak_absorb.3168' (fips202.c:398) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64' into 'keccak_absorb.2' (fips202.c:398) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_finalize' into 'shake256_finalize.1' (fips202.c:691) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64' into 'keccak_squeeze' (fips202.c:522) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.4' into 'keccak_squeeze' (fips202.c:533) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_init' into 'shake256_init' (fips202.c:664) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64' into 'keccak_absorb.3' (fips202.c:398) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_finalize.1' into 'shake256_finalize' (fips202.c:691) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64' into 'keccak_squeeze.1' (fips202.c:522) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.4' into 'keccak_squeeze.1' (fips202.c:533) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_init' into 'shake256' (fips202.c:763) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb' into 'shake256' (fips202.c:764) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_finalize' into 'shake256' (fips202.c:765) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_squeeze' into 'shake256' (fips202.c:766) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_init.1' into 'shake128_init' (fips202.c:589) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64' into 'keccak_absorb.1' (fips202.c:398) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64' into 'keccak_absorb' (fips202.c:398) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_finalize' into 'shake128_finalize' (fips202.c:616) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake128_init' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' (symmetric-shake.c:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake128_absorb.1' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' (symmetric-shake.c:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake128_absorb' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' (symmetric-shake.c:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake128_finalize' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' (symmetric-shake.c:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.1' into 'keccak_squeezeblocks.2' (fips202.c:490) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' into 'pqcrystals_dilithium2_ref_poly_uniform' (poly.c:379) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake128_squeezeblocks' into 'pqcrystals_dilithium2_ref_poly_uniform' (poly.c:380) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_ntt' (ntt.c:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_ntt' into 'pqcrystals_dilithium2_ref_polyvecl_ntt' (polyvec.c:105) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_ntt' into 'pqcrystals_dilithium2_ref_polyveck_ntt' (polyvec.c:291) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_init.1' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' (symmetric-shake.c:28) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb.2' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' (symmetric-shake.c:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb.1' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' (symmetric-shake.c:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_finalize.1' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' (symmetric-shake.c:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.2' into 'keccak_squeezeblocks.1' (fips202.c:490) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1' (poly.c:503) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_squeezeblocks' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1' (poly.c:504) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_uniform_gamma1' into 'pqcrystals_dilithium2_ref_polyvecl_uniform_gamma1' (polyvec.c:50) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.1' (poly.c:186) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery' (poly.c:186) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.1' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery' (polyvec.c:140) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery' (polyvec.c:142) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_add' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery' (polyvec.c:143) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_reduce32' into 'pqcrystals_dilithium2_ref_poly_reduce' (poly.c:33) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_reduce' into 'pqcrystals_dilithium2_ref_polyveck_reduce' (polyvec.c:193) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_invntt_tomont' (ntt.c:96) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_invntt_tomont' into 'pqcrystals_dilithium2_ref_polyveck_invntt_tomont' (polyvec.c:308) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_caddq' into 'pqcrystals_dilithium2_ref_poly_caddq' (poly.c:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_caddq' into 'pqcrystals_dilithium2_ref_polyveck_caddq' (polyvec.c:210) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_decompose' into 'pqcrystals_dilithium2_ref_poly_decompose' (poly.c:233) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_decompose' into 'pqcrystals_dilithium2_ref_polyveck_decompose' (polyvec.c:386) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyw1_pack' into 'pqcrystals_dilithium2_ref_polyveck_pack_w1' (polyvec.c:434) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64' into 'keccak_squeeze.1160' (fips202.c:522) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.4' into 'keccak_squeeze.1160' (fips202.c:533) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.3' into 'keccak_squeezeblocks' (fips202.c:490) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_init.1' into 'pqcrystals_dilithium2_ref_poly_challenge' (poly.c:524) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb.3' into 'pqcrystals_dilithium2_ref_poly_challenge' (poly.c:525) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_finalize.1' into 'pqcrystals_dilithium2_ref_poly_challenge' (poly.c:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_squeezeblocks.1' into 'pqcrystals_dilithium2_ref_poly_challenge' (poly.c:527) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_ntt.1' (ntt.c:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.2' (poly.c:186) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.2' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery' (polyvec.c:119) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_invntt_tomont' into 'pqcrystals_dilithium2_ref_polyvecl_invntt_tomont' (polyvec.c:112) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_add.1' into 'pqcrystals_dilithium2_ref_polyvecl_add' (polyvec.c:90) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_reduce' into 'pqcrystals_dilithium2_ref_polyvecl_reduce' (polyvec.c:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_chknorm' into 'pqcrystals_dilithium2_ref_polyvecl_chknorm' (polyvec.c:163) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.2' into 'pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery' (polyvec.c:317) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_sub' into 'pqcrystals_dilithium2_ref_polyveck_sub' (polyvec.c:261) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_chknorm' into 'pqcrystals_dilithium2_ref_polyveck_chknorm' (polyvec.c:339) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_add.1' into 'pqcrystals_dilithium2_ref_polyveck_add' (polyvec.c:243) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_make_hint' into 'pqcrystals_dilithium2_ref_poly_make_hint' (poly.c:256) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_make_hint' into 'pqcrystals_dilithium2_ref_polyveck_make_hint' (polyvec.c:407) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_init.1' into 'pqcrystals_dilithium2_ref_signature' (sign.c:103) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb.2' into 'pqcrystals_dilithium2_ref_signature' (sign.c:104) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb.3' into 'pqcrystals_dilithium2_ref_signature' (sign.c:105) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_finalize.1' into 'pqcrystals_dilithium2_ref_signature' (sign.c:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_squeeze.2' into 'pqcrystals_dilithium2_ref_signature' (sign.c:107) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256' into 'pqcrystals_dilithium2_ref_signature' (sign.c:112) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvec_matrix_expand' into 'pqcrystals_dilithium2_ref_signature' (sign.c:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_ntt' into 'pqcrystals_dilithium2_ref_signature' (sign.c:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_ntt' into 'pqcrystals_dilithium2_ref_signature' (sign.c:118) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery' into 'pqcrystals_dilithium2_ref_signature' (sign.c:128) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_squeeze.1' into 'pqcrystals_dilithium2_ref_signature' (sign.c:141) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_ntt.1' into 'pqcrystals_dilithium2_ref_signature' (sign.c:143) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery' into 'pqcrystals_dilithium2_ref_signature' (sign.c:146) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_invntt_tomont' into 'pqcrystals_dilithium2_ref_signature' (sign.c:147) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_add' into 'pqcrystals_dilithium2_ref_signature' (sign.c:148) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_reduce' into 'pqcrystals_dilithium2_ref_signature' (sign.c:149) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_sub' into 'pqcrystals_dilithium2_ref_signature' (sign.c:157) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_add' into 'pqcrystals_dilithium2_ref_signature' (sign.c:169) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 930.941 ; gain = 526.004 ; free physical = 815 ; free virtual = 8155
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'store64.1' (fips202.c:48:15).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'store64.2' (fips202.c:48:15).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'store64.3' (fips202.c:48:15).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'load64.1' (fips202.c:30:15).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'load64.2' (fips202.c:30:15).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'load64.3' (fips202.c:30:15).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (polyvec.c:191) in function 'pqcrystals_dilithium2_ref_polyveck_reduce' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (polyvec.c:315) in function 'pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (polyvec.c:306) in function 'pqcrystals_dilithium2_ref_polyveck_invntt_tomont' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (polyvec.c:337) in function 'pqcrystals_dilithium2_ref_polyveck_chknorm' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (polyvec.c:208) in function 'pqcrystals_dilithium2_ref_polyveck_caddq' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (polyvec.c:28) in function 'pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (ntt.c:54) in function 'pqcrystals_dilithium2_ref_ntt.1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (ntt.c:56) in function 'pqcrystals_dilithium2_ref_ntt.1' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (ntt.c:59) in function 'pqcrystals_dilithium2_ref_ntt.1' completely with a factor of 128.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (fips202.c:431) in function 'keccak_absorb' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (fips202.c:431) in function 'keccak_absorb.1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (fips202.c:132) in function 'KeccakF1600_StatePermute' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (fips202.c:30) in function 'load64' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (packing.c:181) in function 'pqcrystals_dilithium2_ref_pack_sig' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (packing.c:194) in function 'pqcrystals_dilithium2_ref_pack_sig' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (poly.c:818) in function 'pqcrystals_dilithium2_ref_polyz_pack' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (poly.c:108) in function 'pqcrystals_dilithium2_ref_poly_sub' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (poly.c:538) in function 'pqcrystals_dilithium2_ref_poly_challenge' completely with a factor of 39.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (polyvec.c:432) in function 'pqcrystals_dilithium2_ref_polyveck_pack_w1' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (poly.c:931) in function 'pqcrystals_dilithium2_ref_polyw1_pack' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (ntt.c:86) in function 'pqcrystals_dilithium2_ref_invntt_tomont' completely with a factor of 8.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (ntt.c:88) in function 'pqcrystals_dilithium2_ref_invntt_tomont' completely: variable loop bound.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1.1' (ntt.c:91) in function 'pqcrystals_dilithium2_ref_invntt_tomont' completely: variable loop bound.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (ntt.c:101) in function 'pqcrystals_dilithium2_ref_invntt_tomont' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (poly.c:184) in function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (poly.c:184) in function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.1' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (poly.c:184) in function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.2' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (polyvec.c:48) in function 'pqcrystals_dilithium2_ref_polyvecl_uniform_gamma1' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (poly.c:869) in function 'pqcrystals_dilithium2_ref_polyz_unpack' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (ntt.c:54) in function 'pqcrystals_dilithium2_ref_ntt' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (ntt.c:56) in function 'pqcrystals_dilithium2_ref_ntt' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (ntt.c:59) in function 'pqcrystals_dilithium2_ref_ntt' completely with a factor of 128.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-3' (fips202.c:539) in function 'keccak_squeeze.1' completely: variable loop bound.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-4' (fips202.c:555) in function 'keccak_squeeze.1': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (fips202.c:431) in function 'keccak_absorb.3' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (fips202.c:132) in function 'KeccakF1600_StatePermute.1' completely with a factor of 12.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-3' (fips202.c:539) in function 'keccak_squeeze' completely: variable loop bound.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-4' (fips202.c:555) in function 'keccak_squeeze': cannot completely unroll a loop with a variable trip count.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-3' (fips202.c:539) in function 'keccak_squeeze.1191' completely: variable loop bound.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-4' (fips202.c:555) in function 'keccak_squeeze.1191': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (fips202.c:48) in function 'store64.1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (fips202.c:48) in function 'store64.2' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (fips202.c:48) in function 'store64.3' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (fips202.c:431) in function 'keccak_absorb.2' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (fips202.c:431) in function 'keccak_absorb.3199' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (fips202.c:30) in function 'load64.1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (fips202.c:30) in function 'load64.2' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (fips202.c:30) in function 'load64.3' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (packing.c:122) in function 'pqcrystals_dilithium2_ref_upack_sk' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (packing.c:128) in function 'pqcrystals_dilithium2_ref_upack_sk' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (packing.c:134) in function 'pqcrystals_dilithium2_ref_upack_sk' completely with a factor of 48.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (packing.c:140) in function 'pqcrystals_dilithium2_ref_upack_sk' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (packing.c:146) in function 'pqcrystals_dilithium2_ref_upack_sk' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (packing.c:152) in function 'pqcrystals_dilithium2_ref_upack_sk' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (poly.c:751) in function 'pqcrystals_dilithium2_ref_polyt0_unpack' completely with a factor of 32.
+INFO: [XFORM 203-102] Partitioning array 'state.pos' (fips202.c:761) automatically.
+INFO: [XFORM 203-102] Partitioning array 'state.s' (fips202.c:761) in dimension 1 automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_init.1' into 'shake256_init.1' (fips202.c:664) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64.1' into 'keccak_absorb.3199' (fips202.c:415) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64' into 'keccak_absorb.3199' (fips202.c:439) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64' into 'keccak_absorb.2' (fips202.c:398) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_finalize' into 'shake256_finalize.1' (fips202.c:691) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.4' into 'keccak_squeeze' (fips202.c:543) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64' into 'keccak_squeeze' (fips202.c:572) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_init' into 'shake256_init' (fips202.c:664) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64.1' into 'keccak_absorb.3' (fips202.c:415) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64' into 'keccak_absorb.3' (fips202.c:439) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_finalize.1' into 'shake256_finalize' (fips202.c:691) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.4' into 'keccak_squeeze.1' (fips202.c:543) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64' into 'keccak_squeeze.1' (fips202.c:572) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_init' into 'shake256' (fips202.c:763) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb' into 'shake256' (fips202.c:764) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_finalize' into 'shake256' (fips202.c:765) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_squeeze' into 'shake256' (fips202.c:766) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_init.1' into 'shake128_init' (fips202.c:589) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64.1' into 'keccak_absorb.1' (fips202.c:415) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64' into 'keccak_absorb.1' (fips202.c:439) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64' into 'keccak_absorb' (fips202.c:398) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_finalize' into 'shake128_finalize' (fips202.c:616) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake128_init' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' (symmetric-shake.c:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake128_absorb.1' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' (symmetric-shake.c:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake128_absorb' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' (symmetric-shake.c:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake128_finalize' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' (symmetric-shake.c:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.1' into 'keccak_squeezeblocks.2' (fips202.c:490) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' into 'pqcrystals_dilithium2_ref_poly_uniform' (poly.c:379) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake128_squeezeblocks' into 'pqcrystals_dilithium2_ref_poly_uniform' (poly.c:380) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_ntt' into 'pqcrystals_dilithium2_ref_polyvecl_ntt' (polyvec.c:105) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_ntt' into 'pqcrystals_dilithium2_ref_polyveck_ntt' (polyvec.c:291) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_init.1' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' (symmetric-shake.c:28) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb.2' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' (symmetric-shake.c:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb.1' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' (symmetric-shake.c:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_finalize.1' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' (symmetric-shake.c:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.2' into 'keccak_squeezeblocks.1' (fips202.c:490) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1' (poly.c:503) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_squeezeblocks' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1' (poly.c:504) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_add.1' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery' (polyvec.c:143) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_reduce32' into 'pqcrystals_dilithium2_ref_poly_reduce' (poly.c:33) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_invntt_tomont' into 'pqcrystals_dilithium2_ref_polyveck_invntt_tomont' (polyvec.c:308) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_caddq' into 'pqcrystals_dilithium2_ref_poly_caddq' (poly.c:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_decompose' into 'pqcrystals_dilithium2_ref_poly_decompose' (poly.c:233) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_decompose' into 'pqcrystals_dilithium2_ref_polyveck_decompose' (polyvec.c:386) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.4' into 'keccak_squeeze.1191' (fips202.c:543) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64' into 'keccak_squeeze.1191' (fips202.c:572) automatically.
+INFO: [XFORM 203-602] Inlining function 'store64.3' into 'keccak_squeezeblocks' (fips202.c:490) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_init.1' into 'pqcrystals_dilithium2_ref_poly_challenge' (poly.c:524) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb.3' into 'pqcrystals_dilithium2_ref_poly_challenge' (poly.c:525) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_finalize.1' into 'pqcrystals_dilithium2_ref_poly_challenge' (poly.c:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_squeezeblocks.1' into 'pqcrystals_dilithium2_ref_poly_challenge' (poly.c:527) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_invntt_tomont' into 'pqcrystals_dilithium2_ref_polyvecl_invntt_tomont' (polyvec.c:112) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_add' into 'pqcrystals_dilithium2_ref_polyvecl_add' (polyvec.c:90) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_reduce' into 'pqcrystals_dilithium2_ref_polyvecl_reduce' (polyvec.c:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_chknorm' into 'pqcrystals_dilithium2_ref_polyvecl_chknorm' (polyvec.c:163) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_add' into 'pqcrystals_dilithium2_ref_polyveck_add' (polyvec.c:243) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_make_hint' into 'pqcrystals_dilithium2_ref_poly_make_hint' (poly.c:256) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_make_hint' into 'pqcrystals_dilithium2_ref_polyveck_make_hint' (polyvec.c:407) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_init.1' into 'pqcrystals_dilithium2_ref_signature' (sign.c:103) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb.2' into 'pqcrystals_dilithium2_ref_signature' (sign.c:104) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_absorb.3' into 'pqcrystals_dilithium2_ref_signature' (sign.c:105) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_finalize.1' into 'pqcrystals_dilithium2_ref_signature' (sign.c:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_squeeze.2' into 'pqcrystals_dilithium2_ref_signature' (sign.c:107) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256' into 'pqcrystals_dilithium2_ref_signature' (sign.c:112) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvec_matrix_expand' into 'pqcrystals_dilithium2_ref_signature' (sign.c:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_ntt' into 'pqcrystals_dilithium2_ref_signature' (sign.c:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_ntt' into 'pqcrystals_dilithium2_ref_signature' (sign.c:118) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_uniform_gamma1' into 'pqcrystals_dilithium2_ref_signature' (sign.c:123) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery' into 'pqcrystals_dilithium2_ref_signature' (sign.c:128) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_reduce' into 'pqcrystals_dilithium2_ref_signature' (sign.c:129) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_invntt_tomont' into 'pqcrystals_dilithium2_ref_signature' (sign.c:130) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_caddq' into 'pqcrystals_dilithium2_ref_signature' (sign.c:133) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_decompose' into 'pqcrystals_dilithium2_ref_signature' (sign.c:134) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_pack_w1' into 'pqcrystals_dilithium2_ref_signature' (sign.c:135) automatically.
+INFO: [XFORM 203-602] Inlining function 'shake256_squeeze.1' into 'pqcrystals_dilithium2_ref_signature' (sign.c:141) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_poly_ntt.1' into 'pqcrystals_dilithium2_ref_signature' (sign.c:143) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery' into 'pqcrystals_dilithium2_ref_signature' (sign.c:146) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_invntt_tomont' into 'pqcrystals_dilithium2_ref_signature' (sign.c:147) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_add' into 'pqcrystals_dilithium2_ref_signature' (sign.c:148) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_reduce' into 'pqcrystals_dilithium2_ref_signature' (sign.c:149) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery' into 'pqcrystals_dilithium2_ref_signature' (sign.c:155) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_sub' into 'pqcrystals_dilithium2_ref_signature' (sign.c:157) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_add' into 'pqcrystals_dilithium2_ref_signature' (sign.c:169) automatically.
+WARNING: [XFORM 203-561] Updating loop upper bound from 16 to 4 for loop 'Loop-0' in function 'keccak_squeeze.1191'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 4 for loop 'Loop-0' in function 'keccak_squeeze.1191'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 16 to 6 for loop 'Loop-0' in function 'keccak_squeeze.1'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 6 for loop 'Loop-0' in function 'keccak_squeeze.1'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 16 to 6 for loop 'Loop-0' in function 'keccak_squeeze'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 6 for loop 'Loop-0' in function 'keccak_squeeze'.
+INFO: [XFORM 203-102] Automatically partitioning small array 't.i' (symmetric-shake.c:24) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 't.i' (symmetric-shake.c:10) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 't.i' (symmetric-shake.c:24) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 't.i' (symmetric-shake.c:10) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly.c:256:20) to (poly.c:255:23) in function 'pqcrystals_dilithium2_ref_polyveck_make_hint'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (fips202.c:26:31) to (fips202.c:34:3) in function 'load64.3'... converting 25 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'load64.2' into 'keccak_absorb.2' (fips202.c:404) automatically.
+INFO: [XFORM 203-602] Inlining function 'load64.3' into 'keccak_absorb' (fips202.c:404) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_absorb.1' into 'pqcrystals_dilithium2_ref_poly_uniform' (fips202.c:604->symmetric-shake.c:15->poly.c:379) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_absorb.3199' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1' (fips202.c:679->symmetric-shake.c:29->poly.c:503) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_squeeze' into 'pqcrystals_dilithium2_ref_signature' (fips202.c:726->sign.c:107) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_absorb.3' into 'pqcrystals_dilithium2_ref_signature' (fips202.c:679->fips202.c:764->sign.c:112) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_squeeze.1' into 'pqcrystals_dilithium2_ref_signature' (fips202.c:726->fips202.c:766->sign.c:112) automatically.
+INFO: [XFORM 203-602] Inlining function 'keccak_squeeze.1191' into 'pqcrystals_dilithium2_ref_signature' (fips202.c:726->sign.c:141) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyvecl_chknorm' into 'pqcrystals_dilithium2_ref_signature' (sign.c:150) automatically.
+INFO: [XFORM 203-602] Inlining function 'pqcrystals_dilithium2_ref_polyveck_make_hint' into 'pqcrystals_dilithium2_ref_signature' (sign.c:171) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'keccak_absorb.2' (fips202.c:32:3)...10 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'keccak_absorb' (fips202.c:382)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'KeccakF1600_StatePermute.1' (fips202.c:87:13)...840 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'KeccakF1600_StatePermute' (fips202.c:87)...840 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:06:26 ; elapsed = 00:06:28 . Memory (MB): peak = 930.941 ; gain = 526.004 ; free physical = 565 ; free virtual = 7982
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (fips202.c:486:3) in function 'keccak_squeezeblocks.2' : 
+
+the outer loop is not a perfect loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (fips202.c:486:3) in function 'keccak_squeezeblocks.1' : 
+
+the outer loop is not a perfect loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (fips202.c:486:3) in function 'keccak_squeezeblocks' : 
+
+the outer loop is not a perfect loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-4' (fips202.c:412:3) in function 'keccak_absorb.2' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-3' (fips202.c:412:3) in function 'keccak_absorb' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_upack_sk' to 'pqcrystals_dilithium' (packing.c:124:1)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_signature' to 'pqcrystals_dilithium.1' (poly.c:20:23)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_polyz_unpack' to 'pqcrystals_dilithium.2' (poly.c:871:5)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_polyz_pack' to 'pqcrystals_dilithium.3' (poly.c:820:5)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_polyw1_pack' to 'pqcrystals_dilithium.4' (poly.c:933:5)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery' to 'pqcrystals_dilithium.5' (poly.c:87:23)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_polyveck_chknorm' to 'pqcrystals_dilithium.6' (polyvec.c:339:1)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_polyt0_unpack' to 'pqcrystals_dilithium.7' (poly.c:753:5)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_polyeta_unpack' to 'pqcrystals_dilithium.8' (poly.c:608:25)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_poly_uniform_gamma1' to 'pqcrystals_dilithium.9' (fips202.c:25:20)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_poly_uniform' to 'pqcrystals_dilithium.10' (poly.c:11:25)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_poly_sub' to 'pqcrystals_dilithium.11' (poly.c:110:2)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_poly_reduce' to 'pqcrystals_dilithium.12' (poly.c:32:23)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.2' to 'pqcrystals_dilithium.13' (poly.c:186:17)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.1' to 'pqcrystals_dilithium.14' (poly.c:186:17)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery' to 'pqcrystals_dilithium.15' (poly.c:186:17)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_poly_chknorm' to 'pqcrystals_dilithium.16' (poly.c:305:23)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_poly_challenge' to 'pqcrystals_dilithium.17' (poly.c:364:1)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_poly_caddq' to 'pqcrystals_dilithium.18' (poly.c:50:23)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_pack_sig' to 'pqcrystals_dilithium.19' (packing.c:183:9)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_ntt.1' to 'pqcrystals_dilithium.20' (ntt.c:56:30)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_ntt' to 'pqcrystals_dilithium.21' (ntt.c:56:30)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_montgomery_reduce' to 'pqcrystals_dilithium.22' (reduce.c:18:3)
+WARNING: [XFORM 203-631] Renaming function 'pqcrystals_dilithium2_ref_invntt_tomont' to 'pqcrystals_dilithium.23' (ntt.c:88:30)
+WARNING: [XFORM 203-631] Renaming function 'KeccakF1600_StatePermute.1' to 'KeccakF1600_StatePer' (fips202.c:87:13)
+WARNING: [XFORM 203-631] Renaming function 'KeccakF1600_StatePermute' to 'KeccakF1600_StatePer.1' (fips202.c:87:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:618:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:619:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:620:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:621:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:622:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:623:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:624:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:625:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:789:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:790:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:791:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:792:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:793:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:794:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:795:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:796:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'a' (ntt.c:94:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'a' (ntt.c:96:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'a' (ntt.c:103:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'a' (ntt.c:62:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'a' (ntt.c:63:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'a.coeffs' (poly.c:51:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:365:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:462:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:463:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'c.coeffs' (poly.c:536:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'c.coeffs' (poly.c:549:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'c.coeffs' (poly.c:550:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'c.coeffs' (poly.c:186:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'a.coeffs' (poly.c:33:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'c.coeffs' (poly.c:110:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:365:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:462:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:463:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:557:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:558:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:559:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:560:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:561:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:562:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:563:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:564:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'state[0].s' (fips202.c:365:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'state[0].s' (fips202.c:424:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'state[0].s' (fips202.c:462:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'state[0].s' (fips202.c:463:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:557:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:558:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:559:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:560:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:561:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:562:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:563:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'seedbuf' (fips202.c:564:6)
+INFO: [HLS 200-472] Inferring partial write operation for 'z.vec.coeffs' (sign.c:124:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'w0.vec.coeffs' (poly.c:233:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:365:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:462:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:463:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'z.vec.coeffs' (poly.c:88:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'z.vec.coeffs' (poly.c:33:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'w0.vec.coeffs' (poly.c:88:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'h.vec.coeffs' (poly.c:256:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'rho' (packing.c:124:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'rho' (packing.c:130:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'rho' (packing.c:136:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'out' (fips202.c:49:5)
+INFO: [HLS 200-472] Inferring partial write operation for 's' (fips202.c:424:16)
+INFO: [HLS 200-472] Inferring partial write operation for 't' (fips202.c:389:21)
+INFO: [HLS 200-472] Inferring partial write operation for 't' (fips202.c:394:7)
+INFO: [HLS 200-472] Inferring partial write operation for 's' (fips202.c:398:21)
+INFO: [HLS 200-472] Inferring partial write operation for 's' (fips202.c:404:16)
+INFO: [HLS 200-472] Inferring partial write operation for 's' (fips202.c:415:10)
+INFO: [HLS 200-472] Inferring partial write operation for 't' (fips202.c:433:2)
+INFO: [HLS 200-472] Inferring partial write operation for 't' (fips202.c:437:2)
+INFO: [HLS 200-472] Inferring partial write operation for 's' (fips202.c:439:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:327:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:328:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:329:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:330:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:331:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:332:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:333:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:334:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:335:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:336:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:337:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:338:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:339:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:340:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:341:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:342:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:343:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:344:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:345:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:346:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:347:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:348:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:349:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:350:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'state' (fips202.c:351:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'a' (poly.c:351:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:365:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:424:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:462:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:463:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'w.coeffs' (poly.c:88:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:891:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:892:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:893:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'r.coeffs' (poly.c:894:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:365:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:424:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:462:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'state.s' (fips202.c:463:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'buf' (poly.c:387:7)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:17:49 ; elapsed = 00:17:52 . Memory (MB): peak = 4837.973 ; gain = 4433.035 ; free physical = 453 ; free virtual = 4456
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'crypto_sign' ...
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.8' to 'pqcrystals_dilithium_8'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.7' to 'pqcrystals_dilithium_7'.
+WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.3199' to 'keccak_absorb_3199'.
+WARNING: [SYN 201-103] Legalizing function name 'KeccakF1600_StatePer.1' to 'KeccakF1600_StatePer_1'.
+WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.2' to 'keccak_absorb_2'.
+WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.2' to 'keccak_squeezeblocks_2'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.10' to 'pqcrystals_dilithium_10'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.22' to 'pqcrystals_dilithium_22'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.21' to 'pqcrystals_dilithium_21'.
+WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.1' to 'keccak_squeezeblocks_1'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.2' to 'pqcrystals_dilithium_2'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.9' to 'pqcrystals_dilithium_9'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.14' to 'pqcrystals_dilithium_14'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.15' to 'pqcrystals_dilithium_15'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.5' to 'pqcrystals_dilithium_5'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.12' to 'pqcrystals_dilithium_12'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.23' to 'pqcrystals_dilithium_23'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.18' to 'pqcrystals_dilithium_18'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.4' to 'pqcrystals_dilithium_4'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.17' to 'pqcrystals_dilithium_17'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.20' to 'pqcrystals_dilithium_20'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.13' to 'pqcrystals_dilithium_13'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.11' to 'pqcrystals_dilithium_11'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.16' to 'pqcrystals_dilithium_16'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.6' to 'pqcrystals_dilithium_6'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.3' to 'pqcrystals_dilithium_3'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.19' to 'pqcrystals_dilithium_19'.
+WARNING: [SYN 201-103] Legalizing function name 'pqcrystals_dilithium.1' to 'pqcrystals_dilithium_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1080.54 seconds; current allocated memory: 870.112 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 870.517 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.2 seconds; current allocated memory: 882.235 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 15.4 seconds; current allocated memory: 897.317 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 14.12 seconds; current allocated memory: 899.416 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.15 seconds; current allocated memory: 901.525 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'keccak_absorb_3199' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('m_load_2', fips202.c:32->fips202.c:424) on array 'm' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'm'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.48 seconds; current allocated memory: 902.465 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 902.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'KeccakF1600_StatePer_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 10.62 seconds; current allocated memory: 914.650 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 15.1 seconds; current allocated memory: 931.667 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'keccak_absorb_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+WARNING: [SCHED 204-68] The II Violation in module 'keccak_absorb_2' (Loop: Loop 3): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('s_addr_1_write_ln404', fips202.c:404) of variable 'xor_ln404', fips202.c:404 on array 's' and 'load' operation ('s_load_1', fips202.c:404) on array 's'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('m_load_12', fips202.c:32->fips202.c:404) on array 'm' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'm'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4.1'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('m_load_26', fips202.c:32->fips202.c:415) on array 'm' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'm'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+WARNING: [SCHED 204-68] The II Violation in module 'keccak_absorb_2' (Loop: Loop 5): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('s_addr_2_write_ln424', fips202.c:424) of variable 'xor_ln424', fips202.c:424 on array 's' and 'load' operation ('s_load_2', fips202.c:424) on array 's'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('m_load_20', fips202.c:32->fips202.c:424) on array 'm' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'm'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 6'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.01 seconds; current allocated memory: 935.852 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.66 seconds; current allocated memory: 938.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'KeccakF1600_StatePer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.82 seconds; current allocated memory: 953.050 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 15.18 seconds; current allocated memory: 970.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'keccak_absorb' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+WARNING: [SCHED 204-68] The II Violation in module 'keccak_absorb' (Loop: Loop 4): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('s_addr_5_write_ln424', fips202.c:424) of variable 'xor_ln424', fips202.c:424 on array 's' and 'load' operation ('s_load_5', fips202.c:424) on array 's'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 14.81 seconds; current allocated memory: 973.872 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.36 seconds; current allocated memory: 975.669 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'keccak_squeezeblocks_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('out_addr_2_write_ln49', fips202.c:49->fips202.c:490) of variable 'trunc_ln49_2', fips202.c:49->fips202.c:490 on array 'out_r' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'out_r'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.33 seconds; current allocated memory: 978.763 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.76 seconds; current allocated memory: 979.950 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rej_uniform' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.84 seconds; current allocated memory: 982.935 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 983.126 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('seed_load_9', fips202.c:32->fips202.c:424->fips202.c:604->symmetric-shake.c:15->poly.c:379) on array 'seed' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'seed'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 983.542 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 4.29 seconds; current allocated memory: 990.672 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_22' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.73 seconds; current allocated memory: 996.573 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 996.658 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_21' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 30.16 seconds; current allocated memory: 1022.372 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 51.51 seconds; current allocated memory: 1.045 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'keccak_squeezeblocks_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('out_addr_9_write_ln49', fips202.c:49->fips202.c:490) of variable 'trunc_ln49_9', fips202.c:49->fips202.c:490 on array 'out_r' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'out_r'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 32.43 seconds; current allocated memory: 1.047 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.74 seconds; current allocated memory: 1.049 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.38 seconds; current allocated memory: 1.062 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 14.18 seconds; current allocated memory: 1.076 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('seed_load_2', fips202.c:32->fips202.c:424->fips202.c:679->symmetric-shake.c:29->poly.c:503) on array 'seed' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'seed'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 14.18 seconds; current allocated memory: 1.077 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 4.37 seconds; current allocated memory: 1.084 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.01 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 13.01 seconds; current allocated memory: 1.112 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.61 seconds; current allocated memory: 1.122 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 14.02 seconds; current allocated memory: 1.135 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.28 seconds; current allocated memory: 1.135 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 1.136 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.74 seconds; current allocated memory: 1.137 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 1.137 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_23' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.02 seconds; current allocated memory: 1.144 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.67 seconds; current allocated memory: 1.153 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.68 seconds; current allocated memory: 1.153 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 1.154 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 1.160 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 8.85 seconds; current allocated memory: 1.168 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'keccak_squeezeblocks' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('out_addr_16_write_ln49', fips202.c:49->fips202.c:490) of variable 'trunc_ln49_5', fips202.c:49->fips202.c:490 on array 'out_r' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'out_r'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.47 seconds; current allocated memory: 1.168 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.77 seconds; current allocated memory: 1.169 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.46 seconds; current allocated memory: 1.175 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 5.64 seconds; current allocated memory: 1.182 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 35.12 seconds; current allocated memory: 1.212 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 48.24 seconds; current allocated memory: 1.256 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 34.85 seconds; current allocated memory: 1.267 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 12.22 seconds; current allocated memory: 1.279 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.91 seconds; current allocated memory: 1.284 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 8.27 seconds; current allocated memory: 1.292 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.62 seconds; current allocated memory: 1.292 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 1.292 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 1.292 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 1.292 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.57 seconds; current allocated memory: 1.303 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 16.33 seconds; current allocated memory: 1.317 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_19' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.14 seconds; current allocated memory: 1.319 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.65 seconds; current allocated memory: 1.319 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pqcrystals_dilithium_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('seedbuf_load_2', fips202.c:32->fips202.c:424->fips202.c:679->fips202.c:764->sign.c:112) on array 'rho', sign.c:87 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'seedbuf'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.49 seconds; current allocated memory: 1.322 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 63.33 seconds; current allocated memory: 1.421 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'crypto_sign' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 23.13 seconds; current allocated memory: 1.455 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 7.09 seconds; current allocated memory: 1.466 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_8'.
+INFO: [HLS 200-111]  Elapsed time: 21.44 seconds; current allocated memory: 1.501 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_7'.
+INFO: [HLS 200-111]  Elapsed time: 1.23 seconds; current allocated memory: 1.526 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium'.
+INFO: [HLS 200-111]  Elapsed time: 18.04 seconds; current allocated memory: 1.587 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'keccak_absorb_3199' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'keccak_absorb_3199'.
+INFO: [HLS 200-111]  Elapsed time: 2.92 seconds; current allocated memory: 1.594 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'KeccakF1600_StatePer_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'KeccakF1600_StatePer_1'.
+INFO: [HLS 200-111]  Elapsed time: 1.01 seconds; current allocated memory: 1.623 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'keccak_absorb_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'keccak_absorb_2'.
+INFO: [HLS 200-111]  Elapsed time: 21.45 seconds; current allocated memory: 1.702 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'KeccakF1600_StatePer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'KeccakF1600_StatePer'.
+INFO: [HLS 200-111]  Elapsed time: 4.29 seconds; current allocated memory: 1.737 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'keccak_absorb' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'keccak_absorb'.
+INFO: [HLS 200-111]  Elapsed time: 22.08 seconds; current allocated memory: 1.816 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'keccak_squeezeblocks_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'keccak_squeezeblocks_2'.
+INFO: [HLS 200-111]  Elapsed time: 3.89 seconds; current allocated memory: 1.822 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rej_uniform' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rej_uniform'.
+INFO: [HLS 200-111]  Elapsed time: 3.36 seconds; current allocated memory: 1.826 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_10_buf' to 'pqcrystals_dilithbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_10_state_s' to 'pqcrystals_dilithcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'crypto_sign_urem_9s_3ns_9_13_seq_1' to 'crypto_sign_urem_dEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'crypto_sign_urem_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_10'.
+INFO: [HLS 200-111]  Elapsed time: 1.73 seconds; current allocated memory: 1.828 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_22' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_22'.
+INFO: [HLS 200-111]  Elapsed time: 5.29 seconds; current allocated memory: 1.836 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_21' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_21_zetas' to 'pqcrystals_dilitheOg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_21'.
+INFO: [HLS 200-111]  Elapsed time: 12.86 seconds; current allocated memory: 1.956 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'keccak_squeezeblocks_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'keccak_squeezeblocks_1'.
+INFO: [HLS 200-111]  Elapsed time: 43.49 seconds; current allocated memory: 2.079 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_2'.
+INFO: [HLS 200-111]  Elapsed time: 4.86 seconds; current allocated memory: 2.106 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_9_buf' to 'pqcrystals_dilithfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_9_state_s' to 'pqcrystals_dilithg8j' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_9'.
+INFO: [HLS 200-111]  Elapsed time: 17.78 seconds; current allocated memory: 2.159 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_14'.
+INFO: [HLS 200-111]  Elapsed time: 6.92 seconds; current allocated memory: 2.182 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_15'.
+INFO: [HLS 200-111]  Elapsed time: 17.22 seconds; current allocated memory: 2.249 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_5_t_coeffs' to 'pqcrystals_dilithhbi' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_5'.
+INFO: [HLS 200-111]  Elapsed time: 18.12 seconds; current allocated memory: 2.301 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'crypto_sign_mac_muladd_9s_24s_32ns_32_1_1' to 'crypto_sign_mac_mibs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'crypto_sign_mac_mibs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_12'.
+INFO: [HLS 200-111]  Elapsed time: 3.58 seconds; current allocated memory: 2.303 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_23' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_23_zetas' to 'pqcrystals_dilithjbC' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_23'.
+INFO: [HLS 200-111]  Elapsed time: 3.53 seconds; current allocated memory: 2.321 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_18'.
+INFO: [HLS 200-111]  Elapsed time: 13.15 seconds; current allocated memory: 2.358 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_4'.
+INFO: [HLS 200-111]  Elapsed time: 3.45 seconds; current allocated memory: 2.371 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'keccak_squeezeblocks' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'keccak_squeezeblocks'.
+INFO: [HLS 200-111]  Elapsed time: 12.57 seconds; current allocated memory: 2.405 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_17_buf' to 'pqcrystals_dilithkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_17_state_s' to 'pqcrystals_dilithlbW' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_17'.
+INFO: [HLS 200-111]  Elapsed time: 5.27 seconds; current allocated memory: 2.415 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_20_zetas' to 'pqcrystals_dilithmb6' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_20'.
+INFO: [HLS 200-111]  Elapsed time: 19.97 seconds; current allocated memory: 2.553 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_13'.
+INFO: [HLS 200-111]  Elapsed time: 42.63 seconds; current allocated memory: 2.681 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_11'.
+INFO: [HLS 200-111]  Elapsed time: 17.52 seconds; current allocated memory: 2.737 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_16'.
+INFO: [HLS 200-111]  Elapsed time: 12.16 seconds; current allocated memory: 2.764 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_6'.
+INFO: [HLS 200-111]  Elapsed time: 4.16 seconds; current allocated memory: 2.765 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_3'.
+INFO: [HLS 200-111]  Elapsed time: 5.14 seconds; current allocated memory: 2.789 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_19' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_19'.
+INFO: [HLS 200-111]  Elapsed time: 21.52 seconds; current allocated memory: 2.850 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pqcrystals_dilithium_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_state_0_s' to 'pqcrystals_dilithncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_seedbuf' to 'pqcrystals_dilithocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_mat_vec_coeffs' to 'pqcrystals_dilithpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_s1_vec_coeffs' to 'pqcrystals_dilithqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_y_vec_coeffs' to 'pqcrystals_dilithrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_z_vec_coeffs' to 'pqcrystals_dilithsc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_t0_vec_coeffs' to 'pqcrystals_dilithtde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_s2_vec_coeffs' to 'pqcrystals_dilithudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_w1_vec_coeffs' to 'pqcrystals_dilithvdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_w0_vec_coeffs' to 'pqcrystals_dilithwdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_h_vec_coeffs' to 'pqcrystals_dilithxdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_cp_coeffs' to 'pqcrystals_dilithyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pqcrystals_dilithium_1_state_s' to 'pqcrystals_dilithzec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'crypto_sign_mac_muladd_15ns_25s_25ns_32_1_1' to 'crypto_sign_mac_mAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'crypto_sign_mac_muladd_19s_8s_32ns_32_1_1' to 'crypto_sign_mac_mBew' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'crypto_sign_mac_mAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'crypto_sign_mac_mBew': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'crypto_sign_mac_mibs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pqcrystals_dilithium_1'.
+INFO: [HLS 200-111]  Elapsed time: 5.76 seconds; current allocated memory: 2.858 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'crypto_sign' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'crypto_sign/sm' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'crypto_sign/smlen' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'crypto_sign/m' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'crypto_sign/mlen' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'crypto_sign/sk' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'crypto_sign' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'crypto_sign'.
+INFO: [HLS 200-111]  Elapsed time: 28.36 seconds; current allocated memory: 2.905 GB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 12.03 MHz
+INFO: [RTMG 210-278] Implementing memory 'keccak_absorb_2_t_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'crypto_sign_urem_dEe_div'
+INFO: [RTMG 210-278] Implementing memory 'pqcrystals_dilithbkb_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'pqcrystals_dilithcud_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'pqcrystals_dilitheOg_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'pqcrystals_dilithfYi_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'pqcrystals_dilithhbi_ram (RAM)' using block RAMs.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

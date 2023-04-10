@@ -96,10 +96,10 @@ reg v_vec_coeffs_ce1;
 
 (* fsm_encoding = "none" *) reg   [5:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [1:0] trunc_ln138_fu_128_p1;
-reg   [1:0] trunc_ln138_reg_200;
-wire   [1:0] trunc_ln138_1_fu_133_p1;
-reg   [1:0] trunc_ln138_1_reg_205;
+wire   [1:0] trunc_ln140_fu_128_p1;
+reg   [1:0] trunc_ln140_reg_200;
+wire   [1:0] trunc_ln140_1_fu_133_p1;
+reg   [1:0] trunc_ln140_1_reg_205;
 wire   [11:0] tmp_fu_138_p3;
 reg   [11:0] tmp_reg_211;
 wire    ap_CS_fsm_state2;
@@ -161,7 +161,7 @@ wire    ap_CS_fsm_state4;
 wire    ap_CS_fsm_state6;
 reg    grp_pqcrystals_dilithium_15_fu_104_ap_start_reg;
 wire    ap_CS_fsm_state3;
-wire   [0:0] icmp_ln139_fu_145_p2;
+wire   [0:0] icmp_ln141_fu_145_p2;
 reg    grp_pqcrystals_dilithium_14_fu_116_ap_start_reg;
 wire   [63:0] zext_ln88_2_fu_177_p1;
 wire   [63:0] zext_ln88_fu_163_p1;
@@ -216,7 +216,7 @@ pqcrystals_dilithium_15 grp_pqcrystals_dilithium_15_fu_104(
     .a_coeffs_address1(grp_pqcrystals_dilithium_15_fu_104_a_coeffs_address1),
     .a_coeffs_ce1(grp_pqcrystals_dilithium_15_fu_104_a_coeffs_ce1),
     .a_coeffs_q1(u_vec_coeffs_q1),
-    .a_coeffs_offset(trunc_ln138_1_reg_205),
+    .a_coeffs_offset(trunc_ln140_1_reg_205),
     .a_coeffs_offset1(i_0_reg_81),
     .b_coeffs_address0(grp_pqcrystals_dilithium_15_fu_104_b_coeffs_address0),
     .b_coeffs_ce0(grp_pqcrystals_dilithium_15_fu_104_b_coeffs_ce0),
@@ -241,14 +241,14 @@ pqcrystals_dilithium_14 grp_pqcrystals_dilithium_14_fu_116(
     .c_coeffs_ce1(grp_pqcrystals_dilithium_14_fu_116_c_coeffs_ce1),
     .c_coeffs_we1(grp_pqcrystals_dilithium_14_fu_116_c_coeffs_we1),
     .c_coeffs_d1(grp_pqcrystals_dilithium_14_fu_116_c_coeffs_d1),
-    .c_coeffs_offset(trunc_ln138_reg_200),
+    .c_coeffs_offset(trunc_ln140_reg_200),
     .a_coeffs_address0(grp_pqcrystals_dilithium_14_fu_116_a_coeffs_address0),
     .a_coeffs_ce0(grp_pqcrystals_dilithium_14_fu_116_a_coeffs_ce0),
     .a_coeffs_q0(u_vec_coeffs_q0),
     .a_coeffs_address1(grp_pqcrystals_dilithium_14_fu_116_a_coeffs_address1),
     .a_coeffs_ce1(grp_pqcrystals_dilithium_14_fu_116_a_coeffs_ce1),
     .a_coeffs_q1(u_vec_coeffs_q1),
-    .a_coeffs_offset(trunc_ln138_1_reg_205),
+    .a_coeffs_offset(trunc_ln140_1_reg_205),
     .b_coeffs_address0(grp_pqcrystals_dilithium_14_fu_116_b_coeffs_address0),
     .b_coeffs_ce0(grp_pqcrystals_dilithium_14_fu_116_b_coeffs_ce0),
     .b_coeffs_q0(v_vec_coeffs_q0),
@@ -281,7 +281,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         grp_pqcrystals_dilithium_15_fu_104_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln139_fu_145_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
+        if (((icmp_ln141_fu_145_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
             grp_pqcrystals_dilithium_15_fu_104_ap_start_reg <= 1'b1;
         end else if ((grp_pqcrystals_dilithium_15_fu_104_ap_ready == 1'b1)) begin
             grp_pqcrystals_dilithium_15_fu_104_ap_start_reg <= 1'b0;
@@ -319,8 +319,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        trunc_ln138_1_reg_205 <= trunc_ln138_1_fu_133_p1;
-        trunc_ln138_reg_200 <= trunc_ln138_fu_128_p1;
+        trunc_ln140_1_reg_205 <= trunc_ln140_1_fu_133_p1;
+        trunc_ln140_reg_200 <= trunc_ln140_fu_128_p1;
     end
 end
 
@@ -331,7 +331,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (*) begin
-    if ((((icmp_ln139_fu_145_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if ((((icmp_ln141_fu_145_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -347,7 +347,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln139_fu_145_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
+    if (((icmp_ln141_fu_145_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -553,7 +553,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state3 : begin
-            if (((icmp_ln139_fu_145_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
+            if (((icmp_ln141_fu_145_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -606,15 +606,15 @@ assign i_2_fu_157_p2 = (i_0_i_reg_93 + 9'd1);
 
 assign i_fu_182_p2 = (i_0_reg_81 + 3'd1);
 
-assign icmp_ln139_fu_145_p2 = ((i_0_reg_81 == 3'd4) ? 1'b1 : 1'b0);
+assign icmp_ln141_fu_145_p2 = ((i_0_reg_81 == 3'd4) ? 1'b1 : 1'b0);
 
 assign icmp_ln87_fu_151_p2 = ((i_0_i_reg_93 == 9'd256) ? 1'b1 : 1'b0);
 
 assign tmp_fu_138_p3 = {{w_coeffs_offset}, {8'd0}};
 
-assign trunc_ln138_1_fu_133_p1 = u_vec_coeffs_offset[1:0];
+assign trunc_ln140_1_fu_133_p1 = u_vec_coeffs_offset[1:0];
 
-assign trunc_ln138_fu_128_p1 = w_coeffs_offset[1:0];
+assign trunc_ln140_fu_128_p1 = w_coeffs_offset[1:0];
 
 assign w_coeffs_address1 = grp_pqcrystals_dilithium_14_fu_116_c_coeffs_address1;
 

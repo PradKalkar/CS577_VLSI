@@ -30,20 +30,20 @@ module pqcrystals_dilithium_9 (
 
 parameter    ap_ST_fsm_state1 = 16'd1;
 parameter    ap_ST_fsm_state2 = 16'd2;
-parameter    ap_ST_fsm_state3 = 16'd4;
-parameter    ap_ST_fsm_state4 = 16'd8;
-parameter    ap_ST_fsm_state5 = 16'd16;
-parameter    ap_ST_fsm_state6 = 16'd32;
-parameter    ap_ST_fsm_state7 = 16'd64;
-parameter    ap_ST_fsm_state8 = 16'd128;
-parameter    ap_ST_fsm_state9 = 16'd256;
-parameter    ap_ST_fsm_state10 = 16'd512;
-parameter    ap_ST_fsm_state11 = 16'd1024;
-parameter    ap_ST_fsm_state12 = 16'd2048;
-parameter    ap_ST_fsm_state13 = 16'd4096;
-parameter    ap_ST_fsm_state14 = 16'd8192;
-parameter    ap_ST_fsm_state15 = 16'd16384;
-parameter    ap_ST_fsm_state16 = 16'd32768;
+parameter    ap_ST_fsm_pp0_stage0 = 16'd4;
+parameter    ap_ST_fsm_pp0_stage1 = 16'd8;
+parameter    ap_ST_fsm_pp0_stage2 = 16'd16;
+parameter    ap_ST_fsm_pp0_stage3 = 16'd32;
+parameter    ap_ST_fsm_state8 = 16'd64;
+parameter    ap_ST_fsm_state9 = 16'd128;
+parameter    ap_ST_fsm_state10 = 16'd256;
+parameter    ap_ST_fsm_state11 = 16'd512;
+parameter    ap_ST_fsm_state12 = 16'd1024;
+parameter    ap_ST_fsm_state13 = 16'd2048;
+parameter    ap_ST_fsm_state14 = 16'd4096;
+parameter    ap_ST_fsm_state15 = 16'd8192;
+parameter    ap_ST_fsm_state16 = 16'd16384;
+parameter    ap_ST_fsm_state17 = 16'd32768;
 
 input   ap_clk;
 input   ap_rst;
@@ -74,142 +74,174 @@ reg seed_ce1;
 
 (* fsm_encoding = "none" *) reg   [15:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [7:0] t_0_fu_255_p1;
-reg   [7:0] t_0_reg_476;
-reg   [7:0] t_1_reg_481;
-wire   [4:0] i_1_fu_275_p2;
+reg   [2:0] i_3_i_reg_240;
+wire   [7:0] t_0_fu_276_p1;
+reg   [7:0] t_0_reg_496;
+reg   [7:0] t_1_reg_501;
+wire   [0:0] icmp_ln364_fu_290_p2;
 wire    ap_CS_fsm_state2;
-wire   [2:0] add_ln420_fu_297_p2;
-reg   [2:0] add_ln420_reg_497;
-wire    ap_CS_fsm_state3;
-wire   [7:0] zext_ln421_fu_311_p1;
-reg   [7:0] zext_ln421_reg_502;
-wire   [0:0] icmp_ln420_fu_291_p2;
-reg   [4:0] state_s_addr_3_reg_522;
-wire   [1:0] trunc_ln503_fu_337_p1;
-reg   [1:0] trunc_ln503_reg_527;
-reg   [7:0] seed_load_reg_532;
-wire    ap_CS_fsm_state4;
-reg   [7:0] seed_load_1_reg_537;
-reg   [7:0] seed_load_2_reg_552;
-wire    ap_CS_fsm_state5;
-reg   [7:0] seed_load_3_reg_557;
-reg   [7:0] seed_load_4_reg_572;
-wire    ap_CS_fsm_state6;
-reg   [7:0] seed_load_5_reg_577;
-wire   [31:0] grp_keccak_absorb_fu_230_ap_return;
-reg   [31:0] state_pos_write_assi_reg_592;
+wire   [4:0] i_1_fu_296_p2;
+wire   [0:0] icmp_ln422_fu_307_p2;
+reg   [0:0] icmp_ln422_reg_515;
+wire    ap_CS_fsm_pp0_stage0;
+wire    ap_block_state3_pp0_stage0_iter0;
+wire    ap_block_state7_pp0_stage0_iter1;
+wire    ap_block_pp0_stage0_11001;
+wire   [2:0] add_ln422_fu_313_p2;
+reg   [2:0] add_ln422_reg_519;
+reg    ap_enable_reg_pp0_iter0;
+wire   [7:0] zext_ln424_fu_332_p1;
+reg   [7:0] zext_ln424_reg_524;
+reg   [4:0] state_s_addr_3_reg_544;
+reg   [7:0] seed_load_reg_550;
+wire    ap_CS_fsm_pp0_stage1;
+wire    ap_block_state4_pp0_stage1_iter0;
+wire    ap_block_pp0_stage1_11001;
+reg   [7:0] seed_load_1_reg_555;
+wire   [63:0] state_s_q0;
+reg   [63:0] state_s_load_2_reg_570;
+reg   [7:0] seed_load_2_reg_575;
+wire    ap_CS_fsm_pp0_stage2;
+wire    ap_block_state5_pp0_stage2_iter0;
+wire    ap_block_pp0_stage2_11001;
+reg   [7:0] seed_load_3_reg_580;
+reg   [7:0] seed_load_4_reg_595;
+wire    ap_CS_fsm_pp0_stage3;
+wire    ap_block_state6_pp0_stage3_iter0;
+wire    ap_block_pp0_stage3_11001;
+reg   [7:0] seed_load_5_reg_600;
+wire   [1:0] trunc_ln505_fu_438_p1;
+reg   [1:0] trunc_ln505_reg_615;
 wire    ap_CS_fsm_state8;
-wire    grp_keccak_absorb_fu_230_ap_ready;
-wire    grp_keccak_absorb_fu_230_ap_done;
-reg   [4:0] state_s_addr_1_reg_597;
-wire   [4:0] state_s_addr_2_reg_602;
-wire    ap_CS_fsm_state11;
+wire   [31:0] grp_keccak_absorb_fu_251_ap_return;
+reg   [31:0] state_pos_write_assi_reg_620;
+wire    ap_CS_fsm_state9;
+wire    grp_keccak_absorb_fu_251_ap_ready;
+wire    grp_keccak_absorb_fu_251_ap_done;
+reg   [4:0] state_s_addr_1_reg_625;
+wire    ap_CS_fsm_state12;
+wire    ap_block_pp0_stage0_subdone;
+reg    ap_condition_pp0_exit_iter0_state3;
+reg    ap_enable_reg_pp0_iter1;
+wire    ap_block_pp0_stage3_subdone;
 reg   [9:0] buf_address0;
 reg    buf_ce0;
 reg    buf_we0;
 wire   [7:0] buf_q0;
+reg   [9:0] buf_address1;
 reg    buf_ce1;
+reg    buf_we1;
 wire   [7:0] buf_q1;
 reg   [4:0] state_s_address0;
 reg    state_s_ce0;
 reg    state_s_we0;
 reg   [63:0] state_s_d0;
-wire   [63:0] state_s_q0;
 reg   [4:0] state_s_address1;
 reg    state_s_ce1;
 reg    state_s_we1;
 reg   [63:0] state_s_d1;
 wire   [63:0] state_s_q1;
-wire    grp_keccak_absorb_fu_230_ap_start;
-wire    grp_keccak_absorb_fu_230_ap_idle;
-wire   [4:0] grp_keccak_absorb_fu_230_s_address0;
-wire    grp_keccak_absorb_fu_230_s_ce0;
-wire    grp_keccak_absorb_fu_230_s_we0;
-wire   [63:0] grp_keccak_absorb_fu_230_s_d0;
-wire   [4:0] grp_keccak_absorb_fu_230_s_address1;
-wire    grp_keccak_absorb_fu_230_s_ce1;
-wire    grp_keccak_absorb_fu_230_s_we1;
-wire   [63:0] grp_keccak_absorb_fu_230_s_d1;
-wire    grp_keccak_squeezeblocks_1_fu_241_ap_start;
-wire    grp_keccak_squeezeblocks_1_fu_241_ap_done;
-wire    grp_keccak_squeezeblocks_1_fu_241_ap_idle;
-wire    grp_keccak_squeezeblocks_1_fu_241_ap_ready;
-wire   [9:0] grp_keccak_squeezeblocks_1_fu_241_out_r_address0;
-wire    grp_keccak_squeezeblocks_1_fu_241_out_r_ce0;
-wire    grp_keccak_squeezeblocks_1_fu_241_out_r_we0;
-wire   [7:0] grp_keccak_squeezeblocks_1_fu_241_out_r_d0;
-wire   [4:0] grp_keccak_squeezeblocks_1_fu_241_s_address0;
-wire    grp_keccak_squeezeblocks_1_fu_241_s_ce0;
-wire    grp_keccak_squeezeblocks_1_fu_241_s_we0;
-wire   [63:0] grp_keccak_squeezeblocks_1_fu_241_s_d0;
-wire   [4:0] grp_keccak_squeezeblocks_1_fu_241_s_address1;
-wire    grp_keccak_squeezeblocks_1_fu_241_s_ce1;
-wire    grp_keccak_squeezeblocks_1_fu_241_s_we1;
-wire   [63:0] grp_keccak_squeezeblocks_1_fu_241_s_d1;
-wire    grp_pqcrystals_dilithium_2_fu_247_ap_start;
-wire    grp_pqcrystals_dilithium_2_fu_247_ap_done;
-wire    grp_pqcrystals_dilithium_2_fu_247_ap_idle;
-wire    grp_pqcrystals_dilithium_2_fu_247_ap_ready;
-wire   [9:0] grp_pqcrystals_dilithium_2_fu_247_r_coeffs_address0;
-wire    grp_pqcrystals_dilithium_2_fu_247_r_coeffs_ce0;
-wire    grp_pqcrystals_dilithium_2_fu_247_r_coeffs_we0;
-wire   [18:0] grp_pqcrystals_dilithium_2_fu_247_r_coeffs_d0;
-wire   [9:0] grp_pqcrystals_dilithium_2_fu_247_a_address0;
-wire    grp_pqcrystals_dilithium_2_fu_247_a_ce0;
-wire   [9:0] grp_pqcrystals_dilithium_2_fu_247_a_address1;
-wire    grp_pqcrystals_dilithium_2_fu_247_a_ce1;
-reg   [4:0] i_0_i_i_i_reg_208;
-wire   [0:0] icmp_ln364_fu_269_p2;
-reg   [2:0] i_3_i_reg_219;
-wire    ap_CS_fsm_state7;
-reg    grp_keccak_absorb_fu_230_ap_start_reg;
-reg    grp_keccak_squeezeblocks_1_fu_241_ap_start_reg;
-wire    ap_CS_fsm_state13;
+wire    grp_keccak_absorb_fu_251_ap_start;
+wire    grp_keccak_absorb_fu_251_ap_idle;
+wire   [4:0] grp_keccak_absorb_fu_251_s_address0;
+wire    grp_keccak_absorb_fu_251_s_ce0;
+wire    grp_keccak_absorb_fu_251_s_we0;
+wire   [63:0] grp_keccak_absorb_fu_251_s_d0;
+wire   [4:0] grp_keccak_absorb_fu_251_s_address1;
+wire    grp_keccak_absorb_fu_251_s_ce1;
+wire    grp_keccak_absorb_fu_251_s_we1;
+wire   [63:0] grp_keccak_absorb_fu_251_s_d1;
+wire    grp_keccak_squeezeblocks_1_fu_262_ap_start;
+wire    grp_keccak_squeezeblocks_1_fu_262_ap_done;
+wire    grp_keccak_squeezeblocks_1_fu_262_ap_idle;
+wire    grp_keccak_squeezeblocks_1_fu_262_ap_ready;
+wire   [9:0] grp_keccak_squeezeblocks_1_fu_262_out_r_address0;
+wire    grp_keccak_squeezeblocks_1_fu_262_out_r_ce0;
+wire    grp_keccak_squeezeblocks_1_fu_262_out_r_we0;
+wire   [7:0] grp_keccak_squeezeblocks_1_fu_262_out_r_d0;
+wire   [9:0] grp_keccak_squeezeblocks_1_fu_262_out_r_address1;
+wire    grp_keccak_squeezeblocks_1_fu_262_out_r_ce1;
+wire    grp_keccak_squeezeblocks_1_fu_262_out_r_we1;
+wire   [7:0] grp_keccak_squeezeblocks_1_fu_262_out_r_d1;
+wire   [4:0] grp_keccak_squeezeblocks_1_fu_262_s_address0;
+wire    grp_keccak_squeezeblocks_1_fu_262_s_ce0;
+wire    grp_keccak_squeezeblocks_1_fu_262_s_we0;
+wire   [63:0] grp_keccak_squeezeblocks_1_fu_262_s_d0;
+wire   [4:0] grp_keccak_squeezeblocks_1_fu_262_s_address1;
+wire    grp_keccak_squeezeblocks_1_fu_262_s_ce1;
+wire    grp_keccak_squeezeblocks_1_fu_262_s_we1;
+wire   [63:0] grp_keccak_squeezeblocks_1_fu_262_s_d1;
+wire    grp_pqcrystals_dilithium_2_fu_268_ap_start;
+wire    grp_pqcrystals_dilithium_2_fu_268_ap_done;
+wire    grp_pqcrystals_dilithium_2_fu_268_ap_idle;
+wire    grp_pqcrystals_dilithium_2_fu_268_ap_ready;
+wire   [9:0] grp_pqcrystals_dilithium_2_fu_268_r_coeffs_address0;
+wire    grp_pqcrystals_dilithium_2_fu_268_r_coeffs_ce0;
+wire    grp_pqcrystals_dilithium_2_fu_268_r_coeffs_we0;
+wire   [18:0] grp_pqcrystals_dilithium_2_fu_268_r_coeffs_d0;
+wire   [9:0] grp_pqcrystals_dilithium_2_fu_268_a_address0;
+wire    grp_pqcrystals_dilithium_2_fu_268_a_ce0;
+wire   [9:0] grp_pqcrystals_dilithium_2_fu_268_a_address1;
+wire    grp_pqcrystals_dilithium_2_fu_268_a_ce1;
+reg   [4:0] i_0_i_i_i_reg_229;
+reg   [2:0] ap_phi_mux_i_3_i_phi_fu_244_p4;
+wire    ap_block_pp0_stage0;
+reg    grp_keccak_absorb_fu_251_ap_start_reg;
+reg    grp_keccak_squeezeblocks_1_fu_262_ap_start_reg;
 wire    ap_CS_fsm_state14;
-reg    grp_pqcrystals_dilithium_2_fu_247_ap_start_reg;
 wire    ap_CS_fsm_state15;
+reg    grp_pqcrystals_dilithium_2_fu_268_ap_start_reg;
 wire    ap_CS_fsm_state16;
-wire   [63:0] zext_ln365_fu_281_p1;
-wire   [63:0] zext_ln421_1_fu_321_p1;
-wire   [63:0] zext_ln32_fu_332_p1;
-wire   [63:0] zext_ln420_fu_286_p1;
-wire   [63:0] zext_ln32_1_fu_345_p1;
-wire   [63:0] zext_ln32_2_fu_355_p1;
-wire   [63:0] zext_ln32_3_fu_365_p1;
-wire   [63:0] zext_ln32_4_fu_375_p1;
-wire   [63:0] zext_ln32_5_fu_385_p1;
-wire   [63:0] zext_ln32_6_fu_395_p1;
-wire   [63:0] zext_ln454_1_fu_431_p1;
-wire   [63:0] xor_ln421_fu_414_p2;
-wire    ap_CS_fsm_state9;
+wire    ap_CS_fsm_state17;
+wire   [63:0] zext_ln365_fu_302_p1;
+wire   [63:0] zext_ln424_1_fu_342_p1;
+wire   [63:0] zext_ln32_fu_353_p1;
+wire   [63:0] zext_ln422_fu_319_p1;
+wire   [63:0] zext_ln32_1_fu_363_p1;
+wire    ap_block_pp0_stage1;
+wire   [63:0] zext_ln32_2_fu_373_p1;
+wire   [63:0] zext_ln32_3_fu_383_p1;
+wire    ap_block_pp0_stage2;
+wire   [63:0] zext_ln32_4_fu_393_p1;
+wire   [63:0] zext_ln32_5_fu_403_p1;
+wire    ap_block_pp0_stage3;
+wire   [63:0] zext_ln32_6_fu_413_p1;
+wire   [63:0] zext_ln462_1_fu_451_p1;
+wire   [63:0] xor_ln424_fu_432_p2;
 wire    ap_CS_fsm_state10;
-wire   [63:0] xor_ln454_fu_457_p2;
-wire    ap_CS_fsm_state12;
-wire   [63:0] xor_ln455_fu_464_p2;
-wire   [5:0] shl_ln1_fu_303_p3;
-wire   [7:0] add_ln421_fu_315_p2;
-wire   [7:0] add_ln32_fu_326_p2;
-wire   [7:0] add_ln32_1_fu_340_p2;
-wire   [7:0] add_ln32_2_fu_350_p2;
-wire   [7:0] add_ln32_3_fu_360_p2;
-wire   [7:0] add_ln32_4_fu_370_p2;
-wire   [7:0] add_ln32_5_fu_380_p2;
-wire   [7:0] add_ln32_6_fu_390_p2;
-wire   [63:0] r_7_i1_i_fu_400_p9;
-wire   [28:0] i_fu_421_p4;
-wire   [2:0] trunc_ln454_fu_436_p1;
-wire   [5:0] shl_ln_fu_439_p3;
-wire   [63:0] zext_ln454_fu_447_p1;
-wire   [63:0] shl_ln454_fu_451_p2;
+wire    ap_CS_fsm_state11;
+wire   [63:0] xor_ln462_fu_477_p2;
+wire    ap_CS_fsm_state13;
+wire   [63:0] xor_ln463_fu_484_p2;
+wire   [5:0] shl_ln1_fu_324_p3;
+wire   [7:0] add_ln424_fu_336_p2;
+wire   [7:0] add_ln32_fu_347_p2;
+wire   [7:0] add_ln32_1_fu_358_p2;
+wire   [7:0] add_ln32_2_fu_368_p2;
+wire   [7:0] add_ln32_3_fu_378_p2;
+wire   [7:0] add_ln32_4_fu_388_p2;
+wire   [7:0] add_ln32_5_fu_398_p2;
+wire   [7:0] add_ln32_6_fu_408_p2;
+wire   [63:0] r_7_i1_i_fu_418_p9;
+wire   [28:0] i_fu_441_p4;
+wire   [2:0] trunc_ln462_fu_456_p1;
+wire   [5:0] shl_ln_fu_459_p3;
+wire   [63:0] zext_ln462_fu_467_p1;
+wire   [63:0] shl_ln462_fu_471_p2;
 reg   [15:0] ap_NS_fsm;
+wire    ap_block_pp0_stage1_subdone;
+wire    ap_block_pp0_stage2_subdone;
+reg    ap_idle_pp0;
+wire    ap_enable_pp0;
 
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 16'd1;
-#0 grp_keccak_absorb_fu_230_ap_start_reg = 1'b0;
-#0 grp_keccak_squeezeblocks_1_fu_241_ap_start_reg = 1'b0;
-#0 grp_pqcrystals_dilithium_2_fu_247_ap_start_reg = 1'b0;
+#0 ap_enable_reg_pp0_iter0 = 1'b0;
+#0 ap_enable_reg_pp0_iter1 = 1'b0;
+#0 grp_keccak_absorb_fu_251_ap_start_reg = 1'b0;
+#0 grp_keccak_squeezeblocks_1_fu_262_ap_start_reg = 1'b0;
+#0 grp_pqcrystals_dilithium_2_fu_268_ap_start_reg = 1'b0;
 end
 
 pqcrystals_dilithfYi #(
@@ -222,10 +254,12 @@ buf_U(
     .address0(buf_address0),
     .ce0(buf_ce0),
     .we0(buf_we0),
-    .d0(grp_keccak_squeezeblocks_1_fu_241_out_r_d0),
+    .d0(grp_keccak_squeezeblocks_1_fu_262_out_r_d0),
     .q0(buf_q0),
-    .address1(grp_pqcrystals_dilithium_2_fu_247_a_address1),
+    .address1(buf_address1),
     .ce1(buf_ce1),
+    .we1(buf_we1),
+    .d1(grp_keccak_squeezeblocks_1_fu_262_out_r_d1),
     .q1(buf_q1)
 );
 
@@ -248,70 +282,74 @@ state_s_U(
     .q1(state_s_q1)
 );
 
-keccak_absorb grp_keccak_absorb_fu_230(
+keccak_absorb grp_keccak_absorb_fu_251(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_keccak_absorb_fu_230_ap_start),
-    .ap_done(grp_keccak_absorb_fu_230_ap_done),
-    .ap_idle(grp_keccak_absorb_fu_230_ap_idle),
-    .ap_ready(grp_keccak_absorb_fu_230_ap_ready),
-    .s_address0(grp_keccak_absorb_fu_230_s_address0),
-    .s_ce0(grp_keccak_absorb_fu_230_s_ce0),
-    .s_we0(grp_keccak_absorb_fu_230_s_we0),
-    .s_d0(grp_keccak_absorb_fu_230_s_d0),
+    .ap_start(grp_keccak_absorb_fu_251_ap_start),
+    .ap_done(grp_keccak_absorb_fu_251_ap_done),
+    .ap_idle(grp_keccak_absorb_fu_251_ap_idle),
+    .ap_ready(grp_keccak_absorb_fu_251_ap_ready),
+    .s_address0(grp_keccak_absorb_fu_251_s_address0),
+    .s_ce0(grp_keccak_absorb_fu_251_s_ce0),
+    .s_we0(grp_keccak_absorb_fu_251_s_we0),
+    .s_d0(grp_keccak_absorb_fu_251_s_d0),
     .s_q0(state_s_q0),
-    .s_address1(grp_keccak_absorb_fu_230_s_address1),
-    .s_ce1(grp_keccak_absorb_fu_230_s_ce1),
-    .s_we1(grp_keccak_absorb_fu_230_s_we1),
-    .s_d1(grp_keccak_absorb_fu_230_s_d1),
+    .s_address1(grp_keccak_absorb_fu_251_s_address1),
+    .s_ce1(grp_keccak_absorb_fu_251_s_ce1),
+    .s_we1(grp_keccak_absorb_fu_251_s_we1),
+    .s_d1(grp_keccak_absorb_fu_251_s_d1),
     .s_q1(state_s_q1),
     .r(9'd136),
     .pos_r(7'd48),
-    .m_0_read(t_0_reg_476),
-    .m_1_read(t_1_reg_481),
-    .ap_return(grp_keccak_absorb_fu_230_ap_return)
+    .m_0_read(t_0_reg_496),
+    .m_1_read(t_1_reg_501),
+    .ap_return(grp_keccak_absorb_fu_251_ap_return)
 );
 
-keccak_squeezeblocks_1 grp_keccak_squeezeblocks_1_fu_241(
+keccak_squeezeblocks_1 grp_keccak_squeezeblocks_1_fu_262(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_keccak_squeezeblocks_1_fu_241_ap_start),
-    .ap_done(grp_keccak_squeezeblocks_1_fu_241_ap_done),
-    .ap_idle(grp_keccak_squeezeblocks_1_fu_241_ap_idle),
-    .ap_ready(grp_keccak_squeezeblocks_1_fu_241_ap_ready),
-    .out_r_address0(grp_keccak_squeezeblocks_1_fu_241_out_r_address0),
-    .out_r_ce0(grp_keccak_squeezeblocks_1_fu_241_out_r_ce0),
-    .out_r_we0(grp_keccak_squeezeblocks_1_fu_241_out_r_we0),
-    .out_r_d0(grp_keccak_squeezeblocks_1_fu_241_out_r_d0),
-    .s_address0(grp_keccak_squeezeblocks_1_fu_241_s_address0),
-    .s_ce0(grp_keccak_squeezeblocks_1_fu_241_s_ce0),
-    .s_we0(grp_keccak_squeezeblocks_1_fu_241_s_we0),
-    .s_d0(grp_keccak_squeezeblocks_1_fu_241_s_d0),
+    .ap_start(grp_keccak_squeezeblocks_1_fu_262_ap_start),
+    .ap_done(grp_keccak_squeezeblocks_1_fu_262_ap_done),
+    .ap_idle(grp_keccak_squeezeblocks_1_fu_262_ap_idle),
+    .ap_ready(grp_keccak_squeezeblocks_1_fu_262_ap_ready),
+    .out_r_address0(grp_keccak_squeezeblocks_1_fu_262_out_r_address0),
+    .out_r_ce0(grp_keccak_squeezeblocks_1_fu_262_out_r_ce0),
+    .out_r_we0(grp_keccak_squeezeblocks_1_fu_262_out_r_we0),
+    .out_r_d0(grp_keccak_squeezeblocks_1_fu_262_out_r_d0),
+    .out_r_address1(grp_keccak_squeezeblocks_1_fu_262_out_r_address1),
+    .out_r_ce1(grp_keccak_squeezeblocks_1_fu_262_out_r_ce1),
+    .out_r_we1(grp_keccak_squeezeblocks_1_fu_262_out_r_we1),
+    .out_r_d1(grp_keccak_squeezeblocks_1_fu_262_out_r_d1),
+    .s_address0(grp_keccak_squeezeblocks_1_fu_262_s_address0),
+    .s_ce0(grp_keccak_squeezeblocks_1_fu_262_s_ce0),
+    .s_we0(grp_keccak_squeezeblocks_1_fu_262_s_we0),
+    .s_d0(grp_keccak_squeezeblocks_1_fu_262_s_d0),
     .s_q0(state_s_q0),
-    .s_address1(grp_keccak_squeezeblocks_1_fu_241_s_address1),
-    .s_ce1(grp_keccak_squeezeblocks_1_fu_241_s_ce1),
-    .s_we1(grp_keccak_squeezeblocks_1_fu_241_s_we1),
-    .s_d1(grp_keccak_squeezeblocks_1_fu_241_s_d1),
+    .s_address1(grp_keccak_squeezeblocks_1_fu_262_s_address1),
+    .s_ce1(grp_keccak_squeezeblocks_1_fu_262_s_ce1),
+    .s_we1(grp_keccak_squeezeblocks_1_fu_262_s_we1),
+    .s_d1(grp_keccak_squeezeblocks_1_fu_262_s_d1),
     .s_q1(state_s_q1)
 );
 
-pqcrystals_dilithium_2 grp_pqcrystals_dilithium_2_fu_247(
+pqcrystals_dilithium_2 grp_pqcrystals_dilithium_2_fu_268(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_pqcrystals_dilithium_2_fu_247_ap_start),
-    .ap_done(grp_pqcrystals_dilithium_2_fu_247_ap_done),
-    .ap_idle(grp_pqcrystals_dilithium_2_fu_247_ap_idle),
-    .ap_ready(grp_pqcrystals_dilithium_2_fu_247_ap_ready),
-    .r_coeffs_address0(grp_pqcrystals_dilithium_2_fu_247_r_coeffs_address0),
-    .r_coeffs_ce0(grp_pqcrystals_dilithium_2_fu_247_r_coeffs_ce0),
-    .r_coeffs_we0(grp_pqcrystals_dilithium_2_fu_247_r_coeffs_we0),
-    .r_coeffs_d0(grp_pqcrystals_dilithium_2_fu_247_r_coeffs_d0),
-    .r_coeffs_offset(trunc_ln503_reg_527),
-    .a_address0(grp_pqcrystals_dilithium_2_fu_247_a_address0),
-    .a_ce0(grp_pqcrystals_dilithium_2_fu_247_a_ce0),
+    .ap_start(grp_pqcrystals_dilithium_2_fu_268_ap_start),
+    .ap_done(grp_pqcrystals_dilithium_2_fu_268_ap_done),
+    .ap_idle(grp_pqcrystals_dilithium_2_fu_268_ap_idle),
+    .ap_ready(grp_pqcrystals_dilithium_2_fu_268_ap_ready),
+    .r_coeffs_address0(grp_pqcrystals_dilithium_2_fu_268_r_coeffs_address0),
+    .r_coeffs_ce0(grp_pqcrystals_dilithium_2_fu_268_r_coeffs_ce0),
+    .r_coeffs_we0(grp_pqcrystals_dilithium_2_fu_268_r_coeffs_we0),
+    .r_coeffs_d0(grp_pqcrystals_dilithium_2_fu_268_r_coeffs_d0),
+    .r_coeffs_offset(trunc_ln505_reg_615),
+    .a_address0(grp_pqcrystals_dilithium_2_fu_268_a_address0),
+    .a_ce0(grp_pqcrystals_dilithium_2_fu_268_a_ce0),
     .a_q0(buf_q0),
-    .a_address1(grp_pqcrystals_dilithium_2_fu_247_a_address1),
-    .a_ce1(grp_pqcrystals_dilithium_2_fu_247_a_ce1),
+    .a_address1(grp_pqcrystals_dilithium_2_fu_268_a_address1),
+    .a_ce1(grp_pqcrystals_dilithium_2_fu_268_a_ce1),
     .a_q1(buf_q1)
 );
 
@@ -325,112 +363,151 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_keccak_absorb_fu_230_ap_start_reg <= 1'b0;
+        ap_enable_reg_pp0_iter0 <= 1'b0;
     end else begin
-        if (((icmp_ln420_fu_291_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-            grp_keccak_absorb_fu_230_ap_start_reg <= 1'b1;
-        end else if ((grp_keccak_absorb_fu_230_ap_ready == 1'b1)) begin
-            grp_keccak_absorb_fu_230_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b1 == ap_condition_pp0_exit_iter0_state3) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
+            ap_enable_reg_pp0_iter0 <= 1'b0;
+        end else if (((icmp_ln364_fu_290_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            ap_enable_reg_pp0_iter0 <= 1'b1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_keccak_squeezeblocks_1_fu_241_ap_start_reg <= 1'b0;
+        ap_enable_reg_pp0_iter1 <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state13)) begin
-            grp_keccak_squeezeblocks_1_fu_241_ap_start_reg <= 1'b1;
-        end else if ((grp_keccak_squeezeblocks_1_fu_241_ap_ready == 1'b1)) begin
-            grp_keccak_squeezeblocks_1_fu_241_ap_start_reg <= 1'b0;
+        if ((((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_subdone)) | ((1'b0 == ap_block_pp0_stage3_subdone) & (1'b1 == ap_CS_fsm_pp0_stage3)))) begin
+            ap_enable_reg_pp0_iter1 <= ap_enable_reg_pp0_iter0;
+        end else if (((icmp_ln364_fu_290_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            ap_enable_reg_pp0_iter1 <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_pqcrystals_dilithium_2_fu_247_ap_start_reg <= 1'b0;
+        grp_keccak_absorb_fu_251_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state15)) begin
-            grp_pqcrystals_dilithium_2_fu_247_ap_start_reg <= 1'b1;
-        end else if ((grp_pqcrystals_dilithium_2_fu_247_ap_ready == 1'b1)) begin
-            grp_pqcrystals_dilithium_2_fu_247_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state8)) begin
+            grp_keccak_absorb_fu_251_ap_start_reg <= 1'b1;
+        end else if ((grp_keccak_absorb_fu_251_ap_ready == 1'b1)) begin
+            grp_keccak_absorb_fu_251_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln364_fu_269_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        i_0_i_i_i_reg_208 <= i_1_fu_275_p2;
+    if (ap_rst == 1'b1) begin
+        grp_keccak_squeezeblocks_1_fu_262_ap_start_reg <= 1'b0;
+    end else begin
+        if ((1'b1 == ap_CS_fsm_state14)) begin
+            grp_keccak_squeezeblocks_1_fu_262_ap_start_reg <= 1'b1;
+        end else if ((grp_keccak_squeezeblocks_1_fu_262_ap_ready == 1'b1)) begin
+            grp_keccak_squeezeblocks_1_fu_262_ap_start_reg <= 1'b0;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (ap_rst == 1'b1) begin
+        grp_pqcrystals_dilithium_2_fu_268_ap_start_reg <= 1'b0;
+    end else begin
+        if ((1'b1 == ap_CS_fsm_state16)) begin
+            grp_pqcrystals_dilithium_2_fu_268_ap_start_reg <= 1'b1;
+        end else if ((grp_pqcrystals_dilithium_2_fu_268_ap_ready == 1'b1)) begin
+            grp_pqcrystals_dilithium_2_fu_268_ap_start_reg <= 1'b0;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((icmp_ln364_fu_290_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+        i_0_i_i_i_reg_229 <= i_1_fu_296_p2;
     end else if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        i_0_i_i_i_reg_208 <= 5'd0;
+        i_0_i_i_i_reg_229 <= 5'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln364_fu_269_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        i_3_i_reg_219 <= 3'd0;
-    end else if ((1'b1 == ap_CS_fsm_state7)) begin
-        i_3_i_reg_219 <= add_ln420_reg_497;
+    if (((icmp_ln364_fu_290_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+        i_3_i_reg_240 <= 3'd0;
+    end else if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln422_reg_515 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        i_3_i_reg_240 <= add_ln422_reg_519;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        add_ln420_reg_497 <= add_ln420_fu_297_p2;
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        add_ln422_reg_519 <= add_ln422_fu_313_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        seed_load_1_reg_537 <= seed_q1;
-        seed_load_reg_532 <= seed_q0;
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        icmp_ln422_reg_515 <= icmp_ln422_fu_307_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        seed_load_2_reg_552 <= seed_q0;
-        seed_load_3_reg_557 <= seed_q1;
+    if (((icmp_ln422_reg_515 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1_11001))) begin
+        seed_load_1_reg_555 <= seed_q1;
+        seed_load_reg_550 <= seed_q0;
+        state_s_load_2_reg_570 <= state_s_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        seed_load_4_reg_572 <= seed_q0;
-        seed_load_5_reg_577 <= seed_q1;
+    if (((icmp_ln422_reg_515 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2_11001))) begin
+        seed_load_2_reg_575 <= seed_q0;
+        seed_load_3_reg_580 <= seed_q1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state8) & (grp_keccak_absorb_fu_230_ap_done == 1'b1))) begin
-        state_pos_write_assi_reg_592 <= grp_keccak_absorb_fu_230_ap_return;
-        state_s_addr_1_reg_597 <= zext_ln454_1_fu_431_p1;
+    if (((icmp_ln422_reg_515 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage3) & (1'b0 == ap_block_pp0_stage3_11001))) begin
+        seed_load_4_reg_595 <= seed_q0;
+        seed_load_5_reg_600 <= seed_q1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln420_fu_291_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
-        state_s_addr_3_reg_522[2 : 0] <= zext_ln420_fu_286_p1[2 : 0];
-        zext_ln421_reg_502[5 : 3] <= zext_ln421_fu_311_p1[5 : 3];
+    if (((1'b1 == ap_CS_fsm_state9) & (grp_keccak_absorb_fu_251_ap_done == 1'b1))) begin
+        state_pos_write_assi_reg_620 <= grp_keccak_absorb_fu_251_ap_return;
+        state_s_addr_1_reg_625 <= zext_ln462_1_fu_451_p1;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln422_fu_307_p2 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        state_s_addr_3_reg_544[2 : 0] <= zext_ln422_fu_319_p1[2 : 0];
+        zext_ln424_reg_524[5 : 3] <= zext_ln424_fu_332_p1[5 : 3];
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        t_0_reg_476 <= t_0_fu_255_p1;
-        t_1_reg_481 <= {{nonce[15:8]}};
+        t_0_reg_496 <= t_0_fu_276_p1;
+        t_1_reg_501 <= {{nonce[15:8]}};
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln420_fu_291_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-        trunc_ln503_reg_527 <= trunc_ln503_fu_337_p1;
+    if ((1'b1 == ap_CS_fsm_state8)) begin
+        trunc_ln505_reg_615 <= trunc_ln505_fu_438_p1;
     end
 end
 
 always @ (*) begin
-    if ((((grp_pqcrystals_dilithium_2_fu_247_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state16)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if ((icmp_ln422_fu_307_p2 == 1'd1)) begin
+        ap_condition_pp0_exit_iter0_state3 = 1'b1;
+    end else begin
+        ap_condition_pp0_exit_iter0_state3 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((((grp_pqcrystals_dilithium_2_fu_268_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state17)) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -446,7 +523,23 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_pqcrystals_dilithium_2_fu_247_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state16))) begin
+    if (((ap_enable_reg_pp0_iter0 == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b0))) begin
+        ap_idle_pp0 = 1'b1;
+    end else begin
+        ap_idle_pp0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((icmp_ln422_reg_515 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        ap_phi_mux_i_3_i_phi_fu_244_p4 = add_ln422_reg_519;
+    end else begin
+        ap_phi_mux_i_3_i_phi_fu_244_p4 = i_3_i_reg_240;
+    end
+end
+
+always @ (*) begin
+    if (((grp_pqcrystals_dilithium_2_fu_268_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -454,71 +547,99 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        buf_address0 = grp_pqcrystals_dilithium_2_fu_247_a_address0;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        buf_address0 = grp_keccak_squeezeblocks_1_fu_241_out_r_address0;
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        buf_address0 = grp_pqcrystals_dilithium_2_fu_268_a_address0;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        buf_address0 = grp_keccak_squeezeblocks_1_fu_262_out_r_address0;
     end else begin
         buf_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        buf_ce0 = grp_pqcrystals_dilithium_2_fu_247_a_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        buf_ce0 = grp_keccak_squeezeblocks_1_fu_241_out_r_ce0;
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        buf_address1 = grp_pqcrystals_dilithium_2_fu_268_a_address1;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        buf_address1 = grp_keccak_squeezeblocks_1_fu_262_out_r_address1;
+    end else begin
+        buf_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        buf_ce0 = grp_pqcrystals_dilithium_2_fu_268_a_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        buf_ce0 = grp_keccak_squeezeblocks_1_fu_262_out_r_ce0;
     end else begin
         buf_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        buf_ce1 = grp_pqcrystals_dilithium_2_fu_247_a_ce1;
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        buf_ce1 = grp_pqcrystals_dilithium_2_fu_268_a_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        buf_ce1 = grp_keccak_squeezeblocks_1_fu_262_out_r_ce1;
     end else begin
         buf_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state14)) begin
-        buf_we0 = grp_keccak_squeezeblocks_1_fu_241_out_r_we0;
+    if ((1'b1 == ap_CS_fsm_state15)) begin
+        buf_we0 = grp_keccak_squeezeblocks_1_fu_262_out_r_we0;
     end else begin
         buf_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        seed_address0 = zext_ln32_5_fu_385_p1;
-    end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        seed_address0 = zext_ln32_3_fu_365_p1;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        seed_address0 = zext_ln32_1_fu_345_p1;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        seed_address0 = zext_ln421_1_fu_321_p1;
+    if ((1'b1 == ap_CS_fsm_state15)) begin
+        buf_we1 = grp_keccak_squeezeblocks_1_fu_262_out_r_we1;
+    end else begin
+        buf_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((ap_enable_reg_pp0_iter0 == 1'b1)) begin
+        if (((1'b0 == ap_block_pp0_stage3) & (1'b1 == ap_CS_fsm_pp0_stage3))) begin
+            seed_address0 = zext_ln32_5_fu_403_p1;
+        end else if (((1'b0 == ap_block_pp0_stage2) & (1'b1 == ap_CS_fsm_pp0_stage2))) begin
+            seed_address0 = zext_ln32_3_fu_383_p1;
+        end else if (((1'b0 == ap_block_pp0_stage1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
+            seed_address0 = zext_ln32_1_fu_363_p1;
+        end else if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+            seed_address0 = zext_ln424_1_fu_342_p1;
+        end else begin
+            seed_address0 = 'bx;
+        end
     end else begin
         seed_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        seed_address1 = zext_ln32_6_fu_395_p1;
-    end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        seed_address1 = zext_ln32_4_fu_375_p1;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        seed_address1 = zext_ln32_2_fu_355_p1;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        seed_address1 = zext_ln32_fu_332_p1;
+    if ((ap_enable_reg_pp0_iter0 == 1'b1)) begin
+        if (((1'b0 == ap_block_pp0_stage3) & (1'b1 == ap_CS_fsm_pp0_stage3))) begin
+            seed_address1 = zext_ln32_6_fu_413_p1;
+        end else if (((1'b0 == ap_block_pp0_stage2) & (1'b1 == ap_CS_fsm_pp0_stage2))) begin
+            seed_address1 = zext_ln32_4_fu_393_p1;
+        end else if (((1'b0 == ap_block_pp0_stage1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
+            seed_address1 = zext_ln32_2_fu_373_p1;
+        end else if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+            seed_address1 = zext_ln32_fu_353_p1;
+        end else begin
+            seed_address1 = 'bx;
+        end
     end else begin
         seed_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state6) | (1'b1 == ap_CS_fsm_state5))) begin
+    if ((((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage3) & (1'b0 == ap_block_pp0_stage3_11001)) | ((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2_11001)) | ((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1_11001)) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
         seed_ce0 = 1'b1;
     end else begin
         seed_ce0 = 1'b0;
@@ -526,7 +647,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state6) | (1'b1 == ap_CS_fsm_state5))) begin
+    if ((((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage3) & (1'b0 == ap_block_pp0_stage3_11001)) | ((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2_11001)) | ((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1_11001)) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
         seed_ce1 = 1'b1;
     end else begin
         seed_ce1 = 1'b0;
@@ -534,102 +655,110 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state12)) begin
-        state_s_address0 = state_s_addr_2_reg_602;
-    end else if ((1'b1 == ap_CS_fsm_state11)) begin
+    if ((1'b1 == ap_CS_fsm_state13)) begin
         state_s_address0 = 64'd16;
-    end else if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        state_s_address0 = state_s_addr_1_reg_597;
-    end else if (((1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state6))) begin
-        state_s_address0 = state_s_addr_3_reg_522;
+    end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        state_s_address0 = state_s_addr_1_reg_625;
+    end else if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        state_s_address0 = zext_ln422_fu_319_p1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        state_s_address0 = zext_ln365_fu_281_p1;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        state_s_address0 = grp_keccak_squeezeblocks_1_fu_241_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        state_s_address0 = grp_keccak_absorb_fu_230_s_address0;
+        state_s_address0 = zext_ln365_fu_302_p1;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        state_s_address0 = grp_keccak_squeezeblocks_1_fu_262_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        state_s_address0 = grp_keccak_absorb_fu_251_s_address0;
     end else begin
         state_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state14)) begin
-        state_s_address1 = grp_keccak_squeezeblocks_1_fu_241_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        state_s_address1 = grp_keccak_absorb_fu_230_s_address1;
+    if ((1'b1 == ap_CS_fsm_state12)) begin
+        state_s_address1 = 64'd16;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
+        state_s_address1 = state_s_addr_1_reg_625;
+    end else if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        state_s_address1 = state_s_addr_3_reg_544;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        state_s_address1 = grp_keccak_squeezeblocks_1_fu_262_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        state_s_address1 = grp_keccak_absorb_fu_251_s_address1;
     end else begin
         state_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9) | (1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state6))) begin
+    if (((1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state11) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
         state_s_ce0 = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        state_s_ce0 = grp_keccak_squeezeblocks_1_fu_241_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        state_s_ce0 = grp_keccak_absorb_fu_230_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        state_s_ce0 = grp_keccak_squeezeblocks_1_fu_262_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        state_s_ce0 = grp_keccak_absorb_fu_251_s_ce0;
     end else begin
         state_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state14)) begin
-        state_s_ce1 = grp_keccak_squeezeblocks_1_fu_241_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        state_s_ce1 = grp_keccak_absorb_fu_230_s_ce1;
+    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state12) | ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1)))) begin
+        state_s_ce1 = 1'b1;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        state_s_ce1 = grp_keccak_squeezeblocks_1_fu_262_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        state_s_ce1 = grp_keccak_absorb_fu_251_s_ce1;
     end else begin
         state_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state12)) begin
-        state_s_d0 = xor_ln455_fu_464_p2;
-    end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        state_s_d0 = xor_ln454_fu_457_p2;
-    end else if ((1'b1 == ap_CS_fsm_state7)) begin
-        state_s_d0 = xor_ln421_fu_414_p2;
+    if ((1'b1 == ap_CS_fsm_state13)) begin
+        state_s_d0 = xor_ln463_fu_484_p2;
+    end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        state_s_d0 = xor_ln462_fu_477_p2;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
         state_s_d0 = 64'd0;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        state_s_d0 = grp_keccak_squeezeblocks_1_fu_241_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        state_s_d0 = grp_keccak_absorb_fu_230_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        state_s_d0 = grp_keccak_squeezeblocks_1_fu_262_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        state_s_d0 = grp_keccak_absorb_fu_251_s_d0;
     end else begin
         state_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state14)) begin
-        state_s_d1 = grp_keccak_squeezeblocks_1_fu_241_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        state_s_d1 = grp_keccak_absorb_fu_230_s_d1;
+    if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        state_s_d1 = xor_ln424_fu_432_p2;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        state_s_d1 = grp_keccak_squeezeblocks_1_fu_262_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        state_s_d1 = grp_keccak_absorb_fu_251_s_d1;
     end else begin
         state_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state7) | ((icmp_ln364_fu_269_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2)))) begin
+    if (((1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state11) | ((icmp_ln364_fu_290_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2)))) begin
         state_s_we0 = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        state_s_we0 = grp_keccak_squeezeblocks_1_fu_241_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        state_s_we0 = grp_keccak_absorb_fu_230_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        state_s_we0 = grp_keccak_squeezeblocks_1_fu_262_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        state_s_we0 = grp_keccak_absorb_fu_251_s_we0;
     end else begin
         state_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state14)) begin
-        state_s_we1 = grp_keccak_squeezeblocks_1_fu_241_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        state_s_we1 = grp_keccak_absorb_fu_230_s_we1;
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (icmp_ln422_reg_515 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        state_s_we1 = 1'b1;
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
+        state_s_we1 = grp_keccak_squeezeblocks_1_fu_262_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        state_s_we1 = grp_keccak_absorb_fu_251_s_we1;
     end else begin
         state_s_we1 = 1'b0;
     end
@@ -645,40 +774,51 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((icmp_ln364_fu_269_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-                ap_NS_fsm = ap_ST_fsm_state3;
+            if (((icmp_ln364_fu_290_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage0;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end
         end
-        ap_ST_fsm_state3 : begin
-            if (((icmp_ln420_fu_291_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
+        ap_ST_fsm_pp0_stage0 : begin
+            if ((~((icmp_ln422_fu_307_p2 == 1'd1) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone)) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage1;
+            end else if (((icmp_ln422_fu_307_p2 == 1'd1) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
                 ap_NS_fsm = ap_ST_fsm_state8;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state4;
+                ap_NS_fsm = ap_ST_fsm_pp0_stage0;
             end
         end
-        ap_ST_fsm_state4 : begin
-            ap_NS_fsm = ap_ST_fsm_state5;
+        ap_ST_fsm_pp0_stage1 : begin
+            if ((1'b0 == ap_block_pp0_stage1_subdone)) begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage2;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage1;
+            end
         end
-        ap_ST_fsm_state5 : begin
-            ap_NS_fsm = ap_ST_fsm_state6;
+        ap_ST_fsm_pp0_stage2 : begin
+            if ((1'b0 == ap_block_pp0_stage2_subdone)) begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage3;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage2;
+            end
         end
-        ap_ST_fsm_state6 : begin
-            ap_NS_fsm = ap_ST_fsm_state7;
-        end
-        ap_ST_fsm_state7 : begin
-            ap_NS_fsm = ap_ST_fsm_state3;
+        ap_ST_fsm_pp0_stage3 : begin
+            if ((1'b0 == ap_block_pp0_stage3_subdone)) begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage0;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_pp0_stage3;
+            end
         end
         ap_ST_fsm_state8 : begin
-            if (((1'b1 == ap_CS_fsm_state8) & (grp_keccak_absorb_fu_230_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state9;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state8;
-            end
+            ap_NS_fsm = ap_ST_fsm_state9;
         end
         ap_ST_fsm_state9 : begin
-            ap_NS_fsm = ap_ST_fsm_state10;
+            if (((1'b1 == ap_CS_fsm_state9) & (grp_keccak_absorb_fu_251_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state10;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state9;
+            end
         end
         ap_ST_fsm_state10 : begin
             ap_NS_fsm = ap_ST_fsm_state11;
@@ -693,20 +833,23 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state14;
         end
         ap_ST_fsm_state14 : begin
-            if (((1'b1 == ap_CS_fsm_state14) & (grp_keccak_squeezeblocks_1_fu_241_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state15;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state14;
-            end
+            ap_NS_fsm = ap_ST_fsm_state15;
         end
         ap_ST_fsm_state15 : begin
-            ap_NS_fsm = ap_ST_fsm_state16;
+            if (((grp_keccak_squeezeblocks_1_fu_262_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state15))) begin
+                ap_NS_fsm = ap_ST_fsm_state16;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state15;
+            end
         end
         ap_ST_fsm_state16 : begin
-            if (((grp_pqcrystals_dilithium_2_fu_247_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state16))) begin
+            ap_NS_fsm = ap_ST_fsm_state17;
+        end
+        ap_ST_fsm_state17 : begin
+            if (((grp_pqcrystals_dilithium_2_fu_268_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state16;
+                ap_NS_fsm = ap_ST_fsm_state17;
             end
         end
         default : begin
@@ -715,130 +858,164 @@ always @ (*) begin
     endcase
 end
 
-assign a_coeffs_address0 = grp_pqcrystals_dilithium_2_fu_247_r_coeffs_address0;
+assign a_coeffs_address0 = grp_pqcrystals_dilithium_2_fu_268_r_coeffs_address0;
 
-assign a_coeffs_ce0 = grp_pqcrystals_dilithium_2_fu_247_r_coeffs_ce0;
+assign a_coeffs_ce0 = grp_pqcrystals_dilithium_2_fu_268_r_coeffs_ce0;
 
-assign a_coeffs_d0 = grp_pqcrystals_dilithium_2_fu_247_r_coeffs_d0;
+assign a_coeffs_d0 = grp_pqcrystals_dilithium_2_fu_268_r_coeffs_d0;
 
-assign a_coeffs_we0 = grp_pqcrystals_dilithium_2_fu_247_r_coeffs_we0;
+assign a_coeffs_we0 = grp_pqcrystals_dilithium_2_fu_268_r_coeffs_we0;
 
-assign add_ln32_1_fu_340_p2 = ($signed(zext_ln421_reg_502) + $signed(8'd162));
+assign add_ln32_1_fu_358_p2 = ($signed(zext_ln424_reg_524) + $signed(8'd162));
 
-assign add_ln32_2_fu_350_p2 = ($signed(zext_ln421_reg_502) + $signed(8'd163));
+assign add_ln32_2_fu_368_p2 = ($signed(zext_ln424_reg_524) + $signed(8'd163));
 
-assign add_ln32_3_fu_360_p2 = ($signed(zext_ln421_reg_502) + $signed(8'd164));
+assign add_ln32_3_fu_378_p2 = ($signed(zext_ln424_reg_524) + $signed(8'd164));
 
-assign add_ln32_4_fu_370_p2 = ($signed(zext_ln421_reg_502) + $signed(8'd165));
+assign add_ln32_4_fu_388_p2 = ($signed(zext_ln424_reg_524) + $signed(8'd165));
 
-assign add_ln32_5_fu_380_p2 = ($signed(zext_ln421_reg_502) + $signed(8'd166));
+assign add_ln32_5_fu_398_p2 = ($signed(zext_ln424_reg_524) + $signed(8'd166));
 
-assign add_ln32_6_fu_390_p2 = ($signed(zext_ln421_reg_502) + $signed(8'd167));
+assign add_ln32_6_fu_408_p2 = ($signed(zext_ln424_reg_524) + $signed(8'd167));
 
-assign add_ln32_fu_326_p2 = ($signed(zext_ln421_fu_311_p1) + $signed(8'd161));
+assign add_ln32_fu_347_p2 = ($signed(zext_ln424_fu_332_p1) + $signed(8'd161));
 
-assign add_ln420_fu_297_p2 = (i_3_i_reg_219 + 3'd1);
+assign add_ln422_fu_313_p2 = (ap_phi_mux_i_3_i_phi_fu_244_p4 + 3'd1);
 
-assign add_ln421_fu_315_p2 = ($signed(zext_ln421_fu_311_p1) + $signed(8'd160));
+assign add_ln424_fu_336_p2 = ($signed(zext_ln424_fu_332_p1) + $signed(8'd160));
+
+assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd2];
+
+assign ap_CS_fsm_pp0_stage1 = ap_CS_fsm[32'd3];
+
+assign ap_CS_fsm_pp0_stage2 = ap_CS_fsm[32'd4];
+
+assign ap_CS_fsm_pp0_stage3 = ap_CS_fsm[32'd5];
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
-assign ap_CS_fsm_state10 = ap_CS_fsm[32'd9];
+assign ap_CS_fsm_state10 = ap_CS_fsm[32'd8];
 
-assign ap_CS_fsm_state11 = ap_CS_fsm[32'd10];
+assign ap_CS_fsm_state11 = ap_CS_fsm[32'd9];
 
-assign ap_CS_fsm_state12 = ap_CS_fsm[32'd11];
+assign ap_CS_fsm_state12 = ap_CS_fsm[32'd10];
 
-assign ap_CS_fsm_state13 = ap_CS_fsm[32'd12];
+assign ap_CS_fsm_state13 = ap_CS_fsm[32'd11];
 
-assign ap_CS_fsm_state14 = ap_CS_fsm[32'd13];
+assign ap_CS_fsm_state14 = ap_CS_fsm[32'd12];
 
-assign ap_CS_fsm_state15 = ap_CS_fsm[32'd14];
+assign ap_CS_fsm_state15 = ap_CS_fsm[32'd13];
 
-assign ap_CS_fsm_state16 = ap_CS_fsm[32'd15];
+assign ap_CS_fsm_state16 = ap_CS_fsm[32'd14];
+
+assign ap_CS_fsm_state17 = ap_CS_fsm[32'd15];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
-assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
+assign ap_CS_fsm_state8 = ap_CS_fsm[32'd6];
 
-assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
+assign ap_CS_fsm_state9 = ap_CS_fsm[32'd7];
 
-assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
+assign ap_block_pp0_stage0 = ~(1'b1 == 1'b1);
 
-assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
+assign ap_block_pp0_stage0_11001 = ~(1'b1 == 1'b1);
 
-assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
+assign ap_block_pp0_stage0_subdone = ~(1'b1 == 1'b1);
 
-assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
+assign ap_block_pp0_stage1 = ~(1'b1 == 1'b1);
 
-assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
+assign ap_block_pp0_stage1_11001 = ~(1'b1 == 1'b1);
 
-assign grp_keccak_absorb_fu_230_ap_start = grp_keccak_absorb_fu_230_ap_start_reg;
+assign ap_block_pp0_stage1_subdone = ~(1'b1 == 1'b1);
 
-assign grp_keccak_squeezeblocks_1_fu_241_ap_start = grp_keccak_squeezeblocks_1_fu_241_ap_start_reg;
+assign ap_block_pp0_stage2 = ~(1'b1 == 1'b1);
 
-assign grp_pqcrystals_dilithium_2_fu_247_ap_start = grp_pqcrystals_dilithium_2_fu_247_ap_start_reg;
+assign ap_block_pp0_stage2_11001 = ~(1'b1 == 1'b1);
 
-assign i_1_fu_275_p2 = (i_0_i_i_i_reg_208 + 5'd1);
+assign ap_block_pp0_stage2_subdone = ~(1'b1 == 1'b1);
 
-assign i_fu_421_p4 = {{grp_keccak_absorb_fu_230_ap_return[31:3]}};
+assign ap_block_pp0_stage3 = ~(1'b1 == 1'b1);
 
-assign icmp_ln364_fu_269_p2 = ((i_0_i_i_i_reg_208 == 5'd25) ? 1'b1 : 1'b0);
+assign ap_block_pp0_stage3_11001 = ~(1'b1 == 1'b1);
 
-assign icmp_ln420_fu_291_p2 = ((i_3_i_reg_219 == 3'd6) ? 1'b1 : 1'b0);
+assign ap_block_pp0_stage3_subdone = ~(1'b1 == 1'b1);
 
-assign r_7_i1_i_fu_400_p9 = {{{{{{{{seed_q1}, {seed_q0}}, {seed_load_5_reg_577}}, {seed_load_4_reg_572}}, {seed_load_3_reg_557}}, {seed_load_2_reg_552}}, {seed_load_1_reg_537}}, {seed_load_reg_532}};
+assign ap_block_state3_pp0_stage0_iter0 = ~(1'b1 == 1'b1);
 
-assign shl_ln1_fu_303_p3 = {{i_3_i_reg_219}, {3'd0}};
+assign ap_block_state4_pp0_stage1_iter0 = ~(1'b1 == 1'b1);
 
-assign shl_ln454_fu_451_p2 = 64'd31 << zext_ln454_fu_447_p1;
+assign ap_block_state5_pp0_stage2_iter0 = ~(1'b1 == 1'b1);
 
-assign shl_ln_fu_439_p3 = {{trunc_ln454_fu_436_p1}, {3'd0}};
+assign ap_block_state6_pp0_stage3_iter0 = ~(1'b1 == 1'b1);
 
-assign state_s_addr_2_reg_602 = 64'd16;
+assign ap_block_state7_pp0_stage0_iter1 = ~(1'b1 == 1'b1);
 
-assign t_0_fu_255_p1 = nonce[7:0];
+assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
-assign trunc_ln454_fu_436_p1 = state_pos_write_assi_reg_592[2:0];
+assign grp_keccak_absorb_fu_251_ap_start = grp_keccak_absorb_fu_251_ap_start_reg;
 
-assign trunc_ln503_fu_337_p1 = a_coeffs_offset[1:0];
+assign grp_keccak_squeezeblocks_1_fu_262_ap_start = grp_keccak_squeezeblocks_1_fu_262_ap_start_reg;
 
-assign xor_ln421_fu_414_p2 = (state_s_q0 ^ r_7_i1_i_fu_400_p9);
+assign grp_pqcrystals_dilithium_2_fu_268_ap_start = grp_pqcrystals_dilithium_2_fu_268_ap_start_reg;
 
-assign xor_ln454_fu_457_p2 = (state_s_q0 ^ shl_ln454_fu_451_p2);
+assign i_1_fu_296_p2 = (i_0_i_i_i_reg_229 + 5'd1);
 
-assign xor_ln455_fu_464_p2 = (state_s_q0 ^ 64'd9223372036854775808);
+assign i_fu_441_p4 = {{grp_keccak_absorb_fu_251_ap_return[31:3]}};
 
-assign zext_ln32_1_fu_345_p1 = add_ln32_1_fu_340_p2;
+assign icmp_ln364_fu_290_p2 = ((i_0_i_i_i_reg_229 == 5'd25) ? 1'b1 : 1'b0);
 
-assign zext_ln32_2_fu_355_p1 = add_ln32_2_fu_350_p2;
+assign icmp_ln422_fu_307_p2 = ((ap_phi_mux_i_3_i_phi_fu_244_p4 == 3'd6) ? 1'b1 : 1'b0);
 
-assign zext_ln32_3_fu_365_p1 = add_ln32_3_fu_360_p2;
+assign r_7_i1_i_fu_418_p9 = {{{{{{{{seed_q1}, {seed_q0}}, {seed_load_5_reg_600}}, {seed_load_4_reg_595}}, {seed_load_3_reg_580}}, {seed_load_2_reg_575}}, {seed_load_1_reg_555}}, {seed_load_reg_550}};
 
-assign zext_ln32_4_fu_375_p1 = add_ln32_4_fu_370_p2;
+assign shl_ln1_fu_324_p3 = {{ap_phi_mux_i_3_i_phi_fu_244_p4}, {3'd0}};
 
-assign zext_ln32_5_fu_385_p1 = add_ln32_5_fu_380_p2;
+assign shl_ln462_fu_471_p2 = 64'd31 << zext_ln462_fu_467_p1;
 
-assign zext_ln32_6_fu_395_p1 = add_ln32_6_fu_390_p2;
+assign shl_ln_fu_459_p3 = {{trunc_ln462_fu_456_p1}, {3'd0}};
 
-assign zext_ln32_fu_332_p1 = add_ln32_fu_326_p2;
+assign t_0_fu_276_p1 = nonce[7:0];
 
-assign zext_ln365_fu_281_p1 = i_0_i_i_i_reg_208;
+assign trunc_ln462_fu_456_p1 = state_pos_write_assi_reg_620[2:0];
 
-assign zext_ln420_fu_286_p1 = i_3_i_reg_219;
+assign trunc_ln505_fu_438_p1 = a_coeffs_offset[1:0];
 
-assign zext_ln421_1_fu_321_p1 = add_ln421_fu_315_p2;
+assign xor_ln424_fu_432_p2 = (state_s_load_2_reg_570 ^ r_7_i1_i_fu_418_p9);
 
-assign zext_ln421_fu_311_p1 = shl_ln1_fu_303_p3;
+assign xor_ln462_fu_477_p2 = (state_s_q1 ^ shl_ln462_fu_471_p2);
 
-assign zext_ln454_1_fu_431_p1 = i_fu_421_p4;
+assign xor_ln463_fu_484_p2 = (state_s_q1 ^ 64'd9223372036854775808);
 
-assign zext_ln454_fu_447_p1 = shl_ln_fu_439_p3;
+assign zext_ln32_1_fu_363_p1 = add_ln32_1_fu_358_p2;
+
+assign zext_ln32_2_fu_373_p1 = add_ln32_2_fu_368_p2;
+
+assign zext_ln32_3_fu_383_p1 = add_ln32_3_fu_378_p2;
+
+assign zext_ln32_4_fu_393_p1 = add_ln32_4_fu_388_p2;
+
+assign zext_ln32_5_fu_403_p1 = add_ln32_5_fu_398_p2;
+
+assign zext_ln32_6_fu_413_p1 = add_ln32_6_fu_408_p2;
+
+assign zext_ln32_fu_353_p1 = add_ln32_fu_347_p2;
+
+assign zext_ln365_fu_302_p1 = i_0_i_i_i_reg_229;
+
+assign zext_ln422_fu_319_p1 = ap_phi_mux_i_3_i_phi_fu_244_p4;
+
+assign zext_ln424_1_fu_342_p1 = add_ln424_fu_336_p2;
+
+assign zext_ln424_fu_332_p1 = shl_ln1_fu_324_p3;
+
+assign zext_ln462_1_fu_451_p1 = i_fu_441_p4;
+
+assign zext_ln462_fu_467_p1 = shl_ln_fu_459_p3;
 
 always @ (posedge ap_clk) begin
-    zext_ln421_reg_502[2:0] <= 3'b000;
-    zext_ln421_reg_502[7:6] <= 2'b00;
-    state_s_addr_3_reg_522[4:3] <= 2'b00;
+    zext_ln424_reg_524[2:0] <= 3'b000;
+    zext_ln424_reg_524[7:6] <= 2'b00;
+    state_s_addr_3_reg_544[4:3] <= 2'b00;
 end
 
 endmodule //pqcrystals_dilithium_9

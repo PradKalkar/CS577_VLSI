@@ -2982,7 +2982,7 @@ architecture behav of pqcrystals_dilithium_23 is
     signal mul_ln96_fu_6942_p0 : STD_LOGIC_VECTOR (22 downto 0);
     signal mul_ln96_fu_6942_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln96_fu_6942_p2 : STD_LOGIC_VECTOR (53 downto 0);
-    signal empty_21_fu_6977_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_22_fu_6977_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal zext_ln93_3_fu_7000_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln93_1_fu_7004_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln94_8_fu_7014_p2 : STD_LOGIC_VECTOR (8 downto 0);
@@ -2992,7 +2992,7 @@ architecture behav of pqcrystals_dilithium_23 is
     signal mul_ln96_1_fu_7049_p0 : STD_LOGIC_VECTOR (22 downto 0);
     signal mul_ln96_1_fu_7049_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln96_1_fu_7049_p2 : STD_LOGIC_VECTOR (53 downto 0);
-    signal empty_23_fu_7084_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_24_fu_7084_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal zext_ln93_5_fu_7107_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln93_2_fu_7111_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln94_2_fu_7121_p2 : STD_LOGIC_VECTOR (8 downto 0);
@@ -3001,7 +3001,7 @@ architecture behav of pqcrystals_dilithium_23 is
     signal mul_ln96_2_fu_7156_p0 : STD_LOGIC_VECTOR (22 downto 0);
     signal mul_ln96_2_fu_7156_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln96_2_fu_7156_p2 : STD_LOGIC_VECTOR (53 downto 0);
-    signal empty_25_fu_7191_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_26_fu_7191_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal zext_ln93_7_fu_7214_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln93_3_fu_7218_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln94_3_fu_7228_p2 : STD_LOGIC_VECTOR (8 downto 0);
@@ -3010,7 +3010,7 @@ architecture behav of pqcrystals_dilithium_23 is
     signal mul_ln96_3_fu_7263_p0 : STD_LOGIC_VECTOR (22 downto 0);
     signal mul_ln96_3_fu_7263_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln96_3_fu_7263_p2 : STD_LOGIC_VECTOR (53 downto 0);
-    signal empty_27_fu_7298_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_28_fu_7298_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal zext_ln93_9_fu_7321_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln93_4_fu_7325_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln94_4_fu_7335_p2 : STD_LOGIC_VECTOR (8 downto 0);
@@ -3019,7 +3019,7 @@ architecture behav of pqcrystals_dilithium_23 is
     signal mul_ln96_4_fu_7370_p0 : STD_LOGIC_VECTOR (22 downto 0);
     signal mul_ln96_4_fu_7370_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln96_4_fu_7370_p2 : STD_LOGIC_VECTOR (53 downto 0);
-    signal empty_29_fu_7405_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_30_fu_7405_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal zext_ln93_11_fu_7428_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln93_5_fu_7432_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln94_5_fu_7442_p2 : STD_LOGIC_VECTOR (8 downto 0);
@@ -3028,7 +3028,7 @@ architecture behav of pqcrystals_dilithium_23 is
     signal mul_ln96_5_fu_7477_p0 : STD_LOGIC_VECTOR (22 downto 0);
     signal mul_ln96_5_fu_7477_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln96_5_fu_7477_p2 : STD_LOGIC_VECTOR (53 downto 0);
-    signal empty_31_fu_7512_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_32_fu_7512_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal zext_ln93_13_fu_7535_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln93_6_fu_7539_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln94_6_fu_7549_p2 : STD_LOGIC_VECTOR (8 downto 0);
@@ -3037,7 +3037,7 @@ architecture behav of pqcrystals_dilithium_23 is
     signal mul_ln96_6_fu_7584_p0 : STD_LOGIC_VECTOR (22 downto 0);
     signal mul_ln96_6_fu_7584_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul_ln96_6_fu_7584_p2 : STD_LOGIC_VECTOR (53 downto 0);
-    signal empty_33_fu_7619_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal empty_34_fu_7619_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal zext_ln93_15_fu_7642_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln93_7_fu_7646_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln94_7_fu_7656_p2 : STD_LOGIC_VECTOR (8 downto 0);
@@ -7589,13 +7589,13 @@ begin
         end if; 
     end process;
 
-    empty_21_fu_6977_p2 <= "1" when (unsigned(j_19_reg_2698) > unsigned(add_ln91_1_fu_6971_p2)) else "0";
-    empty_23_fu_7084_p2 <= "1" when (unsigned(j_213_reg_2730) > unsigned(add_ln91_2_fu_7078_p2)) else "0";
-    empty_25_fu_7191_p2 <= "1" when (unsigned(j_314_reg_2762) > unsigned(add_ln91_3_fu_7185_p2)) else "0";
-    empty_27_fu_7298_p2 <= "1" when (unsigned(j_4_reg_2794) > unsigned(add_ln91_4_fu_7292_p2)) else "0";
-    empty_29_fu_7405_p2 <= "1" when (unsigned(j_5_reg_2826) > unsigned(add_ln91_5_fu_7399_p2)) else "0";
-    empty_31_fu_7512_p2 <= "1" when (unsigned(j_6_reg_2858) > unsigned(add_ln91_6_fu_7506_p2)) else "0";
-    empty_33_fu_7619_p2 <= "1" when (unsigned(j_7_reg_2890) > unsigned(add_ln91_7_fu_7613_p2)) else "0";
+    empty_22_fu_6977_p2 <= "1" when (unsigned(j_19_reg_2698) > unsigned(add_ln91_1_fu_6971_p2)) else "0";
+    empty_24_fu_7084_p2 <= "1" when (unsigned(j_213_reg_2730) > unsigned(add_ln91_2_fu_7078_p2)) else "0";
+    empty_26_fu_7191_p2 <= "1" when (unsigned(j_314_reg_2762) > unsigned(add_ln91_3_fu_7185_p2)) else "0";
+    empty_28_fu_7298_p2 <= "1" when (unsigned(j_4_reg_2794) > unsigned(add_ln91_4_fu_7292_p2)) else "0";
+    empty_30_fu_7405_p2 <= "1" when (unsigned(j_5_reg_2826) > unsigned(add_ln91_5_fu_7399_p2)) else "0";
+    empty_32_fu_7512_p2 <= "1" when (unsigned(j_6_reg_2858) > unsigned(add_ln91_6_fu_7506_p2)) else "0";
+    empty_34_fu_7619_p2 <= "1" when (unsigned(j_7_reg_2890) > unsigned(add_ln91_7_fu_7613_p2)) else "0";
     empty_fu_6840_p2 <= "1" when (unsigned(j_07_reg_2664) > unsigned(add_ln91_fu_6834_p2)) else "0";
     grp_fu_2935_p2 <= std_logic_vector(unsigned(ap_const_lv23_0) - unsigned(zetas_q0));
     grp_fu_2941_p2 <= std_logic_vector(unsigned(a_q0) + unsigned(a_q1));
@@ -8946,25 +8946,25 @@ begin
     or_ln103_9_fu_3125_p2 <= (tmp_956_fu_2977_p3 or ap_const_lv12_A);
     or_ln103_fu_2990_p2 <= (tmp_956_fu_2977_p3 or ap_const_lv12_1);
     select_ln88_1_fu_6983_p3 <= 
-        j_19_reg_2698 when (empty_21_fu_6977_p2(0) = '1') else 
+        j_19_reg_2698 when (empty_22_fu_6977_p2(0) = '1') else 
         add_ln91_1_fu_6971_p2;
     select_ln88_2_fu_7090_p3 <= 
-        j_213_reg_2730 when (empty_23_fu_7084_p2(0) = '1') else 
+        j_213_reg_2730 when (empty_24_fu_7084_p2(0) = '1') else 
         add_ln91_2_fu_7078_p2;
     select_ln88_3_fu_7197_p3 <= 
-        j_314_reg_2762 when (empty_25_fu_7191_p2(0) = '1') else 
+        j_314_reg_2762 when (empty_26_fu_7191_p2(0) = '1') else 
         add_ln91_3_fu_7185_p2;
     select_ln88_4_fu_7304_p3 <= 
-        j_4_reg_2794 when (empty_27_fu_7298_p2(0) = '1') else 
+        j_4_reg_2794 when (empty_28_fu_7298_p2(0) = '1') else 
         add_ln91_4_fu_7292_p2;
     select_ln88_5_fu_7411_p3 <= 
-        j_5_reg_2826 when (empty_29_fu_7405_p2(0) = '1') else 
+        j_5_reg_2826 when (empty_30_fu_7405_p2(0) = '1') else 
         add_ln91_5_fu_7399_p2;
     select_ln88_6_fu_7518_p3 <= 
-        j_6_reg_2858 when (empty_31_fu_7512_p2(0) = '1') else 
+        j_6_reg_2858 when (empty_32_fu_7512_p2(0) = '1') else 
         add_ln91_6_fu_7506_p2;
     select_ln88_7_fu_7625_p3 <= 
-        j_7_reg_2890 when (empty_33_fu_7619_p2(0) = '1') else 
+        j_7_reg_2890 when (empty_34_fu_7619_p2(0) = '1') else 
         add_ln91_7_fu_7613_p2;
     select_ln88_fu_6846_p3 <= 
         j_07_reg_2664 when (empty_fu_6840_p2(0) = '1') else 

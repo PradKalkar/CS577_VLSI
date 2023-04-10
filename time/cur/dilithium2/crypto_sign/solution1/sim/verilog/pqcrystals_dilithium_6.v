@@ -50,8 +50,8 @@ reg[0:0] ap_return;
 
 (* fsm_encoding = "none" *) reg   [7:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [16:0] trunc_ln333_fu_48_p1;
-reg   [16:0] trunc_ln333_reg_53;
+wire   [16:0] trunc_ln339_fu_48_p1;
+reg   [16:0] trunc_ln339_reg_53;
 wire   [0:0] grp_pqcrystals_dilithium_16_fu_35_ap_return;
 reg   [0:0] tmp4_reg_58;
 wire    ap_CS_fsm_state2;
@@ -98,7 +98,7 @@ pqcrystals_dilithium_16 grp_pqcrystals_dilithium_16_fu_35(
     .a_coeffs_ce0(grp_pqcrystals_dilithium_16_fu_35_a_coeffs_ce0),
     .a_coeffs_q0(v_vec_coeffs_q0),
     .a_coeffs_offset(grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset),
-    .B(trunc_ln333_reg_53),
+    .B(trunc_ln339_reg_53),
     .ap_return(grp_pqcrystals_dilithium_16_fu_35_ap_return)
 );
 
@@ -160,7 +160,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        trunc_ln333_reg_53 <= trunc_ln333_fu_48_p1;
+        trunc_ln339_reg_53 <= trunc_ln339_fu_48_p1;
     end
 end
 
@@ -318,7 +318,7 @@ end
 
 assign grp_pqcrystals_dilithium_16_fu_35_ap_start = grp_pqcrystals_dilithium_16_fu_35_ap_start_reg;
 
-assign trunc_ln333_fu_48_p1 = bound[16:0];
+assign trunc_ln339_fu_48_p1 = bound[16:0];
 
 assign v_vec_coeffs_address0 = grp_pqcrystals_dilithium_16_fu_35_a_coeffs_address0;
 

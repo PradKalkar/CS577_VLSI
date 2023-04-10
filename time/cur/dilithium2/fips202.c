@@ -399,9 +399,10 @@ unsigned int keccak_absorb(uint64_t s[25],
   }
 
   if(pos && mlen >= r-pos) {
-    for(i=0;i<(r-pos)/8;i++)
-    #pragma HLS unroll
+    for(i=0;i<(r-pos)/8;i++){
+    #pragma HLS pipeline
       s[pos/8+i] ^= load64(m+8*i);
+    }
     m += r-pos;
     mlen -= r-pos;
     pos = 0;
@@ -409,25 +410,32 @@ unsigned int keccak_absorb(uint64_t s[25],
   }
 
   while(mlen >= r) {
-    #pragma HLS unroll
-    for(i=0;i<r/8;i++)
+    for(i=0;i<r/8;i++){
+#pragma HLS pipeline
       s[i] ^= load64(m+8*i);
+    }
     m += r;
     mlen -= r;
     KeccakF1600_StatePermute(s);
   }
 
-  for(i=0;i<mlen/8;i++)
+  for(i=0;i<mlen/8;i++){
+#pragma HLS pipeline
     s[pos/8+i] ^= load64(m+8*i);
+  }
   m += 8*i;
   mlen -= 8*i;
   pos += 8*i;
 
   if(mlen) {
-    for(i=0;i<8;i++)
+    for(i=0;i<8;i++){
+#pragma HLS unroll
       t[i] = 0;
-    for(i=0;i<mlen;i++)
+    }
+    for(i=0;i<mlen;i++){
+#pragma HLS pipeline
       t[i] = m[i];
+    }
     s[pos/8] ^= load64(t);
     pos += mlen;
   }
@@ -476,10 +484,11 @@ static void keccak_squeezeblocks(uint8_t *out,
   unsigned int i;
 
   while(nblocks > 0) {
-    #pragma HLS unroll
     KeccakF1600_StatePermute(s);
-    for(i=0;i<r/8;i++)
+    for(i=0;i<r/8;i++){
+      #pragma HLS pipeline
       store64(out + 8*i, s[i]);
+    }
     out += r;
     nblocks--;
   }

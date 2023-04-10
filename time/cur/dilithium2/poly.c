@@ -105,9 +105,10 @@ void poly_sub(poly *c, const poly *a, const poly *b) {
   unsigned int i;
   DBENCH_START();
 
-  for(i = 0; i < N; ++i)
+  for(i = 0; i < N; ++i){
     #pragma HLS unroll
     c->coeffs[i] = a->coeffs[i] - b->coeffs[i];
+  }
 
   DBENCH_STOP(*tadd);
 }
@@ -124,9 +125,10 @@ void poly_shiftl(poly *a) {
   unsigned int i;
   DBENCH_START();
 
-  for(i = 0; i < N; ++i)
+  for(i = 0; i < N; ++i){
   #pragma HLS unroll
     a->coeffs[i] <<= D;
+  }
 
   DBENCH_STOP(*tmul);
 }
@@ -179,9 +181,10 @@ void poly_pointwise_montgomery(poly *c, const poly *a, const poly *b) {
   unsigned int i;
   DBENCH_START();
 
-  for(i = 0; i < N; ++i)
+  for(i = 0; i < N; ++i){
     #pragma HLS unroll
     c->coeffs[i] = montgomery_reduce((int64_t)a->coeffs[i] * b->coeffs[i]);
+  }
 
   DBENCH_STOP(*tmul);
 }
@@ -202,10 +205,10 @@ void poly_power2round(poly *a1, poly *a0, const poly *a) {
   unsigned int i;
   DBENCH_START();
 
-  for(i = 0; i < N; ++i)
+  for(i = 0; i < N; ++i){
     #pragma HLS unroll
     a1->coeffs[i] = power2round(&a0->coeffs[i], a->coeffs[i]);
-
+  }
   DBENCH_STOP(*tround);
 }
 
@@ -379,7 +382,6 @@ void poly_uniform(poly *a,
   ctr = rej_uniform(a->coeffs, N, buf, buflen);
 
   while(ctr < N) {
-    #pragma HLS unroll
     off = buflen % 3;
     for(i = 0; i < off; ++i)
       buf[i] = buf[buflen - off + i];
@@ -530,7 +532,7 @@ void poly_challenge(poly *c, const uint8_t seed[SEEDBYTES]) {
   pos = 8;
 
   for(i = 0; i < N; ++i){
-    #pragma HLS unroll
+//    #pragma HLS unroll
     c->coeffs[i] = 0;
   }
   for(i = N-TAU; i < N; ++i) {

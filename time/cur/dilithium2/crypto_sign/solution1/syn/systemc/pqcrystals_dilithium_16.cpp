@@ -41,17 +41,17 @@ pqcrystals_dilithium_16::pqcrystals_dilithium_16(sc_module_name name) : sc_modul
 
     SC_METHOD(thread_a_coeffs_address0);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( zext_ln304_1_fu_125_p1 );
+    sensitive << ( zext_ln307_1_fu_125_p1 );
 
     SC_METHOD(thread_a_coeffs_ce0);
     sensitive << ( ap_CS_fsm_state2 );
 
-    SC_METHOD(thread_add_ln304_fu_120_p2);
+    SC_METHOD(thread_add_ln307_fu_120_p2);
     sensitive << ( tmp_reg_174 );
-    sensitive << ( zext_ln304_fu_116_p1 );
+    sensitive << ( zext_ln307_fu_116_p1 );
 
-    SC_METHOD(thread_and_ln305_fu_152_p2);
-    sensitive << ( shl_ln305_fu_146_p2 );
+    SC_METHOD(thread_and_ln308_fu_152_p2);
+    sensitive << ( shl_ln308_fu_146_p2 );
     sensitive << ( t_fu_138_p3 );
 
     SC_METHOD(thread_ap_CS_fsm_state1);
@@ -66,51 +66,51 @@ pqcrystals_dilithium_16::pqcrystals_dilithium_16(sc_module_name name) : sc_modul
     SC_METHOD(thread_ap_done);
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm_state1 );
-    sensitive << ( icmp_ln302_reg_179 );
+    sensitive << ( icmp_ln305_reg_179 );
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( icmp_ln307_fu_164_p2 );
+    sensitive << ( icmp_ln310_fu_164_p2 );
 
     SC_METHOD(thread_ap_idle);
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm_state1 );
 
     SC_METHOD(thread_ap_phi_mux_p_0_ph_phi_fu_84_p4);
-    sensitive << ( icmp_ln302_reg_179 );
+    sensitive << ( icmp_ln305_reg_179 );
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( icmp_ln307_fu_164_p2 );
+    sensitive << ( icmp_ln310_fu_164_p2 );
     sensitive << ( p_0_ph_reg_80 );
 
     SC_METHOD(thread_ap_ready);
-    sensitive << ( icmp_ln302_reg_179 );
+    sensitive << ( icmp_ln305_reg_179 );
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( icmp_ln307_fu_164_p2 );
+    sensitive << ( icmp_ln310_fu_164_p2 );
 
     SC_METHOD(thread_ap_return);
-    sensitive << ( icmp_ln302_reg_179 );
+    sensitive << ( icmp_ln305_reg_179 );
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( icmp_ln307_fu_164_p2 );
+    sensitive << ( icmp_ln310_fu_164_p2 );
     sensitive << ( ap_phi_mux_p_0_ph_phi_fu_84_p4 );
     sensitive << ( ap_return_preg );
 
     SC_METHOD(thread_i_fu_110_p2);
     sensitive << ( i_0_reg_69 );
 
-    SC_METHOD(thread_icmp_ln302_fu_104_p2);
+    SC_METHOD(thread_icmp_ln305_fu_104_p2);
     sensitive << ( ap_CS_fsm_state2 );
     sensitive << ( i_0_reg_69 );
 
-    SC_METHOD(thread_icmp_ln307_fu_164_p2);
+    SC_METHOD(thread_icmp_ln310_fu_164_p2);
     sensitive << ( B_cast_reg_169 );
-    sensitive << ( icmp_ln302_reg_179 );
+    sensitive << ( icmp_ln305_reg_179 );
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( t_2_fu_158_p2 );
 
-    SC_METHOD(thread_shl_ln305_fu_146_p2);
+    SC_METHOD(thread_shl_ln308_fu_146_p2);
     sensitive << ( a_coeffs_q0 );
 
     SC_METHOD(thread_t_2_fu_158_p2);
     sensitive << ( a_coeffs_q0 );
-    sensitive << ( and_ln305_fu_152_p2 );
+    sensitive << ( and_ln308_fu_152_p2 );
 
     SC_METHOD(thread_t_fu_138_p3);
     sensitive << ( tmp_491_fu_130_p3 );
@@ -121,19 +121,19 @@ pqcrystals_dilithium_16::pqcrystals_dilithium_16(sc_module_name name) : sc_modul
     SC_METHOD(thread_tmp_fu_96_p3);
     sensitive << ( a_coeffs_offset );
 
-    SC_METHOD(thread_zext_ln304_1_fu_125_p1);
-    sensitive << ( add_ln304_fu_120_p2 );
+    SC_METHOD(thread_zext_ln307_1_fu_125_p1);
+    sensitive << ( add_ln307_fu_120_p2 );
 
-    SC_METHOD(thread_zext_ln304_fu_116_p1);
+    SC_METHOD(thread_zext_ln307_fu_116_p1);
     sensitive << ( i_0_reg_69 );
 
     SC_METHOD(thread_ap_NS_fsm);
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm );
     sensitive << ( ap_CS_fsm_state1 );
-    sensitive << ( icmp_ln302_reg_179 );
+    sensitive << ( icmp_ln305_reg_179 );
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( icmp_ln307_fu_164_p2 );
+    sensitive << ( icmp_ln310_fu_164_p2 );
 
     ap_CS_fsm = "001";
     ap_return_preg = "0";
@@ -165,23 +165,23 @@ pqcrystals_dilithium_16::pqcrystals_dilithium_16(sc_module_name name) : sc_modul
     sc_trace(mVcdFile, B_cast_reg_169, "B_cast_reg_169");
     sc_trace(mVcdFile, tmp_fu_96_p3, "tmp_fu_96_p3");
     sc_trace(mVcdFile, tmp_reg_174, "tmp_reg_174");
-    sc_trace(mVcdFile, icmp_ln302_fu_104_p2, "icmp_ln302_fu_104_p2");
-    sc_trace(mVcdFile, icmp_ln302_reg_179, "icmp_ln302_reg_179");
+    sc_trace(mVcdFile, icmp_ln305_fu_104_p2, "icmp_ln305_fu_104_p2");
+    sc_trace(mVcdFile, icmp_ln305_reg_179, "icmp_ln305_reg_179");
     sc_trace(mVcdFile, ap_CS_fsm_state2, "ap_CS_fsm_state2");
     sc_trace(mVcdFile, i_fu_110_p2, "i_fu_110_p2");
     sc_trace(mVcdFile, i_reg_183, "i_reg_183");
     sc_trace(mVcdFile, i_0_reg_69, "i_0_reg_69");
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
-    sc_trace(mVcdFile, icmp_ln307_fu_164_p2, "icmp_ln307_fu_164_p2");
+    sc_trace(mVcdFile, icmp_ln310_fu_164_p2, "icmp_ln310_fu_164_p2");
     sc_trace(mVcdFile, ap_phi_mux_p_0_ph_phi_fu_84_p4, "ap_phi_mux_p_0_ph_phi_fu_84_p4");
     sc_trace(mVcdFile, p_0_ph_reg_80, "p_0_ph_reg_80");
-    sc_trace(mVcdFile, zext_ln304_1_fu_125_p1, "zext_ln304_1_fu_125_p1");
-    sc_trace(mVcdFile, zext_ln304_fu_116_p1, "zext_ln304_fu_116_p1");
-    sc_trace(mVcdFile, add_ln304_fu_120_p2, "add_ln304_fu_120_p2");
+    sc_trace(mVcdFile, zext_ln307_1_fu_125_p1, "zext_ln307_1_fu_125_p1");
+    sc_trace(mVcdFile, zext_ln307_fu_116_p1, "zext_ln307_fu_116_p1");
+    sc_trace(mVcdFile, add_ln307_fu_120_p2, "add_ln307_fu_120_p2");
     sc_trace(mVcdFile, tmp_491_fu_130_p3, "tmp_491_fu_130_p3");
-    sc_trace(mVcdFile, shl_ln305_fu_146_p2, "shl_ln305_fu_146_p2");
+    sc_trace(mVcdFile, shl_ln308_fu_146_p2, "shl_ln308_fu_146_p2");
     sc_trace(mVcdFile, t_fu_138_p3, "t_fu_138_p3");
-    sc_trace(mVcdFile, and_ln305_fu_152_p2, "and_ln305_fu_152_p2");
+    sc_trace(mVcdFile, and_ln308_fu_152_p2, "and_ln308_fu_152_p2");
     sc_trace(mVcdFile, t_2_fu_158_p2, "t_2_fu_158_p2");
     sc_trace(mVcdFile, ap_return_preg, "ap_return_preg");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
@@ -206,25 +206,25 @@ void pqcrystals_dilithium_16::thread_ap_clk_no_reset_() {
         ap_return_preg = ap_const_lv1_0;
     } else {
         if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-             (esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln307_fu_164_p2.read()) || 
-              esl_seteq<1,1,1>(icmp_ln302_reg_179.read(), ap_const_lv1_1)))) {
+             (esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln310_fu_164_p2.read()) || 
+              esl_seteq<1,1,1>(icmp_ln305_reg_179.read(), ap_const_lv1_1)))) {
             ap_return_preg = ap_phi_mux_p_0_ph_phi_fu_84_p4.read();
         }
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-         esl_seteq<1,1,1>(icmp_ln302_reg_179.read(), ap_const_lv1_0) && 
-         esl_seteq<1,1,1>(icmp_ln307_fu_164_p2.read(), ap_const_lv1_1))) {
+         esl_seteq<1,1,1>(icmp_ln305_reg_179.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(icmp_ln310_fu_164_p2.read(), ap_const_lv1_1))) {
         i_0_reg_69 = i_reg_183.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
         i_0_reg_69 = ap_const_lv9_0;
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
-         esl_seteq<1,1,1>(icmp_ln302_fu_104_p2.read(), ap_const_lv1_1))) {
+         esl_seteq<1,1,1>(icmp_ln305_fu_104_p2.read(), ap_const_lv1_1))) {
         p_0_ph_reg_80 = ap_const_lv1_0;
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-                esl_seteq<1,1,1>(icmp_ln302_reg_179.read(), ap_const_lv1_0) && 
-                esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln307_fu_164_p2.read()))) {
+                esl_seteq<1,1,1>(icmp_ln305_reg_179.read(), ap_const_lv1_0) && 
+                esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln310_fu_164_p2.read()))) {
         p_0_ph_reg_80 = ap_const_lv1_1;
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
@@ -233,7 +233,7 @@ void pqcrystals_dilithium_16::thread_ap_clk_no_reset_() {
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
         i_reg_183 = i_fu_110_p2.read();
-        icmp_ln302_reg_179 = icmp_ln302_fu_104_p2.read();
+        icmp_ln305_reg_179 = icmp_ln305_fu_104_p2.read();
     }
 }
 
@@ -242,7 +242,7 @@ void pqcrystals_dilithium_16::thread_B_cast_fu_92_p1() {
 }
 
 void pqcrystals_dilithium_16::thread_a_coeffs_address0() {
-    a_coeffs_address0 =  (sc_lv<10>) (zext_ln304_1_fu_125_p1.read());
+    a_coeffs_address0 =  (sc_lv<10>) (zext_ln307_1_fu_125_p1.read());
 }
 
 void pqcrystals_dilithium_16::thread_a_coeffs_ce0() {
@@ -253,12 +253,12 @@ void pqcrystals_dilithium_16::thread_a_coeffs_ce0() {
     }
 }
 
-void pqcrystals_dilithium_16::thread_add_ln304_fu_120_p2() {
-    add_ln304_fu_120_p2 = (!tmp_reg_174.read().is_01() || !zext_ln304_fu_116_p1.read().is_01())? sc_lv<12>(): (sc_biguint<12>(tmp_reg_174.read()) + sc_biguint<12>(zext_ln304_fu_116_p1.read()));
+void pqcrystals_dilithium_16::thread_add_ln307_fu_120_p2() {
+    add_ln307_fu_120_p2 = (!tmp_reg_174.read().is_01() || !zext_ln307_fu_116_p1.read().is_01())? sc_lv<12>(): (sc_biguint<12>(tmp_reg_174.read()) + sc_biguint<12>(zext_ln307_fu_116_p1.read()));
 }
 
-void pqcrystals_dilithium_16::thread_and_ln305_fu_152_p2() {
-    and_ln305_fu_152_p2 = (shl_ln305_fu_146_p2.read() & t_fu_138_p3.read());
+void pqcrystals_dilithium_16::thread_and_ln308_fu_152_p2() {
+    and_ln308_fu_152_p2 = (shl_ln308_fu_146_p2.read() & t_fu_138_p3.read());
 }
 
 void pqcrystals_dilithium_16::thread_ap_CS_fsm_state1() {
@@ -277,8 +277,8 @@ void pqcrystals_dilithium_16::thread_ap_done() {
     if (((esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) && 
           esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) || 
          (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-          (esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln307_fu_164_p2.read()) || 
-           esl_seteq<1,1,1>(icmp_ln302_reg_179.read(), ap_const_lv1_1))))) {
+          (esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln310_fu_164_p2.read()) || 
+           esl_seteq<1,1,1>(icmp_ln305_reg_179.read(), ap_const_lv1_1))))) {
         ap_done = ap_const_logic_1;
     } else {
         ap_done = ap_const_logic_0;
@@ -296,8 +296,8 @@ void pqcrystals_dilithium_16::thread_ap_idle() {
 
 void pqcrystals_dilithium_16::thread_ap_phi_mux_p_0_ph_phi_fu_84_p4() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-         esl_seteq<1,1,1>(icmp_ln302_reg_179.read(), ap_const_lv1_0) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln307_fu_164_p2.read()))) {
+         esl_seteq<1,1,1>(icmp_ln305_reg_179.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln310_fu_164_p2.read()))) {
         ap_phi_mux_p_0_ph_phi_fu_84_p4 = ap_const_lv1_1;
     } else {
         ap_phi_mux_p_0_ph_phi_fu_84_p4 = p_0_ph_reg_80.read();
@@ -306,8 +306,8 @@ void pqcrystals_dilithium_16::thread_ap_phi_mux_p_0_ph_phi_fu_84_p4() {
 
 void pqcrystals_dilithium_16::thread_ap_ready() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-         (esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln307_fu_164_p2.read()) || 
-          esl_seteq<1,1,1>(icmp_ln302_reg_179.read(), ap_const_lv1_1)))) {
+         (esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln310_fu_164_p2.read()) || 
+          esl_seteq<1,1,1>(icmp_ln305_reg_179.read(), ap_const_lv1_1)))) {
         ap_ready = ap_const_logic_1;
     } else {
         ap_ready = ap_const_logic_0;
@@ -316,8 +316,8 @@ void pqcrystals_dilithium_16::thread_ap_ready() {
 
 void pqcrystals_dilithium_16::thread_ap_return() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-         (esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln307_fu_164_p2.read()) || 
-          esl_seteq<1,1,1>(icmp_ln302_reg_179.read(), ap_const_lv1_1)))) {
+         (esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln310_fu_164_p2.read()) || 
+          esl_seteq<1,1,1>(icmp_ln305_reg_179.read(), ap_const_lv1_1)))) {
         ap_return = ap_phi_mux_p_0_ph_phi_fu_84_p4.read();
     } else {
         ap_return = ap_return_preg.read();
@@ -328,20 +328,20 @@ void pqcrystals_dilithium_16::thread_i_fu_110_p2() {
     i_fu_110_p2 = (!i_0_reg_69.read().is_01() || !ap_const_lv9_1.is_01())? sc_lv<9>(): (sc_biguint<9>(i_0_reg_69.read()) + sc_biguint<9>(ap_const_lv9_1));
 }
 
-void pqcrystals_dilithium_16::thread_icmp_ln302_fu_104_p2() {
-    icmp_ln302_fu_104_p2 = (!i_0_reg_69.read().is_01() || !ap_const_lv9_100.is_01())? sc_lv<1>(): sc_lv<1>(i_0_reg_69.read() == ap_const_lv9_100);
+void pqcrystals_dilithium_16::thread_icmp_ln305_fu_104_p2() {
+    icmp_ln305_fu_104_p2 = (!i_0_reg_69.read().is_01() || !ap_const_lv9_100.is_01())? sc_lv<1>(): sc_lv<1>(i_0_reg_69.read() == ap_const_lv9_100);
 }
 
-void pqcrystals_dilithium_16::thread_icmp_ln307_fu_164_p2() {
-    icmp_ln307_fu_164_p2 = (!t_2_fu_158_p2.read().is_01() || !B_cast_reg_169.read().is_01())? sc_lv<1>(): (sc_bigint<32>(t_2_fu_158_p2.read()) < sc_bigint<32>(B_cast_reg_169.read()));
+void pqcrystals_dilithium_16::thread_icmp_ln310_fu_164_p2() {
+    icmp_ln310_fu_164_p2 = (!t_2_fu_158_p2.read().is_01() || !B_cast_reg_169.read().is_01())? sc_lv<1>(): (sc_bigint<32>(t_2_fu_158_p2.read()) < sc_bigint<32>(B_cast_reg_169.read()));
 }
 
-void pqcrystals_dilithium_16::thread_shl_ln305_fu_146_p2() {
-    shl_ln305_fu_146_p2 = (!ap_const_lv32_1.is_01())? sc_lv<32>(): a_coeffs_q0.read() << (unsigned short)ap_const_lv32_1.to_uint();
+void pqcrystals_dilithium_16::thread_shl_ln308_fu_146_p2() {
+    shl_ln308_fu_146_p2 = (!ap_const_lv32_1.is_01())? sc_lv<32>(): a_coeffs_q0.read() << (unsigned short)ap_const_lv32_1.to_uint();
 }
 
 void pqcrystals_dilithium_16::thread_t_2_fu_158_p2() {
-    t_2_fu_158_p2 = (!a_coeffs_q0.read().is_01() || !and_ln305_fu_152_p2.read().is_01())? sc_lv<32>(): (sc_biguint<32>(a_coeffs_q0.read()) - sc_biguint<32>(and_ln305_fu_152_p2.read()));
+    t_2_fu_158_p2 = (!a_coeffs_q0.read().is_01() || !and_ln308_fu_152_p2.read().is_01())? sc_lv<32>(): (sc_biguint<32>(a_coeffs_q0.read()) - sc_biguint<32>(and_ln308_fu_152_p2.read()));
 }
 
 void pqcrystals_dilithium_16::thread_t_fu_138_p3() {
@@ -356,12 +356,12 @@ void pqcrystals_dilithium_16::thread_tmp_fu_96_p3() {
     tmp_fu_96_p3 = esl_concat<4,8>(a_coeffs_offset.read(), ap_const_lv8_0);
 }
 
-void pqcrystals_dilithium_16::thread_zext_ln304_1_fu_125_p1() {
-    zext_ln304_1_fu_125_p1 = esl_zext<64,12>(add_ln304_fu_120_p2.read());
+void pqcrystals_dilithium_16::thread_zext_ln307_1_fu_125_p1() {
+    zext_ln307_1_fu_125_p1 = esl_zext<64,12>(add_ln307_fu_120_p2.read());
 }
 
-void pqcrystals_dilithium_16::thread_zext_ln304_fu_116_p1() {
-    zext_ln304_fu_116_p1 = esl_zext<12,9>(i_0_reg_69.read());
+void pqcrystals_dilithium_16::thread_zext_ln307_fu_116_p1() {
+    zext_ln307_fu_116_p1 = esl_zext<12,9>(i_0_reg_69.read());
 }
 
 void pqcrystals_dilithium_16::thread_ap_NS_fsm() {
@@ -377,8 +377,8 @@ void pqcrystals_dilithium_16::thread_ap_NS_fsm() {
             ap_NS_fsm = ap_ST_fsm_state3;
             break;
         case 4 : 
-            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && (esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln307_fu_164_p2.read()) || 
-  esl_seteq<1,1,1>(icmp_ln302_reg_179.read(), ap_const_lv1_1)))) {
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && (esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln310_fu_164_p2.read()) || 
+  esl_seteq<1,1,1>(icmp_ln305_reg_179.read(), ap_const_lv1_1)))) {
                 ap_NS_fsm = ap_ST_fsm_state1;
             } else {
                 ap_NS_fsm = ap_ST_fsm_state2;

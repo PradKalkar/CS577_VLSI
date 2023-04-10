@@ -63,10 +63,10 @@ struct pqcrystals_dilithium_5 : public sc_module {
     pqcrystals_dilithium_14* grp_pqcrystals_dilithium_14_fu_116;
     sc_signal< sc_lv<6> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
-    sc_signal< sc_lv<2> > trunc_ln138_fu_128_p1;
-    sc_signal< sc_lv<2> > trunc_ln138_reg_200;
-    sc_signal< sc_lv<2> > trunc_ln138_1_fu_133_p1;
-    sc_signal< sc_lv<2> > trunc_ln138_1_reg_205;
+    sc_signal< sc_lv<2> > trunc_ln140_fu_128_p1;
+    sc_signal< sc_lv<2> > trunc_ln140_reg_200;
+    sc_signal< sc_lv<2> > trunc_ln140_1_fu_133_p1;
+    sc_signal< sc_lv<2> > trunc_ln140_1_reg_205;
     sc_signal< sc_lv<12> > tmp_fu_138_p3;
     sc_signal< sc_lv<12> > tmp_reg_211;
     sc_signal< sc_logic > ap_CS_fsm_state2;
@@ -128,7 +128,7 @@ struct pqcrystals_dilithium_5 : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state6;
     sc_signal< sc_logic > grp_pqcrystals_dilithium_15_fu_104_ap_start_reg;
     sc_signal< sc_logic > ap_CS_fsm_state3;
-    sc_signal< sc_lv<1> > icmp_ln139_fu_145_p2;
+    sc_signal< sc_lv<1> > icmp_ln141_fu_145_p2;
     sc_signal< sc_logic > grp_pqcrystals_dilithium_14_fu_116_ap_start_reg;
     sc_signal< sc_lv<64> > zext_ln88_2_fu_177_p1;
     sc_signal< sc_lv<64> > zext_ln88_fu_163_p1;
@@ -176,7 +176,7 @@ struct pqcrystals_dilithium_5 : public sc_module {
     void thread_grp_pqcrystals_dilithium_15_fu_104_ap_start();
     void thread_i_2_fu_157_p2();
     void thread_i_fu_182_p2();
-    void thread_icmp_ln139_fu_145_p2();
+    void thread_icmp_ln141_fu_145_p2();
     void thread_icmp_ln87_fu_151_p2();
     void thread_t_coeffs_address0();
     void thread_t_coeffs_ce0();
@@ -184,8 +184,8 @@ struct pqcrystals_dilithium_5 : public sc_module {
     void thread_t_coeffs_we0();
     void thread_t_coeffs_we1();
     void thread_tmp_fu_138_p3();
-    void thread_trunc_ln138_1_fu_133_p1();
-    void thread_trunc_ln138_fu_128_p1();
+    void thread_trunc_ln140_1_fu_133_p1();
+    void thread_trunc_ln140_fu_128_p1();
     void thread_u_vec_coeffs_address0();
     void thread_u_vec_coeffs_address1();
     void thread_u_vec_coeffs_ce0();

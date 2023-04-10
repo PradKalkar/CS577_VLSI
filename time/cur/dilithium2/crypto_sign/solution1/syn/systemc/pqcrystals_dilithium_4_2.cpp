@@ -18,7 +18,7 @@ void pqcrystals_dilithium_4::thread_ap_clk_no_reset_() {
         tmp_reg_13981 = tmp_fu_4574_p3.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        trunc_ln933_reg_14259 = trunc_ln933_fu_4658_p1.read();
+        trunc_ln935_reg_14259 = trunc_ln935_fu_4658_p1.read();
     }
 }
 

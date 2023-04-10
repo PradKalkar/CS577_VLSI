@@ -48,8 +48,9 @@
 </Loop3>
 <Loop4>
 <TripCount>10</TripCount>
-<Latency>50</Latency>
-<IterationLatency>5</IterationLatency>
+<Latency>40</Latency>
+<PipelineII>4</PipelineII>
+<PipelineDepth>5</PipelineDepth>
 </Loop4>
 <Loop5>
 <TripCount>6</TripCount>
@@ -228,8 +229,8 @@
 <Resources>
 <BRAM_18K>57</BRAM_18K>
 <DSP48E>6258</DSP48E>
-<FF>101084</FF>
-<LUT>2053166</LUT>
+<FF>101268</FF>
+<LUT>2051955</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

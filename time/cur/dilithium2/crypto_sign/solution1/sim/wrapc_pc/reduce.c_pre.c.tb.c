@@ -2,49 +2,38 @@
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "/media/storage/Time/dilithium2/reduce.c"
-# 1 "/media/storage/Time/dilithium2/reduce.c" 1
+# 1 "/home/guest/Downloads/time_242/dilithium2/reduce.c"
+# 1 "/home/guest/Downloads/time_242/dilithium2/reduce.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/media/storage/Time/dilithium2/reduce.c" 2
-# 1 "/media/storage/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
-# 33 "/media/storage/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
+# 1 "/home/guest/Downloads/time_242/dilithium2/reduce.c" 2
+# 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
 # 33 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 3 4
 # 1 "/usr/include/features.h" 1 3 4
-# 392 "/usr/include/features.h" 3 4
-# 1 "/usr/include/features-time64.h" 1 3 4
-# 20 "/usr/include/features-time64.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 21 "/usr/include/features-time64.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
-# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
-# 22 "/usr/include/features-time64.h" 2 3 4
-# 393 "/usr/include/features.h" 2 3 4
-# 464 "/usr/include/features.h" 3 4
+# 439 "/usr/include/features.h" 3 4
 # 1 "/usr/include/stdc-predef.h" 1 3 4
-# 465 "/usr/include/features.h" 2 3 4
-# 486 "/usr/include/features.h" 3 4
+# 440 "/usr/include/features.h" 2 3 4
+# 461 "/usr/include/features.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-# 559 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 452 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 560 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 453 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 561 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 487 "/usr/include/features.h" 2 3 4
-# 510 "/usr/include/features.h" 3 4
+# 454 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 462 "/usr/include/features.h" 2 3 4
+# 485 "/usr/include/features.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
 # 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
 # 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
-# 511 "/usr/include/features.h" 2 3 4
+# 486 "/usr/include/features.h" 2 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 2 3 4
 # 27 "/usr/include/stdint.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
@@ -52,9 +41,6 @@
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
 # 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
-# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
 # 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 
 
@@ -126,7 +112,6 @@ typedef unsigned int __id_t;
 typedef long int __time_t;
 typedef unsigned int __useconds_t;
 typedef long int __suseconds_t;
-typedef long int __suseconds64_t;
 
 typedef int __daddr_t;
 typedef int __key_t;
@@ -243,17 +228,17 @@ typedef unsigned long int uintptr_t;
 # 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
-# 34 "/media/storage/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 2 "/media/storage/Time/dilithium2/reduce.c" 2
-# 1 "/media/storage/Time/dilithium2/params.h" 1
+# 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
+# 2 "/home/guest/Downloads/time_242/dilithium2/reduce.c" 2
+# 1 "/home/guest/Downloads/time_242/dilithium2/params.h" 1
 
 
 
-# 1 "/media/storage/Time/dilithium2/config.h" 1
-# 5 "/media/storage/Time/dilithium2/params.h" 2
-# 3 "/media/storage/Time/dilithium2/reduce.c" 2
-# 1 "/media/storage/Time/dilithium2/reduce.h" 1
-# 11 "/media/storage/Time/dilithium2/reduce.h"
+# 1 "/home/guest/Downloads/time_242/dilithium2/config.h" 1
+# 5 "/home/guest/Downloads/time_242/dilithium2/params.h" 2
+# 3 "/home/guest/Downloads/time_242/dilithium2/reduce.c" 2
+# 1 "/home/guest/Downloads/time_242/dilithium2/reduce.h" 1
+# 11 "/home/guest/Downloads/time_242/dilithium2/reduce.h"
 int32_t pqcrystals_dilithium2_ref_montgomery_reduce(int64_t a);
 
 
@@ -264,8 +249,8 @@ int32_t pqcrystals_dilithium2_ref_caddq(int32_t a);
 
 
 int32_t pqcrystals_dilithium2_ref_freeze(int32_t a);
-# 4 "/media/storage/Time/dilithium2/reduce.c" 2
-# 15 "/media/storage/Time/dilithium2/reduce.c"
+# 4 "/home/guest/Downloads/time_242/dilithium2/reduce.c" 2
+# 15 "/home/guest/Downloads/time_242/dilithium2/reduce.c"
 int32_t pqcrystals_dilithium2_ref_montgomery_reduce(int64_t a) {
   int32_t t;
 
@@ -273,7 +258,7 @@ int32_t pqcrystals_dilithium2_ref_montgomery_reduce(int64_t a) {
   t = (a - (int64_t)t*8380417) >> 32;
   return t;
 }
-# 33 "/media/storage/Time/dilithium2/reduce.c"
+# 33 "/home/guest/Downloads/time_242/dilithium2/reduce.c"
 int32_t pqcrystals_dilithium2_ref_reduce32(int32_t a) {
   int32_t t;
 
@@ -281,12 +266,12 @@ int32_t pqcrystals_dilithium2_ref_reduce32(int32_t a) {
   t = a - t*8380417;
   return t;
 }
-# 50 "/media/storage/Time/dilithium2/reduce.c"
+# 50 "/home/guest/Downloads/time_242/dilithium2/reduce.c"
 int32_t pqcrystals_dilithium2_ref_caddq(int32_t a) {
   a += (a >> 31) & 8380417;
   return a;
 }
-# 65 "/media/storage/Time/dilithium2/reduce.c"
+# 65 "/home/guest/Downloads/time_242/dilithium2/reduce.c"
 int32_t pqcrystals_dilithium2_ref_freeze(int32_t a) {
   a = pqcrystals_dilithium2_ref_reduce32(a);
   a = pqcrystals_dilithium2_ref_caddq(a);

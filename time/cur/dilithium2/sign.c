@@ -203,7 +203,7 @@ int crypto_sign(uint8_t sm[3300+CRYPTO_BYTES],
 	  size_t i;
 
 	  for(i = 0; i < mlen; ++i){
-      #pragma HLS unroll
+      #pragma HLS pipeline
 	    sm[CRYPTO_BYTES + mlen - 1 - i] = m[mlen - 1 - i];
     }
 
