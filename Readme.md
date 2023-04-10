@@ -38,6 +38,3 @@ Constants: the loop bound is a constant.
 Variables
      a. The loop bound is a variable & HLS can determine the upper bounds of the loop.
      b. The loop bound is a variable & HLS cannot determine the upper bound of the loop.
-
-# Doubt
-1. Latency is being reported in cosimulation report. Are we supposed to minimize this latency or are we concerned with the individual latencies in the synthesis report.
