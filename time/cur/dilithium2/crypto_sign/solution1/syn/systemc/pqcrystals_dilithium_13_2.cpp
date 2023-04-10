@@ -12,10 +12,10 @@ void pqcrystals_dilithium_13::thread_ap_clk_no_reset_() {
         ap_CS_fsm = ap_NS_fsm.read();
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        tmp_2490_reg_18503 = tmp_2490_fu_7495_p3.read();
+        tmp_5202_reg_18503 = tmp_5202_fu_7495_p3.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        tmp_2746_reg_18791 = tmp_2746_fu_7551_p3.read();
+        tmp_5458_reg_18791 = tmp_5458_fu_7551_p3.read();
     }
 }
 

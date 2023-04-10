@@ -1,11 +1,11 @@
-# 1 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
-# 1 "/home/guest/Downloads/time_242/dilithium2/fips202.c" 1
+# 1 "/home/cse/Downloads/time/dilithium2/fips202.c"
+# 1 "/home/cse/Downloads/time/dilithium2/fips202.c" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 149 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/guest/Downloads/time_242/dilithium2/fips202.c" 2
+# 1 "/home/cse/Downloads/time/dilithium2/fips202.c" 2
 
 
 
@@ -25,7 +25,7 @@ typedef __typeof__(sizeof(int)) size_t;
 
 
 typedef int wchar_t;
-# 9 "/home/guest/Downloads/time_242/dilithium2/fips202.c" 2
+# 9 "/home/cse/Downloads/time/dilithium2/fips202.c" 2
 # 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
 # 33 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -33,23 +33,34 @@ typedef int wchar_t;
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
 # 33 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 3 4
 # 1 "/usr/include/features.h" 1 3 4
-# 439 "/usr/include/features.h" 3 4
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 440 "/usr/include/features.h" 2 3 4
-# 461 "/usr/include/features.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-# 452 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 392 "/usr/include/features.h" 3 4
+# 1 "/usr/include/features-time64.h" 1 3 4
+# 20 "/usr/include/features-time64.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 453 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 21 "/usr/include/features-time64.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
+# 22 "/usr/include/features-time64.h" 2 3 4
+# 393 "/usr/include/features.h" 2 3 4
+# 464 "/usr/include/features.h" 3 4
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 465 "/usr/include/features.h" 2 3 4
+# 486 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
+# 559 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 560 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 454 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 462 "/usr/include/features.h" 2 3 4
-# 485 "/usr/include/features.h" 3 4
+# 561 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 487 "/usr/include/features.h" 2 3 4
+# 510 "/usr/include/features.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
 # 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
 # 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
-# 486 "/usr/include/features.h" 2 3 4
+# 511 "/usr/include/features.h" 2 3 4
 # 34 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 2 3 4
 # 27 "/usr/include/stdint.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
@@ -57,6 +68,9 @@ typedef int wchar_t;
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
 # 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
 # 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 
 
@@ -128,6 +142,7 @@ typedef unsigned int __id_t;
 typedef long int __time_t;
 typedef unsigned int __useconds_t;
 typedef long int __suseconds_t;
+typedef long int __suseconds64_t;
 
 typedef int __daddr_t;
 typedef int __key_t;
@@ -245,14 +260,14 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 10 "/home/guest/Downloads/time_242/dilithium2/fips202.c" 2
-# 1 "/home/guest/Downloads/time_242/dilithium2/fips202.h" 1
+# 10 "/home/cse/Downloads/time/dilithium2/fips202.c" 2
+# 1 "/home/cse/Downloads/time/dilithium2/fips202.h" 1
 
 
 
 # 1 "/tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3
-# 5 "/home/guest/Downloads/time_242/dilithium2/fips202.h" 2
-# 15 "/home/guest/Downloads/time_242/dilithium2/fips202.h"
+# 5 "/home/cse/Downloads/time/dilithium2/fips202.h" 2
+# 15 "/home/cse/Downloads/time/dilithium2/fips202.h"
 typedef struct {
   uint64_t s[25];
   unsigned int pos;
@@ -288,8 +303,8 @@ void shake256(uint8_t out[3*32], size_t outlen, const uint8_t in[32], size_t inl
 void sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen);
 
 void sha3_512(uint8_t h[64], const uint8_t *in, size_t inlen);
-# 11 "/home/guest/Downloads/time_242/dilithium2/fips202.c" 2
-# 26 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 11 "/home/cse/Downloads/time/dilithium2/fips202.c" 2
+# 26 "/home/cse/Downloads/time/dilithium2/fips202.c"
 uint64_t load64(const uint8_t x[8]) {
   unsigned int i;
   uint64_t r = 0;
@@ -300,12 +315,13 @@ uint64_t load64(const uint8_t x[8]) {
   }
   return r;
 }
-# 45 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 45 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void store64(uint8_t x[8], uint64_t u) {
   unsigned int i;
 
   for(i=0;i<8;i++)
-    x[i] = u >> 8*i;
+#pragma HLS unroll
+ x[i] = u >> 8*i;
 }
 
 
@@ -335,11 +351,11 @@ static const uint64_t KeccakF_RoundConstants[24] = {
   (uint64_t)0x0000000080000001ULL,
   (uint64_t)0x8000000080008008ULL
 };
-# 87 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 88 "/home/cse/Downloads/time/dilithium2/fips202.c"
 static void KeccakF1600_StatePermute(uint64_t state[25])
 {
-        int round;
 
+        int round;
         uint64_t Aba, Abe, Abi, Abo, Abu;
         uint64_t Aga, Age, Agi, Ago, Agu;
         uint64_t Aka, Ake, Aki, Ako, Aku;
@@ -602,15 +618,16 @@ static void KeccakF1600_StatePermute(uint64_t state[25])
         state[23] = Aso;
         state[24] = Asu;
 }
-# 361 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 362 "/home/cse/Downloads/time/dilithium2/fips202.c"
 static void keccak_init(keccak_state *state)
 {
   unsigned int i;
   for(i=0;i<25;i++)
-    state->s[i] = 0;
+#pragma HLS unroll
+ state->s[i] = 0;
   state->pos = 0;
 }
-# 382 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 384 "/home/cse/Downloads/time/dilithium2/fips202.c"
 unsigned int keccak_absorb(uint64_t s[25],
                                   unsigned int r,
                                   unsigned int pos,
@@ -643,8 +660,7 @@ unsigned int keccak_absorb(uint64_t s[25],
 
   while(mlen >= r) {
     for(i=0;i<r/8;i++){
-#pragma HLS pipeline
- s[i] ^= load64(m+8*i);
+      s[i] ^= load64(m+8*i);
     }
     m += r;
     mlen -= r;
@@ -674,7 +690,7 @@ unsigned int keccak_absorb(uint64_t s[25],
 
   return pos;
 }
-# 456 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 457 "/home/cse/Downloads/time/dilithium2/fips202.c"
 static void keccak_finalize(uint64_t s[25], unsigned int r, unsigned int pos, uint8_t p)
 {
   unsigned int i,j;
@@ -684,7 +700,7 @@ static void keccak_finalize(uint64_t s[25], unsigned int r, unsigned int pos, ui
   s[i] ^= (uint64_t)p << 8*j;
   s[r/8-1] ^= 1ULL << 63;
 }
-# 479 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 480 "/home/cse/Downloads/time/dilithium2/fips202.c"
 static void keccak_squeezeblocks(uint8_t *out,
                                  size_t nblocks,
                                  uint64_t s[25],
@@ -695,14 +711,13 @@ static void keccak_squeezeblocks(uint8_t *out,
   while(nblocks > 0) {
     KeccakF1600_StatePermute(s);
     for(i=0;i<r/8;i++){
-#pragma HLS pipeline
- store64(out + 8*i, s[i]);
+      store64(out + 8*i, s[i]);
     }
     out += r;
     nblocks--;
   }
 }
-# 512 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 512 "/home/cse/Downloads/time/dilithium2/fips202.c"
 unsigned int keccak_squeeze(uint8_t out[3*32],
                                    size_t outlen,
                                    uint64_t s[25],
@@ -734,7 +749,8 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
 #pragma HLS unroll
  KeccakF1600_StatePermute(s);
     for(i=0;i<r/8;i++)
-      store64(out+8*i,s[i]);
+#pragma HLS unroll
+ store64(out+8*i,s[i]);
     out += r;
     outlen -= r;
   }
@@ -765,63 +781,64 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
 
   store64(t,s[pos/8]);
   for(i=0;i<outlen;i++)
-    out[i] = t[i];
+#pragma HLS unroll
+ out[i] = t[i];
   pos += outlen;
   return pos;
 }
-# 587 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 589 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake128_init(keccak_state *state)
 {
   keccak_init(state);
 }
-# 602 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 604 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake128_absorb(keccak_state *state, const uint8_t *in, size_t inlen)
 {
   state->pos = keccak_absorb(state->s, 168, state->pos, in, inlen);
 }
-# 614 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 616 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake128_finalize(keccak_state *state)
 {
   keccak_finalize(state->s, 168, state->pos, 0x1F);
   state->pos = 0;
 }
-# 633 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 635 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake128_squeezeblocks(uint8_t *out, size_t nblocks, keccak_state *state)
 {
   keccak_squeezeblocks(out, nblocks, state->s, 168);
 }
-# 649 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 651 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake128_squeeze(uint8_t *out, size_t outlen, keccak_state *state)
 {
   state->pos = keccak_squeeze(out, outlen, state->s, 168, state->pos);
 }
-# 662 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 664 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake256_init(keccak_state state[1])
 {
   keccak_init(state);
 }
-# 677 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 679 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake256_absorb(keccak_state state[1], const uint8_t in[32], size_t inlen)
 {
   state->pos = keccak_absorb(state->s, 136, state->pos, in, inlen);
 }
-# 689 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 691 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake256_finalize(keccak_state state[1])
 {
   keccak_finalize(state->s, 136, state->pos, 0x1F);
   state->pos = 0;
 }
-# 708 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 710 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake256_squeezeblocks(uint8_t *out, size_t nblocks, keccak_state state[1])
 {
   keccak_squeezeblocks(out, nblocks, state->s, 136);
 }
-# 724 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 726 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake256_squeeze(uint8_t *out, size_t outlen, keccak_state state[1])
 {
   state->pos = keccak_squeeze(out, outlen, state->s, 136, state->pos);
 }
-# 739 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 741 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake128(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
 {
   keccak_state state;
@@ -831,7 +848,7 @@ void shake128(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
   shake128_finalize(&state);
   shake128_squeeze(out, outlen, &state);
 }
-# 759 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 761 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void shake256(uint8_t out[3*32], size_t outlen, const uint8_t in[32], size_t inlen)
 {
   keccak_state state[1];
@@ -841,7 +858,7 @@ void shake256(uint8_t out[3*32], size_t outlen, const uint8_t in[32], size_t inl
   shake256_finalize(state);
   shake256_squeeze(out, outlen, state);
 }
-# 778 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 780 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen)
 {
   uint64_t s[25] = {0};
@@ -851,7 +868,7 @@ void sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen)
   keccak_finalize(s, 136, pos, 0x06);
   keccak_squeeze(h, 32, s, 136, 0);
 }
-# 797 "/home/guest/Downloads/time_242/dilithium2/fips202.c"
+# 799 "/home/cse/Downloads/time/dilithium2/fips202.c"
 void sha3_512(uint8_t h[64], const uint8_t *in, size_t inlen)
 {
   uint64_t s[25] = {0};

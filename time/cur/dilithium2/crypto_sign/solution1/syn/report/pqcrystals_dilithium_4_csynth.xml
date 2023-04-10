@@ -17,25 +17,25 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.344</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.524</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>128</Best-caseLatency>
-<Average-caseLatency>128</Average-caseLatency>
-<Worst-caseLatency>128</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.280 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.280 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.280 ms</Worst-caseRealTimeLatency>
-<Interval-min>128</Interval-min>
-<Interval-max>128</Interval-max>
+<Best-caseLatency>288</Best-caseLatency>
+<Average-caseLatency>288</Average-caseLatency>
+<Worst-caseLatency>288</Worst-caseLatency>
+<Best-caseRealTimeLatency>2.880 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>2.880 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.880 ms</Worst-caseRealTimeLatency>
+<Interval-min>288</Interval-min>
+<Interval-max>288</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>151</FF>
-<LUT>11306</LUT>
+<FF>367</FF>
+<LUT>21300</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <URAM>0</URAM>
@@ -212,7 +212,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>11</Bits>
+<Bits>12</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -249,39 +249,6 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>a_coeffs_address1</name>
-<Object>a_coeffs</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>10</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>a_coeffs_ce1</name>
-<Object>a_coeffs</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>a_coeffs_q1</name>
-<Object>a_coeffs</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>a_coeffs_offset</name>
 <Object>a_coeffs_offset</Object>
 <Type>scalar</Type>
@@ -289,7 +256,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>4</Bits>
+<Bits>3</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

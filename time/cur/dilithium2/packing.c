@@ -19,10 +19,12 @@ void pack_pk(uint8_t pk[CRYPTO_PUBLICKEYBYTES],
   unsigned int i;
 
   for(i = 0; i < SEEDBYTES; ++i)
+#pragma HLS unroll
     pk[i] = rho[i];
   pk += SEEDBYTES;
 
   for(i = 0; i < K; ++i)
+#pragma HLS unroll
     polyt1_pack(pk + i*POLYT1_PACKEDBYTES, &t1->vec[i]);
 }
 
@@ -42,10 +44,12 @@ void unpack_pk(uint8_t rho[SEEDBYTES],
   unsigned int i;
 
   for(i = 0; i < SEEDBYTES; ++i)
+#pragma HLS unroll
     rho[i] = pk[i];
   pk += SEEDBYTES;
 
   for(i = 0; i < K; ++i)
+#pragma HLS unroll
     polyt1_unpack(&t1->vec[i], pk + i*POLYT1_PACKEDBYTES);
 }
 
@@ -73,26 +77,32 @@ void pack_sk(uint8_t sk[CRYPTO_SECRETKEYBYTES],
   unsigned int i;
 
   for(i = 0; i < SEEDBYTES; ++i)
+#pragma HLS unroll
     sk[i] = rho[i];
   sk += SEEDBYTES;
 
   for(i = 0; i < SEEDBYTES; ++i)
+#pragma HLS unroll
     sk[i] = key[i];
   sk += SEEDBYTES;
 
   for(i = 0; i < CRHBYTES; ++i)
+#pragma HLS unroll
     sk[i] = tr[i];
   sk += CRHBYTES;
 
   for(i = 0; i < L; ++i)
+#pragma HLS unroll
     polyeta_pack(sk + i*POLYETA_PACKEDBYTES, &s1->vec[i]);
   sk += L*POLYETA_PACKEDBYTES;
 
   for(i = 0; i < K; ++i)
+#pragma HLS unroll
     polyeta_pack(sk + i*POLYETA_PACKEDBYTES, &s2->vec[i]);
   sk += K*POLYETA_PACKEDBYTES;
 
   for(i = 0; i < K; ++i)
+#pragma HLS unroll
     polyt0_pack(sk + i*POLYT0_PACKEDBYTES, &t0->vec[i]);
 }
 
@@ -173,6 +183,7 @@ void pack_sig(uint8_t sig[CRYPTO_BYTES],
   unsigned int i, j, k;
 
   for(i=0; i < SEEDBYTES; ++i){
+#pragma HLS unroll
     // #pragma HLS unroll
     sig[i] = c[i];
   }
@@ -187,6 +198,7 @@ void pack_sig(uint8_t sig[CRYPTO_BYTES],
   /* Encode h */
   for(i = 0; i < OMEGA + K; ++i){
 //  #pragma HLS unroll
+#pragma HLS unroll
     sig[i] = 0;
   }
 
@@ -194,6 +206,7 @@ void pack_sig(uint8_t sig[CRYPTO_BYTES],
   for(i = 0; i < K; ++i) {
     #pragma HLS unroll
     for(j = 0; j < N; ++j)
+#pragma HLS unroll
       if(h->vec[i].coeffs[j] != 0)
         sig[k++] = j;
 
@@ -222,6 +235,7 @@ int unpack_sig(uint8_t c[SEEDBYTES],
   unsigned int i, j, k;
 
   for(i = 0; i < SEEDBYTES; ++i)
+#pragma HLS unroll
     c[i] = sig[i];
   sig += SEEDBYTES;
 

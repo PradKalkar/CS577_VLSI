@@ -32,21 +32,16 @@
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
-<TripCount>25</TripCount>
-<Latency>25</Latency>
-<IterationLatency>1</IterationLatency>
-</Loop1>
-<Loop2>
 <TripCount>4</TripCount>
 <Latency>16</Latency>
 <PipelineII>4</PipelineII>
 <PipelineDepth>5</PipelineDepth>
-</Loop2>
-<Loop3>
+</Loop1>
+<Loop2>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <IterationLatency>undef</IterationLatency>
-<Loop3.1>
+<Loop2.1>
 <TripCount>
 <range>
 <min>0</min>
@@ -60,8 +55,8 @@
 </range>
 </Latency>
 <IterationLatency>2</IterationLatency>
-</Loop3.1>
-</Loop3>
+</Loop2.1>
+</Loop2>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
@@ -69,7 +64,7 @@
 <Resources>
 <BRAM_18K>6</BRAM_18K>
 <FF>9337</FF>
-<LUT>391896</LUT>
+<LUT>391961</LUT>
 <URAM>0</URAM>
 <DSP48E>0</DSP48E>
 </Resources>
@@ -201,7 +196,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>3</Bits>
+<Bits>4</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -212,7 +207,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>3</Bits>
+<Bits>4</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -289,7 +284,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>10</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

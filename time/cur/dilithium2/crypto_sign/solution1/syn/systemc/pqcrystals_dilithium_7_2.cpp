@@ -171,10 +171,10 @@ void pqcrystals_dilithium_7::thread_ap_clk_no_reset_() {
         reg_6403 = a_q1.read().range(7, 1);
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        tmp_9_reg_25906 = tmp_9_fu_6427_p3.read();
+        tmp_351_reg_25906 = tmp_351_fu_6427_p3.read();
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        trunc_ln754_reg_25483 = trunc_ln754_fu_6412_p1.read();
+        trunc_ln769_reg_25483 = trunc_ln769_fu_6412_p1.read();
     }
 }
 

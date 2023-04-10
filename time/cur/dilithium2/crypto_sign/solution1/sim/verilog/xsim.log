@@ -2,12 +2,12 @@
 # xsim v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Apr  9 19:29:26 2023
-# Process ID: 546814
-# Current directory: /home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog
+# Start of session at: Mon Apr 10 09:49:35 2023
+# Process ID: 71448
+# Current directory: /home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/crypto_sign/xsim_script.tcl}
-# Log file: /home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/xsim.log
-# Journal file: /home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/xsim.jou
+# Log file: /home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/verilog/xsim.log
+# Journal file: /home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/verilog/xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/crypto_sign/xsim_script.tcl
 # xsim {crypto_sign} -autoloadwcfg -tclbatch {crypto_sign.tcl}
@@ -22,10 +22,10 @@ source crypto_sign.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 2 [n/a] @ "25000000"
-// RTL Simulation : 1 / 2 [n/a] @ "2743985000000"
-// RTL Simulation : 2 / 2 [n/a] @ "4538005000000"
+// RTL Simulation : 1 / 2 [n/a] @ "2190585000000"
+// RTL Simulation : 2 / 2 [n/a] @ "3551155000000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 4538045 us : File "/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign.autotb.v" Line 502
-run: Time (s): cpu = 00:00:00.08 ; elapsed = 00:17:40 . Memory (MB): peak = 1483.770 ; gain = 0.000 ; free physical = 3221 ; free virtual = 8105
+$finish called at time : 3551195 us : File "/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/verilog/crypto_sign.autotb.v" Line 502
+run: Time (s): cpu = 00:00:00.10 ; elapsed = 00:19:04 . Memory (MB): peak = 1497.543 ; gain = 8.004 ; free physical = 3840 ; free virtual = 7592
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sun Apr  9 19:47:22 2023...
+INFO: [Common 17-206] Exiting xsim at Mon Apr 10 10:08:59 2023...

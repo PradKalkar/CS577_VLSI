@@ -32,16 +32,11 @@
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
-<TripCount>25</TripCount>
-<Latency>25</Latency>
-<IterationLatency>1</IterationLatency>
-</Loop1>
-<Loop2>
 <TripCount>6</TripCount>
 <Latency>24</Latency>
 <PipelineII>4</PipelineII>
 <PipelineDepth>5</PipelineDepth>
-</Loop2>
+</Loop1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
@@ -49,7 +44,7 @@
 <Resources>
 <BRAM_18K>6</BRAM_18K>
 <FF>9242</FF>
-<LUT>408977</LUT>
+<LUT>409020</LUT>
 <URAM>0</URAM>
 <DSP48E>0</DSP48E>
 </Resources>
@@ -170,7 +165,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>19</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

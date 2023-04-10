@@ -17,25 +17,25 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>9.763</EstimatedClockPeriod>
+<EstimatedClockPeriod>10.813</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>6</Best-caseLatency>
-<Average-caseLatency>783</Average-caseLatency>
-<Worst-caseLatency>2067</Worst-caseLatency>
-<Best-caseRealTimeLatency>60.000 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>7.830 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>20.670 ms</Worst-caseRealTimeLatency>
-<Interval-min>6</Interval-min>
-<Interval-max>2067</Interval-max>
+<Best-caseLatency>131</Best-caseLatency>
+<Average-caseLatency>390</Average-caseLatency>
+<Worst-caseLatency>519</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.310 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>3.900 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>5.190 ms</Worst-caseRealTimeLatency>
+<Interval-min>131</Interval-min>
+<Interval-max>519</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>76</FF>
-<LUT>302</LUT>
+<FF>420</FF>
+<LUT>28750</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <URAM>0</URAM>
@@ -151,6 +151,39 @@
 </RtlPorts>
 <RtlPorts>
 <name>v_vec_coeffs_q0</name>
+<Object>v_vec_coeffs</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>v_vec_coeffs_address1</name>
+<Object>v_vec_coeffs</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>10</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>v_vec_coeffs_ce1</name>
+<Object>v_vec_coeffs</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>v_vec_coeffs_q1</name>
 <Object>v_vec_coeffs</Object>
 <Type>array</Type>
 <Scope></Scope>

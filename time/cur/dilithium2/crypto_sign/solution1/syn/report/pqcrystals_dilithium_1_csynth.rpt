@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pqcrystals_dilithium_1'
 ================================================================
-* Date:           Sun Apr  9 19:25:54 2023
+* Date:           Sun Apr  9 23:19:02 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        crypto_sign
@@ -38,66 +38,51 @@
         |                                     |                         |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
         |               Instance              |          Module         |   min   |   max   |    min    |    max    |  min |  max |   Type  |
         +-------------------------------------+-------------------------+---------+---------+-----------+-----------+------+------+---------+
-        |grp_pqcrystals_dilithium_9_fu_1259   |pqcrystals_dilithium_9   |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
-        |grp_pqcrystals_dilithium_17_fu_1271  |pqcrystals_dilithium_17  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
-        |grp_pqcrystals_dilithium_10_fu_1278  |pqcrystals_dilithium_10  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
-        |grp_keccak_absorb_2_fu_1289          |keccak_absorb_2          |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
-        |grp_KeccakF1600_StatePer_1_fu_1303   |KeccakF1600_StatePer_1   |       25|       25|  0.250 ms |  0.250 ms |    25|    25|   none  |
-        |grp_KeccakF1600_StatePer_fu_1308     |KeccakF1600_StatePer     |       25|       25|  0.250 ms |  0.250 ms |    25|    25|   none  |
-        |grp_pqcrystals_dilithium_21_fu_1313  |pqcrystals_dilithium_21  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
-        |grp_pqcrystals_dilithium_20_fu_1325  |pqcrystals_dilithium_20  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
-        |grp_pqcrystals_dilithium_5_fu_1332   |pqcrystals_dilithium_5   |     2059|     2059| 20.590 ms | 20.590 ms |  2059|  2059|   none  |
-        |grp_pqcrystals_dilithium_fu_1349     |pqcrystals_dilithium     |     2200|     2200| 22.000 ms | 22.000 ms |  2200|  2200|   none  |
-        |grp_pqcrystals_dilithium_23_fu_1363  |pqcrystals_dilithium_23  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
-        |grp_pqcrystals_dilithium_19_fu_1375  |pqcrystals_dilithium_19  |     3296|     3296| 32.960 ms | 32.960 ms |  3296|  3296|   none  |
-        |grp_pqcrystals_dilithium_11_fu_1383  |pqcrystals_dilithium_11  |      255|      255|  2.550 ms |  2.550 ms |   255|   255|   none  |
-        |grp_pqcrystals_dilithium_13_fu_1391  |pqcrystals_dilithium_13  |      128|      128|  1.280 ms |  1.280 ms |   128|   128|   none  |
-        |grp_pqcrystals_dilithium_4_fu_1408   |pqcrystals_dilithium_4   |      128|      128|  1.280 ms |  1.280 ms |   128|   128|   none  |
-        |grp_keccak_absorb_3199_fu_1425       |keccak_absorb_3199       |       26|       26|  0.260 ms |  0.260 ms |    26|    26|   none  |
-        |grp_pqcrystals_dilithium_6_fu_1434   |pqcrystals_dilithium_6   |        6|     2067| 60.000 us | 20.670 ms |     6|  2067|   none  |
-        |grp_pqcrystals_dilithium_18_fu_1442  |pqcrystals_dilithium_18  |      513|      513|  5.130 ms |  5.130 ms |   513|   513|   none  |
-        |grp_pqcrystals_dilithium_12_fu_1452  |pqcrystals_dilithium_12  |      513|      513|  5.130 ms |  5.130 ms |   513|   513|   none  |
+        |grp_pqcrystals_dilithium_9_fu_1287   |pqcrystals_dilithium_9   |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
+        |grp_pqcrystals_dilithium_19_fu_1299  |pqcrystals_dilithium_19  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
+        |grp_pqcrystals_dilithium_10_fu_1306  |pqcrystals_dilithium_10  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
+        |grp_keccak_absorb_2_fu_1339          |keccak_absorb_2          |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
+        |grp_KeccakF1600_StatePer_1_fu_1354   |KeccakF1600_StatePer_1   |       25|       25|  0.250 ms |  0.250 ms |    25|    25|   none  |
+        |grp_KeccakF1600_StatePer_fu_1359     |KeccakF1600_StatePer     |       25|       25|  0.250 ms |  0.250 ms |    25|    25|   none  |
+        |grp_pqcrystals_dilithium_23_fu_1364  |pqcrystals_dilithium_23  |     2227|     2227| 22.270 ms | 22.270 ms |  2227|  2227|   none  |
+        |grp_pqcrystals_dilithium_25_fu_1372  |pqcrystals_dilithium_25  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
+        |grp_pqcrystals_dilithium_25_fu_1381  |pqcrystals_dilithium_25  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
+        |grp_pqcrystals_dilithium_25_fu_1390  |pqcrystals_dilithium_25  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
+        |grp_pqcrystals_dilithium_24_fu_1408  |pqcrystals_dilithium_24  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
+        |grp_pqcrystals_dilithium_fu_1415     |pqcrystals_dilithium     |     1936|     1936| 19.360 ms | 19.360 ms |  1936|  1936|   none  |
+        |grp_pqcrystals_dilithium_17_fu_1425  |pqcrystals_dilithium_17  |      255|      255|  2.550 ms |  2.550 ms |   255|   255|   none  |
+        |grp_pqcrystals_dilithium_22_fu_1433  |pqcrystals_dilithium_22  |      255|      255|  2.550 ms |  2.550 ms |   255|   255|   none  |
+        |grp_pqcrystals_dilithium_11_fu_1454  |pqcrystals_dilithium_11  |      255|      255|  2.550 ms |  2.550 ms |   255|   255|   none  |
+        |grp_pqcrystals_dilithium_18_fu_1475  |pqcrystals_dilithium_18  |      128|      128|  1.280 ms |  1.280 ms |   128|   128|   none  |
+        |grp_pqcrystals_dilithium_21_fu_1487  |pqcrystals_dilithium_21  |      255|      255|  2.550 ms |  2.550 ms |   255|   255|   none  |
+        |grp_pqcrystals_dilithium_6_fu_1498   |pqcrystals_dilithium_6   |      131|      519|  1.310 ms |  5.190 ms |   131|   519|   none  |
+        |grp_pqcrystals_dilithium_28_fu_1506  |pqcrystals_dilithium_28  |        ?|        ?|          ?|          ?|     ?|     ?|   none  |
+        |grp_pqcrystals_dilithium_14_fu_1518  |pqcrystals_dilithium_14  |      128|      128|  1.280 ms |  1.280 ms |   128|   128|   none  |
+        |grp_pqcrystals_dilithium_15_fu_1535  |pqcrystals_dilithium_15  |      128|      128|  1.280 ms |  1.280 ms |   128|   128|   none  |
+        |grp_pqcrystals_dilithium_13_fu_1555  |pqcrystals_dilithium_13  |      128|      128|  1.280 ms |  1.280 ms |   128|   128|   none  |
+        |grp_pqcrystals_dilithium_16_fu_1572  |pqcrystals_dilithium_16  |      128|      128|  1.280 ms |  1.280 ms |   128|   128|   none  |
+        |grp_pqcrystals_dilithium_20_fu_1594  |pqcrystals_dilithium_20  |      255|      255|  2.550 ms |  2.550 ms |   255|   255|   none  |
+        |grp_pqcrystals_dilithium_12_fu_1604  |pqcrystals_dilithium_12  |      255|      255|  2.550 ms |  2.550 ms |   255|   255|   none  |
+        |grp_pqcrystals_dilithium_5_fu_1614   |pqcrystals_dilithium_5   |      128|      128|  1.280 ms |  1.280 ms |   128|   128|   none  |
+        |grp_keccak_absorb_3199_fu_1631       |keccak_absorb_3199       |       26|       26|  0.260 ms |  0.260 ms |    26|    26|   none  |
         +-------------------------------------+-------------------------+---------+---------+-----------+-----------+------+------+---------+
 
         * Loop: 
-        +-------------------+---------+---------+----------+-----------+-----------+---------+----------+
-        |                   |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
-        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
-        +-------------------+---------+---------+----------+-----------+-----------+---------+----------+
-        |- Loop 1           |       25|       25|         1|          -|          -|       25|    no    |
-        |- Loop 2           |       30|       30|         5|          -|          -|        6|    no    |
-        |- Loop 3           |       25|       25|         1|          -|          -|       25|    no    |
-        |- Loop 4           |       40|       40|         5|          4|          1|       10|    yes   |
-        |- Loop 5           |       30|       30|         5|          -|          -|        6|    no    |
-        |- Loop 6           |        ?|        ?|         ?|          -|          -|        4|    no    |
-        | + Loop 6.1        |        ?|        ?|         ?|          -|          -|        4|    no    |
-        |- Loop 7           |        ?|        ?|         ?|          -|          -|        4|    no    |
-        |- Loop 8           |        ?|        ?|         ?|          -|          -|        4|    no    |
-        |- Loop 9           |        ?|        ?|         ?|          -|          -|        4|    no    |
-        |- Loop 10          |        ?|        ?|         ?|          -|          -|        ?|    no    |
-        | + Loop 10.1       |      511|      511|         2|          -|          -|      256|    no    |
-        | + Loop 10.2       |      511|      511|         2|          -|          -|      256|    no    |
-        | + Loop 10.3       |      511|      511|         2|          -|          -|      256|    no    |
-        | + Loop 10.4       |      511|      511|         2|          -|          -|      256|    no    |
-        | + Loop 10.5       |        ?|        ?|         ?|          -|          -|        4|    no    |
-        | + Loop 10.6       |     2056|     2056|       514|          -|          -|        4|    no    |
-        |  ++ Loop 10.6.1   |      512|      512|         2|          -|          -|      256|    no    |
-        | + Loop 10.7       |       25|       25|         1|          -|          -|       25|    no    |
-        | + Loop 10.8       |       20|       20|         5|          -|          -|        4|    no    |
-        | + Loop 10.9       |      520|      520|       130|          -|          -|        4|    no    |
-        | + Loop 10.10      |        ?|        ?|         ?|          -|          -|        4|    no    |
-        | + Loop 10.11      |     2056|     2056|       514|          -|          -|        4|    no    |
-        |  ++ Loop 10.11.1  |      512|      512|         2|          -|          -|      256|    no    |
-        | + Loop 10.12      |     2056|     2056|       514|          -|          -|        4|    no    |
-        |  ++ Loop 10.12.1  |      512|      512|         2|          -|          -|      256|    no    |
-        | + Loop 10.13      |        4|     2062|  4 ~ 515 |          -|          -|  1 ~ 4  |    no    |
-        |  ++ Loop 10.13.1  |        2|      513|         2|          -|          -| 1 ~ 256 |    no    |
-        | + Loop 10.14      |     1028|     1028|       257|          -|          -|        4|    no    |
-        | + Loop 10.15      |     2056|     2056|       514|          -|          -|        4|    no    |
-        |  ++ Loop 10.15.1  |      512|      512|         2|          -|          -|      256|    no    |
-        | + Loop 10.16      |     2056|     2056|       514|          -|          -|        4|    no    |
-        |  ++ Loop 10.16.1  |      512|      512|         2|          -|          -|      256|    no    |
-        +-------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |       30|       30|         5|          -|          -|     6|    no    |
+        |- Loop 2     |       40|       40|         5|          4|          1|    10|    yes   |
+        |- Loop 3     |       30|       30|         5|          -|          -|     6|    no    |
+        |- Loop 4     |        ?|        ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 4.1  |      511|      511|         2|          -|          -|   256|    no    |
+        | + Loop 4.2  |      511|      511|         2|          -|          -|   256|    no    |
+        | + Loop 4.3  |      511|      511|         2|          -|          -|   256|    no    |
+        | + Loop 4.4  |      511|      511|         2|          -|          -|   256|    no    |
+        | + Loop 4.5  |     1028|     1028|       257|          -|          -|     4|    no    |
+        | + Loop 4.6  |       20|       20|         5|          -|          -|     4|    no    |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
 
@@ -108,19 +93,19 @@
 +-----------------+---------+-------+--------+---------+-----+
 |       Name      | BRAM_18K| DSP48E|   FF   |   LUT   | URAM|
 +-----------------+---------+-------+--------+---------+-----+
-|DSP              |        -|      3|       -|        -|    -|
-|Expression       |        -|      -|       0|     2675|    -|
+|DSP              |        -|      -|       -|        -|    -|
+|Expression       |        -|      -|       0|     1589|    -|
 |FIFO             |        -|      -|       -|        -|    -|
-|Instance         |       24|   6255|  100240|  2044975|    0|
-|Memory           |       33|      -|       0|        0|    0|
-|Multiplexer      |        -|      -|       -|     4305|    -|
-|Register         |        -|      -|    1028|        -|    -|
+|Instance         |       24|   9884|  188616|  2403690|    0|
+|Memory           |       41|      -|       0|        0|    0|
+|Multiplexer      |        -|      -|       -|     6576|    -|
+|Register         |        -|      -|     887|        -|    -|
 +-----------------+---------+-------+--------+---------+-----+
-|Total            |       57|   6258|  101268|  2051955|    0|
+|Total            |       65|   9884|  189503|  2411855|    0|
 +-----------------+---------+-------+--------+---------+-----+
 |Available        |      730|    740|  269200|   134600|    0|
 +-----------------+---------+-------+--------+---------+-----+
-|Utilization (%)  |        7|    845|      37|     1524|    0|
+|Utilization (%)  |        8|   1335|      70|     1791|    0|
 +-----------------+---------+-------+--------+---------+-----+
 
 + Detail: 
@@ -128,37 +113,39 @@
     +-------------------------------------+-------------------------+---------+-------+-------+--------+-----+
     |               Instance              |          Module         | BRAM_18K| DSP48E|   FF  |   LUT  | URAM|
     +-------------------------------------+-------------------------+---------+-------+-------+--------+-----+
-    |grp_KeccakF1600_StatePer_fu_1308     |KeccakF1600_StatePer     |        0|      0|   3866|  194018|    0|
-    |grp_KeccakF1600_StatePer_1_fu_1303   |KeccakF1600_StatePer_1   |        0|      0|   3866|  194018|    0|
-    |grp_keccak_absorb_2_fu_1289          |keccak_absorb_2          |        1|      0|   5604|  197489|    0|
-    |grp_keccak_absorb_3199_fu_1425       |keccak_absorb_3199       |        0|      0|    138|     326|    0|
-    |grp_pqcrystals_dilithium_fu_1349     |pqcrystals_dilithium     |        0|      0|    402|   24791|    0|
-    |grp_pqcrystals_dilithium_10_fu_1278  |pqcrystals_dilithium_10  |        6|      0|   9337|  391896|    0|
-    |grp_pqcrystals_dilithium_11_fu_1383  |pqcrystals_dilithium_11  |        0|      0|   8899|    8654|    0|
-    |grp_pqcrystals_dilithium_12_fu_1452  |pqcrystals_dilithium_12  |        0|      1|     35|     132|    0|
-    |grp_pqcrystals_dilithium_13_fu_1391  |pqcrystals_dilithium_13  |        0|   1036|    137|   16955|    0|
-    |grp_pqcrystals_dilithium_17_fu_1271  |pqcrystals_dilithium_17  |        6|      0|  13964|  398453|    0|
-    |grp_pqcrystals_dilithium_18_fu_1442  |pqcrystals_dilithium_18  |        0|      0|     35|     155|    0|
-    |grp_pqcrystals_dilithium_19_fu_1375  |pqcrystals_dilithium_19  |        0|      0|    688|   22147|    0|
-    |grp_pqcrystals_dilithium_20_fu_1325  |pqcrystals_dilithium_20  |        1|   1818|  16248|   61615|    0|
-    |grp_pqcrystals_dilithium_21_fu_1313  |pqcrystals_dilithium_21  |        1|   1812|  16639|   65034|    0|
-    |grp_pqcrystals_dilithium_23_fu_1363  |pqcrystals_dilithium_23  |        1|    540|  10596|   14867|    0|
-    |grp_pqcrystals_dilithium_4_fu_1408   |pqcrystals_dilithium_4   |        0|      0|    151|   11306|    0|
-    |grp_pqcrystals_dilithium_5_fu_1332   |pqcrystals_dilithium_5   |        2|   1048|    317|   33840|    0|
-    |grp_pqcrystals_dilithium_6_fu_1434   |pqcrystals_dilithium_6   |        0|      0|     76|     302|    0|
-    |grp_pqcrystals_dilithium_9_fu_1259   |pqcrystals_dilithium_9   |        6|      0|   9242|  408977|    0|
+    |grp_KeccakF1600_StatePer_fu_1359     |KeccakF1600_StatePer     |        0|      0|   3866|  194018|    0|
+    |grp_KeccakF1600_StatePer_1_fu_1354   |KeccakF1600_StatePer_1   |        0|      0|   3866|  194018|    0|
+    |grp_keccak_absorb_2_fu_1339          |keccak_absorb_2          |        1|      0|   5537|  197422|    0|
+    |grp_keccak_absorb_3199_fu_1631       |keccak_absorb_3199       |        0|      0|    138|     326|    0|
+    |grp_pqcrystals_dilithium_fu_1415     |pqcrystals_dilithium     |        0|      0|    536|   35666|    0|
+    |grp_pqcrystals_dilithium_10_fu_1306  |pqcrystals_dilithium_10  |        6|      0|   9337|  391961|    0|
+    |grp_pqcrystals_dilithium_11_fu_1454  |pqcrystals_dilithium_11  |        0|      0|   8396|   24857|    0|
+    |grp_pqcrystals_dilithium_12_fu_1604  |pqcrystals_dilithium_12  |        0|      2|   8900|    7747|    0|
+    |grp_pqcrystals_dilithium_13_fu_1555  |pqcrystals_dilithium_13  |        0|   1036|    137|   16955|    0|
+    |grp_pqcrystals_dilithium_14_fu_1518  |pqcrystals_dilithium_14  |        0|    524|    137|   17465|    0|
+    |grp_pqcrystals_dilithium_15_fu_1535  |pqcrystals_dilithium_15  |        0|    524|    139|   17480|    0|
+    |grp_pqcrystals_dilithium_16_fu_1572  |pqcrystals_dilithium_16  |        0|      0|    524|   17512|    0|
+    |grp_pqcrystals_dilithium_17_fu_1425  |pqcrystals_dilithium_17  |        0|      4|   9667|    8912|    0|
+    |grp_pqcrystals_dilithium_18_fu_1475  |pqcrystals_dilithium_18  |        0|      0|    406|   28626|    0|
+    |grp_pqcrystals_dilithium_19_fu_1299  |pqcrystals_dilithium_19  |        6|      0|  13965|  399876|    0|
+    |grp_pqcrystals_dilithium_20_fu_1594  |pqcrystals_dilithium_20  |        0|      0|   8900|    7793|    0|
+    |grp_pqcrystals_dilithium_21_fu_1487  |pqcrystals_dilithium_21  |        0|      0|   8900|   18737|    0|
+    |grp_pqcrystals_dilithium_22_fu_1433  |pqcrystals_dilithium_22  |        0|      0|   8396|   24857|    0|
+    |grp_pqcrystals_dilithium_23_fu_1364  |pqcrystals_dilithium_23  |        0|      0|  10676|   77221|    0|
+    |grp_pqcrystals_dilithium_24_fu_1408  |pqcrystals_dilithium_24  |        1|   1818|  16248|   61615|    0|
+    |grp_pqcrystals_dilithium_25_fu_1372  |pqcrystals_dilithium_25  |        1|   1812|  16512|   65561|    0|
+    |grp_pqcrystals_dilithium_25_fu_1381  |pqcrystals_dilithium_25  |        1|   1812|  16512|   65561|    0|
+    |grp_pqcrystals_dilithium_25_fu_1390  |pqcrystals_dilithium_25  |        1|   1812|  16512|   65561|    0|
+    |grp_pqcrystals_dilithium_28_fu_1506  |pqcrystals_dilithium_28  |        1|    540|  10596|   14867|    0|
+    |grp_pqcrystals_dilithium_5_fu_1614   |pqcrystals_dilithium_5   |        0|      0|    151|   11306|    0|
+    |grp_pqcrystals_dilithium_6_fu_1498   |pqcrystals_dilithium_6   |        0|      0|    420|   28750|    0|
+    |grp_pqcrystals_dilithium_9_fu_1287   |pqcrystals_dilithium_9   |        6|      0|   9242|  409020|    0|
     +-------------------------------------+-------------------------+---------+-------+-------+--------+-----+
-    |Total                                |                         |       24|   6255| 100240| 2044975|    0|
+    |Total                                |                         |       24|   9884| 188616| 2403690|    0|
     +-------------------------------------+-------------------------+---------+-------+-------+--------+-----+
 
     * DSP48E: 
-    +---------------------------+----------------------+--------------+
-    |          Instance         |        Module        |  Expression  |
-    +---------------------------+----------------------+--------------+
-    |crypto_sign_mac_mAem_U118  |crypto_sign_mac_mAem  | i0 + i1 * i2 |
-    |crypto_sign_mac_mBew_U119  |crypto_sign_mac_mBew  | i0 * i1 + i2 |
-    |crypto_sign_mac_mibs_U120  |crypto_sign_mac_mibs  | i0 * i1 + i2 |
-    +---------------------------+----------------------+--------------+
+    N/A
 
     * Memory: 
     +------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
@@ -166,509 +153,430 @@
     +------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
     |state_0_s_U       |pqcrystals_dilithcud  |        4|  0|   0|    0|    25|   64|     1|         1600|
     |state_s_U         |pqcrystals_dilithcud  |        4|  0|   0|    0|    25|   64|     1|         1600|
-    |seedbuf_U         |pqcrystals_dilithocq  |        1|  0|   0|    0|   208|    8|     1|         1664|
-    |mat_vec_coeffs_U  |pqcrystals_dilithpcA  |        6|  0|   0|    0|  4096|   23|     1|        94208|
-    |s1_vec_coeffs_U   |pqcrystals_dilithqcK  |        2|  0|   0|    0|  1024|   32|     1|        32768|
-    |z_vec_coeffs_U    |pqcrystals_dilithqcK  |        2|  0|   0|    0|  1024|   32|     1|        32768|
-    |t0_vec_coeffs_U   |pqcrystals_dilithqcK  |        2|  0|   0|    0|  1024|   32|     1|        32768|
-    |s2_vec_coeffs_U   |pqcrystals_dilithqcK  |        2|  0|   0|    0|  1024|   32|     1|        32768|
-    |w1_vec_coeffs_U   |pqcrystals_dilithqcK  |        2|  0|   0|    0|  1024|   32|     1|        32768|
-    |w0_vec_coeffs_U   |pqcrystals_dilithqcK  |        2|  0|   0|    0|  1024|   32|     1|        32768|
-    |h_vec_coeffs_U    |pqcrystals_dilithqcK  |        2|  0|   0|    0|  1024|   32|     1|        32768|
-    |y_vec_coeffs_U    |pqcrystals_dilithrcU  |        2|  0|   0|    0|  1024|   19|     1|        19456|
-    |cp_coeffs_U       |pqcrystals_dilithyd2  |        2|  0|   0|    0|   256|   32|     1|         8192|
+    |t_coeffs_3_U      |pqcrystals_dilithocq  |        2|  0|   0|    0|   256|   32|     1|         8192|
+    |t_coeffs_2_U      |pqcrystals_dilithocq  |        2|  0|   0|    0|   256|   32|     1|         8192|
+    |t_coeffs_1_U      |pqcrystals_dilithocq  |        2|  0|   0|    0|   256|   32|     1|         8192|
+    |t_coeffs_U        |pqcrystals_dilithocq  |        2|  0|   0|    0|   256|   32|     1|         8192|
+    |cp_coeffs_U       |pqcrystals_dilithocq  |        2|  0|   0|    0|   256|   32|     1|         8192|
+    |seedbuf_U         |pqcrystals_dilithtde  |        1|  0|   0|    0|   208|    8|     1|         1664|
+    |mat_vec_coeffs_U  |pqcrystals_dilithudo  |        6|  0|   0|    0|  4096|   23|     1|        94208|
+    |s1_vec_coeffs_U   |pqcrystals_dilithvdy  |        2|  0|   0|    0|  1024|   32|     1|        32768|
+    |z_vec_coeffs_U    |pqcrystals_dilithvdy  |        2|  0|   0|    0|  1024|   32|     1|        32768|
+    |t0_vec_coeffs_U   |pqcrystals_dilithvdy  |        2|  0|   0|    0|  1024|   32|     1|        32768|
+    |s2_vec_coeffs_U   |pqcrystals_dilithvdy  |        2|  0|   0|    0|  1024|   32|     1|        32768|
+    |w1_vec_coeffs_U   |pqcrystals_dilithvdy  |        2|  0|   0|    0|  1024|   32|     1|        32768|
+    |w0_vec_coeffs_U   |pqcrystals_dilithvdy  |        2|  0|   0|    0|  1024|   32|     1|        32768|
+    |h_vec_coeffs_U    |pqcrystals_dilithvdy  |        2|  0|   0|    0|  1024|   32|     1|        32768|
+    |y_vec_coeffs_U    |pqcrystals_dilithwdI  |        2|  0|   0|    0|  1024|   32|     1|        32768|
     +------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
-    |Total             |                      |       33|  0|   0|    0| 12802|  434|    13|       356096|
+    |Total             |                      |       41|  0|   0|    0| 13826|  575|    17|       402176|
     +------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
 
     * FIFO: 
     N/A
 
     * Expression: 
-    +-------------------------+----------+-------+---+-----+------------+------------+
-    |      Variable Name      | Operation| DSP48E| FF| LUT | Bitwidth P0| Bitwidth P1|
-    +-------------------------+----------+-------+---+-----+------------+------------+
-    |add_ln124_1_fu_2375_p2   |     +    |      0|  0|   15|           8|           1|
-    |add_ln124_2_fu_2401_p2   |     +    |      0|  0|   15|           8|           1|
-    |add_ln124_3_fu_2427_p2   |     +    |      0|  0|   15|           8|           1|
-    |add_ln124_fu_2353_p2     |     +    |      0|  0|   15|           8|           1|
-    |add_ln233_fu_2505_p2     |     +    |      0|  0|   19|          12|          12|
-    |add_ln256_fu_3151_p2     |     +    |      0|  0|   19|          12|          12|
-    |add_ln307_fu_2985_p2     |     +    |      0|  0|   19|          12|          12|
-    |add_ln32_1_fu_1896_p2    |     +    |      0|  0|   15|           8|           7|
-    |add_ln32_2_fu_1906_p2    |     +    |      0|  0|   15|           8|           7|
-    |add_ln32_3_fu_1916_p2    |     +    |      0|  0|   15|           8|           7|
-    |add_ln32_4_fu_1926_p2    |     +    |      0|  0|   15|           8|           7|
-    |add_ln32_5_fu_1936_p2    |     +    |      0|  0|   15|           8|           7|
-    |add_ln32_6_fu_1946_p2    |     +    |      0|  0|   15|           8|           7|
-    |add_ln32_fu_1885_p2      |     +    |      0|  0|   15|           8|           7|
-    |add_ln33_fu_2915_p2      |     +    |      0|  0|   19|          12|          12|
-    |add_ln36_fu_2925_p2      |     +    |      0|  0|   39|          32|          23|
-    |add_ln422_fu_1851_p2     |     +    |      0|  0|   13|           4|           1|
-    |add_ln424_fu_1874_p2     |     +    |      0|  0|   15|           8|           7|
-    |add_ln42_fu_2515_p2      |     +    |      0|  0|   39|           7|          32|
-    |add_ln555_1_fu_2001_p2   |     +    |      0|  0|   12|           3|           1|
-    |add_ln555_2_fu_2680_p2   |     +    |      0|  0|   12|           3|           1|
-    |add_ln555_fu_1653_p2     |     +    |      0|  0|   12|           3|           1|
-    |add_ln557_1_fu_2024_p2   |     +    |      0|  0|   15|           8|           8|
-    |add_ln557_fu_1676_p2     |     +    |      0|  0|   15|           7|           8|
-    |add_ln558_1_fu_2056_p2   |     +    |      0|  0|   15|           8|           8|
-    |add_ln558_fu_1697_p2     |     +    |      0|  0|   15|           7|           8|
-    |add_ln559_1_fu_2136_p2   |     +    |      0|  0|   15|           8|           8|
-    |add_ln559_fu_1717_p2     |     +    |      0|  0|   15|           7|           8|
-    |add_ln560_1_fu_2156_p2   |     +    |      0|  0|   15|           8|           8|
-    |add_ln560_fu_1737_p2     |     +    |      0|  0|   15|           7|           8|
-    |add_ln561_1_fu_2176_p2   |     +    |      0|  0|   15|           8|           8|
-    |add_ln561_fu_1757_p2     |     +    |      0|  0|   15|           7|           8|
-    |add_ln562_1_fu_2196_p2   |     +    |      0|  0|   15|           8|           8|
-    |add_ln562_fu_1777_p2     |     +    |      0|  0|   15|           7|           8|
-    |add_ln563_1_fu_2216_p2   |     +    |      0|  0|   15|           8|           8|
-    |add_ln563_fu_1797_p2     |     +    |      0|  0|   15|           7|           8|
-    |add_ln564_1_fu_2236_p2   |     +    |      0|  0|   15|           8|           8|
-    |add_ln564_fu_1817_p2     |     +    |      0|  0|   15|           7|           8|
-    |add_ln88_14_fu_2853_p2   |     +    |      0|  0|   19|          12|          12|
-    |add_ln88_15_fu_3087_p2   |     +    |      0|  0|   19|          12|          12|
-    |add_ln88_1_fu_3098_p2    |     +    |      0|  0|   39|          32|          32|
-    |add_ln88_fu_2868_p2      |     +    |      0|  0|   39|          32|          32|
-    |i_10_fu_2292_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_11_fu_2304_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_12_fu_2316_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_13_fu_2459_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_14_fu_2471_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_15_fu_2624_p2          |     +    |      0|  0|   15|           5|           1|
-    |i_16_fu_2495_p2          |     +    |      0|  0|   16|           9|           1|
-    |i_17_fu_2784_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_18_fu_2802_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_19_fu_2819_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_20_fu_2881_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_21_fu_2843_p2          |     +    |      0|  0|   16|           9|           1|
-    |i_22_fu_2951_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_23_fu_2905_p2          |     +    |      0|  0|   16|           9|           1|
-    |i_24_fu_2975_p2          |     +    |      0|  0|   16|           9|           1|
-    |i_25_fu_3041_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_26_fu_3053_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_27_fu_3077_p2          |     +    |      0|  0|   16|           9|           1|
-    |i_28_fu_3111_p2          |     +    |      0|  0|   12|           3|           1|
-    |i_29_fu_3141_p2          |     +    |      0|  0|   16|           9|           1|
-    |i_6_fu_1597_p2           |     +    |      0|  0|   15|           5|           1|
-    |i_7_fu_1834_p2           |     +    |      0|  0|   15|           5|           1|
-    |i_9_fu_2253_p2           |     +    |      0|  0|   12|           3|           1|
-    |j_fu_2265_p2             |     +    |      0|  0|   12|           3|           1|
-    |nonce_fu_2322_p2         |     +    |      0|  0|   23|           1|          16|
-    |s_1_fu_3229_p2           |     +    |      0|  0|   16|           9|           9|
-    |s_fu_3166_p2             |     +    |      0|  0|   18|          11|          11|
-    |sub_ln48_fu_2548_p2      |     -    |      0|  0|   16|           6|           9|
-    |sub_ln52_1_fu_2612_p2    |     -    |      0|  0|   39|          32|          32|
-    |sub_ln52_fu_2591_p2      |     -    |      0|  0|   39|          22|          32|
-    |t_6_fu_3023_p2           |     -    |      0|  0|   39|          32|          32|
-    |a1_1_fu_2576_p2          |    and   |      0|  0|    8|           8|           8|
-    |and_ln308_fu_3017_p2     |    and   |      0|  0|   32|          32|          32|
-    |and_ln69_fu_3196_p2      |    and   |      0|  0|    2|           1|           1|
-    |icmp_ln104_1_fu_2453_p2  |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln104_fu_2286_p2    |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln111_fu_2796_p2    |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln118_fu_2778_p2    |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln124_1_fu_2390_p2  |   icmp   |      0|  0|   11|           8|           2|
-    |icmp_ln124_2_fu_2416_p2  |   icmp   |      0|  0|   11|           8|           2|
-    |icmp_ln124_3_fu_2442_p2  |   icmp   |      0|  0|   11|           8|           2|
-    |icmp_ln124_fu_2364_p2    |   icmp   |      0|  0|   11|           8|           2|
-    |icmp_ln162_fu_2945_p2    |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln172_fu_3129_p2    |   icmp   |      0|  0|   13|          11|           7|
-    |icmp_ln20_fu_2247_p2     |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln21_fu_2259_p2     |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln232_fu_2489_p2    |   icmp   |      0|  0|   13|           9|          10|
-    |icmp_ln242_fu_3047_p2    |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln255_fu_3135_p2    |   icmp   |      0|  0|   13|           9|          10|
-    |icmp_ln260_fu_3035_p2    |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln290_1_fu_2310_p2  |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln290_fu_2298_p2    |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln305_fu_2969_p2    |   icmp   |      0|  0|   13|           9|          10|
-    |icmp_ln310_fu_3029_p2    |   icmp   |      0|  0|   18|          32|          17|
-    |icmp_ln32_fu_2899_p2     |   icmp   |      0|  0|   13|           9|          10|
-    |icmp_ln364_1_fu_1828_p2  |   icmp   |      0|  0|   11|           5|           4|
-    |icmp_ln364_2_fu_2618_p2  |   icmp   |      0|  0|   11|           5|           4|
-    |icmp_ln364_fu_1591_p2    |   icmp   |      0|  0|   11|           5|           4|
-    |icmp_ln385_fu_2465_p2    |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln406_fu_3105_p2    |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln422_fu_1845_p2    |   icmp   |      0|  0|    9|           4|           4|
-    |icmp_ln555_1_fu_1995_p2  |   icmp   |      0|  0|    9|           3|           3|
-    |icmp_ln555_2_fu_2674_p2  |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln555_fu_1647_p2    |   icmp   |      0|  0|    9|           3|           3|
-    |icmp_ln57_fu_2875_p2     |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln69_1_fu_3178_p2   |   icmp   |      0|  0|   18|          32|          23|
-    |icmp_ln69_2_fu_3184_p2   |   icmp   |      0|  0|   18|          32|          23|
-    |icmp_ln69_3_fu_3190_p2   |   icmp   |      0|  0|   18|          32|           1|
-    |icmp_ln69_fu_3172_p2     |   icmp   |      0|  0|   18|          32|          17|
-    |icmp_ln87_1_fu_3071_p2   |   icmp   |      0|  0|   13|           9|          10|
-    |icmp_ln87_fu_2837_p2     |   icmp   |      0|  0|   13|           9|          10|
-    |icmp_ln89_fu_2813_p2     |   icmp   |      0|  0|    9|           3|           4|
-    |or_ln50_1_fu_2341_p2     |    or    |      0|  0|   16|          16|           2|
-    |or_ln50_2_fu_2347_p2     |    or    |      0|  0|   16|          16|           2|
-    |or_ln50_fu_2335_p2       |    or    |      0|  0|   16|          16|           1|
-    |or_ln558_1_fu_2046_p2    |    or    |      0|  0|    6|           6|           1|
-    |or_ln558_2_fu_2707_p2    |    or    |      0|  0|    5|           5|           1|
-    |or_ln558_fu_1687_p2      |    or    |      0|  0|    6|           6|           1|
-    |or_ln559_1_fu_2127_p2    |    or    |      0|  0|    6|           6|           2|
-    |or_ln559_2_fu_2718_p2    |    or    |      0|  0|    5|           5|           2|
-    |or_ln559_fu_1708_p2      |    or    |      0|  0|    6|           6|           2|
-    |or_ln560_1_fu_2147_p2    |    or    |      0|  0|    6|           6|           2|
-    |or_ln560_2_fu_2728_p2    |    or    |      0|  0|    5|           5|           2|
-    |or_ln560_fu_1728_p2      |    or    |      0|  0|    6|           6|           2|
-    |or_ln561_1_fu_2167_p2    |    or    |      0|  0|    6|           6|           3|
-    |or_ln561_2_fu_2738_p2    |    or    |      0|  0|    5|           5|           3|
-    |or_ln561_fu_1748_p2      |    or    |      0|  0|    6|           6|           3|
-    |or_ln562_1_fu_2187_p2    |    or    |      0|  0|    6|           6|           3|
-    |or_ln562_2_fu_2748_p2    |    or    |      0|  0|    5|           5|           3|
-    |or_ln562_fu_1768_p2      |    or    |      0|  0|    6|           6|           3|
-    |or_ln563_1_fu_2207_p2    |    or    |      0|  0|    6|           6|           3|
-    |or_ln563_2_fu_2758_p2    |    or    |      0|  0|    5|           5|           3|
-    |or_ln563_fu_1788_p2      |    or    |      0|  0|    6|           6|           3|
-    |or_ln564_1_fu_2227_p2    |    or    |      0|  0|    6|           6|           3|
-    |or_ln564_2_fu_2768_p2    |    or    |      0|  0|    5|           5|           3|
-    |or_ln564_fu_1808_p2      |    or    |      0|  0|    6|           6|           3|
-    |or_ln69_1_fu_3208_p2     |    or    |      0|  0|    2|           1|           1|
-    |or_ln69_fu_3202_p2       |    or    |      0|  0|    2|           1|           1|
-    |select_ln48_fu_2568_p3   |  select  |      0|  0|    2|           1|           2|
-    |select_ln52_fu_2604_p3   |  select  |      0|  0|   23|           1|          23|
-    |t_5_fu_3003_p3           |  select  |      0|  0|    2|           1|           2|
-    |shl_ln462_1_fu_2656_p2   |    shl   |      0|  0|  182|           5|          64|
-    |shl_ln462_fu_1629_p2     |    shl   |      0|  0|  182|           5|          64|
-    |ap_enable_pp0            |    xor   |      0|  0|    2|           1|           2|
-    |grp_fu_1472_p2           |    xor   |      0|  0|   65|          64|          65|
-    |xor_ln424_fu_1970_p2     |    xor   |      0|  0|   64|          64|          64|
-    |xor_ln462_1_fu_1976_p2   |    xor   |      0|  0|   64|          64|           5|
-    |xor_ln462_2_fu_2662_p2   |    xor   |      0|  0|   64|          64|          64|
-    |xor_ln462_fu_1635_p2     |    xor   |      0|  0|   64|          64|          64|
-    |xor_ln463_1_fu_1983_p2   |    xor   |      0|  0|   65|          64|          65|
-    |xor_ln48_fu_2562_p2      |    xor   |      0|  0|    2|           1|           2|
-    |xor_ln69_fu_3214_p2      |    xor   |      0|  0|    2|           1|           2|
-    +-------------------------+----------+-------+---+-----+------------+------------+
-    |Total                    |          |      0|  0| 2675|        1571|        1377|
-    +-------------------------+----------+-------+---+-----+------------+------------+
+    +-----------------------------------+----------+-------+---+-----+------------+------------+
+    |           Variable Name           | Operation| DSP48E| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +-----------------------------------+----------+-------+---+-----+------------+------------+
+    |add_ln124_1_fu_2443_p2             |     +    |      0|  0|   15|           8|           1|
+    |add_ln124_2_fu_2464_p2             |     +    |      0|  0|   15|           8|           1|
+    |add_ln124_3_fu_2485_p2             |     +    |      0|  0|   15|           8|           1|
+    |add_ln124_fu_2426_p2               |     +    |      0|  0|   15|           8|           1|
+    |add_ln32_1_fu_2044_p2              |     +    |      0|  0|   15|           8|           7|
+    |add_ln32_2_fu_2054_p2              |     +    |      0|  0|   15|           8|           7|
+    |add_ln32_3_fu_2064_p2              |     +    |      0|  0|   15|           8|           7|
+    |add_ln32_4_fu_2074_p2              |     +    |      0|  0|   15|           8|           7|
+    |add_ln32_5_fu_2084_p2              |     +    |      0|  0|   15|           8|           7|
+    |add_ln32_6_fu_2094_p2              |     +    |      0|  0|   15|           8|           7|
+    |add_ln32_fu_2033_p2                |     +    |      0|  0|   15|           8|           7|
+    |add_ln423_fu_1999_p2               |     +    |      0|  0|   13|           4|           1|
+    |add_ln425_fu_2022_p2               |     +    |      0|  0|   15|           8|           7|
+    |add_ln426_1_fu_2686_p2             |     +    |      0|  0|   17|          10|          10|
+    |add_ln426_fu_2669_p2               |     +    |      0|  0|   17|          10|          10|
+    |add_ln556_1_fu_2149_p2             |     +    |      0|  0|   12|           3|           1|
+    |add_ln556_2_fu_2563_p2             |     +    |      0|  0|   12|           3|           1|
+    |add_ln556_fu_1818_p2               |     +    |      0|  0|   12|           3|           1|
+    |add_ln558_1_fu_2172_p2             |     +    |      0|  0|   15|           8|           8|
+    |add_ln558_fu_1841_p2               |     +    |      0|  0|   15|           7|           8|
+    |add_ln559_1_fu_2204_p2             |     +    |      0|  0|   15|           8|           8|
+    |add_ln559_fu_1862_p2               |     +    |      0|  0|   15|           7|           8|
+    |add_ln560_1_fu_2284_p2             |     +    |      0|  0|   15|           8|           8|
+    |add_ln560_fu_1882_p2               |     +    |      0|  0|   15|           7|           8|
+    |add_ln561_1_fu_2304_p2             |     +    |      0|  0|   15|           8|           8|
+    |add_ln561_fu_1902_p2               |     +    |      0|  0|   15|           7|           8|
+    |add_ln562_1_fu_2324_p2             |     +    |      0|  0|   15|           8|           8|
+    |add_ln562_fu_1922_p2               |     +    |      0|  0|   15|           7|           8|
+    |add_ln563_1_fu_2344_p2             |     +    |      0|  0|   15|           8|           8|
+    |add_ln563_fu_1942_p2               |     +    |      0|  0|   15|           7|           8|
+    |add_ln564_1_fu_2364_p2             |     +    |      0|  0|   15|           8|           8|
+    |add_ln564_fu_1962_p2               |     +    |      0|  0|   15|           7|           8|
+    |add_ln565_1_fu_2384_p2             |     +    |      0|  0|   15|           8|           8|
+    |add_ln565_fu_1982_p2               |     +    |      0|  0|   15|           7|           8|
+    |i_2_fu_2512_p2                     |     +    |      0|  0|   12|           3|           1|
+    |n_fu_2696_p2                       |     +    |      0|  0|   18|          11|          11|
+    |nonce_fu_2395_p2                   |     +    |      0|  0|   23|           1|          16|
+    |ap_block_state259_on_subcall_done  |    and   |      0|  0|    2|           1|           1|
+    |ap_block_state343_on_subcall_done  |    and   |      0|  0|    2|           1|           1|
+    |ap_predicate_op1056_call_state259  |    and   |      0|  0|    2|           1|           1|
+    |ap_predicate_op1151_call_state343  |    and   |      0|  0|    2|           1|           1|
+    |icmp_ln124_1_fu_2458_p2            |   icmp   |      0|  0|   11|           8|           2|
+    |icmp_ln124_2_fu_2479_p2            |   icmp   |      0|  0|   11|           8|           2|
+    |icmp_ln124_3_fu_2500_p2            |   icmp   |      0|  0|   11|           8|           2|
+    |icmp_ln124_fu_2437_p2              |   icmp   |      0|  0|   11|           8|           2|
+    |icmp_ln172_fu_2702_p2              |   icmp   |      0|  0|   13|          11|           7|
+    |icmp_ln403_fu_2506_p2              |   icmp   |      0|  0|    9|           3|           4|
+    |icmp_ln423_fu_1993_p2              |   icmp   |      0|  0|    9|           4|           4|
+    |icmp_ln556_1_fu_2143_p2            |   icmp   |      0|  0|    9|           3|           3|
+    |icmp_ln556_2_fu_2557_p2            |   icmp   |      0|  0|    9|           3|           4|
+    |icmp_ln556_fu_1812_p2              |   icmp   |      0|  0|    9|           3|           3|
+    |ap_block_state205_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
+    |ap_block_state55_on_subcall_done   |    or    |      0|  0|    2|           1|           1|
+    |or_ln53_1_fu_2414_p2               |    or    |      0|  0|   16|          16|           2|
+    |or_ln53_2_fu_2420_p2               |    or    |      0|  0|   16|          16|           2|
+    |or_ln53_fu_2408_p2                 |    or    |      0|  0|   16|          16|           1|
+    |or_ln559_1_fu_2194_p2              |    or    |      0|  0|    6|           6|           1|
+    |or_ln559_2_fu_2590_p2              |    or    |      0|  0|    5|           5|           1|
+    |or_ln559_fu_1852_p2                |    or    |      0|  0|    6|           6|           1|
+    |or_ln560_1_fu_2275_p2              |    or    |      0|  0|    6|           6|           2|
+    |or_ln560_2_fu_2601_p2              |    or    |      0|  0|    5|           5|           2|
+    |or_ln560_fu_1873_p2                |    or    |      0|  0|    6|           6|           2|
+    |or_ln561_1_fu_2295_p2              |    or    |      0|  0|    6|           6|           2|
+    |or_ln561_2_fu_2611_p2              |    or    |      0|  0|    5|           5|           2|
+    |or_ln561_fu_1893_p2                |    or    |      0|  0|    6|           6|           2|
+    |or_ln562_1_fu_2315_p2              |    or    |      0|  0|    6|           6|           3|
+    |or_ln562_2_fu_2621_p2              |    or    |      0|  0|    5|           5|           3|
+    |or_ln562_fu_1913_p2                |    or    |      0|  0|    6|           6|           3|
+    |or_ln563_1_fu_2335_p2              |    or    |      0|  0|    6|           6|           3|
+    |or_ln563_2_fu_2631_p2              |    or    |      0|  0|    5|           5|           3|
+    |or_ln563_fu_1933_p2                |    or    |      0|  0|    6|           6|           3|
+    |or_ln564_1_fu_2355_p2              |    or    |      0|  0|    6|           6|           3|
+    |or_ln564_2_fu_2641_p2              |    or    |      0|  0|    5|           5|           3|
+    |or_ln564_fu_1953_p2                |    or    |      0|  0|    6|           6|           3|
+    |or_ln565_1_fu_2375_p2              |    or    |      0|  0|    6|           6|           3|
+    |or_ln565_2_fu_2651_p2              |    or    |      0|  0|    5|           5|           3|
+    |or_ln565_fu_1973_p2                |    or    |      0|  0|    6|           6|           3|
+    |shl_ln463_1_fu_2539_p2             |    shl   |      0|  0|  182|           5|          64|
+    |shl_ln463_fu_1794_p2               |    shl   |      0|  0|  182|           5|          64|
+    |ap_enable_pp0                      |    xor   |      0|  0|    2|           1|           2|
+    |grp_fu_1650_p2                     |    xor   |      0|  0|   65|          64|          65|
+    |xor_ln425_fu_2118_p2               |    xor   |      0|  0|   64|          64|          64|
+    |xor_ln463_1_fu_2124_p2             |    xor   |      0|  0|   64|          64|           5|
+    |xor_ln463_2_fu_2545_p2             |    xor   |      0|  0|   64|          64|          64|
+    |xor_ln463_fu_1800_p2               |    xor   |      0|  0|   64|          64|          64|
+    |xor_ln464_1_fu_2131_p2             |    xor   |      0|  0|   65|          64|          65|
+    +-----------------------------------+----------+-------+---+-----+------------+------------+
+    |Total                              |          |      0|  0| 1589|         891|         792|
+    +-----------------------------------+----------+-------+---+-----+------------+------------+
 
     * Multiplexer: 
-    +--------------------------------------------------------+-----+-----------+-----+-----------+
-    |                          Name                          | LUT | Input Size| Bits| Total Bits|
-    +--------------------------------------------------------+-----+-----------+-----+-----------+
-    |ap_NS_fsm                                               |  849|        196|    1|        196|
-    |ap_enable_reg_pp0_iter1                                 |    9|          2|    1|          2|
-    |ap_phi_mux_i_3_i1_phi_fu_901_p4                         |    9|          2|    4|          8|
-    |cp_coeffs_address0                                      |   21|          4|    8|         32|
-    |cp_coeffs_address1                                      |   15|          3|    8|         24|
-    |cp_coeffs_ce0                                           |   21|          4|    1|          4|
-    |cp_coeffs_ce1                                           |   15|          3|    1|          3|
-    |cp_coeffs_d0                                            |   15|          3|   32|         96|
-    |cp_coeffs_we0                                           |   15|          3|    1|          3|
-    |cp_coeffs_we1                                           |    9|          2|    1|          2|
-    |grp_keccak_absorb_2_fu_1289_m_offset                    |   15|          3|   13|         39|
-    |grp_keccak_absorb_2_fu_1289_mlen                        |   15|          3|   64|        192|
-    |grp_keccak_absorb_3199_fu_1425_m_offset                 |   15|          3|    8|         24|
-    |grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_offset     |   27|          5|    4|         20|
-    |grp_pqcrystals_dilithium_12_fu_1452_a_coeffs_q0         |   21|          4|   32|        128|
-    |grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_offset     |   33|          6|    4|         24|
-    |grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q0         |   21|          4|   32|        128|
-    |grp_pqcrystals_dilithium_13_fu_1391_b_coeffs_q1         |   21|          4|   32|        128|
-    |grp_pqcrystals_dilithium_13_fu_1391_c_coeffs_offset     |   33|          6|    4|         24|
-    |grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_offset     |   27|          5|    4|         20|
-    |grp_pqcrystals_dilithium_18_fu_1442_a_coeffs_q0         |   15|          3|   32|         96|
-    |grp_pqcrystals_dilithium_21_fu_1313_a_offset            |   27|          5|    3|         15|
-    |grp_pqcrystals_dilithium_21_fu_1313_a_q0                |   27|          5|   32|        160|
-    |grp_pqcrystals_dilithium_21_fu_1313_a_q1                |   27|          5|   32|        160|
-    |grp_pqcrystals_dilithium_23_fu_1363_a_offset            |   33|          6|    4|         24|
-    |grp_pqcrystals_dilithium_23_fu_1363_a_q0                |   21|          4|   32|        128|
-    |grp_pqcrystals_dilithium_23_fu_1363_a_q1                |   21|          4|   32|        128|
-    |grp_pqcrystals_dilithium_4_fu_1408_a_coeffs_offset      |   27|          5|    4|         20|
-    |grp_pqcrystals_dilithium_4_fu_1408_r_offset             |   27|          5|   11|         55|
-    |grp_pqcrystals_dilithium_5_fu_1332_u_vec_coeffs_offset  |   27|          5|    4|         20|
-    |grp_pqcrystals_dilithium_5_fu_1332_w_coeffs_offset      |   27|          5|    4|         20|
-    |grp_pqcrystals_dilithium_6_fu_1434_bound                |   15|          3|   18|         54|
-    |grp_pqcrystals_dilithium_6_fu_1434_v_vec_coeffs_q0      |   15|          3|   32|         96|
-    |grp_pqcrystals_dilithium_9_fu_1259_a_coeffs_offset      |   27|          5|    4|         20|
-    |grp_pqcrystals_dilithium_9_fu_1259_nonce                |   27|          5|   16|         80|
-    |h_vec_coeffs_address0                                   |   44|          9|   10|         90|
-    |h_vec_coeffs_address1                                   |   21|          4|   10|         40|
-    |h_vec_coeffs_ce0                                        |   41|          8|    1|          8|
-    |h_vec_coeffs_ce1                                        |   21|          4|    1|          4|
-    |h_vec_coeffs_d0                                         |   27|          5|   32|        160|
-    |h_vec_coeffs_d1                                         |   15|          3|   32|         96|
-    |h_vec_coeffs_we0                                        |   27|          5|    1|          5|
-    |h_vec_coeffs_we1                                        |   15|          3|    1|          3|
-    |i_0_i12_reg_1035                                        |    9|          2|    3|          6|
-    |i_0_i17_reg_1047                                        |    9|          2|    3|          6|
-    |i_0_i3_reg_944                                          |    9|          2|    3|          6|
-    |i_0_i41_reg_1091                                        |    9|          2|    3|          6|
-    |i_0_i43_reg_1102                                        |    9|          2|    3|          6|
-    |i_0_i45_reg_1113                                        |    9|          2|    3|          6|
-    |i_0_i51_reg_1135                                        |    9|          2|    3|          6|
-    |i_0_i57_reg_1179                                        |    9|          2|    3|          6|
-    |i_0_i59_reg_1191                                        |    9|          2|    3|          6|
-    |i_0_i5_reg_956                                          |    9|          2|    3|          6|
-    |i_0_i7_reg_968                                          |    9|          2|    3|          6|
-    |i_0_i83_reg_1157                                        |    9|          2|    3|          6|
-    |i_0_i85_reg_1213                                        |    9|          2|    3|          6|
-    |i_0_i_i18_reg_1058                                      |    9|          2|    9|         18|
-    |i_0_i_i21_reg_1069                                      |    9|          2|    5|         10|
-    |i_0_i_i46_reg_1124                                      |    9|          2|    9|         18|
-    |i_0_i_i52_reg_1146                                      |    9|          2|    9|         18|
-    |i_0_i_i60_reg_1202                                      |    9|          2|    9|         18|
-    |i_0_i_i84_reg_1168                                      |    9|          2|    9|         18|
-    |i_0_i_i86_reg_1236                                      |    9|          2|    9|         18|
-    |i_0_i_i_i_reg_886                                       |    9|          2|    5|         10|
-    |i_0_i_i_reg_863                                         |    9|          2|    5|         10|
-    |i_0_i_reg_920                                           |    9|          2|    3|          6|
-    |i_3_i1_reg_897                                          |    9|          2|    4|          8|
-    |i_3_i3_reg_908                                          |    9|          2|    3|          6|
-    |i_3_i46_reg_1080                                        |    9|          2|    3|          6|
-    |i_3_i_reg_874                                           |    9|          2|    3|          6|
-    |j_0_i_reg_932                                           |    9|          2|    3|          6|
-    |mat_vec_coeffs_address0                                 |   15|          3|   12|         36|
-    |mat_vec_coeffs_ce0                                      |   15|          3|    1|          3|
-    |mat_vec_coeffs_ce1                                      |    9|          2|    1|          2|
-    |mat_vec_coeffs_we0                                      |    9|          2|    1|          2|
-    |n_reg_1224                                              |    9|          2|   11|         22|
-    |nonce_assign_reg_980                                    |    9|          2|   16|         32|
-    |phi_ln124_1_reg_1002                                    |    9|          2|    8|         16|
-    |phi_ln124_2_reg_1013                                    |    9|          2|    8|         16|
-    |phi_ln124_3_reg_1024                                    |    9|          2|    8|         16|
-    |phi_ln124_reg_991                                       |    9|          2|    8|         16|
-    |s1_vec_coeffs_address0                                  |   21|          4|   10|         40|
-    |s1_vec_coeffs_address1                                  |   21|          4|   10|         40|
-    |s1_vec_coeffs_ce0                                       |   21|          4|    1|          4|
-    |s1_vec_coeffs_ce1                                       |   21|          4|    1|          4|
-    |s1_vec_coeffs_d0                                        |   15|          3|   32|         96|
-    |s1_vec_coeffs_d1                                        |   15|          3|   32|         96|
-    |s1_vec_coeffs_we0                                       |   15|          3|    1|          3|
-    |s1_vec_coeffs_we1                                       |   15|          3|    1|          3|
-    |s2_vec_coeffs_address0                                  |   21|          4|   10|         40|
-    |s2_vec_coeffs_address1                                  |   21|          4|   10|         40|
-    |s2_vec_coeffs_ce0                                       |   21|          4|    1|          4|
-    |s2_vec_coeffs_ce1                                       |   21|          4|    1|          4|
-    |s2_vec_coeffs_d0                                        |   15|          3|   32|         96|
-    |s2_vec_coeffs_d1                                        |   15|          3|   32|         96|
-    |s2_vec_coeffs_we0                                       |   15|          3|    1|          3|
-    |s2_vec_coeffs_we1                                       |   15|          3|    1|          3|
-    |s_0_i_i_reg_1247                                        |    9|          2|    9|         18|
-    |seedbuf_address0                                        |   85|         17|    8|        136|
-    |seedbuf_address1                                        |   85|         17|    8|        136|
-    |seedbuf_ce0                                             |   33|          6|    1|          6|
-    |seedbuf_ce1                                             |   33|          6|    1|          6|
-    |seedbuf_d0                                              |   47|         10|    8|         80|
-    |seedbuf_d1                                              |   47|         10|    8|         80|
-    |seedbuf_we0                                             |   15|          3|    1|          3|
-    |seedbuf_we1                                             |   15|          3|    1|          3|
-    |sig_address0                                            |   44|          9|   13|        117|
-    |sig_address1                                            |   44|          9|   13|        117|
-    |sig_ce0                                                 |   33|          6|    1|          6|
-    |sig_ce1                                                 |   33|          6|    1|          6|
-    |sig_d0                                                  |   38|          7|    8|         56|
-    |sig_d1                                                  |   38|          7|    8|         56|
-    |sig_we0                                                 |   21|          4|    1|          4|
-    |sig_we1                                                 |   21|          4|    1|          4|
-    |state_0_s_address0                                      |   33|          6|    5|         30|
-    |state_0_s_address1                                      |   33|          6|    5|         30|
-    |state_0_s_ce0                                           |   15|          3|    1|          3|
-    |state_0_s_ce1                                           |   15|          3|    1|          3|
-    |state_0_s_d0                                            |   21|          4|   64|        256|
-    |state_0_s_d1                                            |   21|          4|   64|        256|
-    |state_0_s_we0                                           |   15|          3|    1|          3|
-    |state_0_s_we1                                           |   15|          3|    1|          3|
-    |state_s_address0                                        |   53|         12|    5|         60|
-    |state_s_address1                                        |   21|          4|    5|         20|
-    |state_s_ce0                                             |   27|          5|    1|          5|
-    |state_s_ce1                                             |   21|          4|    1|          4|
-    |state_s_d0                                              |   38|          7|   64|        448|
-    |state_s_d1                                              |   21|          4|   64|        256|
-    |state_s_we0                                             |   21|          4|    1|          4|
-    |state_s_we1                                             |   21|          4|    1|          4|
-    |t0_vec_coeffs_address0                                  |   21|          4|   10|         40|
-    |t0_vec_coeffs_address1                                  |   21|          4|   10|         40|
-    |t0_vec_coeffs_ce0                                       |   21|          4|    1|          4|
-    |t0_vec_coeffs_ce1                                       |   21|          4|    1|          4|
-    |t0_vec_coeffs_d0                                        |   15|          3|   32|         96|
-    |t0_vec_coeffs_d1                                        |   15|          3|   32|         96|
-    |t0_vec_coeffs_we0                                       |   15|          3|    1|          3|
-    |t0_vec_coeffs_we1                                       |   15|          3|    1|          3|
-    |w0_vec_coeffs_address0                                  |   44|          9|   10|         90|
-    |w0_vec_coeffs_ce0                                       |   33|          6|    1|          6|
-    |w0_vec_coeffs_ce1                                       |    9|          2|    1|          2|
-    |w0_vec_coeffs_d0                                        |   33|          6|   32|        192|
-    |w0_vec_coeffs_we0                                       |   27|          5|    1|          5|
-    |w0_vec_coeffs_we1                                       |    9|          2|    1|          2|
-    |w1_vec_coeffs_address0                                  |   44|          9|   10|         90|
-    |w1_vec_coeffs_address1                                  |   21|          4|   10|         40|
-    |w1_vec_coeffs_ce0                                       |   38|          7|    1|          7|
-    |w1_vec_coeffs_ce1                                       |   21|          4|    1|          4|
-    |w1_vec_coeffs_d0                                        |   33|          6|   32|        192|
-    |w1_vec_coeffs_d1                                        |   15|          3|   32|         96|
-    |w1_vec_coeffs_we0                                       |   33|          6|    1|          6|
-    |w1_vec_coeffs_we1                                       |   15|          3|    1|          3|
-    |y_vec_coeffs_address0                                   |   38|          7|   10|         70|
-    |y_vec_coeffs_ce0                                        |   15|          3|    1|          3|
-    |y_vec_coeffs_we0                                        |    9|          2|    1|          2|
-    |z_vec_coeffs_address0                                   |   62|         15|   10|        150|
-    |z_vec_coeffs_address1                                   |   27|          5|   10|         50|
-    |z_vec_coeffs_ce0                                        |   38|          7|    1|          7|
-    |z_vec_coeffs_ce1                                        |   27|          5|    1|          5|
-    |z_vec_coeffs_d0                                         |   47|         10|   32|        320|
-    |z_vec_coeffs_d1                                         |   21|          4|   32|        128|
-    |z_vec_coeffs_we0                                        |   27|          5|    1|          5|
-    |z_vec_coeffs_we1                                        |   21|          4|    1|          4|
-    +--------------------------------------------------------+-----+-----------+-----+-----------+
-    |Total                                                   | 4305|        877| 1677|       7550|
-    +--------------------------------------------------------+-----+-----------+-----+-----------+
+    +------------------------------------------------------+------+-----------+-----+-----------+
+    |                         Name                         |  LUT | Input Size| Bits| Total Bits|
+    +------------------------------------------------------+------+-----------+-----+-----------+
+    |ap_NS_fsm                                             |  1525|        345|    1|        345|
+    |ap_enable_reg_pp0_iter1                               |     9|          2|    1|          2|
+    |ap_phi_mux_i_3_i1_phi_fu_1190_p4                      |     9|          2|    4|          8|
+    |cp_coeffs_address0                                    |    21|          4|    8|         32|
+    |cp_coeffs_address1                                    |    21|          4|    8|         32|
+    |cp_coeffs_ce0                                         |    21|          4|    1|          4|
+    |cp_coeffs_ce1                                         |    21|          4|    1|          4|
+    |cp_coeffs_d0                                          |    15|          3|   32|         96|
+    |cp_coeffs_d1                                          |    15|          3|   32|         96|
+    |cp_coeffs_we0                                         |    15|          3|    1|          3|
+    |cp_coeffs_we1                                         |    15|          3|    1|          3|
+    |grp_keccak_absorb_2_fu_1339_m_offset                  |    15|          3|   13|         39|
+    |grp_keccak_absorb_2_fu_1339_mlen                      |    15|          3|   64|        192|
+    |grp_keccak_absorb_3199_fu_1631_m_offset               |    15|          3|    8|         24|
+    |grp_pqcrystals_dilithium_10_fu_1306_a_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_10_fu_1306_a_coeffs_offset1  |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_10_fu_1306_nonce             |    85|         17|   11|        187|
+    |grp_pqcrystals_dilithium_11_fu_1454_a_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_11_fu_1454_b_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_11_fu_1454_c_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_12_fu_1604_a_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_12_fu_1604_a_coeffs_q0       |    27|          5|   32|        160|
+    |grp_pqcrystals_dilithium_12_fu_1604_a_coeffs_q1       |    27|          5|   32|        160|
+    |grp_pqcrystals_dilithium_13_fu_1555_b_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_13_fu_1555_b_coeffs_q0       |    21|          4|   32|        128|
+    |grp_pqcrystals_dilithium_13_fu_1555_b_coeffs_q1       |    21|          4|   32|        128|
+    |grp_pqcrystals_dilithium_13_fu_1555_c_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_14_fu_1518_a_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_14_fu_1518_c_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_15_fu_1535_a_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_15_fu_1535_a_coeffs_offset1  |    21|          4|    4|         16|
+    |grp_pqcrystals_dilithium_15_fu_1535_b_coeffs_offset   |    21|          4|    4|         16|
+    |grp_pqcrystals_dilithium_16_fu_1572_a0_coeffs_offset  |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_16_fu_1572_a1_coeffs_offset  |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_16_fu_1572_h_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_18_fu_1475_a_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_20_fu_1594_a_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_20_fu_1594_a_coeffs_q0       |    15|          3|   32|         96|
+    |grp_pqcrystals_dilithium_20_fu_1594_a_coeffs_q1       |    15|          3|   32|         96|
+    |grp_pqcrystals_dilithium_21_fu_1487_a_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_21_fu_1487_b_coeffs_q0       |    27|          5|   32|        160|
+    |grp_pqcrystals_dilithium_21_fu_1487_b_coeffs_q1       |    27|          5|   32|        160|
+    |grp_pqcrystals_dilithium_22_fu_1433_a_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_22_fu_1433_b_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_22_fu_1433_b_coeffs_q0       |    15|          3|   32|         96|
+    |grp_pqcrystals_dilithium_22_fu_1433_b_coeffs_q1       |    15|          3|   32|         96|
+    |grp_pqcrystals_dilithium_22_fu_1433_c_coeffs_offset   |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_22_fu_1433_c_coeffs_q0       |    15|          3|   32|         96|
+    |grp_pqcrystals_dilithium_22_fu_1433_c_coeffs_q1       |    15|          3|   32|         96|
+    |grp_pqcrystals_dilithium_25_fu_1372_a_offset          |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_25_fu_1372_a_q0              |    15|          3|   32|         96|
+    |grp_pqcrystals_dilithium_25_fu_1372_a_q1              |    15|          3|   32|         96|
+    |grp_pqcrystals_dilithium_25_fu_1381_a_offset          |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_25_fu_1390_a_offset          |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_28_fu_1506_a_offset          |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_28_fu_1506_a_q0              |    21|          4|   32|        128|
+    |grp_pqcrystals_dilithium_28_fu_1506_a_q1              |    21|          4|   32|        128|
+    |grp_pqcrystals_dilithium_5_fu_1614_a_coeffs_offset    |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_5_fu_1614_r_offset           |    27|          5|   11|         55|
+    |grp_pqcrystals_dilithium_6_fu_1498_bound              |    15|          3|   18|         54|
+    |grp_pqcrystals_dilithium_6_fu_1498_v_vec_coeffs_q0    |    15|          3|   32|         96|
+    |grp_pqcrystals_dilithium_6_fu_1498_v_vec_coeffs_q1    |    15|          3|   32|         96|
+    |grp_pqcrystals_dilithium_9_fu_1287_a_coeffs_offset    |    27|          5|    4|         20|
+    |grp_pqcrystals_dilithium_9_fu_1287_nonce              |    27|          5|   16|         80|
+    |h_vec_coeffs_address0                                 |    44|          9|   10|         90|
+    |h_vec_coeffs_address1                                 |    41|          8|   10|         80|
+    |h_vec_coeffs_ce0                                      |    44|          9|    1|          9|
+    |h_vec_coeffs_ce1                                      |    41|          8|    1|          8|
+    |h_vec_coeffs_d0                                       |    27|          5|   32|        160|
+    |h_vec_coeffs_d1                                       |    27|          5|   32|        160|
+    |h_vec_coeffs_we0                                      |    27|          5|    1|          5|
+    |h_vec_coeffs_we1                                      |    27|          5|    1|          5|
+    |i_0_i_reg_1264                                        |     9|          2|    3|          6|
+    |i_3_i1_reg_1186                                       |     9|          2|    4|          8|
+    |i_3_i2_reg_1197                                       |     9|          2|    3|          6|
+    |i_3_i46_reg_1276                                      |     9|          2|    3|          6|
+    |i_3_i_reg_1174                                        |     9|          2|    3|          6|
+    |mat_vec_coeffs_address0                               |    21|          4|   12|         48|
+    |mat_vec_coeffs_address1                               |    15|          3|   12|         36|
+    |mat_vec_coeffs_ce0                                    |    21|          4|    1|          4|
+    |mat_vec_coeffs_ce1                                    |    15|          3|    1|          3|
+    |mat_vec_coeffs_we0                                    |     9|          2|    1|          2|
+    |nonce_assign_reg_1209                                 |     9|          2|   16|         32|
+    |phi_ln124_1_reg_1231                                  |     9|          2|    8|         16|
+    |phi_ln124_2_reg_1242                                  |     9|          2|    8|         16|
+    |phi_ln124_3_reg_1253                                  |     9|          2|    8|         16|
+    |phi_ln124_reg_1220                                    |     9|          2|    8|         16|
+    |s1_vec_coeffs_address0                                |    21|          4|   10|         40|
+    |s1_vec_coeffs_address1                                |    21|          4|   10|         40|
+    |s1_vec_coeffs_ce0                                     |    21|          4|    1|          4|
+    |s1_vec_coeffs_ce1                                     |    21|          4|    1|          4|
+    |s1_vec_coeffs_d0                                      |    15|          3|   32|         96|
+    |s1_vec_coeffs_d1                                      |    15|          3|   32|         96|
+    |s1_vec_coeffs_we0                                     |    15|          3|    1|          3|
+    |s1_vec_coeffs_we1                                     |    15|          3|    1|          3|
+    |s2_vec_coeffs_address0                                |    21|          4|   10|         40|
+    |s2_vec_coeffs_address1                                |    21|          4|   10|         40|
+    |s2_vec_coeffs_ce0                                     |    21|          4|    1|          4|
+    |s2_vec_coeffs_ce1                                     |    21|          4|    1|          4|
+    |s2_vec_coeffs_d0                                      |    15|          3|   32|         96|
+    |s2_vec_coeffs_d1                                      |    15|          3|   32|         96|
+    |s2_vec_coeffs_we0                                     |    15|          3|    1|          3|
+    |s2_vec_coeffs_we1                                     |    15|          3|    1|          3|
+    |seedbuf_address0                                      |    85|         17|    8|        136|
+    |seedbuf_address1                                      |    85|         17|    8|        136|
+    |seedbuf_ce0                                           |    33|          6|    1|          6|
+    |seedbuf_ce1                                           |    33|          6|    1|          6|
+    |seedbuf_d0                                            |    47|         10|    8|         80|
+    |seedbuf_d1                                            |    47|         10|    8|         80|
+    |seedbuf_we0                                           |    15|          3|    1|          3|
+    |seedbuf_we1                                           |    15|          3|    1|          3|
+    |sig_address0                                          |    44|          9|   13|        117|
+    |sig_address1                                          |    44|          9|   13|        117|
+    |sig_ce0                                               |    33|          6|    1|          6|
+    |sig_ce1                                               |    33|          6|    1|          6|
+    |sig_d0                                                |    38|          7|    8|         56|
+    |sig_d1                                                |    38|          7|    8|         56|
+    |sig_we0                                               |    21|          4|    1|          4|
+    |sig_we1                                               |    21|          4|    1|          4|
+    |state_0_s_address0                                    |    85|         17|    5|         85|
+    |state_0_s_address1                                    |    85|         17|    5|         85|
+    |state_0_s_ce0                                         |    15|          3|    1|          3|
+    |state_0_s_ce1                                         |    15|          3|    1|          3|
+    |state_0_s_d0                                          |    27|          5|   64|        320|
+    |state_0_s_d1                                          |    21|          4|   64|        256|
+    |state_0_s_we0                                         |    15|          3|    1|          3|
+    |state_0_s_we1                                         |    15|          3|    1|          3|
+    |state_s_address0                                      |   145|         32|    5|        160|
+    |state_s_address1                                      |   149|         33|    5|        165|
+    |state_s_ce0                                           |    27|          5|    1|          5|
+    |state_s_ce1                                           |    27|          5|    1|          5|
+    |state_s_d0                                            |    38|          7|   64|        448|
+    |state_s_d1                                            |    27|          5|   64|        320|
+    |state_s_we0                                           |    21|          4|    1|          4|
+    |state_s_we1                                           |    27|          5|    1|          5|
+    |t0_vec_coeffs_address0                                |    21|          4|   10|         40|
+    |t0_vec_coeffs_address1                                |    21|          4|   10|         40|
+    |t0_vec_coeffs_ce0                                     |    21|          4|    1|          4|
+    |t0_vec_coeffs_ce1                                     |    21|          4|    1|          4|
+    |t0_vec_coeffs_d0                                      |    15|          3|   32|         96|
+    |t0_vec_coeffs_d1                                      |    15|          3|   32|         96|
+    |t0_vec_coeffs_we0                                     |    15|          3|    1|          3|
+    |t0_vec_coeffs_we1                                     |    15|          3|    1|          3|
+    |t_coeffs_1_address0                                   |    15|          3|    8|         24|
+    |t_coeffs_1_address1                                   |    15|          3|    8|         24|
+    |t_coeffs_1_ce0                                        |    15|          3|    1|          3|
+    |t_coeffs_1_ce1                                        |    15|          3|    1|          3|
+    |t_coeffs_1_we0                                        |     9|          2|    1|          2|
+    |t_coeffs_1_we1                                        |     9|          2|    1|          2|
+    |t_coeffs_2_address0                                   |    15|          3|    8|         24|
+    |t_coeffs_2_address1                                   |    15|          3|    8|         24|
+    |t_coeffs_2_ce0                                        |    15|          3|    1|          3|
+    |t_coeffs_2_ce1                                        |    15|          3|    1|          3|
+    |t_coeffs_2_we0                                        |     9|          2|    1|          2|
+    |t_coeffs_2_we1                                        |     9|          2|    1|          2|
+    |t_coeffs_3_address0                                   |    15|          3|    8|         24|
+    |t_coeffs_3_address1                                   |    15|          3|    8|         24|
+    |t_coeffs_3_ce0                                        |    15|          3|    1|          3|
+    |t_coeffs_3_ce1                                        |    15|          3|    1|          3|
+    |t_coeffs_3_we0                                        |     9|          2|    1|          2|
+    |t_coeffs_3_we1                                        |     9|          2|    1|          2|
+    |t_coeffs_address0                                     |    15|          3|    8|         24|
+    |t_coeffs_address1                                     |    15|          3|    8|         24|
+    |t_coeffs_ce0                                          |    15|          3|    1|          3|
+    |t_coeffs_ce1                                          |    15|          3|    1|          3|
+    |t_coeffs_we0                                          |     9|          2|    1|          2|
+    |t_coeffs_we1                                          |     9|          2|    1|          2|
+    |w0_vec_coeffs_address0                                |    41|          8|   10|         80|
+    |w0_vec_coeffs_address1                                |    41|          8|   10|         80|
+    |w0_vec_coeffs_ce0                                     |    41|          8|    1|          8|
+    |w0_vec_coeffs_ce1                                     |    41|          8|    1|          8|
+    |w0_vec_coeffs_d0                                      |    33|          6|   32|        192|
+    |w0_vec_coeffs_d1                                      |    33|          6|   32|        192|
+    |w0_vec_coeffs_we0                                     |    33|          6|    1|          6|
+    |w0_vec_coeffs_we1                                     |    33|          6|    1|          6|
+    |w1_vec_coeffs_address0                                |    44|          9|   10|         90|
+    |w1_vec_coeffs_address1                                |    44|          9|   10|         90|
+    |w1_vec_coeffs_ce0                                     |    44|          9|    1|          9|
+    |w1_vec_coeffs_ce1                                     |    44|          9|    1|          9|
+    |w1_vec_coeffs_d0                                      |    38|          7|   32|        224|
+    |w1_vec_coeffs_d1                                      |    38|          7|   32|        224|
+    |w1_vec_coeffs_we0                                     |    38|          7|    1|          7|
+    |w1_vec_coeffs_we1                                     |    38|          7|    1|          7|
+    |y_vec_coeffs_address0                                 |    38|          7|   10|         70|
+    |y_vec_coeffs_ce0                                      |    21|          4|    1|          4|
+    |y_vec_coeffs_ce1                                      |     9|          2|    1|          2|
+    |y_vec_coeffs_we0                                      |     9|          2|    1|          2|
+    |z_vec_coeffs_address0                                 |    59|         14|   10|        140|
+    |z_vec_coeffs_address1                                 |    44|          9|   10|         90|
+    |z_vec_coeffs_ce0                                      |    50|         11|    1|         11|
+    |z_vec_coeffs_ce1                                      |    44|          9|    1|          9|
+    |z_vec_coeffs_d0                                       |    38|          7|   32|        224|
+    |z_vec_coeffs_d1                                       |    33|          6|   32|        192|
+    |z_vec_coeffs_we0                                      |    38|          7|    1|          7|
+    |z_vec_coeffs_we1                                      |    33|          6|    1|          6|
+    +------------------------------------------------------+------+-----------+-----+-----------+
+    |Total                                                 |  6576|       1337| 2085|      10423|
+    +------------------------------------------------------+------+-----------+-----+-----------+
 
     * Register: 
     +--------------------------------------------------+-----+----+-----+-----------+
     |                       Name                       |  FF | LUT| Bits| Const Bits|
     +--------------------------------------------------+-----+----+-----+-----------+
-    |add_ln124_1_reg_3573                              |    8|   0|    8|          0|
-    |add_ln124_2_reg_3592                              |    8|   0|    8|          0|
-    |add_ln124_3_reg_3611                              |    8|   0|    8|          0|
-    |add_ln124_reg_3554                                |    8|   0|    8|          0|
-    |add_ln422_reg_3322                                |    4|   0|    4|          0|
-    |add_ln555_1_reg_3431                              |    3|   0|    3|          0|
-    |add_ln555_2_reg_3685                              |    3|   0|    3|          0|
-    |add_ln555_reg_3289                                |    3|   0|    3|          0|
-    |add_ln_reg_3497                                   |    5|   0|   10|          5|
-    |ap_CS_fsm                                         |  195|   0|  195|          0|
+    |add_ln124_1_reg_3078                              |    8|   0|    8|          0|
+    |add_ln124_2_reg_3097                              |    8|   0|    8|          0|
+    |add_ln124_3_reg_3116                              |    8|   0|    8|          0|
+    |add_ln124_reg_3059                                |    8|   0|    8|          0|
+    |add_ln423_reg_2882                                |    4|   0|    4|          0|
+    |add_ln426_reg_3201                                |   10|   0|   10|          0|
+    |add_ln556_1_reg_2981                              |    3|   0|    3|          0|
+    |add_ln556_2_reg_3152                              |    3|   0|    3|          0|
+    |add_ln556_reg_2848                                |    3|   0|    3|          0|
+    |ap_CS_fsm                                         |  344|   0|  344|          0|
     |ap_enable_reg_pp0_iter0                           |    1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1                           |    1|   0|    1|          0|
-    |grp_KeccakF1600_StatePer_1_fu_1303_ap_start_reg   |    1|   0|    1|          0|
-    |grp_KeccakF1600_StatePer_fu_1308_ap_start_reg     |    1|   0|    1|          0|
-    |grp_keccak_absorb_2_fu_1289_ap_start_reg          |    1|   0|    1|          0|
-    |grp_keccak_absorb_3199_fu_1425_ap_start_reg       |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_10_fu_1278_ap_start_reg  |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_11_fu_1383_ap_start_reg  |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_12_fu_1452_ap_start_reg  |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_13_fu_1391_ap_start_reg  |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_17_fu_1271_ap_start_reg  |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_18_fu_1442_ap_start_reg  |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_19_fu_1375_ap_start_reg  |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_20_fu_1325_ap_start_reg  |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_21_fu_1313_ap_start_reg  |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_23_fu_1363_ap_start_reg  |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_4_fu_1408_ap_start_reg   |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_5_fu_1332_ap_start_reg   |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_6_fu_1434_ap_start_reg   |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_9_fu_1259_ap_start_reg   |    1|   0|    1|          0|
-    |grp_pqcrystals_dilithium_fu_1349_ap_start_reg     |    1|   0|    1|          0|
-    |i_0_i12_reg_1035                                  |    3|   0|    3|          0|
-    |i_0_i17_reg_1047                                  |    3|   0|    3|          0|
-    |i_0_i3_reg_944                                    |    3|   0|    3|          0|
-    |i_0_i41_reg_1091                                  |    3|   0|    3|          0|
-    |i_0_i43_reg_1102                                  |    3|   0|    3|          0|
-    |i_0_i45_reg_1113                                  |    3|   0|    3|          0|
-    |i_0_i51_reg_1135                                  |    3|   0|    3|          0|
-    |i_0_i57_reg_1179                                  |    3|   0|    3|          0|
-    |i_0_i59_reg_1191                                  |    3|   0|    3|          0|
-    |i_0_i5_reg_956                                    |    3|   0|    3|          0|
-    |i_0_i7_reg_968                                    |    3|   0|    3|          0|
-    |i_0_i83_reg_1157                                  |    3|   0|    3|          0|
-    |i_0_i85_reg_1213                                  |    3|   0|    3|          0|
-    |i_0_i_i18_reg_1058                                |    9|   0|    9|          0|
-    |i_0_i_i21_reg_1069                                |    5|   0|    5|          0|
-    |i_0_i_i46_reg_1124                                |    9|   0|    9|          0|
-    |i_0_i_i52_reg_1146                                |    9|   0|    9|          0|
-    |i_0_i_i60_reg_1202                                |    9|   0|    9|          0|
-    |i_0_i_i84_reg_1168                                |    9|   0|    9|          0|
-    |i_0_i_i86_reg_1236                                |    9|   0|    9|          0|
-    |i_0_i_i_i_reg_886                                 |    5|   0|    5|          0|
-    |i_0_i_i_reg_863                                   |    5|   0|    5|          0|
-    |i_0_i_reg_920                                     |    3|   0|    3|          0|
-    |i_10_reg_3505                                     |    3|   0|    3|          0|
-    |i_11_reg_3513                                     |    3|   0|    3|          0|
-    |i_12_reg_3521                                     |    3|   0|    3|          0|
-    |i_13_reg_3633                                     |    3|   0|    3|          0|
-    |i_14_reg_3641                                     |    3|   0|    3|          0|
-    |i_16_reg_3654                                     |    9|   0|    9|          0|
-    |i_17_reg_3713                                     |    3|   0|    3|          0|
-    |i_18_reg_3727                                     |    3|   0|    3|          0|
-    |i_19_reg_3740                                     |    3|   0|    3|          0|
-    |i_20_reg_3771                                     |    3|   0|    3|          0|
-    |i_21_reg_3753                                     |    9|   0|    9|          0|
-    |i_22_reg_3798                                     |    3|   0|    3|          0|
-    |i_23_reg_3784                                     |    9|   0|    9|          0|
-    |i_24_reg_3811                                     |    9|   0|    9|          0|
-    |i_25_reg_3827                                     |    3|   0|    3|          0|
-    |i_26_reg_3843                                     |    3|   0|    3|          0|
-    |i_27_reg_3856                                     |    9|   0|    9|          0|
-    |i_28_reg_3874                                     |    3|   0|    3|          0|
-    |i_29_reg_3890                                     |    9|   0|    9|          0|
-    |i_3_i1_reg_897                                    |    4|   0|    4|          0|
-    |i_3_i3_reg_908                                    |    3|   0|    3|          0|
-    |i_3_i46_reg_1080                                  |    3|   0|    3|          0|
-    |i_3_i_reg_874                                     |    3|   0|    3|          0|
-    |i_9_reg_3484                                      |    3|   0|    3|          0|
-    |icmp_ln124_1_reg_3588                             |    1|   0|    1|          0|
-    |icmp_ln124_2_reg_3607                             |    1|   0|    1|          0|
-    |icmp_ln124_3_reg_3626                             |    1|   0|    1|          0|
-    |icmp_ln124_reg_3569                               |    1|   0|    1|          0|
-    |icmp_ln162_reg_3794                               |    1|   0|    1|          0|
-    |icmp_ln422_reg_3318                               |    1|   0|    1|          0|
-    |j_0_i_reg_932                                     |    3|   0|    3|          0|
-    |j_reg_3492                                        |    3|   0|    3|          0|
-    |n_reg_1224                                        |   11|   0|   11|          0|
-    |nonce_assign_reg_980                              |   16|   0|   16|          0|
-    |nonce_reg_3526                                    |   16|   0|   16|          0|
-    |or_ln50_1_reg_3544                                |   14|   0|   16|          2|
-    |or_ln50_2_reg_3549                                |   14|   0|   16|          2|
-    |or_ln50_reg_3539                                  |   14|   0|   16|          2|
-    |phi_ln124_1_reg_1002                              |    8|   0|    8|          0|
-    |phi_ln124_2_reg_1013                              |    8|   0|    8|          0|
-    |phi_ln124_3_reg_1024                              |    8|   0|    8|          0|
-    |phi_ln124_reg_991                                 |    8|   0|    8|          0|
-    |reg_1551                                          |   32|   0|   32|          0|
-    |reg_1555                                          |    8|   0|    8|          0|
-    |reg_1561                                          |    8|   0|    8|          0|
-    |reg_1567                                          |    8|   0|    8|          0|
-    |reg_1573                                          |    8|   0|    8|          0|
-    |reg_1579                                          |    8|   0|    8|          0|
-    |reg_1585                                          |    8|   0|    8|          0|
-    |s_0_i_i_reg_1247                                  |    9|   0|    9|          0|
-    |seedbuf_load_1_reg_3358                           |    8|   0|    8|          0|
-    |seedbuf_load_2_reg_3378                           |    8|   0|    8|          0|
-    |seedbuf_load_3_reg_3383                           |    8|   0|    8|          0|
-    |seedbuf_load_4_reg_3398                           |    8|   0|    8|          0|
-    |seedbuf_load_5_reg_3403                           |    8|   0|    8|          0|
-    |seedbuf_load_reg_3353                             |    8|   0|    8|          0|
-    |shl_ln50_reg_3531                                 |   14|   0|   16|          2|
-    |shl_ln557_1_reg_3441                              |    3|   0|    6|          3|
-    |shl_ln557_2_reg_3700                              |    2|   0|    5|          3|
-    |shl_ln5_reg_3299                                  |    3|   0|    6|          3|
-    |state_0_s_addr_3_reg_3347                         |    4|   0|    5|          1|
-    |state_0_s_load_2_reg_3373                         |   64|   0|   64|          0|
-    |state_s_addr_12_reg_3677                          |    5|   0|    5|          0|
-    |state_s_addr_reg_3276                             |    5|   0|    5|          0|
-    |tmp_12_reg_3832                                   |    1|   0|    1|          0|
-    |tmp_21_reg_3836                                   |    1|   0|    1|          0|
-    |tmp_3256_reg_3597                                 |    8|   0|   64|         56|
-    |tmp_3257_reg_3616                                 |    8|   0|   64|         56|
-    |tmp_s_reg_3578                                    |    8|   0|   64|         56|
-    |trunc_ln557_3_reg_3695                            |    2|   0|    2|          0|
-    |trunc_ln559_1_reg_3451                            |    8|   0|    8|          0|
-    |trunc_ln560_1_reg_3456                            |    8|   0|    8|          0|
-    |trunc_ln561_1_reg_3461                            |    8|   0|    8|          0|
-    |trunc_ln562_1_reg_3466                            |    8|   0|    8|          0|
-    |trunc_ln563_1_reg_3471                            |    8|   0|    8|          0|
-    |trunc_ln564_1_reg_3476                            |    8|   0|    8|          0|
-    |w0_vec_coeffs_addr_1_reg_3861                     |   10|   0|   10|          0|
-    |w1_vec_coeffs_addr_reg_3664                       |   10|   0|   10|          0|
-    |z_vec_coeffs_addr_4_reg_3763                      |   10|   0|   10|          0|
-    |z_vec_coeffs_addr_5_reg_3789                      |   10|   0|   10|          0|
-    |zext_ln119_reg_3718                               |    3|   0|    4|          1|
-    |zext_ln124_reg_3559                               |    8|   0|   64|         56|
-    |zext_ln164_reg_3732                               |    3|   0|    4|          1|
-    |zext_ln228_reg_3646                               |    3|   0|   12|          9|
-    |zext_ln233_1_reg_3659                             |   12|   0|   64|         52|
-    |zext_ln251_reg_3879                               |    3|   0|   12|          9|
-    |zext_ln256_1_reg_3895                             |   12|   0|   64|         52|
-    |zext_ln28_reg_3776                                |    3|   0|   12|          9|
-    |zext_ln294_reg_3803                               |    3|   0|   12|          9|
-    |zext_ln424_reg_3327                               |    4|   0|    8|          4|
-    |zext_ln83_1_reg_3848                              |    3|   0|   12|          9|
-    |zext_ln83_reg_3745                                |    3|   0|   12|          9|
+    |grp_KeccakF1600_StatePer_1_fu_1354_ap_start_reg   |    1|   0|    1|          0|
+    |grp_KeccakF1600_StatePer_fu_1359_ap_start_reg     |    1|   0|    1|          0|
+    |grp_keccak_absorb_2_fu_1339_ap_start_reg          |    1|   0|    1|          0|
+    |grp_keccak_absorb_3199_fu_1631_ap_start_reg       |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_10_fu_1306_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_11_fu_1454_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_12_fu_1604_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_13_fu_1555_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_14_fu_1518_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_15_fu_1535_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_16_fu_1572_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_17_fu_1425_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_18_fu_1475_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_19_fu_1299_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_20_fu_1594_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_21_fu_1487_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_22_fu_1433_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_23_fu_1364_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_24_fu_1408_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_25_fu_1372_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_25_fu_1381_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_25_fu_1390_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_28_fu_1506_ap_start_reg  |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_5_fu_1614_ap_start_reg   |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_6_fu_1498_ap_start_reg   |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_9_fu_1287_ap_start_reg   |    1|   0|    1|          0|
+    |grp_pqcrystals_dilithium_fu_1415_ap_start_reg     |    1|   0|    1|          0|
+    |i_0_i_reg_1264                                    |    3|   0|    3|          0|
+    |i_2_reg_3138                                      |    3|   0|    3|          0|
+    |i_3_i1_reg_1186                                   |    4|   0|    4|          0|
+    |i_3_i2_reg_1197                                   |    3|   0|    3|          0|
+    |i_3_i46_reg_1276                                  |    3|   0|    3|          0|
+    |i_3_i_reg_1174                                    |    3|   0|    3|          0|
+    |icmp_ln124_1_reg_3093                             |    1|   0|    1|          0|
+    |icmp_ln124_2_reg_3112                             |    1|   0|    1|          0|
+    |icmp_ln124_3_reg_3131                             |    1|   0|    1|          0|
+    |icmp_ln124_reg_3074                               |    1|   0|    1|          0|
+    |icmp_ln423_reg_2878                               |    1|   0|    1|          0|
+    |nonce_assign_reg_1209                             |   16|   0|   16|          0|
+    |nonce_reg_3031                                    |   16|   0|   16|          0|
+    |or_ln53_1_reg_3049                                |   14|   0|   16|          2|
+    |or_ln53_2_reg_3054                                |   14|   0|   16|          2|
+    |or_ln53_reg_3044                                  |   14|   0|   16|          2|
+    |phi_ln124_1_reg_1231                              |    8|   0|    8|          0|
+    |phi_ln124_2_reg_1242                              |    8|   0|    8|          0|
+    |phi_ln124_3_reg_1253                              |    8|   0|    8|          0|
+    |phi_ln124_reg_1220                                |    8|   0|    8|          0|
+    |reg_1729                                          |   32|   0|   32|          0|
+    |reg_1733                                          |    8|   0|    8|          0|
+    |reg_1739                                          |    8|   0|    8|          0|
+    |reg_1745                                          |    8|   0|    8|          0|
+    |reg_1751                                          |    8|   0|    8|          0|
+    |reg_1757                                          |    8|   0|    8|          0|
+    |reg_1763                                          |    8|   0|    8|          0|
+    |reg_1769                                          |    9|   0|    9|          0|
+    |seedbuf_load_1_reg_2918                           |    8|   0|    8|          0|
+    |seedbuf_load_2_reg_2938                           |    8|   0|    8|          0|
+    |seedbuf_load_3_reg_2943                           |    8|   0|    8|          0|
+    |seedbuf_load_4_reg_2958                           |    8|   0|    8|          0|
+    |seedbuf_load_5_reg_2963                           |    8|   0|    8|          0|
+    |seedbuf_load_reg_2913                             |    8|   0|    8|          0|
+    |shl_ln4_reg_2858                                  |    3|   0|    6|          3|
+    |shl_ln53_reg_3036                                 |   14|   0|   16|          2|
+    |shl_ln558_1_reg_2991                              |    3|   0|    6|          3|
+    |shl_ln558_2_reg_3167                              |    2|   0|    5|          3|
+    |state_0_s_addr_25_reg_2907                        |    4|   0|    5|          1|
+    |state_0_s_load_2_reg_2933                         |   64|   0|   64|          0|
+    |state_s_addr_102_reg_2839                         |    5|   0|    5|          0|
+    |state_s_addr_104_reg_3143                         |    5|   0|    5|          0|
+    |tmp_134_i9_reg_3181                               |    1|   0|    1|          0|
+    |tmp_135_i8_reg_3185                               |    1|   0|    1|          0|
+    |tmp_136_i7_reg_3189                               |    1|   0|    1|          0|
+    |tmp_16_reg_3193                                   |    1|   0|    1|          0|
+    |tmp_25_reg_3197                                   |    1|   0|    1|          0|
+    |tmp_6736_reg_3102                                 |    8|   0|   64|         56|
+    |tmp_6737_reg_3121                                 |    8|   0|   64|         56|
+    |tmp_i_reg_3177                                    |    1|   0|    1|          0|
+    |tmp_s_reg_3083                                    |    8|   0|   64|         56|
+    |trunc_ln558_3_reg_3162                            |    2|   0|    2|          0|
+    |trunc_ln560_1_reg_3001                            |    8|   0|    8|          0|
+    |trunc_ln561_1_reg_3006                            |    8|   0|    8|          0|
+    |trunc_ln562_1_reg_3011                            |    8|   0|    8|          0|
+    |trunc_ln563_1_reg_3016                            |    8|   0|    8|          0|
+    |trunc_ln564_1_reg_3021                            |    8|   0|    8|          0|
+    |trunc_ln565_1_reg_3026                            |    8|   0|    8|          0|
+    |zext_ln124_reg_3064                               |    8|   0|   64|         56|
+    |zext_ln425_reg_2887                               |    4|   0|    8|          4|
     +--------------------------------------------------+-----+----+-----+-----------+
-    |Total                                             | 1028|   0| 1439|        411|
+    |Total                                             |  887|   0| 1133|        246|
     +--------------------------------------------------+-----+----+-----+-----------+
 
 

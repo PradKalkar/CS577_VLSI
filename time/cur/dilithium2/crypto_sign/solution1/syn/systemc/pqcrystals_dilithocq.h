@@ -18,8 +18,8 @@ using namespace sc_dt;
 
 struct pqcrystals_dilithocq_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 8;
-  static const unsigned AddressRange = 208;
+  static const unsigned DataWidth = 32;
+  static const unsigned AddressRange = 256;
   static const unsigned AddressWidth = 8;
 
 //latency = 1
@@ -108,8 +108,8 @@ void prc_write_1()
 SC_MODULE(pqcrystals_dilithocq) {
 
 
-static const unsigned DataWidth = 8;
-static const unsigned AddressRange = 208;
+static const unsigned DataWidth = 32;
+static const unsigned AddressRange = 256;
 static const unsigned AddressWidth = 8;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;

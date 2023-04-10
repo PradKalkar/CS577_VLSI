@@ -46,6 +46,7 @@ void store64(uint8_t x[8], uint64_t u) {
   unsigned int i;
 
   for(i=0;i<8;i++)
+#pragma HLS unroll
     x[i] = u >> 8*i;
 }
 
@@ -86,8 +87,8 @@ static const uint64_t KeccakF_RoundConstants[NROUNDS] = {
 **************************************************/
 static void KeccakF1600_StatePermute(uint64_t state[25])
 {
-        int round;
 
+        int round;
         uint64_t Aba, Abe, Abi, Abo, Abu;
         uint64_t Aga, Age, Agi, Ago, Agu;
         uint64_t Aka, Ake, Aki, Ako, Aku;
@@ -362,6 +363,7 @@ static void keccak_init(keccak_state *state)
 {
   unsigned int i;
   for(i=0;i<25;i++)
+#pragma HLS unroll
     state->s[i] = 0;
   state->pos = 0;
 }
@@ -411,7 +413,6 @@ unsigned int keccak_absorb(uint64_t s[25],
 
   while(mlen >= r) {
     for(i=0;i<r/8;i++){
-#pragma HLS pipeline
       s[i] ^= load64(m+8*i);
     }
     m += r;
@@ -486,7 +487,6 @@ static void keccak_squeezeblocks(uint8_t *out,
   while(nblocks > 0) {
     KeccakF1600_StatePermute(s);
     for(i=0;i<r/8;i++){
-      #pragma HLS pipeline
       store64(out + 8*i, s[i]);
     }
     out += r;
@@ -540,6 +540,7 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
     #pragma HLS unroll
     KeccakF1600_StatePermute(s);
     for(i=0;i<r/8;i++)
+#pragma HLS unroll
       store64(out+8*i,s[i]);
     out += r;
     outlen -= r;
@@ -571,6 +572,7 @@ unsigned int keccak_squeeze(uint8_t out[3*32],
 
   store64(t,s[pos/8]);
   for(i=0;i<outlen;i++)
+#pragma HLS unroll
     out[i] = t[i];
   pos += outlen;
   return pos;

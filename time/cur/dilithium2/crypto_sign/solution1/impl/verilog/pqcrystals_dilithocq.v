@@ -5,9 +5,9 @@
 `timescale 1 ns / 1 ps
 module pqcrystals_dilithocq_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
 
-parameter DWIDTH = 8;
+parameter DWIDTH = 32;
 parameter AWIDTH = 8;
-parameter MEM_SIZE = 208;
+parameter MEM_SIZE = 256;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -63,8 +63,8 @@ module pqcrystals_dilithocq(
     d1,
     q1);
 
-parameter DataWidth = 32'd8;
-parameter AddressRange = 32'd208;
+parameter DataWidth = 32'd32;
+parameter AddressRange = 32'd256;
 parameter AddressWidth = 32'd8;
 input reset;
 input clk;

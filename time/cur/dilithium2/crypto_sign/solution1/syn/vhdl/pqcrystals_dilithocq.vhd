@@ -10,9 +10,9 @@ use ieee.std_logic_unsigned.all;
 entity pqcrystals_dilithocq_ram is 
     generic(
             MEM_TYPE    : string := "block"; 
-            DWIDTH     : integer := 8; 
+            DWIDTH     : integer := 32; 
             AWIDTH     : integer := 8; 
-            MEM_SIZE    : integer := 208
+            MEM_SIZE    : integer := 256
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -101,8 +101,8 @@ use IEEE.std_logic_1164.all;
 
 entity pqcrystals_dilithocq is
     generic (
-        DataWidth : INTEGER := 8;
-        AddressRange : INTEGER := 208;
+        DataWidth : INTEGER := 32;
+        AddressRange : INTEGER := 256;
         AddressWidth : INTEGER := 8);
     port (
         reset : IN STD_LOGIC;

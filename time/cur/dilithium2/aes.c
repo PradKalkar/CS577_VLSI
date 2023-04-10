@@ -159,6 +159,7 @@ static void KeyExpansion(uint8_t* RoundKey, const uint8_t* Key)
   // The first round key is the key itself.
   for (i = 0; i < Nk; ++i)
   {
+#pragma HLS unroll
     RoundKey[(i * 4) + 0] = Key[(i * 4) + 0];
     RoundKey[(i * 4) + 1] = Key[(i * 4) + 1];
     RoundKey[(i * 4) + 2] = Key[(i * 4) + 2];
@@ -168,6 +169,7 @@ static void KeyExpansion(uint8_t* RoundKey, const uint8_t* Key)
   // All other round keys are found from the previous round keys.
   for (i = Nk; i < Nb * (Nr + 1); ++i)
   {
+#pragma HLS unroll
     {
       k = (i - 1) * 4;
       tempa[0]=RoundKey[k + 0];
@@ -247,8 +249,10 @@ static void AddRoundKey(uint8_t round,state_t* state,uint8_t* RoundKey)
   uint8_t i,j;
   AddRoundKey_label0:for (i = 0; i < 4; ++i)
   {
+#pragma HLS unroll
     AddRoundKey_label1:for (j = 0; j < 4; ++j)
     {
+#pragma HLS unroll
       (*state)[i][j] ^= RoundKey[(round * Nb * 4) + (i * Nb) + j];
     }
   }
@@ -261,8 +265,10 @@ static void SubBytes(state_t* state)
   uint8_t i, j;
   SubBytes_label0:for (i = 0; i < 4; ++i)
   {
+#pragma HLS unroll
     SubBytes_label3:for (j = 0; j < 4; ++j)
     {
+#pragma HLS unroll
       (*state)[j][i] = getSBoxValue((*state)[j][i]);
     }
   }
@@ -315,6 +321,7 @@ static void MixColumns(state_t* state)
   uint8_t Tmp, Tm, t;
   MixColumns_label1:for (i = 0; i < 4; ++i)
   {  
+#pragma HLS unroll
     t   = (*state)[i][0];
     Tmp = (*state)[i][0] ^ (*state)[i][1] ^ (*state)[i][2] ^ (*state)[i][3] ;
     Tm  = (*state)[i][0] ^ (*state)[i][1] ; Tm = xtime(Tm);  (*state)[i][0] ^= Tm ^ Tmp ;
@@ -357,6 +364,7 @@ static void InvMixColumns(state_t* state)
   uint8_t a, b, c, d;
   for (i = 0; i < 4; ++i)
   { 
+#pragma HLS unroll
     a = (*state)[i][0];
     b = (*state)[i][1];
     c = (*state)[i][2];
@@ -377,8 +385,10 @@ static void InvSubBytes(state_t* state)
   uint8_t i, j;
   for (i = 0; i < 4; ++i)
   {
+#pragma HLS unroll
     for (j = 0; j < 4; ++j)
     {
+#pragma HLS unroll
       (*state)[j][i] = getSBoxInvert((*state)[j][i]);
     }
   }
@@ -455,6 +465,7 @@ static void Cipher(state_t* state2, uint8_t RoundKey[AES_keyExpSize])
   // These Nr-1 rounds are executed in the loop below.
   Cipher_label2:for (round = 1; round <= Nr; ++round)
   {
+#pragma HLS unroll
 	if(round == 1)
 		AddRoundKey(0, state, RoundKey);
     SubBytes(state);
@@ -507,6 +518,7 @@ static void InvCipher(state_t* state,uint8_t* RoundKey)
   // These Nr-1 rounds are executed in the loop below.
   for (round = (Nr - 1); round > 0; --round)
   {
+#pragma HLS unroll
     InvShiftRows(state);
     InvSubBytes(state);
     AddRoundKey(round, state, RoundKey);
@@ -555,6 +567,7 @@ static void XorWithIv(uint8_t* buf, uint8_t* Iv)
   uint8_t i;
   for (i = 0; i < AES_BLOCKLEN; ++i) // The block in AES is always 128bit no matter the key size
   {
+#pragma HLS unroll
     buf[i] ^= Iv[i];
   }
 }
@@ -565,6 +578,7 @@ void AES_CBC_encrypt_buffer(struct AES_ctx *ctx,uint8_t* buf, uint32_t length)
   uint8_t *Iv = ctx->Iv;
   for (i = 0; i < length; i += AES_BLOCKLEN)
   {
+#pragma HLS unroll
     XorWithIv(buf, Iv);
     Cipher((state_t*)buf, ctx->RoundKey);
     Iv = buf;
@@ -581,6 +595,7 @@ void AES_CBC_decrypt_buffer(struct AES_ctx* ctx, uint8_t* buf,  uint32_t length)
   uint8_t storeNextIv[AES_BLOCKLEN];
   for (i = 0; i < length; i += AES_BLOCKLEN)
   {
+#pragma HLS unroll
     memcpy(storeNextIv, buf, AES_BLOCKLEN);
     InvCipher((state_t*)buf, ctx->RoundKey);
     XorWithIv(buf, ctx->Iv);
@@ -605,6 +620,7 @@ void AES_CTR_xcrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, uint32_t length)
   int bi;
   for (i = 0, bi = AES_BLOCKLEN; i < length; ++i, ++bi)
   {
+#pragma HLS unroll
     if (bi == AES_BLOCKLEN) /* we need to regen xor compliment in buffer */
     {
       

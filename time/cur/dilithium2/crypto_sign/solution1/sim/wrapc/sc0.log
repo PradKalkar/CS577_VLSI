@@ -1,137 +1,137 @@
    Build using "/tools/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
    Compiling apatb_crypto_sign.cpp
-   Compiling (apcc) symmetric-aes.c_pre.c.tb.c
+   Compiling (apcc) aes256ctr.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:27:48 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:47:40 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5458401681048668661323
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/703231681100260475277
 INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) polyvec.c_pre.c.tb.c
+   Compiling (apcc) aes.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:27:52 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:47:45 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5458951681048672993426
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/703911681100265935512
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) fips202.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:27:57 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:47:50 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5459501681048677071048
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/704531681100270348556
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) ntt.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:47:55 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/705121681100275315404
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) packing.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:47:59 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/705691681100279377488
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) poly.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:48:03 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/706281681100283518561
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) polyvec.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:48:07 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/706841681100288009193
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) PQCgenKAT_sign.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:01 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:48:12 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-In file included from /home/guest/Downloads/time_242/dilithium2/PQCgenKAT_sign.c:1:
-/home/guest/Downloads/time_242/dilithium2/PQCgenKAT_sign.c:142:17: warning: incompatible pointer types passing 'unsigned long long *' to parameter of type 'unsigned long *' [-Wincompatible-pointer-types]
+In file included from /home/cse/Downloads/time/dilithium2/PQCgenKAT_sign.c:1:
+/home/cse/Downloads/time/dilithium2/PQCgenKAT_sign.c:142:17: warning: incompatible pointer types passing 'unsigned long long *' to parameter of type 'unsigned long *' [-Wincompatible-pointer-types]
 crypto_sign(sm, &smlen, m, mlen, sk))
                 ^~~~~~
 ./apatb_crypto_sign.h:8:20: note: passing argument to parameter 'smlen' here
 long unsigned int* smlen,
                    ^
 1 warning generated.
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5460051681048681871623
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) symmetric-shake.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:05 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5460601681048685946093
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/707411681100292148230
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) reduce.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:09 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:48:16 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5461151681048689876610
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) ntt.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:13 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5461701681048693815127
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/707961681100296267776
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) rng.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:17 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:48:20 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5462281681048697776343
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) sign.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:21 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5462831681048701853097
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) packing.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:25 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5463381681048705885458
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) poly.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:29 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5463961681048709963355
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) aes.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:34 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5464511681048714399923
-INFO: [APCC 202-1] APCC is done.
-   Compiling (apcc) aes256ctr.c_pre.c.tb.c
-INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:38 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
-clang: warning: argument unused during compilation: '-fno-builtin-isinf'
-clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5465071681048718626074
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/708511681100300282543
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) rounding.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'guest' on host 'cse-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-67-generic) on Sun Apr 09 19:28:42 IST 2023
-INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
-INFO: [HLS 200-10] In directory '/home/guest/Downloads/time_242/dilithium2/crypto_sign/solution1/sim/wrapc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:48:24 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_guest/5465621681048722927592
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/709071681100304428167
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) sign.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:48:28 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/709621681100308430002
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) symmetric-aes.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:48:32 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/710171681100312496104
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) symmetric-shake.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'cse' on host 'saketkumar' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 10 09:48:36 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/cse/Downloads/time/dilithium2/crypto_sign/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_cse/710731681100316500930
 INFO: [APCC 202-1] APCC is done.
    Generating cosim.tv.exe

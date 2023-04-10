@@ -12,8 +12,8 @@ void pqcrystals_dilithium_15::thread_ap_clk_no_reset_() {
         ap_CS_fsm = ap_NS_fsm.read();
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        tmp_1721_reg_21091 = tmp_1721_fu_8021_p3.read();
-        tmp_492_reg_21359 = tmp_492_fu_8067_p3.read();
+        tmp_4433_reg_19067 = tmp_4433_fu_8021_p3.read();
+        tmp_5763_cast_reg_19335 = tmp_5763_cast_fu_8088_p3.read();
     }
 }
 

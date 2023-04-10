@@ -11,12 +11,12 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "pqcrystals_dilithium_16.h"
+#include "pqcrystals_dilithium_18.h"
 
 namespace ap_rtl {
 
 struct pqcrystals_dilithium_6 : public sc_module {
-    // Port declarations 11
+    // Port declarations 14
     sc_in_clk ap_clk;
     sc_in< sc_logic > ap_rst;
     sc_in< sc_logic > ap_start;
@@ -26,6 +26,9 @@ struct pqcrystals_dilithium_6 : public sc_module {
     sc_out< sc_lv<10> > v_vec_coeffs_address0;
     sc_out< sc_logic > v_vec_coeffs_ce0;
     sc_in< sc_lv<32> > v_vec_coeffs_q0;
+    sc_out< sc_lv<10> > v_vec_coeffs_address1;
+    sc_out< sc_logic > v_vec_coeffs_ce1;
+    sc_in< sc_lv<32> > v_vec_coeffs_q1;
     sc_in< sc_lv<18> > bound;
     sc_out< sc_lv<1> > ap_return;
 
@@ -38,33 +41,33 @@ struct pqcrystals_dilithium_6 : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    pqcrystals_dilithium_16* grp_pqcrystals_dilithium_16_fu_35;
+    pqcrystals_dilithium_18* grp_pqcrystals_dilithium_18_fu_35;
     sc_signal< sc_lv<8> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
-    sc_signal< sc_lv<17> > trunc_ln339_fu_48_p1;
-    sc_signal< sc_lv<17> > trunc_ln339_reg_53;
-    sc_signal< sc_lv<1> > grp_pqcrystals_dilithium_16_fu_35_ap_return;
-    sc_signal< sc_lv<1> > tmp4_reg_58;
+    sc_signal< sc_lv<1> > grp_pqcrystals_dilithium_18_fu_35_ap_return;
+    sc_signal< sc_lv<1> > tmp4_reg_54;
     sc_signal< sc_logic > ap_CS_fsm_state2;
-    sc_signal< sc_logic > grp_pqcrystals_dilithium_16_fu_35_ap_ready;
-    sc_signal< sc_logic > grp_pqcrystals_dilithium_16_fu_35_ap_done;
-    sc_signal< sc_lv<1> > tmp_3_reg_62;
+    sc_signal< sc_logic > grp_pqcrystals_dilithium_18_fu_35_ap_ready;
+    sc_signal< sc_logic > grp_pqcrystals_dilithium_18_fu_35_ap_done;
+    sc_signal< sc_lv<1> > tmp_3_reg_58;
     sc_signal< sc_logic > ap_CS_fsm_state4;
-    sc_signal< sc_lv<1> > tmp_s_reg_66;
+    sc_signal< sc_lv<1> > tmp_s_reg_62;
     sc_signal< sc_logic > ap_CS_fsm_state6;
-    sc_signal< bool > ap_predicate_op18_call_state6;
+    sc_signal< bool > ap_predicate_op17_call_state6;
     sc_signal< bool > ap_block_state6_on_subcall_done;
-    sc_signal< sc_logic > grp_pqcrystals_dilithium_16_fu_35_ap_start;
-    sc_signal< sc_logic > grp_pqcrystals_dilithium_16_fu_35_ap_idle;
-    sc_signal< sc_lv<10> > grp_pqcrystals_dilithium_16_fu_35_a_coeffs_address0;
-    sc_signal< sc_logic > grp_pqcrystals_dilithium_16_fu_35_a_coeffs_ce0;
-    sc_signal< sc_lv<4> > grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset;
+    sc_signal< sc_logic > grp_pqcrystals_dilithium_18_fu_35_ap_start;
+    sc_signal< sc_logic > grp_pqcrystals_dilithium_18_fu_35_ap_idle;
+    sc_signal< sc_lv<10> > grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address0;
+    sc_signal< sc_logic > grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce0;
+    sc_signal< sc_lv<10> > grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address1;
+    sc_signal< sc_logic > grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce1;
+    sc_signal< sc_lv<4> > grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset;
     sc_signal< sc_lv<1> > ap_phi_mux_UnifiedRetVal_phi_fu_28_p4;
     sc_signal< sc_lv<1> > UnifiedRetVal_reg_24;
     sc_signal< sc_logic > ap_CS_fsm_state8;
-    sc_signal< bool > ap_predicate_op22_call_state8;
+    sc_signal< bool > ap_predicate_op21_call_state8;
     sc_signal< bool > ap_block_state8_on_subcall_done;
-    sc_signal< sc_logic > grp_pqcrystals_dilithium_16_fu_35_ap_start_reg;
+    sc_signal< sc_logic > grp_pqcrystals_dilithium_18_fu_35_ap_start_reg;
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_logic > ap_CS_fsm_state5;
     sc_signal< sc_logic > ap_CS_fsm_state7;
@@ -111,15 +114,16 @@ struct pqcrystals_dilithium_6 : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_phi_mux_UnifiedRetVal_phi_fu_28_p4();
-    void thread_ap_predicate_op18_call_state6();
-    void thread_ap_predicate_op22_call_state8();
+    void thread_ap_predicate_op17_call_state6();
+    void thread_ap_predicate_op21_call_state8();
     void thread_ap_ready();
     void thread_ap_return();
-    void thread_grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset();
-    void thread_grp_pqcrystals_dilithium_16_fu_35_ap_start();
-    void thread_trunc_ln339_fu_48_p1();
+    void thread_grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset();
+    void thread_grp_pqcrystals_dilithium_18_fu_35_ap_start();
     void thread_v_vec_coeffs_address0();
+    void thread_v_vec_coeffs_address1();
     void thread_v_vec_coeffs_ce0();
+    void thread_v_vec_coeffs_ce1();
     void thread_ap_NS_fsm();
 };
 

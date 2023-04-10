@@ -40,19 +40,22 @@ const sc_lv<4> pqcrystals_dilithium_6::ap_const_lv4_2 = "10";
 const sc_lv<4> pqcrystals_dilithium_6::ap_const_lv4_3 = "11";
 
 pqcrystals_dilithium_6::pqcrystals_dilithium_6(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    grp_pqcrystals_dilithium_16_fu_35 = new pqcrystals_dilithium_16("grp_pqcrystals_dilithium_16_fu_35");
-    grp_pqcrystals_dilithium_16_fu_35->ap_clk(ap_clk);
-    grp_pqcrystals_dilithium_16_fu_35->ap_rst(ap_rst);
-    grp_pqcrystals_dilithium_16_fu_35->ap_start(grp_pqcrystals_dilithium_16_fu_35_ap_start);
-    grp_pqcrystals_dilithium_16_fu_35->ap_done(grp_pqcrystals_dilithium_16_fu_35_ap_done);
-    grp_pqcrystals_dilithium_16_fu_35->ap_idle(grp_pqcrystals_dilithium_16_fu_35_ap_idle);
-    grp_pqcrystals_dilithium_16_fu_35->ap_ready(grp_pqcrystals_dilithium_16_fu_35_ap_ready);
-    grp_pqcrystals_dilithium_16_fu_35->a_coeffs_address0(grp_pqcrystals_dilithium_16_fu_35_a_coeffs_address0);
-    grp_pqcrystals_dilithium_16_fu_35->a_coeffs_ce0(grp_pqcrystals_dilithium_16_fu_35_a_coeffs_ce0);
-    grp_pqcrystals_dilithium_16_fu_35->a_coeffs_q0(v_vec_coeffs_q0);
-    grp_pqcrystals_dilithium_16_fu_35->a_coeffs_offset(grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset);
-    grp_pqcrystals_dilithium_16_fu_35->B(trunc_ln339_reg_53);
-    grp_pqcrystals_dilithium_16_fu_35->ap_return(grp_pqcrystals_dilithium_16_fu_35_ap_return);
+    grp_pqcrystals_dilithium_18_fu_35 = new pqcrystals_dilithium_18("grp_pqcrystals_dilithium_18_fu_35");
+    grp_pqcrystals_dilithium_18_fu_35->ap_clk(ap_clk);
+    grp_pqcrystals_dilithium_18_fu_35->ap_rst(ap_rst);
+    grp_pqcrystals_dilithium_18_fu_35->ap_start(grp_pqcrystals_dilithium_18_fu_35_ap_start);
+    grp_pqcrystals_dilithium_18_fu_35->ap_done(grp_pqcrystals_dilithium_18_fu_35_ap_done);
+    grp_pqcrystals_dilithium_18_fu_35->ap_idle(grp_pqcrystals_dilithium_18_fu_35_ap_idle);
+    grp_pqcrystals_dilithium_18_fu_35->ap_ready(grp_pqcrystals_dilithium_18_fu_35_ap_ready);
+    grp_pqcrystals_dilithium_18_fu_35->a_coeffs_address0(grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address0);
+    grp_pqcrystals_dilithium_18_fu_35->a_coeffs_ce0(grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce0);
+    grp_pqcrystals_dilithium_18_fu_35->a_coeffs_q0(v_vec_coeffs_q0);
+    grp_pqcrystals_dilithium_18_fu_35->a_coeffs_address1(grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address1);
+    grp_pqcrystals_dilithium_18_fu_35->a_coeffs_ce1(grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce1);
+    grp_pqcrystals_dilithium_18_fu_35->a_coeffs_q1(v_vec_coeffs_q1);
+    grp_pqcrystals_dilithium_18_fu_35->a_coeffs_offset(grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset);
+    grp_pqcrystals_dilithium_18_fu_35->B(bound);
+    grp_pqcrystals_dilithium_18_fu_35->ap_return(grp_pqcrystals_dilithium_18_fu_35_ap_return);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -83,12 +86,12 @@ pqcrystals_dilithium_6::pqcrystals_dilithium_6(sc_module_name name) : sc_module(
     sensitive << ( ap_CS_fsm );
 
     SC_METHOD(thread_ap_block_state6_on_subcall_done);
-    sensitive << ( grp_pqcrystals_dilithium_16_fu_35_ap_done );
-    sensitive << ( ap_predicate_op18_call_state6 );
+    sensitive << ( grp_pqcrystals_dilithium_18_fu_35_ap_done );
+    sensitive << ( ap_predicate_op17_call_state6 );
 
     SC_METHOD(thread_ap_block_state8_on_subcall_done);
-    sensitive << ( grp_pqcrystals_dilithium_16_fu_35_ap_done );
-    sensitive << ( ap_predicate_op22_call_state8 );
+    sensitive << ( grp_pqcrystals_dilithium_18_fu_35_ap_done );
+    sensitive << ( ap_predicate_op21_call_state8 );
 
     SC_METHOD(thread_ap_done);
     sensitive << ( ap_start );
@@ -101,21 +104,21 @@ pqcrystals_dilithium_6::pqcrystals_dilithium_6(sc_module_name name) : sc_module(
     sensitive << ( ap_CS_fsm_state1 );
 
     SC_METHOD(thread_ap_phi_mux_UnifiedRetVal_phi_fu_28_p4);
-    sensitive << ( grp_pqcrystals_dilithium_16_fu_35_ap_return );
-    sensitive << ( tmp4_reg_58 );
-    sensitive << ( tmp_3_reg_62 );
-    sensitive << ( tmp_s_reg_66 );
+    sensitive << ( grp_pqcrystals_dilithium_18_fu_35_ap_return );
+    sensitive << ( tmp4_reg_54 );
+    sensitive << ( tmp_3_reg_58 );
+    sensitive << ( tmp_s_reg_62 );
     sensitive << ( UnifiedRetVal_reg_24 );
     sensitive << ( ap_CS_fsm_state8 );
 
-    SC_METHOD(thread_ap_predicate_op18_call_state6);
-    sensitive << ( tmp4_reg_58 );
-    sensitive << ( tmp_3_reg_62 );
+    SC_METHOD(thread_ap_predicate_op17_call_state6);
+    sensitive << ( tmp4_reg_54 );
+    sensitive << ( tmp_3_reg_58 );
 
-    SC_METHOD(thread_ap_predicate_op22_call_state8);
-    sensitive << ( tmp4_reg_58 );
-    sensitive << ( tmp_3_reg_62 );
-    sensitive << ( tmp_s_reg_66 );
+    SC_METHOD(thread_ap_predicate_op21_call_state8);
+    sensitive << ( tmp4_reg_54 );
+    sensitive << ( tmp_3_reg_58 );
+    sensitive << ( tmp_s_reg_62 );
 
     SC_METHOD(thread_ap_ready);
     sensitive << ( ap_CS_fsm_state8 );
@@ -127,47 +130,62 @@ pqcrystals_dilithium_6::pqcrystals_dilithium_6(sc_module_name name) : sc_module(
     sensitive << ( ap_block_state8_on_subcall_done );
     sensitive << ( ap_return_preg );
 
-    SC_METHOD(thread_grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset);
+    SC_METHOD(thread_grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset);
     sensitive << ( ap_CS_fsm_state2 );
     sensitive << ( ap_CS_fsm_state4 );
     sensitive << ( ap_CS_fsm_state6 );
-    sensitive << ( ap_predicate_op18_call_state6 );
+    sensitive << ( ap_predicate_op17_call_state6 );
     sensitive << ( ap_CS_fsm_state8 );
-    sensitive << ( ap_predicate_op22_call_state8 );
+    sensitive << ( ap_predicate_op21_call_state8 );
 
-    SC_METHOD(thread_grp_pqcrystals_dilithium_16_fu_35_ap_start);
-    sensitive << ( grp_pqcrystals_dilithium_16_fu_35_ap_start_reg );
-
-    SC_METHOD(thread_trunc_ln339_fu_48_p1);
-    sensitive << ( bound );
+    SC_METHOD(thread_grp_pqcrystals_dilithium_18_fu_35_ap_start);
+    sensitive << ( grp_pqcrystals_dilithium_18_fu_35_ap_start_reg );
 
     SC_METHOD(thread_v_vec_coeffs_address0);
     sensitive << ( ap_CS_fsm_state2 );
     sensitive << ( ap_CS_fsm_state4 );
     sensitive << ( ap_CS_fsm_state6 );
-    sensitive << ( ap_predicate_op18_call_state6 );
-    sensitive << ( grp_pqcrystals_dilithium_16_fu_35_a_coeffs_address0 );
+    sensitive << ( ap_predicate_op17_call_state6 );
+    sensitive << ( grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address0 );
     sensitive << ( ap_CS_fsm_state8 );
-    sensitive << ( ap_predicate_op22_call_state8 );
+    sensitive << ( ap_predicate_op21_call_state8 );
+
+    SC_METHOD(thread_v_vec_coeffs_address1);
+    sensitive << ( ap_CS_fsm_state2 );
+    sensitive << ( ap_CS_fsm_state4 );
+    sensitive << ( ap_CS_fsm_state6 );
+    sensitive << ( ap_predicate_op17_call_state6 );
+    sensitive << ( grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address1 );
+    sensitive << ( ap_CS_fsm_state8 );
+    sensitive << ( ap_predicate_op21_call_state8 );
 
     SC_METHOD(thread_v_vec_coeffs_ce0);
     sensitive << ( ap_CS_fsm_state2 );
     sensitive << ( ap_CS_fsm_state4 );
     sensitive << ( ap_CS_fsm_state6 );
-    sensitive << ( ap_predicate_op18_call_state6 );
-    sensitive << ( grp_pqcrystals_dilithium_16_fu_35_a_coeffs_ce0 );
+    sensitive << ( ap_predicate_op17_call_state6 );
+    sensitive << ( grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce0 );
     sensitive << ( ap_CS_fsm_state8 );
-    sensitive << ( ap_predicate_op22_call_state8 );
+    sensitive << ( ap_predicate_op21_call_state8 );
+
+    SC_METHOD(thread_v_vec_coeffs_ce1);
+    sensitive << ( ap_CS_fsm_state2 );
+    sensitive << ( ap_CS_fsm_state4 );
+    sensitive << ( ap_CS_fsm_state6 );
+    sensitive << ( ap_predicate_op17_call_state6 );
+    sensitive << ( grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce1 );
+    sensitive << ( ap_CS_fsm_state8 );
+    sensitive << ( ap_predicate_op21_call_state8 );
 
     SC_METHOD(thread_ap_NS_fsm);
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm );
     sensitive << ( ap_CS_fsm_state1 );
-    sensitive << ( grp_pqcrystals_dilithium_16_fu_35_ap_return );
-    sensitive << ( tmp4_reg_58 );
+    sensitive << ( grp_pqcrystals_dilithium_18_fu_35_ap_return );
+    sensitive << ( tmp4_reg_54 );
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( grp_pqcrystals_dilithium_16_fu_35_ap_done );
-    sensitive << ( tmp_3_reg_62 );
+    sensitive << ( grp_pqcrystals_dilithium_18_fu_35_ap_done );
+    sensitive << ( tmp_3_reg_58 );
     sensitive << ( ap_CS_fsm_state4 );
     sensitive << ( ap_CS_fsm_state6 );
     sensitive << ( ap_block_state6_on_subcall_done );
@@ -175,7 +193,7 @@ pqcrystals_dilithium_6::pqcrystals_dilithium_6(sc_module_name name) : sc_module(
     sensitive << ( ap_block_state8_on_subcall_done );
 
     ap_CS_fsm = "00000001";
-    grp_pqcrystals_dilithium_16_fu_35_ap_start_reg = SC_LOGIC_0;
+    grp_pqcrystals_dilithium_18_fu_35_ap_start_reg = SC_LOGIC_0;
     ap_return_preg = "0";
     static int apTFileNum = 0;
     stringstream apTFilenSS;
@@ -194,36 +212,39 @@ pqcrystals_dilithium_6::pqcrystals_dilithium_6(sc_module_name name) : sc_module(
     sc_trace(mVcdFile, v_vec_coeffs_address0, "(port)v_vec_coeffs_address0");
     sc_trace(mVcdFile, v_vec_coeffs_ce0, "(port)v_vec_coeffs_ce0");
     sc_trace(mVcdFile, v_vec_coeffs_q0, "(port)v_vec_coeffs_q0");
+    sc_trace(mVcdFile, v_vec_coeffs_address1, "(port)v_vec_coeffs_address1");
+    sc_trace(mVcdFile, v_vec_coeffs_ce1, "(port)v_vec_coeffs_ce1");
+    sc_trace(mVcdFile, v_vec_coeffs_q1, "(port)v_vec_coeffs_q1");
     sc_trace(mVcdFile, bound, "(port)bound");
     sc_trace(mVcdFile, ap_return, "(port)ap_return");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
     sc_trace(mVcdFile, ap_CS_fsm, "ap_CS_fsm");
     sc_trace(mVcdFile, ap_CS_fsm_state1, "ap_CS_fsm_state1");
-    sc_trace(mVcdFile, trunc_ln339_fu_48_p1, "trunc_ln339_fu_48_p1");
-    sc_trace(mVcdFile, trunc_ln339_reg_53, "trunc_ln339_reg_53");
-    sc_trace(mVcdFile, grp_pqcrystals_dilithium_16_fu_35_ap_return, "grp_pqcrystals_dilithium_16_fu_35_ap_return");
-    sc_trace(mVcdFile, tmp4_reg_58, "tmp4_reg_58");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_ap_return, "grp_pqcrystals_dilithium_18_fu_35_ap_return");
+    sc_trace(mVcdFile, tmp4_reg_54, "tmp4_reg_54");
     sc_trace(mVcdFile, ap_CS_fsm_state2, "ap_CS_fsm_state2");
-    sc_trace(mVcdFile, grp_pqcrystals_dilithium_16_fu_35_ap_ready, "grp_pqcrystals_dilithium_16_fu_35_ap_ready");
-    sc_trace(mVcdFile, grp_pqcrystals_dilithium_16_fu_35_ap_done, "grp_pqcrystals_dilithium_16_fu_35_ap_done");
-    sc_trace(mVcdFile, tmp_3_reg_62, "tmp_3_reg_62");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_ap_ready, "grp_pqcrystals_dilithium_18_fu_35_ap_ready");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_ap_done, "grp_pqcrystals_dilithium_18_fu_35_ap_done");
+    sc_trace(mVcdFile, tmp_3_reg_58, "tmp_3_reg_58");
     sc_trace(mVcdFile, ap_CS_fsm_state4, "ap_CS_fsm_state4");
-    sc_trace(mVcdFile, tmp_s_reg_66, "tmp_s_reg_66");
+    sc_trace(mVcdFile, tmp_s_reg_62, "tmp_s_reg_62");
     sc_trace(mVcdFile, ap_CS_fsm_state6, "ap_CS_fsm_state6");
-    sc_trace(mVcdFile, ap_predicate_op18_call_state6, "ap_predicate_op18_call_state6");
+    sc_trace(mVcdFile, ap_predicate_op17_call_state6, "ap_predicate_op17_call_state6");
     sc_trace(mVcdFile, ap_block_state6_on_subcall_done, "ap_block_state6_on_subcall_done");
-    sc_trace(mVcdFile, grp_pqcrystals_dilithium_16_fu_35_ap_start, "grp_pqcrystals_dilithium_16_fu_35_ap_start");
-    sc_trace(mVcdFile, grp_pqcrystals_dilithium_16_fu_35_ap_idle, "grp_pqcrystals_dilithium_16_fu_35_ap_idle");
-    sc_trace(mVcdFile, grp_pqcrystals_dilithium_16_fu_35_a_coeffs_address0, "grp_pqcrystals_dilithium_16_fu_35_a_coeffs_address0");
-    sc_trace(mVcdFile, grp_pqcrystals_dilithium_16_fu_35_a_coeffs_ce0, "grp_pqcrystals_dilithium_16_fu_35_a_coeffs_ce0");
-    sc_trace(mVcdFile, grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset, "grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_ap_start, "grp_pqcrystals_dilithium_18_fu_35_ap_start");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_ap_idle, "grp_pqcrystals_dilithium_18_fu_35_ap_idle");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address0, "grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address0");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce0, "grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce0");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address1, "grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address1");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce1, "grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce1");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset, "grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset");
     sc_trace(mVcdFile, ap_phi_mux_UnifiedRetVal_phi_fu_28_p4, "ap_phi_mux_UnifiedRetVal_phi_fu_28_p4");
     sc_trace(mVcdFile, UnifiedRetVal_reg_24, "UnifiedRetVal_reg_24");
     sc_trace(mVcdFile, ap_CS_fsm_state8, "ap_CS_fsm_state8");
-    sc_trace(mVcdFile, ap_predicate_op22_call_state8, "ap_predicate_op22_call_state8");
+    sc_trace(mVcdFile, ap_predicate_op21_call_state8, "ap_predicate_op21_call_state8");
     sc_trace(mVcdFile, ap_block_state8_on_subcall_done, "ap_block_state8_on_subcall_done");
-    sc_trace(mVcdFile, grp_pqcrystals_dilithium_16_fu_35_ap_start_reg, "grp_pqcrystals_dilithium_16_fu_35_ap_start_reg");
+    sc_trace(mVcdFile, grp_pqcrystals_dilithium_18_fu_35_ap_start_reg, "grp_pqcrystals_dilithium_18_fu_35_ap_start_reg");
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
     sc_trace(mVcdFile, ap_CS_fsm_state5, "ap_CS_fsm_state5");
     sc_trace(mVcdFile, ap_CS_fsm_state7, "ap_CS_fsm_state7");
@@ -238,22 +259,22 @@ pqcrystals_dilithium_6::~pqcrystals_dilithium_6() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete grp_pqcrystals_dilithium_16_fu_35;
+    delete grp_pqcrystals_dilithium_18_fu_35;
 }
 
 void pqcrystals_dilithium_6::thread_ap_clk_no_reset_() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && 
          esl_seteq<1,1,1>(ap_block_state6_on_subcall_done.read(), ap_const_boolean_0) && 
-         ((esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_return.read(), ap_const_lv1_1) || 
-           esl_seteq<1,1,1>(tmp_3_reg_62.read(), ap_const_lv1_1)) || 
-          esl_seteq<1,1,1>(tmp4_reg_58.read(), ap_const_lv1_1)))) {
+         ((esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_return.read(), ap_const_lv1_1) || 
+           esl_seteq<1,1,1>(tmp_3_reg_58.read(), ap_const_lv1_1)) || 
+          esl_seteq<1,1,1>(tmp4_reg_54.read(), ap_const_lv1_1)))) {
         UnifiedRetVal_reg_24 = ap_const_lv1_1;
-    } else if ((esl_seteq<1,1,1>(tmp4_reg_58.read(), ap_const_lv1_0) && 
-                esl_seteq<1,1,1>(tmp_3_reg_62.read(), ap_const_lv1_0) && 
+    } else if ((esl_seteq<1,1,1>(tmp4_reg_54.read(), ap_const_lv1_0) && 
+                esl_seteq<1,1,1>(tmp_3_reg_58.read(), ap_const_lv1_0) && 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read()) && 
-                esl_seteq<1,1,1>(tmp_s_reg_66.read(), ap_const_lv1_0) && 
+                esl_seteq<1,1,1>(tmp_s_reg_62.read(), ap_const_lv1_0) && 
                 esl_seteq<1,1,1>(ap_block_state8_on_subcall_done.read(), ap_const_boolean_0))) {
-        UnifiedRetVal_reg_24 = grp_pqcrystals_dilithium_16_fu_35_ap_return.read();
+        UnifiedRetVal_reg_24 = grp_pqcrystals_dilithium_18_fu_35_ap_return.read();
     }
     if ( ap_rst.read() == ap_const_logic_1) {
         ap_CS_fsm = ap_ST_fsm_state1;
@@ -269,29 +290,26 @@ void pqcrystals_dilithium_6::thread_ap_clk_no_reset_() {
         }
     }
     if ( ap_rst.read() == ap_const_logic_1) {
-        grp_pqcrystals_dilithium_16_fu_35_ap_start_reg = ap_const_logic_0;
+        grp_pqcrystals_dilithium_18_fu_35_ap_start_reg = ap_const_logic_0;
     } else {
         if (((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
               esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1)) || 
              esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) || 
              esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state5.read()) || 
              esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state7.read()))) {
-            grp_pqcrystals_dilithium_16_fu_35_ap_start_reg = ap_const_logic_1;
-        } else if (esl_seteq<1,1,1>(ap_const_logic_1, grp_pqcrystals_dilithium_16_fu_35_ap_ready.read())) {
-            grp_pqcrystals_dilithium_16_fu_35_ap_start_reg = ap_const_logic_0;
+            grp_pqcrystals_dilithium_18_fu_35_ap_start_reg = ap_const_logic_1;
+        } else if (esl_seteq<1,1,1>(ap_const_logic_1, grp_pqcrystals_dilithium_18_fu_35_ap_ready.read())) {
+            grp_pqcrystals_dilithium_18_fu_35_ap_start_reg = ap_const_logic_0;
         }
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_done.read(), ap_const_logic_1))) {
-        tmp4_reg_58 = grp_pqcrystals_dilithium_16_fu_35_ap_return.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_done.read(), ap_const_logic_1))) {
+        tmp4_reg_54 = grp_pqcrystals_dilithium_18_fu_35_ap_return.read();
     }
-    if ((esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_done.read(), ap_const_logic_1) && esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()))) {
-        tmp_3_reg_62 = grp_pqcrystals_dilithium_16_fu_35_ap_return.read();
+    if ((esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_done.read(), ap_const_logic_1) && esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()))) {
+        tmp_3_reg_58 = grp_pqcrystals_dilithium_18_fu_35_ap_return.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op18_call_state6.read()) && esl_seteq<1,1,1>(ap_block_state6_on_subcall_done.read(), ap_const_boolean_0))) {
-        tmp_s_reg_66 = grp_pqcrystals_dilithium_16_fu_35_ap_return.read();
-    }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        trunc_ln339_reg_53 = trunc_ln339_fu_48_p1.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op17_call_state6.read()) && esl_seteq<1,1,1>(ap_block_state6_on_subcall_done.read(), ap_const_boolean_0))) {
+        tmp_s_reg_62 = grp_pqcrystals_dilithium_18_fu_35_ap_return.read();
     }
 }
 
@@ -328,11 +346,11 @@ void pqcrystals_dilithium_6::thread_ap_CS_fsm_state8() {
 }
 
 void pqcrystals_dilithium_6::thread_ap_block_state6_on_subcall_done() {
-    ap_block_state6_on_subcall_done = (esl_seteq<1,1,1>(ap_const_logic_0, grp_pqcrystals_dilithium_16_fu_35_ap_done.read()) && esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op18_call_state6.read()));
+    ap_block_state6_on_subcall_done = (esl_seteq<1,1,1>(ap_const_logic_0, grp_pqcrystals_dilithium_18_fu_35_ap_done.read()) && esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op17_call_state6.read()));
 }
 
 void pqcrystals_dilithium_6::thread_ap_block_state8_on_subcall_done() {
-    ap_block_state8_on_subcall_done = (esl_seteq<1,1,1>(ap_const_logic_0, grp_pqcrystals_dilithium_16_fu_35_ap_done.read()) && esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op22_call_state8.read()));
+    ap_block_state8_on_subcall_done = (esl_seteq<1,1,1>(ap_const_logic_0, grp_pqcrystals_dilithium_18_fu_35_ap_done.read()) && esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op21_call_state8.read()));
 }
 
 void pqcrystals_dilithium_6::thread_ap_done() {
@@ -356,22 +374,22 @@ void pqcrystals_dilithium_6::thread_ap_idle() {
 }
 
 void pqcrystals_dilithium_6::thread_ap_phi_mux_UnifiedRetVal_phi_fu_28_p4() {
-    if ((esl_seteq<1,1,1>(tmp4_reg_58.read(), ap_const_lv1_0) && 
-         esl_seteq<1,1,1>(tmp_3_reg_62.read(), ap_const_lv1_0) && 
+    if ((esl_seteq<1,1,1>(tmp4_reg_54.read(), ap_const_lv1_0) && 
+         esl_seteq<1,1,1>(tmp_3_reg_58.read(), ap_const_lv1_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read()) && 
-         esl_seteq<1,1,1>(tmp_s_reg_66.read(), ap_const_lv1_0))) {
-        ap_phi_mux_UnifiedRetVal_phi_fu_28_p4 = grp_pqcrystals_dilithium_16_fu_35_ap_return.read();
+         esl_seteq<1,1,1>(tmp_s_reg_62.read(), ap_const_lv1_0))) {
+        ap_phi_mux_UnifiedRetVal_phi_fu_28_p4 = grp_pqcrystals_dilithium_18_fu_35_ap_return.read();
     } else {
         ap_phi_mux_UnifiedRetVal_phi_fu_28_p4 = UnifiedRetVal_reg_24.read();
     }
 }
 
-void pqcrystals_dilithium_6::thread_ap_predicate_op18_call_state6() {
-    ap_predicate_op18_call_state6 = (esl_seteq<1,1,1>(tmp4_reg_58.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(tmp_3_reg_62.read(), ap_const_lv1_0));
+void pqcrystals_dilithium_6::thread_ap_predicate_op17_call_state6() {
+    ap_predicate_op17_call_state6 = (esl_seteq<1,1,1>(tmp4_reg_54.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(tmp_3_reg_58.read(), ap_const_lv1_0));
 }
 
-void pqcrystals_dilithium_6::thread_ap_predicate_op22_call_state8() {
-    ap_predicate_op22_call_state8 = (esl_seteq<1,1,1>(tmp4_reg_58.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(tmp_3_reg_62.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(tmp_s_reg_66.read(), ap_const_lv1_0));
+void pqcrystals_dilithium_6::thread_ap_predicate_op21_call_state8() {
+    ap_predicate_op21_call_state8 = (esl_seteq<1,1,1>(tmp4_reg_54.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(tmp_3_reg_58.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(tmp_s_reg_62.read(), ap_const_lv1_0));
 }
 
 void pqcrystals_dilithium_6::thread_ap_ready() {
@@ -392,44 +410,57 @@ void pqcrystals_dilithium_6::thread_ap_return() {
     }
 }
 
-void pqcrystals_dilithium_6::thread_grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset() {
+void pqcrystals_dilithium_6::thread_grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read()) && 
-         esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op22_call_state8.read()))) {
-        grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset = ap_const_lv4_3;
+         esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op21_call_state8.read()))) {
+        grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset = ap_const_lv4_3;
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && 
-                esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op18_call_state6.read()))) {
-        grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset = ap_const_lv4_2;
+                esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op17_call_state6.read()))) {
+        grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset = ap_const_lv4_2;
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read())) {
-        grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset = ap_const_lv4_1;
+        grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset = ap_const_lv4_1;
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset = ap_const_lv4_0;
+        grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset = ap_const_lv4_0;
     } else {
-        grp_pqcrystals_dilithium_16_fu_35_a_coeffs_offset = "XXXX";
+        grp_pqcrystals_dilithium_18_fu_35_a_coeffs_offset = "XXXX";
     }
 }
 
-void pqcrystals_dilithium_6::thread_grp_pqcrystals_dilithium_16_fu_35_ap_start() {
-    grp_pqcrystals_dilithium_16_fu_35_ap_start = grp_pqcrystals_dilithium_16_fu_35_ap_start_reg.read();
-}
-
-void pqcrystals_dilithium_6::thread_trunc_ln339_fu_48_p1() {
-    trunc_ln339_fu_48_p1 = bound.read().range(17-1, 0);
+void pqcrystals_dilithium_6::thread_grp_pqcrystals_dilithium_18_fu_35_ap_start() {
+    grp_pqcrystals_dilithium_18_fu_35_ap_start = grp_pqcrystals_dilithium_18_fu_35_ap_start_reg.read();
 }
 
 void pqcrystals_dilithium_6::thread_v_vec_coeffs_address0() {
-    v_vec_coeffs_address0 = grp_pqcrystals_dilithium_16_fu_35_a_coeffs_address0.read();
+    v_vec_coeffs_address0 = grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address0.read();
+}
+
+void pqcrystals_dilithium_6::thread_v_vec_coeffs_address1() {
+    v_vec_coeffs_address1 = grp_pqcrystals_dilithium_18_fu_35_a_coeffs_address1.read();
 }
 
 void pqcrystals_dilithium_6::thread_v_vec_coeffs_ce0() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) || 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()) || 
          (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && 
-          esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op18_call_state6.read())) || 
+          esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op17_call_state6.read())) || 
          (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read()) && 
-          esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op22_call_state8.read())))) {
-        v_vec_coeffs_ce0 = grp_pqcrystals_dilithium_16_fu_35_a_coeffs_ce0.read();
+          esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op21_call_state8.read())))) {
+        v_vec_coeffs_ce0 = grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce0.read();
     } else {
         v_vec_coeffs_ce0 = ap_const_logic_0;
+    }
+}
+
+void pqcrystals_dilithium_6::thread_v_vec_coeffs_ce1() {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) || 
+         esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()) || 
+         (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && 
+          esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op17_call_state6.read())) || 
+         (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read()) && 
+          esl_seteq<1,1,1>(ap_const_boolean_1, ap_predicate_op21_call_state8.read())))) {
+        v_vec_coeffs_ce1 = grp_pqcrystals_dilithium_18_fu_35_a_coeffs_ce1.read();
+    } else {
+        v_vec_coeffs_ce1 = ap_const_logic_0;
     }
 }
 
@@ -443,9 +474,9 @@ void pqcrystals_dilithium_6::thread_ap_NS_fsm() {
             }
             break;
         case 2 : 
-            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_done.read(), ap_const_logic_1) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_return.read(), ap_const_lv1_1))) {
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_done.read(), ap_const_logic_1) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_return.read(), ap_const_lv1_1))) {
                 ap_NS_fsm = ap_ST_fsm_state6;
-            } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_done.read(), ap_const_logic_1) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_return.read(), ap_const_lv1_0))) {
+            } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_done.read(), ap_const_logic_1) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_return.read(), ap_const_lv1_0))) {
                 ap_NS_fsm = ap_ST_fsm_state3;
             } else {
                 ap_NS_fsm = ap_ST_fsm_state2;
@@ -455,9 +486,9 @@ void pqcrystals_dilithium_6::thread_ap_NS_fsm() {
             ap_NS_fsm = ap_ST_fsm_state4;
             break;
         case 8 : 
-            if ((esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_done.read(), ap_const_logic_1) && esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_return.read(), ap_const_lv1_1))) {
+            if ((esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_done.read(), ap_const_logic_1) && esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_return.read(), ap_const_lv1_1))) {
                 ap_NS_fsm = ap_ST_fsm_state6;
-            } else if ((esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_done.read(), ap_const_logic_1) && esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_return.read(), ap_const_lv1_0))) {
+            } else if ((esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_done.read(), ap_const_logic_1) && esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_return.read(), ap_const_lv1_0))) {
                 ap_NS_fsm = ap_ST_fsm_state5;
             } else {
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -467,11 +498,11 @@ void pqcrystals_dilithium_6::thread_ap_NS_fsm() {
             ap_NS_fsm = ap_ST_fsm_state6;
             break;
         case 32 : 
-            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && esl_seteq<1,1,1>(ap_block_state6_on_subcall_done.read(), ap_const_boolean_0) && ((esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_return.read(), ap_const_lv1_1) || 
-   esl_seteq<1,1,1>(tmp_3_reg_62.read(), ap_const_lv1_1)) || 
-  esl_seteq<1,1,1>(tmp4_reg_58.read(), ap_const_lv1_1)))) {
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && esl_seteq<1,1,1>(ap_block_state6_on_subcall_done.read(), ap_const_boolean_0) && ((esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_return.read(), ap_const_lv1_1) || 
+   esl_seteq<1,1,1>(tmp_3_reg_58.read(), ap_const_lv1_1)) || 
+  esl_seteq<1,1,1>(tmp4_reg_54.read(), ap_const_lv1_1)))) {
                 ap_NS_fsm = ap_ST_fsm_state8;
-            } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && esl_seteq<1,1,1>(tmp4_reg_58.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(tmp_3_reg_62.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(ap_block_state6_on_subcall_done.read(), ap_const_boolean_0) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_16_fu_35_ap_return.read(), ap_const_lv1_0))) {
+            } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read()) && esl_seteq<1,1,1>(tmp4_reg_54.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(tmp_3_reg_58.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(ap_block_state6_on_subcall_done.read(), ap_const_boolean_0) && esl_seteq<1,1,1>(grp_pqcrystals_dilithium_18_fu_35_ap_return.read(), ap_const_lv1_0))) {
                 ap_NS_fsm = ap_ST_fsm_state7;
             } else {
                 ap_NS_fsm = ap_ST_fsm_state6;

@@ -30,6 +30,7 @@ void poly_reduce(poly *a) {
   DBENCH_START();
 
   for(i = 0; i < N; ++i)
+#pragma HLS unroll
     a->coeffs[i] = reduce32(a->coeffs[i]);
 
   DBENCH_STOP(*tred);
@@ -48,6 +49,7 @@ void poly_caddq(poly *a) {
   DBENCH_START();
 
   for(i = 0; i < N; ++i)
+#pragma HLS unroll
     a->coeffs[i] = caddq(a->coeffs[i]);
 
   DBENCH_STOP(*tred);
@@ -66,6 +68,7 @@ void poly_freeze(poly *a) {
   DBENCH_START();
 
   for(i = 0; i < N; ++i)
+#pragma HLS unroll
     a->coeffs[i] = freeze(a->coeffs[i]);
 
   DBENCH_STOP(*tred);
@@ -85,6 +88,7 @@ void poly_add(poly *c, const poly *a, const poly *b)  {
   DBENCH_START();
 
   for(i = 0; i < N; ++i)
+#pragma HLS unroll
     c->coeffs[i] = a->coeffs[i] + b->coeffs[i];
 
   DBENCH_STOP(*tadd);
@@ -230,6 +234,7 @@ void poly_decompose(poly *a1, poly *a0, const poly *a) {
   DBENCH_START();
 
   for(i = 0; i < N; ++i)
+#pragma HLS unroll
     a1->coeffs[i] = decompose(&a0->coeffs[i], a->coeffs[i]);
 
   DBENCH_STOP(*tround);
@@ -253,6 +258,7 @@ unsigned int poly_make_hint(poly *h, const poly *a0, const poly *a1) {
   DBENCH_START();
 
   for(i = 0; i < N; ++i) {
+#pragma HLS unroll
     h->coeffs[i] = make_hint(a0->coeffs[i], a1->coeffs[i]);
     s += h->coeffs[i];
   }
@@ -275,6 +281,7 @@ void poly_use_hint(poly *b, const poly *a, const poly *h) {
   DBENCH_START();
 
   for(i = 0; i < N; ++i)
+#pragma HLS unroll
     b->coeffs[i] = use_hint(a->coeffs[i], h->coeffs[i]);
 
   DBENCH_STOP(*tround);
@@ -303,6 +310,7 @@ int poly_chknorm(const poly *a, int32_t B) {
      the probability for each coefficient is independent of secret
      data but we must not leak the sign of the centralized representative. */
   for(i = 0; i < N; ++i) {
+#pragma HLS unroll
     /* Absolute value */
     t = a->coeffs[i] >> 31;
     t = a->coeffs[i] - (t & 2*a->coeffs[i]);
@@ -342,6 +350,7 @@ static unsigned int rej_uniform(int32_t *a,
 
   ctr = pos = 0;
   while(ctr < len && pos + 3 <= buflen) {
+#pragma HLS unroll
     t  = buf[pos++];
     t |= (uint32_t)buf[pos++] << 8;
     t |= (uint32_t)buf[pos++] << 16;
@@ -382,8 +391,10 @@ void poly_uniform(poly *a,
   ctr = rej_uniform(a->coeffs, N, buf, buflen);
 
   while(ctr < N) {
+#pragma HLS unroll
     off = buflen % 3;
     for(i = 0; i < off; ++i)
+#pragma HLS unroll
       buf[i] = buf[buflen - off + i];
 
     stream128_squeezeblocks(buf + off, 1, &state);
@@ -472,6 +483,7 @@ void poly_uniform_eta(poly *a,
   ctr = rej_eta(a->coeffs, N, buf, buflen);
 
   while(ctr < N) {
+#pragma HLS unroll
     stream128_squeezeblocks(buf, 1, &state);
     ctr += rej_eta(a->coeffs + ctr, N - ctr, buf, STREAM128_BLOCKBYTES);
   }
@@ -528,10 +540,12 @@ void poly_challenge(poly *c, const uint8_t seed[SEEDBYTES]) {
 
   signs = 0;
   for(i = 0; i < 8; ++i)
+#pragma HLS unroll
     signs |= (uint64_t)buf[i] << 8*i;
   pos = 8;
 
   for(i = 0; i < N; ++i){
+#pragma HLS unroll
 //    #pragma HLS unroll
     c->coeffs[i] = 0;
   }
@@ -606,6 +620,7 @@ void polyeta_unpack(poly *r, const uint8_t *a) {
 
 #if ETA == 2
   for(i = 0; i < N/8; ++i) {
+#pragma HLS unroll
     r->coeffs[8*i+0] =  (a[3*i+0] >> 0) & 7;
     r->coeffs[8*i+1] =  (a[3*i+0] >> 3) & 7;
     r->coeffs[8*i+2] = ((a[3*i+0] >> 6) | (a[3*i+1] << 2)) & 7;

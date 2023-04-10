@@ -349,6 +349,7 @@ static void br_aes_ct64_keysched(uint64_t *comp_skey, const uint8_t *key)
 	br_range_dec32le(skey, (key_len >> 2), key);
 	tmp = skey[(key_len >> 2) - 1];
 	for (i = nk, j = 0, k = 0; i < nkf; i ++) {
+#pragma HLS unroll
 		if (j == 0) {
 			tmp = (tmp << 24) | (tmp >> 8);
 			tmp = sub_word(tmp) ^ Rcon[k];
@@ -364,6 +365,7 @@ static void br_aes_ct64_keysched(uint64_t *comp_skey, const uint8_t *key)
 	}
 
 	for (i = 0, j = 0; i < nkf; i += 4, j += 2) {
+#pragma HLS unroll
 		uint64_t q[8];
 
 		br_aes_ct64_interleave_in(&q[0], &q[4], skey + i);
@@ -393,6 +395,7 @@ static void br_aes_ct64_skey_expand(uint64_t *skey, const uint64_t *comp_skey)
 
 	n = (14 + 1) << 1;
 	for (u = 0, v = 0; u < n; u ++, v += 4) {
+#pragma HLS unroll
 		uint64_t x0, x1, x2, x3;
 
 		x0 = x1 = x2 = x3 = comp_skey[u];
@@ -427,6 +430,7 @@ static inline void shift_rows(uint64_t *q)
 	int i;
 
 	for (i = 0; i < 8; i ++) {
+#pragma HLS unroll
 		uint64_t x;
 
 		x = q[i];
@@ -491,12 +495,14 @@ static void aes_ctr4x(uint8_t out[64], uint32_t ivw[16], uint64_t sk_exp[64])
 
   memcpy(w, ivw, sizeof(w));
   for (i = 0; i < 4; i++) {
+#pragma HLS unroll
     br_aes_ct64_interleave_in(&q[i], &q[i + 4], w + (i << 2));
   }
   br_aes_ct64_ortho(q);
 
   add_round_key(q, sk_exp);
   for (i = 1; i < 14; i++) {
+#pragma HLS unroll
     br_aes_ct64_bitslice_Sbox(q);
     shift_rows(q);
     mix_columns(q);
@@ -508,6 +514,7 @@ static void aes_ctr4x(uint8_t out[64], uint32_t ivw[16], uint64_t sk_exp[64])
 
   br_aes_ct64_ortho(q);
   for (i = 0; i < 4; i ++) {
+#pragma HLS unroll
     br_aes_ct64_interleave_out(w + (i << 2), q[i], q[i + 4]);
   }
   br_range_enc32le(out, w, 16);
