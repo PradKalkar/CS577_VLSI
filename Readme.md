@@ -31,8 +31,7 @@
 1. Pipelined (bool): Tells whether a loop is pipelined.
 2. Latency: Time taken to execute the entire code.
 3. Iteration Latency: Time taken to execute one iteration of a loop
-4. 
-5. 
+
 Trip Count: Number of iterations
 Constants: the loop bound is a constant.
 Variables
